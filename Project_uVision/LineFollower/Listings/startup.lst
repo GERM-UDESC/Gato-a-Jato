@@ -1,0 +1,106 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET, DATA, READONLY ;Define a
+                                                             AREA called RESET 
+                                                            of type DATA and RE
+                                                            ADONLY
+    2 00000000         
+    3 00000000                 EXPORT           __Vectors
+    4 00000000         
+    5 00000000 20002000 
+                       __Vectors
+                               DCD              0x20002000
+    6 00000004 00000000        DCD              Reset_Handler
+    7 00000008         
+    8 00000008                 ALIGN
+    9 00000008         
+   10 00000008                 AREA             |.text|, CODE, READONLY, ALIGN=
+2
+   11 00000000                 THUMB
+   12 00000000         
+   13 00000000                 EXPORT           Reset_Handler
+   14 00000000         
+   15 00000000         Reset_Handler
+   16 00000000         
+   17 00000000         ;---------------------branches to main in C file--------
+                       -------------------      
+   18 00000000                 IMPORT           main
+   19 00000000         
+   20 00000000 4800            LDR              R0, =main
+   21 00000002 4700            BX               R0
+   22 00000004         ;-------------------------------------------------------
+                       ------------------
+   23 00000004                 END
+              00000000 
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\objects\startup.d -o.\objects\startup.o -I.\RTE\_Target_1 -IC:\K
+eil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include -IC:\Keil_v5\ARM\CMSIS\
+Include --predefine="__EVAL SETA 1" --predefine="__UVISION_VERSION SETA 525" --
+predefine="STM32F10X_MD SETA 1" --list=.\listings\startup.lst Startup.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file Startup.s
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 5 in file Startup.s
+   Uses
+      At line 3 in file Startup.s
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 10 in file Startup.s
+   Uses
+      None
+Comment: .text unused
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 15 in file Startup.s
+   Uses
+      At line 6 in file Startup.s
+      At line 13 in file Startup.s
+
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+main 00000000
+
+Symbol: main
+   Definitions
+      At line 18 in file Startup.s
+   Uses
+      At line 20 in file Startup.s
+Comment: main used once
+1 symbol
+340 symbols in table
