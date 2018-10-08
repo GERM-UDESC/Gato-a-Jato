@@ -407,14 +407,14 @@
           <GroupName>Drivers</GroupName>
           <Files>
             <File>
-              <FileName>GPIO.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\GPIO.c</FilePath>
-            </File>
-            <File>
               <FileName>GPIO.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\GPIO.h</FilePath>
+            </File>
+            <File>
+              <FileName>GPIO.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\GPIO.cpp</FilePath>
             </File>
           </Files>
         </Group>
@@ -422,9 +422,9 @@
           <GroupName>Programs</GroupName>
           <Files>
             <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\main.c</FilePath>
+              <FileName>main.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\main.cpp</FilePath>
             </File>
           </Files>
         </Group>
