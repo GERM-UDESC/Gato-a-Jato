@@ -1,5 +1,5 @@
-#ifndef	GPIO_function
-
+#ifndef	GPIO_H
+#define GPIO_H
 #include "Micro.h"
 
 #define HIGH	1
@@ -19,13 +19,33 @@ typedef enum{						//I put in an enum because it will be easier to implement oth
 	ALTERNATED_FUNCTION		//don't know how to use yet
 }GPIO_modes;
 
-//Function to config the pin
-void Config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t mode);		//Here mode can be any of those put into GPIO_modes above
+class GPIO_class
+{
+		private:
+		GPIO_TypeDef *port;					
+		uint32_t pinNumber;
+		uint32_t mode;
+		uint32_t state;							//in case it's output
+		
+		public:
+	//------------------------Config_pin-----------------------------------------------
+void Config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t mode);
 
-//Function to write/read to the pin port
-void Write_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t state);		//Write HIGH or LOW into a pin
-void Toogle_pin(GPIO_TypeDef *port, uint32_t pinNumber);									//Toogle pin	
-uint16_t Read_pin(GPIO_TypeDef *port, uint32_t pinNumber);								//Return high or low acording to the readed value
+//------------------------Write_pin-----------------------------------------------
+void Write_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t state);
+
+//------------------------Toogle_pin-----------------------------------------------
+void Toogle_pin(GPIO_TypeDef *port, uint32_t pinNumber);
+
+//------------------------Read_pin-------------------------------------------------
+uint16_t Read_pin(GPIO_TypeDef *port, uint32_t pinNumber);
+		
+
+
+
+
+};
+
 
 
 #endif
