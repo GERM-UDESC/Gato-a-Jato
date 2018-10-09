@@ -7,19 +7,13 @@
 
 int main()
 {
-	GPIO_class LED13;
-	
-	
-
-	LED13.Config_pin(GPIOC, 13, OUTPUT);
+	GPIO LED_placa(GPIOC, 13, OUTPUT);
 	
 	while (1)
 	{
 
 	for (int i = 0; i<500000 ; i++);
-	LED13.Toogle_pin(GPIOC, 13);
+	LED_placa.Toogle_pin(GPIOC, 13);
 	}
-
-	
 }
 
