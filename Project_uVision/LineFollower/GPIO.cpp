@@ -2,7 +2,7 @@
 #include "stdint.h"
 
 	//------------------------Config_pin-----------------------------------------------
-void GPIO_class::Config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t mode)
+void GPIO::GPIO(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t mode)
 {
 	if (port == GPIOA)												//If GPIOA is the chosen one
 		RCC->APB2ENR |= (1<<2);									//enable the clock of GPIO_A
@@ -57,7 +57,7 @@ void GPIO_class::Config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t mod
 }
 
 //------------------------Write_pin-----------------------------------------------
-void GPIO_class::Write_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t state)
+void GPIO::Write_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t state)
 {
 	if (state == LOW)
 		port->BSRR |= (1<<(pinNumber+16));							
@@ -66,13 +66,13 @@ void GPIO_class::Write_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t stat
 }
 
 //------------------------Toogle_pin-----------------------------------------------
-void GPIO_class::Toogle_pin(GPIO_TypeDef *port, uint32_t pinNumber)
+void GPIO::Toogle_pin(GPIO_TypeDef *port, uint32_t pinNumber)
 {
 	port->ODR ^=(1<<pinNumber);																						//^ means exclusive or
 }
 
 //------------------------Read_pin-------------------------------------------------
-uint16_t GPIO_class::Read_pin(GPIO_TypeDef *port, uint32_t pinNumber)
+uint16_t GPIO::Read_pin(GPIO_TypeDef *port, uint32_t pinNumber)
 {
 	uint16_t bit_value = port->ODR;																	
 	

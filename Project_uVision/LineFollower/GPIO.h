@@ -19,7 +19,7 @@ typedef enum{						//I put in an enum because it will be easier to implement oth
 	ALTERNATED_FUNCTION		//don't know how to use yet
 }GPIO_modes;
 
-class GPIO_class
+class GPIO
 {
 		private:
 		GPIO_TypeDef *port;					
@@ -28,8 +28,8 @@ class GPIO_class
 		uint32_t state;							//in case it's output
 		
 		public:
-	//------------------------Config_pin-----------------------------------------------
-void Config_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t mode);
+//------------------------Config_pin-----------------------------------------------
+void GPIO(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t mode);
 
 //------------------------Write_pin-----------------------------------------------
 void Write_pin(GPIO_TypeDef *port, uint32_t pinNumber, uint32_t state);
