@@ -67,36 +67,33 @@ class GPIO
 		PU_PD_enum PU_PD;
 		bool state;							//in case it's output
 
-		//------------------------Config_pin-----------------------------------------------
-		//These methods are written here because I'll alow only the constructor to use them
-		void ConfigPin();
 
-		void Config_PU_PD();	//By defaul, PD is choosen, this functions allows the user to change to PU/PD;			
+		protected:
+		//Setters for child classes
+		void SetPort(GPIO_TypeDef *port);
+		void SetPinNumber(PIN_numbers pinNumber);
+		void SetMode(GPIO_modes mode);
 		
+		//Methods
+		void ConfigPin();
+			
 		public:
-		
-		//Construtores
+		//Constructors
 		GPIO(){};
 		GPIO(GPIO_TypeDef *port, PIN_numbers pinNumber, GPIO_modes mode);
-		GPIO(GPIO_TypeDef *port, PIN_numbers pinNumber, GPIO_modes mode, PU_PD_enum PU_PD);
 		
-		//Destrutor
-		void GPIOn(GPIO_TypeDef *port, PIN_numbers pinNumber, GPIO_modes mode){};
-		//~GPIO();	
+		//Getters
+		GPIO_TypeDef* GetPort();
+		PIN_numbers GetPinNumber();
+		GPIO_modes GetMode();
+		PU_PD_enum GetPuPd();
 
-		//------------------------Write_pin-----------------------------------------------
+		//Public Methods
+		void Config_PU_PD(PU_PD_enum PU_PD);	//By defaul, PD is choosen, this functions allows the user to change to PU/PD;
 		void Write_pin(bool state);
-
-		//------------------------Toogle_pin-----------------------------------------------
 		void Toogle_pin();
-
-		//------------------------Read_pin-------------------------------------------------
 		bool Read_pin();
 
-		//------------------------Interrupt------------------------------------------------
-		void Config_interrupt();	//I have to implement
-		void Enable_interrupt();
-		void Clear_interrupt();
 		
 };
 #endif

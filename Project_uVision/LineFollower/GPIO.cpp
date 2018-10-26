@@ -10,26 +10,10 @@ GPIO::GPIO(GPIO_TypeDef *port, PIN_numbers pinNumber, GPIO_modes mode)
 		this->mode = mode;
 	
 		this->ConfigPin();
-}
-
-GPIO::GPIO(GPIO_TypeDef *port, PIN_numbers pinNumber, GPIO_modes mode, PU_PD_enum PU_PD)
-{
-		this->port = port;					
-		this->pinNumber = pinNumber;
-		this->mode = mode;
-		this->PU_PD = PU_PD;
-	
-		this->ConfigPin();
-		this->Config_PU_PD();
+		this->Config_PU_PD(PULL_DOWN);		//Config PULL_DOWN as default
 }
 
 
-
-//Destrutor
-//GPIO::~GPIO()
-//{
-
-//};
 //------------------------Config_pin-----------------------------------------------
 void GPIO::ConfigPin()
 {
@@ -72,14 +56,15 @@ void GPIO::ConfigPin()
 
 
 //------------------------PU_PD--------------------------------------------------
-void GPIO::Config_PU_PD()
+void GPIO::Config_PU_PD(PU_PD_enum PU_PD)
 {
+	this->PU_PD = PU_PD;
+	
 	if ((this->PU_PD) == PULL_UP)
 		this->port->ODR |= (1<<(this->pinNumber));
 	else
 		this->port->ODR &= ~(1<<(this->pinNumber));
 }
-
 
 //------------------------Write_pin-----------------------------------------------
 void GPIO::Write_pin(bool state)
@@ -103,3 +88,35 @@ bool GPIO::Read_pin()
 	return (this->port->IDR) & (1<<(this->pinNumber));
 }
 
+//Setters
+void GPIO::SetPort(GPIO_TypeDef *port)
+{
+	this->port = port;
+}
+
+void GPIO::SetPinNumber(PIN_numbers pinNumber)
+{
+	this->pinNumber = pinNumber;
+}
+void GPIO::SetMode(GPIO_modes mode)
+{
+	this->mode = mode;
+}
+
+//Getters
+GPIO_TypeDef* GPIO::GetPort()
+{
+	return this->port;
+}
+PIN_numbers GPIO::GetPinNumber()
+{
+	return this->pinNumber;
+}
+GPIO_modes GPIO::GetMode()
+{
+	return this->mode;
+}
+PU_PD_enum GPIO::GetPuPd()
+{
+	return this->PU_PD;
+}
