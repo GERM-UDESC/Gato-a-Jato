@@ -156,9 +156,9 @@ void PWM::PWMInit()
 	//TIM->CCMR1 |= (1<<11); 
 	
 	/* Uncoment this to get 1kHz of frequency and to be able to write in the CCR1 a value between 0-100 to get 0-100% PWM
-	TIM->PSC = 720; //Configure the preescalers
+	TIM->PSC = 7200; //Configure the preescalers
 	
-	TIM->ARR = 100;
+	//TIM->ARR = 100;
 	*/
 	
 	switch (get_channel())
@@ -167,34 +167,28 @@ void PWM::PWMInit()
 			TIM_Write = &(TIM->CCR1);
 			*TIM_Write = 0;										//Initialize the PWM with 0%
 			TIM->CCMR1 |= (1<<6) | (1<<5);		//Configure the output compare mode as PWM with active mode HIGH
-			TIM->CCER |= (1<<0);
-			TIM->BDTR |= (1<<15);									//Enable the main output
+			TIM->BDTR |= (1<<15);							//Enable the main output
 		break;
 		case CH2:
 			TIM_Write = &(TIM->CCR2);
 			*TIM_Write = 0;										//Initialize the PWM with 0%
 			TIM->CCMR1 |= (1<<14) | (1<<13);	//Configure the output compare mode as PWM with active mode HIGH
-			TIM->CCER |= (1<<4);
 		break;
 		case CH3:
 			TIM_Write = &(TIM->CCR3);
 			*TIM_Write = 0;										//Initialize the PWM with 0%
 			TIM->CCMR2 |= (1<<6) | (1<<5);		//Configure the output compare mode as PWM with active mode HIGH
-			TIM->CCER |= (1<<8);
 		break;
 		case CH4:
 			TIM_Write = &(TIM->CCR4);
 			*TIM_Write = 0;										//Initialize the PWM with 0%
 			TIM->CCMR2 |= (1<<14) | (1<<13);	//Configure the output compare mode as PWM with active mode HIGH
-			TIM->CCER |= (1<<12);
 		break;		
 	
 	}
-	
-	
 	TIM->CCER |= (1<<(4*get_channel()));	//Enable the channel output
 	
-	this->TIM->EGR |= (1<<0);							//Update generation -> Generate an uptade of all configurations done before
+	TIM->EGR |= (1<<0);							//Update generation -> Generate an uptade of all configurations done before
 	
 	TIM->CR1 |= (1<<0); 									//Enable the counter
 	
