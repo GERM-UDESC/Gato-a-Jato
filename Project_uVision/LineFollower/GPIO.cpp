@@ -88,7 +88,7 @@ bool GPIO::Read_pin()
 	return (this->port->IDR) & (1<<(this->pinNumber));
 }
 
-//Setters
+//-------------------------------SETTERS------------------------------------
 void GPIO::SetPort(GPIO_TypeDef *port)
 {
 	this->port = port;
@@ -103,7 +103,7 @@ void GPIO::SetMode(GPIO_modes mode)
 	this->mode = mode;
 }
 
-//Getters
+//-------------------------------GETTERS------------------------------------
 GPIO_TypeDef* GPIO::GetPort()
 {
 	return this->port;

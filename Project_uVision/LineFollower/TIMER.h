@@ -48,14 +48,20 @@ class Timer : protected GPIO
 		TIM_TypeDef *TIM;		//can/should I do a getter?
 		
 		Timer(){};					//Default Constructor 
-
-		//Getters 
-		TIM_CHANNELS get_channel();
-		TIM_MODE_IO get_mode();
-	
+		
+		//Setters
+		void SetTimer(TIM_TypeDef *TIM);
+		void SetChannel(TIM_CHANNELS channel);
+		void SetMode(TIM_MODE_IO mode);
+		
 	public:
 		//Constructor
 		Timer(TIM_TypeDef *TIM, TIM_CHANNELS channel, TIM_MODE_IO mode);		
+		
+		//Getters 
+		TIM_TypeDef* GetTimer();
+		TIM_CHANNELS get_channel();
+		TIM_MODE_IO get_mode();
 		
 		//Methods
 		void TimerInit();
