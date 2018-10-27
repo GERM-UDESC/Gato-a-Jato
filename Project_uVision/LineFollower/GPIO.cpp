@@ -1,7 +1,7 @@
 #include "GPIO.h"
 
 //Construtores
-GPIO::GPIO(GPIO_TypeDef *GPIOPort, PIN_numbers GPIOPinNumber, GPIO_modes GPIOMode)
+GPIO::GPIO(GPIO_TypeDef *GPIOPort, PIN_NUMBERS GPIOPinNumber, GPIO_MODES GPIOMode)
 {
 		SetGPIOPort(GPIOPort);					
 		SetGPIOPinNumber(GPIOPinNumber);
@@ -72,7 +72,7 @@ void GPIO::ConfigGPIOPin()
 
 
 //------------------------PU_PD--------------------------------------------------
-void GPIO::Config_PU_PD(PU_PD_enum PU_PD)
+void GPIO::Config_PU_PD(PU_PD_ENUM PU_PD)
 {
 	this->PU_PD = PU_PD;
 	
@@ -82,8 +82,8 @@ void GPIO::Config_PU_PD(PU_PD_enum PU_PD)
 		GetGPIOPort()->ODR &= ~(1<<(GetGPIOPinNumber()));
 }
 
-//------------------------Write_pin-----------------------------------------------
-void GPIO::Write_pin(bool state)
+//------------------------digitalWrite-----------------------------------------------
+void GPIO::digitalWrite(bool state)
 {
 	this->GPIOState = state;
 	if (GetGPIOState() == LOW)
@@ -92,14 +92,14 @@ void GPIO::Write_pin(bool state)
 		GetGPIOPort()->BSRR |= (1<<(GetGPIOPinNumber()));								//If the state is not LOW, I'll consider it as HIGH
 }
 
-//------------------------Toogle_pin-----------------------------------------------
-void GPIO::Toogle_pin()
+//------------------------tooglePin-----------------------------------------------
+void GPIO::tooglePin()
 {
 	GetGPIOPort()->ODR ^=(1<<(GetGPIOPinNumber()));																						//^ means exclusive or
 }
 
-//------------------------Read_pin-------------------------------------------------
-bool GPIO::Read_pin()
+//------------------------digitalRead-------------------------------------------------
+bool GPIO::digitalRead()
 {
 	return (GetGPIOPort()->IDR) & (1<<(GetGPIOPinNumber()));
 }
@@ -109,11 +109,11 @@ void GPIO::SetGPIOPort(GPIO_TypeDef *GPIOPort)
 {
 	this->GPIOPort = GPIOPort;
 }
-void GPIO::SetGPIOPinNumber(PIN_numbers GPIOPinNumber)
+void GPIO::SetGPIOPinNumber(PIN_NUMBERS GPIOPinNumber)
 {
 	this->GPIOPinNumber = GPIOPinNumber;
 }
-void GPIO::SetGPIOMode(GPIO_modes GPIOMode)
+void GPIO::SetGPIOMode(GPIO_MODES GPIOMode)
 {
 	this->GPIOMode = GPIOMode;
 }
@@ -123,15 +123,15 @@ GPIO_TypeDef* GPIO::GetGPIOPort()
 {
 	return this->GPIOPort;
 }
-PIN_numbers GPIO::GetGPIOPinNumber()
+PIN_NUMBERS GPIO::GetGPIOPinNumber()
 {
 	return this->GPIOPinNumber;
 }
-GPIO_modes GPIO::GetGPIOMode()
+GPIO_MODES GPIO::GetGPIOMode()
 {
 	return this->GPIOMode;
 }
-PU_PD_enum GPIO::GetGPIOPuPd()
+PU_PD_ENUM GPIO::GetGPIOPuPd()
 {
 	return this->PU_PD;
 }

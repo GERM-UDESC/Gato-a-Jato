@@ -1,9 +1,5 @@
 #include "TIMER.h"
 //--------------------------------------------CLASS------------------------------------------------------
-//Can't use 
-//PWM testePWM(TIM3,CH1,PARTIAL_REMAP2);  //PB4
-//PWM testePWM(TIM2,CH1,PARTIAL_REMAP1); //PA15
-//PWM testePWM(TIM2,CH2,PARTIAL_REMAP1);	//PB3
 class PWM : protected Timer
 {
 	private:
@@ -28,6 +24,4 @@ class PWM : protected Timer
 		//Methods
 		void PWMWrite(uint16_t value);	//This function write a PWM value 0-65535
 		
-
-	
 };

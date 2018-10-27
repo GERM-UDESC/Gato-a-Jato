@@ -3,11 +3,11 @@
 <title>Static Call Graph - [.\Objects\LineFollower.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\LineFollower.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat Oct 27 14:10:20 2018
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat Oct 27 20:06:07 2018
 <BR><P>
-<H3>Maximum Stack Usage =         52 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        160 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
-main &rArr; GPIO::GPIO(GPIO_TypeDef*, PIN_numbers, GPIO_modes) &rArr; GPIO::ConfigGPIOPin()
+main &rArr; PWM::PWM(TIM_TypeDef*, TIM_CHANNELS, TIM_REMAP) &rArr; PWM::ConfigPWMPin() &rArr; GPIO::ConfigGPIOPin()
 <P>
 <H3>
 Functions with no stack information
@@ -106,9 +106,9 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
 </UL>
 
-<P><STRONG><a name="[5a]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[6c]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
-<P><STRONG><a name="[5b]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[6d]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
 <P><STRONG><a name="[3f]"></a>__scatterload_copy</STRONG> (Thumb, 26 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
@@ -116,78 +116,78 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_copy
 </UL>
 
-<P><STRONG><a name="[5c]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+<P><STRONG><a name="[6e]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
 
 <P><STRONG><a name="[43]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
 </UL>
 
-<P><STRONG><a name="[5d]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+<P><STRONG><a name="[6f]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
 
-<P><STRONG><a name="[5e]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+<P><STRONG><a name="[70]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
 
-<P><STRONG><a name="[5f]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+<P><STRONG><a name="[71]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
 
-<P><STRONG><a name="[60]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+<P><STRONG><a name="[72]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
 
-<P><STRONG><a name="[61]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
+<P><STRONG><a name="[73]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
 
-<P><STRONG><a name="[62]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
+<P><STRONG><a name="[74]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
 
-<P><STRONG><a name="[63]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000002))
+<P><STRONG><a name="[75]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000002))
 
-<P><STRONG><a name="[64]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+<P><STRONG><a name="[76]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
 
-<P><STRONG><a name="[65]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
+<P><STRONG><a name="[77]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
 
-<P><STRONG><a name="[66]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+<P><STRONG><a name="[78]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
 
-<P><STRONG><a name="[67]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+<P><STRONG><a name="[79]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
 
-<P><STRONG><a name="[68]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+<P><STRONG><a name="[7a]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
 
-<P><STRONG><a name="[69]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+<P><STRONG><a name="[7b]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
 
-<P><STRONG><a name="[6a]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+<P><STRONG><a name="[7c]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
 
-<P><STRONG><a name="[6b]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+<P><STRONG><a name="[7d]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
 
-<P><STRONG><a name="[6c]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
+<P><STRONG><a name="[7e]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
 
-<P><STRONG><a name="[6d]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
+<P><STRONG><a name="[7f]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
 
-<P><STRONG><a name="[6e]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
+<P><STRONG><a name="[80]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
 
-<P><STRONG><a name="[6f]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+<P><STRONG><a name="[81]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
 
-<P><STRONG><a name="[70]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
+<P><STRONG><a name="[82]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
 
-<P><STRONG><a name="[71]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
+<P><STRONG><a name="[83]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
 
 <P><STRONG><a name="[47]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
 </UL>
 
-<P><STRONG><a name="[72]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
+<P><STRONG><a name="[84]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
 
-<P><STRONG><a name="[73]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000007))
+<P><STRONG><a name="[85]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000007))
 
-<P><STRONG><a name="[74]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+<P><STRONG><a name="[86]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
 
-<P><STRONG><a name="[75]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000010))
+<P><STRONG><a name="[87]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000010))
 
-<P><STRONG><a name="[76]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A))
+<P><STRONG><a name="[88]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A))
 
-<P><STRONG><a name="[77]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
+<P><STRONG><a name="[89]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
 
-<P><STRONG><a name="[78]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
+<P><STRONG><a name="[8a]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
 
 <P><STRONG><a name="[3d]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
 <LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
 </UL>
 
-<P><STRONG><a name="[79]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+<P><STRONG><a name="[8b]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
 
 <P><STRONG><a name="[40]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry4.o(.ARM.Collect$$rtentry$$00000004))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32 + Unknown Stack Size
@@ -200,17 +200,17 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
 </UL>
 
-<P><STRONG><a name="[7a]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+<P><STRONG><a name="[8c]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[44]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 52 + Unknown Stack Size
-<LI>Call Chain = __rt_entry_main &rArr; main &rArr; GPIO::GPIO(GPIO_TypeDef*, PIN_numbers, GPIO_modes) &rArr; GPIO::ConfigGPIOPin()
+<BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
+<LI>Call Chain = __rt_entry_main &rArr; main &rArr; PWM::PWM(TIM_TypeDef*, TIM_CHANNELS, TIM_REMAP) &rArr; PWM::ConfigPWMPin() &rArr; GPIO::ConfigGPIOPin()
 </UL>
 <BR>[Calls]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 <LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[7b]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+<P><STRONG><a name="[8d]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
 
 <P><STRONG><a name="[4c]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
@@ -220,7 +220,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
 </UL>
 
-<P><STRONG><a name="[7c]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+<P><STRONG><a name="[8e]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
 
 <P><STRONG><a name="[48]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
@@ -442,13 +442,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[7d]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+<P><STRONG><a name="[8f]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
 <P><STRONG><a name="[4a]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[7e]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+<P><STRONG><a name="[90]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
 <P><STRONG><a name="[4b]"></a>__user_initial_stackheap</STRONG> (Thumb, 48 bytes, Stack size 24 bytes, sys_stackheap.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __user_initial_stackheap
@@ -459,104 +459,240 @@ Global Symbols
 <P><STRONG><a name="[39]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> sys_stackheap.o(.text)
 </UL>
-<P><STRONG><a name="[7f]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+<P><STRONG><a name="[91]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[80]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
+<P><STRONG><a name="[92]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
 
 <P><STRONG><a name="[49]"></a>_sys_exit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sys_exit.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
 </UL>
 
-<P><STRONG><a name="[4d]"></a>GPIO::Toogle_pin()</STRONG> (Thumb, 34 bytes, Stack size 4 bytes, gpio_1.o(i._ZN4GPIO10Toogle_pinEv))
-<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = GPIO::Toogle_pin()
+<P><STRONG><a name="[50]"></a>ADC::SetADCMode(ADC_CONVERSION_MODES)</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, adc.o(i._ZN3ADC10SetADCModeE20ADC_CONVERSION_MODES))
+<BR><BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::ADC(ADC_CHANNELS)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GetGPIOPinNumber()
-<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GetGPIOPort()
+
+<P><STRONG><a name="[4d]"></a>ADC::analogRead()</STRONG> (Thumb, 90 bytes, Stack size 4 bytes, adc.o(i._ZN3ADC10analogReadEv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = ADC::analogRead()
+</UL>
+<BR>[Calls]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::GetADCChannel()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[52]"></a>GPIO::GetGPIOMode()</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gpio_1.o(i._ZN4GPIO11GetGPIOModeEv))
-<BR><BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::ConfigGPIOPin()
+<P><STRONG><a name="[56]"></a>ADC::ADCCalibrate()</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, adc.o(i._ZN3ADC12ADCCalibrateEv))
+<BR><BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::ADC(ADC_CHANNELS)
 </UL>
 
-<P><STRONG><a name="[4e]"></a>GPIO::GetGPIOPort()</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gpio_1.o(i._ZN4GPIO11GetGPIOPortEv))
-<BR><BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::ConfigGPIOPin()
-<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::Config_PU_PD(PU_PD_enum)
-<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::Toogle_pin()
+<P><STRONG><a name="[4e]"></a>ADC::GetADCChannel()</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, adc.o(i._ZN3ADC13GetADCChannelEv))
+<BR><BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::ADC(ADC_CHANNELS)
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::analogRead()
 </UL>
 
-<P><STRONG><a name="[56]"></a>GPIO::SetGPIOMode(GPIO_modes)</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gpio_1.o(i._ZN4GPIO11SetGPIOModeE10GPIO_modes))
-<BR><BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GPIO(GPIO_TypeDef*, PIN_numbers, GPIO_modes)
+<P><STRONG><a name="[51]"></a>ADC::SetADCChannel(ADC_CHANNELS)</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, adc.o(i._ZN3ADC13SetADCChannelE12ADC_CHANNELS))
+<BR><BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::ADC(ADC_CHANNELS)
 </UL>
 
-<P><STRONG><a name="[54]"></a>GPIO::SetGPIOPort(GPIO_TypeDef*)</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gpio_1.o(i._ZN4GPIO11SetGPIOPortEP12GPIO_TypeDef))
-<BR><BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GPIO(GPIO_TypeDef*, PIN_numbers, GPIO_modes)
+<P><STRONG><a name="[4f]"></a>ADC::ADC(ADC_CHANNELS)</STRONG> (Thumb, 310 bytes, Stack size 16 bytes, adc.o(i._ZN3ADCC1E12ADC_CHANNELS))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ADC::ADC(ADC_CHANNELS) &rArr; GPIO::ConfigGPIOPin()
+</UL>
+<BR>[Calls]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::SetADCChannel(ADC_CHANNELS)
+<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::GetADCChannel()
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::ADCCalibrate()
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::SetADCMode(ADC_CONVERSION_MODES)
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::SetGPIOPinNumber(PIN_NUMBERS)
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::ConfigGPIOPin()
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::SetGPIOPort(GPIO_TypeDef*)
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::SetGPIOMode(GPIO_MODES)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[50]"></a>GPIO::Config_PU_PD(PU_PD_enum)</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, gpio_1.o(i._ZN4GPIO12Config_PU_PDE10PU_PD_enum))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GPIO::Config_PU_PD(PU_PD_enum)
-</UL>
-<BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GetGPIOPinNumber()
-<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GetGPIOPort()
-</UL>
-<BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GPIO(GPIO_TypeDef*, PIN_numbers, GPIO_modes)
+<P><STRONG><a name="[93]"></a>ADC::ADC__sub_object(ADC_CHANNELS)</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, adc.o(i._ZN3ADCC1E12ADC_CHANNELS), UNUSED)
+
+<P><STRONG><a name="[5a]"></a>PWM::GetPWMRemap()</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, pwm.o(i._ZN3PWM11GetPWMRemapEv))
+<BR><BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::ConfigPWMPin()
 </UL>
 
-<P><STRONG><a name="[51]"></a>GPIO::ConfigGPIOPin()</STRONG> (Thumb, 382 bytes, Stack size 8 bytes, gpio_1.o(i._ZN4GPIO13ConfigGPIOPinEv))
+<P><STRONG><a name="[5e]"></a>PWM::SetPWMRemap(TIM_REMAP)</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, pwm.o(i._ZN3PWM11SetPWMRemapE9TIM_REMAP))
+<BR><BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::PWM(TIM_TypeDef*, TIM_CHANNELS, TIM_REMAP)
+</UL>
+
+<P><STRONG><a name="[57]"></a>PWM::ConfigPWMPin()</STRONG> (Thumb, 1044 bytes, Stack size 8 bytes, pwm.o(i._ZN3PWM12ConfigPWMPinEv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = PWM::ConfigPWMPin() &rArr; GPIO::ConfigGPIOPin()
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::GetPWMRemap()
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer::GetTim()
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer::GetTIMChannel()
+<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::SetGPIOPinNumber(PIN_NUMBERS)
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::ConfigGPIOPin()
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::SetGPIOPort(GPIO_TypeDef*)
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::SetGPIOMode(GPIO_MODES)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::PWM(TIM_TypeDef*, TIM_CHANNELS, TIM_REMAP)
+</UL>
+
+<P><STRONG><a name="[5b]"></a>PWM::PWMInit()</STRONG> (Thumb, 196 bytes, Stack size 8 bytes, pwm.o(i._ZN3PWM7PWMInitEv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = PWM::PWMInit()
+</UL>
+<BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer::GetTIMChannel()
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::PWM(TIM_TypeDef*, TIM_CHANNELS, TIM_REMAP)
+</UL>
+
+<P><STRONG><a name="[6a]"></a>PWM::PWMWrite(unsigned short)</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, pwm.o(i._ZN3PWM8PWMWriteEt))
+<BR><BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[5c]"></a>PWM::PWM(TIM_TypeDef*, TIM_CHANNELS, TIM_REMAP)</STRONG> (Thumb, 52 bytes, Stack size 24 bytes, pwm.o(i._ZN3PWMC1EP11TIM_TypeDef12TIM_CHANNELS9TIM_REMAP))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = PWM::PWM(TIM_TypeDef*, TIM_CHANNELS, TIM_REMAP) &rArr; PWM::ConfigPWMPin() &rArr; GPIO::ConfigGPIOPin()
+</UL>
+<BR>[Calls]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::PWMInit()
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::ConfigPWMPin()
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::SetPWMRemap(TIM_REMAP)
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer::Timer(TIM_TypeDef*, TIM_CHANNELS, TIM_MODE_IO)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[94]"></a>PWM::PWM__sub_object(TIM_TypeDef*, TIM_CHANNELS, TIM_REMAP)</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, pwm.o(i._ZN3PWMC1EP11TIM_TypeDef12TIM_CHANNELS9TIM_REMAP), UNUSED)
+
+<P><STRONG><a name="[62]"></a>GPIO::GetGPIOMode()</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gpio_1.o(i._ZN4GPIO11GetGPIOModeEv))
+<BR><BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::ConfigGPIOPin()
+</UL>
+
+<P><STRONG><a name="[60]"></a>GPIO::GetGPIOPort()</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gpio_1.o(i._ZN4GPIO11GetGPIOPortEv))
+<BR><BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::tooglePin()
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::ConfigGPIOPin()
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::Config_PU_PD(PU_PD_ENUM)
+</UL>
+
+<P><STRONG><a name="[54]"></a>GPIO::SetGPIOMode(GPIO_MODES)</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gpio_1.o(i._ZN4GPIO11SetGPIOModeE10GPIO_MODES))
+<BR><BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::ADC(ADC_CHANNELS)
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::ConfigPWMPin()
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GPIO(GPIO_TypeDef*, PIN_NUMBERS, GPIO_MODES)
+</UL>
+
+<P><STRONG><a name="[52]"></a>GPIO::SetGPIOPort(GPIO_TypeDef*)</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gpio_1.o(i._ZN4GPIO11SetGPIOPortEP12GPIO_TypeDef))
+<BR><BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::ADC(ADC_CHANNELS)
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::ConfigPWMPin()
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GPIO(GPIO_TypeDef*, PIN_NUMBERS, GPIO_MODES)
+</UL>
+
+<P><STRONG><a name="[5f]"></a>GPIO::Config_PU_PD(PU_PD_ENUM)</STRONG> (Thumb, 72 bytes, Stack size 8 bytes, gpio_1.o(i._ZN4GPIO12Config_PU_PDE10PU_PD_ENUM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GPIO::Config_PU_PD(PU_PD_ENUM)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GetGPIOPinNumber()
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GetGPIOPort()
+</UL>
+<BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GPIO(GPIO_TypeDef*, PIN_NUMBERS, GPIO_MODES)
+</UL>
+
+<P><STRONG><a name="[55]"></a>GPIO::ConfigGPIOPin()</STRONG> (Thumb, 382 bytes, Stack size 8 bytes, gpio_1.o(i._ZN4GPIO13ConfigGPIOPinEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GPIO::ConfigGPIOPin()
 </UL>
-<BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GetGPIOPinNumber()
-<LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GetGPIOPort()
-<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GetGPIOMode()
+<BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GetGPIOPinNumber()
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GetGPIOPort()
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GetGPIOMode()
 </UL>
-<BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GPIO(GPIO_TypeDef*, PIN_numbers, GPIO_modes)
-</UL>
-
-<P><STRONG><a name="[4f]"></a>GPIO::GetGPIOPinNumber()</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gpio_1.o(i._ZN4GPIO16GetGPIOPinNumberEv))
-<BR><BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::ConfigGPIOPin()
-<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::Config_PU_PD(PU_PD_enum)
-<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::Toogle_pin()
+<BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::ADC(ADC_CHANNELS)
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::ConfigPWMPin()
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GPIO(GPIO_TypeDef*, PIN_NUMBERS, GPIO_MODES)
 </UL>
 
-<P><STRONG><a name="[55]"></a>GPIO::SetGPIOPinNumber(PIN_numbers)</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gpio_1.o(i._ZN4GPIO16SetGPIOPinNumberE11PIN_numbers))
-<BR><BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GPIO(GPIO_TypeDef*, PIN_numbers, GPIO_modes)
+<P><STRONG><a name="[61]"></a>GPIO::GetGPIOPinNumber()</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gpio_1.o(i._ZN4GPIO16GetGPIOPinNumberEv))
+<BR><BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::tooglePin()
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::ConfigGPIOPin()
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::Config_PU_PD(PU_PD_ENUM)
 </UL>
 
-<P><STRONG><a name="[53]"></a>GPIO::GPIO(GPIO_TypeDef*, PIN_numbers, GPIO_modes)</STRONG> (Thumb, 52 bytes, Stack size 20 bytes, gpio_1.o(i._ZN4GPIOC1EP12GPIO_TypeDef11PIN_numbers10GPIO_modes))
-<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = GPIO::GPIO(GPIO_TypeDef*, PIN_numbers, GPIO_modes) &rArr; GPIO::ConfigGPIOPin()
+<P><STRONG><a name="[53]"></a>GPIO::SetGPIOPinNumber(PIN_NUMBERS)</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gpio_1.o(i._ZN4GPIO16SetGPIOPinNumberE11PIN_NUMBERS))
+<BR><BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::ADC(ADC_CHANNELS)
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::ConfigPWMPin()
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GPIO(GPIO_TypeDef*, PIN_NUMBERS, GPIO_MODES)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::SetGPIOPinNumber(PIN_numbers)
-<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::ConfigGPIOPin()
-<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::Config_PU_PD(PU_PD_enum)
-<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::SetGPIOPort(GPIO_TypeDef*)
-<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::SetGPIOMode(GPIO_modes)
+
+<P><STRONG><a name="[63]"></a>GPIO::tooglePin()</STRONG> (Thumb, 34 bytes, Stack size 4 bytes, gpio_1.o(i._ZN4GPIO9tooglePinEv))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = GPIO::tooglePin()
+</UL>
+<BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GetGPIOPinNumber()
+<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GetGPIOPort()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[81]"></a>GPIO::GPIO__sub_object(GPIO_TypeDef*, PIN_numbers, GPIO_modes)</STRONG> (Thumb, 0 bytes, Stack size 20 bytes, gpio_1.o(i._ZN4GPIOC1EP12GPIO_TypeDef11PIN_numbers10GPIO_modes), UNUSED)
+<P><STRONG><a name="[64]"></a>GPIO::GPIO(GPIO_TypeDef*, PIN_NUMBERS, GPIO_MODES)</STRONG> (Thumb, 52 bytes, Stack size 20 bytes, gpio_1.o(i._ZN4GPIOC1EP12GPIO_TypeDef11PIN_NUMBERS10GPIO_MODES))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = GPIO::GPIO(GPIO_TypeDef*, PIN_NUMBERS, GPIO_MODES) &rArr; GPIO::ConfigGPIOPin()
+</UL>
+<BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::SetGPIOPinNumber(PIN_NUMBERS)
+<LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::ConfigGPIOPin()
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::Config_PU_PD(PU_PD_ENUM)
+<LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::SetGPIOPort(GPIO_TypeDef*)
+<LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::SetGPIOMode(GPIO_MODES)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
 
-<P><STRONG><a name="[58]"></a>SysClock::SysTickInit(SysTickBaseTimeEnum)</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, sysclock.o(i._ZN8SysClock11SysTickInitE19SysTickBaseTimeEnum))
+<P><STRONG><a name="[95]"></a>GPIO::GPIO__sub_object(GPIO_TypeDef*, PIN_NUMBERS, GPIO_MODES)</STRONG> (Thumb, 0 bytes, Stack size 20 bytes, gpio_1.o(i._ZN4GPIOC1EP12GPIO_TypeDef11PIN_NUMBERS10GPIO_MODES), UNUSED)
+
+<P><STRONG><a name="[67]"></a>Timer::SetTIMMode(TIM_MODE_IO)</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, timer.o(i._ZN5Timer10SetTIMModeE11TIM_MODE_IO))
+<BR><BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer::Timer(TIM_TypeDef*, TIM_CHANNELS, TIM_MODE_IO)
+</UL>
+
+<P><STRONG><a name="[59]"></a>Timer::GetTIMChannel()</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, timer.o(i._ZN5Timer13GetTIMChannelEv))
+<BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::PWMInit()
+<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::ConfigPWMPin()
+</UL>
+
+<P><STRONG><a name="[66]"></a>Timer::SetTIMChannel(TIM_CHANNELS)</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, timer.o(i._ZN5Timer13SetTIMChannelE12TIM_CHANNELS))
+<BR><BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer::Timer(TIM_TypeDef*, TIM_CHANNELS, TIM_MODE_IO)
+</UL>
+
+<P><STRONG><a name="[58]"></a>Timer::GetTim()</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, timer.o(i._ZN5Timer6GetTimEv))
+<BR><BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::ConfigPWMPin()
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer::Timer(TIM_TypeDef*, TIM_CHANNELS, TIM_MODE_IO)
+</UL>
+
+<P><STRONG><a name="[65]"></a>Timer::SetTim(TIM_TypeDef*)</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, timer.o(i._ZN5Timer6SetTimEP11TIM_TypeDef))
+<BR><BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer::Timer(TIM_TypeDef*, TIM_CHANNELS, TIM_MODE_IO)
+</UL>
+
+<P><STRONG><a name="[5d]"></a>Timer::Timer(TIM_TypeDef*, TIM_CHANNELS, TIM_MODE_IO)</STRONG> (Thumb, 142 bytes, Stack size 12 bytes, timer.o(i._ZN5TimerC1EP11TIM_TypeDef12TIM_CHANNELS11TIM_MODE_IO))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = Timer::Timer(TIM_TypeDef*, TIM_CHANNELS, TIM_MODE_IO)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer::SetTim(TIM_TypeDef*)
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer::GetTim()
+<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer::SetTIMChannel(TIM_CHANNELS)
+<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer::SetTIMMode(TIM_MODE_IO)
+</UL>
+<BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::PWM(TIM_TypeDef*, TIM_CHANNELS, TIM_REMAP)
+</UL>
+
+<P><STRONG><a name="[96]"></a>Timer::Timer__sub_object(TIM_TypeDef*, TIM_CHANNELS, TIM_MODE_IO)</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, timer.o(i._ZN5TimerC1EP11TIM_TypeDef12TIM_CHANNELS11TIM_MODE_IO), UNUSED)
+
+<P><STRONG><a name="[69]"></a>SysClock::SysTickInit(SysTickBaseTimeEnum)</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, sysclock.o(i._ZN8SysClock11SysTickInitE19SysTickBaseTimeEnum))
 <BR><BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[57]"></a>SysClock::SysClockInit()</STRONG> (Thumb, 130 bytes, Stack size 0 bytes, sysclock.o(i._ZN8SysClock12SysClockInitEv))
+<P><STRONG><a name="[68]"></a>SysClock::SysClockInit()</STRONG> (Thumb, 130 bytes, Stack size 0 bytes, sysclock.o(i._ZN8SysClock12SysClockInitEv))
 <BR><BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[59]"></a>SysClock::SysTickGetEvent()</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, sysclock.o(i._ZN8SysClock15SysTickGetEventEv))
+<P><STRONG><a name="[6b]"></a>SysClock::SysTickGetEvent()</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, sysclock.o(i._ZN8SysClock15SysTickGetEventEv))
 <BR><BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[38]"></a>main</STRONG> (Thumb, 162 bytes, Stack size 24 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = main &rArr; GPIO::GPIO(GPIO_TypeDef*, PIN_numbers, GPIO_modes) &rArr; GPIO::ConfigGPIOPin()
+<P><STRONG><a name="[38]"></a>main</STRONG> (Thumb, 190 bytes, Stack size 120 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = main &rArr; PWM::PWM(TIM_TypeDef*, TIM_CHANNELS, TIM_REMAP) &rArr; PWM::ConfigPWMPin() &rArr; GPIO::ConfigGPIOPin()
 </UL>
-<BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysClock::SysTickGetEvent()
-<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysClock::SysClockInit()
-<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysClock::SysTickInit(SysTickBaseTimeEnum)
-<LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GPIO(GPIO_TypeDef*, PIN_numbers, GPIO_modes)
-<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::Toogle_pin()
+<BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::ADC(ADC_CHANNELS)
+<LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::analogRead()
+<LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::PWM(TIM_TypeDef*, TIM_CHANNELS, TIM_REMAP)
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::PWMWrite(unsigned short)
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysClock::SysTickGetEvent()
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysClock::SysClockInit()
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysClock::SysTickInit(SysTickBaseTimeEnum)
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GPIO(GPIO_TypeDef*, PIN_NUMBERS, GPIO_MODES)
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::tooglePin()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>

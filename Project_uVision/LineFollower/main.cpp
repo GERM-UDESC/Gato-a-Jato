@@ -5,11 +5,15 @@
 #include "TIMER.h"
 #include "PWM.h"
 #include "SysClock.h"
+#include "ADC.h"
 
 uint16_t adc_convertion;
 
-
+//Como gerar um erro ao tentar configurar o mesmo pino para duas funções?
 //Como fazer uma função que configure só uma vez um remap para todos os canais do timer?
+//qual o melhor modo de obter a leitura dos sensores, concersão única ou contínua?
+
+//Aprender a usar atributos e funções estaticas
 
 int main()
 {
@@ -18,31 +22,24 @@ int main()
 	Board.SysTickInit(BASE_100ms);
 
 	GPIO LED_placa(GPIOC, PIN13, GP_OUTPUT_PUSH_PULL_2MHZ);
+	ADC ADC_PB1(ADC_CH9);
 	
-	//how to use adc:
-	//1. calibration
-	//2. select a source for adc
-	//3. adc enable
-	//4. start convertion
-	GPIO ADC_test(GPIOA, PIN0, INPUT_ANALOG);
-	RCC->APB2ENR |= (1<<9) | (1<<10); //Enable the clock of adc1 and adc2 peripherals
-	ADC1->CR2 |= (1<<0);							//Enable the ADON bit, the first time is just to enable, the next one is to start converting
-	for(uint8_t i = 0; i < 50; i++);	//It's needed to wait at least 2 ADC cycles before starting the calibration
-	ADC1->CR2 |= (1<<2);							//Start the calibration
-	while (ADC1->CR2 & (1<<2));				//Wait until the calibration stops
-	
-	//ADC1->CR1 |= (1<<8);							//enable the scan mode (multichannel mode)
-	ADC1->CR2 |= (1<<22);							//Start conversion of regular channels 
-	ADC1->CR2 |= (1<<1);							//continuous conversion mode
-	
-	ADC1->CR2 |= (1<<0);							//now start converting
-	
+	PWM LED_Verde(TIM1, TIM_CH1, NO_REMAP);
+	PWM LED_Branco(TIM1, TIM_CH2, NO_REMAP);
+	PWM LED_Amarelo(TIM1, TIM_CH3, NO_REMAP);
+	PWM LED_Vermelho(TIM1, TIM_CH4, NO_REMAP);
+		
 	while(1)
 	{
-		//while(ADC1->SR & (1<<1));
-		//ADC1->SR &= ~(1<<1);						//Clear the EOC (End Of Conversion) flag
-		adc_convertion = ADC1->DR;			//save the value of the convertion
-		if (Board.SysTickGetEvent()) LED_placa.Toogle_pin();
+		adc_convertion = 16*(ADC_PB1.analogRead());			//save the value of the convertion
+		if (adc_convertion > 65300) adc_convertion = 65300;
+		else if (adc_convertion <= 0) adc_convertion = 0;
+		LED_Verde.PWMWrite(adc_convertion);
+		LED_Amarelo.PWMWrite(adc_convertion);
+		LED_Branco.PWMWrite(adc_convertion);
+		LED_Vermelho.PWMWrite(adc_convertion);
+
+		if (Board.SysTickGetEvent()) LED_placa.tooglePin();
 	}
 }
 

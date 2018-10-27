@@ -10,10 +10,10 @@ typedef enum{
 }TIM_MODE_IO;
 
 typedef enum{
-	CH1 = 0,
-	CH2,
-	CH3,
-	CH4,
+	TIM_CH1 = 0,
+	TIM_CH2,
+	TIM_CH3,
+	TIM_CH4,
 }TIM_CHANNELS;
 
 /*
