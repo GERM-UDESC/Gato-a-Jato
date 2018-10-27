@@ -53,9 +53,13 @@ typedef enum{				//This values should be written in the ODR register according t
 	PULL_UP = 1,
 }PU_PD_enum;
 
+//typedef enum{
+//	PIN_NOT_USED,
+//	PIN_IS_USED,
+//}USED_PINS_ENUM;
+
 
 //--------------------------------------------CLASS------------------------------------------------------
-
 
 class GPIO
 {
@@ -66,6 +70,8 @@ class GPIO
 		GPIO_modes GPIOMode;
 		PU_PD_enum PU_PD;
 		bool GPIOState;							//in case it's output
+		
+		//static int UsedPins[NUMBER_OF_PINS];
 
 
 		protected:

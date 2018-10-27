@@ -6,6 +6,8 @@
 #include "PWM.h"
 #include "SysClock.h"
 
+uint16_t adc_convertion;
+
 
 //Como fazer uma função que configure só uma vez um remap para todos os canais do timer?
 
@@ -17,27 +19,30 @@ int main()
 
 	GPIO LED_placa(GPIOC, PIN13, GP_OUTPUT_PUSH_PULL_2MHZ);
 	
-	//PWM testePWM(TIM3,CH1,PARTIAL_REMAP2);  //This one PB4 HAS A PROBLEM, timer is ok because all other channels are working fine
-																					//The compare register is also right configured
-	//PWM testePWM(TIM2,CH1,PARTIAL_REMAP1); //PA15
-	//PWM testePWM1(TIM2,CH2,PARTIAL_REMAP1);	//PB3
+	//how to use adc:
+	//1. calibration
+	//2. select a source for adc
+	//3. adc enable
+	//4. start convertion
+	GPIO ADC_test(GPIOA, PIN0, INPUT_ANALOG);
+	RCC->APB2ENR |= (1<<9) | (1<<10); //Enable the clock of adc1 and adc2 peripherals
+	ADC1->CR2 |= (1<<0);							//Enable the ADON bit, the first time is just to enable, the next one is to start converting
+	for(uint8_t i = 0; i < 50; i++);	//It's needed to wait at least 2 ADC cycles before starting the calibration
+	ADC1->CR2 |= (1<<2);							//Start the calibration
+	while (ADC1->CR2 & (1<<2));				//Wait until the calibration stops
 	
+	//ADC1->CR1 |= (1<<8);							//enable the scan mode (multichannel mode)
+	ADC1->CR2 |= (1<<22);							//Start conversion of regular channels 
+	ADC1->CR2 |= (1<<1);							//continuous conversion mode
 	
-	PWM testePWM(TIM2,CH1,FULL_REMAP);
-	PWM testePWM1(TIM2,CH2,FULL_REMAP);
-	PWM testePWM2(TIM2,CH3,FULL_REMAP);
-	PWM testePWM3(TIM2,CH4,FULL_REMAP);
-	testePWM.PWMWrite(10000);
-	testePWM1.PWMWrite(25000);
-	testePWM2.PWMWrite(40000);
-	testePWM3.PWMWrite(55000);
+	ADC1->CR2 |= (1<<0);							//now start converting
 	
 	while(1)
 	{
-		if (Board.SysTickGetEvent())
-		{
-			LED_placa.Toogle_pin();
-		}
+		//while(ADC1->SR & (1<<1));
+		//ADC1->SR &= ~(1<<1);						//Clear the EOC (End Of Conversion) flag
+		adc_convertion = ADC1->DR;			//save the value of the convertion
+		if (Board.SysTickGetEvent()) LED_placa.Toogle_pin();
 	}
 }
 

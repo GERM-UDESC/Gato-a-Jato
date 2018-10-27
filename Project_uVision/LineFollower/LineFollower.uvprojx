@@ -441,6 +441,16 @@
               <FileType>5</FileType>
               <FilePath>.\PWM.h</FilePath>
             </File>
+            <File>
+              <FileName>ADC.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\ADC.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>ADC.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\ADC.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -15,6 +15,12 @@ GPIO::GPIO(GPIO_TypeDef *GPIOPort, PIN_numbers GPIOPinNumber, GPIO_modes GPIOMod
 //------------------------Config_pin-----------------------------------------------
 void GPIO::ConfigGPIOPin()
 {
+//	#if (UsedPins[GetGPIOPinNumber()] == PIN_IS_USED)
+//	{
+//		#error "Pins is already in use"
+//	}
+//	#else UsedPins[GetGPIOPinNumber()] = PIN_IS_USED;
+	
 	/***************************************************************/
 	/*The microcontroller by default reserve 5 pins (PA13,PA14,PA15,PB3 and PB4) for JTAG + SW
 		I'm using only St-link (wich uses only SW pins(PA13 and PA14)) and I want to use PA15, PB3 and PB4 in my project,
