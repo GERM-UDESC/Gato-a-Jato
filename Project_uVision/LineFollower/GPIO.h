@@ -61,40 +61,39 @@ class GPIO
 {
 		private:
 		//Atributes
-		GPIO_TypeDef *port;					
-		PIN_numbers pinNumber;
-		GPIO_modes mode;
+		GPIO_TypeDef *GPIOPort;					
+		PIN_numbers GPIOPinNumber;
+		GPIO_modes GPIOMode;
 		PU_PD_enum PU_PD;
-		bool state;							//in case it's output
+		bool GPIOState;							//in case it's output
 
 
 		protected:
 		//Setters for child classes
-		void SetPort(GPIO_TypeDef *port);
-		void SetPinNumber(PIN_numbers pinNumber);
-		void SetMode(GPIO_modes mode);
+		void SetGPIOPort(GPIO_TypeDef *GPIOPort);
+		void SetGPIOPinNumber(PIN_numbers GPIOPinNumber);
+		void SetGPIOMode(GPIO_modes GPIOMode);
 		
 		//Methods
-		void ConfigPin();
+		void ConfigGPIOPin();
 			
 		public:
 		//Constructors
 		GPIO(){};
-		GPIO(GPIO_TypeDef *port, PIN_numbers pinNumber, GPIO_modes mode);
+		GPIO(GPIO_TypeDef *GPIOPort, PIN_numbers GPIOPinNumber, GPIO_modes GPIOMode);
 		
 		//Getters
-		GPIO_TypeDef* GetPort();
-		PIN_numbers GetPinNumber();
-		GPIO_modes GetMode();
-		PU_PD_enum GetPuPd();
+		GPIO_TypeDef* GetGPIOPort();
+		PIN_numbers GetGPIOPinNumber();
+		GPIO_modes GetGPIOMode();
+		PU_PD_enum GetGPIOPuPd();
+		bool GetGPIOState();
 
 		//Public Methods
 		void Config_PU_PD(PU_PD_enum PU_PD);	//By defaul, PD is choosen, this functions allows the user to change to PU/PD;
-		void Write_pin(bool state);
+		void Write_pin(bool GPIOState);
 		void Toogle_pin();
 		bool Read_pin();
-
-		
 };
 #endif
 

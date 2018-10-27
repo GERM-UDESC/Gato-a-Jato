@@ -40,8 +40,13 @@ class Timer : protected GPIO
 {
 	private:
 		//Atributes
-		TIM_CHANNELS channel;
-		TIM_MODE_IO mode;
+//		static TIM_REMAP TIM1Remap;
+//		static TIM_REMAP TIM2Remap;
+//		static TIM_REMAP TIM3Remap;
+//		static TIM_REMAP TIM4Remap;
+		TIM_REMAP TIMRemap;
+		TIM_CHANNELS TIMChannel;
+		TIM_MODE_IO TIMMode;
 		
 	protected:
 		//Atributes
@@ -50,18 +55,22 @@ class Timer : protected GPIO
 		Timer(){};					//Default Constructor 
 		
 		//Setters
-		void SetTimer(TIM_TypeDef *TIM);
-		void SetChannel(TIM_CHANNELS channel);
-		void SetMode(TIM_MODE_IO mode);
+		void SetTim(TIM_TypeDef *TIM);
+		void SetTIMChannel(TIM_CHANNELS TIMChannel);
+		void SetTIMMode(TIM_MODE_IO TIMMode);
 		
 	public:
 		//Constructor
-		Timer(TIM_TypeDef *TIM, TIM_CHANNELS channel, TIM_MODE_IO mode);		
+		Timer(TIM_TypeDef *TIM, TIM_CHANNELS TIMChannel, TIM_MODE_IO TIMMode);		
+		
+		//Public Setters
+		void SetTIMRemap(TIM_REMAP TIMRemap);
 		
 		//Getters 
-		TIM_TypeDef* GetTimer();
-		TIM_CHANNELS get_channel();
-		TIM_MODE_IO get_mode();
+		TIM_TypeDef* GetTim();
+		TIM_CHANNELS GetTIMChannel();
+		TIM_MODE_IO GetTIMMode();
+		TIM_REMAP GetTIMRemap(TIM_TypeDef *TIM);
 		
 		//Methods
 		void TimerInit();

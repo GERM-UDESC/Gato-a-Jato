@@ -4,43 +4,71 @@
 //and after that enable the clock of the respective timer
 Timer::Timer(TIM_TypeDef *TIM, TIM_CHANNELS channel, TIM_MODE_IO mode)
 {
-	SetTimer(TIM);
-	SetChannel(channel);
-	SetMode(mode);
+	SetTim(TIM);
+	SetTIMChannel(channel);
+	SetTIMMode(mode);
 	
 	//Enable the clock of the respective timer
-	if (GetTimer() == TIM1)			RCC->APB2ENR |= (1<<11);
-	else if(GetTimer() == TIM2)	RCC->APB1ENR |= (1<<0);
-	else if(GetTimer() == TIM3)	RCC->APB1ENR |= (1<<1);
-	else if(GetTimer() == TIM4)	RCC->APB1ENR |= (1<<2);
+	if (GetTim() == TIM1)			RCC->APB2ENR |= (1<<11);
+	else if(GetTim() == TIM2)	RCC->APB1ENR |= (1<<0);
+	else if(GetTim() == TIM3)	RCC->APB1ENR |= (1<<1);
+	else if(GetTim() == TIM4)	RCC->APB1ENR |= (1<<2);
 }
 
 
 //-------------------------------SETTERS------------------------------------
-void Timer::SetTimer(TIM_TypeDef *TIM)
+void Timer::SetTim(TIM_TypeDef *TIM)
 {
 	this->TIM = TIM;
 }
-void Timer::SetChannel(TIM_CHANNELS channel)
+void Timer::SetTIMChannel(TIM_CHANNELS TIMChannel)
 {
-	this->channel = channel;
+	this->TIMChannel = TIMChannel;
 }
-void Timer::SetMode(TIM_MODE_IO mode)
+void Timer::SetTIMMode(TIM_MODE_IO TIMMode)
 {
-	this->mode = mode;
+	this->TIMMode = TIMMode;
+}
+void Timer::SetTIMRemap(TIM_REMAP TIMRemap)
+{
+	this->TIMRemap = TIMRemap;
+//	RCC->APB2ENR |= (1<<0);
+//	if (GetTim() == TIM1)
+//	{
+//		AFIO->MAPR |= ((TIMRemap)<<6); //Select the remaping configuration
+//	}
+//	else if (GetTim() == TIM2)
+//	{
+//		AFIO->MAPR |= ((TIMRemap)<<8); //Select the remaping configuration
+//	}
+//	else if (GetTim() == TIM3)
+//	{
+//		AFIO->MAPR |= ((TIMRemap)<<10); //Select the remaping configuration
+//	}
+//	else if (GetTim() == TIM4)
+//	{
+//		if (TIMRemap == FULL_REMAP) AFIO->MAPR |= ((TIMRemap)<<12); //Select the remaping configuration
+//		else AFIO->MAPR &= ~(1<<12);
+//	}	
+//	
 }
 
 //-------------------------------GETTERS------------------------------------
-TIM_TypeDef* Timer::GetTimer()
+TIM_TypeDef* Timer::GetTim()
 {
-	return this->TIM;
+	return (this->TIM);
 }
-TIM_CHANNELS Timer::get_channel()
+TIM_CHANNELS Timer::GetTIMChannel()
 {
-	return (this->channel);
+	return (this->TIMChannel);
 }
 
-TIM_MODE_IO Timer::get_mode()
+TIM_MODE_IO Timer::GetTIMMode()
 {
-	return (this->mode);
+	return (this->TIMMode);
+}
+
+TIM_REMAP Timer::GetTIMRemap(TIM_TypeDef *TIM)
+{
+	return (this->TIMRemap);
 }
