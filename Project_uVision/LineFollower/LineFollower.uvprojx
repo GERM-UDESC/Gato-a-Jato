@@ -451,6 +451,16 @@
               <FileType>5</FileType>
               <FilePath>.\ADC.h</FilePath>
             </File>
+            <File>
+              <FileName>ENCODER.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\ENCODER.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>ENCODER.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\ENCODER.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

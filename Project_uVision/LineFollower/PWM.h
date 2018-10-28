@@ -8,7 +8,7 @@ class PWM : protected Timer
 		volatile uint16_t *PWM_WriteAddress;			//Pointer to the CCRx Register
 
 		//Methods
-		void ConfigPWMPin();
+		void ConfigPWM();
 		void PWMInit();				//This function initialize the PWM with no prescaler and the reset value at ARR
 		
 		//Setters

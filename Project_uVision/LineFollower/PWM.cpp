@@ -6,13 +6,13 @@ PWM::PWM(TIM_TypeDef *TIM, TIM_CHANNELS channel, TIM_REMAP PWMremap) : Timer(TIM
 {	
 	SetPWMRemap(PWMremap);
 	
-	ConfigPWMPin();
+	ConfigPWM();
 	PWMInit();
 }
 
 //******************************************************************************************************************************
 
-void PWM::ConfigPWMPin()	
+void PWM::ConfigPWM()	
 {
 	//Remap will make no efect at Timer1
 	if (GetTim() == TIM1) 

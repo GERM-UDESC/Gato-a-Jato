@@ -6,3 +6,4 @@
 .\objects\main.o: PWM.h
 .\objects\main.o: SysClock.h
 .\objects\main.o: ADC.h
+.\objects\main.o: ENCODER.h

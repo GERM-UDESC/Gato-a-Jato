@@ -6,8 +6,12 @@
 #include "PWM.h"
 #include "SysClock.h"
 #include "ADC.h"
+#include "ENCODER.h"
 
-uint16_t adc_convertion;
+uint16_t ticks;
+bool direction;
+
+TIM_REMAP Timer::TIM1Remap = NO_REMAP;
 
 //Como gerar um erro ao tentar configurar o mesmo pino para duas funções?
 //Como fazer uma função que configure só uma vez um remap para todos os canais do timer?
@@ -22,24 +26,15 @@ int main()
 	Board.SysTickInit(BASE_100ms);
 
 	GPIO LED_placa(GPIOC, PIN13, GP_OUTPUT_PUSH_PULL_2MHZ);
-	ADC ADC_PB1(ADC_CH9);
-	
-	PWM LED_Verde(TIM1, TIM_CH1, NO_REMAP);
-	PWM LED_Branco(TIM1, TIM_CH2, NO_REMAP);
-	PWM LED_Amarelo(TIM1, TIM_CH3, NO_REMAP);
-	PWM LED_Vermelho(TIM1, TIM_CH4, NO_REMAP);
+	Encoder ENCTest(TIM3);
 		
 	while(1)
 	{
-		adc_convertion = 16*(ADC_PB1.analogRead());			//save the value of the convertion
-		if (adc_convertion > 65300) adc_convertion = 65300;
-		else if (adc_convertion <= 0) adc_convertion = 0;
-		LED_Verde.PWMWrite(adc_convertion);
-		LED_Amarelo.PWMWrite(adc_convertion);
-		LED_Branco.PWMWrite(adc_convertion);
-		LED_Vermelho.PWMWrite(adc_convertion);
+		ticks = ENCTest.GetEncTicks();
+		direction = ENCTest.GetEncDirection();
 
 		if (Board.SysTickGetEvent()) LED_placa.tooglePin();
 	}
+	
 }
 

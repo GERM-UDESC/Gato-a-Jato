@@ -40,10 +40,11 @@ class Timer : protected GPIO
 {
 	private:
 		//Atributes
-//		static TIM_REMAP TIM1Remap;
-//		static TIM_REMAP TIM2Remap;
-//		static TIM_REMAP TIM3Remap;
-//		static TIM_REMAP TIM4Remap;
+		static TIM_REMAP TIM1Remap;
+		static TIM_REMAP TIM2Remap;
+		static TIM_REMAP TIM3Remap;
+		static TIM_REMAP TIM4Remap;
+		
 		TIM_REMAP TIMRemap;
 		TIM_CHANNELS TIMChannel;
 		TIM_MODE_IO TIMMode;

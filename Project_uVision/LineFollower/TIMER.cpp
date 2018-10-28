@@ -7,6 +7,7 @@ Timer::Timer(TIM_TypeDef *TIM, TIM_CHANNELS channel, TIM_MODE_IO mode)
 	SetTim(TIM);
 	SetTIMChannel(channel);
 	SetTIMMode(mode);
+	Timer::TIM1Remap = NO_REMAP;
 	
 	//Enable the clock of the respective timer
 	if (GetTim() == TIM1)			RCC->APB2ENR |= (1<<11);
@@ -32,25 +33,6 @@ void Timer::SetTIMMode(TIM_MODE_IO TIMMode)
 void Timer::SetTIMRemap(TIM_REMAP TIMRemap)
 {
 	this->TIMRemap = TIMRemap;
-//	RCC->APB2ENR |= (1<<0);
-//	if (GetTim() == TIM1)
-//	{
-//		AFIO->MAPR |= ((TIMRemap)<<6); //Select the remaping configuration
-//	}
-//	else if (GetTim() == TIM2)
-//	{
-//		AFIO->MAPR |= ((TIMRemap)<<8); //Select the remaping configuration
-//	}
-//	else if (GetTim() == TIM3)
-//	{
-//		AFIO->MAPR |= ((TIMRemap)<<10); //Select the remaping configuration
-//	}
-//	else if (GetTim() == TIM4)
-//	{
-//		if (TIMRemap == FULL_REMAP) AFIO->MAPR |= ((TIMRemap)<<12); //Select the remaping configuration
-//		else AFIO->MAPR &= ~(1<<12);
-//	}	
-//	
 }
 
 //-------------------------------GETTERS------------------------------------
