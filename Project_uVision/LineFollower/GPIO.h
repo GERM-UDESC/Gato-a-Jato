@@ -7,6 +7,7 @@
 
 //--------------------------------------------ENUMs------------------------------------------------------
 
+
 //All possibles operation modes are enumerated here
 typedef enum{
 	INPUT_ANALOG = 0x0,
@@ -53,6 +54,49 @@ typedef enum{				//This values should be written in the ODR register according t
 	PULL_UP = 1,
 }PU_PD_ENUM;
 
+
+//---------------------------Hardware Abstraction Layers-----------------------------------------
+typedef enum{
+	PA0,
+	PA1,
+	PA2,
+	PA3,
+	PA4,
+	PA5,
+	PA6,
+	PA7,
+	PA8,
+	PA9,
+	PA10,
+	PA11,
+	PA12,
+	PA15,
+	PB0,
+	PB1,
+	PB3,
+	PB4,
+	PB5,
+	PB6,
+	PB7,
+	PB8,
+	PB9,
+	PB10,
+	PB11,
+	PB12,
+	PB13,
+	PB14,
+	PB15,
+	PC13,
+	PC14,
+	PC15,
+	NUM_OF_IOs,	
+}GPIO_IO_ENUM;
+
+typedef struct{
+	GPIO_TypeDef *PortTest;
+	PIN_NUMBERS pinNumberTest;
+}GPIO_STRUCT;
+
 //typedef enum{
 //	PIN_NOT_USED,
 //	PIN_IS_USED,
@@ -67,11 +111,12 @@ class GPIO
 		//Atributes
 		GPIO_TypeDef *GPIOPort;					
 		PIN_NUMBERS GPIOPinNumber;
-		GPIO_MODES GPIOMode;
+		
+		//GPIO_STRUCT GPIO_PortPin;		//Save the port and pin
+		GPIO_MODES GPIOMode;				//Save the mode
 		PU_PD_ENUM PU_PD;
 		bool GPIOState;							//in case it's output
 		
-		//static int UsedPins[NUMBER_OF_PINS];
 
 
 		protected:
@@ -86,6 +131,7 @@ class GPIO
 		public:
 		//Constructors
 		GPIO(){};
+		GPIO(GPIO_IO_ENUM IO_Pin, GPIO_MODES GPIOMode);
 		GPIO(GPIO_TypeDef *GPIOPort, PIN_NUMBERS GPIOPinNumber, GPIO_MODES GPIOMode);
 		
 		//Getters

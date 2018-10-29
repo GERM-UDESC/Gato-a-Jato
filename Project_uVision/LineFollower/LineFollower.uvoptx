@@ -152,9 +152,9 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>29</LineNumber>
+          <LineNumber>28</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134219660</Address>
+          <Address>134219096</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -163,35 +163,40 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>.\main.cpp</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\LineFollower\main.cpp\29</Expression>
+          <Expression>\\LineFollower\main.cpp\28</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>31</LineNumber>
+          <LineNumber>32</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>0</Address>
+          <Address>134219106</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>0</BreakIfRCount>
+          <BreakIfRCount>1</BreakIfRCount>
           <Filename>.\main.cpp</Filename>
           <ExecCommand></ExecCommand>
-          <Expression></Expression>
+          <Expression>\\LineFollower\main.cpp\32</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>ticks,0x0A</ItemText>
+          <ItemText>GPIO_PORTS_PINS,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>direction,0x0A</ItemText>
+          <ItemText>direction</ItemText>
+        </Ww>
+        <Ww>
+          <count>2</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>PORTS</ItemText>
         </Ww>
       </WatchWindow1>
       <MemoryWindow1>
@@ -248,6 +253,10 @@
         <Entry>
           <Name>System Viewer\GPIOA</Name>
           <WinId>35904</WinId>
+        </Entry>
+        <Entry>
+          <Name>System Viewer\GPIOC</Name>
+          <WinId>35903</WinId>
         </Entry>
         <Entry>
           <Name>System Viewer\TIM3</Name>

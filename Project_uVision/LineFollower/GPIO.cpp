@@ -1,6 +1,58 @@
+#include "Micro.h"
 #include "GPIO.h"
 
+const GPIO_STRUCT GPIO_PORTS_PINS[NUM_OF_IOs] =
+{
+  {GPIOA, PIN0},    
+	{GPIOA, PIN1},
+	{GPIOA, PIN2},
+	{GPIOA, PIN3},
+	{GPIOA, PIN4},
+	{GPIOA, PIN5},
+	{GPIOA, PIN6},
+	{GPIOA, PIN7},
+	{GPIOA, PIN8},
+	{GPIOA, PIN9},
+	{GPIOA, PIN10},
+	{GPIOA, PIN11},
+	{GPIOA, PIN12},
+	{GPIOA, PIN15},
+	{GPIOB, PIN0}, 
+	{GPIOB, PIN1}, 
+	{GPIOB, PIN3}, 
+	{GPIOB, PIN4}, 
+	{GPIOB, PIN5}, 
+	{GPIOB, PIN6}, 
+	{GPIOB, PIN7}, 
+	{GPIOB, PIN8}, 
+	{GPIOB, PIN9}, 
+	{GPIOB, PIN10}, 
+	{GPIOB, PIN11}, 
+	{GPIOB, PIN12}, 
+	{GPIOB, PIN13}, 
+	{GPIOB, PIN14}, 
+	{GPIOB, PIN15},
+	{GPIOC, PIN13},		//Board Led	- Carefull
+	{GPIOC, PIN14}, 	//Carefull
+	{GPIOC, PIN15}, 	//Carefull
+ };
+
 //Construtores
+GPIO::GPIO(GPIO_IO_ENUM IO_Pin, GPIO_MODES GPIOMode)
+{
+//	this->GPIO_PortPin.Port = GPIO_PORTS_PINS[IO_Pin].Port;
+//	this->GPIO_PortPin.pinNumber = GPIO_PORTS_PINS[IO_Pin].pinNumber;
+//	this->GPIOPort = GPIO_PORTS_PINS[IO_Pin].Port;
+//	this->GPIOPinNumber = GPIO_PORTS_PINS[IO_Pin].pinNumber;
+	this->GPIOPort = GPIO_PORTS_PINS[PC13].PortTest;
+	this->GPIOPinNumber = GPIO_PORTS_PINS[PC13].pinNumberTest;
+	SetGPIOMode(GPIOMode);
+	
+	ConfigGPIOPin();
+	Config_PU_PD(PULL_DOWN);		//Config PULL_DOWN as default
+
+}
+
 GPIO::GPIO(GPIO_TypeDef *GPIOPort, PIN_NUMBERS GPIOPinNumber, GPIO_MODES GPIOMode)
 {
 		SetGPIOPort(GPIOPort);					
@@ -121,10 +173,12 @@ void GPIO::SetGPIOMode(GPIO_MODES GPIOMode)
 //-------------------------------GETTERS------------------------------------
 GPIO_TypeDef* GPIO::GetGPIOPort()
 {
+	//return this->GPIO_PortPin.Port;
 	return this->GPIOPort;
 }
 PIN_NUMBERS GPIO::GetGPIOPinNumber()
 {
+	//return this->GPIO_PortPin.pinNumber;
 	return this->GPIOPinNumber;
 }
 GPIO_MODES GPIO::GetGPIOMode()

@@ -7,7 +7,6 @@ Timer::Timer(TIM_TypeDef *TIM, TIM_CHANNELS channel, TIM_MODE_IO mode)
 	SetTim(TIM);
 	SetTIMChannel(channel);
 	SetTIMMode(mode);
-	Timer::TIM1Remap = NO_REMAP;
 	
 	//Enable the clock of the respective timer
 	if (GetTim() == TIM1)			RCC->APB2ENR |= (1<<11);
