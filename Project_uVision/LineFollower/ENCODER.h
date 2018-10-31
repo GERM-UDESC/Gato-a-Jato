@@ -3,6 +3,8 @@
 class Encoder : protected Timer
 {
 	private:
+		GPIO EncCH1;
+		GPIO EncCH2;
 		void ConfigEncoder();
 			
 	public:

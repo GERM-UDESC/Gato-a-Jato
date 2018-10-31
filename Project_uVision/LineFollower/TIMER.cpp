@@ -15,7 +15,6 @@ Timer::Timer(TIM_TypeDef *TIM, TIM_CHANNELS channel, TIM_MODE_IO mode)
 	else if(GetTim() == TIM4)	RCC->APB1ENR |= (1<<2);
 }
 
-
 //-------------------------------SETTERS------------------------------------
 void Timer::SetTim(TIM_TypeDef *TIM)
 {
@@ -49,7 +48,4 @@ TIM_MODE_IO Timer::GetTIMMode()
 	return (this->TIMMode);
 }
 
-TIM_REMAP Timer::GetTIMRemap(TIM_TypeDef *TIM)
-{
-	return (this->TIMRemap);
-}
+

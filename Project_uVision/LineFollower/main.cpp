@@ -4,9 +4,9 @@
 #include "SysClock.h"
 #include "GPIO.h"
 #include "TIMER.h"
-#include "PWM.h"
-#include "ADC.h"
-#include "ENCODER.h"
+//#include "PWM.h"
+//#include "ADC.h"
+//#include "ENCODER.h"
 
 uint16_t ticks = 0;
 bool direction = 0;
@@ -19,6 +19,8 @@ bool direction = 0;
 
 //Aprender a usar atributos e funções estaticas
 
+//bool GPIO::UsedPins[NUM_OF_IOs];
+
 int main()
 {
 	SysClock Board;
@@ -26,7 +28,6 @@ int main()
 	Board.SysTickInit(BASE_100ms);
 
 	GPIO LED_placa(PC13, GP_OUTPUT_PUSH_PULL_2MHZ);
-	//GPIO LED_placa(GPIOC, PIN13, GP_OUTPUT_PUSH_PULL_2MHZ);
 	//Encoder ENCTest(TIM3);
 		
 	while(1)
@@ -39,3 +40,12 @@ int main()
 	
 }
 
+void RCC_IRQHandler()
+{
+	
+}
+
+void RTCAlarm_IRQHandler()
+{
+
+}

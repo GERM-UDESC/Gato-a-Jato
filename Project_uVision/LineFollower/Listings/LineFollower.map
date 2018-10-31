@@ -16,34 +16,30 @@ Section Cross References
     gpio_1.o(i._ZN4GPIO13ConfigGPIOPinEv) refers to gpio_1.o(i._ZN4GPIO11GetGPIOPortEv) for GPIO::GetGPIOPort()
     gpio_1.o(i._ZN4GPIO13ConfigGPIOPinEv) refers to gpio_1.o(i._ZN4GPIO16GetGPIOPinNumberEv) for GPIO::GetGPIOPinNumber()
     gpio_1.o(i._ZN4GPIO13ConfigGPIOPinEv) refers to gpio_1.o(i._ZN4GPIO11GetGPIOModeEv) for GPIO::GetGPIOMode()
+    gpio_1.o(i._ZN4GPIO14SetGPIOPortPinE12GPIO_IO_ENUM) refers to gpio_1.o(.constdata) for GPIO_PORTS_PINS
     gpio_1.o(i._ZN4GPIO9tooglePinEv) refers to gpio_1.o(i._ZN4GPIO11GetGPIOPortEv) for GPIO::GetGPIOPort()
     gpio_1.o(i._ZN4GPIO9tooglePinEv) refers to gpio_1.o(i._ZN4GPIO16GetGPIOPinNumberEv) for GPIO::GetGPIOPinNumber()
+    gpio_1.o(i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES) refers to gpio_1.o(i._ZN4GPIO14SetGPIOPortPinE12GPIO_IO_ENUM) for GPIO::SetGPIOPortPin(GPIO_IO_ENUM)
     gpio_1.o(i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES) refers to gpio_1.o(i._ZN4GPIO11SetGPIOModeE10GPIO_MODES) for GPIO::SetGPIOMode(GPIO_MODES)
     gpio_1.o(i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES) refers to gpio_1.o(i._ZN4GPIO13ConfigGPIOPinEv) for GPIO::ConfigGPIOPin()
     gpio_1.o(i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES) refers to gpio_1.o(i._ZN4GPIO12Config_PU_PDE10PU_PD_ENUM) for GPIO::Config_PU_PD(PU_PD_ENUM)
-    gpio_1.o(i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES) refers to gpio_1.o(.constdata) for GPIO_PORTS_PINS
-    gpio_1.o(i._ZN4GPIOC1EP12GPIO_TypeDef11PIN_NUMBERS10GPIO_MODES) refers to gpio_1.o(i._ZN4GPIO11SetGPIOPortEP12GPIO_TypeDef) for GPIO::SetGPIOPort(GPIO_TypeDef*)
-    gpio_1.o(i._ZN4GPIOC1EP12GPIO_TypeDef11PIN_NUMBERS10GPIO_MODES) refers to gpio_1.o(i._ZN4GPIO16SetGPIOPinNumberE11PIN_NUMBERS) for GPIO::SetGPIOPinNumber(PIN_NUMBERS)
-    gpio_1.o(i._ZN4GPIOC1EP12GPIO_TypeDef11PIN_NUMBERS10GPIO_MODES) refers to gpio_1.o(i._ZN4GPIO11SetGPIOModeE10GPIO_MODES) for GPIO::SetGPIOMode(GPIO_MODES)
-    gpio_1.o(i._ZN4GPIOC1EP12GPIO_TypeDef11PIN_NUMBERS10GPIO_MODES) refers to gpio_1.o(i._ZN4GPIO13ConfigGPIOPinEv) for GPIO::ConfigGPIOPin()
-    gpio_1.o(i._ZN4GPIOC1EP12GPIO_TypeDef11PIN_NUMBERS10GPIO_MODES) refers to gpio_1.o(i._ZN4GPIO12Config_PU_PDE10PU_PD_ENUM) for GPIO::Config_PU_PD(PU_PD_ENUM)
-    gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIO11SetGPIOPortEP12GPIO_TypeDef) for i._ZN4GPIO11SetGPIOPortEP12GPIO_TypeDef
-    gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIO16SetGPIOPinNumberE11PIN_NUMBERS) for i._ZN4GPIO16SetGPIOPinNumberE11PIN_NUMBERS
-    gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIO11SetGPIOModeE10GPIO_MODES) for i._ZN4GPIO11SetGPIOModeE10GPIO_MODES
-    gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIO11GetGPIOModeEv) for i._ZN4GPIO11GetGPIOModeEv
-    gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIO11GetGPIOPortEv) for i._ZN4GPIO11GetGPIOPortEv
     gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIO16GetGPIOPinNumberEv) for i._ZN4GPIO16GetGPIOPinNumberEv
-    gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIO13ConfigGPIOPinEv) for i._ZN4GPIO13ConfigGPIOPinEv
+    gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIO11GetGPIOPortEv) for i._ZN4GPIO11GetGPIOPortEv
     gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIO12Config_PU_PDE10PU_PD_ENUM) for i._ZN4GPIO12Config_PU_PDE10PU_PD_ENUM
+    gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIO11GetGPIOModeEv) for i._ZN4GPIO11GetGPIOModeEv
+    gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIO13ConfigGPIOPinEv) for i._ZN4GPIO13ConfigGPIOPinEv
+    gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIO11SetGPIOModeE10GPIO_MODES) for i._ZN4GPIO11SetGPIOModeE10GPIO_MODES
+    gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIO14SetGPIOPortPinE12GPIO_IO_ENUM) for i._ZN4GPIO14SetGPIOPortPinE12GPIO_IO_ENUM
     gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES) for i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES
-    gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIOC1EP12GPIO_TypeDef11PIN_NUMBERS10GPIO_MODES) for i._ZN4GPIOC1EP12GPIO_TypeDef11PIN_NUMBERS10GPIO_MODES
     gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIO11GetGPIOPuPdEv) for i._ZN4GPIO11GetGPIOPuPdEv
     gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIO12GetGPIOStateEv) for i._ZN4GPIO12GetGPIOStateEv
     gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIO12digitalWriteEb) for i._ZN4GPIO12digitalWriteEb
     gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIO9tooglePinEv) for i._ZN4GPIO9tooglePinEv
     gpio_1.o(.ARM.exidx) refers to gpio_1.o(i._ZN4GPIO11digitalReadEv) for i._ZN4GPIO11digitalReadEv
-    sysclock.o(i._ZN8SysClock3MCOEv) refers to gpio_1.o(i._ZN4GPIOC1EP12GPIO_TypeDef11PIN_NUMBERS10GPIO_MODES) for GPIO::GPIO(GPIO_TypeDef*, PIN_NUMBERS, GPIO_MODES)
+    sysclock.o(i._ZN8SysClock3MCOEv) refers to gpio_1.o(i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES) for GPIO::GPIO(GPIO_IO_ENUM, GPIO_MODES)
+    sysclock.o(i._ZN8SysClockC1Ev) refers to sysclock.o(i._ZN8SysClock12SysClockInitEv) for SysClock::SysClockInit()
     sysclock.o(.ARM.exidx) refers to sysclock.o(i._ZN8SysClock12SysClockInitEv) for i._ZN8SysClock12SysClockInitEv
+    sysclock.o(.ARM.exidx) refers to sysclock.o(i._ZN8SysClockC1Ev) for i._ZN8SysClockC1Ev
     sysclock.o(.ARM.exidx) refers to sysclock.o(i._ZN8SysClock3MCOEv) for i._ZN8SysClock3MCOEv
     sysclock.o(.ARM.exidx) refers to sysclock.o(i._ZN8SysClock11SysTickInitE19SysTickBaseTimeEnum) for i._ZN8SysClock11SysTickInitE19SysTickBaseTimeEnum
     sysclock.o(.ARM.exidx) refers to sysclock.o(i._ZN8SysClock15SysTickGetEventEv) for i._ZN8SysClock15SysTickGetEventEv
@@ -59,14 +55,12 @@ Section Cross References
     timer.o(.ARM.exidx) refers to timer.o(i._ZN5Timer11SetTIMRemapE9TIM_REMAP) for i._ZN5Timer11SetTIMRemapE9TIM_REMAP
     timer.o(.ARM.exidx) refers to timer.o(i._ZN5Timer13GetTIMChannelEv) for i._ZN5Timer13GetTIMChannelEv
     timer.o(.ARM.exidx) refers to timer.o(i._ZN5Timer10GetTIMModeEv) for i._ZN5Timer10GetTIMModeEv
-    timer.o(.ARM.exidx) refers to timer.o(i._ZN5Timer11GetTIMRemapEP11TIM_TypeDef) for i._ZN5Timer11GetTIMRemapEP11TIM_TypeDef
     pwm.o(i._ZN3PWM7PWMInitEv) refers to timer.o(i._ZN5Timer13GetTIMChannelEv) for Timer::GetTIMChannel()
     pwm.o(i._ZN3PWM9ConfigPWMEv) refers to timer.o(i._ZN5Timer6GetTimEv) for Timer::GetTim()
     pwm.o(i._ZN3PWM9ConfigPWMEv) refers to timer.o(i._ZN5Timer13GetTIMChannelEv) for Timer::GetTIMChannel()
-    pwm.o(i._ZN3PWM9ConfigPWMEv) refers to gpio_1.o(i._ZN4GPIO11SetGPIOPortEP12GPIO_TypeDef) for GPIO::SetGPIOPort(GPIO_TypeDef*)
-    pwm.o(i._ZN3PWM9ConfigPWMEv) refers to gpio_1.o(i._ZN4GPIO16SetGPIOPinNumberE11PIN_NUMBERS) for GPIO::SetGPIOPinNumber(PIN_NUMBERS)
-    pwm.o(i._ZN3PWM9ConfigPWMEv) refers to gpio_1.o(i._ZN4GPIO11SetGPIOModeE10GPIO_MODES) for GPIO::SetGPIOMode(GPIO_MODES)
+    pwm.o(i._ZN3PWM9ConfigPWMEv) refers to gpio_1.o(i._ZN4GPIO14SetGPIOPortPinE12GPIO_IO_ENUM) for GPIO::SetGPIOPortPin(GPIO_IO_ENUM)
     pwm.o(i._ZN3PWM9ConfigPWMEv) refers to pwm.o(i._ZN3PWM11GetPWMRemapEv) for PWM::GetPWMRemap()
+    pwm.o(i._ZN3PWM9ConfigPWMEv) refers to gpio_1.o(i._ZN4GPIO11SetGPIOModeE10GPIO_MODES) for GPIO::SetGPIOMode(GPIO_MODES)
     pwm.o(i._ZN3PWM9ConfigPWMEv) refers to gpio_1.o(i._ZN4GPIO13ConfigGPIOPinEv) for GPIO::ConfigGPIOPin()
     pwm.o(i._ZN3PWMC1EP11TIM_TypeDef12TIM_CHANNELS9TIM_REMAP) refers to timer.o(i._ZN5TimerC1EP11TIM_TypeDef12TIM_CHANNELS11TIM_MODE_IO) for Timer::Timer(TIM_TypeDef*, TIM_CHANNELS, TIM_MODE_IO)
     pwm.o(i._ZN3PWMC1EP11TIM_TypeDef12TIM_CHANNELS9TIM_REMAP) refers to pwm.o(i._ZN3PWM11SetPWMRemapE9TIM_REMAP) for PWM::SetPWMRemap(TIM_REMAP)
@@ -82,8 +76,7 @@ Section Cross References
     adc.o(i._ZN3ADCC1E12ADC_CHANNELS) refers to adc.o(i._ZN3ADC10SetADCModeE20ADC_CONVERSION_MODES) for ADC::SetADCMode(ADC_CONVERSION_MODES)
     adc.o(i._ZN3ADCC1E12ADC_CHANNELS) refers to adc.o(i._ZN3ADC13SetADCChannelE12ADC_CHANNELS) for ADC::SetADCChannel(ADC_CHANNELS)
     adc.o(i._ZN3ADCC1E12ADC_CHANNELS) refers to adc.o(i._ZN3ADC13GetADCChannelEv) for ADC::GetADCChannel()
-    adc.o(i._ZN3ADCC1E12ADC_CHANNELS) refers to gpio_1.o(i._ZN4GPIO11SetGPIOPortEP12GPIO_TypeDef) for GPIO::SetGPIOPort(GPIO_TypeDef*)
-    adc.o(i._ZN3ADCC1E12ADC_CHANNELS) refers to gpio_1.o(i._ZN4GPIO16SetGPIOPinNumberE11PIN_NUMBERS) for GPIO::SetGPIOPinNumber(PIN_NUMBERS)
+    adc.o(i._ZN3ADCC1E12ADC_CHANNELS) refers to gpio_1.o(i._ZN4GPIO14SetGPIOPortPinE12GPIO_IO_ENUM) for GPIO::SetGPIOPortPin(GPIO_IO_ENUM)
     adc.o(i._ZN3ADCC1E12ADC_CHANNELS) refers to gpio_1.o(i._ZN4GPIO11SetGPIOModeE10GPIO_MODES) for GPIO::SetGPIOMode(GPIO_MODES)
     adc.o(i._ZN3ADCC1E12ADC_CHANNELS) refers to gpio_1.o(i._ZN4GPIO13ConfigGPIOPinEv) for GPIO::ConfigGPIOPin()
     adc.o(i._ZN3ADCC1E12ADC_CHANNELS) refers to adc.o(i._ZN3ADC12ADCCalibrateEv) for ADC::ADCCalibrate()
@@ -96,9 +89,8 @@ Section Cross References
     adc.o(.ARM.exidx) refers to adc.o(i._ZN3ADC10GetADCModeEv) for i._ZN3ADC10GetADCModeEv
     encoder.o(i._ZN7Encoder11GetEncTicksEv) refers to timer.o(i._ZN5Timer6GetTimEv) for Timer::GetTim()
     encoder.o(i._ZN7Encoder13ConfigEncoderEv) refers to timer.o(i._ZN5Timer6GetTimEv) for Timer::GetTim()
+    encoder.o(i._ZN7Encoder13ConfigEncoderEv) refers to gpio_1.o(i._ZN4GPIO14SetGPIOPortPinE12GPIO_IO_ENUM) for GPIO::SetGPIOPortPin(GPIO_IO_ENUM)
     encoder.o(i._ZN7Encoder13ConfigEncoderEv) refers to gpio_1.o(i._ZN4GPIO11SetGPIOModeE10GPIO_MODES) for GPIO::SetGPIOMode(GPIO_MODES)
-    encoder.o(i._ZN7Encoder13ConfigEncoderEv) refers to gpio_1.o(i._ZN4GPIO11SetGPIOPortEP12GPIO_TypeDef) for GPIO::SetGPIOPort(GPIO_TypeDef*)
-    encoder.o(i._ZN7Encoder13ConfigEncoderEv) refers to gpio_1.o(i._ZN4GPIO16SetGPIOPinNumberE11PIN_NUMBERS) for GPIO::SetGPIOPinNumber(PIN_NUMBERS)
     encoder.o(i._ZN7Encoder13ConfigEncoderEv) refers to gpio_1.o(i._ZN4GPIO13ConfigGPIOPinEv) for GPIO::ConfigGPIOPin()
     encoder.o(i._ZN7Encoder15GetEncDirectionEv) refers to timer.o(i._ZN5Timer6GetTimEv) for Timer::GetTim()
     encoder.o(i._ZN7EncoderC1EP11TIM_TypeDef) refers to timer.o(i._ZN5Timer6SetTimEP11TIM_TypeDef) for Timer::SetTim(TIM_TypeDef*)
@@ -107,12 +99,15 @@ Section Cross References
     encoder.o(.ARM.exidx) refers to encoder.o(i._ZN7EncoderC1EP11TIM_TypeDef) for i._ZN7EncoderC1EP11TIM_TypeDef
     encoder.o(.ARM.exidx) refers to encoder.o(i._ZN7Encoder11GetEncTicksEv) for i._ZN7Encoder11GetEncTicksEv
     encoder.o(.ARM.exidx) refers to encoder.o(i._ZN7Encoder15GetEncDirectionEv) for i._ZN7Encoder15GetEncDirectionEv
+    main.o(i.main) refers to sysclock.o(i._ZN8SysClockC1Ev) for SysClock::SysClock()
     main.o(i.main) refers to sysclock.o(i._ZN8SysClock12SysClockInitEv) for SysClock::SysClockInit()
     main.o(i.main) refers to sysclock.o(i._ZN8SysClock11SysTickInitE19SysTickBaseTimeEnum) for SysClock::SysTickInit(SysTickBaseTimeEnum)
     main.o(i.main) refers to gpio_1.o(i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES) for GPIO::GPIO(GPIO_IO_ENUM, GPIO_MODES)
     main.o(i.main) refers to sysclock.o(i._ZN8SysClock15SysTickGetEventEv) for SysClock::SysTickGetEvent()
     main.o(i.main) refers to gpio_1.o(i._ZN4GPIO9tooglePinEv) for GPIO::tooglePin()
     main.o(.ARM.exidx) refers to main.o(i.main) for i.main
+    main.o(.ARM.exidx) refers to main.o(i._Z14RCC_IRQHandlerv) for i._Z14RCC_IRQHandlerv
+    main.o(.ARM.exidx) refers to main.o(i._Z19RTCAlarm_IRQHandlerv) for i._Z19RTCAlarm_IRQHandlerv
     __main.o(!!!main) refers to __rtentry.o(.ARM.Collect$$rtentry$$00000000) for __rt_entry
     __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) for __rt_entry_li
     __rtentry.o(.ARM.Collect$$rtentry$$00000000) refers (Special) to __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) for __rt_entry_main
@@ -220,12 +215,9 @@ Section Cross References
 Removing Unused input sections from the image.
 
     Removing gpio_1.o(i._ZN4GPIO11GetGPIOPuPdEv), (6 bytes).
-    Removing gpio_1.o(i._ZN4GPIO11SetGPIOPortEP12GPIO_TypeDef), (4 bytes).
     Removing gpio_1.o(i._ZN4GPIO11digitalReadEv), (34 bytes).
     Removing gpio_1.o(i._ZN4GPIO12GetGPIOStateEv), (6 bytes).
     Removing gpio_1.o(i._ZN4GPIO12digitalWriteEb), (78 bytes).
-    Removing gpio_1.o(i._ZN4GPIO16SetGPIOPinNumberE11PIN_NUMBERS), (4 bytes).
-    Removing gpio_1.o(i._ZN4GPIOC1EP12GPIO_TypeDef11PIN_NUMBERS10GPIO_MODES), (52 bytes).
     Removing gpio_1.o(.ARM.exidx), (8 bytes).
     Removing gpio_1.o(.ARM.exidx), (8 bytes).
     Removing gpio_1.o(.ARM.exidx), (8 bytes).
@@ -239,23 +231,20 @@ Removing Unused input sections from the image.
     Removing gpio_1.o(.ARM.exidx), (8 bytes).
     Removing gpio_1.o(.ARM.exidx), (8 bytes).
     Removing gpio_1.o(.ARM.exidx), (8 bytes).
-    Removing gpio_1.o(.ARM.exidx), (8 bytes).
-    Removing gpio_1.o(.ARM.exidx), (8 bytes).
-    Removing sysclock.o(i._ZN8SysClock3MCOEv), (40 bytes).
+    Removing sysclock.o(i._ZN8SysClock3MCOEv), (32 bytes).
+    Removing sysclock.o(.ARM.exidx), (8 bytes).
     Removing sysclock.o(.ARM.exidx), (8 bytes).
     Removing sysclock.o(.ARM.exidx), (8 bytes).
     Removing sysclock.o(.ARM.exidx), (8 bytes).
     Removing sysclock.o(.ARM.exidx), (8 bytes).
     Removing timer.o(i._ZN5Timer10GetTIMModeEv), (6 bytes).
     Removing timer.o(i._ZN5Timer10SetTIMModeE11TIM_MODE_IO), (4 bytes).
-    Removing timer.o(i._ZN5Timer11GetTIMRemapEP11TIM_TypeDef), (6 bytes).
     Removing timer.o(i._ZN5Timer11SetTIMRemapE9TIM_REMAP), (4 bytes).
     Removing timer.o(i._ZN5Timer13GetTIMChannelEv), (6 bytes).
     Removing timer.o(i._ZN5Timer13SetTIMChannelE12TIM_CHANNELS), (4 bytes).
     Removing timer.o(i._ZN5Timer6GetTimEv), (6 bytes).
     Removing timer.o(i._ZN5Timer6SetTimEP11TIM_TypeDef), (4 bytes).
-    Removing timer.o(i._ZN5TimerC1EP11TIM_TypeDef12TIM_CHANNELS11TIM_MODE_IO), (160 bytes).
-    Removing timer.o(.ARM.exidx), (8 bytes).
+    Removing timer.o(i._ZN5TimerC1EP11TIM_TypeDef12TIM_CHANNELS11TIM_MODE_IO), (152 bytes).
     Removing timer.o(.ARM.exidx), (8 bytes).
     Removing timer.o(.ARM.exidx), (8 bytes).
     Removing timer.o(.ARM.exidx), (8 bytes).
@@ -268,8 +257,8 @@ Removing Unused input sections from the image.
     Removing pwm.o(i._ZN3PWM11SetPWMRemapE9TIM_REMAP), (4 bytes).
     Removing pwm.o(i._ZN3PWM7PWMInitEv), (196 bytes).
     Removing pwm.o(i._ZN3PWM8PWMWriteEt), (6 bytes).
-    Removing pwm.o(i._ZN3PWM9ConfigPWMEv), (1044 bytes).
-    Removing pwm.o(i._ZN3PWMC1EP11TIM_TypeDef12TIM_CHANNELS9TIM_REMAP), (52 bytes).
+    Removing pwm.o(i._ZN3PWM9ConfigPWMEv), (736 bytes).
+    Removing pwm.o(i._ZN3PWMC1EP11TIM_TypeDef12TIM_CHANNELS9TIM_REMAP), (62 bytes).
     Removing pwm.o(.ARM.exidx), (8 bytes).
     Removing pwm.o(.ARM.exidx), (8 bytes).
     Removing pwm.o(.ARM.exidx), (8 bytes).
@@ -282,7 +271,7 @@ Removing Unused input sections from the image.
     Removing adc.o(i._ZN3ADC12ADCCalibrateEv), (60 bytes).
     Removing adc.o(i._ZN3ADC13GetADCChannelEv), (6 bytes).
     Removing adc.o(i._ZN3ADC13SetADCChannelE12ADC_CHANNELS), (4 bytes).
-    Removing adc.o(i._ZN3ADCC1E12ADC_CHANNELS), (328 bytes).
+    Removing adc.o(i._ZN3ADCC1E12ADC_CHANNELS), (280 bytes).
     Removing adc.o(.ARM.exidx), (8 bytes).
     Removing adc.o(.ARM.exidx), (8 bytes).
     Removing adc.o(.ARM.exidx), (8 bytes).
@@ -291,17 +280,21 @@ Removing Unused input sections from the image.
     Removing adc.o(.ARM.exidx), (8 bytes).
     Removing adc.o(.ARM.exidx), (8 bytes).
     Removing encoder.o(i._ZN7Encoder11GetEncTicksEv), (14 bytes).
-    Removing encoder.o(i._ZN7Encoder13ConfigEncoderEv), (452 bytes).
+    Removing encoder.o(i._ZN7Encoder13ConfigEncoderEv), (376 bytes).
     Removing encoder.o(i._ZN7Encoder15GetEncDirectionEv), (18 bytes).
-    Removing encoder.o(i._ZN7EncoderC1EP11TIM_TypeDef), (36 bytes).
+    Removing encoder.o(i._ZN7EncoderC1EP11TIM_TypeDef), (50 bytes).
     Removing encoder.o(.ARM.exidx), (8 bytes).
     Removing encoder.o(.ARM.exidx), (8 bytes).
     Removing encoder.o(.ARM.exidx), (8 bytes).
     Removing encoder.o(.ARM.exidx), (8 bytes).
+    Removing main.o(i._Z14RCC_IRQHandlerv), (2 bytes).
+    Removing main.o(i._Z19RTCAlarm_IRQHandlerv), (2 bytes).
+    Removing main.o(.ARM.exidx), (8 bytes).
+    Removing main.o(.ARM.exidx), (8 bytes).
     Removing main.o(.ARM.exidx), (8 bytes).
     Removing main.o(.data), (3 bytes).
 
-81 unused section(s) (total 3127 bytes) removed from the image.
+79 unused section(s) (total 2641 bytes) removed from the image.
 
 ==============================================================================
 
@@ -312,14 +305,14 @@ Image Symbol Table
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
     ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit2.o ABSOLUTE
+    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
     ../clib/angel/boardlib.s                 0x00000000   Number         0  boardshut.o ABSOLUTE
     ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit3.o ABSOLUTE
-    ../clib/angel/boardlib.s                 0x00000000   Number         0  boardinit1.o ABSOLUTE
     ../clib/angel/handlers.s                 0x00000000   Number         0  __scatter_zi.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit.o ABSOLUTE
-    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit2.o ABSOLUTE
-    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry2.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry4.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry2.o ABSOLUTE
+    ../clib/angel/kernel.s                   0x00000000   Number         0  rtexit2.o ABSOLUTE
     ../clib/angel/kernel.s                   0x00000000   Number         0  __rtentry.o ABSOLUTE
     ../clib/angel/rt.s                       0x00000000   Number         0  rt_raise.o ABSOLUTE
     ../clib/angel/scatter.s                  0x00000000   Number         0  __scatter.o ABSOLUTE
@@ -329,30 +322,30 @@ Image Symbol Table
     ../clib/angel/sys.s                      0x00000000   Number         0  indicate_semi.o ABSOLUTE
     ../clib/angel/sys.s                      0x00000000   Number         0  sys_stackheap.o ABSOLUTE
     ../clib/angel/sys.s                      0x00000000   Number         0  libspace.o ABSOLUTE
-    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit.o ABSOLUTE
     ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_wrch.o ABSOLUTE
     ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_command.o ABSOLUTE
-    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/angel/sysapp.c                   0x00000000   Number         0  sys_exit.o ABSOLUTE
     ../clib/armsys.c                         0x00000000   Number         0  _get_argv_nomalloc.o ABSOLUTE
-    ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
     ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  argv_veneer.o ABSOLUTE
+    ../clib/armsys.c                         0x00000000   Number         0  no_argv.o ABSOLUTE
     ../clib/heapalloc.c                      0x00000000   Number         0  hrguard.o ABSOLUTE
-    ../clib/libinit.s                        0x00000000   Number         0  libshutdown.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
     ../clib/libinit.s                        0x00000000   Number         0  libshutdown2.o ABSOLUTE
     ../clib/libinit.s                        0x00000000   Number         0  libinit.o ABSOLUTE
-    ../clib/libinit.s                        0x00000000   Number         0  libinit2.o ABSOLUTE
+    ../clib/libinit.s                        0x00000000   Number         0  libshutdown.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  __raise.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_exit.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_formal.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_general.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_rtmem_outer.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
-    ../clib/signal.c                         0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
+    ../clib/signal.c                         0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
     ../clib/signal.c                         0x00000000   Number         0  defsig_other.o ABSOLUTE
     ../clib/signal.s                         0x00000000   Number         0  defsig.o ABSOLUTE
@@ -425,15 +418,17 @@ Image Symbol Table
     i._ZN4GPIO11SetGPIOModeE10GPIO_MODES     0x08000238   Section        0  gpio_1.o(i._ZN4GPIO11SetGPIOModeE10GPIO_MODES)
     i._ZN4GPIO12Config_PU_PDE10PU_PD_ENUM    0x0800023c   Section        0  gpio_1.o(i._ZN4GPIO12Config_PU_PDE10PU_PD_ENUM)
     i._ZN4GPIO13ConfigGPIOPinEv              0x08000284   Section        0  gpio_1.o(i._ZN4GPIO13ConfigGPIOPinEv)
-    i._ZN4GPIO16GetGPIOPinNumberEv           0x08000428   Section        0  gpio_1.o(i._ZN4GPIO16GetGPIOPinNumberEv)
-    i._ZN4GPIO9tooglePinEv                   0x0800042e   Section        0  gpio_1.o(i._ZN4GPIO9tooglePinEv)
-    i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES  0x08000450   Section        0  gpio_1.o(i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES)
-    i._ZN8SysClock11SysTickInitE19SysTickBaseTimeEnum 0x08000488   Section        0  sysclock.o(i._ZN8SysClock11SysTickInitE19SysTickBaseTimeEnum)
-    i._ZN8SysClock12SysClockInitEv           0x08000498   Section        0  sysclock.o(i._ZN8SysClock12SysClockInitEv)
-    i._ZN8SysClock15SysTickGetEventEv        0x08000524   Section        0  sysclock.o(i._ZN8SysClock15SysTickGetEventEv)
-    i.main                                   0x08000534   Section        0  main.o(i.main)
-    .constdata                               0x08000564   Section      256  gpio_1.o(.constdata)
-    GPIO_PORTS_PINS                          0x08000564   Data         256  gpio_1.o(.constdata)
+    i._ZN4GPIO14SetGPIOPortPinE12GPIO_IO_ENUM 0x08000428   Section        0  gpio_1.o(i._ZN4GPIO14SetGPIOPortPinE12GPIO_IO_ENUM)
+    i._ZN4GPIO16GetGPIOPinNumberEv           0x08000440   Section        0  gpio_1.o(i._ZN4GPIO16GetGPIOPinNumberEv)
+    i._ZN4GPIO9tooglePinEv                   0x08000446   Section        0  gpio_1.o(i._ZN4GPIO9tooglePinEv)
+    i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES  0x08000468   Section        0  gpio_1.o(i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES)
+    i._ZN8SysClock11SysTickInitE19SysTickBaseTimeEnum 0x08000494   Section        0  sysclock.o(i._ZN8SysClock11SysTickInitE19SysTickBaseTimeEnum)
+    i._ZN8SysClock12SysClockInitEv           0x080004a4   Section        0  sysclock.o(i._ZN8SysClock12SysClockInitEv)
+    i._ZN8SysClock15SysTickGetEventEv        0x08000530   Section        0  sysclock.o(i._ZN8SysClock15SysTickGetEventEv)
+    i._ZN8SysClockC1Ev                       0x0800053e   Section        0  sysclock.o(i._ZN8SysClockC1Ev)
+    i.main                                   0x0800054c   Section        0  main.o(i.main)
+    .constdata                               0x08000584   Section      256  gpio_1.o(.constdata)
+    GPIO_PORTS_PINS                          0x08000584   Data         256  gpio_1.o(.constdata)
     .bss                                     0x20000000   Section       96  libspace.o(.bss)
 
     Global Symbols
@@ -587,16 +582,19 @@ Image Symbol Table
     GPIO::SetGPIOMode(GPIO_MODES)            0x08000239   Thumb Code     4  gpio_1.o(i._ZN4GPIO11SetGPIOModeE10GPIO_MODES)
     GPIO::Config_PU_PD(PU_PD_ENUM)           0x0800023d   Thumb Code    72  gpio_1.o(i._ZN4GPIO12Config_PU_PDE10PU_PD_ENUM)
     GPIO::ConfigGPIOPin()                    0x08000285   Thumb Code   382  gpio_1.o(i._ZN4GPIO13ConfigGPIOPinEv)
-    GPIO::GetGPIOPinNumber()                 0x08000429   Thumb Code     6  gpio_1.o(i._ZN4GPIO16GetGPIOPinNumberEv)
-    GPIO::tooglePin()                        0x0800042f   Thumb Code    34  gpio_1.o(i._ZN4GPIO9tooglePinEv)
-    GPIO::GPIO(GPIO_IO_ENUM, GPIO_MODES)     0x08000451   Thumb Code    50  gpio_1.o(i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES)
-    GPIO::GPIO__sub_object(GPIO_IO_ENUM, GPIO_MODES) 0x08000451   Thumb Code     0  gpio_1.o(i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES)
-    SysClock::SysTickInit(SysTickBaseTimeEnum) 0x08000489   Thumb Code    16  sysclock.o(i._ZN8SysClock11SysTickInitE19SysTickBaseTimeEnum)
-    SysClock::SysClockInit()                 0x08000499   Thumb Code   130  sysclock.o(i._ZN8SysClock12SysClockInitEv)
-    SysClock::SysTickGetEvent()              0x08000525   Thumb Code    14  sysclock.o(i._ZN8SysClock15SysTickGetEventEv)
-    main                                     0x08000535   Thumb Code    44  main.o(i.main)
-    Region$$Table$$Base                      0x08000664   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08000674   Number         0  anon$$obj.o(Region$$Table)
+    GPIO::SetGPIOPortPin(GPIO_IO_ENUM)       0x08000429   Thumb Code    20  gpio_1.o(i._ZN4GPIO14SetGPIOPortPinE12GPIO_IO_ENUM)
+    GPIO::GetGPIOPinNumber()                 0x08000441   Thumb Code     6  gpio_1.o(i._ZN4GPIO16GetGPIOPinNumberEv)
+    GPIO::tooglePin()                        0x08000447   Thumb Code    34  gpio_1.o(i._ZN4GPIO9tooglePinEv)
+    GPIO::GPIO(GPIO_IO_ENUM, GPIO_MODES)     0x08000469   Thumb Code    44  gpio_1.o(i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES)
+    GPIO::GPIO__sub_object(GPIO_IO_ENUM, GPIO_MODES) 0x08000469   Thumb Code     0  gpio_1.o(i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES)
+    SysClock::SysTickInit(SysTickBaseTimeEnum) 0x08000495   Thumb Code    16  sysclock.o(i._ZN8SysClock11SysTickInitE19SysTickBaseTimeEnum)
+    SysClock::SysClockInit()                 0x080004a5   Thumb Code   130  sysclock.o(i._ZN8SysClock12SysClockInitEv)
+    SysClock::SysTickGetEvent()              0x08000531   Thumb Code    14  sysclock.o(i._ZN8SysClock15SysTickGetEventEv)
+    SysClock::SysClock()                     0x0800053f   Thumb Code    14  sysclock.o(i._ZN8SysClockC1Ev)
+    SysClock::SysClock__sub_object()         0x0800053f   Thumb Code     0  sysclock.o(i._ZN8SysClockC1Ev)
+    main                                     0x0800054d   Thumb Code    50  main.o(i.main)
+    Region$$Table$$Base                      0x08000684   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08000694   Number         0  anon$$obj.o(Region$$Table)
     __libspace_start                         0x20000000   Data          96  libspace.o(.bss)
     Image$$ZI$$Limit                         0x20000060   Number         0  anon$$obj.o ABSOLUTE
     __temporary_stack_top$libspace           0x20000060   Data           0  libspace.o(.bss)
@@ -609,94 +607,95 @@ Memory Map of the image
 
   Image Entry point : 0x0800016d
 
-  Load Region LR_1 (Base: 0x08000000, Size: 0x00000674, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x08000000, Size: 0x00000694, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00000674, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00000694, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x000000ec   Data   RO            1    RESET               startup.o
-    0x080000ec   0x080000ec   0x00000008   Code   RO          378  * !!!main             c_w.l(__main.o)
-    0x080000f4   0x080000f4   0x00000034   Code   RO          537    !!!scatter          c_w.l(__scatter.o)
-    0x08000128   0x08000128   0x0000001c   Code   RO          539    !!handler_zi        c_w.l(__scatter_zi.o)
-    0x08000144   0x08000144   0x00000002   Code   RO          405    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          414    .ARM.Collect$$libinit$$00000002  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          416    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          419    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          421    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          423    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          426    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          428    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          430    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          432    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          434    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          436    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          438    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          440    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          442    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          444    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          446    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          450    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          452    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          454    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000000   Code   RO          456    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
-    0x08000146   0x08000146   0x00000002   Code   RO          457    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
-    0x08000148   0x08000148   0x00000002   Code   RO          480    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
-    0x0800014a   0x0800014a   0x00000000   Code   RO          490    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
-    0x0800014a   0x0800014a   0x00000000   Code   RO          492    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
-    0x0800014a   0x0800014a   0x00000000   Code   RO          495    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
-    0x0800014a   0x0800014a   0x00000000   Code   RO          498    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
-    0x0800014a   0x0800014a   0x00000000   Code   RO          500    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
-    0x0800014a   0x0800014a   0x00000000   Code   RO          503    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
-    0x0800014a   0x0800014a   0x00000002   Code   RO          504    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
-    0x0800014c   0x0800014c   0x00000000   Code   RO          380    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
-    0x0800014c   0x0800014c   0x00000000   Code   RO          382    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
-    0x0800014c   0x0800014c   0x00000006   Code   RO          394    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
-    0x08000152   0x08000152   0x00000000   Code   RO          384    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
-    0x08000152   0x08000152   0x00000004   Code   RO          385    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
-    0x08000156   0x08000156   0x00000000   Code   RO          387    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
-    0x08000156   0x08000156   0x00000008   Code   RO          388    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
-    0x0800015e   0x0800015e   0x00000002   Code   RO          411    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
-    0x08000160   0x08000160   0x00000000   Code   RO          462    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
-    0x08000160   0x08000160   0x00000004   Code   RO          463    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
-    0x08000164   0x08000164   0x00000006   Code   RO          464    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
+    0x080000ec   0x080000ec   0x00000008   Code   RO          371  * !!!main             c_w.l(__main.o)
+    0x080000f4   0x080000f4   0x00000034   Code   RO          530    !!!scatter          c_w.l(__scatter.o)
+    0x08000128   0x08000128   0x0000001c   Code   RO          532    !!handler_zi        c_w.l(__scatter_zi.o)
+    0x08000144   0x08000144   0x00000002   Code   RO          398    .ARM.Collect$$libinit$$00000000  c_w.l(libinit.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          407    .ARM.Collect$$libinit$$00000002  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          409    .ARM.Collect$$libinit$$00000004  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          412    .ARM.Collect$$libinit$$0000000A  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          414    .ARM.Collect$$libinit$$0000000C  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          416    .ARM.Collect$$libinit$$0000000E  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          419    .ARM.Collect$$libinit$$00000011  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          421    .ARM.Collect$$libinit$$00000013  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          423    .ARM.Collect$$libinit$$00000015  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          425    .ARM.Collect$$libinit$$00000017  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          427    .ARM.Collect$$libinit$$00000019  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          429    .ARM.Collect$$libinit$$0000001B  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          431    .ARM.Collect$$libinit$$0000001D  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          433    .ARM.Collect$$libinit$$0000001F  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          435    .ARM.Collect$$libinit$$00000021  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          437    .ARM.Collect$$libinit$$00000023  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          439    .ARM.Collect$$libinit$$00000025  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          443    .ARM.Collect$$libinit$$0000002C  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          445    .ARM.Collect$$libinit$$0000002E  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          447    .ARM.Collect$$libinit$$00000030  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000000   Code   RO          449    .ARM.Collect$$libinit$$00000032  c_w.l(libinit2.o)
+    0x08000146   0x08000146   0x00000002   Code   RO          450    .ARM.Collect$$libinit$$00000033  c_w.l(libinit2.o)
+    0x08000148   0x08000148   0x00000002   Code   RO          473    .ARM.Collect$$libshutdown$$00000000  c_w.l(libshutdown.o)
+    0x0800014a   0x0800014a   0x00000000   Code   RO          483    .ARM.Collect$$libshutdown$$00000002  c_w.l(libshutdown2.o)
+    0x0800014a   0x0800014a   0x00000000   Code   RO          485    .ARM.Collect$$libshutdown$$00000004  c_w.l(libshutdown2.o)
+    0x0800014a   0x0800014a   0x00000000   Code   RO          488    .ARM.Collect$$libshutdown$$00000007  c_w.l(libshutdown2.o)
+    0x0800014a   0x0800014a   0x00000000   Code   RO          491    .ARM.Collect$$libshutdown$$0000000A  c_w.l(libshutdown2.o)
+    0x0800014a   0x0800014a   0x00000000   Code   RO          493    .ARM.Collect$$libshutdown$$0000000C  c_w.l(libshutdown2.o)
+    0x0800014a   0x0800014a   0x00000000   Code   RO          496    .ARM.Collect$$libshutdown$$0000000F  c_w.l(libshutdown2.o)
+    0x0800014a   0x0800014a   0x00000002   Code   RO          497    .ARM.Collect$$libshutdown$$00000010  c_w.l(libshutdown2.o)
+    0x0800014c   0x0800014c   0x00000000   Code   RO          373    .ARM.Collect$$rtentry$$00000000  c_w.l(__rtentry.o)
+    0x0800014c   0x0800014c   0x00000000   Code   RO          375    .ARM.Collect$$rtentry$$00000002  c_w.l(__rtentry2.o)
+    0x0800014c   0x0800014c   0x00000006   Code   RO          387    .ARM.Collect$$rtentry$$00000004  c_w.l(__rtentry4.o)
+    0x08000152   0x08000152   0x00000000   Code   RO          377    .ARM.Collect$$rtentry$$00000009  c_w.l(__rtentry2.o)
+    0x08000152   0x08000152   0x00000004   Code   RO          378    .ARM.Collect$$rtentry$$0000000A  c_w.l(__rtentry2.o)
+    0x08000156   0x08000156   0x00000000   Code   RO          380    .ARM.Collect$$rtentry$$0000000C  c_w.l(__rtentry2.o)
+    0x08000156   0x08000156   0x00000008   Code   RO          381    .ARM.Collect$$rtentry$$0000000D  c_w.l(__rtentry2.o)
+    0x0800015e   0x0800015e   0x00000002   Code   RO          404    .ARM.Collect$$rtexit$$00000000  c_w.l(rtexit.o)
+    0x08000160   0x08000160   0x00000000   Code   RO          455    .ARM.Collect$$rtexit$$00000002  c_w.l(rtexit2.o)
+    0x08000160   0x08000160   0x00000004   Code   RO          456    .ARM.Collect$$rtexit$$00000003  c_w.l(rtexit2.o)
+    0x08000164   0x08000164   0x00000006   Code   RO          457    .ARM.Collect$$rtexit$$00000004  c_w.l(rtexit2.o)
     0x0800016a   0x0800016a   0x00000002   PAD
     0x0800016c   0x0800016c   0x0000001c   Code   RO            2  * .text               startup.o
-    0x08000188   0x08000188   0x0000004a   Code   RO          396    .text               c_w.l(sys_stackheap_outer.o)
-    0x080001d2   0x080001d2   0x00000012   Code   RO          398    .text               c_w.l(exit.o)
-    0x080001e4   0x080001e4   0x00000008   Code   RO          406    .text               c_w.l(libspace.o)
-    0x080001ec   0x080001ec   0x00000030   Code   RO          409    .text               c_w.l(sys_stackheap.o)
-    0x0800021c   0x0800021c   0x00000002   Code   RO          458    .text               c_w.l(use_no_semi.o)
-    0x0800021e   0x0800021e   0x00000000   Code   RO          460    .text               c_w.l(indicate_semi.o)
+    0x08000188   0x08000188   0x0000004a   Code   RO          389    .text               c_w.l(sys_stackheap_outer.o)
+    0x080001d2   0x080001d2   0x00000012   Code   RO          391    .text               c_w.l(exit.o)
+    0x080001e4   0x080001e4   0x00000008   Code   RO          399    .text               c_w.l(libspace.o)
+    0x080001ec   0x080001ec   0x00000030   Code   RO          402    .text               c_w.l(sys_stackheap.o)
+    0x0800021c   0x0800021c   0x00000002   Code   RO          451    .text               c_w.l(use_no_semi.o)
+    0x0800021e   0x0800021e   0x00000000   Code   RO          453    .text               c_w.l(indicate_semi.o)
     0x0800021e   0x0800021e   0x00000002   PAD
-    0x08000220   0x08000220   0x0000000c   Code   RO          472    .text               c_w.l(sys_exit.o)
+    0x08000220   0x08000220   0x0000000c   Code   RO          465    .text               c_w.l(sys_exit.o)
     0x0800022c   0x0800022c   0x00000006   Code   RO            8    i._ZN4GPIO11GetGPIOModeEv  gpio_1.o
     0x08000232   0x08000232   0x00000006   Code   RO            9    i._ZN4GPIO11GetGPIOPortEv  gpio_1.o
     0x08000238   0x08000238   0x00000004   Code   RO           11    i._ZN4GPIO11SetGPIOModeE10GPIO_MODES  gpio_1.o
-    0x0800023c   0x0800023c   0x00000048   Code   RO           14    i._ZN4GPIO12Config_PU_PDE10PU_PD_ENUM  gpio_1.o
-    0x08000284   0x08000284   0x000001a4   Code   RO           17    i._ZN4GPIO13ConfigGPIOPinEv  gpio_1.o
-    0x08000428   0x08000428   0x00000006   Code   RO           18    i._ZN4GPIO16GetGPIOPinNumberEv  gpio_1.o
-    0x0800042e   0x0800042e   0x00000022   Code   RO           20    i._ZN4GPIO9tooglePinEv  gpio_1.o
-    0x08000450   0x08000450   0x00000038   Code   RO           21    i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES  gpio_1.o
-    0x08000488   0x08000488   0x00000010   Code   RO          116    i._ZN8SysClock11SysTickInitE19SysTickBaseTimeEnum  sysclock.o
-    0x08000498   0x08000498   0x0000008c   Code   RO          117    i._ZN8SysClock12SysClockInitEv  sysclock.o
-    0x08000524   0x08000524   0x0000000e   Code   RO          118    i._ZN8SysClock15SysTickGetEventEv  sysclock.o
-    0x08000532   0x08000532   0x00000002   PAD
-    0x08000534   0x08000534   0x00000030   Code   RO          354    i.main              main.o
-    0x08000564   0x08000564   0x00000100   Data   RO           38    .constdata          gpio_1.o
-    0x08000664   0x08000664   0x00000010   Data   RO          535    Region$$Table       anon$$obj.o
+    0x0800023c   0x0800023c   0x00000048   Code   RO           13    i._ZN4GPIO12Config_PU_PDE10PU_PD_ENUM  gpio_1.o
+    0x08000284   0x08000284   0x000001a4   Code   RO           16    i._ZN4GPIO13ConfigGPIOPinEv  gpio_1.o
+    0x08000428   0x08000428   0x00000018   Code   RO           17    i._ZN4GPIO14SetGPIOPortPinE12GPIO_IO_ENUM  gpio_1.o
+    0x08000440   0x08000440   0x00000006   Code   RO           18    i._ZN4GPIO16GetGPIOPinNumberEv  gpio_1.o
+    0x08000446   0x08000446   0x00000022   Code   RO           19    i._ZN4GPIO9tooglePinEv  gpio_1.o
+    0x08000468   0x08000468   0x0000002c   Code   RO           20    i._ZN4GPIOC1E12GPIO_IO_ENUM10GPIO_MODES  gpio_1.o
+    0x08000494   0x08000494   0x00000010   Code   RO          104    i._ZN8SysClock11SysTickInitE19SysTickBaseTimeEnum  sysclock.o
+    0x080004a4   0x080004a4   0x0000008c   Code   RO          105    i._ZN8SysClock12SysClockInitEv  sysclock.o
+    0x08000530   0x08000530   0x0000000e   Code   RO          106    i._ZN8SysClock15SysTickGetEventEv  sysclock.o
+    0x0800053e   0x0800053e   0x0000000e   Code   RO          108    i._ZN8SysClockC1Ev  sysclock.o
+    0x0800054c   0x0800054c   0x00000038   Code   RO          341    i.main              main.o
+    0x08000584   0x08000584   0x00000100   Data   RO           34    .constdata          gpio_1.o
+    0x08000684   0x08000684   0x00000010   Data   RO          528    Region$$Table       anon$$obj.o
 
 
-    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x08000674, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x08000694, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
 
     **** No section assigned to this execution region ****
 
 
-    Execution Region ER_ZI (Exec base: 0x20000000, Load base: 0x08000674, Size: 0x00000060, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_ZI (Exec base: 0x20000000, Load base: 0x08000694, Size: 0x00000060, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000        -       0x00000060   Zero   RW          407    .bss                c_w.l(libspace.o)
+    0x20000000        -       0x00000060   Zero   RW          400    .bss                c_w.l(libspace.o)
 
 
 ==============================================================================
@@ -706,15 +705,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       604         44        256          0          0      15076   gpio_1.o
-        48          4          0          0          0        479   main.o
+       616         42        256          0          0      15524   gpio_1.o
+        56          6          0          0          0        487   main.o
         28          4        236          0          0        732   startup.o
-       170         10          0          0          0       1812   sysclock.o
+       184         10          0          0          0       2288   sysclock.o
 
     ----------------------------------------------------------------------
-       852         62        508          0          0      18099   Object Totals
+       884         62        508          0          0      19031   Object Totals
          0          0         16          0          0          0   (incl. Generated)
-         2          0          0          0          0          0   (incl. Padding)
+         0          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -760,15 +759,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      1144         86        508          0         96      17915   Grand Totals
-      1144         86        508          0         96      17915   ELF Image Totals
-      1144         86        508          0          0          0   ROM Totals
+      1176         86        508          0         96      18743   Grand Totals
+      1176         86        508          0         96      18743   ELF Image Totals
+      1176         86        508          0          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 1652 (   1.61kB)
+    Total RO  Size (Code + RO Data)                 1684 (   1.64kB)
     Total RW  Size (RW Data + ZI Data)                96 (   0.09kB)
-    Total ROM Size (Code + RO Data + RW Data)       1652 (   1.61kB)
+    Total ROM Size (Code + RO Data + RW Data)       1684 (   1.64kB)
 
 ==============================================================================
 

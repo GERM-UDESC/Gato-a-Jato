@@ -11,6 +11,11 @@ It will also configure the external 32.764kHz oscilator as the RTC source
 This function will also configure the clock off all periferals and buses as the maximus allowed
 
 */
+SysClock::SysClock()
+{
+	SysClockInit();
+}
+
 void SysClock::SysClockInit()
 {
 	//1. Fisrt enable the required clock and wait until the clock is Ready
@@ -51,8 +56,8 @@ void SysClock::SysClockInit()
 
 void SysClock::MCO()
 {
-	GPIO OutClock(GPIOA, PIN8, AF_OUTPUT_PUSH_PULL_50MHZ);	//just to test the board clock
-	RCC->CFGR |= ((1<<26) | (1<<24) | (1<<25));		//
+	GPIO OutClock(PA8, AF_OUTPUT_PUSH_PULL_50MHZ);	//just to test the board clock
+	RCC->CFGR |= ((1<<26) | (1<<24) | (1<<25));			//
 
 }
 

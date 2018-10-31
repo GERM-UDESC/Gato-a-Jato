@@ -20,28 +20,16 @@ void PWM::ConfigPWM()
 		switch (GetTIMChannel())
 		{
 			case TIM_CH1:
-				//GPIO(GPIOA, PIN8, AF_OUTPUT_PUSH_PULL_2MHZ);
-				SetGPIOPort(GPIOA);
-				SetGPIOPinNumber(PIN8);
-				SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
+				PWMPin.SetGPIOPortPin(PA8);
 			break;
 			case TIM_CH2:
-				//GPIO(GPIOA, PIN9, AF_OUTPUT_PUSH_PULL_2MHZ);
-				SetGPIOPort(GPIOA);
-				SetGPIOPinNumber(PIN9);
-				SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
+				PWMPin.SetGPIOPortPin(PA9);
 			break;
 			case TIM_CH3:
-				//GPIO(GPIOA, PIN10, AF_OUTPUT_PUSH_PULL_2MHZ);
-				SetGPIOPort(GPIOA);
-				SetGPIOPinNumber(PIN10);
-				SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
+				PWMPin.SetGPIOPortPin(PA10);
 			break;
 			case TIM_CH4:
-				//GPIO(GPIOA, PIN11, AF_OUTPUT_PUSH_PULL_2MHZ);
-				SetGPIOPort(GPIOA);
-				SetGPIOPinNumber(PIN11);
-				SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
+				PWMPin.SetGPIOPortPin(PA11);
 			break;		
 		}
 	}
@@ -53,75 +41,42 @@ void PWM::ConfigPWM()
 			case TIM_CH1:
 				if ((GetPWMRemap() == PARTIAL_REMAP1) || (GetPWMRemap() == FULL_REMAP))
 				{
-					//GPIO(GPIOA, PIN15, AF_OUTPUT_PUSH_PULL_2MHZ);
-					SetGPIOPort(GPIOA);
-					SetGPIOPinNumber(PIN15);
-					SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
+					PWMPin.SetGPIOPortPin(PA15);
 					RCC->APB2ENR |= (1<<0);
 					AFIO->MAPR |= ((GetPWMRemap())<<8); //Select the remaping configuration
 				}
-				else
-				{
-					//GPIO(GPIOA, PIN0, AF_OUTPUT_PUSH_PULL_2MHZ);
-					SetGPIOPort(GPIOA);
-					SetGPIOPinNumber(PIN0);
-					SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
-				}
+				else PWMPin.SetGPIOPortPin(PA0);
+				
 					
 			break;
 			case TIM_CH2:
 				if ((GetPWMRemap() == PARTIAL_REMAP1) || (GetPWMRemap() == FULL_REMAP))
 				{
-					//GPIO(GPIOB, PIN3, AF_OUTPUT_PUSH_PULL_2MHZ);
-					SetGPIOPort(GPIOB);
-					SetGPIOPinNumber(PIN3);
-					SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
+					PWMPin.SetGPIOPortPin(PB3);
 					RCC->APB2ENR |= (1<<0);
 					AFIO->MAPR |= ((GetPWMRemap())<<8); //Select the remaping configuration
 				}
-				else
-				{
-					//GPIO(GPIOA, PIN1, AF_OUTPUT_PUSH_PULL_2MHZ);
-					SetGPIOPort(GPIOA);
-					SetGPIOPinNumber(PIN1);
-					SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
-				}
+				else PWMPin.SetGPIOPortPin(PA1);
+				
 			break;
 			case TIM_CH3:
 				if ((GetPWMRemap() == PARTIAL_REMAP2) || (GetPWMRemap() == FULL_REMAP))
 				{
-					//GPIO(GPIOB, PIN10, AF_OUTPUT_PUSH_PULL_2MHZ);
-					SetGPIOPort(GPIOB);
-					SetGPIOPinNumber(PIN10);
-					SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
+					PWMPin.SetGPIOPortPin(PB10);
 					RCC->APB2ENR |= (1<<0);
 					AFIO->MAPR |= ((GetPWMRemap())<<8); //Select the remaping configuration
 				}
-				else
-				{
-					//GPIO(GPIOA, PIN2, AF_OUTPUT_PUSH_PULL_2MHZ);
-					SetGPIOPort(GPIOA);
-					SetGPIOPinNumber(PIN2);
-					SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
-				}	
+				else PWMPin.SetGPIOPortPin(PA2);
+				
 			break;
 			case TIM_CH4:
 				if ((GetPWMRemap() == PARTIAL_REMAP2) || (GetPWMRemap() == FULL_REMAP))
 				{
-					//GPIO(GPIOB, PIN11, AF_OUTPUT_PUSH_PULL_2MHZ);
-					SetGPIOPort(GPIOB);
-					SetGPIOPinNumber(PIN11);
-					SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
+					PWMPin.SetGPIOPortPin(PB11);
 					RCC->APB2ENR |= (1<<0);
 					AFIO->MAPR |= ((GetPWMRemap())<<8); //Select the remaping configuration
 				}
-				else
-				{
-					//GPIO(GPIOA, PIN3, AF_OUTPUT_PUSH_PULL_2MHZ);
-					SetGPIOPort(GPIOA);
-					SetGPIOPinNumber(PIN3);
-					SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
-				}
+				else PWMPin.SetGPIOPortPin(PA3);
 			break;		
 		}	
 	}
@@ -133,51 +88,26 @@ void PWM::ConfigPWM()
 			case TIM_CH1:
 				if (GetPWMRemap() == PARTIAL_REMAP2)
 				{
-					//GPIO(GPIOB, PIN4, AF_OUTPUT_PUSH_PULL_2MHZ);
-					SetGPIOPort(GPIOB);
-					SetGPIOPinNumber(PIN4);
-					SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
+					PWMPin.SetGPIOPortPin(PB4);
 					RCC->APB2ENR |= (1<<0);
 					AFIO->MAPR |= ((GetPWMRemap())<<10); //Select the remaping configuration
 				}
-				else
-				{
-					//GPIO(GPIOA, PIN6, AF_OUTPUT_PUSH_PULL_2MHZ);
-					SetGPIOPort(GPIOA);
-					SetGPIOPinNumber(PIN6);
-					SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
-				}
-					
+				else PWMPin.SetGPIOPortPin(PA6);					
 			break;
 			case TIM_CH2:
 				if (GetPWMRemap() == PARTIAL_REMAP2)
 				{
-					//GPIO(GPIOB, PIN5, AF_OUTPUT_PUSH_PULL_2MHZ);
-					SetGPIOPort(GPIOB);
-					SetGPIOPinNumber(PIN5);
-					SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
+					PWMPin.SetGPIOPortPin(PB5);
 					RCC->APB2ENR |= (1<<0);
 					AFIO->MAPR |= ((GetPWMRemap())<<10); //Select the remaping configuration
 				}
-				else
-				{
-					//GPIO(GPIOA, PIN7, AF_OUTPUT_PUSH_PULL_2MHZ);
-					SetGPIOPort(GPIOA);
-					SetGPIOPinNumber(PIN7);
-					SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
-				}
+				else PWMPin.SetGPIOPortPin(PA7);
 			break;
 			case TIM_CH3:
-				//GPIO(GPIOB, PIN0, AF_OUTPUT_PUSH_PULL_2MHZ);
-				SetGPIOPort(GPIOB);
-				SetGPIOPinNumber(PIN0);
-				SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
+				PWMPin.SetGPIOPortPin(PB0);
 			break;
 			case TIM_CH4:
-				//GPIO(GPIOB, PIN1, AF_OUTPUT_PUSH_PULL_2MHZ);
-				SetGPIOPort(GPIOB);
-				SetGPIOPinNumber(PIN1);
-				SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
+				PWMPin.SetGPIOPortPin(PB1);
 			break;		
 		}
 	}
@@ -188,32 +118,22 @@ void PWM::ConfigPWM()
 		switch (GetTIMChannel())
 		{
 			case TIM_CH1:
-				//GPIO(GPIOB, PIN6, AF_OUTPUT_PUSH_PULL_2MHZ);
-				SetGPIOPort(GPIOB);
-				SetGPIOPinNumber(PIN6);
-				SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
+				PWMPin.SetGPIOPortPin(PB6);
 			break;
 			case TIM_CH2:
-				//GPIO(GPIOB, PIN7, AF_OUTPUT_PUSH_PULL_2MHZ);
-				SetGPIOPort(GPIOB);
-				SetGPIOPinNumber(PIN7);
-				SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
+				PWMPin.SetGPIOPortPin(PB7);
 			break;
 			case TIM_CH3:
-				//GPIO(GPIOB, PIN8, AF_OUTPUT_PUSH_PULL_2MHZ);
-				SetGPIOPort(GPIOB);
-				SetGPIOPinNumber(PIN8);
-				SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
+				PWMPin.SetGPIOPortPin(PB8);
 			break;
 			case TIM_CH4:
-				//GPIO(GPIOB, PIN9, AF_OUTPUT_PUSH_PULL_2MHZ);
-				SetGPIOPort(GPIOB);
-				SetGPIOPinNumber(PIN9);
-				SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
+				PWMPin.SetGPIOPortPin(PB9);
 			break;		
 		}
 	}
-	ConfigGPIOPin();			//After selecting port, pin and GPIOMode, configure the gpio
+	
+	PWMPin.SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);	//Default to PWM pins
+	PWMPin.ConfigGPIOPin();			//After selecting port, pin and GPIOMode, configure the gpio
 }
 
 //******************************************************************************************************************************

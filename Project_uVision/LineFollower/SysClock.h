@@ -17,6 +17,7 @@ class	SysClock
 	
 	
 	public:
+	SysClock();
 	
 	void SysClockInit();	//Initillizes the clock as 72MHz 
 	void MCO();						//Config. PA8 as a output clock source

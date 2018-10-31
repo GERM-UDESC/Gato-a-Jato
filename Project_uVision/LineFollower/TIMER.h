@@ -29,14 +29,11 @@ typedef enum{
 	FULL_REMAP,
 }TIM_REMAP;
 
-
-
-
 //--------------------------------------------CLASS------------------------------------------------------
 
 //TIM2, TIM3, TIM4 -> GenTimer
 //TIM1 -> AdvancedTimer
-class Timer : protected GPIO
+class Timer
 {
 	private:
 		//Atributes
@@ -71,8 +68,8 @@ class Timer : protected GPIO
 		TIM_TypeDef* GetTim();
 		TIM_CHANNELS GetTIMChannel();
 		TIM_MODE_IO GetTIMMode();
-		TIM_REMAP GetTIMRemap(TIM_TypeDef *TIM);
 		
 		//Methods
 		void TimerInit();
+		
 };

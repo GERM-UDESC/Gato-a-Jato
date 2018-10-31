@@ -93,8 +93,8 @@ typedef enum{
 }GPIO_IO_ENUM;
 
 typedef struct{
-	GPIO_TypeDef *PortTest;
-	PIN_NUMBERS pinNumberTest;
+	GPIO_TypeDef *Port;
+	PIN_NUMBERS pinNumber;
 }GPIO_STRUCT;
 
 //typedef enum{
@@ -109,39 +109,33 @@ class GPIO
 {
 		private:
 		//Atributes
-		GPIO_TypeDef *GPIOPort;					
-		PIN_NUMBERS GPIOPinNumber;
-		
-		//GPIO_STRUCT GPIO_PortPin;		//Save the port and pin
-		GPIO_MODES GPIOMode;				//Save the mode
+		GPIO_IO_ENUM GPIONum;							//Save just the referente to port and pin
+		GPIO_STRUCT GPIOPortPin;					//Save the port and pin
+		GPIO_MODES GPIOMode;							//Save the mode
 		PU_PD_ENUM PU_PD;
-		bool GPIOState;							//in case it's output
+		bool GPIOState;										//in case it's output
 		
+		static bool UsedPins[NUM_OF_IOs];	//Map the used pins to avoid reconfig the pin
 
-
-		protected:
-		//Setters for child classes
-		void SetGPIOPort(GPIO_TypeDef *GPIOPort);
-		void SetGPIOPinNumber(PIN_NUMBERS GPIOPinNumber);
-		void SetGPIOMode(GPIO_MODES GPIOMode);
 		
-		//Methods
-		void ConfigGPIOPin();
-			
 		public:
 		//Constructors
 		GPIO(){};
 		GPIO(GPIO_IO_ENUM IO_Pin, GPIO_MODES GPIOMode);
-		GPIO(GPIO_TypeDef *GPIOPort, PIN_NUMBERS GPIOPinNumber, GPIO_MODES GPIOMode);
 		
+		//Setters
+		void SetGPIOPortPin(GPIO_IO_ENUM IO_Pin);
+		void SetGPIOMode(GPIO_MODES GPIOMode);
+	
 		//Getters
-		GPIO_TypeDef* GetGPIOPort();
+		GPIO_TypeDef *GetGPIOPort();
 		PIN_NUMBERS GetGPIOPinNumber();
 		GPIO_MODES GetGPIOMode();
 		PU_PD_ENUM GetGPIOPuPd();
 		bool GetGPIOState();
 
 		//Public Methods
+		void ConfigGPIOPin();
 		void Config_PU_PD(PU_PD_ENUM PU_PD);	//By defaul, PD is choosen, this functions allows the user to change to PU/PD;
 		void digitalWrite(bool GPIOState);
 		void tooglePin();

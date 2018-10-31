@@ -40,39 +40,17 @@ const GPIO_STRUCT GPIO_PORTS_PINS[NUM_OF_IOs] =
 //Construtores
 GPIO::GPIO(GPIO_IO_ENUM IO_Pin, GPIO_MODES GPIOMode)
 {
-//	this->GPIO_PortPin.Port = GPIO_PORTS_PINS[IO_Pin].Port;
-//	this->GPIO_PortPin.pinNumber = GPIO_PORTS_PINS[IO_Pin].pinNumber;
-//	this->GPIOPort = GPIO_PORTS_PINS[IO_Pin].Port;
-//	this->GPIOPinNumber = GPIO_PORTS_PINS[IO_Pin].pinNumber;
-	this->GPIOPort = GPIO_PORTS_PINS[PC13].PortTest;
-	this->GPIOPinNumber = GPIO_PORTS_PINS[PC13].pinNumberTest;
+	this->GPIONum = IO_Pin;
+	SetGPIOPortPin(IO_Pin);
 	SetGPIOMode(GPIOMode);
-	
 	ConfigGPIOPin();
 	Config_PU_PD(PULL_DOWN);		//Config PULL_DOWN as default
-
 }
-
-GPIO::GPIO(GPIO_TypeDef *GPIOPort, PIN_NUMBERS GPIOPinNumber, GPIO_MODES GPIOMode)
-{
-		SetGPIOPort(GPIOPort);					
-		SetGPIOPinNumber(GPIOPinNumber);
-		SetGPIOMode(GPIOMode);
-	
-		ConfigGPIOPin();
-		Config_PU_PD(PULL_DOWN);		//Config PULL_DOWN as default
-}
-
 
 //------------------------Config_pin-----------------------------------------------
 void GPIO::ConfigGPIOPin()
 {
-//	#if (UsedPins[GetGPIOPinNumber()] == PIN_IS_USED)
-//	{
-//		#error "Pins is already in use"
-//	}
-//	#else UsedPins[GetGPIOPinNumber()] = PIN_IS_USED;
-	
+	//UsedPins[this->GPIONum] = HIGH;
 	/***************************************************************/
 	/*The microcontroller by default reserve 5 pins (PA13,PA14,PA15,PB3 and PB4) for JTAG + SW
 		I'm using only St-link (wich uses only SW pins(PA13 and PA14)) and I want to use PA15, PB3 and PB4 in my project,
@@ -157,13 +135,10 @@ bool GPIO::digitalRead()
 }
 
 //-------------------------------SETTERS------------------------------------
-void GPIO::SetGPIOPort(GPIO_TypeDef *GPIOPort)
+void GPIO::SetGPIOPortPin(GPIO_IO_ENUM IO_Pin)
 {
-	this->GPIOPort = GPIOPort;
-}
-void GPIO::SetGPIOPinNumber(PIN_NUMBERS GPIOPinNumber)
-{
-	this->GPIOPinNumber = GPIOPinNumber;
+	this->GPIOPortPin.Port = GPIO_PORTS_PINS[IO_Pin].Port;
+	this->GPIOPortPin.pinNumber = GPIO_PORTS_PINS[IO_Pin].pinNumber;	
 }
 void GPIO::SetGPIOMode(GPIO_MODES GPIOMode)
 {
@@ -171,15 +146,13 @@ void GPIO::SetGPIOMode(GPIO_MODES GPIOMode)
 }
 
 //-------------------------------GETTERS------------------------------------
-GPIO_TypeDef* GPIO::GetGPIOPort()
+GPIO_TypeDef *GPIO::GetGPIOPort()
 {
-	//return this->GPIO_PortPin.Port;
-	return this->GPIOPort;
+	return this->GPIOPortPin.Port;
 }
 PIN_NUMBERS GPIO::GetGPIOPinNumber()
 {
-	//return this->GPIO_PortPin.pinNumber;
-	return this->GPIOPinNumber;
+	return this->GPIOPortPin.pinNumber;
 }
 GPIO_MODES GPIO::GetGPIOMode()
 {

@@ -1,9 +1,11 @@
+#include "GPIO.h"
 #include "TIMER.h"
 //--------------------------------------------CLASS------------------------------------------------------
 class PWM : protected Timer
 {
 	private:
 		//Atributes
+		GPIO PWMPin;
 		TIM_REMAP PWMremap;
 		volatile uint16_t *PWM_WriteAddress;			//Pointer to the CCRx Register
 

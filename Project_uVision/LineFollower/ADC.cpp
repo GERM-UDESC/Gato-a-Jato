@@ -7,23 +7,18 @@ ADC::ADC(ADC_CHANNELS ADCChannel)
 	SetADCMode(SINGLE_CONVERSION); 		//default
 	SetADCChannel(ADCChannel);
 		
+	if(GetADCChannel() == ADC_CH0)	SetGPIOPortPin(PA0);
+	else if (GetADCChannel() == ADC_CH1)	SetGPIOPortPin(PA1);
+	else if (GetADCChannel() == ADC_CH2)	SetGPIOPortPin(PA2);
+	else if (GetADCChannel() == ADC_CH3)	SetGPIOPortPin(PA3);
+	else if (GetADCChannel() == ADC_CH4)	SetGPIOPortPin(PA4);
+	else if (GetADCChannel() == ADC_CH5)	SetGPIOPortPin(PA5);
+	else if (GetADCChannel() == ADC_CH6)	SetGPIOPortPin(PA6);
+	else if (GetADCChannel() == ADC_CH7)	SetGPIOPortPin(PA7);
+	else if (GetADCChannel() == ADC_CH8)	SetGPIOPortPin(PB0);
+	else if (GetADCChannel() == ADC_CH9)	SetGPIOPortPin(PB1);
 	
-	if(GetADCChannel() <= ADC_CH7) SetGPIOPort(GPIOA);				//CH0-CH7 are conected to gpioa
-	else if (GetADCChannel() <= ADC_CH9) SetGPIOPort(GPIOB);	//CH8 and CH9 are PB0 and PB1
-	
-	
-	if(GetADCChannel() == ADC_CH0)	SetGPIOPinNumber(PIN0);
-	else if (GetADCChannel() == ADC_CH1)	SetGPIOPinNumber(PIN1);
-	else if (GetADCChannel() == ADC_CH2)	SetGPIOPinNumber(PIN2);
-	else if (GetADCChannel() == ADC_CH3)	SetGPIOPinNumber(PIN3);
-	else if (GetADCChannel() == ADC_CH4)	SetGPIOPinNumber(PIN4);
-	else if (GetADCChannel() == ADC_CH5)	SetGPIOPinNumber(PIN5);
-	else if (GetADCChannel() == ADC_CH6)	SetGPIOPinNumber(PIN6);
-	else if (GetADCChannel() == ADC_CH7)	SetGPIOPinNumber(PIN7);
-	else if (GetADCChannel() == ADC_CH8)	SetGPIOPinNumber(PIN0);
-	else if (GetADCChannel() == ADC_CH9)	SetGPIOPinNumber(PIN1);
-	
-	SetGPIOMode(INPUT_ANALOG);	//This is needed in order to use the pin as one adc channel
+	SetGPIOMode(INPUT_ANALOG);	//Default for adc channels
 	
 	ConfigGPIOPin();
 	ADC1->CR2 |= (1<<19) | (1<<18) | (1<<17);
