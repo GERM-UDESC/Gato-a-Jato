@@ -144,10 +144,7 @@ void PWM::PWMInit()
 //ARR -> "Auto Reload Register" determinates the period
 //CCR1 -> "Capture/Compare Register" Determinates the duty cicle
 //CCMR1 -> "Capture/Compare Register" Configure the operation mode of the Capture/Compare Register respective to the selected channel
-	
-	//This line enable/disable the preload register of CCRx
-	//TIM->CCMR1 |= (1<<11); 
-	
+
 	///* Uncoment this to get 1kHz of frequency and to be able to write in the CCR1 a value between 0-100 to get 0-100% PWM
 	//TIM->PSC = 7200; //Configure the preescalers
 	
@@ -158,32 +155,32 @@ void PWM::PWMInit()
 	{
 		case TIM_CH1:
 			PWM_WriteAddress  = &(TIM->CCR1);
-			*PWM_WriteAddress  = 0;										//Initialize the PWM with 0%
-			TIM->CCMR1 |= (1<<6) | (1<<5);		//Configure the output compare mode as PWM with active mode HIGH
-			TIM->BDTR |= (1<<15);							//Enable the main output
+			*PWM_WriteAddress  = 0;							//Initialize the PWM with 0%
+			GetTim()->CCMR1 |= (1<<6) | (1<<5);			//Configure the output compare mode as PWM with active mode HIGH
+			GetTim()->BDTR |= (1<<15);								//Enable the main output
 		break;
 		case TIM_CH2:
 			PWM_WriteAddress  = &(TIM->CCR2);
-			*PWM_WriteAddress  = 0;										//Initialize the PWM with 0%
-			TIM->CCMR1 |= (1<<14) | (1<<13);	//Configure the output compare mode as PWM with active mode HIGH
+			*PWM_WriteAddress  = 0;							//Initialize the PWM with 0%
+			GetTim()->CCMR1 |= (1<<14) | (1<<13);		//Configure the output compare mode as PWM with active mode HIGH
 		break;
 		case TIM_CH3:
 			PWM_WriteAddress  = &(TIM->CCR3);
-			*PWM_WriteAddress  = 0;										//Initialize the PWM with 0%
-			TIM->CCMR2 |= (1<<6) | (1<<5);		//Configure the output compare mode as PWM with active mode HIGH
+			*PWM_WriteAddress  = 0;							//Initialize the PWM with 0%
+			GetTim()->CCMR2 |= (1<<6) | (1<<5);			//Configure the output compare mode as PWM with active mode HIGH
 		break;
 		case TIM_CH4:
 			PWM_WriteAddress  = &(TIM->CCR4);
-			*PWM_WriteAddress  = 0;										//Initialize the PWM with 0%
-			TIM->CCMR2 |= (1<<14) | (1<<13);	//Configure the output compare mode as PWM with active mode HIGH
+			*PWM_WriteAddress  = 0;							//Initialize the PWM with 0%
+			GetTim()->CCMR2 |= (1<<14) | (1<<13);		//Configure the output compare mode as PWM with active mode HIGH
 		break;		
 	
 	}
-	TIM->CCER |= (1<<(4*GetTIMChannel()));	//Enable the channel output
+	GetTim()->CCER |= (1<<(4*GetTIMChannel()));	//Enable the channel output
 	
-	TIM->EGR |= (1<<0);							//Update generation -> Generate an uptade of all configurations done before
+	GetTim()->EGR |= (1<<0);											//Update generation -> Generate an uptade of all configurations done before
 	
-	TIM->CR1 |= (1<<0); 									//Enable the counter
+	GetTim()->CR1 |= (1<<0); 										//Enable the counter
 	
 }
 

@@ -115,6 +115,7 @@ class GPIO
 		PU_PD_ENUM PU_PD;
 		bool GPIOState;										//in case it's output
 		
+		static const GPIO_STRUCT GPIO_PORTS_PINS[NUM_OF_IOs];
 		static bool UsedPins[NUM_OF_IOs];	//Map the used pins to avoid reconfig the pin
 
 		

@@ -1,13 +1,15 @@
 #include "GPIO.h"
+#include "Micro.h"
 
 #pragma once
 
 typedef enum{
 	INPUT_CAPTURE_MODE = 0,
 	OUTPUT_COMPARE_MODE,
+	COUNTER,
 	PWM_MODE,
 	QUADRATURE_ENCODER_MODE,
-}TIM_MODE_IO;
+}TIM_MODE;
 
 typedef enum{
 	TIM_CH1 = 0,
@@ -44,7 +46,7 @@ class Timer
 		
 		TIM_REMAP TIMRemap;
 		TIM_CHANNELS TIMChannel;
-		TIM_MODE_IO TIMMode;
+		TIM_MODE TIMMode;
 		
 	protected:
 		//Atributes
@@ -55,11 +57,12 @@ class Timer
 		//Setters
 		void SetTim(TIM_TypeDef *TIM);
 		void SetTIMChannel(TIM_CHANNELS TIMChannel);
-		void SetTIMMode(TIM_MODE_IO TIMMode);
+		void SetTIMMode(TIM_MODE TIMMode);
 		
 	public:
 		//Constructor
-		Timer(TIM_TypeDef *TIM, TIM_CHANNELS TIMChannel, TIM_MODE_IO TIMMode);		
+		Timer(TIM_TypeDef *TIM, TIM_CHANNELS TIMChannel, TIM_MODE TIMMode);	
+		Timer(TIM_TypeDef *TIM, TIM_MODE TIMMode);
 		
 		//Public Setters
 		void SetTIMRemap(TIM_REMAP TIMRemap);
@@ -67,9 +70,11 @@ class Timer
 		//Getters 
 		TIM_TypeDef* GetTim();
 		TIM_CHANNELS GetTIMChannel();
-		TIM_MODE_IO GetTIMMode();
+		TIM_MODE GetTIMMode();
 		
 		//Methods
 		void TimerInit();
+		void InterrupTime(uint16_t time);			//in micro seconds -> 0<time<65000
+		void ClearInterruptFlag();
 		
 };

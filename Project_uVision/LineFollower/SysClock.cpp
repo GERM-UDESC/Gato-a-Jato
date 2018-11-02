@@ -52,6 +52,47 @@ void SysClock::SysClockInit()
 	
 	RCC->CR &= ~(1<<0);		//Turn off HSI to save power
 	
+	/*************************************************************************************************************/
+//	//Low Speed Clock configuration
+//	
+//	/*
+//		After reset, access to the Backup registers and RTC is disabled and the Backup domain
+//		(BKP) is protected against possible parasitic write access. To enable access to the Backup
+//		registers and the RTC, proceed as follows:
+//	*/
+//	//enable the power and backup interface clocks by setting the PWREN and BKPEN bits in the RCC_APB1ENR register
+//	RCC->APB1ENR |= (1<<27) | (1<<28);
+//	
+//	//set the DBP bit the Power Control Register (PWR_CR) to enable access to the Backup registers and RTC.
+//	PWR->CR |= (1<<8);
+//	
+//	
+//	//Now the RTC Clock initialization
+//	//1. Turn on LSE
+//	RCC->BDCR |= (1<<0);
+//	
+//	//2. Wait until the LSE is stable
+//	while(!(RCC->BDCR & (1<<1)));	//Wait until the PLL clock is stable
+//	
+//	//3. Select LSE as RTC Clock source
+//	RCC->BDCR |= (1<<8);
+//	
+//	//4. Reset the backup Domain
+//	RCC->BDCR |= (1<<16);		//this is actually not needed, but just to be sure
+//	
+//	//5. Enable the RTC clock
+//	RCC->BDCR |= (1<<15);
+//	
+//	/*****************************************************************************/
+//	//Start the RTC configuration
+//	//After every configuration, it's needed to wait the last operation to be finished before doing another one
+//	//1. Enter in configuration mode
+//	while(!(RTC->CRL & (1<<5)));	//Wait until the Last write operation on RTC registers is finished (this one is just to be sure)
+//	RTC->CRL |= (1<<4);
+//	while(!(RTC->CRL & (1<<5)));	//Wait until the Last write operation on RTC registers is finished
+//	
+//	//2.
+//	
 };
 
 void SysClock::MCO()

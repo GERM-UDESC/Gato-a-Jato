@@ -13,7 +13,7 @@ typedef enum{
 class	SysClock
 {
 	private:
-	
+	void HSEClockInit();
 	
 	
 	public:

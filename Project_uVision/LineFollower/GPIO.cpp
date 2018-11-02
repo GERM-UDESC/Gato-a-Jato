@@ -1,7 +1,7 @@
 #include "Micro.h"
 #include "GPIO.h"
 
-const GPIO_STRUCT GPIO_PORTS_PINS[NUM_OF_IOs] =
+const GPIO_STRUCT GPIO::GPIO_PORTS_PINS[NUM_OF_IOs] =
 {
   {GPIOA, PIN0},    
 	{GPIOA, PIN1},
@@ -36,6 +36,9 @@ const GPIO_STRUCT GPIO_PORTS_PINS[NUM_OF_IOs] =
 	{GPIOC, PIN14}, 	//Carefull
 	{GPIOC, PIN15}, 	//Carefull
  };
+ 
+ bool GPIO::UsedPins[NUM_OF_IOs];		//Initialize everything with zero
+ 
 
 //Construtores
 GPIO::GPIO(GPIO_IO_ENUM IO_Pin, GPIO_MODES GPIOMode)
