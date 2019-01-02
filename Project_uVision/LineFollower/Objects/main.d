@@ -5,5 +5,8 @@
 .\objects\main.o: GPIO.h
 .\objects\main.o: TIMER.h
 .\objects\main.o: PWM.h
-.\objects\main.o: ADC.h
 .\objects\main.o: ENCODER.h
+.\objects\main.o: ADC.h
+.\objects\main.o: REFLECTANCE_SENSOR.h
+.\objects\main.o: LINE_SENSOR.h
+.\objects\main.o: MOTOR.h

@@ -11,9 +11,11 @@ It will also configure the external 32.764kHz oscilator as the RTC source
 This function will also configure the clock off all periferals and buses as the maximus allowed
 
 */
+
 SysClock::SysClock()
 {
 	SysClockInit();
+	SysTickInit(BASE_100ms);
 }
 
 void SysClock::SysClockInit()
@@ -105,13 +107,13 @@ void SysClock::MCO()
 void SysClock::SysTickInit(SysTickBaseTimeEnum BASE_TIME)
 {
 	SysTick->LOAD = BASE_TIME; 
-	SysTick->CTRL = 5;
+	SysTick->CTRL = 5;	
 }
-
 
 bool SysClock::SysTickGetEvent()
 {
 	return SysTick->CTRL & (1<<16);
 }
+
 
 

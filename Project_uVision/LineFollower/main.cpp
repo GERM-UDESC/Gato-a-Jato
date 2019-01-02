@@ -6,53 +6,148 @@
 #include "GPIO.h"
 #include "TIMER.h"
 #include "PWM.h"
-#include "ADC.h"
 #include "ENCODER.h"
+#include "ADC.h"
+#include "REFLECTANCE_SENSOR.h"
+#include "LINE_SENSOR.h"
+#include "MOTOR.h"
 
-uint16_t Ticks = 0;
-uint16_t lastTicks = 0;
+uint16_t velocidade_teste = 0;
 bool direction = 0;
-uint16_t timecounter = 0;
-uint16_t motorSpeed = 0;
+float motorSpeed = 0;
+
+uint32_t time = 0;
+uint32_t final_time = 0;
+uint32_t delta_time = 0;
 
 //Como gerar um erro ao tentar configurar o mesmo pino para duas funções?
-//Como fazer uma função que configure só uma vez um remap para todos os canais do timer?
-//qual o melhor modo de obter a leitura dos sensores, concersão única ou contínua?
 
-//Problema com inicialização de variáveis
+//as variáveis não estão zerando, pq?
 
-//Aprender a usar atributos e funções estaticas
-
-//bool GPIO::UsedPins[NUM_OF_IOs];
 
 int main()
 {
-	SysClock Board;
-	Board.SysTickInit(BASE_100ms);
-
-	GPIO LED_placa(PC13, GP_OUTPUT_PUSH_PULL_2MHZ);
-	Timer InterruptGenerator(TIM1, COUNTER);
-	PWM Motortest(TIM2, TIM_CH1, NO_REMAP);
-	Encoder ENCTest(TIM3);
-	Motortest.PWMWrite(25000);
+	//-----------------------------------Initiallize static parameters----------------------
+	Timer::Timer_Initiallize();
+	Encoder::Encoder_Initiallize();
+	
+	//----------------------------------------Setup----------------------------------------
+	SysClock Board;		//initiallize the board clock
+	
+	//Board LED
+	GPIO LED_Board(PC13, GP_OUTPUT_PUSH_PULL_2MHZ);
+	
+	//H bridge configuration
+//	GPIO AIN2(PA10, GP_OUTPUT_PUSH_PULL_2MHZ);
+//	GPIO AIN1(PA11, GP_OUTPUT_PUSH_PULL_2MHZ);
+	GPIO STBY(PA12, GP_OUTPUT_PUSH_PULL_2MHZ);
+	GPIO BIN1(PA15, GP_OUTPUT_PUSH_PULL_2MHZ);
+	GPIO BIN2(PB3, GP_OUTPUT_PUSH_PULL_2MHZ);
+	
+	//PWM configurations
+//	PWM PWM_E(TIM3, TIM_CH2, PARTIAL_REMAP2);
+	PWM PWM_D(TIM3, TIM_CH1, PARTIAL_REMAP2);
 		
+	//Timer
+	Timer Time_Generator(TIM2, COUNTER); //This one is dedicated to generate the time base in useconds
+	
+	//Encoders configuration
+//	Encoder ENC_E(TIM1);
+	Encoder ENC_D(TIM4);
+	
+	//Sensors
+	Line_Sensor Sensor_Board(ADC_CH0, ADC_CH1, ADC_CH2, ADC_CH3, ADC_CH4, ADC_CH5, ADC_CH6, ADC_CH7);
+	Reflectance_Sensor Sensor_Line_D(ADC_CH8);
+	Reflectance_Sensor Sensor_Line_E(ADC_CH9);	
+
+	
+	//-----------------------------------------------------------------------------------
+	
+	//----------------------------------Initial Conditions------------------------------------------
+//	AIN2.digitalWrite(HIGH);
+//	AIN1.digitalWrite(LOW);
+	STBY.digitalWrite(HIGH);
+	BIN1.digitalWrite(LOW);
+	BIN2.digitalWrite(HIGH);
+	
+	PWM_D.PWMWrite(0);
+	//PWM_E.PWMWrite(0);
+	//-----------------------------------------------------------------------------------------------
+	
+	PWM_D.PWMWrite(10000);
+	//PWM_E.PWMWrite(10000);
+	
+	//Tests
+	Motor Motor_E(TIM3, TIM_CH2, PARTIAL_REMAP2, TIM1, PA10, PA11);
+	Motor_E.Set_Speed(0);
+//	for (uint32_t j = 0; j < 5000; j++)
+//	{
+//		Sensor_Board.Calibrate_Sensor();
+//		Sensor_Line_D.Calib_Reflectance_Sensor();
+//		Sensor_Line_E.Calib_Reflectance_Sensor();
+//	}
+	
+	
+	Motor_E.Set_Speed(500);
 	while(1)
 	{
-		Ticks = ENCTest.GetEncTicks();
-		direction = ENCTest.GetEncDirection();
-			
+		time = Timer::GetTime_usec();
+		Encoder::Encoder_Handler();
+//		leitura_sensores = Sensor_Board.Read_Sensor();
+		
+//		motorSpeed = ENC_E.GetEncSpeed();	
+		motorSpeed = Motor_E.Get_Speed();
+		Motor_E.Handler();
+		
+//		if (motorSpeed < 190) velocidade_teste++;
+//		else if (motorSpeed > 210) velocidade_teste--;
+//		if (velocidade_teste>65000) velocidade_teste = 65000;
+//		else if (velocidade_teste<10) velocidade_teste = 10;
+//		PWM_E.PWMWrite(velocidade_teste);
 
-		if (Board.SysTickGetEvent()) LED_placa.tooglePin();
+		if (Board.SysTickGetEvent()) 
+		{
+			LED_Board.tooglePin();
+		}
+		final_time = Timer::GetTime_usec();
+		delta_time = final_time - time;
 	}
-	
 }
 
-extern "C" {
-		void TIM1_UP_IRQHandler()
-	{
-		TIM1->SR &= ~(1<<0);
-		timecounter = timecounter + 1;
-		motorSpeed = Ticks - lastTicks;
-		lastTicks = Ticks;
-	}
-}
+
+
+//Timer generator interruption handler
+extern "C" void TIM2_IRQHandler();
+
+void TIM2_IRQHandler()
+{
+	TIM2->SR &= ~(1<<0);
+	Timer::Timer_Handler_by_Time();
+};
+
+//Encoder Esquerdo - Interrupt Handler
+extern "C" void TIM1_UP_IRQHandler();
+
+void TIM1_UP_IRQHandler()
+{
+	TIM1->SR &= ~(1<<0);
+	Encoder::Encoder_Ticks_overflow(TIM1);
+};
+
+
+//Encoder Direito - Interrupt Handler
+extern "C" void TIM4_IRQHandler();
+
+void TIM4_IRQHandler()
+{
+	TIM4->SR &= ~(1<<0);
+	Encoder::Encoder_Ticks_overflow(TIM4);
+};
+
+
+
+
+
+
+
+

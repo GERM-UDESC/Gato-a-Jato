@@ -2,17 +2,17 @@
 
 //******************************************************************************************************************************
 
-PWM::PWM(TIM_TypeDef *TIM, TIM_CHANNELS channel, TIM_REMAP PWMremap) : Timer(TIM, channel, PWM_MODE)		//Timer Constructor
+PWM::PWM(TIM_TypeDef *TIM, TIM_CHANNELS channel, TIM_REMAP TIMremap) : Timer(TIM, channel, PWM_MODE)		//Timer Constructor
 {	
-	SetPWMRemap(PWMremap);
+	SetTIMRemap(TIMremap);
 	
-	ConfigPWM();
+	ConfigPWMPin();
 	PWMInit();
 }
 
 //******************************************************************************************************************************
 
-void PWM::ConfigPWM()	
+void PWM::ConfigPWMPin()	
 {
 	//Remap will make no efect at Timer1
 	if (GetTim() == TIM1) 
@@ -39,42 +39,41 @@ void PWM::ConfigPWM()
 		switch (GetTIMChannel())
 		{
 			case TIM_CH1:
-				if ((GetPWMRemap() == PARTIAL_REMAP1) || (GetPWMRemap() == FULL_REMAP))
+				if ((GetTIMRemap() == PARTIAL_REMAP1) || (GetTIMRemap() == FULL_REMAP))
 				{
 					PWMPin.SetGPIOPortPin(PA15);
 					RCC->APB2ENR |= (1<<0);
-					AFIO->MAPR |= ((GetPWMRemap())<<8); //Select the remaping configuration
+					AFIO->MAPR |= ((GetTIMRemap())<<8); //Select the remaping configuration
 				}
 				else PWMPin.SetGPIOPortPin(PA0);
 				
-					
 			break;
 			case TIM_CH2:
-				if ((GetPWMRemap() == PARTIAL_REMAP1) || (GetPWMRemap() == FULL_REMAP))
+				if ((GetTIMRemap() == PARTIAL_REMAP1) || (GetTIMRemap() == FULL_REMAP))
 				{
 					PWMPin.SetGPIOPortPin(PB3);
 					RCC->APB2ENR |= (1<<0);
-					AFIO->MAPR |= ((GetPWMRemap())<<8); //Select the remaping configuration
+					AFIO->MAPR |= ((GetTIMRemap())<<8); //Select the remaping configuration
 				}
 				else PWMPin.SetGPIOPortPin(PA1);
 				
 			break;
 			case TIM_CH3:
-				if ((GetPWMRemap() == PARTIAL_REMAP2) || (GetPWMRemap() == FULL_REMAP))
+				if ((GetTIMRemap() == PARTIAL_REMAP2) || (GetTIMRemap() == FULL_REMAP))
 				{
 					PWMPin.SetGPIOPortPin(PB10);
 					RCC->APB2ENR |= (1<<0);
-					AFIO->MAPR |= ((GetPWMRemap())<<8); //Select the remaping configuration
+					AFIO->MAPR |= ((GetTIMRemap())<<8); //Select the remaping configuration
 				}
 				else PWMPin.SetGPIOPortPin(PA2);
 				
 			break;
 			case TIM_CH4:
-				if ((GetPWMRemap() == PARTIAL_REMAP2) || (GetPWMRemap() == FULL_REMAP))
+				if ((GetTIMRemap() == PARTIAL_REMAP2) || (GetTIMRemap() == FULL_REMAP))
 				{
 					PWMPin.SetGPIOPortPin(PB11);
 					RCC->APB2ENR |= (1<<0);
-					AFIO->MAPR |= ((GetPWMRemap())<<8); //Select the remaping configuration
+					AFIO->MAPR |= ((GetTIMRemap())<<8); //Select the remaping configuration
 				}
 				else PWMPin.SetGPIOPortPin(PA3);
 			break;		
@@ -86,20 +85,20 @@ void PWM::ConfigPWM()
 		switch (GetTIMChannel())
 		{
 			case TIM_CH1:
-				if (GetPWMRemap() == PARTIAL_REMAP2)
+				if (GetTIMRemap() == PARTIAL_REMAP2)
 				{
 					PWMPin.SetGPIOPortPin(PB4);
 					RCC->APB2ENR |= (1<<0);
-					AFIO->MAPR |= ((GetPWMRemap())<<10); //Select the remaping configuration
+					AFIO->MAPR |= ((GetTIMRemap())<<10); //Select the remaping configuration
 				}
 				else PWMPin.SetGPIOPortPin(PA6);					
 			break;
 			case TIM_CH2:
-				if (GetPWMRemap() == PARTIAL_REMAP2)
+				if (GetTIMRemap() == PARTIAL_REMAP2)
 				{
 					PWMPin.SetGPIOPortPin(PB5);
 					RCC->APB2ENR |= (1<<0);
-					AFIO->MAPR |= ((GetPWMRemap())<<10); //Select the remaping configuration
+					AFIO->MAPR |= ((GetTIMRemap())<<10); //Select the remaping configuration
 				}
 				else PWMPin.SetGPIOPortPin(PA7);
 			break;
@@ -155,30 +154,30 @@ void PWM::PWMInit()
 	{
 		case TIM_CH1:
 			PWM_WriteAddress  = &(TIM->CCR1);
-			*PWM_WriteAddress  = 0;							//Initialize the PWM with 0%
+			*PWM_WriteAddress  = 0;									//Initialize the PWM with 0%
 			GetTim()->CCMR1 |= (1<<6) | (1<<5);			//Configure the output compare mode as PWM with active mode HIGH
-			GetTim()->BDTR |= (1<<15);								//Enable the main output
+			GetTim()->BDTR |= (1<<15);							//Enable the main output
 		break;
 		case TIM_CH2:
 			PWM_WriteAddress  = &(TIM->CCR2);
-			*PWM_WriteAddress  = 0;							//Initialize the PWM with 0%
+			*PWM_WriteAddress  = 0;									//Initialize the PWM with 0%
 			GetTim()->CCMR1 |= (1<<14) | (1<<13);		//Configure the output compare mode as PWM with active mode HIGH
 		break;
 		case TIM_CH3:
 			PWM_WriteAddress  = &(TIM->CCR3);
-			*PWM_WriteAddress  = 0;							//Initialize the PWM with 0%
+			*PWM_WriteAddress  = 0;									//Initialize the PWM with 0%
 			GetTim()->CCMR2 |= (1<<6) | (1<<5);			//Configure the output compare mode as PWM with active mode HIGH
 		break;
 		case TIM_CH4:
 			PWM_WriteAddress  = &(TIM->CCR4);
-			*PWM_WriteAddress  = 0;							//Initialize the PWM with 0%
+			*PWM_WriteAddress  = 0;									//Initialize the PWM with 0%
 			GetTim()->CCMR2 |= (1<<14) | (1<<13);		//Configure the output compare mode as PWM with active mode HIGH
 		break;		
 	
 	}
 	GetTim()->CCER |= (1<<(4*GetTIMChannel()));	//Enable the channel output
 	
-	GetTim()->EGR |= (1<<0);											//Update generation -> Generate an uptade of all configurations done before
+	GetTim()->EGR |= (1<<0);										//Update generation -> Generate an uptade of all configurations done before
 	
 	GetTim()->CR1 |= (1<<0); 										//Enable the counter
 	
@@ -189,17 +188,4 @@ void PWM::PWMInit()
 void PWM::PWMWrite(uint16_t value)
 {
 	*PWM_WriteAddress  = value;
-}
-
-
-//-------------------------------SETTERS------------------------------------
-void PWM::SetPWMRemap(TIM_REMAP PWMremap)
-{
-	this->PWMremap = PWMremap;
-}
-
-//-------------------------------GETTERS------------------------------------
-TIM_REMAP PWM::GetPWMRemap()
-{
-	return this->PWMremap;
 }

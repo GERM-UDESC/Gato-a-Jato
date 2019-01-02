@@ -1,5 +1,5 @@
-#ifndef	GPIO_H
-#define GPIO_H
+#ifndef	GPIO_DRIVER
+#define GPIO_DRIVER
 #include "Micro.h"
 
 #define HIGH	1
@@ -107,19 +107,20 @@ typedef struct{
 
 class GPIO
 {
-		private:
+	//friend class Motor;
+	private:
 		//Atributes
-		GPIO_IO_ENUM GPIONum;							//Save just the referente to port and pin
+		GPIO_IO_ENUM IO_Pin;							//Save just the referente to port and pin
 		GPIO_STRUCT GPIOPortPin;					//Save the port and pin
 		GPIO_MODES GPIOMode;							//Save the mode
 		PU_PD_ENUM PU_PD;
 		bool GPIOState;										//in case it's output
 		
 		static const GPIO_STRUCT GPIO_PORTS_PINS[NUM_OF_IOs];
-		static bool UsedPins[NUM_OF_IOs];	//Map the used pins to avoid reconfig the pin
+		static bool UsedPins[NUM_OF_IOs];	//Map the used pins to avoid reconfig the pin -> NOT IMPLEMENTED YET
 
 		
-		public:
+	public:
 		//Constructors
 		GPIO(){};
 		GPIO(GPIO_IO_ENUM IO_Pin, GPIO_MODES GPIOMode);
@@ -127,12 +128,14 @@ class GPIO
 		//Setters
 		void SetGPIOPortPin(GPIO_IO_ENUM IO_Pin);
 		void SetGPIOMode(GPIO_MODES GPIOMode);
+		void SetIOPin(GPIO_IO_ENUM IO_Pin);
 	
 		//Getters
 		GPIO_TypeDef *GetGPIOPort();
 		PIN_NUMBERS GetGPIOPinNumber();
 		GPIO_MODES GetGPIOMode();
 		PU_PD_ENUM GetGPIOPuPd();
+		GPIO_IO_ENUM GetIOPin();
 		bool GetGPIOState();
 
 		//Public Methods

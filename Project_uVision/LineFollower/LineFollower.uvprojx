@@ -473,6 +473,41 @@
             </File>
           </Files>
         </Group>
+        <Group>
+          <GroupName>Classes_Seguidor</GroupName>
+          <Files>
+            <File>
+              <FileName>REFLECTANCE_SENSOR.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\REFLECTANCE_SENSOR.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>REFLECTANCE_SENSOR.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\REFLECTANCE_SENSOR.h</FilePath>
+            </File>
+            <File>
+              <FileName>LINE_SENSOR.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\LINE_SENSOR.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>LINE_SENSOR.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\LINE_SENSOR.h</FilePath>
+            </File>
+            <File>
+              <FileName>MOTOR.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\MOTOR.h</FilePath>
+            </File>
+            <File>
+              <FileName>MOTOR.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\MOTOR.cpp</FilePath>
+            </File>
+          </Files>
+        </Group>
       </Groups>
     </Target>
   </Targets>

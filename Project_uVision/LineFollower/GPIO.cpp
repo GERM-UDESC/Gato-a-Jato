@@ -43,7 +43,7 @@ const GPIO_STRUCT GPIO::GPIO_PORTS_PINS[NUM_OF_IOs] =
 //Construtores
 GPIO::GPIO(GPIO_IO_ENUM IO_Pin, GPIO_MODES GPIOMode)
 {
-	this->GPIONum = IO_Pin;
+	SetIOPin(IO_Pin);
 	SetGPIOPortPin(IO_Pin);
 	SetGPIOMode(GPIOMode);
 	ConfigGPIOPin();
@@ -53,7 +53,6 @@ GPIO::GPIO(GPIO_IO_ENUM IO_Pin, GPIO_MODES GPIOMode)
 //------------------------Config_pin-----------------------------------------------
 void GPIO::ConfigGPIOPin()
 {
-	//UsedPins[this->GPIONum] = HIGH;
 	/***************************************************************/
 	/*The microcontroller by default reserve 5 pins (PA13,PA14,PA15,PB3 and PB4) for JTAG + SW
 		I'm using only St-link (wich uses only SW pins(PA13 and PA14)) and I want to use PA15, PB3 and PB4 in my project,
@@ -61,7 +60,7 @@ void GPIO::ConfigGPIOPin()
 		This can be done enabling the clock of AFIO periferal and configuring SWJ _CFG bits to 010, wich means that
 		JTAG-DP pins are Disabled and SW-DP pins still Enabled
 	*/
-	RCC->APB2ENR |= (1<<0);  	//Enable the clock
+	RCC->APB2ENR |= (1<<0);  	//Enable the clock of AFIO
 	AFIO->MAPR |= (1<<25);		//put the "010" into SWJ _CFG bits
 	
 	/***************************************************************/
@@ -140,14 +139,17 @@ bool GPIO::digitalRead()
 //-------------------------------SETTERS------------------------------------
 void GPIO::SetGPIOPortPin(GPIO_IO_ENUM IO_Pin)
 {
-	this->GPIOPortPin.Port = GPIO_PORTS_PINS[IO_Pin].Port;
-	this->GPIOPortPin.pinNumber = GPIO_PORTS_PINS[IO_Pin].pinNumber;	
+	this->GPIOPortPin.Port = GPIO::GPIO_PORTS_PINS[IO_Pin].Port;
+	this->GPIOPortPin.pinNumber = GPIO::GPIO_PORTS_PINS[IO_Pin].pinNumber;	
 }
 void GPIO::SetGPIOMode(GPIO_MODES GPIOMode)
 {
 	this->GPIOMode = GPIOMode;
 }
-
+void GPIO::SetIOPin(GPIO_IO_ENUM IO_Pin)
+{
+	this->IO_Pin = IO_Pin;
+}
 //-------------------------------GETTERS------------------------------------
 GPIO_TypeDef *GPIO::GetGPIOPort()
 {
@@ -164,6 +166,10 @@ GPIO_MODES GPIO::GetGPIOMode()
 PU_PD_ENUM GPIO::GetGPIOPuPd()
 {
 	return this->PU_PD;
+}
+GPIO_IO_ENUM GPIO::GetIOPin()
+{
+	return this->IO_Pin;
 }
 bool GPIO::GetGPIOState()
 {
