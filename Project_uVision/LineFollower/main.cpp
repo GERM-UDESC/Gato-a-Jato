@@ -15,6 +15,7 @@
 uint16_t velocidade_teste = 0;
 bool direction = 0;
 float motorSpeed = 0;
+int leitura[8];
 
 uint32_t time = 0;
 uint32_t final_time = 0;
@@ -56,9 +57,16 @@ int main()
 	Encoder ENC_D(TIM4);
 	
 	//Sensors
-	Line_Sensor Sensor_Board(ADC_CH0, ADC_CH1, ADC_CH2, ADC_CH3, ADC_CH4, ADC_CH5, ADC_CH6, ADC_CH7);
-	Reflectance_Sensor Sensor_Line_D(ADC_CH8);
-	Reflectance_Sensor Sensor_Line_E(ADC_CH9);	
+	//Line_Sensor Sensor_Board(ADC_CH0, ADC_CH1, ADC_CH2, ADC_CH3, ADC_CH4, ADC_CH5, ADC_CH6, ADC_CH7);
+	Reflectance_Sensor Sensor_Line_0(ADC_CH0);
+	Reflectance_Sensor Sensor_Line_1(ADC_CH1);
+	Reflectance_Sensor Sensor_Line_2(ADC_CH2);
+	Reflectance_Sensor Sensor_Line_3(ADC_CH3);
+	Reflectance_Sensor Sensor_Line_4(ADC_CH4);
+	Reflectance_Sensor Sensor_Line_5(ADC_CH5);
+	Reflectance_Sensor Sensor_Line_6(ADC_CH6);
+	Reflectance_Sensor Sensor_Line_7(ADC_CH7);
+	Reflectance_Sensor Sensor_Line_D(ADC_CH8);	
 
 	
 	//-----------------------------------------------------------------------------------
@@ -80,20 +88,38 @@ int main()
 	//Tests
 	Motor Motor_E(TIM3, TIM_CH2, PARTIAL_REMAP2, TIM1, PA10, PA11);
 	Motor_E.Set_Speed(0);
-//	for (uint32_t j = 0; j < 5000; j++)
-//	{
+	for (uint32_t j = 0; j < 1000000; j++)
+	{
 //		Sensor_Board.Calibrate_Sensor();
 //		Sensor_Line_D.Calib_Reflectance_Sensor();
 //		Sensor_Line_E.Calib_Reflectance_Sensor();
-//	}
+		Sensor_Line_0.Calib_Reflectance_Sensor();
+		Sensor_Line_1.Calib_Reflectance_Sensor();
+		Sensor_Line_2.Calib_Reflectance_Sensor();
+		Sensor_Line_3.Calib_Reflectance_Sensor();
+		Sensor_Line_4.Calib_Reflectance_Sensor();
+		Sensor_Line_5.Calib_Reflectance_Sensor();
+		Sensor_Line_6.Calib_Reflectance_Sensor();
+		Sensor_Line_7.Calib_Reflectance_Sensor();
+	}
 	
 	
 	Motor_E.Set_Speed(500);
 	while(1)
 	{
 		time = Timer::GetTime_usec();
+		
 		Encoder::Encoder_Handler();
-//		leitura_sensores = Sensor_Board.Read_Sensor();
+//		leitura = Sensor_Board.Read_Sensor();
+		leitura[0] = Sensor_Line_0.Reflectance_Read();
+		leitura[1] = Sensor_Line_1.Reflectance_Read();
+		leitura[2] = Sensor_Line_2.Reflectance_Read();
+		leitura[3] = Sensor_Line_3.Reflectance_Read();
+		leitura[4] = Sensor_Line_4.Reflectance_Read();
+		leitura[5] = Sensor_Line_5.Reflectance_Read();
+		leitura[6] = Sensor_Line_6.Reflectance_Read();
+		leitura[7] = Sensor_Line_7.Reflectance_Read();
+		
 		
 //		motorSpeed = ENC_E.GetEncSpeed();	
 		motorSpeed = Motor_E.Get_Speed();
