@@ -29,12 +29,12 @@ void Line_Sensor::Calibrate_Sensor()
 	}
 }
 
-uint16_t Line_Sensor::Read_Sensor()
+float Line_Sensor::Read_Sensor()
 {
 	int sensor_values[8];			//it's "int" because it might be under zero
 	uint32_t media;						
 	uint32_t soma;
-	uint32_t erro;
+	float erro;
 	
 	for (int i = 0; i < 8; i++)
   {
@@ -47,10 +47,10 @@ uint16_t Line_Sensor::Read_Sensor()
   }
 	//I'll make the count by steps to asure that i'm not lossing data
 	erro = 1000*media;  		//This step is why erro is 32 bits
-	erro = erro/soma;
+	erro = (float)erro/soma;
 	erro = erro - 3500;
  
 	
-	return (uint16_t)erro; //Just making a type cast to avoid errors
+	return erro; 
 }
 
