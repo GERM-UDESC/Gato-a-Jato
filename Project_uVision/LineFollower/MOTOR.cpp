@@ -1,7 +1,7 @@
 #include "MOTOR.h"
 
 #define desired_iterations_delay 1000
-uint16_t count_iterations;
+uint16_t count_iterations = 0;
 
 
 Motor::Motor(TIM_TypeDef *TIM_PWM, TIM_CHANNELS channel_PWM, TIM_REMAP TIM_PWMremap, TIM_TypeDef *TIM_ENCODER, GPIO_IO_ENUM IO_Pin_IN1, GPIO_IO_ENUM IO_Pin_IN2)
@@ -37,8 +37,8 @@ Motor::Motor(TIM_TypeDef *TIM_PWM, TIM_CHANNELS channel_PWM, TIM_REMAP TIM_PWMre
 	IN2.digitalWrite(LOW);
 	
 	
-	motor_PWM = 0;
-	desired_speed = 0;
+	this->motor_PWM = 0;
+	this->desired_speed = 0;
 };
 
   //configuração pinos Ponte H
@@ -70,17 +70,17 @@ void Motor::Handler()
 		count_iterations = 0;
 		if((desired_speed >= 0) && (desired_speed <=3000))
 		{
-			if	(Encoder_Motor.GetEncSpeed() > desired_speed)			motor_PWM--;
-			else if	(Encoder_Motor.GetEncSpeed() < desired_speed)	motor_PWM++;
+			if	(Encoder_Motor.GetEncSpeed() > desired_speed)			(this->motor_PWM)--;
+			else if	(Encoder_Motor.GetEncSpeed() < desired_speed)	(this->motor_PWM)++;
 		}
 		else if(desired_speed > (-3000))
 		{
-			if	(Encoder_Motor.GetEncSpeed() > desired_speed)			motor_PWM++;
-			else if	(Encoder_Motor.GetEncSpeed() < desired_speed)	motor_PWM--;
+			if	(Encoder_Motor.GetEncSpeed() > desired_speed)			(this->motor_PWM)++;
+			else if	(Encoder_Motor.GetEncSpeed() < desired_speed)	(this->motor_PWM)--;
 		}
-		if (motor_PWM > 65535) motor_PWM = 65535;
-		else if (motor_PWM <= 0) motor_PWM = 0;
-		PWM_Motor.PWMWrite(motor_PWM);
+		if ((this->motor_PWM) > 65535) (this->motor_PWM) = 65535;
+		else if ((this->motor_PWM) <= 0) (this->motor_PWM) = 0;
+		PWM_Motor.PWMWrite((this->motor_PWM));
 	}
 	count_iterations++;
 }

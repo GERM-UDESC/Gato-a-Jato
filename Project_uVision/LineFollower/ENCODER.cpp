@@ -108,6 +108,7 @@ void Encoder::ConfigEncoder()
 	GetTim()->ARR = AutoReaload_Ticks;									//In case there is an overflow, we know that it'll occur in a rounded number 
 	GetTim()->CCMR1 |= (1<<0);							//IC1 is mapped on TI1
 	GetTim()->CCMR1 |= (1<<8);							//IC2 is mapped on TI2	
+	GetTim()->CCER |= (1<<1);								//invert the polarity, just because of the line follower.
 //-----interrupt part-----------	
 	GetTim()->EGR |= (1<<0);		//Update generation -> Generate an uptade of all configurations done before
 	GetTim()->SR &= ~(1<<0);		//Clear Update interrupt flag

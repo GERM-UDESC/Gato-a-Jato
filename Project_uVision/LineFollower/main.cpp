@@ -46,14 +46,14 @@ int main()
 	GPIO BIN2(PB3, GP_OUTPUT_PUSH_PULL_2MHZ);
 	
 	//PWM configurations
-//	PWM PWM_E(TIM3, TIM_CH2, PARTIAL_REMAP2);
+	//PWM PWM_E(TIM3, TIM_CH2, PARTIAL_REMAP2);
 	PWM PWM_D(TIM3, TIM_CH1, PARTIAL_REMAP2);
 		
 	//Timer
 	Timer Time_Generator(TIM2, COUNTER); //This one is dedicated to generate the time base in useconds
 	
 	//Encoders configuration
-//	Encoder ENC_E(TIM1);
+	//Encoder ENC_E(TIM1);
 	Encoder ENC_D(TIM4);
 	
 	//Sensors
@@ -75,22 +75,19 @@ int main()
 //	AIN2.digitalWrite(HIGH);
 //	AIN1.digitalWrite(LOW);
 	STBY.digitalWrite(HIGH);
-	BIN1.digitalWrite(LOW);
-	BIN2.digitalWrite(HIGH);
+	BIN1.digitalWrite(HIGH);
+	BIN2.digitalWrite(LOW);
 	
 	PWM_D.PWMWrite(0);
 	//PWM_E.PWMWrite(0);
 	//-----------------------------------------------------------------------------------------------
 	
-	PWM_D.PWMWrite(10000);
-	//PWM_E.PWMWrite(10000);
-	
 	//Tests
 	Motor Motor_E(TIM3, TIM_CH2, PARTIAL_REMAP2, TIM1, PA10, PA11);
-	Motor_E.Set_Speed(0);
-	for (uint32_t j = 0; j < 500000; j++)
-	{
-		Sensor_Board.Calibrate_Sensor();
+	Motor_E.Set_Speed(500);
+//	for (uint32_t j = 0; j < 500000; j++)
+//	{
+//		Sensor_Board.Calibrate_Sensor();
 //		Sensor_Line_D.Calib_Reflectance_Sensor();
 //		Sensor_Line_E.Calib_Reflectance_Sensor();
 //		Sensor_Line_0.Calib_Reflectance_Sensor();
@@ -101,10 +98,10 @@ int main()
 //		Sensor_Line_5.Calib_Reflectance_Sensor();
 //		Sensor_Line_6.Calib_Reflectance_Sensor();
 //		Sensor_Line_7.Calib_Reflectance_Sensor();
-	}
+//	}
 	
 	
-	Motor_E.Set_Speed(500);
+	//Motor_E.Set_Speed(500);
 	
 	
 	
@@ -113,7 +110,7 @@ int main()
 		time = Timer::GetTime_usec();
 		
 		Encoder::Encoder_Handler();
-		leitura[0] = Sensor_Board.Read_Sensor();
+//		leitura[0] = Sensor_Board.Read_Sensor();
 //		leitura[0] = Sensor_Line_0.Reflectance_Read();
 //		leitura[1] = Sensor_Line_1.Reflectance_Read();
 //		leitura[2] = Sensor_Line_2.Reflectance_Read();
@@ -124,15 +121,17 @@ int main()
 //		leitura[7] = Sensor_Line_7.Reflectance_Read();
 		
 		
-//		motorSpeed = ENC_E.GetEncSpeed();	
-		motorSpeed = Motor_E.Get_Speed();
+		motorSpeed = ENC_D.GetEncSpeed();	
+		//motorSpeed = Motor_E.Get_Speed();
 		Motor_E.Handler();
+		PWM_D.PWMWrite(0);
 		
-//		if (motorSpeed < 190) velocidade_teste++;
-//		else if (motorSpeed > 210) velocidade_teste--;
+//		if (motorSpeed < 400) velocidade_teste++;
+//		else if (motorSpeed > 450) velocidade_teste--;
 //		if (velocidade_teste>65000) velocidade_teste = 65000;
 //		else if (velocidade_teste<10) velocidade_teste = 10;
 //		PWM_E.PWMWrite(velocidade_teste);
+//		PWM_D.PWMWrite(velocidade_teste);
 
 		if (Board.SysTickGetEvent()) 
 		{

@@ -11,7 +11,7 @@ private:
 	Encoder Encoder_Motor;
 	GPIO IN1;
 	GPIO IN2;
-
+public:
 	int32_t motor_PWM; //This variable saves the actual PWM value written in the motor
 	int16_t desired_speed;
 
