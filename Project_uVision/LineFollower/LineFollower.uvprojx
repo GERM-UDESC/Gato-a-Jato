@@ -471,6 +471,11 @@
               <FileType>8</FileType>
               <FilePath>.\main.cpp</FilePath>
             </File>
+            <File>
+              <FileName>line_follower.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\line_follower.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

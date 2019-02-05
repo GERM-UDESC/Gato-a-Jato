@@ -31,10 +31,8 @@ void Line_Sensor::Calibrate_Sensor()
 
 float Line_Sensor::Read_Sensor()
 {
-	int sensor_values[8];			//it's "int" because it might be under zero
-	uint32_t media;						
-	uint32_t soma;
-	float erro;
+	float sensor_values[8];			//it's "int" because it might be under zero
+	float media = 0, soma = 0, erro;						
 	
 	for (int i = 0; i < 8; i++)
   {
@@ -45,12 +43,19 @@ float Line_Sensor::Read_Sensor()
       soma += sensor_values[i];
     }
   }
-	//I'll make the count by steps to asure that i'm not lossing data
-	erro = 1000*media;  		//This step is why erro is 32 bits
-	erro = (float)erro/soma;
-	erro = erro - 3500;
- 
-	
+	if (soma != 0)		//only calculate the erro if the sum is diferent of 0
+	{
+		//I'll make the count by steps to asure that i'm not lossing data
+		erro = 1000*media;  		//This step is why erro is 32 bits
+		erro = erro/soma;
+		erro = erro - 3500;	
+		last_error = erro;
+	}
+	else 
+	{
+		return last_error;			//in case the sum is zero, it will return the last valid result
+	}
+
 	return erro; 
 }
 

@@ -17,7 +17,7 @@ public:
 	Reflectance_Sensor(ADC_CHANNELS ADCChannel);
 
 	void Calib_Reflectance_Sensor(); 	//Calibrate the sensor - This function should be called a lot at the beggining
-	uint16_t Reflectance_Read();			//Return a value from 0 to 1000
+	float Reflectance_Read();			//Should Return a value from 0 to 1000 if its very well calibrated
 
 };
 

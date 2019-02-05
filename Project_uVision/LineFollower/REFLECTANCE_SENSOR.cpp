@@ -25,10 +25,10 @@ void Reflectance_Sensor::Calib_Reflectance_Sensor()
 	range = calib_max - calib_min;
 }
 
-uint16_t Reflectance_Sensor::Reflectance_Read()
+float Reflectance_Sensor::Reflectance_Read()
 {
-	uint16_t Converted_read = analogRead();
+	float Converted_read = analogRead();
 	Converted_read = 1000 * (calib_max - Converted_read) / range;
-
+	
 	return Converted_read;
 }
