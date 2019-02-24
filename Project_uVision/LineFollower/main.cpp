@@ -24,7 +24,7 @@ uint32_t delta_time = 0;
 //as variáveis não estão zerando, pq?
 
 
-int main1()
+int main()
 {
 	//-----------------------------------Initiallize static parameters----------------------
 	Timer::Timer_Initiallize();

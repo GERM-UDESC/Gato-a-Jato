@@ -43,7 +43,7 @@ void seta_velocidade(PWM *PWM_E, PWM *PWM_D, GPIO *AIN1, GPIO *AIN2, GPIO *BIN1,
 void Blink_LED_Delay(SysClock *Board, GPIO *LED, Timer *Time_Generator, int t_delay);         //Função para piscar o LED usando delay
 void Parada(PWM *PWM_D, PWM *PWM_E, Timer *Time_Generator);                             //Função para definir quando o robô deverá parar
 
-int main()
+int main1()
 {
 	//-----------------------------------Initiallize static parameters----------------------
 	Timer::Timer_Initiallize();

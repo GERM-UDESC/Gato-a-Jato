@@ -461,6 +461,16 @@
               <FileType>5</FileType>
               <FilePath>.\ENCODER.h</FilePath>
             </File>
+            <File>
+              <FileName>USART.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\USART.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>USART.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\USART.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -1,88 +1,78 @@
 Dependencies for Project 'LineFollower', Target 'Target 1': (DO NOT MODIFY !)
-F (.\Micro.h)(0x5BDBB6CA)()
-F (.\Startup.s)(0x5C522339)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 525" --pd "STM32F10X_MD SETA 1"--list .\listings\startup.lst --xref -o .\objects\startup.o --depend .\objects\startup.d)
-F (.\GPIO.cpp)(0x5BDC6167)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\gpio_1.o --omf_browse .\objects\gpio_1.crf --depend .\objects\gpio_1.d)
-I (Micro.h)(0x5BDBB6CA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F59CE)
-I (GPIO.h)(0x5C23EB6C)
-F (.\GPIO.h)(0x5C23EB6C)()
-F (.\SysClock.cpp)(0x5C18EEE3)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\sysclock.o --omf_browse .\objects\sysclock.crf --depend .\objects\sysclock.d)
-I (SysClock.h)(0x5C18EEC5)
-I (Micro.h)(0x5BDBB6CA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F59CE)
-I (GPIO.h)(0x5C23EB6C)
-F (.\SysClock.h)(0x5C18EEC5)()
-F (.\TIMER.cpp)(0x5C1E4A97)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
-I (TIMER.h)(0x5C1EB445)
-I (GPIO.h)(0x5C23EB6C)
-I (Micro.h)(0x5BDBB6CA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F59CE)
-F (.\TIMER.h)(0x5C1EB445)()
-F (.\PWM.cpp)(0x5BDC94F7)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
-I (PWM.h)(0x5C23EA82)
-I (GPIO.h)(0x5C23EB6C)
-I (Micro.h)(0x5BDBB6CA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F59CE)
-I (TIMER.h)(0x5C1EB445)
-F (.\PWM.h)(0x5C23EA82)()
-F (.\ADC.cpp)(0x5C183E55)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
-I (ADC.h)(0x5C184099)
-I (GPIO.h)(0x5C23EB6C)
-I (Micro.h)(0x5BDBB6CA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F59CE)
-F (.\ADC.h)(0x5C184099)()
-F (.\ENCODER.cpp)(0x5C50FAFA)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\encoder.o --omf_browse .\objects\encoder.crf --depend .\objects\encoder.d)
-I (ENCODER.h)(0x5C274F4C)
-I (GPIO.h)(0x5C23EB6C)
-I (Micro.h)(0x5BDBB6CA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F59CE)
-I (TIMER.h)(0x5C1EB445)
-F (.\ENCODER.h)(0x5C274F4C)()
-F (.\main.cpp)(0x5C547FF2)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (Micro.h)(0x5BDBB6CA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F59CE)
-I (SysClock.h)(0x5C18EEC5)
-I (GPIO.h)(0x5C23EB6C)
-I (TIMER.h)(0x5C1EB445)
-I (PWM.h)(0x5C23EA82)
-I (ENCODER.h)(0x5C274F4C)
-I (ADC.h)(0x5C184099)
-I (REFLECTANCE_SENSOR.h)(0x5C547832)
-I (LINE_SENSOR.h)(0x5C547AE1)
-I (MOTOR.h)(0x5C5106B3)
-F (.\line_follower.cpp)(0x5C54B923)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\line_follower.o --omf_browse .\objects\line_follower.crf --depend .\objects\line_follower.d)
-I (Micro.h)(0x5BDBB6CA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F59CE)
-I (SysClock.h)(0x5C18EEC5)
-I (GPIO.h)(0x5C23EB6C)
-I (TIMER.h)(0x5C1EB445)
-I (PWM.h)(0x5C23EA82)
-I (ENCODER.h)(0x5C274F4C)
-I (ADC.h)(0x5C184099)
-I (REFLECTANCE_SENSOR.h)(0x5C547832)
-I (LINE_SENSOR.h)(0x5C547AE1)
-I (MOTOR.h)(0x5C5106B3)
-F (.\REFLECTANCE_SENSOR.cpp)(0x5C547832)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\reflectance_sensor.o --omf_browse .\objects\reflectance_sensor.crf --depend .\objects\reflectance_sensor.d)
-I (REFLECTANCE_SENSOR.h)(0x5C547832)
-I (ADC.h)(0x5C184099)
-I (GPIO.h)(0x5C23EB6C)
-I (Micro.h)(0x5BDBB6CA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F59CE)
-F (.\REFLECTANCE_SENSOR.h)(0x5C547832)()
-F (.\LINE_SENSOR.cpp)(0x5C547AE1)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\line_sensor.o --omf_browse .\objects\line_sensor.crf --depend .\objects\line_sensor.d)
-I (LINE_SENSOR.h)(0x5C547AE1)
-I (REFLECTANCE_SENSOR.h)(0x5C547832)
-I (ADC.h)(0x5C184099)
-I (GPIO.h)(0x5C23EB6C)
-I (Micro.h)(0x5BDBB6CA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F59CE)
-F (.\LINE_SENSOR.h)(0x5C547AE1)()
-F (.\MOTOR.h)(0x5C5106B3)()
-F (.\MOTOR.cpp)(0x5C5106B3)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\motor.o --omf_browse .\objects\motor.crf --depend .\objects\motor.d)
-I (MOTOR.h)(0x5C5106B3)
-I (PWM.h)(0x5C23EA82)
-I (GPIO.h)(0x5C23EB6C)
-I (Micro.h)(0x5BDBB6CA)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F59CE)
-I (TIMER.h)(0x5C1EB445)
-I (ENCODER.h)(0x5C274F4C)
+F (.\Micro.h)(0x5C71932A)()
+F (.\Startup.s)(0x5C71932A)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 525" --pd "STM32F10X_MD SETA 1"--list .\listings\startup.lst --xref -o .\objects\startup.o --depend .\objects\startup.d)
+F (.\GPIO.cpp)(0x5C71932A)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\gpio_1.o --omf_browse .\objects\gpio_1.crf --depend .\objects\gpio_1.d)
+I (Micro.h)(0x5C71932A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F67DE)
+I (GPIO.h)(0x5C71932A)
+F (.\GPIO.h)(0x5C71932A)()
+F (.\SysClock.cpp)(0x5C71932A)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\sysclock.o --omf_browse .\objects\sysclock.crf --depend .\objects\sysclock.d)
+I (SysClock.h)(0x5C71932A)
+I (Micro.h)(0x5C71932A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F67DE)
+I (GPIO.h)(0x5C71932A)
+F (.\SysClock.h)(0x5C71932A)()
+F (.\TIMER.cpp)(0x5C71932A)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
+I (TIMER.h)(0x5C71932A)
+I (GPIO.h)(0x5C71932A)
+I (Micro.h)(0x5C71932A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F67DE)
+F (.\TIMER.h)(0x5C71932A)()
+F (.\PWM.cpp)(0x5C71932A)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
+I (PWM.h)(0x5C71932A)
+I (GPIO.h)(0x5C71932A)
+I (Micro.h)(0x5C71932A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F67DE)
+I (TIMER.h)(0x5C71932A)
+F (.\PWM.h)(0x5C71932A)()
+F (.\ADC.cpp)(0x5C71932A)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+I (ADC.h)(0x5C71932A)
+I (GPIO.h)(0x5C71932A)
+I (Micro.h)(0x5C71932A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F67DE)
+F (.\ADC.h)(0x5C71932A)()
+F (.\ENCODER.cpp)(0x5C71932A)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\encoder.o --omf_browse .\objects\encoder.crf --depend .\objects\encoder.d)
+I (ENCODER.h)(0x5C71932A)
+I (GPIO.h)(0x5C71932A)
+I (Micro.h)(0x5C71932A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F67DE)
+I (TIMER.h)(0x5C71932A)
+F (.\ENCODER.h)(0x5C71932A)()
+F (.\main.cpp)(0x5C72C93A)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h)(0x5825D31C)
+F (.\line_follower.cpp)(0x5C72C93A)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\line_follower.o --omf_browse .\objects\line_follower.crf --depend .\objects\line_follower.d)
+I (Micro.h)(0x5C71932A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F67DE)
+I (SysClock.h)(0x5C71932A)
+I (GPIO.h)(0x5C71932A)
+I (TIMER.h)(0x5C71932A)
+I (PWM.h)(0x5C71932A)
+I (ENCODER.h)(0x5C71932A)
+I (ADC.h)(0x5C71932A)
+I (REFLECTANCE_SENSOR.h)(0x5C71932A)
+I (LINE_SENSOR.h)(0x5C71932A)
+I (MOTOR.h)(0x5C71932A)
+F (.\REFLECTANCE_SENSOR.cpp)(0x5C71932A)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\reflectance_sensor.o --omf_browse .\objects\reflectance_sensor.crf --depend .\objects\reflectance_sensor.d)
+I (REFLECTANCE_SENSOR.h)(0x5C71932A)
+I (ADC.h)(0x5C71932A)
+I (GPIO.h)(0x5C71932A)
+I (Micro.h)(0x5C71932A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F67DE)
+F (.\REFLECTANCE_SENSOR.h)(0x5C71932A)()
+F (.\LINE_SENSOR.cpp)(0x5C71932A)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\line_sensor.o --omf_browse .\objects\line_sensor.crf --depend .\objects\line_sensor.d)
+I (LINE_SENSOR.h)(0x5C71932A)
+I (REFLECTANCE_SENSOR.h)(0x5C71932A)
+I (ADC.h)(0x5C71932A)
+I (GPIO.h)(0x5C71932A)
+I (Micro.h)(0x5C71932A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F67DE)
+F (.\LINE_SENSOR.h)(0x5C71932A)()
+F (.\MOTOR.h)(0x5C71932A)()
+F (.\MOTOR.cpp)(0x5C71932A)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\motor.o --omf_browse .\objects\motor.crf --depend .\objects\motor.d)
+I (MOTOR.h)(0x5C71932A)
+I (PWM.h)(0x5C71932A)
+I (GPIO.h)(0x5C71932A)
+I (Micro.h)(0x5C71932A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F67DE)
+I (TIMER.h)(0x5C71932A)
+I (ENCODER.h)(0x5C71932A)

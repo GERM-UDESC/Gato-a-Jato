@@ -1,12 +1,2 @@
 .\objects\main.o: main.cpp
-.\objects\main.o: Micro.h
-.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\main.o: SysClock.h
-.\objects\main.o: GPIO.h
-.\objects\main.o: TIMER.h
-.\objects\main.o: PWM.h
-.\objects\main.o: ENCODER.h
-.\objects\main.o: ADC.h
-.\objects\main.o: REFLECTANCE_SENSOR.h
-.\objects\main.o: LINE_SENSOR.h
-.\objects\main.o: MOTOR.h
+.\objects\main.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include\stm32f10x.h

@@ -151,6 +151,28 @@ typedef struct
   uint16_t  RESERVED19;
 } TIM_TypeDef;
 
+/** 
+  * @brief Universal Synchronous Asynchronous Receiver Transmitter
+  */
+ 
+typedef struct
+{
+  volatile uint16_t SR;
+  uint16_t  RESERVED0;
+  volatile uint16_t DR;
+  uint16_t  RESERVED1;
+  volatile uint16_t BRR;
+  uint16_t  RESERVED2;
+  volatile uint16_t CR1;
+  uint16_t  RESERVED3;
+  volatile uint16_t CR2;
+  uint16_t  RESERVED4;
+  volatile uint16_t CR3;
+  uint16_t  RESERVED5;
+  volatile uint16_t GTPR;
+  uint16_t  RESERVED6;
+} USART_TypeDef;
+
 //GPIO definitions
 typedef struct
 {
@@ -244,6 +266,9 @@ typedef struct
 
 #define RTC_BASE              (APB1PERIPH_BASE + 0x2800)
 
+#define USART2_BASE           (APB1PERIPH_BASE + 0x4400)
+#define USART3_BASE           (APB1PERIPH_BASE + 0x4800)
+
 #define PWR_BASE              (APB1PERIPH_BASE + 0x7000)
 
 #define AFIO_BASE             (APB2PERIPH_BASE + 0x0000)
@@ -258,6 +283,8 @@ typedef struct
 #define ADC2_BASE             (APB2PERIPH_BASE + 0x2800)
 #define TIM1_BASE             (APB2PERIPH_BASE + 0x2C00)
 
+#define USART1_BASE           (APB2PERIPH_BASE + 0x3800)
+
 #define RCC_BASE              (AHBPERIPH_BASE + 0x1000)
 
 #define FLASH_R_BASE          (AHBPERIPH_BASE + 0x2000) /*!< Flash registers base address */
@@ -267,6 +294,9 @@ typedef struct
 #define TIM4                ((TIM_TypeDef *) TIM4_BASE)
 
 #define RTC                 ((RTC_TypeDef *) RTC_BASE)
+
+#define USART2              ((USART_TypeDef *) USART2_BASE)
+#define USART3              ((USART_TypeDef *) USART3_BASE)
 
 #define AFIO                ((AFIO_TypeDef *) AFIO_BASE)
 #define GPIOA               ((GPIO_TypeDef *) GPIOA_BASE)
@@ -281,6 +311,8 @@ typedef struct
 #define TIM1                ((TIM_TypeDef *) TIM1_BASE)
 
 #define RCC                 ((RCC_TypeDef *) RCC_BASE)
+
+#define USART1              ((USART_TypeDef *) USART1_BASE)
 
 #define PWR                 ((PWR_TypeDef *) PWR_BASE)
 
