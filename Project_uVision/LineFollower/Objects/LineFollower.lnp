@@ -6,6 +6,7 @@
 ".\objects\pwm.o"
 ".\objects\adc.o"
 ".\objects\encoder.o"
+".\objects\usart.o"
 ".\objects\main.o"
 ".\objects\line_follower.o"
 ".\objects\reflectance_sensor.o"

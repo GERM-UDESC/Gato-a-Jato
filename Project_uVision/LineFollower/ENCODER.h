@@ -11,7 +11,7 @@
 class Encoder : protected Timer
 {
 	friend class Motor;
-	private:
+	public:			//should be private
 		GPIO EncCH1;
 		GPIO EncCH2;
 

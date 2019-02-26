@@ -11,21 +11,22 @@
 #include "REFLECTANCE_SENSOR.h"
 #include "LINE_SENSOR.h"
 #include "MOTOR.h"
-
-uint16_t velocidade_teste = 0;
-bool direction = 0;
-float motorSpeed = 0;
-float leitura[9];
+#include "USART.h"
 
 uint32_t time = 0;
 uint32_t final_time = 0;
 uint32_t delta_time = 0;
+//uint16_t Speed_points[10000];
+uint32_t counter_points;
+uint16_t test_usart[1000];
+
 
 //as variáveis não estão zerando, pq?
 
 
 int main()
 {
+	uint8_t counter = 0;
 	//-----------------------------------Initiallize static parameters----------------------
 	Timer::Timer_Initiallize();
 	Encoder::Encoder_Initiallize();
@@ -66,8 +67,11 @@ int main()
 //	Reflectance_Sensor Sensor_Line_7(ADC_CH7);
 //	Reflectance_Sensor Sensor_Line_D(ADC_CH8);	
 
+	USART Serial(USART3);
 	
-	//-----------------------------------------------------------------------------------
+
+	
+	//----------------------------------------------------------------------------------------------
 	
 	//----------------------------------Initial Conditions------------------------------------------
 	AIN2.digitalWrite(HIGH);
@@ -79,40 +83,34 @@ int main()
 	PWM_D.PWMWrite(0);
 	PWM_E.PWMWrite(0);
 	//-----------------------------------------------------------------------------------------------
-	
-	//Tests
-//	Motor Motor_E(TIM3, TIM_CH2, PARTIAL_REMAP2, TIM1, PA10, PA11);
-//	Motor_E.Set_Speed(500);
-	for (uint32_t j = 0; j < 500000; j++)
-	{
-		Sensor_Board.Calibrate_Sensor();
-	}
-		
+			
 	
 	while(1)
 	{
 		time = Timer::GetTime_usec();
-		
-		Encoder::Encoder_Handler();
-		leitura[0] = Sensor_Board.Read_Sensor();
-		for(int i = 1; i < 9; i++)
+//		Encoder::Encoder_Handler();
+
+/*	
+		counter_points = 0;
+		for (int i = 0; i <= 10; i++)
 		{
-			leitura[i] = Sensor_Board.Sensors[i-1].Reflectance_Read();
+			PWM_D.PWMWrite(6553*(i+1));
+			while ((Timer::GetTime_usec() - time) <= (i+1)*1000000);
 		}
-
-		motorSpeed = ENC_D.GetEncSpeed();	
-		//motorSpeed = Motor_E.Get_Speed();
-//		Motor_E.Handler();
 		
-		if (motorSpeed < 200) velocidade_teste++;
-		else if (motorSpeed > 250) velocidade_teste--;
-		if (velocidade_teste>65000) velocidade_teste = 65000;
-		else if (velocidade_teste<10) velocidade_teste = 10;
-//		PWM_E.PWMWrite(velocidade_teste);
-//		PWM_D.PWMWrite(velocidade_teste);
-		PWM_E.PWMWrite(0);
-		PWM_D.PWMWrite(0);
+		while(1)
+		{
+			//sent data
+		}
+*/
+		//Serial.Send(1);
 
+		for (int i = 0; i< 1000; i++)
+		{
+			test_usart[i] = i;
+		}
+		Serial.Send_Vec_16(&test_usart[0], 1000);
+		while(1);
 		if (Board.SysTickGetEvent()) 
 		{
 			LED_Board.tooglePin();
@@ -129,6 +127,15 @@ void TIM2_IRQHandler()
 {
 	TIM2->SR &= ~(1<<0);
 	Timer::Timer_Handler_by_Time();
+	
+	/*
+	Encoder::Encoder_Handler();
+	if (counter_points <= 10000)
+	{
+	Speed_points[counter_points] = Encoder::Speed[Encoder_2];
+	counter_points++;
+	}
+	*/
 };
 
 //Encoder Esquerdo - Interrupt Handler

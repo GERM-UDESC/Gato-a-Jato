@@ -12,11 +12,11 @@ class USART
 		USART_TypeDef *Usart;
 		void init();
 	
-		
-	
-	
 	public:
-		
+		USART(USART_TypeDef *Usart);
+		void Send(uint8_t value);
+		void Send_Vec_16(uint16_t *ptVec, uint16_t size);
+		uint8_t Receive();
 	
 	
 	
