@@ -13,12 +13,17 @@
 #include "MOTOR.h"
 #include "USART.h"
 
+#define number_of_points 200
+
 uint32_t time = 0;
 uint32_t final_time = 0;
 uint32_t delta_time = 0;
-//uint16_t Speed_points[10000];
+uint16_t Speed_points[number_of_points];
 uint32_t counter_points;
-uint16_t test_usart[1000];
+uint16_t finished = 0;
+uint16_t test = 0;
+uint16_t test1 = 0;
+//uint16_t test_usart[1000];
 
 
 //as variáveis não estão zerando, pq?
@@ -26,7 +31,6 @@ uint16_t test_usart[1000];
 
 int main()
 {
-	uint8_t counter = 0;
 	//-----------------------------------Initiallize static parameters----------------------
 	Timer::Timer_Initiallize();
 	Encoder::Encoder_Initiallize();
@@ -88,35 +92,37 @@ int main()
 	while(1)
 	{
 		time = Timer::GetTime_usec();
-//		Encoder::Encoder_Handler();
 
-/*	
 		counter_points = 0;
-		for (int i = 0; i <= 10; i++)
+		finished = 0;
+		for (uint8_t i = 0; i < 10; i++)
 		{
-			PWM_D.PWMWrite(6553*(i+1));
-			while ((Timer::GetTime_usec() - time) <= (i+1)*1000000);
+			delta_time = (Timer::GetTime_usec() - time);
+			PWM_E.PWMWrite(6553*(i));
+			while (finished == 0);
+			Serial.Send_Vec_16(&Speed_points[0],number_of_points);
+			counter_points = 0;
+			finished = 0;
 		}
 		
-		while(1)
-		{
-			//sent data
-		}
-*/
-		//Serial.Send(1);
-
-		for (int i = 0; i< 1000; i++)
-		{
-			test_usart[i] = i;
-		}
-		Serial.Send_Vec_16(&test_usart[0], 1000);
-		while(1);
-		if (Board.SysTickGetEvent()) 
-		{
-			LED_Board.tooglePin();
-		}
+		PWM_E.PWMWrite(0);	//turn off the motor
+		
+		
+		Serial.Receive();
+//		while(1)
+//		{
+//			if (Board.SysTickGetEvent()) 
+//			{
+//				LED_Board.tooglePin();
+//			}
+//			Encoder::Encoder_Handler();
+//			test = ENC_E.GetEncSpeed();
+//			test1 = ENC_E.GetEncTicks();
+//			
+//		}
 		final_time = Timer::GetTime_usec();
 		delta_time = final_time - time;
+		while(1);
 	}
 }
 
@@ -128,14 +134,14 @@ void TIM2_IRQHandler()
 	TIM2->SR &= ~(1<<0);
 	Timer::Timer_Handler_by_Time();
 	
-	/*
-	Encoder::Encoder_Handler();
-	if (counter_points <= 10000)
+	if ((counter_points < number_of_points) &&  (finished == 0))
 	{
-	Speed_points[counter_points] = Encoder::Speed[Encoder_2];
-	counter_points++;
+		Encoder::Encoder_Handler();
+		Speed_points[counter_points] = (uint16_t)Encoder::Speed[Encoder_1];
+		counter_points++;
+		if (counter_points == number_of_points) finished = 1;
 	}
-	*/
+
 };
 
 //Encoder Esquerdo - Interrupt Handler
