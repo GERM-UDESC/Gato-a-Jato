@@ -7,6 +7,7 @@
 //#define Encoder_1	0
 //#define Encoder_2 1
 #define AutoReaload_Ticks 1//36000
+#define Ticks_till_int (AutoReaload_Ticks+1)  //Ticks to generate an interruption
 
 typedef enum{
 	Encoder_1,

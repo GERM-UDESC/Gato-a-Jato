@@ -18,7 +18,7 @@ void Timer::Timer_Initiallize()				//Initiallize all timer's static variables
 
 void Timer::Timer_Handler_by_Time()
 {
-	time_in_usec += AutoReload_Counter;
+	time_in_usec += Time_between_int;
 }
 
 uint32_t Timer::GetTime_usec()

@@ -13,7 +13,7 @@
 #include "MOTOR.h"
 #include "USART.h"
 
-#define number_of_points 800
+#define number_of_points 1500
 
 uint32_t time = 0;
 uint32_t final_time = 0;
@@ -92,11 +92,6 @@ int main()
 	while(1)
 	{
 		
-		while(1)
-		{
-			time = Timer::GetTime_usec();
-		}
-		
 		counter_points = 0;
 		finished = 0;
 		for (uint8_t i = 0; i < 11; i++)
@@ -106,6 +101,7 @@ int main()
 			Serial.Send_Vec_16(&Speed_points[0],number_of_points);
 			counter_points = 0;
 			finished = 0;
+			if (i == 10) finished = 1;
 		}
 		
 //		counter_points = 0;

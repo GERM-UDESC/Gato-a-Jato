@@ -28,7 +28,7 @@ void Encoder::Encoder_Handler(ENCODER_ENUM enc_num)
 {
 	Encoder::Ticks_Time[enc_num] = Timer::GetTime_usec();
 		//this 500000* is to convert ticks/us in rpm
-	Encoder::Speed[enc_num] = 500000*AutoReaload_Ticks;
+	Encoder::Speed[enc_num] = 500000*Ticks_till_int;
 	Encoder::Speed[enc_num] = Encoder::Speed[enc_num]/(Encoder::Ticks_Time[enc_num] - Encoder::LastTicks_Time[enc_num]);
 	Encoder::LastTicks_Time[enc_num] = Encoder::Ticks_Time[enc_num];
 }
