@@ -1,46 +1,46 @@
 #include "ENCODER.h"
 
 //Declaration of the static variables
-uint32_t Encoder::Overflowed_Ticks[NUMBER_OF_ENCODERS];
 uint32_t Encoder::Ticks[NUMBER_OF_ENCODERS];
-uint32_t Encoder::LastTicks[NUMBER_OF_ENCODERS];
 uint32_t Encoder::Ticks_Time[NUMBER_OF_ENCODERS];
 uint32_t Encoder::LastTicks_Time[NUMBER_OF_ENCODERS];
 uint32_t Encoder::Speed[NUMBER_OF_ENCODERS];
-TIM_TypeDef *Encoder::Encoder_Timers[NUMBER_OF_ENCODERS];
-uint8_t Encoder::Number_of_Encoders;
 
 void Encoder::Encoder_Initiallize()
 {
 	for(int i = 0; i<NUMBER_OF_ENCODERS; i++)
 	{
-		Encoder::Overflowed_Ticks[i] = 0;
 		Encoder::Ticks[i] = 1;
-		Encoder::LastTicks[i] = 0;
 		Encoder::Ticks_Time[i] = 1;
 		Encoder::LastTicks_Time[i] = 0;
 		Encoder::Speed[i] = 0;
 	}
-	Encoder::Number_of_Encoders = 0;
 }
 
-void Encoder::Encoder_Handler(ENCODER_ENUM enc_num)
+void Encoder::Encoder_Handler(TIM_TypeDef *TIMER)
 {
+	uint8_t enc_num = 0;
+	if (TIMER == TIM1) enc_num = 0;
+	else if (TIMER == TIM2) enc_num = 1;
+	else if (TIMER == TIM3) enc_num = 2;
+	else if (TIMER == TIM4) enc_num = 3;
+	
+	Encoder::Ticks[enc_num] += Ticks_till_int;
 	Encoder::Ticks_Time[enc_num] = Timer::GetTime_usec();
-		//this 500000* is to convert ticks/us in rpm
-	Encoder::Speed[enc_num] = 500000*Ticks_till_int;
+	Encoder::Speed[enc_num] = 500000*Ticks_till_int;		//this 500000* is to convert ticks/us in rpm
 	Encoder::Speed[enc_num] = Encoder::Speed[enc_num]/(Encoder::Ticks_Time[enc_num] - Encoder::LastTicks_Time[enc_num]);
 	Encoder::LastTicks_Time[enc_num] = Encoder::Ticks_Time[enc_num];
 }
 
-void Encoder::Encoder_Ticks_overflow(TIM_TypeDef *TIM)
+void Encoder::Encoder_Handler_by_Time()
 {
-	for(int i = 0; i<NUMBER_OF_ENCODERS; i++)
+	for (int i = 0; i < NUMBER_OF_ENCODERS; i++)
 	{
-		if(Encoder::Encoder_Timers[i] == TIM)
+		if (( Timer::GetTime_usec() - Encoder::LastTicks_Time[i]) > Max_delay_Ticks_Time)
 		{
-			Encoder::Overflowed_Ticks[i] += AutoReaload_Ticks;
-		}			
+			Encoder::LastTicks_Time[i] = Timer::GetTime_usec();
+			Encoder::Speed[i] = 0;
+		}	
 	}	
 }
 
@@ -51,10 +51,7 @@ Encoder::Encoder(TIM_TypeDef *TIM)
 }
 
 void Encoder::ConfigEncoder()
-{
-	Encoder::Encoder_Timers[Number_of_Encoders] = GetTim();
-	Encoder::Number_of_Encoders++;
-	
+{	
 	//Enable the clock of the respective timer
 	if (GetTim() == TIM1)			RCC->APB2ENR |= (1<<11);
 	else if(GetTim() == TIM2)	RCC->APB1ENR |= (1<<0);
@@ -105,28 +102,47 @@ void Encoder::ConfigEncoder()
 	else if (GetTim() == TIM4) NVIC->ISER[0] |= (1<<TIM4_IRQn);
 //------------------------------
 	GetTim()->CR1 |= (1<<0);								//Enable the counter
-	
 }
 
 uint16_t Encoder::GetEncTicks()
 {
-	return GetTim()->CNT;
+	if (GetTim() == TIM1) return Encoder::Ticks[Encoder_TIM1];
+	else if (GetTim() == TIM2) return Encoder::Ticks[Encoder_TIM2];
+	else if (GetTim() == TIM3) return Encoder::Ticks[Encoder_TIM3];
+	else if (GetTim() == TIM4) return Encoder::Ticks[Encoder_TIM4];
+	return 0;	// this case should never happens
 }
 
 uint32_t Encoder::GetEncSpeed()
 {
-	for(int i = 0; i<NUMBER_OF_ENCODERS; i++)
-	{
-		if(Encoder::Encoder_Timers[i] == GetTim())
-		{
-			return Encoder::Speed[i];
-		}			
-	}
-	return 0; //this case will never happens, but the copiller shows a warning, so it's here to avoid the warning
+	if (GetTim() == TIM1) return Encoder::Speed[Encoder_TIM1];
+	else if (GetTim() == TIM2) return Encoder::Speed[Encoder_TIM2];
+	else if (GetTim() == TIM3) return Encoder::Speed[Encoder_TIM3];
+	else if (GetTim() == TIM4) return Encoder::Speed[Encoder_TIM4];
+	return 0;	// this case should never happens
 }
 
-bool Encoder::GetEncDirection()
+
+void TIM1_UP_IRQHandler()
 {
-	return ((GetTim()->CR1) & (1<<4));
-}
+	TIM1->SR &= ~(1<<0);
+	Encoder::Encoder_Handler(TIM1);
+};
 
+//void TIM2_IRQHandler()						//this timer is being used as time base for the system
+//{
+//	TIM2->SR &= ~(1<<0);
+//	Encoder::Encoder_Handler(TIM2);
+//};
+
+void TIM3_IRQHandler()
+{
+	TIM3->SR &= ~(1<<0);
+	Encoder::Encoder_Handler(TIM3);
+};
+
+void TIM4_IRQHandler()
+{
+	TIM4->SR &= ~(1<<0);
+	Encoder::Encoder_Handler(TIM4);
+};

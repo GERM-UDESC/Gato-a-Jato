@@ -13,7 +13,7 @@
 #include "MOTOR.h"
 #include "USART.h"
 
-#define number_of_points 1500
+#define number_of_points 500
 
 uint32_t time = 0;
 uint32_t final_time = 0;
@@ -21,9 +21,7 @@ uint32_t delta_time = 0;
 uint16_t Speed_points[number_of_points];
 uint32_t counter_points;
 uint16_t finished = 0;
-uint16_t test = 0;
-uint16_t test1 = 0;
-//uint16_t test_usart[1000];
+
 
 
 //as variáveis não estão zerando, pq?
@@ -73,8 +71,6 @@ int main()
 
 	USART Serial(USART3);
 	
-
-	
 	//----------------------------------------------------------------------------------------------
 	
 	//----------------------------------Initial Conditions------------------------------------------
@@ -88,61 +84,31 @@ int main()
 	PWM_E.PWMWrite(0);
 	//-----------------------------------------------------------------------------------------------
 			
-	
 	while(1)
 	{
-		
+		while (Encoder::Speed[Encoder_TIM4] > 0);
 		counter_points = 0;
 		finished = 0;
 		for (uint8_t i = 0; i < 11; i++)
 		{
 			PWM_E.PWMWrite(6553*(i));
+			PWM_D.PWMWrite(6553*(i));
 			while (finished == 0);
 			Serial.Send_Vec_16(&Speed_points[0],number_of_points);
 			counter_points = 0;
 			finished = 0;
 			if (i == 10) finished = 1;
-		}
+		}	
 		
-//		counter_points = 0;
-//		finished = 0;
-//		test = 0;
-//		while (finished == 0)
-//		{
-//			if (counter_points > test*(number_of_points/10))
-//			{
-//				test++;
-//				if (test > 10) test = 10;
-//				PWM_E.PWMWrite(6553*(test));
-//			}
-//		}
 		PWM_E.PWMWrite(0);	//turn off the motor
-//		
-//		
-//		Serial.Send_Vec_16(&Speed_points[0],number_of_points);
-		
-		
-		
-		
-		
-		//Serial.Receive();
-//		while(1)
-//		{
-//			if (Board.SysTickGetEvent()) 
-//			{
-//				LED_Board.tooglePin();
-//			}
-//			Encoder::Encoder_Handler();
-//			test = ENC_E.GetEncSpeed();
-//			test1 = ENC_E.GetEncTicks();
-//			
-//		}
-		final_time = Timer::GetTime_usec();
-		delta_time = final_time - time;
+		PWM_D.PWMWrite(0);	//turn off the motor
+
 		while(1)
 		{
-			test = ENC_E.GetEncTicks();
-			test1 = ENC_E.GetEncSpeed();
+			if (Board.SysTickGetEvent()) 
+			{
+				LED_Board.tooglePin();
+			}
 		}
 	}
 }
@@ -153,44 +119,13 @@ extern "C" void TIM2_IRQHandler();
 void TIM2_IRQHandler()
 {
 	TIM2->SR &= ~(1<<0);
-	Timer::Timer_Handler_by_Time();
+	Timer::Timer_Handler();
+	Encoder::Encoder_Handler_by_Time();
 	if ((counter_points < number_of_points) &&  (finished == 0))
 	{
-		Speed_points[counter_points] = (uint16_t)Encoder::Speed[Encoder_1];
+		Speed_points[counter_points] = (uint16_t)Encoder::Speed[Encoder_TIM4];
 		counter_points++;
 		if (counter_points == number_of_points) finished = 1;
 	}
-	
 };
-
-//Encoder Esquerdo - Interrupt Handler
-extern "C" void TIM1_UP_IRQHandler();
-
-void TIM1_UP_IRQHandler()
-{
-	TIM1->SR &= ~(1<<0);
-		time = Timer::GetTime_usec();
-	Encoder::Encoder_Ticks_overflow(TIM1);
-	Encoder::Encoder_Handler(Encoder_1);
-	final_time = Timer::GetTime_usec();
-	delta_time = final_time - time;
-};
-
-
-//Encoder Direito - Interrupt Handler
-extern "C" void TIM4_IRQHandler();
-
-void TIM4_IRQHandler()
-{
-	TIM4->SR &= ~(1<<0);
-	Encoder::Encoder_Ticks_overflow(TIM4);
-	Encoder::Encoder_Handler(Encoder_2);
-};
-
-
-
-
-
-
-
 

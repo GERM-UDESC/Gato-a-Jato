@@ -16,7 +16,7 @@ void Timer::Timer_Initiallize()				//Initiallize all timer's static variables
  Timer::time_in_usec = 0;
 }
 
-void Timer::Timer_Handler_by_Time()
+void Timer::Timer_Handler()
 {
 	time_in_usec += Time_between_int;
 }
