@@ -13,7 +13,7 @@
 #include "MOTOR.h"
 #include "USART.h"
 
-#define number_of_points 200
+#define number_of_points 800
 
 uint32_t time = 0;
 uint32_t final_time = 0;
@@ -91,13 +91,16 @@ int main()
 	
 	while(1)
 	{
-		time = Timer::GetTime_usec();
-
+		
+		while(1)
+		{
+			time = Timer::GetTime_usec();
+		}
+		
 		counter_points = 0;
 		finished = 0;
-		for (uint8_t i = 0; i < 10; i++)
+		for (uint8_t i = 0; i < 11; i++)
 		{
-			delta_time = (Timer::GetTime_usec() - time);
 			PWM_E.PWMWrite(6553*(i));
 			while (finished == 0);
 			Serial.Send_Vec_16(&Speed_points[0],number_of_points);
@@ -105,10 +108,28 @@ int main()
 			finished = 0;
 		}
 		
+//		counter_points = 0;
+//		finished = 0;
+//		test = 0;
+//		while (finished == 0)
+//		{
+//			if (counter_points > test*(number_of_points/10))
+//			{
+//				test++;
+//				if (test > 10) test = 10;
+//				PWM_E.PWMWrite(6553*(test));
+//			}
+//		}
 		PWM_E.PWMWrite(0);	//turn off the motor
+//		
+//		
+//		Serial.Send_Vec_16(&Speed_points[0],number_of_points);
 		
 		
-		Serial.Receive();
+		
+		
+		
+		//Serial.Receive();
 //		while(1)
 //		{
 //			if (Board.SysTickGetEvent()) 
@@ -122,7 +143,11 @@ int main()
 //		}
 		final_time = Timer::GetTime_usec();
 		delta_time = final_time - time;
-		while(1);
+		while(1)
+		{
+			test = ENC_E.GetEncTicks();
+			test1 = ENC_E.GetEncSpeed();
+		}
 	}
 }
 
@@ -133,15 +158,13 @@ void TIM2_IRQHandler()
 {
 	TIM2->SR &= ~(1<<0);
 	Timer::Timer_Handler_by_Time();
-	
 	if ((counter_points < number_of_points) &&  (finished == 0))
 	{
-		Encoder::Encoder_Handler();
 		Speed_points[counter_points] = (uint16_t)Encoder::Speed[Encoder_1];
 		counter_points++;
 		if (counter_points == number_of_points) finished = 1;
 	}
-
+	
 };
 
 //Encoder Esquerdo - Interrupt Handler
@@ -150,7 +173,11 @@ extern "C" void TIM1_UP_IRQHandler();
 void TIM1_UP_IRQHandler()
 {
 	TIM1->SR &= ~(1<<0);
+		time = Timer::GetTime_usec();
 	Encoder::Encoder_Ticks_overflow(TIM1);
+	Encoder::Encoder_Handler(Encoder_1);
+	final_time = Timer::GetTime_usec();
+	delta_time = final_time - time;
 };
 
 
@@ -161,6 +188,7 @@ void TIM4_IRQHandler()
 {
 	TIM4->SR &= ~(1<<0);
 	Encoder::Encoder_Ticks_overflow(TIM4);
+	Encoder::Encoder_Handler(Encoder_2);
 };
 
 

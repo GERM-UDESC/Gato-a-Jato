@@ -6,7 +6,7 @@ uint32_t Encoder::Ticks[NUMBER_OF_ENCODERS];
 uint32_t Encoder::LastTicks[NUMBER_OF_ENCODERS];
 uint32_t Encoder::Ticks_Time[NUMBER_OF_ENCODERS];
 uint32_t Encoder::LastTicks_Time[NUMBER_OF_ENCODERS];
-float Encoder::Speed[NUMBER_OF_ENCODERS];
+uint32_t Encoder::Speed[NUMBER_OF_ENCODERS];
 TIM_TypeDef *Encoder::Encoder_Timers[NUMBER_OF_ENCODERS];
 uint8_t Encoder::Number_of_Encoders;
 
@@ -24,27 +24,13 @@ void Encoder::Encoder_Initiallize()
 	Encoder::Number_of_Encoders = 0;
 }
 
-void Encoder::Encoder_Handler()
+void Encoder::Encoder_Handler(ENCODER_ENUM enc_num)
 {
-	for(int i = 0; i<NUMBER_OF_ENCODERS; i++)
-	{
-		Encoder::Ticks[i] = Encoder::Overflowed_Ticks[i] + Encoder::Encoder_Timers[i]->CNT;
-		Encoder::Ticks_Time[i] = Timer::GetTime_usec();
-		if (Encoder::Ticks[i] != Encoder::LastTicks[i])
-		{
-			//this 500000* is to convert the speed in rpm
-			Encoder::Speed[i] = 500000*(Encoder::Ticks[i] - Encoder::LastTicks[i]);
-			Encoder::Speed[i] = Encoder::Speed[i]/(Encoder::Ticks_Time[i] - Encoder::LastTicks_Time[i]);
-			Encoder::LastTicks[i] = Encoder::Ticks[i];
-			Encoder::LastTicks_Time[i] = Encoder::Ticks_Time[i];
-		}
-		else if ((Encoder::Ticks_Time[i] - Encoder::LastTicks_Time[i]) > 20000) //min speed = 25 RPM
-		{
-			Encoder::Speed[i] = 0;
-			Encoder::LastTicks[i] = Encoder::Ticks[i];
-			Encoder::LastTicks_Time[i] = Encoder::Ticks_Time[i];
-		}
-	}
+	Encoder::Ticks_Time[enc_num] = Timer::GetTime_usec();
+		//this 500000* is to convert ticks/us in rpm
+	Encoder::Speed[enc_num] = 500000*AutoReaload_Ticks;
+	Encoder::Speed[enc_num] = Encoder::Speed[enc_num]/(Encoder::Ticks_Time[enc_num] - Encoder::LastTicks_Time[enc_num]);
+	Encoder::LastTicks_Time[enc_num] = Encoder::Ticks_Time[enc_num];
 }
 
 void Encoder::Encoder_Ticks_overflow(TIM_TypeDef *TIM)
@@ -127,7 +113,7 @@ uint16_t Encoder::GetEncTicks()
 	return GetTim()->CNT;
 }
 
-float Encoder::GetEncSpeed()
+uint32_t Encoder::GetEncSpeed()
 {
 	for(int i = 0; i<NUMBER_OF_ENCODERS; i++)
 	{

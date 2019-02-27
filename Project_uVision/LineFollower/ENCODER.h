@@ -4,9 +4,14 @@
 #include "TIMER.h"
 
 #define NUMBER_OF_ENCODERS 2
-#define Encoder_1	0
-#define Encoder_2 1
-#define AutoReaload_Ticks 36000
+//#define Encoder_1	0
+//#define Encoder_2 1
+#define AutoReaload_Ticks 1//36000
+
+typedef enum{
+	Encoder_1,
+	Encoder_2,
+}ENCODER_ENUM;
 
 class Encoder : protected Timer
 {
@@ -22,7 +27,7 @@ class Encoder : protected Timer
 		static uint32_t LastTicks[NUMBER_OF_ENCODERS];
 		static uint32_t Ticks_Time[NUMBER_OF_ENCODERS];
 		static uint32_t LastTicks_Time[NUMBER_OF_ENCODERS];
-		static float Speed[NUMBER_OF_ENCODERS];
+		static uint32_t Speed[NUMBER_OF_ENCODERS];
 
 		static TIM_TypeDef *Encoder_Timers[NUMBER_OF_ENCODERS];
 		static uint8_t Number_of_Encoders;
@@ -31,11 +36,11 @@ class Encoder : protected Timer
 		Encoder(){};					//must be used only by class composition
 		Encoder(TIM_TypeDef *TIM);
 		uint16_t GetEncTicks();
-		float GetEncSpeed();
+		uint32_t GetEncSpeed();
 		bool GetEncDirection(); //ta zoado, arrumar ou testar direito
 			
 		static void Encoder_Initiallize();
-		static void Encoder_Handler();
+		static void Encoder_Handler(ENCODER_ENUM enc_num);
 		static void Encoder_Ticks_overflow(TIM_TypeDef *TIM);
 		
 };

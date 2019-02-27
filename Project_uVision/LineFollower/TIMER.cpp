@@ -18,12 +18,6 @@ void Timer::Timer_Initiallize()				//Initiallize all timer's static variables
 
 void Timer::Timer_Handler_by_Time()
 {
-	Timer::Update_time_usec();	
-}
-
-//this function must be called only by the interrupt of the timer responsible for time counting
-void Timer::Update_time_usec()
-{
 	time_in_usec += AutoReload_Counter;
 }
 
