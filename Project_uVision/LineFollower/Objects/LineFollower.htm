@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\LineFollower.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\LineFollower.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Wed Feb 27 20:40:15 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Thu Feb 28 08:59:56 2019
 <BR><P>
 <H3>Maximum Stack Usage =        560 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -577,7 +577,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[5e]"></a>GPIO::SetGPIOMode(GPIO_MODES)</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gpio_1.o(i._ZN4GPIO11SetGPIOModeE10GPIO_MODES))
-<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART::init()
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART::init(BD_ENUM)
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::ConfigEncoder()
 <LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::ConfigADCPin()
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::ConfigPWMPin()
@@ -614,7 +614,7 @@ Global Symbols
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GetGPIOPort()
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GetGPIOMode()
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART::init()
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART::init(BD_ENUM)
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::ConfigEncoder()
 <LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::ConfigADCPin()
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::ConfigPWMPin()
@@ -622,7 +622,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[5d]"></a>GPIO::SetGPIOPortPin(GPIO_IO_ENUM)</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, gpio_1.o(i._ZN4GPIO14SetGPIOPortPinE12GPIO_IO_ENUM))
-<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART::init()
+<BR><BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART::init(BD_ENUM)
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::ConfigEncoder()
 <LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC::ConfigADCPin()
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::ConfigPWMPin()
@@ -691,6 +691,7 @@ Global Symbols
 <P><STRONG><a name="[7d]"></a>Timer::GetTime_usec()</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, timer.o(i._ZN5Timer12GetTime_usecEv))
 <BR><BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::Encoder_Handler_by_Time()
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::Encoder_Handler(TIM_TypeDef*)
+<LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[63]"></a>Timer::GetTIMChannel()</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, timer.o(i._ZN5Timer13GetTIMChannelEv))
@@ -772,25 +773,25 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART::Send_Vec_16(unsigned short*, unsigned short)
 </UL>
 
-<P><STRONG><a name="[7a]"></a>USART::init()</STRONG> (Thumb, 216 bytes, Stack size 8 bytes, usart.o(i._ZN5USART4initEv))
-<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = USART::init() &rArr; GPIO::ConfigGPIOPin()
+<P><STRONG><a name="[7a]"></a>USART::init(BD_ENUM)</STRONG> (Thumb, 266 bytes, Stack size 16 bytes, usart.o(i._ZN5USART4initE7BD_ENUM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = USART::init(BD_ENUM) &rArr; GPIO::ConfigGPIOPin()
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::SetGPIOPortPin(GPIO_IO_ENUM)
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::ConfigGPIOPin()
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::SetGPIOMode(GPIO_MODES)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART::USART(USART_TypeDef*)
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART::USART(USART_TypeDef*, BD_ENUM)
 </UL>
 
-<P><STRONG><a name="[7b]"></a>USART::USART(USART_TypeDef*)</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, usart.o(i._ZN5USARTC1EP13USART_TypeDef))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = USART::USART(USART_TypeDef*) &rArr; USART::init() &rArr; GPIO::ConfigGPIOPin()
+<P><STRONG><a name="[7b]"></a>USART::USART(USART_TypeDef*, BD_ENUM)</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, usart.o(i._ZN5USARTC1EP13USART_TypeDef7BD_ENUM))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = USART::USART(USART_TypeDef*, BD_ENUM) &rArr; USART::init(BD_ENUM) &rArr; GPIO::ConfigGPIOPin()
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART::init()
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART::init(BD_ENUM)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b3]"></a>USART::USART__sub_object(USART_TypeDef*)</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, usart.o(i._ZN5USARTC1EP13USART_TypeDef), UNUSED)
+<P><STRONG><a name="[b3]"></a>USART::USART__sub_object(USART_TypeDef*, BD_ENUM)</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, usart.o(i._ZN5USARTC1EP13USART_TypeDef7BD_ENUM), UNUSED)
 
 <P><STRONG><a name="[7c]"></a>Encoder::ConfigEncoder()</STRONG> (Thumb, 566 bytes, Stack size 16 bytes, encoder.o(i._ZN7Encoder13ConfigEncoderEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = Encoder::ConfigEncoder() &rArr; GPIO::ConfigGPIOPin()
@@ -817,7 +818,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[57]"></a>Encoder::Encoder_Handler_by_Time()</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, encoder.o(i._ZN7Encoder23Encoder_Handler_by_TimeEv))
+<P><STRONG><a name="[57]"></a>Encoder::Encoder_Handler_by_Time()</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, encoder.o(i._ZN7Encoder23Encoder_Handler_by_TimeEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Encoder::Encoder_Handler_by_Time()
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer::GetTime_usec()
@@ -865,11 +866,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Line_Sensor::Line_Sensor(ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS)
 </UL>
 
-<P><STRONG><a name="[3f]"></a>main</STRONG> (Thumb, 360 bytes, Stack size 496 bytes, main.o(i.main))
+<P><STRONG><a name="[3f]"></a>main</STRONG> (Thumb, 374 bytes, Stack size 496 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 560<LI>Call Chain = main &rArr; Line_Sensor::Line_Sensor(ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS) &rArr; __aeabi_vec_ctor_nocookie_nodtor
 </UL>
 <BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Line_Sensor::Line_Sensor(ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS)
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART::USART(USART_TypeDef*)
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART::USART(USART_TypeDef*, BD_ENUM)
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART::Send_Vec_16(unsigned short*, unsigned short)
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::Encoder(TIM_TypeDef*)
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder::Encoder_Initiallize()
@@ -877,6 +878,7 @@ Global Symbols
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWM::PWMWrite(unsigned short)
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer::Timer(TIM_TypeDef*, TIM_MODE)
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer::Timer_Initiallize()
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer::GetTime_usec()
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysClock::SysClock()
 <LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysClock::SysTickGetEvent()
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::GPIO(GPIO_IO_ENUM, GPIO_MODES)

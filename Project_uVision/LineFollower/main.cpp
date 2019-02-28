@@ -69,7 +69,7 @@ int main()
 //	Reflectance_Sensor Sensor_Line_7(ADC_CH7);
 //	Reflectance_Sensor Sensor_Line_D(ADC_CH8);	
 
-	USART Serial(USART3);
+	USART Serial(USART3, BD_57600);
 	
 	//----------------------------------------------------------------------------------------------
 	
@@ -86,7 +86,7 @@ int main()
 			
 	while(1)
 	{
-		while (Encoder::Speed[Encoder_TIM4] > 0);
+		while ((Encoder::Speed[Encoder_TIM4] > 0) || (Timer::GetTime_usec() < 1000000));
 		counter_points = 0;
 		finished = 0;
 		for (uint8_t i = 0; i < 11; i++)

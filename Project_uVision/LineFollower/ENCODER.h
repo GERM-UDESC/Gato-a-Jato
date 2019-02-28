@@ -4,7 +4,7 @@
 #include "TIMER.h"
 
 #define NUMBER_OF_ENCODERS 4		//the number of timers in the microcontroller, but TIM2 is used for time base
-#define min_rpm_precision 5
+#define min_rpm_precision 20
 #define Max_delay_Ticks_Time (500000/min_rpm_precision)	//This value is used to make shure that the motor speed i'll go to zero
 #define AutoReaload_Ticks 1//36000
 #define Ticks_till_int (AutoReaload_Ticks+1)  //Ticks to generate an interruption

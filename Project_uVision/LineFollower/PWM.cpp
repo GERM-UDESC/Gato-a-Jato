@@ -145,7 +145,7 @@ void PWM::PWMInit()
 //CCMR1 -> "Capture/Compare Register" Configure the operation mode of the Capture/Compare Register respective to the selected channel
 
 	///* Uncoment this to get 1kHz of frequency and to be able to write in the CCR1 a value between 0-100 to get 0-100% PWM
-	//TIM->PSC = 7200; //Configure the preescalers
+	//TIM->PSC = 7199; //Configure the preescalers
 	
 	//TIM->ARR = 100;
 	//*/

@@ -3,6 +3,10 @@
 
 #include "Micro.h"
 #include "GPIO.h"
+typedef enum{
+	BD_9600,
+	BD_57600,
+} BD_ENUM;
 
 class USART
 {
@@ -10,10 +14,10 @@ class USART
 		GPIO TX_Port;
 		GPIO RX_Port;
 		USART_TypeDef *Usart;
-		void init();
+		void init(BD_ENUM Baud_Rate);
 	
 	public:
-		USART(USART_TypeDef *Usart);
+		USART(USART_TypeDef *Usart, BD_ENUM Baud_Rate);
 		void Send(uint8_t value);
 		void Send_Vec_16(uint16_t *ptVec, uint16_t size);
 		uint8_t Receive();
