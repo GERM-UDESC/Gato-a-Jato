@@ -2,6 +2,11 @@
 #define PWM_DRIVER
 #include "GPIO.h"
 #include "TIMER.h"
+
+#define Timer_Frequency 36000000
+#define PWM_Frequency 50000				//min PWM frequecy == 600
+#define AutoReloadPWM ((Timer_Frequency/PWM_Frequency) - 1) //this is also the maximum writtable pwm value
+
 //--------------------------------------------CLASS------------------------------------------------------
 class PWM : protected Timer
 {

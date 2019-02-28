@@ -142,13 +142,13 @@ void PWM::PWMInit()
 //PSC -> Prescaler
 //ARR -> "Auto Reload Register" determinates the period
 //CCR1 -> "Capture/Compare Register" Determinates the duty cicle
-//CCMR1 -> "Capture/Compare Register" Configure the operation mode of the Capture/Compare Register respective to the selected channel
+//CCMR1 -> "Capture/Compare Mode Register" Configure the operation mode of the Capture/Compare Register respective to the selected channel
 
-	///* Uncoment this to get 1kHz of frequency and to be able to write in the CCR1 a value between 0-100 to get 0-100% PWM
-	//TIM->PSC = 7199; //Configure the preescalers
-	
-	//TIM->ARR = 100;
-	//*/
+	if (GetTim() == TIM1)				//just need a different one for timer1, because it is and advanced timer
+	{
+		GetTim()->BDTR |= (1<<15);							//Enable the main output
+		GetTim()->PSC = 1;											//to get 36MHz of frequency, the same as the others timers
+	}
 	
 	switch (GetTIMChannel())
 	{
@@ -156,7 +156,6 @@ void PWM::PWMInit()
 			PWM_WriteAddress  = &(TIM->CCR1);
 			*PWM_WriteAddress  = 0;									//Initialize the PWM with 0%
 			GetTim()->CCMR1 |= (1<<6) | (1<<5);			//Configure the output compare mode as PWM with active mode HIGH
-			GetTim()->BDTR |= (1<<15);							//Enable the main output
 		break;
 		case TIM_CH2:
 			PWM_WriteAddress  = &(TIM->CCR2);
@@ -173,8 +172,10 @@ void PWM::PWMInit()
 			*PWM_WriteAddress  = 0;									//Initialize the PWM with 0%
 			GetTim()->CCMR2 |= (1<<14) | (1<<13);		//Configure the output compare mode as PWM with active mode HIGH
 		break;		
+	}	
 	
-	}
+	GetTim()->ARR = AutoReloadPWM;
+	
 	GetTim()->CCER |= (1<<(4*GetTIMChannel()));	//Enable the channel output
 	
 	GetTim()->EGR |= (1<<0);										//Update generation -> Generate an uptade of all configurations done before
@@ -187,5 +188,5 @@ void PWM::PWMInit()
 
 void PWM::PWMWrite(uint16_t value)
 {
-	*PWM_WriteAddress  = value;
+	if (value <= AutoReloadPWM) *PWM_WriteAddress  = value;
 }

@@ -13,7 +13,7 @@
 #include "MOTOR.h"
 #include "USART.h"
 
-#define number_of_points 500
+#define number_of_points 1000
 
 uint32_t time = 0;
 uint32_t final_time = 0;
@@ -91,8 +91,8 @@ int main()
 		finished = 0;
 		for (uint8_t i = 0; i < 11; i++)
 		{
-			PWM_E.PWMWrite(6553*(i));
-			PWM_D.PWMWrite(6553*(i));
+			PWM_E.PWMWrite((AutoReloadPWM/10)*(i));
+			PWM_D.PWMWrite((AutoReloadPWM/10)*(i));
 			while (finished == 0);
 			Serial.Send_Vec_16(&Speed_points[0],number_of_points);
 			counter_points = 0;
