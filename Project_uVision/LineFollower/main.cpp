@@ -13,7 +13,7 @@
 #include "MOTOR.h"
 #include "USART.h"
 
-#define number_of_points 1000
+#define number_of_points 2000
 
 uint32_t time = 0;
 uint32_t final_time = 0;
@@ -86,13 +86,13 @@ int main()
 			
 	while(1)
 	{
-		while ((Encoder::Speed[Encoder_TIM4] > 0) || (Timer::GetTime_usec() < 1000000));
+		while ((Encoder::Speed[Encoder_TIM1] > 0) || (Timer::GetTime_usec() < 1000000));
 		counter_points = 0;
 		finished = 0;
 		for (uint8_t i = 0; i < 11; i++)
 		{
-			PWM_E.PWMWrite((AutoReloadPWM/10)*(i));
-			PWM_D.PWMWrite((AutoReloadPWM/10)*(i));
+			PWM_E.PWMWrite((Max_PWM/10)*(i));
+			PWM_D.PWMWrite((Max_PWM/10)*(i));
 			while (finished == 0);
 			Serial.Send_Vec_16(&Speed_points[0],number_of_points);
 			counter_points = 0;
@@ -123,7 +123,7 @@ void TIM2_IRQHandler()
 	Encoder::Encoder_Handler_by_Time();
 	if ((counter_points < number_of_points) &&  (finished == 0))
 	{
-		Speed_points[counter_points] = (uint16_t)Encoder::Speed[Encoder_TIM4];
+		Speed_points[counter_points] = (uint16_t)Encoder::Speed[Encoder_TIM1];
 		counter_points++;
 		if (counter_points == number_of_points) finished = 1;
 	}
