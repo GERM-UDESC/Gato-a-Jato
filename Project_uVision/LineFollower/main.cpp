@@ -69,7 +69,7 @@ int main()
 //	Reflectance_Sensor Sensor_Line_7(ADC_CH7);
 //	Reflectance_Sensor Sensor_Line_D(ADC_CH8);	
 
-	USART Serial(USART3, BD_57600);
+	USART Serial(USART3, BD_250000);
 	
 	//----------------------------------------------------------------------------------------------
 	
@@ -86,7 +86,7 @@ int main()
 			
 	while(1)
 	{
-		while ((Encoder::Speed[Encoder_TIM1] > 0) || (Timer::GetTime_usec() < 1000000));
+		while ((Encoder::Speed[Encoder_TIM1] > 0) || (Encoder::Speed[Encoder_TIM4] > 0) || (Timer::GetTime_usec() < 1000000));
 		counter_points = 0;
 		finished = 0;
 		for (uint8_t i = 0; i < 11; i++)
@@ -100,8 +100,39 @@ int main()
 			if (i == 10) finished = 1;
 		}	
 		
+		//testes 2
+//		PWM_E.PWMWrite((Max_PWM/10)*7);
+//		PWM_D.PWMWrite((Max_PWM/10)*7);
+//		while (finished == 0);
+//		Serial.Send_Vec_16(&Speed_points[0],number_of_points);
+//		counter_points = 0;
+//		finished = 0;
+//		PWM_E.PWMWrite((Max_PWM/10)*3);
+//		PWM_D.PWMWrite((Max_PWM/10)*3);
+//		while (finished == 0);
+//		Serial.Send_Vec_16(&Speed_points[0],number_of_points);
+//		counter_points = 0;
+//		finished = 0;
+//		PWM_E.PWMWrite((Max_PWM/10)*10);
+//		PWM_D.PWMWrite((Max_PWM/10)*10);
+//		while (finished == 0);
+//		Serial.Send_Vec_16(&Speed_points[0],number_of_points);
+//		counter_points = 0;
+//		finished = 0;
+//		PWM_E.PWMWrite((Max_PWM/10)*5);
+//		PWM_D.PWMWrite((Max_PWM/10)*5);
+//		while (finished == 0);
+//		Serial.Send_Vec_16(&Speed_points[0],number_of_points);
+		
+
+		
+		
 		PWM_E.PWMWrite(0);	//turn off the motor
 		PWM_D.PWMWrite(0);	//turn off the motor
+		
+		
+		
+		
 
 		while(1)
 		{

@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\LineFollower.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\LineFollower.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Fri Mar 01 12:35:47 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Tue Mar 05 18:42:27 2019
 <BR><P>
 <H3>Maximum Stack Usage =        560 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -774,7 +774,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART::Send_Vec_16(unsigned short*, unsigned short)
 </UL>
 
-<P><STRONG><a name="[7b]"></a>USART::init(BD_ENUM)</STRONG> (Thumb, 266 bytes, Stack size 16 bytes, usart.o(i._ZN5USART4initE7BD_ENUM))
+<P><STRONG><a name="[7b]"></a>USART::init(BD_ENUM)</STRONG> (Thumb, 382 bytes, Stack size 16 bytes, usart.o(i._ZN5USART4initE7BD_ENUM))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = USART::init(BD_ENUM) &rArr; GPIO::ConfigGPIOPin()
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO::SetGPIOPortPin(GPIO_IO_ENUM)
@@ -870,7 +870,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Line_Sensor::Line_Sensor(ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS)
 </UL>
 
-<P><STRONG><a name="[3f]"></a>main</STRONG> (Thumb, 378 bytes, Stack size 496 bytes, main.o(i.main))
+<P><STRONG><a name="[3f]"></a>main</STRONG> (Thumb, 390 bytes, Stack size 496 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 560<LI>Call Chain = main &rArr; Line_Sensor::Line_Sensor(ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS, ADC_CHANNELS) &rArr; __aeabi_vec_ctor_nocookie_nodtor
 </UL>
 <BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cfrcmple

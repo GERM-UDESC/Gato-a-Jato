@@ -6,6 +6,9 @@
 typedef enum{
 	BD_9600,
 	BD_57600,
+	BD_115200,	//BD_115384 -> this is the value if using USART 2 or 3
+	BD_230769,
+	BD_250000,
 } BD_ENUM;
 
 class USART
