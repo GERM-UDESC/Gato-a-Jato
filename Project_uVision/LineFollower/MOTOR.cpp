@@ -1,8 +1,27 @@
 #include "MOTOR.h"
 
-#define desired_iterations_delay 1000
-uint16_t count_iterations = 0;
+int16_t Motor::Speed_Reference[Number_of_Motor];
+int16_t Motor::E[Number_of_Motor][desired_size];				//Error
 
+void Motor::Motor_Initialiize()
+{
+	for (uint8_t i = 0; i < Number_of_Motor; i++)
+	{
+		Motor::Speed_Reference[i] = 0;
+		for (uint8_t j = 0; j < desired_size; j++)
+		{
+			Motor::E[i][j] = 0;				//Error
+		}	
+	}	
+}
+
+void Motor::Motor_Handler_by_time()
+{
+	for (uint8_t i = 0; i < Number_of_Motor; i++)
+	{
+		E[i][k] = Speed_Reference[i] - (int16_t)Encoder::Speed[i];
+	}		
+}
 
 Motor::Motor(TIM_TypeDef *TIM_PWM, TIM_CHANNELS channel_PWM, TIM_REMAP TIM_PWMremap, TIM_TypeDef *TIM_ENCODER, GPIO_IO_ENUM IO_Pin_IN1, GPIO_IO_ENUM IO_Pin_IN2)
 {
@@ -36,9 +55,17 @@ Motor::Motor(TIM_TypeDef *TIM_PWM, TIM_CHANNELS channel_PWM, TIM_REMAP TIM_PWMre
 	IN1.digitalWrite(LOW);
 	IN2.digitalWrite(LOW);
 	
+	if (Encoder_Motor.GetTim() == TIM1) Motor_number = Motor_1;
+	else if (Encoder_Motor.GetTim() == TIM2) Motor_number = Motor_2;
+	else if (Encoder_Motor.GetTim() == TIM3) Motor_number = Motor_3;
+	else if (Encoder_Motor.GetTim() == TIM4) Motor_number = Motor_4;
 	
-	this->motor_PWM = 0;
-	this->desired_speed = 0;
+	Set_Speed(0);
+	for (uint8_t i = 0; i < desired_size; i++)
+	{
+		U[i] = 0;				
+	}	
+	
 };
 
   //configuração pinos Ponte H
@@ -49,40 +76,32 @@ Motor::Motor(TIM_TypeDef *TIM_PWM, TIM_CHANNELS channel_PWM, TIM_REMAP TIM_PWMre
 
 void Motor::Set_Speed(int16_t Speed_Reference)
 {
-	if((Speed_Reference >= 0) && (Speed_Reference <=3000))
-	{
-		IN1.digitalWrite(HIGH);
-		IN2.digitalWrite(LOW);
-		desired_speed = Speed_Reference;
-	}
-	else if(Speed_Reference > (-3000))
-	{
-		IN1.digitalWrite(LOW);
-		IN2.digitalWrite(HIGH);
-		desired_speed = -Speed_Reference;
-	}
+	Motor::Speed_Reference[Motor_number] = Speed_Reference;
 };
 
 void Motor::Handler()
 {
-	if(count_iterations >= desired_iterations_delay)
+	U[k] = ((2*KP+KI*Ts)*E[Motor_number][k] + (KI*Ts-2*KP)*E[Motor_number][k-1] + 2*U[k-1])/2;
+	if(U[k] < 0)
 	{
-		count_iterations = 0;
-		if((desired_speed >= 0) && (desired_speed <=3000))
-		{
-			if	(Encoder_Motor.GetEncSpeed() > desired_speed)			(this->motor_PWM)--;
-			else if	(Encoder_Motor.GetEncSpeed() < desired_speed)	(this->motor_PWM)++;
-		}
-		else if(desired_speed > (-3000))
-		{
-			if	(Encoder_Motor.GetEncSpeed() > desired_speed)			(this->motor_PWM)++;
-			else if	(Encoder_Motor.GetEncSpeed() < desired_speed)	(this->motor_PWM)--;
-		}
-		if ((this->motor_PWM) > 65535) (this->motor_PWM) = 65535;
-		else if ((this->motor_PWM) <= 0) (this->motor_PWM) = 0;
-		PWM_Motor.PWMWrite((this->motor_PWM));
+		IN1.digitalWrite(LOW);
+		IN2.digitalWrite(HIGH);
+		if (U[k] < -100) U[k] = -100; //satura
 	}
-	count_iterations++;
+	else if(U[k] >= 0)
+	{
+		IN1.digitalWrite(HIGH);
+		IN2.digitalWrite(LOW);
+		if (U[k] > 100) U[k] = 100; //satura
+	}
+	
+	PWM_Motor.PWMWrite(U[k]);
+	
+	for (int i = 0; i < k; i++)
+	{
+		U[i] = U[i+1];
+		E[Motor_number][i] = E[Motor_number][i+1];
+	}
 }
 
 float Motor::Get_Speed()

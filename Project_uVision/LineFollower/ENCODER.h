@@ -5,6 +5,7 @@
 
 #define NUMBER_OF_ENCODERS 4		//the number of timers in the microcontroller, but TIM2 is used for time base
 #define min_rpm_precision 5
+#define Max_speed_variation 300
 #define Max_delay_Ticks_Time (500000/min_rpm_precision)	//This value is used to make shure that the motor speed i'll go to zero
 #define AutoReaload_Ticks 11// for pololu encoders, if you want speed, this cannot be lower then 11
 #define Ticks_till_int (AutoReaload_Ticks+1)  //Ticks to generate an interruption
@@ -48,13 +49,14 @@ class Encoder : protected Timer
 		Encoder(){};					//must be used only by class composition
 		Encoder(TIM_TypeDef *TIM);
 		uint16_t GetEncTicks();
-		uint32_t GetEncSpeed();
+		float GetEncSpeed();
 			
 		static void Encoder_Initiallize();
 		static void Encoder_Handler(TIM_TypeDef *TIMER);
 		static void Encoder_Handler_by_Time();
 			
 		static float Speed[NUMBER_OF_ENCODERS];
+		static float Last_Speed[NUMBER_OF_ENCODERS];
 		
 };
 

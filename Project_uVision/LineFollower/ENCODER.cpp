@@ -5,6 +5,7 @@ uint32_t Encoder::Ticks[NUMBER_OF_ENCODERS];
 uint32_t Encoder::Ticks_Time[NUMBER_OF_ENCODERS];
 uint32_t Encoder::LastTicks_Time[NUMBER_OF_ENCODERS];
 float Encoder::Speed[NUMBER_OF_ENCODERS];
+float Encoder::Last_Speed[NUMBER_OF_ENCODERS];
 
 void Encoder::Encoder_Initiallize()
 {
@@ -14,6 +15,7 @@ void Encoder::Encoder_Initiallize()
 		Encoder::Ticks_Time[i] = 1;
 		Encoder::LastTicks_Time[i] = 0;
 		Encoder::Speed[i] = 0;
+		Encoder::Last_Speed[i] = 0;
 	}
 }
 
@@ -27,8 +29,20 @@ void Encoder::Encoder_Handler(TIM_TypeDef *TIMER)
 	
 	Encoder::Ticks[enc_num] += Ticks_till_int;
 	Encoder::Ticks_Time[enc_num] = Timer::GetTime_usec();
-	Encoder::Speed[enc_num] = (500000*Ticks_till_int);									//this 500000* is to convert ticks/us in rpm
-	Encoder::Speed[enc_num] = Encoder::Speed[enc_num]/(Encoder::Ticks_Time[enc_num] - Encoder::LastTicks_Time[enc_num]);
+	Encoder::Speed[enc_num] = (500000*Ticks_till_int)/(Encoder::Ticks_Time[enc_num] - Encoder::LastTicks_Time[enc_num]);			//this 500000* is to convert ticks/us in rpm
+//	if (Encoder::Speed[enc_num] > 715)
+//	{
+//		if (((Encoder::Speed[enc_num] - Encoder::Last_Speed[enc_num]) > Max_speed_variation) 
+//			|| ((Encoder::Speed[enc_num] - Encoder::Last_Speed[enc_num]) < -Max_speed_variation))	//verify if its noise
+//		{
+//			Encoder::Speed[enc_num] = Encoder::Last_Speed[enc_num];	//keep the last speed
+//		}
+//		else if(Encoder::Speed[enc_num] == 0)
+//		{
+//			Encoder::Speed[enc_num] = Encoder::Last_Speed[enc_num];
+//		}
+//	}
+	Encoder::Last_Speed[enc_num] = Encoder::Speed[enc_num];
 	Encoder::LastTicks_Time[enc_num] = Encoder::Ticks_Time[enc_num];
 }
 
@@ -113,7 +127,7 @@ uint16_t Encoder::GetEncTicks()
 	return 0;	// this case should never happens
 }
 
-uint32_t Encoder::GetEncSpeed()
+float Encoder::GetEncSpeed()
 {
 	if (GetTim() == TIM1) return Encoder::Speed[Encoder_TIM1];
 	else if (GetTim() == TIM2) return Encoder::Speed[Encoder_TIM2];

@@ -1,0 +1,13 @@
+.\objects\testes.o: testes.cpp
+.\objects\testes.o: Micro.h
+.\objects\testes.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\testes.o: SysClock.h
+.\objects\testes.o: GPIO.h
+.\objects\testes.o: TIMER.h
+.\objects\testes.o: PWM.h
+.\objects\testes.o: ENCODER.h
+.\objects\testes.o: ADC.h
+.\objects\testes.o: REFLECTANCE_SENSOR.h
+.\objects\testes.o: LINE_SENSOR.h
+.\objects\testes.o: MOTOR.h
+.\objects\testes.o: USART.h

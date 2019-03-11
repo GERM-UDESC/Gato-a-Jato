@@ -34,7 +34,7 @@ typedef enum{
 
 
 #define Prescale 71     //Timer frequency = 72Mhz/(Prescale+1). If Prescale = 71, then Timer freq. = 1Mhz -> Timer period = 1us.
-#define Time_between_int 1000		//in usec
+#define Time_between_int 10000		//in usec
 #define AutoReload_Counter (Time_between_int-1)	//at 1Mhz, and autoreaload_counter = 999, the timer counter will generate an interrupt at each 1ms.
 
 

@@ -186,7 +186,10 @@ void PWM::PWMInit()
 
 //******************************************************************************************************************************
 
-void PWM::PWMWrite(uint16_t value)
+void PWM::PWMWrite(float value)
 {
-	if (value <= AutoReloadPWM) *PWM_WriteAddress  = value;
+	if ((value <= 100) && (value >= 0)) 
+		*PWM_WriteAddress  = (uint16_t)((value*Max_PWM)/100);
+	else if (value >= 100) 	*PWM_WriteAddress  = Max_PWM;
+	else if (value <= 0)		*PWM_WriteAddress  = 0;
 }

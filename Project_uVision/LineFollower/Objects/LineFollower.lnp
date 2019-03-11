@@ -9,6 +9,7 @@
 ".\objects\usart.o"
 ".\objects\main.o"
 ".\objects\line_follower.o"
+".\objects\testes.o"
 ".\objects\reflectance_sensor.o"
 ".\objects\line_sensor.o"
 ".\objects\motor.o"
