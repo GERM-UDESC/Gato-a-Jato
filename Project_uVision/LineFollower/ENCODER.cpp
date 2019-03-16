@@ -7,6 +7,8 @@ uint32_t Encoder::LastTicks_Time[NUMBER_OF_ENCODERS];
 float Encoder::Speed[NUMBER_OF_ENCODERS];
 float Encoder::Last_Speed[NUMBER_OF_ENCODERS];
 
+uint8_t enc_num = 0;
+
 void Encoder::Encoder_Initiallize()
 {
 	for(int i = 0; i<NUMBER_OF_ENCODERS; i++)
@@ -21,7 +23,7 @@ void Encoder::Encoder_Initiallize()
 
 void Encoder::Encoder_Handler(TIM_TypeDef *TIMER)
 {
-	uint8_t enc_num = 0;
+	//uint8_t enc_num = 0; Passar como global
 	if (TIMER == TIM1) enc_num = 0;
 	else if (TIMER == TIM2) enc_num = 1;
 	else if (TIMER == TIM3) enc_num = 2;
@@ -30,7 +32,13 @@ void Encoder::Encoder_Handler(TIM_TypeDef *TIMER)
 	Encoder::Ticks[enc_num] += Ticks_till_int;
 	Encoder::Ticks_Time[enc_num] = Timer::GetTime_usec();
 	Encoder::Speed[enc_num] = (500000*Ticks_till_int)/(Encoder::Ticks_Time[enc_num] - Encoder::LastTicks_Time[enc_num]);			//this 500000* is to convert ticks/us in rpm
-//	if (Encoder::Speed[enc_num] > 715)
+	if (Encoder::Last_Speed[enc_num] > 900)
+	{
+		if(Encoder::Speed[enc_num] == 0)
+		{
+			Encoder::Speed[enc_num] = Encoder::Last_Speed[enc_num];
+		}
+	}
 //	{
 //		if (((Encoder::Speed[enc_num] - Encoder::Last_Speed[enc_num]) > Max_speed_variation) 
 //			|| ((Encoder::Speed[enc_num] - Encoder::Last_Speed[enc_num]) < -Max_speed_variation))	//verify if its noise

@@ -3,9 +3,9 @@
 #include "GPIO.h"
 #include "TIMER.h"
 
-#define NUMBER_OF_ENCODERS 4		//the number of timers in the microcontroller, but TIM2 is used for time base
+//#define  4		//the number of timers in the microcontroller, but TIM2 is used for time base
 #define min_rpm_precision 5
-#define Max_speed_variation 300
+#define Max_speed_variation 500
 #define Max_delay_Ticks_Time (500000/min_rpm_precision)	//This value is used to make shure that the motor speed i'll go to zero
 #define AutoReaload_Ticks 11// for pololu encoders, if you want speed, this cannot be lower then 11
 #define Ticks_till_int (AutoReaload_Ticks+1)  //Ticks to generate an interruption
@@ -16,7 +16,7 @@
 */
 
 //Encoder 1 - Interrupt Handler
-extern "C" void TIM1_UP_IRQHandler();
+//extern "C" void TIM1_UP_IRQHandler();
 ////Encoder 2 - Interrupt Handler		//this timer is being used as time base for the system
 //extern "C" void TIM2_IRQHandler();
 //Encoder 3 - Interrupt Handler
@@ -29,6 +29,7 @@ typedef enum{
 	Encoder_TIM2,
 	Encoder_TIM3,
 	Encoder_TIM4,
+	NUMBER_OF_ENCODERS,
 }ENCODER_ENUM;
 
 class Encoder : protected Timer
@@ -57,6 +58,7 @@ class Encoder : protected Timer
 			
 		static float Speed[NUMBER_OF_ENCODERS];
 		static float Last_Speed[NUMBER_OF_ENCODERS];
+
 		
 };
 

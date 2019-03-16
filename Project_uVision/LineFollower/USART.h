@@ -9,6 +9,8 @@ typedef enum{
 	BD_115200,	//BD_115384 -> this is the value if using USART 2 or 3
 	BD_230769,
 	BD_250000,
+	BD_1000000,
+	BD_2250000,
 } BD_ENUM;
 
 class USART
@@ -24,6 +26,7 @@ class USART
 		void Send(uint8_t value);
 		void Send_Vec_16(uint16_t *ptVec, uint16_t size);
 		uint8_t Receive();
+		bool Available();
 		
 };
 

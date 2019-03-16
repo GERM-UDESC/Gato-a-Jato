@@ -18,7 +18,9 @@ void USART::init(BD_ENUM Baud_Rate)
 		else if (Baud_Rate == BD_9600)	Usart->BRR = 0xEA2;	
 		else if (Baud_Rate == BD_115200)	Usart->BRR = 0x271;
 		else if (Baud_Rate == BD_230769)	Usart->BRR = 0x138;
-		else if (Baud_Rate == BD_250000)	Usart->BRR = 0x120;		
+		else if (Baud_Rate == BD_250000)	Usart->BRR = 0x120;
+		else if (Baud_Rate == BD_1000000)	Usart->BRR = 0x48;			
+		else if (Baud_Rate == BD_2250000)	Usart->BRR = 0x20;		
 	}
 	else if (Usart == USART2) 
 	{
@@ -30,6 +32,8 @@ void USART::init(BD_ENUM Baud_Rate)
 		else if (Baud_Rate == BD_115200)	Usart->BRR = 0x138;
 		else if (Baud_Rate == BD_230769)	Usart->BRR = 0x9C;
 		else if (Baud_Rate == BD_250000)	Usart->BRR = 0x90;
+		else if (Baud_Rate == BD_1000000)	Usart->BRR = 0x24;
+		else if (Baud_Rate == BD_2250000)	Usart->BRR = 0x10;	
 	}
 	else if (Usart == USART3) 
 	{
@@ -41,6 +45,8 @@ void USART::init(BD_ENUM Baud_Rate)
 		else if (Baud_Rate == BD_115200)	Usart->BRR = 0x138;
 		else if (Baud_Rate == BD_230769)	Usart->BRR = 0x9C;
 		else if (Baud_Rate == BD_250000)	Usart->BRR = 0x90;
+		else if (Baud_Rate == BD_1000000)	Usart->BRR = 0x24;
+		else if (Baud_Rate == BD_2250000)	Usart->BRR = 0x10;	
 	}	
 	TX_Port.SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);
 	RX_Port.SetGPIOMode(INPUT_FLOATING);
@@ -65,14 +71,14 @@ void USART::Send_Vec_16(uint16_t *ptVec, uint16_t size)
 {
 	for (uint16_t i = 0; i < size; i++)
 	{
-		Send(*ptVec >> 8);
+//		Send(*ptVec >> 8);
+//		Send((uint8_t)(*ptVec & 0xFF));
 		Send((uint8_t)(*ptVec & 0xFF));
+		Send(*ptVec >> 8);
 		ptVec++;
 	}
 	
 }
-
-
 
 uint8_t USART::Receive()
 {
@@ -80,5 +86,9 @@ uint8_t USART::Receive()
   return (Usart->DR & 0xFF);              //return read data
 }
 
-
+bool USART::Available()
+{
+	if (Usart->SR & (1<<5)) return 1;	//if there is something, return 1, else, return 0
+	return 0;
+}
 
