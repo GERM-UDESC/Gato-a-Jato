@@ -1,68 +1,34 @@
 #include "ENCODER.h"
 
-//Declaration of the static variables
-uint32_t Encoder::Ticks[NUMBER_OF_ENCODERS];
-uint32_t Encoder::Ticks_Time[NUMBER_OF_ENCODERS];
-uint32_t Encoder::LastTicks_Time[NUMBER_OF_ENCODERS];
-float Encoder::Speed[NUMBER_OF_ENCODERS];
-float Encoder::Last_Speed[NUMBER_OF_ENCODERS];
 
-uint8_t enc_num = 0;
+Encoder *Encoder::Ptr[NUMBER_OF_ENCODERS];
+bool Encoder::usedEncoders[NUMBER_OF_ENCODERS];
 
 void Encoder::Encoder_Initiallize()
 {
 	for(int i = 0; i<NUMBER_OF_ENCODERS; i++)
 	{
-		Encoder::Ticks[i] = 0;
-		Encoder::Ticks_Time[i] = 1;
-		Encoder::LastTicks_Time[i] = 0;
-		Encoder::Speed[i] = 0;
-		Encoder::Last_Speed[i] = 0;
+		Encoder::usedEncoders[i] = 0;
 	}
 }
 
-void Encoder::Encoder_Handler(TIM_TypeDef *TIMER)
+void Encoder::Encoder_Handler(ENCODER_ENUM enc)
 {
-	//uint8_t enc_num = 0; Passar como global
-	if (TIMER == TIM1) enc_num = 0;
-	else if (TIMER == TIM2) enc_num = 1;
-	else if (TIMER == TIM3) enc_num = 2;
-	else if (TIMER == TIM4) enc_num = 3;
-	
-	Encoder::Ticks[enc_num] += Ticks_till_int;
-	Encoder::Ticks_Time[enc_num] = Timer::GetTime_usec();
-	Encoder::Speed[enc_num] = (500000*Ticks_till_int)/(Encoder::Ticks_Time[enc_num] - Encoder::LastTicks_Time[enc_num]);			//this 500000* is to convert ticks/us in rpm
-	if (Encoder::Last_Speed[enc_num] > 900)
-	{
-		if(Encoder::Speed[enc_num] == 0)
-		{
-			Encoder::Speed[enc_num] = Encoder::Last_Speed[enc_num];
-		}
-	}
-//	{
-//		if (((Encoder::Speed[enc_num] - Encoder::Last_Speed[enc_num]) > Max_speed_variation) 
-//			|| ((Encoder::Speed[enc_num] - Encoder::Last_Speed[enc_num]) < -Max_speed_variation))	//verify if its noise
-//		{
-//			Encoder::Speed[enc_num] = Encoder::Last_Speed[enc_num];	//keep the last speed
-//		}
-//		else if(Encoder::Speed[enc_num] == 0)
-//		{
-//			Encoder::Speed[enc_num] = Encoder::Last_Speed[enc_num];
-//		}
-//	}
-	Encoder::Last_Speed[enc_num] = Encoder::Speed[enc_num];
-	Encoder::LastTicks_Time[enc_num] = Encoder::Ticks_Time[enc_num];
+	Encoder::Ptr[enc]->Handler();
 }
 
 void Encoder::Encoder_Handler_by_Time()
 {
 	for (int i = 0; i < NUMBER_OF_ENCODERS; i++)
 	{
-		if ((( Timer::GetTime_usec() - Encoder::LastTicks_Time[i]) > Max_delay_Ticks_Time) && (Encoder::Speed[i] != 0))
+		if (Encoder::usedEncoders[i] == 1)
 		{
-			Encoder::LastTicks_Time[i] = Timer::GetTime_usec();
-			Encoder::Speed[i] = 0;
-		}	
+			if ((( Timer::GetTime_usec() - Encoder::Ptr[i]->LastTicks_Time) > Max_delay_Ticks_Time) && (Encoder::Ptr[i]->Speed != 0))
+			{
+				Encoder::Ptr[i]->LastTicks_Time = Timer::GetTime_usec();
+				Encoder::Ptr[i]->Speed = 0;
+			}	
+		}
 	}	
 }
 
@@ -74,6 +40,19 @@ Encoder::Encoder(TIM_TypeDef *TIM)
 
 void Encoder::ConfigEncoder()
 {	
+	if 			(GetTim() == TIM1)	encoderNumber = Encoder_TIM1;
+	else if (GetTim() == TIM2)	encoderNumber = Encoder_TIM2;
+	else if (GetTim() == TIM3)	encoderNumber = Encoder_TIM3;
+	else if (GetTim() == TIM4)	encoderNumber = Encoder_TIM4;
+	Encoder::Ptr[encoderNumber] = this;
+	Encoder::usedEncoders[encoderNumber] = 1;
+	
+	Ticks = 0;
+	Ticks_Time = 1;
+	LastTicks_Time = 0;
+	Speed = 0;
+	Last_Speed = 0;
+	
 	//Enable the clock of the respective timer
 	if (GetTim() == TIM1)			RCC->APB2ENR |= (1<<11);
 	else if(GetTim() == TIM2)	RCC->APB1ENR |= (1<<0);
@@ -114,6 +93,7 @@ void Encoder::ConfigEncoder()
 	GetTim()->CCMR1 |= (1<<0);							//IC1 is mapped on TI1
 	GetTim()->CCMR1 |= (1<<8);							//IC2 is mapped on TI2	
 	GetTim()->CCER |= (1<<1);								//invert the polarity, just because of the line follower.
+	
 //-----interrupt part-----------	
 	GetTim()->EGR |= (1<<0);		//Update generation -> Generate an uptade of all configurations done before
 	GetTim()->SR &= ~(1<<0);		//Clear Update interrupt flag
@@ -123,48 +103,32 @@ void Encoder::ConfigEncoder()
 	else if (GetTim() == TIM3) NVIC->ISER[0] |= (1<<TIM3_IRQn);
 	else if (GetTim() == TIM4) NVIC->ISER[0] |= (1<<TIM4_IRQn);
 //------------------------------
+
 	GetTim()->CR1 |= (1<<0);								//Enable the counter
 }
 
 uint16_t Encoder::GetEncTicks()
 {
-	if (GetTim() == TIM1) return Encoder::Ticks[Encoder_TIM1];
-	else if (GetTim() == TIM2) return Encoder::Ticks[Encoder_TIM2];
-	else if (GetTim() == TIM3) return Encoder::Ticks[Encoder_TIM3];
-	else if (GetTim() == TIM4) return Encoder::Ticks[Encoder_TIM4];
-	return 0;	// this case should never happens
+	return Ticks + GetTim()->CNT;	
 }
 
 float Encoder::GetEncSpeed()
 {
-	if (GetTim() == TIM1) return Encoder::Speed[Encoder_TIM1];
-	else if (GetTim() == TIM2) return Encoder::Speed[Encoder_TIM2];
-	else if (GetTim() == TIM3) return Encoder::Speed[Encoder_TIM3];
-	else if (GetTim() == TIM4) return Encoder::Speed[Encoder_TIM4];
-	return 0;	// this case should never happens
+	return Speed;
 }
 
-
-void TIM1_UP_IRQHandler()
+void Encoder::Handler()
 {
-	TIM1->SR &= ~(1<<0);
-	Encoder::Encoder_Handler(TIM1);
-};
-
-//void TIM2_IRQHandler()						//this timer is being used as time base for the system
-//{
-//	TIM2->SR &= ~(1<<0);
-//	Encoder::Encoder_Handler(TIM2);
-//};
-
-void TIM3_IRQHandler()
-{
-	TIM3->SR &= ~(1<<0);
-	Encoder::Encoder_Handler(TIM3);
-};
-
-void TIM4_IRQHandler()
-{
-	TIM4->SR &= ~(1<<0);
-	Encoder::Encoder_Handler(TIM4);
-};
+	Ticks += Ticks_till_int;
+	Ticks_Time = Timer::GetTime_usec();
+	Speed = (500000*Ticks_till_int)/(Ticks_Time - LastTicks_Time);			//this 500000* is to convert ticks/us in rpm
+	if (Last_Speed > 900)
+	{
+		if(Speed == 0)
+		{
+			Speed = Last_Speed;
+		}
+	}
+	Last_Speed = Speed;
+	LastTicks_Time = Ticks_Time;
+}

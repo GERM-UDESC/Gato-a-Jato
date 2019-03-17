@@ -106,8 +106,7 @@ int main()
 		}
 		time = Timer::GetTime_usec();
 		counter++;
-		Motor_E.Handler();
-		Motor_D.Handler();
+		
 		if (sending) 
 		{
 			speed_teste = (uint16_t)Motor_E.Get_Speed();
@@ -124,8 +123,23 @@ int main()
 	}
 }
 
-//Timer generator interruption handler
+
+//Interruption Part
+
+//Encoder 1 - Interrupt Handler			//Encoder Esquerdo
+extern "C" void TIM1_UP_IRQHandler();
+////Encoder 2 - Interrupt Handler		//this timer is being used as time base for the system
 extern "C" void TIM2_IRQHandler();
+//Encoder 3 - Interrupt Handler			//PWM generator
+extern "C" void TIM3_IRQHandler();
+//Encoder 4 - Interrupt Handler			//Encoder direito
+extern "C" void TIM4_IRQHandler();
+
+void TIM1_UP_IRQHandler()
+{
+	TIM1->SR &= ~(1<<0);
+	Encoder::Encoder_Handler(Encoder_TIM1);
+};
 
 void TIM2_IRQHandler()
 {
@@ -136,3 +150,13 @@ void TIM2_IRQHandler()
 	flag = 1;
 };
 
+void TIM3_IRQHandler()
+{
+	TIM3->SR &= ~(1<<0);
+};
+
+void TIM4_IRQHandler()
+{
+	TIM4->SR &= ~(1<<0);
+	Encoder::Encoder_Handler(Encoder_TIM4);
+};

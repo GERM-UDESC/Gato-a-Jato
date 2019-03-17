@@ -29,27 +29,28 @@ typedef enum{
 
 class Motor
 {
-public:
-	PWM PWM_Motor;
-	Encoder Encoder_Motor;
-	GPIO IN1;
-	GPIO IN2;
-	MOTOR_ENUM Motor_number;
-	float U[desired_size];																//Control action
-	static int16_t Speed_Reference[Number_of_Motor];
-	static float E[Number_of_Motor][desired_size];				//Error
-	static bool handlerStatus[Number_of_Motor];
-	static Motor *Ptr[Number_of_Motor];
+	public:
+		PWM PWM_Motor;
+		Encoder Encoder_Motor;
+		GPIO IN1;
+		GPIO IN2;
+	
+		MOTOR_ENUM Motor_number;
+		float U[desired_size];	
+		float E[desired_size];			
+		int16_t Speed_Reference;
+			
+		static Motor *Ptr[Number_of_Motor];
+		void Handler();
 
-public:
-	Motor(TIM_TypeDef *TIM_PWM, TIM_CHANNELS channel_PWM, TIM_REMAP PWMremap, TIM_TypeDef *TIM_ENCODER, GPIO_IO_ENUM IO_Pin_IN1, GPIO_IO_ENUM IO_Pin_IN2);
-	void Set_Speed(int16_t Speed_Reference);  //Set the desired speed in RPM
-	uint32_t Get_position();
-	float Get_Speed();
-	void Handler();
+	public:
+		Motor(TIM_TypeDef *TIM_PWM, TIM_CHANNELS channel_PWM, TIM_REMAP PWMremap, TIM_TypeDef *TIM_ENCODER, GPIO_IO_ENUM IO_Pin_IN1, GPIO_IO_ENUM IO_Pin_IN2);
+		void Set_Speed(int16_t Speed_Reference);  //Set the desired speed in RPM
+		uint32_t Get_position();
+		float Get_Speed();
 
-	static void Motor_Initialiize();
-	static void Motor_Handler_by_time();
+		static void Motor_Initialiize();
+		static void Motor_Handler_by_time();
 
 };
 

@@ -3,8 +3,7 @@
 #include "GPIO.h"
 #include "TIMER.h"
 
-//#define  4		//the number of timers in the microcontroller, but TIM2 is used for time base
-#define min_rpm_precision 5
+#define min_rpm_precision 30
 #define Max_speed_variation 500
 #define Max_delay_Ticks_Time (500000/min_rpm_precision)	//This value is used to make shure that the motor speed i'll go to zero
 #define AutoReaload_Ticks 11// for pololu encoders, if you want speed, this cannot be lower then 11
@@ -14,15 +13,6 @@
 	If you want to change the timer used for time base and use it as encoder, just uncomment the lines of the actuall time base timer
 	and comment the line of the new time base timer (the interrupt handling lines)
 */
-
-//Encoder 1 - Interrupt Handler
-//extern "C" void TIM1_UP_IRQHandler();
-////Encoder 2 - Interrupt Handler		//this timer is being used as time base for the system
-//extern "C" void TIM2_IRQHandler();
-//Encoder 3 - Interrupt Handler
-extern "C" void TIM3_IRQHandler();
-//Encoder 4 - Interrupt Handler
-extern "C" void TIM4_IRQHandler();
 
 typedef enum{
 	Encoder_TIM1 = 0,
@@ -36,30 +26,32 @@ class Encoder : protected Timer
 {
 	friend class Motor;
 	private:			//should be private
-		
-		static uint32_t Ticks[NUMBER_OF_ENCODERS];
-		static uint32_t Ticks_Time[NUMBER_OF_ENCODERS];
-		static uint32_t LastTicks_Time[NUMBER_OF_ENCODERS];
-	
 		GPIO EncCH1;
 		GPIO EncCH2;
 
+		ENCODER_ENUM encoderNumber;
+		uint32_t Ticks;
+		uint32_t Ticks_Time;
+		uint32_t LastTicks_Time;
+		float Speed;
+		float Last_Speed;
+
 		void ConfigEncoder();
+		void Handler();
+
+		static Encoder *Ptr[NUMBER_OF_ENCODERS];
+		static bool usedEncoders[NUMBER_OF_ENCODERS];
 
 	public:
 		Encoder(){};					//must be used only by class composition
 		Encoder(TIM_TypeDef *TIM);
 		uint16_t GetEncTicks();
 		float GetEncSpeed();
-			
-		static void Encoder_Initiallize();
-		static void Encoder_Handler(TIM_TypeDef *TIMER);
-		static void Encoder_Handler_by_Time();
-			
-		static float Speed[NUMBER_OF_ENCODERS];
-		static float Last_Speed[NUMBER_OF_ENCODERS];
 
-		
+		static void Encoder_Initiallize();
+		static void Encoder_Handler(ENCODER_ENUM enc);
+		static void Encoder_Handler_by_Time();
+
 };
 
 #endif
