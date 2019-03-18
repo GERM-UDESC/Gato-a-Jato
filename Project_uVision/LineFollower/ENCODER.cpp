@@ -1,7 +1,6 @@
 #include "ENCODER.h"
 
-
-Encoder *Encoder::Ptr[NUMBER_OF_ENCODERS];
+Encoder *Encoder::encPtr[NUMBER_OF_ENCODERS];
 bool Encoder::usedEncoders[NUMBER_OF_ENCODERS];
 
 void Encoder::Encoder_Initiallize()
@@ -14,7 +13,7 @@ void Encoder::Encoder_Initiallize()
 
 void Encoder::Encoder_Handler(ENCODER_ENUM enc)
 {
-	Encoder::Ptr[enc]->Handler();
+	Encoder::encPtr[enc]->Handler();
 }
 
 void Encoder::Encoder_Handler_by_Time()
@@ -23,13 +22,13 @@ void Encoder::Encoder_Handler_by_Time()
 	{
 		if (Encoder::usedEncoders[i] == 1)
 		{
-			if ((( Timer::GetTime_usec() - Encoder::Ptr[i]->LastTicks_Time) > Max_delay_Ticks_Time) && (Encoder::Ptr[i]->Speed != 0))
+			if ((( Timer::GetTime_usec() - Encoder::encPtr[i]->LastTicks_Time) > Max_delay_Ticks_Time) && (Encoder::encPtr[i]->Speed != 0))
 			{
-				Encoder::Ptr[i]->LastTicks_Time = Timer::GetTime_usec();
-				Encoder::Ptr[i]->Speed = 0;
+				Encoder::encPtr[i]->LastTicks_Time = Timer::GetTime_usec();
+				Encoder::encPtr[i]->Speed = 0;
 			}	
 		}
-	}	
+	}
 }
 
 Encoder::Encoder(TIM_TypeDef *TIM)
@@ -44,7 +43,7 @@ void Encoder::ConfigEncoder()
 	else if (GetTim() == TIM2)	encoderNumber = Encoder_TIM2;
 	else if (GetTim() == TIM3)	encoderNumber = Encoder_TIM3;
 	else if (GetTim() == TIM4)	encoderNumber = Encoder_TIM4;
-	Encoder::Ptr[encoderNumber] = this;
+	Encoder::encPtr[encoderNumber] = this;
 	Encoder::usedEncoders[encoderNumber] = 1;
 	
 	Ticks = 0;
@@ -107,14 +106,29 @@ void Encoder::ConfigEncoder()
 	GetTim()->CR1 |= (1<<0);								//Enable the counter
 }
 
-uint16_t Encoder::GetEncTicks()
+uint32_t Encoder::getTicks()
 {
 	return Ticks + GetTim()->CNT;	
 }
 
-float Encoder::GetEncSpeed()
+uint32_t Encoder::getTicksTime()
+{
+	return Ticks_Time;
+}
+
+uint32_t Encoder::getLastTicksTime()
+{
+	return LastTicks_Time;
+}
+
+float Encoder::getSpeed()
 {
 	return Speed;
+}
+
+float Encoder::getLastSpeed()
+{
+	return Last_Speed;
 }
 
 void Encoder::Handler()

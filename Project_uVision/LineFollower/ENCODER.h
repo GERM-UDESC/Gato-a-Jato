@@ -3,7 +3,7 @@
 #include "GPIO.h"
 #include "TIMER.h"
 
-#define min_rpm_precision 30
+#define min_rpm_precision 5
 #define Max_speed_variation 500
 #define Max_delay_Ticks_Time (500000/min_rpm_precision)	//This value is used to make shure that the motor speed i'll go to zero
 #define AutoReaload_Ticks 11// for pololu encoders, if you want speed, this cannot be lower then 11
@@ -22,10 +22,10 @@ typedef enum{
 	NUMBER_OF_ENCODERS,
 }ENCODER_ENUM;
 
-class Encoder : protected Timer
+class Encoder : public Timer
 {
 	friend class Motor;
-	private:			//should be private
+	public:			//should be private
 		GPIO EncCH1;
 		GPIO EncCH2;
 
@@ -39,14 +39,18 @@ class Encoder : protected Timer
 		void ConfigEncoder();
 		void Handler();
 
-		static Encoder *Ptr[NUMBER_OF_ENCODERS];
+		static Encoder *encPtr[NUMBER_OF_ENCODERS];
 		static bool usedEncoders[NUMBER_OF_ENCODERS];
 
 	public:
-		Encoder(){};					//must be used only by class composition
+		//Encoder(){};					//must be used only by class composition
 		Encoder(TIM_TypeDef *TIM);
-		uint16_t GetEncTicks();
-		float GetEncSpeed();
+			
+		uint32_t getTicks();
+		uint32_t getTicksTime();
+		uint32_t getLastTicksTime();
+		float getSpeed();
+		float getLastSpeed();
 
 		static void Encoder_Initiallize();
 		static void Encoder_Handler(ENCODER_ENUM enc);

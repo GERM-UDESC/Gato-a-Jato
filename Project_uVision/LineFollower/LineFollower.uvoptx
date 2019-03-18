@@ -158,7 +158,7 @@
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>flag</ItemText>
+          <ItemText>speed_teste,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
@@ -168,27 +168,27 @@
         <Ww>
           <count>2</count>
           <WinNumber>1</WinNumber>
-          <ItemText>e_teste,0x0A</ItemText>
+          <ItemText>Ref,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>3</count>
           <WinNumber>1</WinNumber>
-          <ItemText>speed_teste,0x0A</ItemText>
+          <ItemText>speed_d,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>4</count>
           <WinNumber>1</WinNumber>
-          <ItemText>Ref,0x0A</ItemText>
+          <ItemText>speed_e,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>5</count>
           <WinNumber>1</WinNumber>
-          <ItemText>counter,0x0A</ItemText>
+          <ItemText>timtest1</ItemText>
         </Ww>
         <Ww>
           <count>6</count>
           <WinNumber>1</WinNumber>
-          <ItemText>delta_time,0x0A</ItemText>
+          <ItemText>timtest2</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>

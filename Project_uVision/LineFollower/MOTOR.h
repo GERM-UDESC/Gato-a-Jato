@@ -30,8 +30,8 @@ typedef enum{
 class Motor
 {
 	public:
-		PWM PWM_Motor;
-		Encoder Encoder_Motor;
+		PWM pwmMotor;
+		Encoder encoder;
 		GPIO IN1;
 		GPIO IN2;
 	
@@ -44,10 +44,11 @@ class Motor
 		void Handler();
 
 	public:
-		Motor(TIM_TypeDef *TIM_PWM, TIM_CHANNELS channel_PWM, TIM_REMAP PWMremap, TIM_TypeDef *TIM_ENCODER, GPIO_IO_ENUM IO_Pin_IN1, GPIO_IO_ENUM IO_Pin_IN2);
+		Motor(PWM pwmMotor, Encoder enc, GPIO IN1, GPIO IN2);
 		void Set_Speed(int16_t Speed_Reference);  //Set the desired speed in RPM
 		uint32_t Get_position();
 		float Get_Speed();
+		
 
 		static void Motor_Initialiize();
 		static void Motor_Handler_by_time();

@@ -16,42 +16,16 @@ void Motor::Motor_Handler_by_time()
 	Motor::Ptr[Motor_4]->Handler();
 }
 
-Motor::Motor(TIM_TypeDef *TIM_PWM, TIM_CHANNELS channel_PWM, TIM_REMAP TIM_PWMremap, TIM_TypeDef *TIM_ENCODER, GPIO_IO_ENUM IO_Pin_IN1, GPIO_IO_ENUM IO_Pin_IN2)
+Motor::Motor(PWM PWM_Motor, Encoder enc, GPIO IN1, GPIO IN2)
+: pwmMotor(PWM_Motor), encoder(enc), IN1(IN1), IN2(IN2)
 {
-	//Configure the timer for the PWM
-	PWM_Motor.SetTim(TIM_PWM);
-	PWM_Motor.SetTIMChannel(channel_PWM);
-	PWM_Motor.SetTIMMode(PWM_MODE);
-	PWM_Motor.TimerInit();
-	PWM_Motor.SetTIMRemap(TIM_PWMremap);
-	PWM_Motor.ConfigPWMPin();
-	PWM_Motor.PWMInit();
-	PWM_Motor.PWMWrite(0);   //Turn off the motor
+
+	encoder.ConfigEncoder();
 	
-	//Configure the timer for the encoder/
-	Encoder_Motor.SetTim(TIM_ENCODER);
-	Encoder_Motor.ConfigEncoder();
-	
-	//Configure the IN1 and IN2
-	IN1.SetIOPin(IO_Pin_IN1);
-	IN1.SetGPIOPortPin(IO_Pin_IN1);
-	IN1.SetGPIOMode(GP_OUTPUT_PUSH_PULL_50MHZ);
-	IN1.ConfigGPIOPin();
-	IN1.Config_PU_PD(PULL_DOWN);		//Config PULL_DOWN as default
-	
-	IN2.SetIOPin(IO_Pin_IN2);
-	IN2.SetGPIOPortPin(IO_Pin_IN2);
-	IN2.SetGPIOMode(GP_OUTPUT_PUSH_PULL_50MHZ);
-	IN2.ConfigGPIOPin();
-	IN2.Config_PU_PD(PULL_DOWN);		//Config PULL_DOWN as default
-	
-	IN1.digitalWrite(LOW);
-	IN2.digitalWrite(LOW);
-	
-	if 			(Encoder_Motor.GetTim() == TIM1)	Motor_number = Motor_1;
-	else if (Encoder_Motor.GetTim() == TIM2)	Motor_number = Motor_1;
-	else if (Encoder_Motor.GetTim() == TIM3)	Motor_number = Motor_3;
-	else if (Encoder_Motor.GetTim() == TIM4)	Motor_number = Motor_4;
+	if 			(encoder.GetTim() == TIM1)	Motor_number = Motor_1;
+	else if (encoder.GetTim() == TIM2)	Motor_number = Motor_1;
+	else if (encoder.GetTim() == TIM3)	Motor_number = Motor_3;
+	else if (encoder.GetTim() == TIM4)	Motor_number = Motor_4;
 	Motor::Ptr[Motor_number] = this;
 	
 	Set_Speed(0);
@@ -75,7 +49,7 @@ void Motor::Set_Speed(int16_t Speed_Reference)
 
 float Motor::Get_Speed()
 {
-	return Encoder_Motor.GetEncSpeed();	
+	return encoder.getSpeed();	
 }
 
 void Motor::Handler()
@@ -95,7 +69,7 @@ void Motor::Handler()
 		if (U[k] > 100) U[k] = 100; //satura
 	}
 	
-	PWM_Motor.PWMWrite(U[k]);
+	pwmMotor.PWMWrite(U[k]);
 	
 	for (int i = 0; i < k; i++)
 	{
