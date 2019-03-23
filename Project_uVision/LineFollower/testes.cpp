@@ -25,7 +25,7 @@ uint8_t u_teste;
 float u_D, u_E;
 uint16_t e_teste = 0;
 uint16_t speed_teste;
-float speed_d, speed_e;
+float speed_d, speed_e, speedV, speedW;
 uint32_t counter = 0;
 uint32_t time, delta_time;
 //uint_fast32_t te;
@@ -114,11 +114,12 @@ int main()
 //			}
 //		}
 		Robot.setRobotSpeed(Ref, Refw);
+		speedV = Robot.getV();
+		speedW = Robot.getw();
 		speed_d = Robot.motorD.Get_Speed();
 		speed_e = Robot.motorE.Get_Speed();
 		u_D = Robot.motorD.getU();
 		u_E = Robot.motorE.getU();
-		direction = Robot.motorD.encoder.getDirection();
 		time = Timer::GetTime_usec();
 		
 //		if (sending) 

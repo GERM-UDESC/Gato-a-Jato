@@ -39,6 +39,12 @@ class Kinematic
 	
 		float vRef;
 		float wRef;
+		
+	public:
+		
+		Kinematic(Motor motorD, Motor motorE);
+		void setRobotSpeed(float V, float w);
+		void setRobotRefereceSpeed(float Vx, float Vy, float Vteta);
 	
 		float getX();
 		float	getY();
@@ -48,11 +54,8 @@ class Kinematic
 		float	getVy();
 		float getVteta();
 	
-		
-	public:
-		Kinematic(Motor motorD, Motor motorE);
-		void setRobotSpeed(float V, float w);
-		void setRobotRefereceSpeed(float Vx, float Vy, float Vteta);
+		float getV();
+		float getw();
 
 
 	

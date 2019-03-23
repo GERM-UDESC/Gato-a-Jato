@@ -31,7 +31,7 @@ typedef enum{
 
 class Motor
 {
-	public:
+	private:
 		PWM pwmMotor;
 		Encoder encoder;
 		GPIO IN1;

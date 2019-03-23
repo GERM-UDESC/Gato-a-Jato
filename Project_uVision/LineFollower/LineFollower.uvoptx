@@ -158,42 +158,42 @@
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>u_teste,0x0A</ItemText>
+          <ItemText>Ref,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>Ref,0x0A</ItemText>
+          <ItemText>speed_d,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>2</count>
           <WinNumber>1</WinNumber>
-          <ItemText>speed_d,0x0A</ItemText>
+          <ItemText>speed_e,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>3</count>
           <WinNumber>1</WinNumber>
-          <ItemText>speed_e,0x0A</ItemText>
+          <ItemText>Refw</ItemText>
         </Ww>
         <Ww>
           <count>4</count>
           <WinNumber>1</WinNumber>
-          <ItemText>Refw</ItemText>
+          <ItemText>u_D</ItemText>
         </Ww>
         <Ww>
           <count>5</count>
           <WinNumber>1</WinNumber>
-          <ItemText>u_D</ItemText>
+          <ItemText>u_E</ItemText>
         </Ww>
         <Ww>
           <count>6</count>
           <WinNumber>1</WinNumber>
-          <ItemText>u_E</ItemText>
+          <ItemText>speedV</ItemText>
         </Ww>
         <Ww>
           <count>7</count>
           <WinNumber>1</WinNumber>
-          <ItemText>direction,0x0A</ItemText>
+          <ItemText>speedW</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>

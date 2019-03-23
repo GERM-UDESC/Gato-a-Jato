@@ -22,11 +22,21 @@ void Kinematic::setRobotRefereceSpeed(float Vx, float Vy, float Vteta)
 	vMotDref = (1/r)*(Vx*cos(getTeta()) + Vy*sin(getTeta()) + L*Vteta);
 	vMotEref = (1/r)*(Vx*cos(getTeta()) + Vy*sin(getTeta()) - L*Vteta);
 	
-	vRef = (1/(2*r))*(vMotDref + vMotEref);
-	wRef = (1/(2*r))*(vMotDref - vMotEref);
+	vRef = (r/(2))*(vMotDref + vMotEref);
+	wRef = (r/(2*L))*(vMotDref - vMotEref);
 	
 	motorD.Set_Speed(vMotDref);
 	motorE.Set_Speed(vMotEref);
+}
+
+float Kinematic::getV()
+{
+	return (r/(2))*(motorD.getSpeedRadS() + motorE.getSpeedRadS());
+}
+
+float Kinematic::getw()
+{
+	return (r/(2*L))*(motorD.getSpeedRadS() - motorE.getSpeedRadS());
 }
 
 float Kinematic::getX()
