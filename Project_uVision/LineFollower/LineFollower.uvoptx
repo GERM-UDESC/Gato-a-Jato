@@ -158,37 +158,42 @@
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>speed_teste,0x0A</ItemText>
+          <ItemText>u_teste,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>u_teste,0x0A</ItemText>
+          <ItemText>Ref,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>2</count>
           <WinNumber>1</WinNumber>
-          <ItemText>Ref,0x0A</ItemText>
+          <ItemText>speed_d,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>3</count>
           <WinNumber>1</WinNumber>
-          <ItemText>speed_d,0x0A</ItemText>
+          <ItemText>speed_e,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>4</count>
           <WinNumber>1</WinNumber>
-          <ItemText>speed_e,0x0A</ItemText>
+          <ItemText>Refw</ItemText>
         </Ww>
         <Ww>
           <count>5</count>
           <WinNumber>1</WinNumber>
-          <ItemText>timtest1</ItemText>
+          <ItemText>u_D</ItemText>
         </Ww>
         <Ww>
           <count>6</count>
           <WinNumber>1</WinNumber>
-          <ItemText>timtest2</ItemText>
+          <ItemText>u_E</ItemText>
+        </Ww>
+        <Ww>
+          <count>7</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>direction,0x0A</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>
@@ -250,11 +255,11 @@
       <pMultCmdsp></pMultCmdsp>
       <SystemViewers>
         <Entry>
-          <Name>System Viewer\TIM2</Name>
+          <Name>System Viewer\TIM1</Name>
           <WinId>35903</WinId>
         </Entry>
         <Entry>
-          <Name>System Viewer\TIM3</Name>
+          <Name>System Viewer\TIM4</Name>
           <WinId>35905</WinId>
         </Entry>
         <Entry>
@@ -588,6 +593,18 @@
     <File>
       <GroupNumber>5</GroupNumber>
       <FileNumber>24</FileNumber>
+      <FileType>8</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\MOTOR.cpp</PathWithFileName>
+      <FilenameWithoutPath>MOTOR.cpp</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>25</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -599,13 +616,25 @@
     </File>
     <File>
       <GroupNumber>5</GroupNumber>
-      <FileNumber>25</FileNumber>
+      <FileNumber>26</FileNumber>
       <FileType>8</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\MOTOR.cpp</PathWithFileName>
-      <FilenameWithoutPath>MOTOR.cpp</FilenameWithoutPath>
+      <PathWithFileName>.\KINEMATIC_CONTROL.cpp</PathWithFileName>
+      <FilenameWithoutPath>KINEMATIC_CONTROL.cpp</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>27</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\KINEMATIC_CONTROL.h</PathWithFileName>
+      <FilenameWithoutPath>KINEMATIC_CONTROL.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

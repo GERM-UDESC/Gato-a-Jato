@@ -9,18 +9,26 @@
 #include "LINE_SENSOR.h"
 #include "MOTOR.h"
 #include "USART.h"
+#include "KINEMATIC_CONTROL.h"
+
+#include "math.h"
 
 uint16_t number_of_points;
-uint16_t Ref;
+float Ref;
+float Refw;
+uint16_t Ref16;
 bool sending = 0;
+bool direction;
 
 uint16_t flag = 1;
-uint8_t u_teste = 0;
+uint8_t u_teste;
+float u_D, u_E;
 uint16_t e_teste = 0;
-uint16_t speed_teste, speed_d, speed_e;
+uint16_t speed_teste;
+float speed_d, speed_e;
 uint32_t counter = 0;
 uint32_t time, delta_time;
-uint_fast32_t te;
+//uint_fast32_t te;
 
 
 
@@ -37,6 +45,9 @@ int main()
 	//Board LED
 	GPIO LED_Board(PC13, GP_OUTPUT_PUSH_PULL_2MHZ);
 	
+	//Timer
+	Timer Time_Generator(TIM2, COUNTER); //This one is dedicated to generate the time base in useconds
+	
 	//H bridge configuration
 	GPIO AIN2(PA10, GP_OUTPUT_PUSH_PULL_2MHZ);
 	GPIO AIN1(PA11, GP_OUTPUT_PUSH_PULL_2MHZ);
@@ -47,20 +58,19 @@ int main()
 	//PWM configurations
 	PWM PWM_E(TIM3, TIM_CH2, PARTIAL_REMAP2);
 	PWM PWM_D(TIM3, TIM_CH1, PARTIAL_REMAP2);
-		
-	//Timer
-	Timer Time_Generator(TIM2, COUNTER); //This one is dedicated to generate the time base in useconds
 	
 	//Encoders configuration
 	Encoder ENC_E(TIM1);
 	Encoder ENC_D(TIM4);
 	
-		//Motor configuration
+	//Motor configuration
 	Motor Motor_E(PWM_E, ENC_E, AIN2, AIN1);
 	Motor Motor_D(PWM_D, ENC_D, BIN1, BIN2);
 	
-	//Sensors
-	Line_Sensor Sensor_Board(ADC_CH0, ADC_CH1, ADC_CH2, ADC_CH3, ADC_CH4, ADC_CH5, ADC_CH6, ADC_CH7);
+	//Robot Kinematic
+	Kinematic Robot(Motor_D, Motor_E);
+	
+	//Line sensor
 //	Reflectance_Sensor Sensor_Line_0(ADC_CH0);
 //	Reflectance_Sensor Sensor_Line_1(ADC_CH1);
 //	Reflectance_Sensor Sensor_Line_2(ADC_CH2);
@@ -70,57 +80,63 @@ int main()
 //	Reflectance_Sensor Sensor_Line_6(ADC_CH6);
 //	Reflectance_Sensor Sensor_Line_7(ADC_CH7);
 //	Reflectance_Sensor Sensor_Line_D(ADC_CH8);	
+	Line_Sensor Sensor_Board(ADC_CH0, ADC_CH1, ADC_CH2, ADC_CH3, ADC_CH4, ADC_CH5, ADC_CH6, ADC_CH7);
+
 
 	USART Serial(USART3, BD_1000000);
 	
 	//----------------------------------------------------------------------------------------------
 	
 	//----------------------------------Initial Conditions------------------------------------------
-//	AIN2.digitalWrite(HIGH);
-//	AIN1.digitalWrite(LOW);
 	STBY.digitalWrite(HIGH);
-//	BIN1.digitalWrite(HIGH);
-//	BIN2.digitalWrite(LOW);
-	
-	//PWM_D.PWMWrite(0);
-//	PWM_E.PWMWrite(10);
+
 	//-----------------------------------------------------------------------------------------------
-	
+
 	counter = 0;
 	//number_of_points = 10*Serial.Receive();
 	sending = 1;
 	while(Timer::GetTime_usec() < 2000000);
-	Ref = 500;
-	Motor_E.Set_Speed(0);
-	Motor_D.Set_Speed(Ref);
+	Ref = 0;
+	Refw = 0;
+	Ref16 = 0;
+	Robot.setRobotSpeed(Ref, Refw);
 	while(1)
 	{
-		while(flag == 0)
-		{
-			if (Serial.Available())
-			{
-				Ref = 10*Serial.Receive();
-				Motor_E.Set_Speed(0);
-				Motor_D.Set_Speed(Ref);
-			}
-			speed_d = Motor_D.encoder.getSpeed();
-			speed_e = ENC_D.getSpeed();
-			
-		}
+//		while(flag == 0)
+//		{
+//			if (Serial.Available())
+//			{
+//				Ref = 10*Serial.Receive();	//in RPM
+//				Ref16 = (uint16_t)Ref;
+//				Ref = Ref*rpmToRads*r;			
+//				Robot.setRobotSpeed(Ref,0);
+//				counter = 0;
+//			}
+//		}
+		Robot.setRobotSpeed(Ref, Refw);
+		speed_d = Robot.motorD.Get_Speed();
+		speed_e = Robot.motorE.Get_Speed();
+		u_D = Robot.motorD.getU();
+		u_E = Robot.motorE.getU();
+		direction = Robot.motorD.encoder.getDirection();
 		time = Timer::GetTime_usec();
-		counter++;
 		
-		if (sending) 
-		{
-			speed_teste = (uint16_t)Motor_E.Get_Speed();
-			u_teste = (uint8_t)Motor_E.U[k];
-			Serial.Send_Vec_16(&speed_teste,1);
-			Serial.Send(u_teste);
-			speed_teste = (uint16_t)Motor_D.Get_Speed();
-			u_teste = (uint8_t)Motor_D.U[k];
-			Serial.Send_Vec_16(&speed_teste,1);
-			Serial.Send(u_teste);
-		}
+//		if (sending) 
+//		{
+//			if (counter <= number_of_points)
+//			{
+//				counter++;
+//				Serial.Send_Vec_16(&Ref16, 1);
+//				speed_teste = (uint16_t)Robot.motorD.Get_Speed();
+//				u_teste = (uint8_t)Robot.motorD.getU();
+//				Serial.Send_Vec_16(&speed_teste,1);
+//				Serial.Send(u_teste);
+//				speed_teste = (uint16_t)Robot.motorE.Get_Speed();
+//				u_teste = (uint8_t)Robot.motorE.getU();
+//				Serial.Send_Vec_16(&speed_teste,1);
+//				Serial.Send(u_teste);
+//			}
+//		}
 		flag = 0;
 		delta_time = Timer::GetTime_usec() - time;
 	}

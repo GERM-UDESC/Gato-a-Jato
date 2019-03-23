@@ -2,12 +2,22 @@
 
 //******************************************************************************************************************************
 
-PWM::PWM(TIM_TypeDef *TIM, TIM_CHANNELS channel, TIM_REMAP TIMremap) : Timer(TIM, channel, PWM_MODE)		//Timer Constructor
+PWM::PWM(TIM_TypeDef *TIM, TIM_CHANNELS channel, TIM_REMAP TIMremap) 
+: Timer(TIM, channel, PWM_MODE)		//Timer Constructor
 {	
 	SetTIMRemap(TIMremap);
 	
 	ConfigPWMPin();
 	PWMInit();
+}
+
+PWM::PWM(PWM *pwm) : Timer(pwm->GetTim(), pwm->GetTIMChannel(), PWM_MODE)
+{
+	SetTIMRemap(pwm->GetTIMRemap());
+	
+	ConfigPWMPin();
+	PWMInit();
+	
 }
 
 //******************************************************************************************************************************
@@ -190,6 +200,6 @@ void PWM::PWMWrite(float value)
 {
 	if ((value <= 100) && (value >= 0)) 
 		*PWM_WriteAddress  = (uint16_t)((value*Max_PWM)/100);
-	else if (value >= 100) 	*PWM_WriteAddress  = Max_PWM;
+	else if (value >= 100) 	*PWM_WriteAddress  = (uint16_t)Max_PWM;
 	else if (value <= 0)		*PWM_WriteAddress  = 0;
 }

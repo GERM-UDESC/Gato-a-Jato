@@ -1,32 +1,41 @@
 #include "MOTOR.h"
 	
-Motor *Motor::Ptr[Number_of_Motor];
+Motor *Motor::motPtr[Number_of_Motor];
 
 void Motor::Motor_Initialiize()
 {
 	for (uint8_t i = 0; i < Number_of_Motor; i++)
 	{
-		Motor::Ptr[i] = (Motor*)0;
+		Motor::motPtr[i] = (Motor*)0;
 	}	
 }
 
 void Motor::Motor_Handler_by_time()
 {
-	Motor::Ptr[Motor_1]->Handler();
-	Motor::Ptr[Motor_4]->Handler();
+	Motor::motPtr[Motor_1]->Handler();
+	Motor::motPtr[Motor_4]->Handler();
 }
 
-Motor::Motor(PWM PWM_Motor, Encoder enc, GPIO IN1, GPIO IN2)
-: pwmMotor(PWM_Motor), encoder(enc), IN1(IN1), IN2(IN2)
+Motor::Motor(PWM PWM_Motor, Encoder encoder, GPIO In1, GPIO In2): pwmMotor(&PWM_Motor), encoder(&encoder), IN1(&In1), IN2(&In2)
 {
-
-	encoder.ConfigEncoder();
+	if 			(this->encoder.GetTim() == TIM1)	Motor_number = Motor_1;
+	else if (this->encoder.GetTim() == TIM2)	Motor_number = Motor_2;
+	else if (this->encoder.GetTim() == TIM3)	Motor_number = Motor_3;
+	else if (this->encoder.GetTim() == TIM4)	Motor_number = Motor_4;
+	Motor::motPtr[Motor_number] = this;
 	
-	if 			(encoder.GetTim() == TIM1)	Motor_number = Motor_1;
-	else if (encoder.GetTim() == TIM2)	Motor_number = Motor_1;
-	else if (encoder.GetTim() == TIM3)	Motor_number = Motor_3;
-	else if (encoder.GetTim() == TIM4)	Motor_number = Motor_4;
-	Motor::Ptr[Motor_number] = this;
+	Set_Speed(0);
+	for (uint8_t i = 0; i < desired_size; i++)
+	{
+		U[i] = 0;				
+	}	
+	
+};
+
+Motor::Motor(Motor *motor): pwmMotor(&motor->pwmMotor), encoder(&motor->encoder), IN1(&motor->IN1), IN2(&motor->IN2)
+{
+	this->Motor_number = motor->Motor_number;
+	Motor::motPtr[Motor_number] = this;
 	
 	Set_Speed(0);
 	for (uint8_t i = 0; i < desired_size; i++)
@@ -42,15 +51,10 @@ Motor::Motor(PWM PWM_Motor, Encoder enc, GPIO IN1, GPIO IN2)
   // LOW LOW              ---> Para
   // STBY tem q ser HIGH para ligar a ponte H, se for LOW vai entrar em modo de stand by
 
-void Motor::Set_Speed(int16_t Speed_Reference)
+void Motor::Set_Speed(float Speed_Reference)
 {
 	this->Speed_Reference = Speed_Reference;
 };
-
-float Motor::Get_Speed()
-{
-	return encoder.getSpeed();	
-}
 
 void Motor::Handler()
 {
@@ -61,15 +65,17 @@ void Motor::Handler()
 		IN1.digitalWrite(LOW);
 		IN2.digitalWrite(HIGH);
 		if (U[k] < -100) U[k] = -100; //satura
+		pwmMotor.PWMWrite(-U[k]);
 	}
 	else if(U[k] >= 0)
 	{
 		IN1.digitalWrite(HIGH);
 		IN2.digitalWrite(LOW);
 		if (U[k] > 100) U[k] = 100; //satura
+		pwmMotor.PWMWrite(U[k]);
 	}
 	
-	pwmMotor.PWMWrite(U[k]);
+	
 	
 	for (int i = 0; i < k; i++)
 	{
@@ -79,6 +85,30 @@ void Motor::Handler()
 
 }
 
+float Motor::Get_Speed()
+{
+	return encoder.getSpeed();	
+}
+
+float Motor::getSpeedRadS()
+{
+	return encoder.getSpeed()*rpmToRads;
+}
+
+float Motor::getU()
+{
+	return U[k];
+}
+
+float Motor::getE()
+{
+	return E[k];
+}
+
+float Motor::getTeta()
+{
+	return encoder.getTeta();	
+}
 
 
 

@@ -11,7 +11,6 @@
 //--------------------------------------------CLASS------------------------------------------------------
 class PWM : protected Timer
 {
-	friend class Motor;
 	private:
 		GPIO PWMPin;
 		volatile uint16_t *PWM_WriteAddress;			//Pointer to the CCRx Register
@@ -22,6 +21,7 @@ class PWM : protected Timer
 	public:
 		PWM(){};
 		PWM(TIM_TypeDef *TIM, TIM_CHANNELS channel, TIM_REMAP PWMremap);	//This constructor configure the gpio and timer and start the PWM with a 0 duty cicle
+		PWM(PWM *pwm);
 		void PWMWrite(float value);	//This function write a PWM value 0-100%
 		
 };

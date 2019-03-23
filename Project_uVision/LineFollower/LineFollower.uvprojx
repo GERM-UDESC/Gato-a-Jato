@@ -517,14 +517,24 @@
               <FilePath>.\LINE_SENSOR.h</FilePath>
             </File>
             <File>
+              <FileName>MOTOR.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\MOTOR.cpp</FilePath>
+            </File>
+            <File>
               <FileName>MOTOR.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\MOTOR.h</FilePath>
             </File>
             <File>
-              <FileName>MOTOR.cpp</FileName>
+              <FileName>KINEMATIC_CONTROL.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>.\MOTOR.cpp</FilePath>
+              <FilePath>.\KINEMATIC_CONTROL.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>KINEMATIC_CONTROL.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\KINEMATIC_CONTROL.h</FilePath>
             </File>
           </Files>
         </Group>

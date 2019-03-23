@@ -50,6 +50,15 @@ GPIO::GPIO(GPIO_IO_ENUM IO_Pin, GPIO_MODES GPIOMode)
 	Config_PU_PD(PULL_DOWN);		//Config PULL_DOWN as default
 }
 
+GPIO::GPIO(GPIO *gpio)
+{
+	SetIOPin(gpio->GetIOPin());
+	SetGPIOPortPin(gpio->GetIOPin());
+	SetGPIOMode(gpio->GetGPIOMode());
+	ConfigGPIOPin();
+	Config_PU_PD(PULL_DOWN);		//Config PULL_DOWN as default	
+}
+
 //------------------------Config_pin-----------------------------------------------
 void GPIO::ConfigGPIOPin()
 {

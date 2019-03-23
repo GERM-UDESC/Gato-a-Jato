@@ -2,10 +2,10 @@ close all
 clear all
 clc
 
-number_of_steps = 9;
-bits_to_receive = 50;
+bits_to_receive = 500;
 baud_rate = 1e6;
-Ts = 10e-3;
+Ts = 1e-3;
+rpmToV = 596.83;
 
 seguidor = serial('com3','BaudRate',baud_rate,'Parity','none'); 
 fopen(seguidor);
@@ -14,18 +14,18 @@ fclose(seguidor);
 
 %%
 x = colect_data(0, bits_to_receive, baud_rate);
-x = [x colect_data(1000, bits_to_receive, baud_rate)];
 x = [x colect_data(2000, bits_to_receive, baud_rate)];
+x = [x colect_data(1000, bits_to_receive, baud_rate)];
 x = [x colect_data(1500, bits_to_receive, baud_rate)];
 x = [x colect_data(1200, bits_to_receive, baud_rate)];
-x = [x colect_data(2500, bits_to_receive, baud_rate)];
-x = [x colect_data(1600, bits_to_receive, baud_rate)];
+x = [x colect_data(500, bits_to_receive, baud_rate)];
+x = [x colect_data(2200, bits_to_receive, baud_rate)];
 x = [x colect_data(1000, bits_to_receive, baud_rate)];
-x = [x colect_data(2500, bits_to_receive, baud_rate)];
+x = [x colect_data(2200, bits_to_receive, baud_rate)];
 x = [x colect_data(0, bits_to_receive, baud_rate)];
 
-ref = [zeros(1,bits_to_receive) 1000*ones(1,bits_to_receive) 2000*ones(1,bits_to_receive) 1500*ones(1,bits_to_receive) 1200*ones(1,bits_to_receive) 2500*ones(1,bits_to_receive) 1600*ones(1,bits_to_receive) 1000*ones(1,bits_to_receive) 2500*ones(1,bits_to_receive) zeros(1,bits_to_receive)]; 
-t = 0:Ts:((length(ref)-1)/100);
+ref = x(5, :);
+t = 0:Ts:((length(ref)-1)*Ts);
 
 simulink_ref = [t; ref]';
 

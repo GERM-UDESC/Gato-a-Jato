@@ -37,6 +37,12 @@ Encoder::Encoder(TIM_TypeDef *TIM)
 	ConfigEncoder();
 }
 
+Encoder::Encoder(Encoder *encoder)
+{
+	SetTim(encoder->GetTim());
+	ConfigEncoder();
+}
+
 void Encoder::ConfigEncoder()
 {	
 	if 			(GetTim() == TIM1)	encoderNumber = Encoder_TIM1;
@@ -131,11 +137,24 @@ float Encoder::getLastSpeed()
 	return Last_Speed;
 }
 
+float Encoder::getTeta()
+{
+	return ticksToRad*Ticks;	
+}
+
+bool Encoder::getDirection()
+{
+	if ((GetTim()->CR1) & (1<<4)) return 1;
+	else return 0;
+}
+
 void Encoder::Handler()
 {
 	Ticks += Ticks_till_int;
 	Ticks_Time = Timer::GetTime_usec();
 	Speed = (500000*Ticks_till_int)/(Ticks_Time - LastTicks_Time);			//this 500000* is to convert ticks/us in rpm
+	if (getDirection() == backward) Speed = -Speed;
+
 	if (Last_Speed > 900)
 	{
 		if(Speed == 0)

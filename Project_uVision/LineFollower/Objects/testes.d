@@ -11,3 +11,5 @@
 .\objects\testes.o: LINE_SENSOR.h
 .\objects\testes.o: MOTOR.h
 .\objects\testes.o: USART.h
+.\objects\testes.o: KINEMATIC_CONTROL.h
+.\objects\testes.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

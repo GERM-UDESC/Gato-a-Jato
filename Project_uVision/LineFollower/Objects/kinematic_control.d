@@ -1,0 +1,10 @@
+.\objects\kinematic_control.o: KINEMATIC_CONTROL.cpp
+.\objects\kinematic_control.o: KINEMATIC_CONTROL.h
+.\objects\kinematic_control.o: MOTOR.h
+.\objects\kinematic_control.o: PWM.h
+.\objects\kinematic_control.o: GPIO.h
+.\objects\kinematic_control.o: Micro.h
+.\objects\kinematic_control.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\kinematic_control.o: TIMER.h
+.\objects\kinematic_control.o: ENCODER.h
+.\objects\kinematic_control.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

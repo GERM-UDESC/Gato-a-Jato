@@ -107,7 +107,6 @@ typedef struct{
 
 class GPIO
 {
-	//friend class Motor;
 	private:
 		//Atributes
 		GPIO_IO_ENUM IO_Pin;							//Save just the referente to port and pin
@@ -124,6 +123,7 @@ class GPIO
 		//Constructors
 		GPIO(){};
 		GPIO(GPIO_IO_ENUM IO_Pin, GPIO_MODES GPIOMode);
+		GPIO(GPIO *gpio);
 		
 		//Setters
 		void SetGPIOPortPin(GPIO_IO_ENUM IO_Pin);
