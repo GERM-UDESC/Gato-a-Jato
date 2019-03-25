@@ -29,6 +29,13 @@ void Kinematic::setRobotRefereceSpeed(float Vx, float Vy, float Vteta)
 	motorE.Set_Speed(vMotEref);
 }
 
+void Kinematic::setRobotReferecePosition(float x, float y, float teta)
+{
+	xRef = x;
+	yRef = y;
+	tetaRef = teta;
+}
+
 float Kinematic::getV()
 {
 	return (r/(2))*(motorD.getSpeedRadS() + motorE.getSpeedRadS());

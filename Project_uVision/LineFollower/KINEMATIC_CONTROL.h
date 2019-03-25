@@ -35,7 +35,14 @@ class Kinematic
 	
 		float vMotDref;
 		float vMotEref;
-		float Vteta;
+	
+		float xRef;
+		float yRef;
+		float tetaRef;
+	
+		float VxRef;
+		float VyRef;
+		float VtetaRef;
 	
 		float vRef;
 		float wRef;
@@ -45,6 +52,7 @@ class Kinematic
 		Kinematic(Motor motorD, Motor motorE);
 		void setRobotSpeed(float V, float w);
 		void setRobotRefereceSpeed(float Vx, float Vy, float Vteta);
+		void setRobotReferecePosition(float x, float y, float teta);
 	
 		float getX();
 		float	getY();
@@ -58,11 +66,6 @@ class Kinematic
 		float getw();
 
 
-	
-	
-	
-	
-	
 	
 };
 

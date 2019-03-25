@@ -59,7 +59,7 @@ I (REFLECTANCE_SENSOR.h)(0x5C71932A)
 I (LINE_SENSOR.h)(0x5C71932A)
 I (MOTOR.h)(0x5C965027)
 I (USART.h)(0x5C8989E7)
-I (KINEMATIC_CONTROL.h)(0x5C964F28)
+I (KINEMATIC_CONTROL.h)(0x5C98CD42)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599F67DE)
 F (.\REFLECTANCE_SENSOR.cpp)(0x5C71932A)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\reflectance_sensor.o --omf_browse .\objects\reflectance_sensor.crf --depend .\objects\reflectance_sensor.d)
 I (REFLECTANCE_SENSOR.h)(0x5C71932A)
@@ -85,8 +85,8 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F67DE)
 I (TIMER.h)(0x5C91549C)
 I (ENCODER.h)(0x5C964057)
 F (.\MOTOR.h)(0x5C965027)()
-F (.\KINEMATIC_CONTROL.cpp)(0x5C965272)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\kinematic_control.o --omf_browse .\objects\kinematic_control.crf --depend .\objects\kinematic_control.d)
-I (KINEMATIC_CONTROL.h)(0x5C964F28)
+F (.\KINEMATIC_CONTROL.cpp)(0x5C98CD42)(--cpp -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections-I.\RTE\_Target_1-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o .\objects\kinematic_control.o --omf_browse .\objects\kinematic_control.crf --depend .\objects\kinematic_control.d)
+I (KINEMATIC_CONTROL.h)(0x5C98CD42)
 I (MOTOR.h)(0x5C965027)
 I (PWM.h)(0x5C91496F)
 I (GPIO.h)(0x5C914A6B)
@@ -95,4 +95,4 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599F67DE)
 I (TIMER.h)(0x5C91549C)
 I (ENCODER.h)(0x5C964057)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x599F67DE)
-F (.\KINEMATIC_CONTROL.h)(0x5C964F28)()
+F (.\KINEMATIC_CONTROL.h)(0x5C98CD42)()
