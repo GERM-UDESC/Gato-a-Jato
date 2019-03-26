@@ -14,6 +14,7 @@ protected:
 	Reflectance_Sensor();
 	
 public:
+	Reflectance_Sensor(Reflectance_Sensor *Sensor);
 	Reflectance_Sensor(ADC_CHANNELS ADCChannel);
 
 	void Calib_Reflectance_Sensor(); 	//Calibrate the sensor - This function should be called a lot at the beggining

@@ -1,1 +1,1 @@
-.\objects\main.o: main.cpp
+./objects/main.o: main.cpp

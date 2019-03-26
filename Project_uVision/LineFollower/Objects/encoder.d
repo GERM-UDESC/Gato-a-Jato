@@ -1,6 +1,4 @@
-.\objects\encoder.o: ENCODER.cpp
-.\objects\encoder.o: ENCODER.h
-.\objects\encoder.o: GPIO.h
-.\objects\encoder.o: Micro.h
-.\objects\encoder.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\encoder.o: TIMER.h
+./objects/encoder.o: ENCODER.cpp ENCODER.h GPIO.h Micro.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdint.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__config \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h TIMER.h

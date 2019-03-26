@@ -1,8 +1,4 @@
-.\objects\motor.o: MOTOR.cpp
-.\objects\motor.o: MOTOR.h
-.\objects\motor.o: PWM.h
-.\objects\motor.o: GPIO.h
-.\objects\motor.o: Micro.h
-.\objects\motor.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\motor.o: TIMER.h
-.\objects\motor.o: ENCODER.h
+./objects/motor.o: MOTOR.cpp MOTOR.h PWM.h GPIO.h Micro.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdint.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__config \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h TIMER.h ENCODER.h

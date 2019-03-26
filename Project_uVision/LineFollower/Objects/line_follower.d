@@ -1,1 +1,1 @@
-.\objects\line_follower.o: line_follower.cpp
+./objects/line_follower.o: line_follower.cpp

@@ -20,6 +20,16 @@ Line_Sensor::Line_Sensor(ADC_CHANNELS ADCChannel_0, ADC_CHANNELS ADCChannel_1, A
 
 };
 
+Line_Sensor::Line_Sensor(Reflectance_Sensor Sensor1, Reflectance_Sensor Sensor2, 
+												 Reflectance_Sensor Sensor3, Reflectance_Sensor Sensor4,
+												 Reflectance_Sensor Sensor5, Reflectance_Sensor Sensor6, 
+												 Reflectance_Sensor Sensor7, Reflectance_Sensor Sensor8)
+: Sensors{&Sensor1, &Sensor2, &Sensor3, &Sensor4, &Sensor5, &Sensor6, &Sensor7, &Sensor8}
+{
+	
+}
+
+
 void Line_Sensor::Calibrate_Sensor()
 {
 	int i = 0;

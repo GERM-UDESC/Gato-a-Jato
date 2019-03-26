@@ -11,6 +11,12 @@ Reflectance_Sensor::Reflectance_Sensor(ADC_CHANNELS ADCChannel) : ADC(ADCChannel
 	calib_min = 2000;		//initialize the variable
 }
 
+Reflectance_Sensor::Reflectance_Sensor(Reflectance_Sensor *Sensor) : ADC(Sensor->GetADCChannel())
+{
+	calib_max = 2000;		//initialize the variable
+	calib_min = 2000;		//initialize the variable
+}
+
 void Reflectance_Sensor::Calib_Reflectance_Sensor()
 {
 	uint16_t sensor_value = analogRead();

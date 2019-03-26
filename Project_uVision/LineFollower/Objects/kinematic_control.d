@@ -1,10 +1,13 @@
-.\objects\kinematic_control.o: KINEMATIC_CONTROL.cpp
-.\objects\kinematic_control.o: KINEMATIC_CONTROL.h
-.\objects\kinematic_control.o: MOTOR.h
-.\objects\kinematic_control.o: PWM.h
-.\objects\kinematic_control.o: GPIO.h
-.\objects\kinematic_control.o: Micro.h
-.\objects\kinematic_control.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\kinematic_control.o: TIMER.h
-.\objects\kinematic_control.o: ENCODER.h
-.\objects\kinematic_control.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+./objects/kinematic_control.o: KINEMATIC_CONTROL.cpp KINEMATIC_CONTROL.h \
+  MOTOR.h PWM.h GPIO.h Micro.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdint.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__config \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h TIMER.h ENCODER.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\math.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\type_traits \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\cstddef \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__nullptr \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\limits \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__undef_macros

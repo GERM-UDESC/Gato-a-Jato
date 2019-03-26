@@ -1,5 +1,4 @@
-.\objects\adc.o: ADC.cpp
-.\objects\adc.o: ADC.h
-.\objects\adc.o: GPIO.h
-.\objects\adc.o: Micro.h
-.\objects\adc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+./objects/adc.o: ADC.cpp ADC.h GPIO.h Micro.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdint.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__config \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h

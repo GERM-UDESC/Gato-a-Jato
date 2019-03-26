@@ -1,15 +1,14 @@
-.\objects\testes.o: testes.cpp
-.\objects\testes.o: Micro.h
-.\objects\testes.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\testes.o: SysClock.h
-.\objects\testes.o: GPIO.h
-.\objects\testes.o: TIMER.h
-.\objects\testes.o: PWM.h
-.\objects\testes.o: ENCODER.h
-.\objects\testes.o: ADC.h
-.\objects\testes.o: REFLECTANCE_SENSOR.h
-.\objects\testes.o: LINE_SENSOR.h
-.\objects\testes.o: MOTOR.h
-.\objects\testes.o: USART.h
-.\objects\testes.o: KINEMATIC_CONTROL.h
-.\objects\testes.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+./objects/testes.o: testes.cpp Micro.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdint.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__config \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h SysClock.h GPIO.h \
+  TIMER.h PWM.h ENCODER.h ADC.h REFLECTANCE_SENSOR.h LINE_SENSOR.h \
+  MOTOR.h USART.h KINEMATIC_CONTROL.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\math.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\math.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\type_traits \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\cstddef \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__nullptr \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\limits \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__undef_macros

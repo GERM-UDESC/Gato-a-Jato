@@ -23,8 +23,9 @@ class USART
 	
 	public:
 		USART(USART_TypeDef *Usart, BD_ENUM Baud_Rate);
-		void Send(uint8_t value);
+		void Send(char value);
 		void Send_Vec_16(uint16_t *ptVec, uint16_t size);
+		void sendFloat(float *ptFloat);
 		uint8_t Receive();
 		bool Available();
 		

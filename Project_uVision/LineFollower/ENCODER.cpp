@@ -155,13 +155,13 @@ void Encoder::Handler()
 	Speed = (500000*Ticks_till_int)/(Ticks_Time - LastTicks_Time);			//this 500000* is to convert ticks/us in rpm
 	if (getDirection() == backward) Speed = -Speed;
 
-	if (Last_Speed > 900)
-	{
-		if(Speed == 0)
-		{
-			Speed = Last_Speed;
-		}
-	}
+//	if (Last_Speed > 900)
+//	{
+//		if(Speed == 0)
+//		{
+//			Speed = Last_Speed;
+//		}
+//	}
 	Last_Speed = Speed;
 	LastTicks_Time = Ticks_Time;
 }

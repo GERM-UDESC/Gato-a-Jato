@@ -61,7 +61,7 @@ void USART::init(BD_ENUM Baud_Rate)
 		
 }
 
-void USART::Send(uint8_t value)
+void USART::Send(char value)
 {
 	while((Usart->SR & (1<<7)) == 0);      //wait until data transmission is complete
 	Usart->DR = value;                     //transfer data to DR register
@@ -77,12 +77,22 @@ void USART::Send_Vec_16(uint16_t *ptVec, uint16_t size)
 		Send(*ptVec >> 8);
 		ptVec++;
 	}
-	
+}
+
+void USART::sendFloat(float *ptFloat)
+{
+	unsigned char *chptr;
+	chptr = (unsigned char *) ptFloat;
+	Send(*chptr++);
+	Send(*chptr++);
+	Send(*chptr++);
+	Send(*chptr);
 }
 
 uint8_t USART::Receive()
 {
-	while((Usart->SR & (1<<5)) == 0);  			//wait until data is available for reading
+	while((Usart->SR & (1<<5)) == 0)
+		;  			//wait until data is available for reading
   return (Usart->DR & 0xFF);              //return read data
 }
 

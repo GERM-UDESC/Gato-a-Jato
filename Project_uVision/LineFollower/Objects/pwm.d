@@ -1,6 +1,4 @@
-.\objects\pwm.o: PWM.cpp
-.\objects\pwm.o: PWM.h
-.\objects\pwm.o: GPIO.h
-.\objects\pwm.o: Micro.h
-.\objects\pwm.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\pwm.o: TIMER.h
+./objects/pwm.o: PWM.cpp PWM.h GPIO.h Micro.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdint.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__config \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h TIMER.h

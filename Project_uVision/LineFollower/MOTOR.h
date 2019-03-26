@@ -5,6 +5,7 @@
 #include "ENCODER.h"
 
 #define rpmToRads 2*pi/60
+#define rpmToV rpmToRads*r
 #define radsToRpm 60/(2*pi);
 
 #define desired_size 3							

@@ -1,4 +1,4 @@
-.\objects\gpio_1.o: GPIO.cpp
-.\objects\gpio_1.o: Micro.h
-.\objects\gpio_1.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-.\objects\gpio_1.o: GPIO.h
+./objects/gpio_1.o: GPIO.cpp Micro.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\stdint.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__config \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h GPIO.h
