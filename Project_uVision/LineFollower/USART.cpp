@@ -57,13 +57,11 @@ void USART::init(BD_ENUM Baud_Rate)
 	Usart->CR1 |= (1<<3);   //Enable transmiter
 	Usart->CR1 |= (1<<2);   //Enable receiver
 	Usart->CR1 |= (1<<13);	//Enable USART peripheral
-	
-		
 }
 
 void USART::Send(char value)
 {
-	while((Usart->SR & (1<<7)) == 0);      //wait until data transmission is complete
+	while((Usart->SR & (1<<7)) == 0);      //wait until last data transmission is complete
 	Usart->DR = value;                     //transfer data to DR register
 }
 
@@ -71,8 +69,6 @@ void USART::Send_Vec_16(uint16_t *ptVec, uint16_t size)
 {
 	for (uint16_t i = 0; i < size; i++)
 	{
-//		Send(*ptVec >> 8);
-//		Send((uint8_t)(*ptVec & 0xFF));
 		Send((uint8_t)(*ptVec & 0xFF));
 		Send(*ptVec >> 8);
 		ptVec++;
@@ -88,6 +84,18 @@ void USART::sendFloat(float *ptFloat)
 	Send(*chptr++);
 	Send(*chptr);
 }
+
+void USART::sendUint32(uint32_t *ptUint32)
+{
+	unsigned char *chptr;
+	chptr = (unsigned char *) ptUint32;
+	Send(*chptr++);
+	Send(*chptr++);
+	Send(*chptr++);
+	Send(*chptr);
+}
+
+void sendUint32(uint32_t *ptUint32);
 
 uint8_t USART::Receive()
 {

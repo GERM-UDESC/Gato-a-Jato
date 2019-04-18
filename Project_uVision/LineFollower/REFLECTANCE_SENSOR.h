@@ -2,10 +2,12 @@
 #define REFLECTANCE_SENSOR_H
 #include "ADC.h"
 
-class Reflectance_Sensor : protected ADC
+class Reflectance_Sensor
 {
 	friend class Line_Sensor;
 private:
+	ADC adcPin;
+	float convertedRead;
 	uint16_t calib_max;
 	uint16_t calib_min;
 	uint16_t range;

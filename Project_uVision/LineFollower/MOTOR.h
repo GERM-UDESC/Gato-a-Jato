@@ -7,6 +7,7 @@
 #define rpmToRads 2*pi/60
 #define rpmToV rpmToRads*r
 #define radsToRpm 60/(2*pi);
+#define r 0.016
 
 #define desired_size 3							
 #define k (desired_size-1)
@@ -32,16 +33,16 @@ typedef enum{
 
 class Motor
 {
-	private:
+	public:
 		PWM pwmMotor;
 		Encoder encoder;
 		GPIO IN1;
 		GPIO IN2;
 	
 		MOTOR_ENUM Motor_number;
-		float U[desired_size];	
-		float E[desired_size];			
-		float Speed_Reference;
+		float U[desired_size]{0};	
+		float E[desired_size]{0};			
+		float Speed_Reference{0};
 			
 		static Motor *motPtr[Number_of_Motor];
 		void Handler();
@@ -49,9 +50,13 @@ class Motor
 	public:
 		Motor(PWM pwmMotor, Encoder encoder, GPIO In1, GPIO In2);
 		Motor(Motor *motor);
+	
+		void reset();
+		
 		void Set_Speed(float Speed_Reference);  //Set the desired speed in RPM
-		uint32_t Get_position();
 		float Get_Speed();
+		float getDistance();
+		float getDeltaDistance();
 		float getSpeedRadS();
 		float getU();
 		float getE();

@@ -1,17 +1,18 @@
 #include "REFLECTANCE_SENSOR.h"
-Reflectance_Sensor::Reflectance_Sensor()
-{
-	calib_max = 2000;		//initialize the variable
-	calib_min = 2000;		//initialize the variable	
-}
 
-Reflectance_Sensor::Reflectance_Sensor(ADC_CHANNELS ADCChannel) : ADC(ADCChannel)
+//Reflectance_Sensor::Reflectance_Sensor()
+//{
+//	calib_max = 2000;		//initialize the variable
+//	calib_min = 2000;		//initialize the variable	
+//}
+
+Reflectance_Sensor::Reflectance_Sensor(ADC_CHANNELS ADCChannel) : adcPin(ADCChannel)
 {
 	calib_max = 2000;		//initialize the variable
 	calib_min = 2000;		//initialize the variable
 }
 
-Reflectance_Sensor::Reflectance_Sensor(Reflectance_Sensor *Sensor) : ADC(Sensor->GetADCChannel())
+Reflectance_Sensor::Reflectance_Sensor(Reflectance_Sensor *Sensor) : adcPin(Sensor->adcPin.GetADCChannel())
 {
 	calib_max = 2000;		//initialize the variable
 	calib_min = 2000;		//initialize the variable
@@ -19,7 +20,7 @@ Reflectance_Sensor::Reflectance_Sensor(Reflectance_Sensor *Sensor) : ADC(Sensor-
 
 void Reflectance_Sensor::Calib_Reflectance_Sensor()
 {
-	uint16_t sensor_value = analogRead();
+	uint16_t sensor_value = adcPin.analogRead();
 	if (sensor_value < calib_min)
 	{
 		calib_min = sensor_value;
@@ -33,8 +34,8 @@ void Reflectance_Sensor::Calib_Reflectance_Sensor()
 
 float Reflectance_Sensor::Reflectance_Read()
 {
-	float Converted_read = analogRead();
-	Converted_read = 1000 * (calib_max - Converted_read) / range;
+	convertedRead = adcPin.analogRead();
+	convertedRead = 1000 * (calib_max - convertedRead) / range;
 	
-	return Converted_read;
+	return convertedRead;
 }

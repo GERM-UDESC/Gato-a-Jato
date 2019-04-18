@@ -2,18 +2,16 @@
 
 ADC_CONVERSION_MODES ADC::ADCMode = SINGLE_CONVERSION;	//Initialize the static member
 
-
 ADC::ADC(ADC_CHANNELS ADCChannel)
 {
 	SetADCChannel(ADCChannel);
-	
 	ConfigADCPin();
 }
 
 void ADC::ConfigADCPin()
 {
 	RCC->APB2ENR |= (1<<9) | (1<<10);		 //IF not enable, enable the clock of adc1 and adc2 peripherals
-			
+	
 	if(GetADCChannel() == ADC_CH0)	SetGPIOPortPin(PA0);
 	else if (GetADCChannel() == ADC_CH1)	SetGPIOPortPin(PA1);
 	else if (GetADCChannel() == ADC_CH2)	SetGPIOPortPin(PA2);
@@ -26,9 +24,10 @@ void ADC::ConfigADCPin()
 	else if (GetADCChannel() == ADC_CH9)	SetGPIOPortPin(PB1);
 	
 	SetGPIOMode(INPUT_ANALOG);					//Default for adc channels
-	
 	ConfigGPIOPin();
-	ADC1->CR2 |= (1<<19) | (1<<18) | (1<<17);
+	ADC1->CR2 |= (1<<19) | (1<<18) | (1<<17);	//select swstart as trigger for convertion
+	ADC1->SMPR2 |= (6<<(GetADCChannel()*3));
+	
 	ADCCalibrate();
 	
 }
@@ -36,7 +35,7 @@ void ADC::ConfigADCPin()
 void ADC::ADCCalibrate()
 {
 	ADC1->CR2 |= (1<<0);								//Enable the ADON bit, the first time is just to enable, the next one is to start converting
-	for(uint8_t i = 0; i < 50; i++);		//It's needed to wait at least 2 ADC cycles before starting the calibration
+	for(uint8_t i = 0; i < 250; i++);		//It's needed to wait at least 2 ADC cycles before starting the calibration
 	ADC1->CR2 |= (1<<2);								//Start the calibration
 	while (ADC1->CR2 & (1<<2));					//Wait until the calibration stops
 }
@@ -46,8 +45,7 @@ uint16_t ADC::analogRead()
 	ADC1->SQR3 &= ~(0xF<<0);						//clear the bits
 	ADC1->SQR3 |= (GetADCChannel()<<0);	//select the channel to start converting
 	ADC1->CR2 |= (1<<0);								//Start converting
-	while(!(ADC1->SR & (1<<1)));				//Wait until the convertion is finished
-	ADC1->SR &= ~(1<<1);
+	while(!((ADC1->SR) & (1<<1)));			//Wait until the convertion is finished
 	return (ADC1->DR);									//return the convertion value
 }
 

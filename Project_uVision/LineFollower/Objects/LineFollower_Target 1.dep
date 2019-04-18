@@ -16,14 +16,14 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5AA6DBEA)
 I (GPIO.h)(0x5C914A6B)
 F (.\SysClock.h)(0x5C71932A)()
-F (.\TIMER.cpp)(0x5C771A83)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/timer.o -MD)
-I (TIMER.h)(0x5C91549C)
+F (.\TIMER.cpp)(0x5CA533E3)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/timer.o -MD)
+I (TIMER.h)(0x5CA644FC)
 I (GPIO.h)(0x5C914A6B)
 I (Micro.h)(0x5C72CA74)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5AA6DBEA)
-F (.\TIMER.h)(0x5C91549C)()
+F (.\TIMER.h)(0x5CA644FC)()
 F (.\PWM.cpp)(0x5C961C10)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/pwm.o -MD)
 I (PWM.h)(0x5C91496F)
 I (GPIO.h)(0x5C914A6B)
@@ -31,51 +31,52 @@ I (Micro.h)(0x5C72CA74)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5AA6DBEA)
-I (TIMER.h)(0x5C91549C)
+I (TIMER.h)(0x5CA644FC)
 F (.\PWM.h)(0x5C91496F)()
-F (.\ADC.cpp)(0x5C71932A)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/adc.o -MD)
-I (ADC.h)(0x5C71932A)
+F (.\ADC.cpp)(0x5CA547D6)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/adc.o -MD)
+I (ADC.h)(0x5CA53142)
 I (GPIO.h)(0x5C914A6B)
 I (Micro.h)(0x5C72CA74)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5AA6DBEA)
-F (.\ADC.h)(0x5C71932A)()
-F (.\ENCODER.cpp)(0x5C9A87AB)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/encoder.o -MD)
-I (ENCODER.h)(0x5C964057)
+I (TIMER.h)(0x5CA644FC)
+F (.\ADC.h)(0x5CA53142)()
+F (.\ENCODER.cpp)(0x5CB89299)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/encoder.o -MD)
+I (ENCODER.h)(0x5CB8885C)
 I (GPIO.h)(0x5C914A6B)
 I (Micro.h)(0x5C72CA74)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5AA6DBEA)
-I (TIMER.h)(0x5C91549C)
-F (.\ENCODER.h)(0x5C964057)()
-F (.\USART.cpp)(0x5C9A377A)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/usart.o -MD)
-I (USART.h)(0x5C9A1D92)
+I (TIMER.h)(0x5CA644FC)
+F (.\ENCODER.h)(0x5CB8885C)()
+F (.\USART.cpp)(0x5CAFD4DC)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/usart.o -MD)
+I (USART.h)(0x5C9A8DD9)
 I (Micro.h)(0x5C72CA74)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5AA6DBEA)
 I (GPIO.h)(0x5C914A6B)
-F (.\USART.h)(0x5C9A1D92)()
-F (.\main.cpp)(0x5C86AB65)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/main.o -MD)
+F (.\USART.h)(0x5C9A8DD9)()
+F (.\main.cpp)(0x5CB70574)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/main.o -MD)
 F (.\line_follower.cpp)(0x5C85800C)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/line_follower.o -MD)
-F (.\testes.cpp)(0x5C9A7FC9)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/testes.o -MD)
+F (.\testes.cpp)(0x5CB88A21)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/testes.o -MD)
 I (Micro.h)(0x5C72CA74)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5AA6DBEA)
 I (SysClock.h)(0x5C71932A)
 I (GPIO.h)(0x5C914A6B)
-I (TIMER.h)(0x5C91549C)
+I (TIMER.h)(0x5CA644FC)
 I (PWM.h)(0x5C91496F)
-I (ENCODER.h)(0x5C964057)
-I (ADC.h)(0x5C71932A)
-I (REFLECTANCE_SENSOR.h)(0x5C9975B1)
-I (LINE_SENSOR.h)(0x5C9974A5)
-I (MOTOR.h)(0x5C9A3A32)
-I (USART.h)(0x5C9A1D92)
-I (KINEMATIC_CONTROL.h)(0x5C98CD42)
+I (ENCODER.h)(0x5CB8885C)
+I (ADC.h)(0x5CA53142)
+I (REFLECTANCE_SENSOR.h)(0x5CA5487F)
+I (LINE_SENSOR.h)(0x5CAF3929)
+I (MOTOR.h)(0x5CB71582)
+I (USART.h)(0x5C9A8DD9)
+I (KINEMATIC_CONTROL.h)(0x5CB879FD)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\math.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\type_traits)(0x5AA6DBEA)
@@ -84,47 +85,49 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__nullptr)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\limits)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__undef_macros)(0x5AA6DBEA)
-F (.\REFLECTANCE_SENSOR.cpp)(0x5C9975B1)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/reflectance_sensor.o -MD)
-I (REFLECTANCE_SENSOR.h)(0x5C9975B1)
-I (ADC.h)(0x5C71932A)
+F (.\REFLECTANCE_SENSOR.cpp)(0x5CA5487F)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/reflectance_sensor.o -MD)
+I (REFLECTANCE_SENSOR.h)(0x5CA5487F)
+I (ADC.h)(0x5CA53142)
 I (GPIO.h)(0x5C914A6B)
 I (Micro.h)(0x5C72CA74)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5AA6DBEA)
-F (.\REFLECTANCE_SENSOR.h)(0x5C9975B1)()
-F (.\LINE_SENSOR.cpp)(0x5C9974E2)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/line_sensor.o -MD)
-I (LINE_SENSOR.h)(0x5C9974A5)
-I (REFLECTANCE_SENSOR.h)(0x5C9975B1)
-I (ADC.h)(0x5C71932A)
+I (TIMER.h)(0x5CA644FC)
+F (.\REFLECTANCE_SENSOR.h)(0x5CA5487F)()
+F (.\LINE_SENSOR.cpp)(0x5CAF39FB)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/line_sensor.o -MD)
+I (LINE_SENSOR.h)(0x5CAF3929)
+I (REFLECTANCE_SENSOR.h)(0x5CA5487F)
+I (ADC.h)(0x5CA53142)
 I (GPIO.h)(0x5C914A6B)
 I (Micro.h)(0x5C72CA74)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5AA6DBEA)
-F (.\LINE_SENSOR.h)(0x5C9974A5)()
-F (.\MOTOR.cpp)(0x5C9645C3)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/motor.o -MD)
-I (MOTOR.h)(0x5C9A3A32)
+I (TIMER.h)(0x5CA644FC)
+F (.\LINE_SENSOR.h)(0x5CAF3929)()
+F (.\MOTOR.cpp)(0x5CB715C7)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/motor.o -MD)
+I (MOTOR.h)(0x5CB71582)
 I (PWM.h)(0x5C91496F)
 I (GPIO.h)(0x5C914A6B)
 I (Micro.h)(0x5C72CA74)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5AA6DBEA)
-I (TIMER.h)(0x5C91549C)
-I (ENCODER.h)(0x5C964057)
-F (.\MOTOR.h)(0x5C9A3A32)()
-F (.\KINEMATIC_CONTROL.cpp)(0x5C98CD42)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/kinematic_control.o -MD)
-I (KINEMATIC_CONTROL.h)(0x5C98CD42)
-I (MOTOR.h)(0x5C9A3A32)
+I (TIMER.h)(0x5CA644FC)
+I (ENCODER.h)(0x5CB8885C)
+F (.\MOTOR.h)(0x5CB71582)()
+F (.\KINEMATIC_CONTROL.cpp)(0x5CB89299)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Oz -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/kinematic_control.o -MD)
+I (KINEMATIC_CONTROL.h)(0x5CB879FD)
+I (MOTOR.h)(0x5CB71582)
 I (PWM.h)(0x5C91496F)
 I (GPIO.h)(0x5C914A6B)
 I (Micro.h)(0x5C72CA74)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\stdint.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__config)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5AA6DBEA)
-I (TIMER.h)(0x5C91549C)
-I (ENCODER.h)(0x5C964057)
+I (TIMER.h)(0x5CA644FC)
+I (ENCODER.h)(0x5CB8885C)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\math.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\type_traits)(0x5AA6DBEA)
@@ -133,4 +136,4 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__nullptr)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\limits)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__undef_macros)(0x5AA6DBEA)
-F (.\KINEMATIC_CONTROL.h)(0x5C98CD42)()
+F (.\KINEMATIC_CONTROL.h)(0x5CB879FD)()

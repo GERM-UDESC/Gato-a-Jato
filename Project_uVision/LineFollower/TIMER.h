@@ -55,6 +55,7 @@ private:
 	static uint32_t time_in_usec;
 	static TIM_TypeDef *TIM_Timer_Counter;
 
+
 	TIM_CHANNELS TIMChannel;
 	TIM_MODE TIMMode;
 	
@@ -72,6 +73,7 @@ protected:
 public:
 	
 	static uint32_t GetTime_usec();
+	static void delay(uint32_t delayTime_usec);
 	static void Timer_Initiallize();				//Initiallize all timer's static variables
 	static void Timer_Handler();		//Take care of all that is need to maintain the time base in usec
 
@@ -88,7 +90,6 @@ public:
 	TIM_MODE GetTIMMode();
 	TIM_REMAP GetTIMRemap();
 
-	
 	//Methods
 	void TimerInit();
 	void InterrupTime(uint16_t time);			//in micro seconds -> 0<time<65000

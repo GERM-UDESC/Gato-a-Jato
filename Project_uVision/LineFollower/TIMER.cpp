@@ -9,11 +9,11 @@ TIM_TypeDef *Timer::TIM_Timer_Counter;
 
 void Timer::Timer_Initiallize()				//Initiallize all timer's static variables
 {
- Timer::TIM1Remap = NO_REMAP;
- Timer::TIM2Remap = NO_REMAP;
- Timer::TIM3Remap = NO_REMAP;
- Timer::TIM4Remap = NO_REMAP;
- Timer::time_in_usec = 0;
+	Timer::TIM1Remap = NO_REMAP;
+  Timer::TIM2Remap = NO_REMAP;
+  Timer::TIM3Remap = NO_REMAP;
+  Timer::TIM4Remap = NO_REMAP;
+  Timer::time_in_usec = 0;
 }
 
 void Timer::Timer_Handler()
@@ -24,6 +24,12 @@ void Timer::Timer_Handler()
 uint32_t Timer::GetTime_usec()
 {
 	return (time_in_usec + Timer::TIM_Timer_Counter->CNT);
+}
+
+void Timer::delay(uint32_t delayTime_usec)
+{
+	uint32_t initTime = Timer::GetTime_usec();
+	while((Timer::GetTime_usec() - initTime) < delayTime_usec);
 }
 
 //This constructor configure the respective pin as Alternated function output (it's needed to use PWM in that pin)

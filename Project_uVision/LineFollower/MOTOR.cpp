@@ -45,6 +45,17 @@ Motor::Motor(Motor *motor): pwmMotor(&motor->pwmMotor), encoder(&motor->encoder)
 	
 };
 
+void Motor::reset()
+{
+	encoder.reset();
+	for (int i = 0; i < desired_size; i++)
+	{
+		U[i] = 0;	
+		E[i] = 0;		
+	}	
+	Speed_Reference = 0;
+}
+
   //configuração pinos Ponte H
   // HIGH HIGH            ---> "freio"
   // HIGH LOW or LOW HIGH ---> troca os sentidos
@@ -110,6 +121,15 @@ float Motor::getTeta()
 	return encoder.getTeta();	
 }
 
+float Motor::getDistance()
+{
+	return encoder.getTicks()*ticksToRad*r;
+}
+
+float Motor::getDeltaDistance()
+{
+	return encoder.getDeltaTicks()*ticksToRad*r;
+}
 
 
 

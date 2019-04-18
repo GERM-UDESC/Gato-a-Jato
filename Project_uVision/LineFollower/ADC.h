@@ -1,6 +1,8 @@
 #ifndef ADC_DRIVER
 #define ADC_DRIVER
 #include "GPIO.h"
+#include "TIMER.h"
+
 
 typedef enum{
 	SINGLE_CONVERSION,
@@ -34,7 +36,7 @@ protected:
 	//SETTERS
 	//void SetADCMode(ADC_CONVERSION_MODES ADCMode);
 	void SetADCChannel(ADC_CHANNELS ADCChannel);
-	ADC(){};
+//	ADC(){};
 
 public:
 	//Constructor

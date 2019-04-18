@@ -2,41 +2,37 @@ close all
 clear all
 clc
 
-bits_to_receive = 500;
+bits_to_receive = 2500;
 baud_rate = 1e6;
 Ts = 1e-3;
-rpmToV = 596.83;
+% rpmToV = 596.83;
 
 seguidor = serial('com3','BaudRate',baud_rate,'Parity','none'); 
 fopen(seguidor);
 fwrite(seguidor, bits_to_receive/10, 'uint8');
 fclose(seguidor);
 
-%%
 x = colect_data(0, bits_to_receive, baud_rate);
-% x = [x colect_data(2000, bits_to_receive, baud_rate)];
-% x = [x colect_data(500, bits_to_receive, baud_rate)];
-% x = [x colect_data(1500, bits_to_receive, baud_rate)];
-% x = [x colect_data(400, bits_to_receive, baud_rate)];
-% x = [x colect_data(1000, bits_to_receive, baud_rate)];
-% x = [x colect_data(1800, bits_to_receive, baud_rate)];
-% x = [x colect_data(1000, bits_to_receive, baud_rate)];
-% x = [x colect_data(2200, bits_to_receive, baud_rate)];
-% x = [x colect_data(400, bits_to_receive, baud_rate)];
-% x = [x colect_data(1000, bits_to_receive, baud_rate)];
-% x = [x colect_data(2200, bits_to_receive, baud_rate)];
-% x = [x colect_data(1200, bits_to_receive, baud_rate)];
-for i = 0:15
-   x = [x colect_data(2500, bits_to_receive, baud_rate)]; 
-end
+x = [x colect_data(10, bits_to_receive, baud_rate)];
+x = [x colect_data(20, bits_to_receive, baud_rate)];
+x = [x colect_data(30, bits_to_receive, baud_rate)];
+x = [x colect_data(40, bits_to_receive, baud_rate)];
+x = [x colect_data(50, bits_to_receive, baud_rate)];
+x = [x colect_data(60, bits_to_receive, baud_rate)];
+x = [x colect_data(70, bits_to_receive, baud_rate)];
+x = [x colect_data(80, bits_to_receive, baud_rate)];
+x = [x colect_data(90, bits_to_receive, baud_rate)];
 x = [x colect_data(0, bits_to_receive, baud_rate)];
 
 ref = x(1, :);
+speed1 = x(2, :);
+speed2 = x(3, :);
+%%
+
 t = 0:Ts:((length(ref)-1)*Ts);
 
 simulink_ref = [t; ref]';
 
-speed1 = x(2, :);
 simulink_speed_ref1 = [t; speed1]';
 u1 = 10*x(3, :);
 simulink_u_ref1 = [t; u1]';
@@ -59,6 +55,15 @@ Modelo = K/(s + P);
 Controlador = KP*(s+KI/KP)/s;
 
 T = feedback(Controlador*Modelo,1);  % Malha fechada
+
+for i = 1: length(u1)-1
+    u1(i+1) = u1(i+1) - u1(1);
+    u1(i+1) = u1(i+1)/1e6;
+end
+u1 = u1(1, 2:length(u1));
+speed1 = speed1(1, 2:length(speed1));
+ref = ref(1, 2:length(ref));
+t = t(1, 2:length(t));
 
 figure
 plot(t,speed1,'b', t,u1,'b', t,ref,'-k')

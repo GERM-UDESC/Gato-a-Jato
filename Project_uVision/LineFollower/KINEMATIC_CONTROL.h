@@ -4,8 +4,9 @@
 #include "MOTOR.h"
 #include "math.h"
 
-#define L 0.1
-#define r 0.016
+#define L 0.079
+
+#define integrationTime Time_between_int/1000000
 
 typedef enum{
 	x,
@@ -32,6 +33,9 @@ class Kinematic
 	public:
 		Motor motorD;
 		Motor motorE;
+		float xPos{0};
+		float yPos{0};
+		float lastTeta{0};
 	
 		float vMotDref;
 		float vMotEref;
@@ -46,13 +50,19 @@ class Kinematic
 	
 		float vRef;
 		float wRef;
+		static Kinematic *ptRobot;
+		
+		void handler();
 		
 	public:
-		
 		Kinematic(Motor motorD, Motor motorE);
+	
+		void reset();
+		
 		void setRobotSpeed(float V, float w);
 		void setRobotRefereceSpeed(float Vx, float Vy, float Vteta);
 		void setRobotReferecePosition(float x, float y, float teta);
+		void goTo(float x, float y, float teta);
 	
 		float getX();
 		float	getY();
@@ -64,6 +74,11 @@ class Kinematic
 	
 		float getV();
 		float getw();
+	
+		void setX(float x);
+		void setY(float y);
+	
+		static void handlerByTime();
 
 
 	

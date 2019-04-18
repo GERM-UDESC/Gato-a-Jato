@@ -3,6 +3,7 @@
 Encoder *Encoder::encPtr[NUMBER_OF_ENCODERS];
 bool Encoder::usedEncoders[NUMBER_OF_ENCODERS];
 
+
 void Encoder::Encoder_Initiallize()
 {
 	for(int i = 0; i<NUMBER_OF_ENCODERS; i++)
@@ -52,9 +53,13 @@ void Encoder::ConfigEncoder()
 	Encoder::encPtr[encoderNumber] = this;
 	Encoder::usedEncoders[encoderNumber] = 1;
 	
+//	GetTim()->CNT = 0;
 	Ticks = 0;
+	lastTicks = 0;
+	deltaTicks = 0;
 	Ticks_Time = 1;
 	LastTicks_Time = 0;
+	deltaTime = 1;
 	Speed = 0;
 	Last_Speed = 0;
 	
@@ -112,9 +117,30 @@ void Encoder::ConfigEncoder()
 	GetTim()->CR1 |= (1<<0);								//Enable the counter
 }
 
+void Encoder::reset()
+{
+	Ticks = 0;
+	lastTicks = 0;
+	deltaTicks = 0;
+	GetTim()->CNT = 0;
+	deltaTime = Ticks_Time - LastTicks_Time;
+	lastDeltaTime = deltaTime;
+	LastTicks_Time = Timer::GetTime_usec();
+	Ticks_Time = LastTicks_Time;
+	Speed = 0;
+	Last_Speed = 0;
+}
+
 uint32_t Encoder::getTicks()
 {
 	return Ticks + GetTim()->CNT;	
+}
+
+uint32_t Encoder::getDeltaTicks()
+{
+	deltaTicks = getTicks() - lastTicks;
+	lastTicks = getTicks();
+	return deltaTicks;
 }
 
 uint32_t Encoder::getTicksTime()
@@ -125,6 +151,11 @@ uint32_t Encoder::getTicksTime()
 uint32_t Encoder::getLastTicksTime()
 {
 	return LastTicks_Time;
+}
+
+uint32_t Encoder::getDeltaTime()
+{
+	return deltaTime;
 }
 
 float Encoder::getSpeed()
@@ -139,7 +170,8 @@ float Encoder::getLastSpeed()
 
 float Encoder::getTeta()
 {
-	return ticksToRad*Ticks;	
+//	return ticksToRad*Ticks;	
+	return ticksToRad*getTicks();
 }
 
 bool Encoder::getDirection()
@@ -150,18 +182,22 @@ bool Encoder::getDirection()
 
 void Encoder::Handler()
 {
-	Ticks += Ticks_till_int;
 	Ticks_Time = Timer::GetTime_usec();
-	Speed = (500000*Ticks_till_int)/(Ticks_Time - LastTicks_Time);			//this 500000* is to convert ticks/us in rpm
-	if (getDirection() == backward) Speed = -Speed;
+	deltaTime = Ticks_Time - LastTicks_Time;
+	if (((lastDeltaTime - deltaTime) >= (Time_between_int*0.99)) && ((lastDeltaTime - deltaTime) <= (Time_between_int*1.01)))
+	{
+		Ticks_Time += Time_between_int;
+		deltaTime = Ticks_Time - LastTicks_Time;
+	}
+	Speed = (500000*Ticks_till_int)/(deltaTime);			//this 500000* is to convert ticks/us in rpm
+	if (getDirection() == backward) 
+	{
+		Ticks -= Ticks_till_int;
+		Speed = -Speed;
+	}
+	else Ticks += Ticks_till_int;
 
-//	if (Last_Speed > 900)
-//	{
-//		if(Speed == 0)
-//		{
-//			Speed = Last_Speed;
-//		}
-//	}
 	Last_Speed = Speed;
 	LastTicks_Time = Ticks_Time;
+	lastDeltaTime = deltaTime;
 }
