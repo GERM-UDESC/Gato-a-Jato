@@ -32,8 +32,8 @@ class Encoder : public Timer
 
 		ENCODER_ENUM encoderNumber;
 		float Ticks{0};
-		uint32_t lastTicks{0};
-		uint32_t deltaTicks{0};
+		float lastTicks{0};
+		float deltaTicks{0};
 		uint32_t Ticks_Time{1};
 		uint32_t LastTicks_Time{0};
 		uint32_t deltaTime{1};
@@ -54,8 +54,8 @@ class Encoder : public Timer
 	
 		void reset();
 			
-		uint32_t getTicks();
-		uint32_t getDeltaTicks();
+		float getTicks();
+		float getDeltaTicks();
 		uint32_t getTicksTime();
 		uint32_t getLastTicksTime();
 		uint32_t getDeltaTime();

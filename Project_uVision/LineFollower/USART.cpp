@@ -75,6 +75,14 @@ void USART::Send_Vec_16(uint16_t *ptVec, uint16_t size)
 	}
 }
 
+void USART::sendUint16(uint16_t *ptUint16)
+{
+	unsigned char *chptr;
+	chptr = (unsigned char *) ptUint16;
+	Send(*chptr++);
+	Send(*chptr);
+}
+
 void USART::sendFloat(float *ptFloat)
 {
 	unsigned char *chptr;

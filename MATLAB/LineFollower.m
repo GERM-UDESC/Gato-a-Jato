@@ -77,4 +77,3 @@ plot(t2,dados1,t2,ref)
 hold on
 lsim(T,'-c', ref,t2)
 
-

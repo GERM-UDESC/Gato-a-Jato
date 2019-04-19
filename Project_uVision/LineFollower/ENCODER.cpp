@@ -131,12 +131,12 @@ void Encoder::reset()
 	Last_Speed = 0;
 }
 
-uint32_t Encoder::getTicks()
+float Encoder::getTicks()
 {
 	return Ticks + GetTim()->CNT;	
 }
 
-uint32_t Encoder::getDeltaTicks()
+float Encoder::getDeltaTicks()
 {
 	deltaTicks = getTicks() - lastTicks;
 	lastTicks = getTicks();
@@ -184,7 +184,7 @@ void Encoder::Handler()
 {
 	Ticks_Time = Timer::GetTime_usec();
 	deltaTime = Ticks_Time - LastTicks_Time;
-	if (((lastDeltaTime - deltaTime) >= (Time_between_int*0.99)) && ((lastDeltaTime - deltaTime) <= (Time_between_int*1.01)))
+	if (((lastDeltaTime - deltaTime) >= (Time_between_int*0.98)) && ((lastDeltaTime - deltaTime) <= (Time_between_int*1.02)))
 	{
 		Ticks_Time += Time_between_int;
 		deltaTime = Ticks_Time - LastTicks_Time;

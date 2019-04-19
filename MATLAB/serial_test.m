@@ -3,15 +3,16 @@ clear all
 clc
 
 bits_to_receive = 2500;
-baud_rate = 1e6;
+baud_rate = 250e3;
 Ts = 1e-3;
 % rpmToV = 596.83;
 
-seguidor = serial('com3','BaudRate',baud_rate,'Parity','none'); 
+seguidor = serial('com3','BaudRate',baud_rate,'Parity','none', 'InputBufferSize', 15000); 
 fopen(seguidor);
 fwrite(seguidor, bits_to_receive/10, 'uint8');
 fclose(seguidor);
 
+%%
 x = colect_data(0, bits_to_receive, baud_rate);
 x = [x colect_data(10, bits_to_receive, baud_rate)];
 x = [x colect_data(20, bits_to_receive, baud_rate)];
@@ -27,6 +28,8 @@ x = [x colect_data(0, bits_to_receive, baud_rate)];
 ref = x(1, :);
 speed1 = x(2, :);
 speed2 = x(3, :);
+save('ref')
+save('speed1')
 %%
 
 t = 0:Ts:((length(ref)-1)*Ts);
@@ -42,12 +45,18 @@ simulink_u_ref1 = [t; u1]';
 % u2 = 10*x(5, :);
 % simulink_u_ref2 = [t; u2]';
 
+%% 
 s = tf('s');
 
-K = 792.7;
-P = 22.82;
+% sem roda
+% K = 792.7; 
+% P = 22.82;
 
-ts = 0.15; %tempo de assentamento
+% com roda
+K = 455.5;
+P = 12.97;
+
+ts = 0.2; %tempo de assentamento
 KP = 4/(K*ts);
 KI = P*KP;
 
@@ -66,7 +75,7 @@ ref = ref(1, 2:length(ref));
 t = t(1, 2:length(t));
 
 figure
-plot(t,speed1,'b', t,u1,'b', t,ref,'-k')
+plot(t,speed1,'b', t,ref,'-k')
 hold on
 % plot(t,speed2,'r', t,u2,'r')
 lsim(T,':c', ref,t)

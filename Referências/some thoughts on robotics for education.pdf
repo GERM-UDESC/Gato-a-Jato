@@ -1,0 +1,8797 @@
+%PDF-1.1
+%«Ïè¢
+4 0 obj
+<< /Length 5 0 R >>
+stream
+q
+endstream
+endobj
+5 0 obj
+2
+endobj
+6 0 obj
+<< /Type /Font /Name /R6 /Subtype /Type1 /BaseFont /Times-Bold >>
+endobj
+7 0 obj
+<< /Length 8 0 R >>
+stream
+BT
+/R6 14.3462 Tf
+1 0 0 1 182.52 733.06 Tm
+(Some) Tj
+1 0 0 1 219.6 733.06 Tm
+(thoughts) Tj
+1 0 0 1 276.6 733.06 Tm
+(on) Tj
+1 0 0 1 295.32 733.06 Tm
+(r) Tj
+1 0 0 1 301.44 733.06 Tm
+(obotics) Tj
+1 0 0 1 348.119 733.06 Tm
+(f) Tj
+1 0 0 1 352.559 733.06 Tm
+(or) Tj
+1 0 0 1 369.599 733.06 Tm
+(education) Tj
+/R6 11.9552 Tf
+1 0 0 1 274.44 706.3 Tm
+(J) Tj
+1 0 0 1 280.32 706.3 Tm
+(acek) Tj
+1 0 0 1 306.36 706.3 Tm
+(Malec) Tj
+ET
+endstream
+endobj
+8 0 obj
+419
+endobj
+9 0 obj
+<< /Type /Font /Name /R9 /Subtype /Type1 /BaseFont /Times-Roman >>
+endobj
+10 0 obj
+<< /Length 11 0 R >>
+stream
+BT
+/R9 9.96264 Tf
+1 0 0 1 239.16 695.38 Tm
+(Department) Tj
+1 0 0 1 288.72 695.38 Tm
+(of) Tj
+1 0 0 1 299.52 695.38 Tm
+(Computer) Tj
+1 0 0 1 341.88 695.38 Tm
+(Science) Tj
+1 0 0 1 273.36 684.34 Tm
+(Lund) Tj
+1 0 0 1 296.88 684.34 Tm
+(Uni) Tj
+1 0 0 1 311.64 684.34 Tm
+(v) Tj
+1 0 0 1 316.56 684.34 Tm
+(ersity) Tj
+1 0 0 1 288.96 673.42 Tm
+(Box) Tj
+1 0 0 1 308.04 673.42 Tm
+(118) Tj
+1 0 0 1 258.96 662.5 Tm
+(221) Tj
+1 0 0 1 276.36 662.5 Tm
+(00) Tj
+1 0 0 1 288.84 662.5 Tm
+(LUND,) Tj
+1 0 0 1 321.48 662.5 Tm
+(Sweden) Tj
+1 0 0 1 260.88 651.46 Tm
+(email:) Tj
+1 0 0 1 288.84 651.46 Tm
+(jacek@cs.lth.se) Tj
+/R6 9.96264 Tf
+1 0 0 1 154.68 615.94 Tm
+(Abstract) Tj
+/R9 8.96638 Tf
+1 0 0 1 63.96 596.5 Tm
+(In) Tj
+1 0 0 1 76.32 596.5 Tm
+(this) Tj
+1 0 0 1 94.0799 596.5 Tm
+(paper) Tj
+1 0 0 1 118.92 596.5 Tm
+(we) Tj
+1 0 0 1 134.16 596.5 Tm
+(formulate) Tj
+1 0 0 1 173.88 596.5 Tm
+(some) Tj
+1 0 0 1 197.76 596.5 Tm
+(thoughts) Tj
+1 0 0 1 233.519 596.5 Tm
+(about) Tj
+1 0 0 1 258.239 596.5 Tm
+(use) Tj
+1 0 0 1 275.039 596.5 Tm
+(of) Tj
+1 0 0 1 63.96 586.54 Tm
+(robotics) Tj
+1 0 0 1 95.7599 586.54 Tm
+(in) Tj
+1 0 0 1 105.72 586.54 Tm
+(education,) Tj
+1 0 0 1 145.92 586.54 Tm
+(in) Tj
+1 0 0 1 155.76 586.54 Tm
+(particular) Tj
+1 0 0 1 193.079 586.54 Tm
+(at) Tj
+1 0 0 1 202.439 586.54 Tm
+(colle) Tj
+1 0 0 1 219.719 586.54 Tm
+(ge) Tj
+1 0 0 1 231.119 586.54 Tm
+(and) Tj
+1 0 0 1 247.079 586.54 Tm
+(uni) Tj
+1 0 0 1 258.239 586.54 Tm
+(v) Tj
+1 0 0 1 262.559 586.54 Tm
+(ersity) Tj
+1 0 0 1 63.96 576.58 Tm
+(le) Tj
+1 0 0 1 70.2 576.58 Tm
+(v) Tj
+1 0 0 1 74.52 576.58 Tm
+(el.) Tj
+1 0 0 1 87.3599 576.58 Tm
+(W) Tj
+1 0 0 1 95.1599 576.58 Tm
+(e) Tj
+1 0 0 1 101.76 576.58 Tm
+(ar) Tj
+1 0 0 1 108.6 576.58 Tm
+(gue) Tj
+1 0 0 1 124.2 576.58 Tm
+(that,) Tj
+1 0 0 1 142.68 576.58 Tm
+(although) Tj
+1 0 0 1 176.64 576.58 Tm
+(robotics) Tj
+1 0 0 1 208.199 576.58 Tm
+(is) Tj
+1 0 0 1 216.839 576.58 Tm
+(used) Tj
+1 0 0 1 236.039 576.58 Tm
+(in) Tj
+1 0 0 1 245.639 576.58 Tm
+(man) Tj
+1 0 0 1 260.879 576.58 Tm
+(y) Tj
+1 0 0 1 268.079 576.58 Tm
+(uni-) Tj
+1 0 0 1 63.96 566.62 Tm
+(v) Tj
+1 0 0 1 68.28 566.62 Tm
+(ersities) Tj
+1 0 0 1 97.3199 566.62 Tm
+(and) Tj
+1 0 0 1 113.76 566.62 Tm
+(courses,) Tj
+1 0 0 1 146.88 566.62 Tm
+(its) Tj
+1 0 0 1 158.88 566.62 Tm
+(adv) Tj
+1 0 0 1 171.48 566.62 Tm
+(antages) Tj
+1 0 0 1 202.079 566.62 Tm
+(are) Tj
+1 0 0 1 216.599 566.62 Tm
+(not) Tj
+1 0 0 1 231.599 566.62 Tm
+(necessarily) Tj
+1 0 0 1 275.039 566.62 Tm
+(as) Tj
+1 0 0 1 63.96 556.66 Tm
+(ob) Tj
+1 0 0 1 72.72 556.66 Tm
+(vious) Tj
+1 0 0 1 95.5199 556.66 Tm
+(as) Tj
+1 0 0 1 106.32 556.66 Tm
+(we) Tj
+1 0 0 1 120.12 556.66 Tm
+(w) Tj
+1 0 0 1 126.48 556.66 Tm
+(ould) Tj
+1 0 0 1 145.68 556.66 Tm
+(lik) Tj
+1 0 0 1 155.04 556.66 Tm
+(e) Tj
+1 0 0 1 162.36 556.66 Tm
+(to) Tj
+1 0 0 1 172.68 556.66 Tm
+(belie) Tj
+1 0 0 1 189.84 556.66 Tm
+(v) Tj
+1 0 0 1 194.16 556.66 Tm
+(e.) Tj
+1 0 0 1 206.399 556.66 Tm
+(There) Tj
+1 0 0 1 230.639 556.66 Tm
+(is) Tj
+1 0 0 1 239.879 556.66 Tm
+(an) Tj
+1 0 0 1 251.639 556.66 Tm
+(apparent) Tj
+1 0 0 1 63.96 546.7 Tm
+(need) Tj
+1 0 0 1 84.2399 546.7 Tm
+(for) Tj
+1 0 0 1 97.9199 546.7 Tm
+(analysis) Tj
+1 0 0 1 130.2 546.7 Tm
+(that) Tj
+1 0 0 1 146.88 546.7 Tm
+(w) Tj
+1 0 0 1 153.24 546.7 Tm
+(ould) Tj
+1 0 0 1 172.56 546.7 Tm
+(pro) Tj
+1 0 0 1 184.32 546.7 Tm
+(vide) Tj
+1 0 0 1 203.04 546.7 Tm
+(more) Tj
+1 0 0 1 224.759 546.7 Tm
+(con) Tj
+1 0 0 1 237.239 546.7 Tm
+(vincing) Tj
+1 0 0 1 267.599 546.7 Tm
+(data) Tj
+1 0 0 1 63.96 536.74 Tm
+(supporting) Tj
+1 0 0 1 104.52 536.74 Tm
+(use) Tj
+1 0 0 1 118.8 536.74 Tm
+(of) Tj
+1 0 0 1 128.52 536.74 Tm
+(robotics) Tj
+1 0 0 1 159.6 536.74 Tm
+(for) Tj
+1 0 0 1 172.319 536.74 Tm
+(educational) Tj
+1 0 0 1 215.879 536.74 Tm
+(purposes.) Tj
+/R6 11.9552 Tf
+1 0 0 1 140.76 504.7 Tm
+(Intr) Tj
+1 0 0 1 161.04 504.7 Tm
+(oduction) Tj
+/R9 9.96264 Tf
+1 0 0 1 54 488.02 Tm
+(Since) Tj
+1 0 0 1 78.4799 488.02 Tm
+(late) Tj
+1 0 0 1 95.2799 488.02 Tm
+(1980s,) Tj
+1 0 0 1 123.96 488.02 Tm
+(be) Tj
+1 0 0 1 133.32 488.02 Tm
+(ginning) Tj
+1 0 0 1 165.96 488.02 Tm
+(with) Tj
+1 0 0 1 186 488.02 Tm
+(the) Tj
+1 0 0 1 200.639 488.02 Tm
+(f) Tj
+1 0 0 1 203.879 488.02 Tm
+(amous) Tj
+1 0 0 1 232.199 488.02 Tm
+(6.270) Tj
+1 0 0 1 256.919 488.02 Tm
+(course) Tj
+1 0 0 1 285.359 488.02 Tm
+(at) Tj
+1 0 0 1 54 477.1 Tm
+(MIT) Tj
+1 0 0 1 71.64 477.1 Tm
+(,) Tj
+1 0 0 1 77.04 477.1 Tm
+(robotics) Tj
+1 0 0 1 112.2 477.1 Tm
+(is) Tj
+1 0 0 1 121.8 477.1 Tm
+(used) Tj
+1 0 0 1 143.16 477.1 Tm
+(in) Tj
+1 0 0 1 153.84 477.1 Tm
+(education) Tj
+1 0 0 1 195.6 477.1 Tm
+(in) Tj
+1 0 0 1 206.399 477.1 Tm
+(man) Tj
+1 0 0 1 223.559 477.1 Tm
+(y) Tj
+1 0 0 1 231.359 477.1 Tm
+(forms,) Tj
+1 0 0 1 260.279 477.1 Tm
+(at) Tj
+1 0 0 1 270.479 477.1 Tm
+(man) Tj
+1 0 0 1 287.639 477.1 Tm
+(y) Tj
+1 0 0 1 54 466.18 Tm
+(le) Tj
+1 0 0 1 60.96 466.18 Tm
+(v) Tj
+1 0 0 1 65.88 466.18 Tm
+(els) Tj
+1 0 0 1 80.76 466.18 Tm
+(and) Tj
+1 0 0 1 99.1199 466.18 Tm
+(with) Tj
+1 0 0 1 120.84 466.18 Tm
+(man) Tj
+1 0 0 1 138 466.18 Tm
+(y) Tj
+1 0 0 1 146.76 466.18 Tm
+(purposes.) Tj
+1 0 0 1 192.12 466.18 Tm
+(These) Tj
+1 0 0 1 219.84 466.18 Tm
+(proceedings) Tj
+1 0 0 1 271.919 466.18 Tm
+(are) Tj
+1 0 0 1 288.119 466.18 Tm
+(a) Tj
+1 0 0 1 54 455.14 Tm
+(good) Tj
+1 0 0 1 78.24 455.14 Tm
+(e) Tj
+1 0 0 1 82.56 455.14 Tm
+(xample) Tj
+1 0 0 1 116.28 455.14 Tm
+(of) Tj
+1 0 0 1 128.88 455.14 Tm
+(v) Tj
+1 0 0 1 133.68 455.14 Tm
+(ariety) Tj
+1 0 0 1 160.68 455.14 Tm
+(of) Tj
+1 0 0 1 173.28 455.14 Tm
+(educational) Tj
+1 0 0 1 223.559 455.14 Tm
+(conte) Tj
+1 0 0 1 245.159 455.14 Tm
+(xts) Tj
+1 0 0 1 260.999 455.14 Tm
+(that) Tj
+1 0 0 1 280.319 455.14 Tm
+(the) Tj
+1 0 0 1 54 444.22 Tm
+(robots) Tj
+1 0 0 1 82.2 444.22 Tm
+(might) Tj
+1 0 0 1 108.72 444.22 Tm
+(be) Tj
+1 0 0 1 121.44 444.22 Tm
+(useful) Tj
+1 0 0 1 149.04 444.22 Tm
+(in.) Tj
+1 0 0 1 164.76 444.22 Tm
+(Although) Tj
+1 0 0 1 205.679 444.22 Tm
+(the) Tj
+1 0 0 1 221.159 444.22 Tm
+(majority) Tj
+1 0 0 1 258.239 444.22 Tm
+(of) Tj
+1 0 0 1 269.759 444.22 Tm
+(docu-) Tj
+1 0 0 1 54 433.3 Tm
+(mented) Tj
+1 0 0 1 85.7999 433.3 Tm
+(courses) Tj
+1 0 0 1 118.2 433.3 Tm
+(using) Tj
+1 0 0 1 142.32 433.3 Tm
+(robotics) Tj
+1 0 0 1 176.88 433.3 Tm
+(in) Tj
+1 0 0 1 187.2 433.3 Tm
+(an) Tj
+1 0 0 1 199.079 433.3 Tm
+(instrumental) Tj
+1 0 0 1 251.399 433.3 Tm
+(w) Tj
+1 0 0 1 258.479 433.3 Tm
+(ay) Tj
+1 0 0 1 270.359 433.3 Tm
+(while) Tj
+1 0 0 1 54 422.26 Tm
+(teaching) Tj
+1 0 0 1 90.4799 422.26 Tm
+(other) Tj
+1 0 0 1 113.76 422.26 Tm
+(topics) Tj
+1 0 0 1 140.4 422.26 Tm
+(are) Tj
+1 0 0 1 155.28 422.26 Tm
+(at) Tj
+1 0 0 1 165.24 422.26 Tm
+(the) Tj
+1 0 0 1 180.24 422.26 Tm
+(colle) Tj
+1 0 0 1 199.56 422.26 Tm
+(ge) Tj
+1 0 0 1 211.68 422.26 Tm
+(and) Tj
+1 0 0 1 228.839 422.26 Tm
+(uni) Tj
+1 0 0 1 241.439 422.26 Tm
+(v) Tj
+1 0 0 1 246.359 422.26 Tm
+(ersity) Tj
+1 0 0 1 271.079 422.26 Tm
+(le) Tj
+1 0 0 1 278.039 422.26 Tm
+(v) Tj
+1 0 0 1 282.959 422.26 Tm
+(el,) Tj
+1 0 0 1 54 411.34 Tm
+(robots) Tj
+1 0 0 1 82.2 411.34 Tm
+(ha) Tj
+1 0 0 1 91.4399 411.34 Tm
+(v) Tj
+1 0 0 1 96.3599 411.34 Tm
+(e) Tj
+1 0 0 1 103.92 411.34 Tm
+(been) Tj
+1 0 0 1 126 411.34 Tm
+(used) Tj
+1 0 0 1 147.48 411.34 Tm
+(at) Tj
+1 0 0 1 157.92 411.34 Tm
+(the) Tj
+1 0 0 1 173.4 411.34 Tm
+(K-12) Tj
+1 0 0 1 197.04 411.34 Tm
+(le) Tj
+1 0 0 1 204 411.34 Tm
+(v) Tj
+1 0 0 1 208.92 411.34 Tm
+(el) Tj
+1 0 0 1 219.36 411.34 Tm
+(education) Tj
+1 0 0 1 261.239 411.34 Tm
+(as) Tj
+1 0 0 1 272.879 411.34 Tm
+(well.) Tj
+1 0 0 1 54 400.42 Tm
+(Most) Tj
+1 0 0 1 76.68 400.42 Tm
+(of) Tj
+1 0 0 1 87.1199 400.42 Tm
+(the) Tj
+1 0 0 1 101.52 400.42 Tm
+(acti) Tj
+1 0 0 1 115.68 400.42 Tm
+(vities) Tj
+1 0 0 1 139.44 400.42 Tm
+(at) Tj
+1 0 0 1 148.8 400.42 Tm
+(this) Tj
+1 0 0 1 165.36 400.42 Tm
+(le) Tj
+1 0 0 1 172.32 400.42 Tm
+(v) Tj
+1 0 0 1 177.239 400.42 Tm
+(el) Tj
+1 0 0 1 186.479 400.42 Tm
+(are) Tj
+1 0 0 1 200.759 400.42 Tm
+(a) Tj
+1 0 0 1 207.359 400.42 Tm
+(form) Tj
+1 0 0 1 228.959 400.42 Tm
+(of) Tj
+1 0 0 1 239.399 400.42 Tm
+(outreach) Tj
+1 0 0 1 275.879 400.42 Tm
+(pro-) Tj
+1 0 0 1 54 389.38 Tm
+(gram,) Tj
+1 0 0 1 79.5599 389.38 Tm
+(aimed) Tj
+1 0 0 1 106.56 389.38 Tm
+(at) Tj
+1 0 0 1 116.28 389.38 Tm
+(raising) Tj
+1 0 0 1 146.04 389.38 Tm
+(interest) Tj
+1 0 0 1 177.96 389.38 Tm
+(in) Tj
+1 0 0 1 188.28 389.38 Tm
+(higher) Tj
+1 0 0 1 216.359 389.38 Tm
+(engineering) Tj
+1 0 0 1 265.919 389.38 Tm
+(educa-) Tj
+1 0 0 1 54 378.46 Tm
+(tion) Tj
+1 0 0 1 71.64 378.46 Tm
+(among) Tj
+1 0 0 1 100.8 378.46 Tm
+(selected) Tj
+1 0 0 1 135 378.46 Tm
+(group) Tj
+1 0 0 1 160.32 378.46 Tm
+(of) Tj
+1 0 0 1 170.76 378.46 Tm
+(\(usually) Tj
+1 0 0 1 204.839 378.46 Tm
+(high-school\)) Tj
+1 0 0 1 257.399 378.46 Tm
+(students,) Tj
+1 0 0 1 54 367.54 Tm
+(b) Tj
+1 0 0 1 58.8 367.54 Tm
+(ut) Tj
+1 0 0 1 69.6 367.54 Tm
+(there) Tj
+1 0 0 1 92.5199 367.54 Tm
+(are) Tj
+1 0 0 1 107.76 367.54 Tm
+(also) Tj
+1 0 0 1 126.96 367.54 Tm
+(acti) Tj
+1 0 0 1 141.12 367.54 Tm
+(vities) Tj
+1 0 0 1 165.72 367.54 Tm
+(aimed) Tj
+1 0 0 1 193.079 367.54 Tm
+(at) Tj
+1 0 0 1 203.399 367.54 Tm
+(students) Tj
+1 0 0 1 239.039 367.54 Tm
+(from) Tj
+1 0 0 1 261.479 367.54 Tm
+(socially) Tj
+1 0 0 1 54 356.5 Tm
+(depri) Tj
+1 0 0 1 74.3999 356.5 Tm
+(v) Tj
+1 0 0 1 79.3199 356.5 Tm
+(ed) Tj
+1 0 0 1 91.5599 356.5 Tm
+(areas,) Tj
+1 0 0 1 117.84 356.5 Tm
+(where) Tj
+1 0 0 1 145.2 356.5 Tm
+(the) Tj
+1 0 0 1 160.56 356.5 Tm
+(main) Tj
+1 0 0 1 183.6 356.5 Tm
+(objecti) Tj
+1 0 0 1 210.6 356.5 Tm
+(v) Tj
+1 0 0 1 215.52 356.5 Tm
+(e) Tj
+1 0 0 1 222.839 356.5 Tm
+(is) Tj
+1 0 0 1 232.559 356.5 Tm
+(to) Tj
+1 0 0 1 243.479 356.5 Tm
+(attract) Tj
+1 0 0 1 271.439 356.5 Tm
+(those) Tj
+1 0 0 1 54 345.58 Tm
+(students) Tj
+1 0 0 1 89.1599 345.58 Tm
+(to) Tj
+1 0 0 1 99.3598 345.58 Tm
+(some) Tj
+1 0 0 1 122.88 345.58 Tm
+(form) Tj
+1 0 0 1 144.72 345.58 Tm
+(of) Tj
+1 0 0 1 155.52 345.58 Tm
+(education) Tj
+1 0 0 1 196.799 345.58 Tm
+(at) Tj
+1 0 0 1 206.519 345.58 Tm
+(all.) Tj
+1 0 0 1 63.96 333.7 Tm
+(Although) Tj
+1 0 0 1 104.64 333.7 Tm
+(usually) Tj
+1 0 0 1 136.32 333.7 Tm
+(the) Tj
+1 0 0 1 151.56 333.7 Tm
+(e) Tj
+1 0 0 1 155.88 333.7 Tm
+(xperiences) Tj
+1 0 0 1 201.36 333.7 Tm
+(from) Tj
+1 0 0 1 223.799 333.7 Tm
+(this) Tj
+1 0 0 1 241.199 333.7 Tm
+(form) Tj
+1 0 0 1 263.519 333.7 Tm
+(of) Tj
+1 0 0 1 274.799 333.7 Tm
+(edu-) Tj
+1 0 0 1 54 322.78 Tm
+(cation) Tj
+1 0 0 1 81.3599 322.78 Tm
+(are) Tj
+1 0 0 1 96.5999 322.78 Tm
+(v) Tj
+1 0 0 1 101.52 322.78 Tm
+(ery) Tj
+1 0 0 1 117.24 322.78 Tm
+(positi) Tj
+1 0 0 1 139.2 322.78 Tm
+(v) Tj
+1 0 0 1 144.12 322.78 Tm
+(e,) Tj
+1 0 0 1 153.96 322.78 Tm
+(if) Tj
+1 0 0 1 163.08 322.78 Tm
+(not) Tj
+1 0 0 1 178.92 322.78 Tm
+(enthusiastic,) Tj
+1 0 0 1 231.599 322.78 Tm
+(it) Tj
+1 0 0 1 240.239 322.78 Tm
+(is) Tj
+1 0 0 1 249.839 322.78 Tm
+(sometimes) Tj
+1 0 0 1 54 311.86 Tm
+(v) Tj
+1 0 0 1 58.92 311.86 Tm
+(ery) Tj
+1 0 0 1 75.36 311.86 Tm
+(hard) Tj
+1 0 0 1 96.8399 311.86 Tm
+(to) Tj
+1 0 0 1 108.36 311.86 Tm
+(pin-point) Tj
+1 0 0 1 148.56 311.86 Tm
+(the) Tj
+1 0 0 1 164.52 311.86 Tm
+(actual) Tj
+1 0 0 1 192.12 311.86 Tm
+(bene\256t) Tj
+1 0 0 1 222.959 311.86 Tm
+(of) Tj
+1 0 0 1 235.079 311.86 Tm
+(using) Tj
+1 0 0 1 260.399 311.86 Tm
+(robotics) Tj
+1 0 0 1 54 300.82 Tm
+(in) Tj
+1 0 0 1 65.16 300.82 Tm
+(particular) Tj
+1 0 0 1 106.68 300.82 Tm
+(curriculum.) Tj
+1 0 0 1 158.52 300.82 Tm
+(There) Tj
+1 0 0 1 185.16 300.82 Tm
+(are) Tj
+1 0 0 1 200.64 300.82 Tm
+(man) Tj
+1 0 0 1 217.8 300.82 Tm
+(y) Tj
+1 0 0 1 226.079 300.82 Tm
+(reasons) Tj
+1 0 0 1 259.319 300.82 Tm
+(for) Tj
+1 0 0 1 274.199 300.82 Tm
+(such) Tj
+1 0 0 1 54 289.9 Tm
+(fuzziness) Tj
+1 0 0 1 94.5599 289.9 Tm
+(of) Tj
+1 0 0 1 106.32 289.9 Tm
+(opinions.) Tj
+1 0 0 1 149.16 289.9 Tm
+(In) Tj
+1 0 0 1 160.92 289.9 Tm
+(this) Tj
+1 0 0 1 178.8 289.9 Tm
+(paper) Tj
+1 0 0 1 204.36 289.9 Tm
+(we) Tj
+1 0 0 1 219.36 289.9 Tm
+(will) Tj
+1 0 0 1 238.439 289.9 Tm
+(try) Tj
+1 0 0 1 252.959 289.9 Tm
+(to) Tj
+1 0 0 1 264.119 289.9 Tm
+(look) Tj
+1 0 0 1 285.359 289.9 Tm
+(at) Tj
+1 0 0 1 54 278.98 Tm
+(some) Tj
+1 0 0 1 78.7199 278.98 Tm
+(of) Tj
+1 0 0 1 90.7199 278.98 Tm
+(them) Tj
+1 0 0 1 114.36 278.98 Tm
+(by) Tj
+1 0 0 1 127.92 278.98 Tm
+(formulating) Tj
+1 0 0 1 178.68 278.98 Tm
+(them) Tj
+1 0 0 1 202.32 278.98 Tm
+(more) Tj
+1 0 0 1 226.439 278.98 Tm
+(clearly) Tj
+1 0 0 1 257.279 278.98 Tm
+(and) Tj
+1 0 0 1 275.399 278.98 Tm
+(sug-) Tj
+1 0 0 1 54 267.94 Tm
+(gesting) Tj
+1 0 0 1 85.6799 267.94 Tm
+(further) Tj
+1 0 0 1 115.68 267.94 Tm
+(studies) Tj
+1 0 0 1 146.16 267.94 Tm
+(that) Tj
+1 0 0 1 163.92 267.94 Tm
+(w) Tj
+1 0 0 1 171 267.94 Tm
+(ould) Tj
+1 0 0 1 191.639 267.94 Tm
+(hopefully) Tj
+1 0 0 1 232.679 267.94 Tm
+(resolv) Tj
+1 0 0 1 257.039 267.94 Tm
+(e) Tj
+1 0 0 1 264.239 267.94 Tm
+(at) Tj
+1 0 0 1 274.199 267.94 Tm
+(least) Tj
+1 0 0 1 54 257.02 Tm
+(some) Tj
+1 0 0 1 78.48 257.02 Tm
+(of) Tj
+1 0 0 1 90.1199 257.02 Tm
+(the) Tj
+1 0 0 1 105.72 257.02 Tm
+(open) Tj
+1 0 0 1 128.52 257.02 Tm
+(questions) Tj
+1 0 0 1 169.56 257.02 Tm
+(related) Tj
+1 0 0 1 200.04 257.02 Tm
+(to) Tj
+1 0 0 1 211.199 257.02 Tm
+(ho) Tj
+1 0 0 1 221.039 257.02 Tm
+(w) Tj
+1 0 0 1 231.479 257.02 Tm
+(should) Tj
+1 0 0 1 261.479 257.02 Tm
+(one) Tj
+1 0 0 1 279.239 257.02 Tm
+(use) Tj
+1 0 0 1 54 246.1 Tm
+(robotics) Tj
+1 0 0 1 88.5599 246.1 Tm
+(in) Tj
+1 0 0 1 98.8798 246.1 Tm
+(order) Tj
+1 0 0 1 122.4 246.1 Tm
+(to) Tj
+1 0 0 1 132.6 246.1 Tm
+(achie) Tj
+1 0 0 1 153.48 246.1 Tm
+(v) Tj
+1 0 0 1 158.4 246.1 Tm
+(e) Tj
+1 0 0 1 165.12 246.1 Tm
+(particular) Tj
+1 0 0 1 205.799 246.1 Tm
+(educational) Tj
+1 0 0 1 254.159 246.1 Tm
+(needs.) Tj
+1 0 0 1 63.96 234.22 Tm
+(The) Tj
+1 0 0 1 83.04 234.22 Tm
+(paper) Tj
+1 0 0 1 108.72 234.22 Tm
+(is) Tj
+1 0 0 1 118.92 234.22 Tm
+(di) Tj
+1 0 0 1 126.48 234.22 Tm
+(vided) Tj
+1 0 0 1 152.16 234.22 Tm
+(as) Tj
+1 0 0 1 164.04 234.22 Tm
+(follo) Tj
+1 0 0 1 182.76 234.22 Tm
+(ws.) Tj
+1 0 0 1 202.44 234.22 Tm
+(In) Tj
+1 0 0 1 214.319 234.22 Tm
+(the) Tj
+1 0 0 1 230.039 234.22 Tm
+(\256rst) Tj
+1 0 0 1 249.119 234.22 Tm
+(section) Tj
+1 0 0 1 280.919 234.22 Tm
+(we) Tj
+1 0 0 1 54 223.3 Tm
+(state) Tj
+1 0 0 1 75.6 223.3 Tm
+(our) Tj
+1 0 0 1 92.2799 223.3 Tm
+(concerns) Tj
+1 0 0 1 131.04 223.3 Tm
+(about) Tj
+1 0 0 1 156.6 223.3 Tm
+(ho) Tj
+1 0 0 1 166.44 223.3 Tm
+(w) Tj
+1 0 0 1 176.88 223.3 Tm
+(use) Tj
+1 0 0 1 193.56 223.3 Tm
+(of) Tj
+1 0 0 1 205.2 223.3 Tm
+(robotics) Tj
+1 0 0 1 240.599 223.3 Tm
+(is) Tj
+1 0 0 1 250.679 223.3 Tm
+(moti) Tj
+1 0 0 1 268.799 223.3 Tm
+(v) Tj
+1 0 0 1 273.599 223.3 Tm
+(ated.) Tj
+1 0 0 1 54 212.26 Tm
+(Then) Tj
+1 0 0 1 78.6 212.26 Tm
+(in) Tj
+1 0 0 1 90.5999 212.26 Tm
+(the) Tj
+1 0 0 1 106.92 212.26 Tm
+(ne) Tj
+1 0 0 1 116.28 212.26 Tm
+(xt) Tj
+1 0 0 1 128.16 212.26 Tm
+(section) Tj
+1 0 0 1 160.56 212.26 Tm
+(we) Tj
+1 0 0 1 176.28 212.26 Tm
+(pro) Tj
+1 0 0 1 189.6 212.26 Tm
+(vide) Tj
+1 0 0 1 210.839 212.26 Tm
+(a) Tj
+1 0 0 1 219.359 212.26 Tm
+(short) Tj
+1 0 0 1 243.479 212.26 Tm
+(o) Tj
+1 0 0 1 248.399 212.26 Tm
+(v) Tj
+1 0 0 1 253.319 212.26 Tm
+(ervie) Tj
+1 0 0 1 273.119 212.26 Tm
+(w) Tj
+1 0 0 1 284.159 212.26 Tm
+(of) Tj
+1 0 0 1 54 201.34 Tm
+(the) Tj
+1 0 0 1 69.48 201.34 Tm
+(kinds) Tj
+1 0 0 1 94.3199 201.34 Tm
+(of) Tj
+1 0 0 1 105.84 201.34 Tm
+(courses) Tj
+1 0 0 1 138.96 201.34 Tm
+(that) Tj
+1 0 0 1 157.2 201.34 Tm
+(more) Tj
+1 0 0 1 180.96 201.34 Tm
+(or) Tj
+1 0 0 1 192.48 201.34 Tm
+(less) Tj
+1 0 0 1 210.72 201.34 Tm
+(successfully) Tj
+1 0 0 1 262.679 201.34 Tm
+(emplo) Tj
+1 0 0 1 287.639 201.34 Tm
+(y) Tj
+1 0 0 1 54 190.42 Tm
+(robotics) Tj
+1 0 0 1 88.9199 190.42 Tm
+(as) Tj
+1 0 0 1 100.08 190.42 Tm
+(an) Tj
+1 0 0 1 112.32 190.42 Tm
+(educational) Tj
+1 0 0 1 161.16 190.42 Tm
+(medium.) Tj
+1 0 0 1 200.52 190.42 Tm
+(After) Tj
+1 0 0 1 224.399 190.42 Tm
+(that) Tj
+1 0 0 1 242.159 190.42 Tm
+(we) Tj
+1 0 0 1 256.679 190.42 Tm
+(state) Tj
+1 0 0 1 277.799 190.42 Tm
+(fur) Tj
+1 0 0 1 289.319 190.42 Tm
+(-) Tj
+1 0 0 1 54 179.5 Tm
+(ther) Tj
+1 0 0 1 71.52 179.5 Tm
+(questions) Tj
+1 0 0 1 111.12 179.5 Tm
+(re) Tj
+1 0 0 1 118.8 179.5 Tm
+(garding) Tj
+1 0 0 1 151.08 179.5 Tm
+(the) Tj
+1 0 0 1 165.24 179.5 Tm
+(actual) Tj
+1 0 0 1 191.04 179.5 Tm
+(bene\256ts) Tj
+1 0 0 1 224.04 179.5 Tm
+(of) Tj
+1 0 0 1 234.359 179.5 Tm
+(using) Tj
+1 0 0 1 257.879 179.5 Tm
+(robotics.) Tj
+1 0 0 1 54 168.46 Tm
+(The) Tj
+1 0 0 1 72.36 168.46 Tm
+(follo) Tj
+1 0 0 1 91.0799 168.46 Tm
+(wing) Tj
+1 0 0 1 113.76 168.46 Tm
+(section) Tj
+1 0 0 1 144.96 168.46 Tm
+(presents) Tj
+1 0 0 1 180.48 168.46 Tm
+(our) Tj
+1 0 0 1 196.68 168.46 Tm
+(e) Tj
+1 0 0 1 201 168.46 Tm
+(xperiences) Tj
+1 0 0 1 246.479 168.46 Tm
+(in) Tj
+1 0 0 1 257.039 168.46 Tm
+(robotics-) Tj
+ET
+q
+59.88 0 0 -0.48 53.988 159.088 cm
+BI
+/IM true /W 1 /H 1 /BPC 1
+ID  
+EI
+Q
+BT
+/R9 8.96638 Tf
+1 0 0 1 54 149.86 Tm
+(Cop) Tj
+1 0 0 1 68.76 149.86 Tm
+(yright) Tj
+1 0 0 1 96.84 150.1 Tm
+(c) Tj
+ET
+endstream
+endobj
+11 0 obj
+16096
+endobj
+12 0 obj
+<< /Type /XObject /Name /R12 /Subtype /Image /Length 13 0 R
+/ImageMask true /Width 83 /Height 86 /BitsPerComponent 1 /Decode [1 0] /Filter [/CCITTFaxDecode] /DecodeParms [<< /K -1 /Columns 83 /BlackIs1 true >>]
+>>
+stream
+"aâpÅ¡ÇËD9wÑ0Ë ›a–@‹ õ”“nêoÙòt”¬M˛∑†ˇ§ﬂˇA0ˇ˝?ÎÙˇˇˇˇˇk˛ı˝ØˇxXk˝≠Îao_Ü“⁄˛√J∂∂¬[[iC+’Ü+%É ¨ÇËPPb0^R&Ä Ä
+endstream
+endobj
+13 0 obj
+126
+endobj
+14 0 obj
+<< /Length 15 0 R >>
+stream
+q
+8.3 0 0 -8.6 94.6 156.4 cm
+/R12 Do
+Q
+BT
+1 0 0 1 107.4 149.86 Tm
+(2001,) Tj
+1 0 0 1 131.88 149.86 Tm
+(American) Tj
+1 0 0 1 171.12 149.86 Tm
+(Association) Tj
+1 0 0 1 217.44 149.86 Tm
+(for) Tj
+1 0 0 1 231.84 149.86 Tm
+(Arti\256cial) Tj
+1 0 0 1 268.079 149.86 Tm
+(Intelli-) Tj
+1 0 0 1 54 139.9 Tm
+(gence) Tj
+1 0 0 1 77.1599 139.9 Tm
+(\(www) Tj
+1 0 0 1 98.9999 139.9 Tm
+(.aaai.or) Tj
+1 0 0 1 125.28 139.9 Tm
+(g\).) Tj
+1 0 0 1 137.64 139.9 Tm
+(All) Tj
+1 0 0 1 151.44 139.9 Tm
+(rights) Tj
+1 0 0 1 173.999 139.9 Tm
+(reserv) Tj
+1 0 0 1 195.719 139.9 Tm
+(ed.) Tj
+/R9 9.96264 Tf
+1 0 0 1 319.56 615.94 Tm
+(based) Tj
+1 0 0 1 344.16 615.94 Tm
+(higher) Tj
+1 0 0 1 371.64 615.94 Tm
+(education,) Tj
+1 0 0 1 415.08 615.94 Tm
+(with) Tj
+1 0 0 1 434.76 615.94 Tm
+(some) Tj
+1 0 0 1 457.799 615.94 Tm
+(brief) Tj
+1 0 0 1 478.679 615.94 Tm
+(comments) Tj
+1 0 0 1 521.639 615.94 Tm
+(about) Tj
+1 0 0 1 545.879 615.94 Tm
+(the) Tj
+1 0 0 1 319.56 605.02 Tm
+(courses) Tj
+1 0 0 1 351.84 605.02 Tm
+(described.) Tj
+1 0 0 1 395.64 605.02 Tm
+(The) Tj
+1 0 0 1 413.64 605.02 Tm
+(paper) Tj
+1 0 0 1 438.24 605.02 Tm
+(ends) Tj
+1 0 0 1 459 605.02 Tm
+(with) Tj
+1 0 0 1 479.159 605.02 Tm
+(short) Tj
+1 0 0 1 501.599 605.02 Tm
+(conclusions.) Tj
+/R6 11.9552 Tf
+1 0 0 1 381.12 581.02 Tm
+(The) Tj
+1 0 0 1 404.04 581.02 Tm
+(typical) Tj
+1 0 0 1 441.48 581.02 Tm
+(moti) Tj
+1 0 0 1 464.64 581.02 Tm
+(v) Tj
+1 0 0 1 470.52 581.02 Tm
+(ation) Tj
+/R9 9.96264 Tf
+1 0 0 1 319.56 566.02 Tm
+(Robotics) Tj
+1 0 0 1 357.72 566.02 Tm
+(is) Tj
+1 0 0 1 367.08 566.02 Tm
+(used) Tj
+1 0 0 1 388.08 566.02 Tm
+(in) Tj
+1 0 0 1 398.64 566.02 Tm
+(education) Tj
+1 0 0 1 440.04 566.02 Tm
+(in) Tj
+1 0 0 1 450.6 566.02 Tm
+(a) Tj
+1 0 0 1 457.68 566.02 Tm
+(v) Tj
+1 0 0 1 462.479 566.02 Tm
+(ariety) Tj
+1 0 0 1 487.919 566.02 Tm
+(of) Tj
+1 0 0 1 498.959 566.02 Tm
+(w) Tj
+1 0 0 1 506.039 566.02 Tm
+(ays) Tj
+1 0 0 1 522.119 566.02 Tm
+(and) Tj
+1 0 0 1 539.159 566.02 Tm
+(for) Tj
+1 0 0 1 553.559 566.02 Tm
+(a) Tj
+1 0 0 1 319.56 555.1 Tm
+(multitude) Tj
+1 0 0 1 360.6 555.1 Tm
+(of) Tj
+1 0 0 1 371.88 555.1 Tm
+(purposes.) Tj
+1 0 0 1 414.12 555.1 Tm
+(Ho) Tj
+1 0 0 1 426.12 555.1 Tm
+(we) Tj
+1 0 0 1 437.52 555.1 Tm
+(v) Tj
+1 0 0 1 442.44 555.1 Tm
+(er) Tj
+1 0 0 1 449.879 555.1 Tm
+(,) Tj
+1 0 0 1 455.159 555.1 Tm
+(one) Tj
+1 0 0 1 472.439 555.1 Tm
+(can) Tj
+1 0 0 1 489.239 555.1 Tm
+(probably) Tj
+1 0 0 1 527.519 555.1 Tm
+(classify) Tj
+1 0 0 1 319.56 544.18 Tm
+(the) Tj
+1 0 0 1 334.32 544.18 Tm
+(w) Tj
+1 0 0 1 341.4 544.18 Tm
+(ay) Tj
+1 0 0 1 353.4 544.18 Tm
+(such) Tj
+1 0 0 1 374.28 544.18 Tm
+(use) Tj
+1 0 0 1 390.12 544.18 Tm
+(is) Tj
+1 0 0 1 399.36 544.18 Tm
+(moti) Tj
+1 0 0 1 417.48 544.18 Tm
+(v) Tj
+1 0 0 1 422.28 544.18 Tm
+(ated) Tj
+1 0 0 1 441.359 544.18 Tm
+(into) Tj
+1 0 0 1 459.359 544.18 Tm
+(one) Tj
+1 0 0 1 476.399 544.18 Tm
+(of) Tj
+1 0 0 1 487.319 544.18 Tm
+(the) Tj
+1 0 0 1 502.079 544.18 Tm
+(follo) Tj
+1 0 0 1 520.799 544.18 Tm
+(wing) Tj
+1 0 0 1 543.119 544.18 Tm
+(tw) Tj
+1 0 0 1 552.959 544.18 Tm
+(o) Tj
+1 0 0 1 319.56 533.14 Tm
+(\(fortunately) Tj
+1 0 0 1 369 533.14 Tm
+(o) Tj
+1 0 0 1 373.92 533.14 Tm
+(v) Tj
+1 0 0 1 378.84 533.14 Tm
+(erlapping) Tj
+1 0 0 1 418.8 533.14 Tm
+(to) Tj
+1 0 0 1 429 533.14 Tm
+(a) Tj
+1 0 0 1 435.96 533.14 Tm
+(lar) Tj
+1 0 0 1 446.399 533.14 Tm
+(ge) Tj
+1 0 0 1 458.159 533.14 Tm
+(e) Tj
+1 0 0 1 462.479 533.14 Tm
+(xtent\)) Tj
+1 0 0 1 488.159 533.14 Tm
+(classes:) Tj
+1 0 0 1 317.04 517.54 Tm
+(1.) Tj
+1 0 0 1 329.52 517.54 Tm
+(\252Robotics) Tj
+ET
+endstream
+endobj
+15 0 obj
+3384
+endobj
+16 0 obj
+<< /Type /Font /Name /R16 /Subtype /Type1 /BaseFont /Times-Italic >>
+endobj
+17 0 obj
+<< /Length 18 0 R >>
+stream
+BT
+/R16 9.96264 Tf
+1 0 0 1 373.08 517.54 Tm
+(in) Tj
+/R9 9.96264 Tf
+1 0 0 1 384.72 517.54 Tm
+(education\272:) Tj
+1 0 0 1 436.32 517.54 Tm
+(Robotics,) Tj
+1 0 0 1 478.439 517.54 Tm
+(besides) Tj
+1 0 0 1 511.559 517.54 Tm
+(being) Tj
+1 0 0 1 537.479 517.54 Tm
+(engi-) Tj
+1 0 0 1 329.52 506.62 Tm
+(neering) Tj
+1 0 0 1 362.16 506.62 Tm
+(and) Tj
+1 0 0 1 379.32 506.62 Tm
+(science,) Tj
+1 0 0 1 414 506.62 Tm
+(is) Tj
+1 0 0 1 423.48 506.62 Tm
+(fun.) Tj
+1 0 0 1 443.16 506.62 Tm
+(Let) Tj
+1 0 0 1 459.24 506.62 Tm
+(us) Tj
+1 0 0 1 470.88 506.62 Tm
+(con) Tj
+1 0 0 1 485.039 506.62 Tm
+(vince) Tj
+1 0 0 1 509.279 506.62 Tm
+(our) Tj
+1 0 0 1 525.359 506.62 Tm
+(students) Tj
+1 0 0 1 329.52 495.7 Tm
+(that) Tj
+1 0 0 1 346.32 495.7 Tm
+(indeed) Tj
+1 0 0 1 374.88 495.7 Tm
+(it) Tj
+1 0 0 1 382.44 495.7 Tm
+(is) Tj
+1 0 0 1 391.08 495.7 Tm
+(so) Tj
+1 0 0 1 401.88 495.7 Tm
+(and,) Tj
+1 0 0 1 420.84 495.7 Tm
+(besides) Tj
+1 0 0 1 452.039 495.7 Tm
+(that,) Tj
+1 0 0 1 471.599 495.7 Tm
+(teach) Tj
+1 0 0 1 494.639 495.7 Tm
+(them) Tj
+1 0 0 1 516.479 495.7 Tm
+(something) Tj
+1 0 0 1 329.52 484.66 Tm
+(useful.) Tj
+1 0 0 1 317.04 469.06 Tm
+(2.) Tj
+1 0 0 1 329.52 469.06 Tm
+(\252Robotics) Tj
+/R16 9.96264 Tf
+1 0 0 1 371.52 469.06 Tm
+(for) Tj
+/R9 9.96264 Tf
+1 0 0 1 385.44 469.06 Tm
+(education\272:) Tj
+1 0 0 1 434.28 469.06 Tm
+(Robotics) Tj
+1 0 0 1 471.959 469.06 Tm
+(is) Tj
+1 0 0 1 480.719 469.06 Tm
+(useful) Tj
+1 0 0 1 507.239 469.06 Tm
+(in) Tj
+1 0 0 1 517.079 469.06 Tm
+(the) Tj
+1 0 0 1 531.479 469.06 Tm
+(educa-) Tj
+1 0 0 1 329.52 458.14 Tm
+(tional) Tj
+1 0 0 1 354.96 458.14 Tm
+(process.) Tj
+1 0 0 1 391.56 458.14 Tm
+(Let) Tj
+1 0 0 1 407.76 458.14 Tm
+(us) Tj
+1 0 0 1 419.4 458.14 Tm
+(teach) Tj
+1 0 0 1 443.28 458.14 Tm
+(whate) Tj
+1 0 0 1 466.92 458.14 Tm
+(v) Tj
+1 0 0 1 471.84 458.14 Tm
+(er) Tj
+1 0 0 1 482.279 458.14 Tm
+(we) Tj
+1 0 0 1 496.799 458.14 Tm
+(ha) Tj
+1 0 0 1 506.039 458.14 Tm
+(v) Tj
+1 0 0 1 510.959 458.14 Tm
+(e) Tj
+1 0 0 1 518.039 458.14 Tm
+(to) Tj
+1 0 0 1 528.719 458.14 Tm
+(\(or) Tj
+1 0 0 1 543.119 458.14 Tm
+(lik) Tj
+1 0 0 1 553.559 458.14 Tm
+(e) Tj
+1 0 0 1 329.52 447.1 Tm
+(to\),) Tj
+1 0 0 1 345.48 447.1 Tm
+(b) Tj
+1 0 0 1 350.28 447.1 Tm
+(ut) Tj
+1 0 0 1 360.48 447.1 Tm
+(using) Tj
+1 0 0 1 384.6 447.1 Tm
+(robotics) Tj
+1 0 0 1 419.16 447.1 Tm
+(as) Tj
+1 0 0 1 429.96 447.1 Tm
+(one) Tj
+1 0 0 1 446.879 447.1 Tm
+(of) Tj
+1 0 0 1 457.679 447.1 Tm
+(the) Tj
+1 0 0 1 472.319 447.1 Tm
+(educational) Tj
+1 0 0 1 520.799 447.1 Tm
+(tools.) Tj
+1 0 0 1 319.56 431.5 Tm
+(Please) Tj
+1 0 0 1 348 431.5 Tm
+(note) Tj
+1 0 0 1 368.28 431.5 Tm
+(that) Tj
+1 0 0 1 386.28 431.5 Tm
+(the) Tj
+1 0 0 1 401.52 431.5 Tm
+(\256rst) Tj
+1 0 0 1 420.12 431.5 Tm
+(type) Tj
+1 0 0 1 440.4 431.5 Tm
+(of) Tj
+1 0 0 1 451.679 431.5 Tm
+(moti) Tj
+1 0 0 1 469.799 431.5 Tm
+(v) Tj
+1 0 0 1 474.599 431.5 Tm
+(ation,) Tj
+1 0 0 1 500.159 431.5 Tm
+(although) Tj
+1 0 0 1 538.079 431.5 Tm
+(quite) Tj
+1 0 0 1 319.56 420.58 Tm
+(common) Tj
+1 0 0 1 357.84 420.58 Tm
+(in) Tj
+1 0 0 1 369.12 420.58 Tm
+(personal) Tj
+1 0 0 1 406.44 420.58 Tm
+(communications,) Tj
+1 0 0 1 478.559 420.58 Tm
+(occurs) Tj
+1 0 0 1 508.079 420.58 Tm
+(v) Tj
+1 0 0 1 512.999 420.58 Tm
+(ery) Tj
+1 0 0 1 529.199 420.58 Tm
+(seldom) Tj
+1 0 0 1 319.56 409.66 Tm
+(in) Tj
+1 0 0 1 330.24 409.66 Tm
+(written) Tj
+1 0 0 1 361.44 409.66 Tm
+(form.) Tj
+1 0 0 1 387.84 409.66 Tm
+(But) Tj
+1 0 0 1 405.12 409.66 Tm
+(its) Tj
+1 0 0 1 417.6 409.66 Tm
+(importance) Tj
+1 0 0 1 465.359 409.66 Tm
+(shouldn') Tj
+1 0 0 1 500.399 409.66 Tm
+(t) Tj
+1 0 0 1 505.799 409.66 Tm
+(be) Tj
+1 0 0 1 518.159 409.66 Tm
+(underesti-) Tj
+1 0 0 1 319.56 398.62 Tm
+(mated.) Tj
+1 0 0 1 329.52 387.34 Tm
+(The) Tj
+1 0 0 1 347.76 387.34 Tm
+(\256rst) Tj
+1 0 0 1 366 387.34 Tm
+(statements) Tj
+1 0 0 1 410.88 387.34 Tm
+(is) Tj
+1 0 0 1 420.36 387.34 Tm
+(hardly) Tj
+1 0 0 1 448.56 387.34 Tm
+(debatable,) Tj
+1 0 0 1 492.119 387.34 Tm
+(especially) Tj
+1 0 0 1 534.719 387.34 Tm
+(if) Tj
+1 0 0 1 543.599 387.34 Tm
+(one) Tj
+1 0 0 1 319.56 376.42 Tm
+(is) Tj
+1 0 0 1 329.52 376.42 Tm
+(a) Tj
+1 0 0 1 337.32 376.42 Tm
+(roboticist.) Tj
+1 0 0 1 383.04 376.42 Tm
+(But) Tj
+1 0 0 1 400.8 376.42 Tm
+(\252fun\272) Tj
+1 0 0 1 426.36 376.42 Tm
+(is) Tj
+1 0 0 1 436.319 376.42 Tm
+(not) Tj
+1 0 0 1 452.399 376.42 Tm
+(a) Tj
+1 0 0 1 460.199 376.42 Tm
+(suf) Tj
+1 0 0 1 472.199 376.42 Tm
+(\256cient) Tj
+1 0 0 1 500.399 376.42 Tm
+(moti) Tj
+1 0 0 1 518.519 376.42 Tm
+(v) Tj
+1 0 0 1 523.319 376.42 Tm
+(ation) Tj
+1 0 0 1 546.359 376.42 Tm
+(for) Tj
+1 0 0 1 319.56 365.5 Tm
+(including) Tj
+1 0 0 1 361.2 365.5 Tm
+(a) Tj
+1 0 0 1 369.6 365.5 Tm
+(topic) Tj
+1 0 0 1 393.48 365.5 Tm
+(in) Tj
+1 0 0 1 405.24 365.5 Tm
+(a) Tj
+1 0 0 1 413.64 365.5 Tm
+(curriculum.) Tj
+1 0 0 1 467.519 365.5 Tm
+(Our) Tj
+1 0 0 1 487.079 365.5 Tm
+(sponsors) Tj
+1 0 0 1 525.959 365.5 Tm
+(\(usually) Tj
+1 0 0 1 319.56 354.46 Tm
+(colle) Tj
+1 0 0 1 338.88 354.46 Tm
+(ge) Tj
+1 0 0 1 351.6 354.46 Tm
+(or) Tj
+1 0 0 1 363.48 354.46 Tm
+(uni) Tj
+1 0 0 1 376.08 354.46 Tm
+(v) Tj
+1 0 0 1 381 354.46 Tm
+(ersity) Tj
+1 0 0 1 406.44 354.46 Tm
+(authorities\)) Tj
+1 0 0 1 455.279 354.46 Tm
+(need) Tj
+1 0 0 1 477.599 354.46 Tm
+(more) Tj
+1 0 0 1 501.599 354.46 Tm
+(ar) Tj
+1 0 0 1 509.279 354.46 Tm
+(guments) Tj
+1 0 0 1 546.359 354.46 Tm
+(for) Tj
+1 0 0 1 319.56 343.54 Tm
+(accepting) Tj
+1 0 0 1 360.24 343.54 Tm
+(a) Tj
+1 0 0 1 367.2 343.54 Tm
+(ne) Tj
+1 0 0 1 376.44 343.54 Tm
+(w) Tj
+1 0 0 1 386.04 343.54 Tm
+(course) Tj
+1 0 0 1 414.6 343.54 Tm
+(as) Tj
+1 0 0 1 425.52 343.54 Tm
+(useful) Tj
+1 0 0 1 452.4 343.54 Tm
+(from) Tj
+1 0 0 1 474.359 343.54 Tm
+(the) Tj
+1 0 0 1 488.999 343.54 Tm
+(educational) Tj
+1 0 0 1 537.479 343.54 Tm
+(point) Tj
+1 0 0 1 319.56 332.62 Tm
+(of) Tj
+1 0 0 1 329.76 332.62 Tm
+(vie) Tj
+1 0 0 1 341.76 332.62 Tm
+(w) Tj
+1 0 0 1 348.36 332.62 Tm
+(.) Tj
+1 0 0 1 353.64 332.62 Tm
+(Therefore) Tj
+1 0 0 1 394.92 332.62 Tm
+(we) Tj
+1 0 0 1 408.6 332.62 Tm
+(usually) Tj
+1 0 0 1 439.32 332.62 Tm
+(rephrase) Tj
+1 0 0 1 475.079 332.62 Tm
+(it) Tj
+1 0 0 1 482.519 332.62 Tm
+(in) Tj
+1 0 0 1 492.359 332.62 Tm
+(the) Tj
+1 0 0 1 506.519 332.62 Tm
+(second) Tj
+1 0 0 1 536.159 332.62 Tm
+(form,) Tj
+1 0 0 1 319.56 321.58 Tm
+(independently) Tj
+1 0 0 1 378.48 321.58 Tm
+(on) Tj
+1 0 0 1 390.84 321.58 Tm
+(the) Tj
+1 0 0 1 405.6 321.58 Tm
+(actual) Tj
+1 0 0 1 431.88 321.58 Tm
+(moti) Tj
+1 0 0 1 450 321.58 Tm
+(v) Tj
+1 0 0 1 454.8 321.58 Tm
+(ation.) Tj
+1 0 0 1 329.52 310.3 Tm
+(Ho) Tj
+1 0 0 1 341.52 310.3 Tm
+(we) Tj
+1 0 0 1 352.92 310.3 Tm
+(v) Tj
+1 0 0 1 357.84 310.3 Tm
+(er) Tj
+1 0 0 1 365.28 310.3 Tm
+(,) Tj
+1 0 0 1 371.04 310.3 Tm
+(the) Tj
+1 0 0 1 386.64 310.3 Tm
+(second) Tj
+1 0 0 1 417.72 310.3 Tm
+(claim) Tj
+1 0 0 1 443.28 310.3 Tm
+(needs) Tj
+1 0 0 1 469.32 310.3 Tm
+(justi\256cation.) Tj
+1 0 0 1 524.759 310.3 Tm
+(There) Tj
+1 0 0 1 551.399 310.3 Tm
+(is) Tj
+1 0 0 1 319.56 299.38 Tm
+(little) Tj
+1 0 0 1 339.72 299.38 Tm
+(doubt) Tj
+1 0 0 1 364.44 299.38 Tm
+(that) Tj
+1 0 0 1 381.24 299.38 Tm
+(playing) Tj
+1 0 0 1 413.16 299.38 Tm
+(with) Tj
+1 0 0 1 432.84 299.38 Tm
+(robots) Tj
+1 0 0 1 459.719 299.38 Tm
+(is) Tj
+1 0 0 1 468.239 299.38 Tm
+(fun.) Tj
+1 0 0 1 486.959 299.38 Tm
+(It) Tj
+1 0 0 1 494.999 299.38 Tm
+(is) Tj
+1 0 0 1 503.639 299.38 Tm
+(v) Tj
+1 0 0 1 508.559 299.38 Tm
+(ery) Tj
+1 0 0 1 523.079 299.38 Tm
+(common) Tj
+1 0 0 1 319.56 288.46 Tm
+(that) Tj
+1 0 0 1 336.6 288.46 Tm
+(students) Tj
+1 0 0 1 371.4 288.46 Tm
+(get) Tj
+1 0 0 1 385.68 288.46 Tm
+(enthusiastic) Tj
+1 0 0 1 434.88 288.46 Tm
+(about) Tj
+1 0 0 1 459.119 288.46 Tm
+(robot-based) Tj
+1 0 0 1 508.319 288.46 Tm
+(courses.) Tj
+1 0 0 1 543.599 288.46 Tm
+(But) Tj
+1 0 0 1 319.56 277.42 Tm
+(pro) Tj
+1 0 0 1 332.88 277.42 Tm
+(ving) Tj
+1 0 0 1 352.32 277.42 Tm
+(that) Tj
+1 0 0 1 369.12 277.42 Tm
+(robots) Tj
+1 0 0 1 396 277.42 Tm
+(are) Tj
+1 0 0 1 410.04 277.42 Tm
+(useful) Tj
+1 0 0 1 436.32 277.42 Tm
+(in) Tj
+1 0 0 1 446.039 277.42 Tm
+(a) Tj
+1 0 0 1 452.399 277.42 Tm
+(particular) Tj
+1 0 0 1 492.479 277.42 Tm
+(educational) Tj
+1 0 0 1 540.239 277.42 Tm
+(con-) Tj
+1 0 0 1 319.56 266.5 Tm
+(te) Tj
+1 0 0 1 326.64 266.5 Tm
+(xt) Tj
+1 0 0 1 336.48 266.5 Tm
+(is) Tj
+1 0 0 1 345.36 266.5 Tm
+(much) Tj
+1 0 0 1 369.6 266.5 Tm
+(harder) Tj
+1 0 0 1 397.2 266.5 Tm
+(than) Tj
+1 0 0 1 416.64 266.5 Tm
+(that.) Tj
+1 0 0 1 437.039 266.5 Tm
+(What) Tj
+1 0 0 1 460.799 266.5 Tm
+(we) Tj
+1 0 0 1 474.599 266.5 Tm
+(need) Tj
+1 0 0 1 495.599 266.5 Tm
+(is) Tj
+1 0 0 1 504.359 266.5 Tm
+(hard) Tj
+1 0 0 1 524.279 266.5 Tm
+(data) Tj
+1 0 0 1 542.999 266.5 Tm
+(that) Tj
+1 0 0 1 319.56 255.58 Tm
+(can) Tj
+1 0 0 1 337.2 255.58 Tm
+(be) Tj
+1 0 0 1 350.4 255.58 Tm
+(used) Tj
+1 0 0 1 372.48 255.58 Tm
+(to) Tj
+1 0 0 1 384.12 255.58 Tm
+(support) Tj
+1 0 0 1 417.84 255.58 Tm
+(the) Tj
+1 0 0 1 433.92 255.58 Tm
+(thesis) Tj
+1 0 0 1 460.44 255.58 Tm
+(that) Tj
+1 0 0 1 479.159 255.58 Tm
+(a) Tj
+1 0 0 1 487.439 255.58 Tm
+(particular) Tj
+1 0 0 1 529.559 255.58 Tm
+(course,) Tj
+1 0 0 1 319.56 244.54 Tm
+(with) Tj
+1 0 0 1 341.04 244.54 Tm
+(a) Tj
+1 0 0 1 349.2 244.54 Tm
+(gi) Tj
+1 0 0 1 356.76 244.54 Tm
+(v) Tj
+1 0 0 1 361.68 244.54 Tm
+(en) Tj
+1 0 0 1 374.76 244.54 Tm
+(educational) Tj
+1 0 0 1 424.44 244.54 Tm
+(goal,) Tj
+1 0 0 1 448.2 244.54 Tm
+(indeed) Tj
+1 0 0 1 478.439 244.54 Tm
+(bene\256ts) Tj
+1 0 0 1 513.239 244.54 Tm
+(from) Tj
+1 0 0 1 536.399 244.54 Tm
+(using) Tj
+1 0 0 1 319.56 233.62 Tm
+(our) Tj
+1 0 0 1 335.28 233.62 Tm
+(f) Tj
+1 0 0 1 338.52 233.62 Tm
+(a) Tj
+1 0 0 1 342.72 233.62 Tm
+(v) Tj
+1 0 0 1 347.52 233.62 Tm
+(orite) Tj
+1 0 0 1 368.28 233.62 Tm
+(approach.) Tj
+/R6 11.9552 Tf
+1 0 0 1 383.4 209.62 Tm
+(Ho) Tj
+1 0 0 1 398.64 209.62 Tm
+(w) Tj
+1 0 0 1 410.16 209.62 Tm
+(ar) Tj
+1 0 0 1 421.2 209.62 Tm
+(e) Tj
+1 0 0 1 429.6 209.62 Tm
+(r) Tj
+1 0 0 1 434.64 209.62 Tm
+(obots) Tj
+1 0 0 1 464.88 209.62 Tm
+(used?) Tj
+/R9 9.96264 Tf
+1 0 0 1 319.56 194.74 Tm
+(In) Tj
+1 0 0 1 330.24 194.74 Tm
+(this) Tj
+1 0 0 1 347.16 194.74 Tm
+(section) Tj
+1 0 0 1 377.88 194.74 Tm
+(we) Tj
+1 0 0 1 391.92 194.74 Tm
+(w) Tj
+1 0 0 1 399 194.74 Tm
+(ould) Tj
+1 0 0 1 419.16 194.74 Tm
+(lik) Tj
+1 0 0 1 429.6 194.74 Tm
+(e) Tj
+1 0 0 1 436.44 194.74 Tm
+(to) Tj
+1 0 0 1 446.759 194.74 Tm
+(pro) Tj
+1 0 0 1 460.079 194.74 Tm
+(vide) Tj
+1 0 0 1 479.519 194.74 Tm
+(an) Tj
+1 0 0 1 491.279 194.74 Tm
+(o) Tj
+1 0 0 1 496.199 194.74 Tm
+(v) Tj
+1 0 0 1 501.119 194.74 Tm
+(ervie) Tj
+1 0 0 1 520.919 194.74 Tm
+(w) Tj
+1 0 0 1 530.279 194.74 Tm
+(of) Tj
+1 0 0 1 541.079 194.74 Tm
+(ho) Tj
+1 0 0 1 550.919 194.74 Tm
+(w) Tj
+1 0 0 1 319.56 183.7 Tm
+(robots) Tj
+1 0 0 1 347.04 183.7 Tm
+(are) Tj
+1 0 0 1 361.92 183.7 Tm
+(used) Tj
+1 0 0 1 382.8 183.7 Tm
+(in) Tj
+1 0 0 1 393.24 183.7 Tm
+(colle) Tj
+1 0 0 1 412.56 183.7 Tm
+(ge-le) Tj
+1 0 0 1 432.36 183.7 Tm
+(v) Tj
+1 0 0 1 437.28 183.7 Tm
+(el) Tj
+1 0 0 1 446.76 183.7 Tm
+(education.) Tj
+1 0 0 1 491.639 183.7 Tm
+(The) Tj
+1 0 0 1 509.759 183.7 Tm
+(list) Tj
+1 0 0 1 524.639 183.7 Tm
+(belo) Tj
+1 0 0 1 541.679 183.7 Tm
+(w) Tj
+1 0 0 1 551.399 183.7 Tm
+(is) Tj
+1 0 0 1 319.56 172.78 Tm
+(not) Tj
+1 0 0 1 335.04 172.78 Tm
+(intended) Tj
+1 0 0 1 372.12 172.78 Tm
+(to) Tj
+1 0 0 1 382.68 172.78 Tm
+(be) Tj
+1 0 0 1 394.92 172.78 Tm
+(complete,) Tj
+1 0 0 1 436.8 172.78 Tm
+(b) Tj
+1 0 0 1 441.6 172.78 Tm
+(ut) Tj
+1 0 0 1 452.16 172.78 Tm
+(should) Tj
+1 0 0 1 481.559 172.78 Tm
+(rather) Tj
+1 0 0 1 507.599 172.78 Tm
+(be) Tj
+1 0 0 1 519.839 172.78 Tm
+(treated) Tj
+1 0 0 1 549.719 172.78 Tm
+(as) Tj
+1 0 0 1 319.56 161.86 Tm
+(an) Tj
+1 0 0 1 331.92 161.86 Tm
+(in) Tj
+1 0 0 1 339.36 161.86 Tm
+(v) Tj
+1 0 0 1 344.28 161.86 Tm
+(entory) Tj
+1 0 0 1 372.6 161.86 Tm
+(of) Tj
+1 0 0 1 383.88 161.86 Tm
+(typical) Tj
+1 0 0 1 414 161.86 Tm
+(uses.) Tj
+1 0 0 1 438.24 161.86 Tm
+(This) Tj
+1 0 0 1 458.999 161.86 Tm
+(technical) Tj
+1 0 0 1 497.999 161.86 Tm
+(report) Tj
+1 0 0 1 524.759 161.86 Tm
+(contains) Tj
+1 0 0 1 319.56 150.82 Tm
+(man) Tj
+1 0 0 1 336.72 150.82 Tm
+(y) Tj
+1 0 0 1 344.28 150.82 Tm
+(more) Tj
+1 0 0 1 367.44 150.82 Tm
+(e) Tj
+1 0 0 1 371.76 150.82 Tm
+(xamples) Tj
+1 0 0 1 407.76 150.82 Tm
+(from) Tj
+1 0 0 1 429.84 150.82 Tm
+(each) Tj
+1 0 0 1 450.84 150.82 Tm
+(of) Tj
+1 0 0 1 461.879 150.82 Tm
+(the) Tj
+1 0 0 1 476.879 150.82 Tm
+(cate) Tj
+1 0 0 1 492.839 150.82 Tm
+(gories) Tj
+1 0 0 1 519.839 150.82 Tm
+(and) Tj
+1 0 0 1 536.999 150.82 Tm
+(some) Tj
+1 0 0 1 319.56 139.9 Tm
+(other) Tj
+1 0 0 1 342.48 139.9 Tm
+(as) Tj
+1 0 0 1 353.28 139.9 Tm
+(well.) Tj
+ET
+Q
+endstream
+endobj
+18 0 obj
+11994
+endobj
+3 0 obj
+<<
+/Type /Page
+/MediaBox [0 0 595 842]
+/Parent 2 0 R
+/Resources << /ProcSet [/PDF /ImageB /Text]
+/Font <<
+/R16 16 0 R
+/R9 9 0 R
+/R6 6 0 R
+>>
+/XObject <<
+/R12 12 0 R
+>>
+>>
+/Contents [
+4 0 R
+7 0 R
+10 0 R
+14 0 R
+17 0 R
+]
+>>
+endobj
+20 0 obj
+<< /Length 21 0 R >>
+stream
+q
+endstream
+endobj
+21 0 obj
+2
+endobj
+22 0 obj
+<< /Type /XObject /Name /R22 /Subtype /Image /Length 23 0 R
+/ImageMask true /Width 39 /Height 38 /BitsPerComponent 1 /Decode [1 0] /Filter [/CCITTFaxDecode] /DecodeParms [<< /K -1 /Columns 39 /BlackIs1 true >>]
+>>
+stream
+:ìÜzpÅ˙pù?OˇAˇˇ˚ˇk⁄’®`≠NÅ| @
+endstream
+endobj
+23 0 obj
+33
+endobj
+24 0 obj
+<< /Length 25 0 R >>
+stream
+q
+3.9 0 0 -3.8 54.5 782.4 cm
+/R22 Do
+Q
+endstream
+endobj
+25 0 obj
+39
+endobj
+26 0 obj
+<< /Type /Font /Name /R26 /Subtype /Type1 /BaseFont /Times-Bold >>
+endobj
+27 0 obj
+<< /Length 28 0 R >>
+stream
+BT
+/R26 9.96264 Tf
+1 0 0 1 63.96 777.94 Tm
+(Design) Tj
+ET
+endstream
+endobj
+28 0 obj
+58
+endobj
+29 0 obj
+<< /Type /Font /Name /R29 /Subtype /Type1 /BaseFont /Times-Roman >>
+endobj
+30 0 obj
+<< /Length 31 0 R >>
+stream
+BT
+/R29 9.96264 Tf
+1 0 0 1 95.3999 777.94 Tm
+(\(considered) Tj
+1 0 0 1 144.48 777.94 Tm
+(to) Tj
+1 0 0 1 154.8 777.94 Tm
+(be) Tj
+1 0 0 1 166.8 777.94 Tm
+(the) Tj
+1 0 0 1 181.56 777.94 Tm
+(major) Tj
+1 0 0 1 207.36 777.94 Tm
+(engineering) Tj
+1 0 0 1 257.039 777.94 Tm
+(acti) Tj
+1 0 0 1 271.199 777.94 Tm
+(vity\).) Tj
+1 0 0 1 63.96 767.02 Tm
+(Man) Tj
+1 0 0 1 82.2 767.02 Tm
+(y) Tj
+1 0 0 1 90 767.02 Tm
+(courses,) Tj
+1 0 0 1 125.4 767.02 Tm
+(including) Tj
+1 0 0 1 166.08 767.02 Tm
+(the) Tj
+1 0 0 1 181.2 767.02 Tm
+(6.270,) Tj
+1 0 0 1 209.16 767.02 Tm
+(allo) Tj
+1 0 0 1 223.919 767.02 Tm
+(w) Tj
+1 0 0 1 233.999 767.02 Tm
+(the) Tj
+1 0 0 1 249.119 767.02 Tm
+(students) Tj
+1 0 0 1 284.759 767.02 Tm
+(to) Tj
+1 0 0 1 63.96 755.98 Tm
+(gather) Tj
+1 0 0 1 92.7599 755.98 Tm
+(hands-on) Tj
+1 0 0 1 133.32 755.98 Tm
+(e) Tj
+1 0 0 1 137.64 755.98 Tm
+(xperience) Tj
+1 0 0 1 180.36 755.98 Tm
+(of) Tj
+1 0 0 1 192.6 755.98 Tm
+(the) Tj
+1 0 0 1 208.8 755.98 Tm
+(design) Tj
+1 0 0 1 238.8 755.98 Tm
+(w) Tj
+1 0 0 1 245.879 755.98 Tm
+(ork.) Tj
+1 0 0 1 269.279 755.98 Tm
+(There) Tj
+1 0 0 1 63.96 745.06 Tm
+(is) Tj
+1 0 0 1 74.64 745.06 Tm
+(v) Tj
+1 0 0 1 79.44 745.06 Tm
+(ast) Tj
+1 0 0 1 94.3199 745.06 Tm
+(literature) Tj
+1 0 0 1 134.28 745.06 Tm
+(on) Tj
+1 0 0 1 148.2 745.06 Tm
+(this) Tj
+1 0 0 1 166.56 745.06 Tm
+(topic,) Tj
+1 0 0 1 193.32 745.06 Tm
+(be) Tj
+1 0 0 1 202.679 745.06 Tm
+(ginning) Tj
+1 0 0 1 236.999 745.06 Tm
+(with) Tj
+1 0 0 1 258.719 745.06 Tm
+(Martin') Tj
+1 0 0 1 288.719 745.06 Tm
+(s) Tj
+1 0 0 1 63.96 734.14 Tm
+(PhD) Tj
+1 0 0 1 84.6 734.14 Tm
+(thesis) Tj
+1 0 0 1 110.16 734.14 Tm
+(\(Martin) Tj
+1 0 0 1 143.4 734.14 Tm
+(1994\),) Tj
+1 0 0 1 172.2 734.14 Tm
+(and) Tj
+1 0 0 1 189.48 734.14 Tm
+(describing) Tj
+1 0 0 1 233.759 734.14 Tm
+(design) Tj
+1 0 0 1 262.679 734.14 Tm
+(\(in) Tj
+1 0 0 1 276.599 734.14 Tm
+(par) Tj
+1 0 0 1 289.199 734.14 Tm
+(-) Tj
+1 0 0 1 63.96 723.1 Tm
+(ticular) Tj
+1 0 0 1 92.6399 723.1 Tm
+(engineering) Tj
+1 0 0 1 142.92 723.1 Tm
+(design\)) Tj
+1 0 0 1 175.44 723.1 Tm
+(at) Tj
+1 0 0 1 185.76 723.1 Tm
+(v) Tj
+1 0 0 1 190.56 723.1 Tm
+(arious) Tj
+1 0 0 1 218.04 723.1 Tm
+(le) Tj
+1 0 0 1 225 723.1 Tm
+(v) Tj
+1 0 0 1 229.92 723.1 Tm
+(el) Tj
+1 0 0 1 240.239 723.1 Tm
+(of) Tj
+1 0 0 1 251.759 723.1 Tm
+(detail,) Tj
+1 0 0 1 279.719 723.1 Tm
+(see) Tj
+1 0 0 1 63.96 712.18 Tm
+(e.g.) Tj
+1 0 0 1 81.6 712.18 Tm
+(\(Beer) Tj
+1 0 0 1 103.44 712.18 Tm
+(,) Tj
+1 0 0 1 109.2 712.18 Tm
+(Chiel,) Tj
+1 0 0 1 136.56 712.18 Tm
+(&) Tj
+1 0 0 1 147.6 712.18 Tm
+(Drushel) Tj
+1 0 0 1 182.28 712.18 Tm
+(1999\).) Tj
+1 0 0 1 213.24 712.18 Tm
+(I) Tj
+1 0 0 1 219.839 712.18 Tm
+(do) Tj
+1 0 0 1 232.919 712.18 Tm
+(not) Tj
+1 0 0 1 248.879 712.18 Tm
+(think) Tj
+1 0 0 1 272.639 712.18 Tm
+(there) Tj
+1 0 0 1 63.96 701.26 Tm
+(are) Tj
+1 0 0 1 78.3599 701.26 Tm
+(an) Tj
+1 0 0 1 87.7199 701.26 Tm
+(y) Tj
+1 0 0 1 94.9198 701.26 Tm
+(doubts) Tj
+1 0 0 1 123.72 701.26 Tm
+(about) Tj
+1 0 0 1 148.08 701.26 Tm
+(the) Tj
+1 0 0 1 162.48 701.26 Tm
+(utility) Tj
+1 0 0 1 188.639 701.26 Tm
+(of) Tj
+1 0 0 1 199.079 701.26 Tm
+(robotics) Tj
+1 0 0 1 233.519 701.26 Tm
+(in) Tj
+1 0 0 1 243.479 701.26 Tm
+(such) Tj
+1 0 0 1 263.999 701.26 Tm
+(course.) Tj
+ET
+q
+3.9 0 0 -3.8 54.5 691 cm
+/R22 Do
+Q
+BT
+/R26 9.96264 Tf
+1 0 0 1 63.96 686.5 Tm
+(T) Tj
+1 0 0 1 69.6 686.5 Tm
+(eamw) Tj
+1 0 0 1 94.4399 686.5 Tm
+(ork) Tj
+/R29 9.96264 Tf
+1 0 0 1 111.72 686.5 Tm
+(\(considered) Tj
+1 0 0 1 160.44 686.5 Tm
+(as) Tj
+1 0 0 1 171.12 686.5 Tm
+(the) Tj
+1 0 0 1 185.52 686.5 Tm
+(major) Tj
+1 0 0 1 211.08 686.5 Tm
+(engineering) Tj
+1 0 0 1 260.399 686.5 Tm
+(capabil-) Tj
+1 0 0 1 63.96 675.58 Tm
+(ity\).) Tj
+1 0 0 1 85.7999 675.58 Tm
+(As) Tj
+1 0 0 1 100.08 675.58 Tm
+(in) Tj
+1 0 0 1 111.12 675.58 Tm
+(the) Tj
+1 0 0 1 126.6 675.58 Tm
+(case) Tj
+1 0 0 1 147 675.58 Tm
+(of) Tj
+1 0 0 1 158.64 675.58 Tm
+(design) Tj
+1 0 0 1 187.92 675.58 Tm
+(abo) Tj
+1 0 0 1 202.32 675.58 Tm
+(v) Tj
+1 0 0 1 207.239 675.58 Tm
+(e,) Tj
+1 0 0 1 217.319 675.58 Tm
+(there) Tj
+1 0 0 1 240.599 675.58 Tm
+(is) Tj
+1 0 0 1 250.439 675.58 Tm
+(no) Tj
+1 0 0 1 263.759 675.58 Tm
+(contro-) Tj
+1 0 0 1 63.96 664.54 Tm
+(v) Tj
+1 0 0 1 68.88 664.54 Tm
+(ersy) Tj
+1 0 0 1 87.8399 664.54 Tm
+(about) Tj
+1 0 0 1 112.56 664.54 Tm
+(using) Tj
+1 0 0 1 136.68 664.54 Tm
+(robotics) Tj
+1 0 0 1 171.24 664.54 Tm
+(projects) Tj
+1 0 0 1 205.319 664.54 Tm
+(for) Tj
+1 0 0 1 219.479 664.54 Tm
+(enhancing) Tj
+1 0 0 1 262.919 664.54 Tm
+(the) Tj
+1 0 0 1 277.559 664.54 Tm
+(stu-) Tj
+1 0 0 1 63.96 653.62 Tm
+(dents') Tj
+1 0 0 1 90.8399 653.62 Tm
+(teamw) Tj
+1 0 0 1 117.36 653.62 Tm
+(ork) Tj
+1 0 0 1 133.08 653.62 Tm
+(capabilities.) Tj
+ET
+q
+3.9 0 0 -3.8 54.5 643.5 cm
+/R22 Do
+Q
+BT
+1 0 0 1 63.96 638.98 Tm
+(An) Tj
+1 0 0 1 78.4799 638.98 Tm
+(introductory) Tj
+1 0 0 1 130.2 638.98 Tm
+(course) Tj
+1 0 0 1 158.52 638.98 Tm
+(in) Tj
+/R26 9.96264 Tf
+1 0 0 1 168.72 638.98 Tm
+(Electrical) Tj
+1 0 0 1 212.039 638.98 Tm
+(Engineering) Tj
+/R29 9.96264 Tf
+1 0 0 1 266.519 638.98 Tm
+(\(Com-) Tj
+1 0 0 1 63.96 627.94 Tm
+(puter) Tj
+1 0 0 1 87.5999 627.94 Tm
+(Science,) Tj
+1 0 0 1 124.44 627.94 Tm
+(Control\).) Tj
+1 0 0 1 165.84 627.94 Tm
+(Here) Tj
+1 0 0 1 188.4 627.94 Tm
+(the) Tj
+1 0 0 1 203.76 627.94 Tm
+(students) Tj
+1 0 0 1 239.639 627.94 Tm
+(use) Tj
+1 0 0 1 256.079 627.94 Tm
+(robots) Tj
+1 0 0 1 284.159 627.94 Tm
+(as) Tj
+1 0 0 1 63.96 617.02 Tm
+(yet) Tj
+1 0 0 1 79.9199 617.02 Tm
+(another) Tj
+1 0 0 1 113.52 617.02 Tm
+(kind) Tj
+1 0 0 1 134.88 617.02 Tm
+(of) Tj
+1 0 0 1 147 617.02 Tm
+(artif) Tj
+1 0 0 1 163.56 617.02 Tm
+(act) Tj
+1 0 0 1 178.8 617.02 Tm
+(e) Tj
+1 0 0 1 183.12 617.02 Tm
+(x) Tj
+1 0 0 1 188.04 617.02 Tm
+(emplifying) Tj
+1 0 0 1 235.319 617.02 Tm
+(the) Tj
+1 0 0 1 251.279 617.02 Tm
+(ideas) Tj
+1 0 0 1 275.519 617.02 Tm
+(the) Tj
+1 0 0 1 287.639 617.02 Tm
+(y) Tj
+1 0 0 1 63.96 606.1 Tm
+(learn) Tj
+1 0 0 1 86.9999 606.1 Tm
+(during) Tj
+1 0 0 1 116.04 606.1 Tm
+(the) Tj
+1 0 0 1 131.28 606.1 Tm
+(course.) Tj
+1 0 0 1 164.64 606.1 Tm
+(Here) Tj
+1 0 0 1 187.08 606.1 Tm
+(b) Tj
+1 0 0 1 191.88 606.1 Tm
+(uilding) Tj
+1 0 0 1 223.199 606.1 Tm
+(a) Tj
+1 0 0 1 230.639 606.1 Tm
+(robot) Tj
+1 0 0 1 254.759 606.1 Tm
+(is) Tj
+1 0 0 1 264.479 606.1 Tm
+(not) Tj
+1 0 0 1 280.319 606.1 Tm
+(the) Tj
+1 0 0 1 63.96 595.06 Tm
+(goal) Tj
+1 0 0 1 84.3599 595.06 Tm
+(of) Tj
+1 0 0 1 95.7599 595.06 Tm
+(a) Tj
+1 0 0 1 103.44 595.06 Tm
+(project,) Tj
+1 0 0 1 136.92 595.06 Tm
+(b) Tj
+1 0 0 1 141.72 595.06 Tm
+(ut) Tj
+1 0 0 1 152.64 595.06 Tm
+(may) Tj
+1 0 0 1 173.04 595.06 Tm
+(be) Tj
+1 0 0 1 185.64 595.06 Tm
+(a) Tj
+1 0 0 1 193.32 595.06 Tm
+(medium) Tj
+1 0 0 1 229.079 595.06 Tm
+(for) Tj
+1 0 0 1 243.959 595.06 Tm
+(learning) Tj
+1 0 0 1 279.719 595.06 Tm
+(ba-) Tj
+1 0 0 1 63.96 584.14 Tm
+(sics) Tj
+1 0 0 1 81.7199 584.14 Tm
+(of) Tj
+1 0 0 1 92.8799 584.14 Tm
+(circuit) Tj
+1 0 0 1 121.08 584.14 Tm
+(theory) Tj
+1 0 0 1 146.16 584.14 Tm
+(,) Tj
+1 0 0 1 151.32 584.14 Tm
+(introduction) Tj
+1 0 0 1 202.92 584.14 Tm
+(to) Tj
+1 0 0 1 213.48 584.14 Tm
+(control,) Tj
+1 0 0 1 247.079 584.14 Tm
+(basing) Tj
+1 0 0 1 275.879 584.14 Tm
+(pro-) Tj
+1 0 0 1 63.96 573.22 Tm
+(gramming) Tj
+1 0 0 1 108.72 573.22 Tm
+(concepts,) Tj
+1 0 0 1 150.36 573.22 Tm
+(etc.) Tj
+1 0 0 1 171.6 573.22 Tm
+(Usually) Tj
+1 0 0 1 206.4 573.22 Tm
+(the) Tj
+1 0 0 1 222.479 573.22 Tm
+(students) Tj
+1 0 0 1 258.959 573.22 Tm
+(are) Tj
+1 0 0 1 274.919 573.22 Tm
+(v) Tj
+1 0 0 1 279.839 573.22 Tm
+(ery) Tj
+1 0 0 1 63.96 562.18 Tm
+(glad) Tj
+1 0 0 1 84.2399 562.18 Tm
+(of) Tj
+1 0 0 1 95.6398 562.18 Tm
+(being) Tj
+1 0 0 1 120.84 562.18 Tm
+(able) Tj
+1 0 0 1 140.64 562.18 Tm
+(to) Tj
+1 0 0 1 151.44 562.18 Tm
+(use) Tj
+1 0 0 1 167.88 562.18 Tm
+(\252real) Tj
+1 0 0 1 190.32 562.18 Tm
+(robots\272) Tj
+1 0 0 1 222.719 562.18 Tm
+(instead) Tj
+1 0 0 1 254.039 562.18 Tm
+(of) Tj
+1 0 0 1 265.439 562.18 Tm
+(w) Tj
+1 0 0 1 272.519 562.18 Tm
+(atch-) Tj
+1 0 0 1 63.96 551.26 Tm
+(ing) Tj
+1 0 0 1 79.3199 551.26 Tm
+(yet) Tj
+1 0 0 1 93.9599 551.26 Tm
+(another) Tj
+1 0 0 1 126.48 551.26 Tm
+(simulation) Tj
+1 0 0 1 171.12 551.26 Tm
+(on) Tj
+1 0 0 1 183.6 551.26 Tm
+(the) Tj
+1 0 0 1 198.359 551.26 Tm
+(computer) Tj
+1 0 0 1 238.559 551.26 Tm
+(screen.) Tj
+1 0 0 1 269.759 551.26 Tm
+(Some) Tj
+1 0 0 1 63.96 540.34 Tm
+(statements) Tj
+1 0 0 1 109.68 540.34 Tm
+(though) Tj
+1 0 0 1 141.12 540.34 Tm
+(about) Tj
+1 0 0 1 166.92 540.34 Tm
+(such) Tj
+1 0 0 1 188.88 540.34 Tm
+(courses,) Tj
+1 0 0 1 225.36 540.34 Tm
+(made) Tj
+1 0 0 1 250.559 540.34 Tm
+(during) Tj
+1 0 0 1 280.319 540.34 Tm
+(the) Tj
+1 0 0 1 63.96 529.3 Tm
+(W) Tj
+1 0 0 1 72.48 529.3 Tm
+(orkshop,) Tj
+1 0 0 1 109.68 529.3 Tm
+(were) Tj
+1 0 0 1 131.52 529.3 Tm
+(the) Tj
+1 0 0 1 146.16 529.3 Tm
+(follo) Tj
+1 0 0 1 164.88 529.3 Tm
+(wing:) Tj
+1 0 0 1 88.92 514.66 Tm
+(The) Tj
+1 0 0 1 107.64 514.66 Tm
+(coolest) Tj
+1 0 0 1 139.2 514.66 Tm
+(thing) Tj
+1 0 0 1 162.96 514.66 Tm
+(is) Tj
+1 0 0 1 172.92 514.66 Tm
+(that) Tj
+1 0 0 1 191.28 514.66 Tm
+(the) Tj
+1 0 0 1 206.76 514.66 Tm
+(students) Tj
+1 0 0 1 242.639 514.66 Tm
+(get) Tj
+1 0 0 1 258.239 514.66 Tm
+(some-) Tj
+1 0 0 1 73.92 503.62 Tm
+(thing) Tj
+1 0 0 1 96.8399 503.62 Tm
+(done.) Tj
+1 0 0 1 63.96 488.98 Tm
+(and) Tj
+1 0 0 1 88.92 474.22 Tm
+(I) Tj
+1 0 0 1 95.4 474.22 Tm
+(am) Tj
+1 0 0 1 110.64 474.22 Tm
+(sure) Tj
+1 0 0 1 130.44 474.22 Tm
+(the) Tj
+1 0 0 1 142.56 474.22 Tm
+(y) Tj
+1 0 0 1 150.6 474.22 Tm
+(got) Tj
+1 0 0 1 166.44 474.22 Tm
+(a) Tj
+1 0 0 1 174.12 474.22 Tm
+(lot) Tj
+1 0 0 1 187.8 474.22 Tm
+(out) Tj
+1 0 0 1 203.64 474.22 Tm
+(of) Tj
+1 0 0 1 215.16 474.22 Tm
+(it.) Tj
+1 0 0 1 228.239 474.22 Tm
+(I) Tj
+1 0 0 1 234.719 474.22 Tm
+(am) Tj
+1 0 0 1 250.079 474.22 Tm
+(not) Tj
+1 0 0 1 265.919 474.22 Tm
+(sure) Tj
+1 0 0 1 73.92 463.3 Tm
+(what,) Tj
+1 0 0 1 98.2799 463.3 Tm
+(though.) Tj
+1 0 0 1 63.96 448.54 Tm
+(Apparently) Tj
+1 0 0 1 113.76 448.54 Tm
+(there) Tj
+1 0 0 1 138.6 448.54 Tm
+(is) Tj
+1 0 0 1 150.12 448.54 Tm
+(some) Tj
+1 0 0 1 176.16 448.54 Tm
+(problem) Tj
+1 0 0 1 214.32 448.54 Tm
+(with) Tj
+1 0 0 1 236.879 448.54 Tm
+(such) Tj
+1 0 0 1 260.159 448.54 Tm
+(courses.) Tj
+1 0 0 1 63.96 437.62 Tm
+(Ho) Tj
+1 0 0 1 75.96 437.62 Tm
+(w) Tj
+1 0 0 1 85.3199 437.62 Tm
+(do) Tj
+1 0 0 1 97.6798 437.62 Tm
+(we) Tj
+1 0 0 1 111.6 437.62 Tm
+(assess) Tj
+1 0 0 1 138.24 437.62 Tm
+(whether) Tj
+1 0 0 1 172.56 437.62 Tm
+(and) Tj
+1 0 0 1 189.24 437.62 Tm
+(what) Tj
+1 0 0 1 210.959 437.62 Tm
+(do) Tj
+1 0 0 1 223.199 437.62 Tm
+(the) Tj
+1 0 0 1 237.599 437.62 Tm
+(students) Tj
+1 0 0 1 272.639 437.62 Tm
+(learn) Tj
+1 0 0 1 63.96 426.7 Tm
+(by) Tj
+1 0 0 1 76.08 426.7 Tm
+(using) Tj
+1 0 0 1 99.8399 426.7 Tm
+(robots?) Tj
+1 0 0 1 132.24 426.7 Tm
+(Are) Tj
+1 0 0 1 149.28 426.7 Tm
+(robots) Tj
+1 0 0 1 176.4 426.7 Tm
+(really) Tj
+1 0 0 1 201.24 426.7 Tm
+(better) Tj
+1 0 0 1 226.199 426.7 Tm
+(medium) Tj
+1 0 0 1 260.999 426.7 Tm
+(than) Tj
+1 0 0 1 280.319 426.7 Tm
+(the) Tj
+1 0 0 1 63.96 415.66 Tm
+(tools) Tj
+1 0 0 1 85.6799 415.66 Tm
+(we) Tj
+1 0 0 1 99.7198 415.66 Tm
+(were) Tj
+1 0 0 1 121.44 415.66 Tm
+(using) Tj
+1 0 0 1 145.32 415.66 Tm
+(pre) Tj
+1 0 0 1 157.92 415.66 Tm
+(viously?) Tj
+1 0 0 1 194.639 415.66 Tm
+(Had) Tj
+1 0 0 1 213.599 415.66 Tm
+(the) Tj
+1 0 0 1 228.119 415.66 Tm
+(students) Tj
+1 0 0 1 263.159 415.66 Tm
+(learned) Tj
+1 0 0 1 63.96 404.74 Tm
+(what) Tj
+1 0 0 1 85.7999 404.74 Tm
+(we) Tj
+1 0 0 1 99.9599 404.74 Tm
+(really) Tj
+1 0 0 1 125.16 404.74 Tm
+(w) Tj
+1 0 0 1 132.24 404.74 Tm
+(anted) Tj
+1 0 0 1 156.24 404.74 Tm
+(to) Tj
+1 0 0 1 166.56 404.74 Tm
+(teach) Tj
+1 0 0 1 190.079 404.74 Tm
+(them?) Tj
+1 0 0 1 217.439 404.74 Tm
+(T) Tj
+1 0 0 1 222.719 404.74 Tm
+(aking) Tj
+1 0 0 1 247.439 404.74 Tm
+(slightly) Tj
+1 0 0 1 279.719 404.74 Tm
+(an-) Tj
+1 0 0 1 63.96 393.82 Tm
+(other) Tj
+1 0 0 1 88.1999 393.82 Tm
+(perspecti) Tj
+1 0 0 1 124.08 393.82 Tm
+(v) Tj
+1 0 0 1 129 393.82 Tm
+(e) Tj
+1 0 0 1 136.8 393.82 Tm
+(we) Tj
+1 0 0 1 152.16 393.82 Tm
+(might) Tj
+1 0 0 1 179.16 393.82 Tm
+(discuss) Tj
+1 0 0 1 211.679 393.82 Tm
+(what) Tj
+1 0 0 1 234.719 393.82 Tm
+(are) Tj
+1 0 0 1 250.559 393.82 Tm
+(the) Tj
+1 0 0 1 266.519 393.82 Tm
+(appro-) Tj
+1 0 0 1 63.96 382.78 Tm
+(priate) Tj
+1 0 0 1 90.3599 382.78 Tm
+(e) Tj
+1 0 0 1 94.6799 382.78 Tm
+(xamination) Tj
+1 0 0 1 143.16 382.78 Tm
+(forms) Tj
+1 0 0 1 170.16 382.78 Tm
+(for) Tj
+1 0 0 1 185.52 382.78 Tm
+(such) Tj
+1 0 0 1 207.479 382.78 Tm
+(courses?) Tj
+1 0 0 1 248.519 382.78 Tm
+(The) Tj
+1 0 0 1 267.719 382.78 Tm
+(e) Tj
+1 0 0 1 272.039 382.78 Tm
+(xam-) Tj
+1 0 0 1 63.96 371.86 Tm
+(ple) Tj
+1 0 0 1 79.1999 371.86 Tm
+(tak) Tj
+1 0 0 1 91.3199 371.86 Tm
+(en) Tj
+1 0 0 1 103.8 371.86 Tm
+(from) Tj
+1 0 0 1 126.36 371.86 Tm
+(one) Tj
+1 0 0 1 143.76 371.86 Tm
+(of) Tj
+1 0 0 1 155.28 371.86 Tm
+(the) Tj
+1 0 0 1 170.52 371.86 Tm
+(presentations) Tj
+1 0 0 1 226.199 371.86 Tm
+(at) Tj
+1 0 0 1 236.519 371.86 Tm
+(the) Tj
+1 0 0 1 251.759 371.86 Tm
+(W) Tj
+1 0 0 1 260.279 371.86 Tm
+(orkshop) Tj
+1 0 0 1 63.96 360.94 Tm
+(\(\(Hobson) Tj
+1 0 0 1 104.4 360.94 Tm
+(2001\),) Tj
+1 0 0 1 133.08 360.94 Tm
+(by) Tj
+1 0 0 1 145.8 360.94 Tm
+(no) Tj
+1 0 0 1 158.52 360.94 Tm
+(means) Tj
+1 0 0 1 186.84 360.94 Tm
+(meant) Tj
+1 0 0 1 213.96 360.94 Tm
+(to) Tj
+1 0 0 1 224.52 360.94 Tm
+(criticize) Tj
+1 0 0 1 259.439 360.94 Tm
+(this) Tj
+1 0 0 1 276.599 360.94 Tm
+(par) Tj
+1 0 0 1 289.199 360.94 Tm
+(-) Tj
+1 0 0 1 63.96 349.9 Tm
+(ticular) Tj
+1 0 0 1 92.9999 349.9 Tm
+(case,) Tj
+1 0 0 1 116.52 349.9 Tm
+(b) Tj
+1 0 0 1 121.32 349.9 Tm
+(ut) Tj
+1 0 0 1 132.72 349.9 Tm
+(just) Tj
+1 0 0 1 150.72 349.9 Tm
+(to) Tj
+1 0 0 1 162 349.9 Tm
+(illustrate) Tj
+1 0 0 1 200.52 349.9 Tm
+(the) Tj
+1 0 0 1 216.359 349.9 Tm
+(point\):) Tj
+1 0 0 1 248.159 349.9 Tm
+(In) Tj
+1 0 0 1 260.159 349.9 Tm
+(order) Tj
+1 0 0 1 284.759 349.9 Tm
+(to) Tj
+1 0 0 1 63.96 338.98 Tm
+(b) Tj
+1 0 0 1 68.76 338.98 Tm
+(uild) Tj
+1 0 0 1 87.8399 338.98 Tm
+(some) Tj
+1 0 0 1 112.44 338.98 Tm
+(particular) Tj
+1 0 0 1 154.2 338.98 Tm
+(circuit) Tj
+1 0 0 1 183.24 338.98 Tm
+(used) Tj
+1 0 0 1 205.079 338.98 Tm
+(later) Tj
+1 0 0 1 226.439 338.98 Tm
+(on) Tj
+1 0 0 1 239.999 338.98 Tm
+(the) Tj
+1 0 0 1 255.719 338.98 Tm
+(robot) Tj
+1 0 0 1 280.319 338.98 Tm
+(the) Tj
+1 0 0 1 63.96 328.06 Tm
+(students) Tj
+1 0 0 1 99.1199 328.06 Tm
+(need) Tj
+1 0 0 1 120.36 328.06 Tm
+(to) Tj
+1 0 0 1 130.68 328.06 Tm
+(use) Tj
+1 0 0 1 146.4 328.06 Tm
+(the) Tj
+1 0 0 1 161.04 328.06 Tm
+(Ohm') Tj
+1 0 0 1 183.84 328.06 Tm
+(s) Tj
+1 0 0 1 190.2 328.06 Tm
+(la) Tj
+1 0 0 1 197.28 328.06 Tm
+(w) Tj
+1 0 0 1 203.88 328.06 Tm
+(.) Tj
+1 0 0 1 61.44 313.3 Tm
+(1.) Tj
+1 0 0 1 73.92 313.3 Tm
+(Do) Tj
+1 0 0 1 89.8799 313.3 Tm
+(the) Tj
+1 0 0 1 105.72 313.3 Tm
+(students) Tj
+1 0 0 1 142.08 313.3 Tm
+(really) Tj
+1 0 0 1 168.6 313.3 Tm
+(kno) Tj
+1 0 0 1 183.48 313.3 Tm
+(w) Tj
+1 0 0 1 194.16 313.3 Tm
+(the) Tj
+1 0 0 1 210.12 313.3 Tm
+(Ohm') Tj
+1 0 0 1 232.919 313.3 Tm
+(s) Tj
+1 0 0 1 240.359 313.3 Tm
+(la) Tj
+1 0 0 1 247.439 313.3 Tm
+(w) Tj
+1 0 0 1 258.359 313.3 Tm
+(after) Tj
+1 0 0 1 280.319 313.3 Tm
+(the) Tj
+1 0 0 1 73.92 302.38 Tm
+(e) Tj
+1 0 0 1 78.24 302.38 Tm
+(xperiments?) Tj
+1 0 0 1 61.44 289.66 Tm
+(2.) Tj
+1 0 0 1 73.92 289.66 Tm
+(Do) Tj
+1 0 0 1 88.7999 289.66 Tm
+(the) Tj
+1 0 0 1 100.92 289.66 Tm
+(y) Tj
+ET
+endstream
+endobj
+31 0 obj
+14639
+endobj
+32 0 obj
+<< /Type /Font /Name /R32 /Subtype /Type1 /BaseFont /Times-Italic >>
+endobj
+33 0 obj
+<< /Length 34 0 R >>
+stream
+BT
+/R32 9.96264 Tf
+1 0 0 1 108.36 289.66 Tm
+(under) Tj
+1 0 0 1 131.64 289.66 Tm
+(stand) Tj
+/R29 9.96264 Tf
+1 0 0 1 156.12 289.66 Tm
+(the) Tj
+1 0 0 1 170.88 289.66 Tm
+(Ohm') Tj
+1 0 0 1 193.68 289.66 Tm
+(s) Tj
+1 0 0 1 200.16 289.66 Tm
+(la) Tj
+1 0 0 1 207.24 289.66 Tm
+(w) Tj
+1 0 0 1 216.96 289.66 Tm
+(\(with) Tj
+1 0 0 1 240.719 289.66 Tm
+(all) Tj
+1 0 0 1 253.319 289.66 Tm
+(its) Tj
+1 0 0 1 265.439 289.66 Tm
+(rami\256-) Tj
+1 0 0 1 73.92 278.62 Tm
+(cations\)?) Tj
+1 0 0 1 61.44 266.02 Tm
+(3.) Tj
+1 0 0 1 73.92 266.02 Tm
+(What) Tj
+1 0 0 1 98.9999 266.02 Tm
+(do) Tj
+1 0 0 1 112.56 266.02 Tm
+(the) Tj
+1 0 0 1 124.68 266.02 Tm
+(y) Tj
+1 0 0 1 133.08 266.02 Tm
+(learn) Tj
+1 0 0 1 156.48 266.02 Tm
+(more) Tj
+1 0 0 1 180.48 266.02 Tm
+(about) Tj
+1 0 0 1 206.16 266.02 Tm
+(the) Tj
+1 0 0 1 221.879 266.02 Tm
+(circuit) Tj
+1 0 0 1 250.799 266.02 Tm
+(theory) Tj
+1 0 0 1 279.719 266.02 Tm
+(be-) Tj
+1 0 0 1 73.92 254.98 Tm
+(sides) Tj
+1 0 0 1 96.3599 254.98 Tm
+(the) Tj
+1 0 0 1 111 254.98 Tm
+(Ohm') Tj
+1 0 0 1 133.8 254.98 Tm
+(s) Tj
+1 0 0 1 140.04 254.98 Tm
+(la) Tj
+1 0 0 1 147.12 254.98 Tm
+(w?) Tj
+1 0 0 1 61.44 242.26 Tm
+(4.) Tj
+1 0 0 1 73.92 242.26 Tm
+(What) Tj
+1 0 0 1 97.7999 242.26 Tm
+(do) Tj
+1 0 0 1 109.92 242.26 Tm
+(the) Tj
+1 0 0 1 122.04 242.26 Tm
+(y) Tj
+1 0 0 1 129.24 242.26 Tm
+(learn) Tj
+1 0 0 1 151.44 242.26 Tm
+(that) Tj
+1 0 0 1 168.6 242.26 Tm
+(the) Tj
+1 0 0 1 180.72 242.26 Tm
+(y) Tj
+1 0 0 1 187.92 242.26 Tm
+(w) Tj
+1 0 0 1 195 242.26 Tm
+(ouldn') Tj
+1 0 0 1 221.16 242.26 Tm
+(t) Tj
+1 0 0 1 225.84 242.26 Tm
+(ha) Tj
+1 0 0 1 235.079 242.26 Tm
+(v) Tj
+1 0 0 1 239.999 242.26 Tm
+(e) Tj
+1 0 0 1 246.479 242.26 Tm
+(learnt) Tj
+1 0 0 1 271.439 242.26 Tm
+(with-) Tj
+1 0 0 1 73.92 231.34 Tm
+(out) Tj
+1 0 0 1 89.1599 231.34 Tm
+(the) Tj
+1 0 0 1 103.8 231.34 Tm
+(hands-on) Tj
+1 0 0 1 142.8 231.34 Tm
+(robot) Tj
+1 0 0 1 166.32 231.34 Tm
+(e) Tj
+1 0 0 1 170.64 231.34 Tm
+(xperience?) Tj
+1 0 0 1 63.96 216.58 Tm
+(The) Tj
+1 0 0 1 82.32 216.58 Tm
+(\256rst) Tj
+1 0 0 1 100.8 216.58 Tm
+(three) Tj
+1 0 0 1 123.6 216.58 Tm
+(questions) Tj
+1 0 0 1 164.16 216.58 Tm
+(might) Tj
+1 0 0 1 190.32 216.58 Tm
+(be) Tj
+1 0 0 1 202.56 216.58 Tm
+(answered) Tj
+1 0 0 1 243.119 216.58 Tm
+(rather) Tj
+1 0 0 1 269.279 216.58 Tm
+(easily) Tj
+1 0 0 1 63.96 205.66 Tm
+(by) Tj
+1 0 0 1 76.32 205.66 Tm
+(subjecting) Tj
+1 0 0 1 119.64 205.66 Tm
+(the) Tj
+1 0 0 1 134.28 205.66 Tm
+(students) Tj
+1 0 0 1 169.32 205.66 Tm
+(to) Tj
+1 0 0 1 179.4 205.66 Tm
+(standard) Tj
+1 0 0 1 215.519 205.66 Tm
+(e) Tj
+1 0 0 1 219.839 205.66 Tm
+(xamination) Tj
+1 0 0 1 266.999 205.66 Tm
+(proce-) Tj
+1 0 0 1 63.96 194.74 Tm
+(dures.) Tj
+1 0 0 1 93.9599 194.74 Tm
+(The) Tj
+1 0 0 1 112.92 194.74 Tm
+(fourth) Tj
+1 0 0 1 140.64 194.74 Tm
+(question,) Tj
+1 0 0 1 180.6 194.74 Tm
+(ho) Tj
+1 0 0 1 190.44 194.74 Tm
+(we) Tj
+1 0 0 1 201.84 194.74 Tm
+(v) Tj
+1 0 0 1 206.76 194.74 Tm
+(er) Tj
+1 0 0 1 214.2 194.74 Tm
+(,) Tj
+1 0 0 1 220.08 194.74 Tm
+(w) Tj
+1 0 0 1 227.16 194.74 Tm
+(ould) Tj
+1 0 0 1 248.279 194.74 Tm
+(require) Tj
+1 0 0 1 279.959 194.74 Tm
+(e) Tj
+1 0 0 1 284.279 194.74 Tm
+(x-) Tj
+1 0 0 1 63.96 183.7 Tm
+(tensi) Tj
+1 0 0 1 82.5599 183.7 Tm
+(v) Tj
+1 0 0 1 87.4799 183.7 Tm
+(e) Tj
+1 0 0 1 94.1999 183.7 Tm
+(statistical) Tj
+1 0 0 1 134.28 183.7 Tm
+(data) Tj
+1 0 0 1 153.36 183.7 Tm
+(gathered) Tj
+1 0 0 1 190.08 183.7 Tm
+(throughout) Tj
+1 0 0 1 236.279 183.7 Tm
+(man) Tj
+1 0 0 1 253.439 183.7 Tm
+(y) Tj
+1 0 0 1 260.759 183.7 Tm
+(years) Tj
+1 0 0 1 284.159 183.7 Tm
+(of) Tj
+1 0 0 1 63.96 172.78 Tm
+(e) Tj
+1 0 0 1 68.28 172.78 Tm
+(xperience) Tj
+1 0 0 1 109.2 172.78 Tm
+(with) Tj
+1 0 0 1 129.24 172.78 Tm
+(such) Tj
+1 0 0 1 149.88 172.78 Tm
+(course) Tj
+1 0 0 1 178.08 172.78 Tm
+(gi) Tj
+1 0 0 1 185.64 172.78 Tm
+(v) Tj
+1 0 0 1 190.56 172.78 Tm
+(en) Tj
+1 0 0 1 202.2 172.78 Tm
+(in) Tj
+1 0 0 1 212.16 172.78 Tm
+(tw) Tj
+1 0 0 1 221.999 172.78 Tm
+(o) Tj
+1 0 0 1 229.319 172.78 Tm
+(v) Tj
+1 0 0 1 234.239 172.78 Tm
+(ersions:) Tj
+1 0 0 1 268.199 172.78 Tm
+(robot-) Tj
+1 0 0 1 63.96 161.86 Tm
+(based) Tj
+1 0 0 1 88.9199 161.86 Tm
+(and) Tj
+1 0 0 1 105.6 161.86 Tm
+(non-robot-based,) Tj
+1 0 0 1 175.8 161.86 Tm
+(in) Tj
+1 0 0 1 185.88 161.86 Tm
+(order) Tj
+1 0 0 1 209.16 161.86 Tm
+(to) Tj
+1 0 0 1 219.239 161.86 Tm
+(produce) Tj
+1 0 0 1 253.679 161.86 Tm
+(a) Tj
+1 0 0 1 260.399 161.86 Tm
+(justi\256ed) Tj
+1 0 0 1 63.96 150.82 Tm
+(answer) Tj
+1 0 0 1 91.6799 150.82 Tm
+(.) Tj
+1 0 0 1 98.8799 150.82 Tm
+(Ev) Tj
+1 0 0 1 109.92 150.82 Tm
+(en) Tj
+1 0 0 1 122.28 150.82 Tm
+(then,) Tj
+1 0 0 1 145.2 150.82 Tm
+(one) Tj
+1 0 0 1 162.6 150.82 Tm
+(may) Tj
+1 0 0 1 182.88 150.82 Tm
+(ask) Tj
+1 0 0 1 199.2 150.82 Tm
+(whether) Tj
+1 0 0 1 234.359 150.82 Tm
+(we) Tj
+1 0 0 1 248.999 150.82 Tm
+(indeed) Tj
+1 0 0 1 278.639 150.82 Tm
+(test) Tj
+1 0 0 1 63.96 139.9 Tm
+(all) Tj
+1 0 0 1 76.44 139.9 Tm
+(the) Tj
+1 0 0 1 91.0799 139.9 Tm
+(options) Tj
+1 0 0 1 122.88 139.9 Tm
+(that) Tj
+1 0 0 1 140.4 139.9 Tm
+(might) Tj
+1 0 0 1 166.08 139.9 Tm
+(be) Tj
+1 0 0 1 177.96 139.9 Tm
+(tested?) Tj
+1 0 0 1 329.52 777.94 Tm
+(My) Tj
+1 0 0 1 346.56 777.94 Tm
+(main) Tj
+1 0 0 1 369.84 777.94 Tm
+(point) Tj
+1 0 0 1 393.72 777.94 Tm
+(here) Tj
+1 0 0 1 414.12 777.94 Tm
+(is) Tj
+1 0 0 1 424.08 777.94 Tm
+(that) Tj
+1 0 0 1 442.32 777.94 Tm
+(although) Tj
+1 0 0 1 480.599 777.94 Tm
+(we) Tj
+1 0 0 1 495.479 777.94 Tm
+(are) Tj
+1 0 0 1 510.959 777.94 Tm
+(enthusiastic) Tj
+1 0 0 1 329.52 767.02 Tm
+(about) Tj
+1 0 0 1 354.6 767.02 Tm
+(using) Tj
+1 0 0 1 379.2 767.02 Tm
+(robots,) Tj
+1 0 0 1 409.8 767.02 Tm
+(we) Tj
+1 0 0 1 424.44 767.02 Tm
+(cannot) Tj
+1 0 0 1 454.08 767.02 Tm
+(be) Tj
+1 0 0 1 466.44 767.02 Tm
+(sure) Tj
+1 0 0 1 486.119 767.02 Tm
+(that) Tj
+1 0 0 1 504.119 767.02 Tm
+(this) Tj
+1 0 0 1 521.519 767.02 Tm
+(approach) Tj
+1 0 0 1 329.52 755.98 Tm
+(is) Tj
+1 0 0 1 339.96 755.98 Tm
+(actually) Tj
+1 0 0 1 375.36 755.98 Tm
+(better) Tj
+1 0 0 1 401.88 755.98 Tm
+(that) Tj
+1 0 0 1 420.6 755.98 Tm
+(some) Tj
+1 0 0 1 445.44 755.98 Tm
+(other) Tj
+1 0 0 1 469.799 755.98 Tm
+(one.) Tj
+1 0 0 1 493.799 755.98 Tm
+(Therefore,) Tj
+1 0 0 1 539.759 755.98 Tm
+(until) Tj
+1 0 0 1 329.52 745.06 Tm
+(we) Tj
+1 0 0 1 344.4 745.06 Tm
+(get) Tj
+1 0 0 1 359.88 745.06 Tm
+(more) Tj
+1 0 0 1 383.64 745.06 Tm
+(sound) Tj
+1 0 0 1 410.76 745.06 Tm
+(e) Tj
+1 0 0 1 414.96 745.06 Tm
+(vidence,) Tj
+1 0 0 1 451.8 745.06 Tm
+(we) Tj
+1 0 0 1 466.8 745.06 Tm
+(should) Tj
+1 0 0 1 496.68 745.06 Tm
+(be) Tj
+1 0 0 1 509.279 745.06 Tm
+(careful) Tj
+1 0 0 1 540.239 745.06 Tm
+(with) Tj
+1 0 0 1 329.52 734.14 Tm
+(adv) Tj
+1 0 0 1 343.8 734.14 Tm
+(ocating) Tj
+1 0 0 1 375.36 734.14 Tm
+(our) Tj
+1 0 0 1 390.96 734.14 Tm
+(solution) Tj
+1 0 0 1 425.52 734.14 Tm
+(as) Tj
+1 0 0 1 436.2 734.14 Tm
+(a) Tj
+1 0 0 1 442.92 734.14 Tm
+(panaceum) Tj
+1 0 0 1 485.759 734.14 Tm
+(for) Tj
+1 0 0 1 499.679 734.14 Tm
+(all) Tj
+1 0 0 1 512.039 734.14 Tm
+(educational) Tj
+1 0 0 1 329.52 723.1 Tm
+(problems.) Tj
+ET
+q
+3.9 0 0 -3.8 320.1 713.7 cm
+/R22 Do
+Q
+BT
+1 0 0 1 329.52 709.18 Tm
+(Introductory) Tj
+1 0 0 1 382.92 709.18 Tm
+(courses) Tj
+1 0 0 1 416.4 709.18 Tm
+(in) Tj
+/R26 9.96264 Tf
+1 0 0 1 427.8 709.18 Tm
+(pr) Tj
+1 0 0 1 437.64 709.18 Tm
+(ogramming) Tj
+/R29 9.96264 Tf
+1 0 0 1 490.439 709.18 Tm
+(\(and) Tj
+1 0 0 1 511.799 709.18 Tm
+(other) Tj
+1 0 0 1 535.919 709.18 Tm
+(intro-) Tj
+1 0 0 1 329.52 698.14 Tm
+(ductory) Tj
+1 0 0 1 362.88 698.14 Tm
+(Computer) Tj
+1 0 0 1 405.72 698.14 Tm
+(Science) Tj
+1 0 0 1 439.68 698.14 Tm
+(courses\).) Tj
+1 0 0 1 479.88 698.14 Tm
+(Are) Tj
+1 0 0 1 497.759 698.14 Tm
+(the) Tj
+1 0 0 1 512.999 698.14 Tm
+(robots) Tj
+1 0 0 1 540.839 698.14 Tm
+(nec-) Tj
+1 0 0 1 329.52 687.22 Tm
+(essary) Tj
+1 0 0 1 358.2 687.22 Tm
+(to) Tj
+1 0 0 1 369.72 687.22 Tm
+(enhance) Tj
+1 0 0 1 406.08 687.22 Tm
+(students') Tj
+1 0 0 1 445.92 687.22 Tm
+(understanding) Tj
+1 0 0 1 506.159 687.22 Tm
+(of) Tj
+1 0 0 1 518.279 687.22 Tm
+(the) Tj
+1 0 0 1 534.239 687.22 Tm
+(issues) Tj
+1 0 0 1 329.52 676.3 Tm
+(in) Tj
+1 0 0 1 336.96 676.3 Tm
+(v) Tj
+1 0 0 1 341.76 676.3 Tm
+(olv) Tj
+1 0 0 1 354.48 676.3 Tm
+(ed?) Tj
+1 0 0 1 373.2 676.3 Tm
+(\(De\256nitely) Tj
+1 0 0 1 419.52 676.3 Tm
+(not.\)) Tj
+1 0 0 1 443.28 676.3 Tm
+(Are) Tj
+1 0 0 1 461.4 676.3 Tm
+(the) Tj
+1 0 0 1 473.52 676.3 Tm
+(y) Tj
+1 0 0 1 481.68 676.3 Tm
+(useful) Tj
+1 0 0 1 509.159 676.3 Tm
+(for) Tj
+1 0 0 1 524.039 676.3 Tm
+(this) Tj
+1 0 0 1 541.559 676.3 Tm
+(pur) Tj
+1 0 0 1 554.759 676.3 Tm
+(-) Tj
+1 0 0 1 329.52 665.26 Tm
+(pose?) Tj
+1 0 0 1 356.28 665.26 Tm
+(\(Maybe.\)) Tj
+1 0 0 1 397.2 665.26 Tm
+(Is) Tj
+1 0 0 1 407.16 665.26 Tm
+(robotics) Tj
+1 0 0 1 442.08 665.26 Tm
+(just) Tj
+1 0 0 1 459.36 665.26 Tm
+(a) Tj
+1 0 0 1 466.56 665.26 Tm
+(f) Tj
+1 0 0 1 469.799 665.26 Tm
+(ashion) Tj
+1 0 0 1 498.599 665.26 Tm
+(tool) Tj
+1 0 0 1 516.959 665.26 Tm
+(that) Tj
+1 0 0 1 534.719 665.26 Tm
+(might) Tj
+1 0 0 1 329.52 654.34 Tm
+(be) Tj
+1 0 0 1 341.88 654.34 Tm
+(replaced) Tj
+1 0 0 1 378.72 654.34 Tm
+(by) Tj
+1 0 0 1 391.68 654.34 Tm
+(other) Tj
+1 0 0 1 415.2 654.34 Tm
+(controllable) Tj
+1 0 0 1 465.84 654.34 Tm
+(physical) Tj
+1 0 0 1 502.079 654.34 Tm
+(de) Tj
+1 0 0 1 511.319 654.34 Tm
+(vice?) Tj
+1 0 0 1 536.999 654.34 Tm
+(\(This) Tj
+1 0 0 1 329.52 643.42 Tm
+(w) Tj
+1 0 0 1 336.6 643.42 Tm
+(ould) Tj
+1 0 0 1 356.76 643.42 Tm
+(be) Tj
+1 0 0 1 368.64 643.42 Tm
+(my) Tj
+1 0 0 1 383.88 643.42 Tm
+(guess.\)) Tj
+1 0 0 1 329.52 630.94 Tm
+(My) Tj
+1 0 0 1 346.44 630.94 Tm
+(conclusion) Tj
+1 0 0 1 392.64 630.94 Tm
+(in) Tj
+1 0 0 1 403.44 630.94 Tm
+(this) Tj
+1 0 0 1 420.96 630.94 Tm
+(case) Tj
+1 0 0 1 441.12 630.94 Tm
+(w) Tj
+1 0 0 1 448.2 630.94 Tm
+(ould) Tj
+1 0 0 1 469.079 630.94 Tm
+(be) Tj
+1 0 0 1 481.559 630.94 Tm
+(that) Tj
+1 0 0 1 499.559 630.94 Tm
+(robotics) Tj
+1 0 0 1 534.719 630.94 Tm
+(might) Tj
+1 0 0 1 329.52 619.9 Tm
+(be) Tj
+1 0 0 1 342.84 619.9 Tm
+(used,) Tj
+1 0 0 1 367.92 619.9 Tm
+(b) Tj
+1 0 0 1 372.72 619.9 Tm
+(ut) Tj
+1 0 0 1 384.36 619.9 Tm
+(we) Tj
+1 0 0 1 399.96 619.9 Tm
+(shouldn') Tj
+1 0 0 1 435 619.9 Tm
+(t) Tj
+1 0 0 1 441.36 619.9 Tm
+(o) Tj
+1 0 0 1 446.28 619.9 Tm
+(v) Tj
+1 0 0 1 451.2 619.9 Tm
+(erestimate) Tj
+1 0 0 1 495.839 619.9 Tm
+(its) Tj
+1 0 0 1 509.279 619.9 Tm
+(po) Tj
+1 0 0 1 519.119 619.9 Tm
+(wer) Tj
+1 0 0 1 533.759 619.9 Tm
+(,) Tj
+1 0 0 1 540.239 619.9 Tm
+(both) Tj
+1 0 0 1 329.52 608.98 Tm
+(illustrati) Tj
+1 0 0 1 362.52 608.98 Tm
+(v) Tj
+1 0 0 1 367.44 608.98 Tm
+(e) Tj
+1 0 0 1 373.8 608.98 Tm
+(and) Tj
+1 0 0 1 390.24 608.98 Tm
+(attracti) Tj
+1 0 0 1 417.72 608.98 Tm
+(v) Tj
+1 0 0 1 422.64 608.98 Tm
+(e.) Tj
+1 0 0 1 432.36 608.98 Tm
+(As) Tj
+1 0 0 1 445.56 608.98 Tm
+(in) Tj
+1 0 0 1 455.399 608.98 Tm
+(the) Tj
+1 0 0 1 469.559 608.98 Tm
+(pre) Tj
+1 0 0 1 482.159 608.98 Tm
+(vious) Tj
+1 0 0 1 505.799 608.98 Tm
+(case,) Tj
+1 0 0 1 527.519 608.98 Tm
+(without) Tj
+1 0 0 1 329.52 598.06 Tm
+(proper) Tj
+1 0 0 1 357.96 598.06 Tm
+(data) Tj
+1 0 0 1 377.04 598.06 Tm
+(one) Tj
+1 0 0 1 393.96 598.06 Tm
+(cannot) Tj
+1 0 0 1 423 598.06 Tm
+(dra) Tj
+1 0 0 1 435.72 598.06 Tm
+(w) Tj
+1 0 0 1 445.2 598.06 Tm
+(an) Tj
+1 0 0 1 454.56 598.06 Tm
+(y) Tj
+1 0 0 1 461.999 598.06 Tm
+(strong) Tj
+1 0 0 1 489.359 598.06 Tm
+(conclusions.) Tj
+ET
+q
+3.9 0 0 -3.8 320.1 588.5 cm
+/R22 Do
+Q
+BT
+1 0 0 1 329.52 584.02 Tm
+(Adv) Tj
+1 0 0 1 346.56 584.02 Tm
+(anced) Tj
+1 0 0 1 373.2 584.02 Tm
+(CS) Tj
+1 0 0 1 388.92 584.02 Tm
+(courses) Tj
+1 0 0 1 422.4 584.02 Tm
+(related) Tj
+1 0 0 1 453.12 584.02 Tm
+(to) Tj
+/R26 9.96264 Tf
+1 0 0 1 464.519 584.02 Tm
+(Arti\256cial) Tj
+1 0 0 1 506.279 584.02 Tm
+(Intelligence) Tj
+/R29 9.96264 Tf
+1 0 0 1 555.599 584.02 Tm
+(.) Tj
+1 0 0 1 329.52 573.1 Tm
+(Robots) Tj
+1 0 0 1 360.96 573.1 Tm
+(seem) Tj
+1 0 0 1 384.84 573.1 Tm
+(to) Tj
+1 0 0 1 395.88 573.1 Tm
+(be) Tj
+1 0 0 1 408.6 573.1 Tm
+(in) Tj
+1 0 0 1 419.64 573.1 Tm
+(this) Tj
+1 0 0 1 437.4 573.1 Tm
+(case) Tj
+1 0 0 1 457.8 573.1 Tm
+(an) Tj
+1 0 0 1 470.52 573.1 Tm
+(ideal) Tj
+1 0 0 1 493.2 573.1 Tm
+(tool) Tj
+1 0 0 1 512.039 573.1 Tm
+(to) Tj
+1 0 0 1 523.079 573.1 Tm
+(illustrate) Tj
+1 0 0 1 329.52 562.18 Tm
+(the) Tj
+1 0 0 1 344.16 562.18 Tm
+(concepts) Tj
+1 0 0 1 381.6 562.18 Tm
+(and) Tj
+1 0 0 1 398.52 562.18 Tm
+(ho) Tj
+1 0 0 1 408.36 562.18 Tm
+(w) Tj
+1 0 0 1 417.96 562.18 Tm
+(the) Tj
+1 0 0 1 430.08 562.18 Tm
+(y) Tj
+1 0 0 1 437.52 562.18 Tm
+(may) Tj
+1 0 0 1 457.319 562.18 Tm
+(be) Tj
+1 0 0 1 469.199 562.18 Tm
+(used) Tj
+1 0 0 1 490.079 562.18 Tm
+(in) Tj
+1 0 0 1 500.399 562.18 Tm
+(practice.) Tj
+1 0 0 1 537.719 562.18 Tm
+(The) Tj
+1 0 0 1 553.199 562.18 Tm
+(y) Tj
+1 0 0 1 329.52 551.14 Tm
+(also) Tj
+1 0 0 1 348.12 551.14 Tm
+(are) Tj
+1 0 0 1 362.88 551.14 Tm
+(a) Tj
+1 0 0 1 369.96 551.14 Tm
+(v) Tj
+1 0 0 1 374.88 551.14 Tm
+(ery) Tj
+1 0 0 1 390.12 551.14 Tm
+(good) Tj
+1 0 0 1 412.68 551.14 Tm
+(tool) Tj
+1 0 0 1 430.8 551.14 Tm
+(to) Tj
+1 0 0 1 441.24 551.14 Tm
+(introduce) Tj
+1 0 0 1 481.439 551.14 Tm
+(the) Tj
+1 0 0 1 496.319 551.14 Tm
+(comple) Tj
+1 0 0 1 525.719 551.14 Tm
+(xity) Tj
+1 0 0 1 543.599 551.14 Tm
+(and) Tj
+1 0 0 1 329.52 540.22 Tm
+(unpredictability) Tj
+1 0 0 1 395.04 540.22 Tm
+(of) Tj
+1 0 0 1 405.84 540.22 Tm
+(the) Tj
+1 0 0 1 420.48 540.22 Tm
+(physical) Tj
+1 0 0 1 456.119 540.22 Tm
+(w) Tj
+1 0 0 1 463.199 540.22 Tm
+(orld) Tj
+1 0 0 1 481.679 540.22 Tm
+(to) Tj
+1 0 0 1 491.879 540.22 Tm
+(students,) Tj
+1 0 0 1 529.559 540.22 Tm
+(a) Tj
+1 0 0 1 536.399 540.22 Tm
+(prop-) Tj
+1 0 0 1 329.52 529.3 Tm
+(erty) Tj
+1 0 0 1 347.28 529.3 Tm
+(often) Tj
+1 0 0 1 370.08 529.3 Tm
+(for) Tj
+1 0 0 1 381.72 529.3 Tm
+(gotten) Tj
+1 0 0 1 408.72 529.3 Tm
+(within) Tj
+1 0 0 1 436.56 529.3 Tm
+(more) Tj
+1 0 0 1 459.24 529.3 Tm
+(theoretical) Tj
+1 0 0 1 503.639 529.3 Tm
+(paths) Tj
+1 0 0 1 527.039 529.3 Tm
+(through) Tj
+1 0 0 1 329.52 518.26 Tm
+(Computer) Tj
+1 0 0 1 372.96 518.26 Tm
+(Science) Tj
+1 0 0 1 407.52 518.26 Tm
+(education.) Tj
+1 0 0 1 455.04 518.26 Tm
+(\(I) Tj
+1 0 0 1 465.36 518.26 Tm
+(often) Tj
+1 0 0 1 489.359 518.26 Tm
+(get) Tj
+1 0 0 1 505.199 518.26 Tm
+(the) Tj
+1 0 0 1 520.919 518.26 Tm
+(comment) Tj
+1 0 0 1 329.52 507.34 Tm
+(\252This) Tj
+1 0 0 1 354 507.34 Tm
+(w) Tj
+1 0 0 1 361.08 507.34 Tm
+(as) Tj
+1 0 0 1 371.88 507.34 Tm
+(the) Tj
+1 0 0 1 386.52 507.34 Tm
+(most) Tj
+1 0 0 1 408.36 507.34 Tm
+(useful) Tj
+1 0 0 1 435.24 507.34 Tm
+(course) Tj
+1 0 0 1 463.679 507.34 Tm
+(I) Tj
+1 0 0 1 469.439 507.34 Tm
+(ha) Tj
+1 0 0 1 478.679 507.34 Tm
+(v) Tj
+1 0 0 1 483.599 507.34 Tm
+(e) Tj
+1 0 0 1 490.319 507.34 Tm
+(tak) Tj
+1 0 0 1 502.439 507.34 Tm
+(en) Tj
+1 0 0 1 514.319 507.34 Tm
+(throughout) Tj
+1 0 0 1 329.52 496.42 Tm
+(my) Tj
+1 0 0 1 344.4 496.42 Tm
+(studies.) Tj
+1 0 0 1 373.92 496.42 Tm
+(\272) Tj
+1 0 0 1 381.36 496.42 Tm
+(Ho) Tj
+1 0 0 1 393.36 496.42 Tm
+(we) Tj
+1 0 0 1 404.76 496.42 Tm
+(v) Tj
+1 0 0 1 409.68 496.42 Tm
+(er) Tj
+1 0 0 1 417.12 496.42 Tm
+(,) Tj
+1 0 0 1 421.68 496.42 Tm
+(this) Tj
+1 0 0 1 438.24 496.42 Tm
+(comment) Tj
+1 0 0 1 477.599 496.42 Tm
+(often) Tj
+1 0 0 1 500.399 496.42 Tm
+(comes) Tj
+1 0 0 1 528.119 496.42 Tm
+(/when) Tj
+1 0 0 1 554.639 496.42 Tm
+(I) Tj
+1 0 0 1 329.52 485.38 Tm
+(can) Tj
+1 0 0 1 346.2 485.38 Tm
+(pinpoint) Tj
+1 0 0 1 382.32 485.38 Tm
+(the) Tj
+1 0 0 1 397.32 485.38 Tm
+(author) Tj
+1 0 0 1 425.64 485.38 Tm
+(-) Tj
+1 0 0 1 431.88 485.38 Tm
+(usually) Tj
+1 0 0 1 463.56 485.38 Tm
+(the) Tj
+1 0 0 1 478.559 485.38 Tm
+(course) Tj
+1 0 0 1 507.479 485.38 Tm
+(e) Tj
+1 0 0 1 511.679 485.38 Tm
+(v) Tj
+1 0 0 1 516.479 485.38 Tm
+(aluation) Tj
+1 0 0 1 551.399 485.38 Tm
+(is) Tj
+1 0 0 1 329.52 474.46 Tm
+(anon) Tj
+1 0 0 1 348.96 474.46 Tm
+(ymous/) Tj
+1 0 0 1 380.64 474.46 Tm
+(from) Tj
+1 0 0 1 402.6 474.46 Tm
+(a) Tj
+1 0 0 1 409.56 474.46 Tm
+(science) Tj
+1 0 0 1 441.48 474.46 Tm
+(student,) Tj
+1 0 0 1 475.319 474.46 Tm
+(not) Tj
+1 0 0 1 490.679 474.46 Tm
+(necessarily) Tj
+1 0 0 1 537.479 474.46 Tm
+(com-) Tj
+1 0 0 1 329.52 463.54 Tm
+(puter) Tj
+1 0 0 1 353.64 463.54 Tm
+(science,) Tj
+1 0 0 1 389.4 463.54 Tm
+(b) Tj
+1 0 0 1 394.2 463.54 Tm
+(ut) Tj
+1 0 0 1 405.6 463.54 Tm
+(usually) Tj
+1 0 0 1 438 463.54 Tm
+(not) Tj
+1 0 0 1 454.44 463.54 Tm
+(engineering,) Tj
+1 0 0 1 507.839 463.54 Tm
+(realizing) Tj
+1 0 0 1 546.359 463.54 Tm
+(for) Tj
+1 0 0 1 329.52 452.5 Tm
+(the) Tj
+1 0 0 1 344.16 452.5 Tm
+(\256rst) Tj
+1 0 0 1 362.16 452.5 Tm
+(time) Tj
+1 0 0 1 382.44 452.5 Tm
+(during) Tj
+1 0 0 1 410.88 452.5 Tm
+(his) Tj
+1 0 0 1 425.04 452.5 Tm
+(education) Tj
+1 0 0 1 466.319 452.5 Tm
+(that) Tj
+1 0 0 1 483.839 452.5 Tm
+(the) Tj
+1 0 0 1 498.479 452.5 Tm
+(abstractions) Tj
+1 0 0 1 548.639 452.5 Tm
+(he) Tj
+1 0 0 1 329.52 441.58 Tm
+(is) Tj
+1 0 0 1 339.12 441.58 Tm
+(using) Tj
+1 0 0 1 363.72 441.58 Tm
+(are) Tj
+1 0 0 1 378.84 441.58 Tm
+(just) Tj
+1 0 0 1 396.36 441.58 Tm
+(abstractions) Tj
+1 0 0 1 446.879 441.58 Tm
+(and) Tj
+1 0 0 1 464.279 441.58 Tm
+(do) Tj
+1 0 0 1 477.239 441.58 Tm
+(not) Tj
+1 0 0 1 493.079 441.58 Tm
+(correspond) Tj
+1 0 0 1 540.239 441.58 Tm
+(one-) Tj
+1 0 0 1 329.52 430.66 Tm
+(to-one) Tj
+1 0 0 1 357.36 430.66 Tm
+(to) Tj
+1 0 0 1 367.68 430.66 Tm
+(the) Tj
+1 0 0 1 382.32 430.66 Tm
+(real) Tj
+1 0 0 1 399.72 430.66 Tm
+(w) Tj
+1 0 0 1 406.8 430.66 Tm
+(orld) Tj
+1 0 0 1 425.4 430.66 Tm
+(problems.\)) Tj
+/R26 11.9552 Tf
+1 0 0 1 379.32 408.58 Tm
+(Some) Tj
+1 0 0 1 410.16 408.58 Tm
+(further) Tj
+1 0 0 1 450.36 408.58 Tm
+(questions) Tj
+/R29 9.96264 Tf
+1 0 0 1 319.56 395.62 Tm
+(There) Tj
+1 0 0 1 347.04 395.62 Tm
+(is) Tj
+1 0 0 1 357.84 395.62 Tm
+(a) Tj
+1 0 0 1 366.6 395.62 Tm
+(number) Tj
+1 0 0 1 401.28 395.62 Tm
+(of) Tj
+1 0 0 1 413.76 395.62 Tm
+(issues) Tj
+1 0 0 1 441.84 395.62 Tm
+(requiring) Tj
+1 0 0 1 482.639 395.62 Tm
+(further) Tj
+1 0 0 1 513.959 395.62 Tm
+(discussion.) Tj
+1 0 0 1 319.56 384.58 Tm
+(Most,) Tj
+1 0 0 1 346.68 384.58 Tm
+(if) Tj
+1 0 0 1 356.64 384.58 Tm
+(not) Tj
+1 0 0 1 373.32 384.58 Tm
+(all) Tj
+1 0 0 1 387.24 384.58 Tm
+(of) Tj
+1 0 0 1 399.36 384.58 Tm
+(them,) Tj
+1 0 0 1 426 384.58 Tm
+(ha) Tj
+1 0 0 1 435.24 384.58 Tm
+(v) Tj
+1 0 0 1 440.159 384.58 Tm
+(e) Tj
+1 0 0 1 448.439 384.58 Tm
+(already) Tj
+1 0 0 1 481.559 384.58 Tm
+(been) Tj
+1 0 0 1 504.359 384.58 Tm
+(raised) Tj
+1 0 0 1 531.959 384.58 Tm
+(during) Tj
+1 0 0 1 319.56 373.66 Tm
+(the) Tj
+1 0 0 1 334.2 373.66 Tm
+(W) Tj
+1 0 0 1 342.72 373.66 Tm
+(orkshop:) Tj
+ET
+q
+3.9 0 0 -3.8 320.1 365.1 cm
+/R22 Do
+Q
+BT
+1 0 0 1 329.52 360.58 Tm
+(Should) Tj
+1 0 0 1 359.64 360.58 Tm
+(the) Tj
+1 0 0 1 373.8 360.58 Tm
+(courses) Tj
+1 0 0 1 405.6 360.58 Tm
+(using) Tj
+1 0 0 1 429.12 360.58 Tm
+(robotics) Tj
+1 0 0 1 463.079 360.58 Tm
+(be) Tj
+1 0 0 1 474.479 360.58 Tm
+(contest-based) Tj
+1 0 0 1 530.639 360.58 Tm
+(or) Tj
+1 0 0 1 540.839 360.58 Tm
+(not?) Tj
+1 0 0 1 329.52 349.66 Tm
+(Originally) Tj
+1 0 0 1 370.08 349.66 Tm
+(,) Tj
+1 0 0 1 375.84 349.66 Tm
+(the) Tj
+1 0 0 1 391.44 349.66 Tm
+(majority) Tj
+1 0 0 1 428.52 349.66 Tm
+(of) Tj
+1 0 0 1 440.16 349.66 Tm
+(the) Tj
+1 0 0 1 455.76 349.66 Tm
+(courses) Tj
+1 0 0 1 488.999 349.66 Tm
+(were) Tj
+1 0 0 1 511.679 349.66 Tm
+(graded) Tj
+1 0 0 1 542.159 349.66 Tm
+(par) Tj
+1 0 0 1 554.759 349.66 Tm
+(-) Tj
+1 0 0 1 329.52 338.62 Tm
+(tially) Tj
+1 0 0 1 353.16 338.62 Tm
+(on) Tj
+1 0 0 1 366.48 338.62 Tm
+(the) Tj
+1 0 0 1 381.84 338.62 Tm
+(basis) Tj
+1 0 0 1 405.12 338.62 Tm
+(of) Tj
+1 0 0 1 416.64 338.62 Tm
+(a) Tj
+1 0 0 1 424.32 338.62 Tm
+(\256nal) Tj
+1 0 0 1 445.32 338.62 Tm
+(contest) Tj
+1 0 0 1 476.76 338.62 Tm
+(\(usually) Tj
+1 0 0 1 512.159 338.62 Tm
+(a) Tj
+1 0 0 1 519.839 338.62 Tm
+(participa-) Tj
+1 0 0 1 329.52 327.7 Tm
+(tion) Tj
+1 0 0 1 348.6 327.7 Tm
+(in) Tj
+1 0 0 1 359.88 327.7 Tm
+(the) Tj
+1 0 0 1 375.72 327.7 Tm
+(contest) Tj
+1 0 0 1 407.52 327.7 Tm
+(suf) Tj
+1 0 0 1 419.52 327.7 Tm
+(\256ced) Tj
+1 0 0 1 442.44 327.7 Tm
+(to) Tj
+1 0 0 1 453.72 327.7 Tm
+(get) Tj
+1 0 0 1 469.559 327.7 Tm
+(a) Tj
+1 0 0 1 477.599 327.7 Tm
+(pass\).) Tj
+1 0 0 1 506.999 327.7 Tm
+(Some) Tj
+1 0 0 1 533.279 327.7 Tm
+(e) Tj
+1 0 0 1 537.599 327.7 Tm
+(xam-) Tj
+1 0 0 1 329.52 316.78 Tm
+(ples) Tj
+1 0 0 1 349.32 316.78 Tm
+(quoted) Tj
+1 0 0 1 380.28 316.78 Tm
+(in) Tj
+1 0 0 1 391.92 316.78 Tm
+(literature) Tj
+1 0 0 1 431.64 316.78 Tm
+(\(Beer) Tj
+1 0 0 1 453.48 316.78 Tm
+(,) Tj
+1 0 0 1 460.079 316.78 Tm
+(Chiel,) Tj
+1 0 0 1 488.279 316.78 Tm
+(&) Tj
+1 0 0 1 499.919 316.78 Tm
+(Drushel) Tj
+1 0 0 1 535.319 316.78 Tm
+(1999;) Tj
+1 0 0 1 329.52 305.86 Tm
+(Murphy) Tj
+1 0 0 1 365.4 305.86 Tm
+(2000\)) Tj
+1 0 0 1 392.52 305.86 Tm
+(adv) Tj
+1 0 0 1 406.8 305.86 Tm
+(ocate) Tj
+1 0 0 1 431.64 305.86 Tm
+(contests) Tj
+1 0 0 1 467.64 305.86 Tm
+(as) Tj
+1 0 0 1 479.88 305.86 Tm
+(means) Tj
+1 0 0 1 509.159 305.86 Tm
+(for) Tj
+1 0 0 1 524.759 305.86 Tm
+(moti) Tj
+1 0 0 1 542.879 305.86 Tm
+(v) Tj
+1 0 0 1 547.679 305.86 Tm
+(at-) Tj
+1 0 0 1 329.52 294.82 Tm
+(ing) Tj
+1 0 0 1 345.48 294.82 Tm
+(the) Tj
+1 0 0 1 360.84 294.82 Tm
+(students) Tj
+1 0 0 1 396.72 294.82 Tm
+(to) Tj
+1 0 0 1 407.64 294.82 Tm
+(harder) Tj
+1 0 0 1 436.32 294.82 Tm
+(w) Tj
+1 0 0 1 443.4 294.82 Tm
+(ork.) Tj
+1 0 0 1 464.519 294.82 Tm
+(This) Tj
+1 0 0 1 485.519 294.82 Tm
+(strate) Tj
+1 0 0 1 506.999 294.82 Tm
+(gy) Tj
+1 0 0 1 520.079 294.82 Tm
+(succeeds,) Tj
+1 0 0 1 329.52 283.9 Tm
+(b) Tj
+1 0 0 1 334.32 283.9 Tm
+(ut) Tj
+1 0 0 1 345.96 283.9 Tm
+(the) Tj
+1 0 0 1 362.04 283.9 Tm
+(students) Tj
+1 0 0 1 398.52 283.9 Tm
+(not) Tj
+1 0 0 1 415.2 283.9 Tm
+(necessarily) Tj
+1 0 0 1 463.32 283.9 Tm
+(w) Tj
+1 0 0 1 470.4 283.9 Tm
+(ork) Tj
+1 0 0 1 487.679 283.9 Tm
+(hardest) Tj
+1 0 0 1 520.319 283.9 Tm
+(on) Tj
+1 0 0 1 534.239 283.9 Tm
+(topics) Tj
+1 0 0 1 329.52 272.98 Tm
+(we) Tj
+1 0 0 1 345.24 272.98 Tm
+(w) Tj
+1 0 0 1 352.32 272.98 Tm
+(ould) Tj
+1 0 0 1 374.16 272.98 Tm
+(lik) Tj
+1 0 0 1 384.6 272.98 Tm
+(e) Tj
+1 0 0 1 393.12 272.98 Tm
+(them) Tj
+1 0 0 1 417.12 272.98 Tm
+(to) Tj
+1 0 0 1 429 272.98 Tm
+(w) Tj
+1 0 0 1 436.079 272.98 Tm
+(ork) Tj
+1 0 0 1 453.479 272.98 Tm
+(with:) Tj
+1 0 0 1 480.359 272.98 Tm
+(the) Tj
+1 0 0 1 496.679 272.98 Tm
+(pressure) Tj
+1 0 0 1 533.999 272.98 Tm
+(to) Tj
+1 0 0 1 545.879 272.98 Tm
+(get) Tj
+1 0 0 1 329.52 261.94 Tm
+(their) Tj
+1 0 0 1 349.92 261.94 Tm
+(contest) Tj
+1 0 0 1 380.4 261.94 Tm
+(entry) Tj
+1 0 0 1 403.2 261.94 Tm
+(to) Tj
+1 0 0 1 413.16 261.94 Tm
+(score) Tj
+1 0 0 1 436.44 261.94 Tm
+(best) Tj
+1 0 0 1 454.799 261.94 Tm
+(mak) Tj
+1 0 0 1 471.959 261.94 Tm
+(es) Tj
+1 0 0 1 482.399 261.94 Tm
+(them) Tj
+1 0 0 1 504.599 261.94 Tm
+(ne) Tj
+1 0 0 1 513.959 261.94 Tm
+(glect) Tj
+1 0 0 1 535.439 261.94 Tm
+(other) Tj
+1 0 0 1 555.719 261.94 Tm
+(,) Tj
+1 0 0 1 329.52 251.02 Tm
+(more) Tj
+1 0 0 1 352.32 251.02 Tm
+(rele) Tj
+1 0 0 1 367.08 251.02 Tm
+(v) Tj
+1 0 0 1 371.88 251.02 Tm
+(ant) Tj
+1 0 0 1 386.4 251.02 Tm
+(questions.) Tj
+1 0 0 1 429.48 251.02 Tm
+(This) Tj
+1 0 0 1 449.64 251.02 Tm
+(problem) Tj
+1 0 0 1 485.279 251.02 Tm
+(has) Tj
+1 0 0 1 500.999 251.02 Tm
+(been) Tj
+1 0 0 1 522.239 251.02 Tm
+(observ) Tj
+1 0 0 1 548.879 251.02 Tm
+(ed) Tj
+1 0 0 1 329.52 240.1 Tm
+(e) Tj
+1 0 0 1 333.72 240.1 Tm
+(v) Tj
+1 0 0 1 338.64 240.1 Tm
+(en) Tj
+1 0 0 1 352.2 240.1 Tm
+(more) Tj
+1 0 0 1 377.04 240.1 Tm
+(drastically) Tj
+1 0 0 1 422.76 240.1 Tm
+(in) Tj
+1 0 0 1 434.88 240.1 Tm
+(the) Tj
+1 0 0 1 451.44 240.1 Tm
+(RoboCup) Tj
+1 0 0 1 493.919 240.1 Tm
+(simulation) Tj
+1 0 0 1 540.239 240.1 Tm
+(con-) Tj
+1 0 0 1 329.52 229.06 Tm
+(te) Tj
+1 0 0 1 336.6 229.06 Tm
+(xt) Tj
+1 0 0 1 346.44 229.06 Tm
+(\(K) Tj
+1 0 0 1 356.88 229.06 Tm
+(ummeneje) Tj
+1 0 0 1 400.44 229.06 Tm
+(2001\),) Tj
+1 0 0 1 428.4 229.06 Tm
+(where) Tj
+1 0 0 1 454.92 229.06 Tm
+(follo) Tj
+1 0 0 1 473.639 229.06 Tm
+(wing) Tj
+1 0 0 1 495.599 229.06 Tm
+(up) Tj
+1 0 0 1 507.719 229.06 Tm
+(the) Tj
+1 0 0 1 521.999 229.06 Tm
+(students') Tj
+1 0 0 1 329.52 218.14 Tm
+(progress) Tj
+1 0 0 1 365.76 218.14 Tm
+(is) Tj
+1 0 0 1 375 218.14 Tm
+(less) Tj
+1 0 0 1 392.52 218.14 Tm
+(easy) Tj
+1 0 0 1 412.8 218.14 Tm
+(than) Tj
+1 0 0 1 432.48 218.14 Tm
+(in) Tj
+1 0 0 1 442.8 218.14 Tm
+(case) Tj
+1 0 0 1 462.479 218.14 Tm
+(of) Tj
+1 0 0 1 473.279 218.14 Tm
+(physical) Tj
+1 0 0 1 509.039 218.14 Tm
+(robots.) Tj
+1 0 0 1 539.759 218.14 Tm
+(Def-) Tj
+1 0 0 1 329.52 207.22 Tm
+(initely) Tj
+1 0 0 1 354.48 207.22 Tm
+(,) Tj
+1 0 0 1 361.56 207.22 Tm
+(leading) Tj
+1 0 0 1 395.16 207.22 Tm
+(students) Tj
+1 0 0 1 432.12 207.22 Tm
+(through) Tj
+1 0 0 1 467.52 207.22 Tm
+(such) Tj
+1 0 0 1 490.079 207.22 Tm
+(projects) Tj
+1 0 0 1 525.959 207.22 Tm
+(requires) Tj
+1 0 0 1 329.52 196.18 Tm
+(kno) Tj
+1 0 0 1 344.4 196.18 Tm
+(wledge) Tj
+1 0 0 1 375.48 196.18 Tm
+(and) Tj
+1 0 0 1 392.28 196.18 Tm
+(much) Tj
+1 0 0 1 416.88 196.18 Tm
+(w) Tj
+1 0 0 1 423.96 196.18 Tm
+(ork) Tj
+1 0 0 1 439.8 196.18 Tm
+(from) Tj
+1 0 0 1 461.639 196.18 Tm
+(the) Tj
+1 0 0 1 476.279 196.18 Tm
+(educator') Tj
+1 0 0 1 513.599 196.18 Tm
+(s) Tj
+1 0 0 1 519.719 196.18 Tm
+(side.) Tj
+1 0 0 1 329.52 183.7 Tm
+(There) Tj
+1 0 0 1 354.6 183.7 Tm
+(ha) Tj
+1 0 0 1 363.84 183.7 Tm
+(v) Tj
+1 0 0 1 368.76 183.7 Tm
+(e) Tj
+1 0 0 1 375.12 183.7 Tm
+(been) Tj
+1 0 0 1 395.88 183.7 Tm
+(man) Tj
+1 0 0 1 413.04 183.7 Tm
+(y) Tj
+1 0 0 1 419.76 183.7 Tm
+(v) Tj
+1 0 0 1 424.56 183.7 Tm
+(oices) Tj
+1 0 0 1 447 183.7 Tm
+(raised) Tj
+1 0 0 1 472.679 183.7 Tm
+(during) Tj
+1 0 0 1 500.639 183.7 Tm
+(the) Tj
+1 0 0 1 514.799 183.7 Tm
+(W) Tj
+1 0 0 1 523.319 183.7 Tm
+(orkshop,) Tj
+1 0 0 1 329.52 172.78 Tm
+(stating) Tj
+1 0 0 1 357.96 172.78 Tm
+(that) Tj
+1 0 0 1 374.88 172.78 Tm
+(a) Tj
+1 0 0 1 381.36 172.78 Tm
+(\256nal) Tj
+1 0 0 1 401.04 172.78 Tm
+(e) Tj
+1 0 0 1 405.36 172.78 Tm
+(xhibition) Tj
+1 0 0 1 443.16 172.78 Tm
+(at) Tj
+1 0 0 1 452.399 172.78 Tm
+(the) Tj
+1 0 0 1 466.559 172.78 Tm
+(end) Tj
+1 0 0 1 482.879 172.78 Tm
+(of) Tj
+1 0 0 1 493.199 172.78 Tm
+(a) Tj
+1 0 0 1 499.559 172.78 Tm
+(course) Tj
+1 0 0 1 527.519 172.78 Tm
+(is) Tj
+1 0 0 1 536.159 172.78 Tm
+(a) Tj
+1 0 0 1 542.519 172.78 Tm
+(bet-) Tj
+1 0 0 1 329.52 161.86 Tm
+(ter) Tj
+1 0 0 1 342.36 161.86 Tm
+(solution) Tj
+1 0 0 1 376.92 161.86 Tm
+(than) Tj
+1 0 0 1 396.48 161.86 Tm
+(a) Tj
+1 0 0 1 403.32 161.86 Tm
+(contest.) Tj
+1 0 0 1 437.04 161.86 Tm
+(In) Tj
+1 0 0 1 447.719 161.86 Tm
+(some) Tj
+1 0 0 1 471.239 161.86 Tm
+(cases) Tj
+1 0 0 1 494.639 161.86 Tm
+(\(T) Tj
+1 0 0 1 503.639 161.86 Tm
+(urbak) Tj
+1 0 0 1 528.599 161.86 Tm
+(&) Tj
+1 0 0 1 538.799 161.86 Tm
+(Ber) Tj
+1 0 0 1 553.079 161.86 Tm
+(g) Tj
+1 0 0 1 329.52 150.82 Tm
+(2001\)) Tj
+1 0 0 1 354.84 150.82 Tm
+(this) Tj
+1 0 0 1 371.52 150.82 Tm
+(has) Tj
+1 0 0 1 387 150.82 Tm
+(been) Tj
+1 0 0 1 408 150.82 Tm
+(v) Tj
+1 0 0 1 412.92 150.82 Tm
+(eri\256ed) Tj
+1 0 0 1 440.4 150.82 Tm
+(in) Tj
+1 0 0 1 450.36 150.82 Tm
+(practice.) Tj
+1 0 0 1 487.319 150.82 Tm
+(Ho) Tj
+1 0 0 1 499.319 150.82 Tm
+(we) Tj
+1 0 0 1 510.719 150.82 Tm
+(v) Tj
+1 0 0 1 515.639 150.82 Tm
+(er) Tj
+1 0 0 1 523.079 150.82 Tm
+(,) Tj
+1 0 0 1 527.639 150.82 Tm
+(the) Tj
+1 0 0 1 541.919 150.82 Tm
+(mo-) Tj
+1 0 0 1 329.52 139.9 Tm
+(ti) Tj
+1 0 0 1 334.8 139.9 Tm
+(v) Tj
+1 0 0 1 339.6 139.9 Tm
+(ational) Tj
+1 0 0 1 368.76 139.9 Tm
+(v) Tj
+1 0 0 1 373.56 139.9 Tm
+(alue) Tj
+1 0 0 1 392.16 139.9 Tm
+(of) Tj
+1 0 0 1 402.6 139.9 Tm
+(a) Tj
+1 0 0 1 409.2 139.9 Tm
+(contest) Tj
+1 0 0 1 439.56 139.9 Tm
+(should) Tj
+1 0 0 1 468.24 139.9 Tm
+(not) Tj
+1 0 0 1 483.119 139.9 Tm
+(be) Tj
+1 0 0 1 494.639 139.9 Tm
+(underestimated.) Tj
+ET
+Q
+endstream
+endobj
+34 0 obj
+26204
+endobj
+19 0 obj
+<<
+/Type /Page
+/MediaBox [0 0 595 842]
+/Parent 2 0 R
+/Resources << /ProcSet [/PDF /ImageB /Text]
+/Font <<
+/R32 32 0 R
+/R29 29 0 R
+/R26 26 0 R
+>>
+/XObject <<
+/R22 22 0 R
+>>
+>>
+/Contents [
+20 0 R
+24 0 R
+27 0 R
+30 0 R
+33 0 R
+]
+>>
+endobj
+36 0 obj
+<< /Length 37 0 R >>
+stream
+q
+endstream
+endobj
+37 0 obj
+2
+endobj
+38 0 obj
+<< /Type /Font /Name /R38 /Subtype /Type1 /BaseFont /Times-Roman >>
+endobj
+39 0 obj
+<< /Length 40 0 R >>
+stream
+BT
+/R38 9.96264 Tf
+1 0 0 1 63.96 777.94 Tm
+(Probably) Tj
+1 0 0 1 102.84 777.94 Tm
+(this) Tj
+1 0 0 1 120.24 777.94 Tm
+(issue) Tj
+1 0 0 1 143.16 777.94 Tm
+(might) Tj
+1 0 0 1 169.32 777.94 Tm
+(also) Tj
+1 0 0 1 188.28 777.94 Tm
+(be) Tj
+1 0 0 1 200.64 777.94 Tm
+(af) Tj
+1 0 0 1 208.2 777.94 Tm
+(fected) Tj
+1 0 0 1 235.439 777.94 Tm
+(by) Tj
+1 0 0 1 248.399 777.94 Tm
+(the) Tj
+1 0 0 1 263.519 777.94 Tm
+(kind) Tj
+1 0 0 1 284.159 777.94 Tm
+(of) Tj
+1 0 0 1 63.96 767.02 Tm
+(students) Tj
+1 0 0 1 99.2399 767.02 Tm
+(taking) Tj
+1 0 0 1 126.84 767.02 Tm
+(the) Tj
+1 0 0 1 141.72 767.02 Tm
+(course:) Tj
+1 0 0 1 173.88 767.02 Tm
+(are) Tj
+1 0 0 1 188.76 767.02 Tm
+(the) Tj
+1 0 0 1 200.88 767.02 Tm
+(y) Tj
+1 0 0 1 208.44 767.02 Tm
+(engineering,) Tj
+1 0 0 1 260.639 767.02 Tm
+(science,) Tj
+1 0 0 1 63.96 755.98 Tm
+(or) Tj
+1 0 0 1 74.88 755.98 Tm
+(maybe) Tj
+1 0 0 1 104.04 755.98 Tm
+(art) Tj
+1 0 0 1 117.12 755.98 Tm
+(students?) Tj
+1 0 0 1 157.68 755.98 Tm
+(What) Tj
+1 0 0 1 181.92 755.98 Tm
+(is) Tj
+1 0 0 1 191.16 755.98 Tm
+(the) Tj
+1 0 0 1 205.92 755.98 Tm
+(proportion) Tj
+1 0 0 1 250.559 755.98 Tm
+(of) Tj
+1 0 0 1 261.479 755.98 Tm
+(females) Tj
+1 0 0 1 63.96 745.06 Tm
+(in) Tj
+1 0 0 1 74.16 745.06 Tm
+(the) Tj
+1 0 0 1 88.9199 745.06 Tm
+(class?) Tj
+1 0 0 1 115.8 745.06 Tm
+(What) Tj
+1 0 0 1 139.8 745.06 Tm
+(is) Tj
+1 0 0 1 148.92 745.06 Tm
+(their) Tj
+1 0 0 1 169.68 745.06 Tm
+(purpose) Tj
+1 0 0 1 203.76 745.06 Tm
+(of) Tj
+1 0 0 1 214.559 745.06 Tm
+(taking) Tj
+1 0 0 1 241.919 745.06 Tm
+(the) Tj
+1 0 0 1 256.559 745.06 Tm
+(course?) Tj
+ET
+endstream
+endobj
+40 0 obj
+1519
+endobj
+41 0 obj
+<< /Type /XObject /Name /R41 /Subtype /Image /Length 42 0 R
+/ImageMask true /Width 39 /Height 38 /BitsPerComponent 1 /Decode [1 0] /Filter [/CCITTFaxDecode] /DecodeParms [<< /K -1 /Columns 39 /BlackIs1 true >>]
+>>
+stream
+:ìÜzpÅ˙pù?OˇAˇˇ˚ˇk⁄’®`≠NÅ| @
+endstream
+endobj
+42 0 obj
+33
+endobj
+43 0 obj
+<< /Length 44 0 R >>
+stream
+q
+3.9 0 0 -3.8 54.5 734.6 cm
+/R41 Do
+Q
+BT
+1 0 0 1 63.96 730.06 Tm
+(Another) Tj
+1 0 0 1 99.7199 730.06 Tm
+(issue) Tj
+1 0 0 1 122.76 730.06 Tm
+(that) Tj
+1 0 0 1 140.76 730.06 Tm
+(has) Tj
+1 0 0 1 157.08 730.06 Tm
+(to) Tj
+1 0 0 1 167.88 730.06 Tm
+(be) Tj
+1 0 0 1 180.48 730.06 Tm
+(solv) Tj
+1 0 0 1 197.039 730.06 Tm
+(ed) Tj
+1 0 0 1 209.399 730.06 Tm
+(with) Tj
+1 0 0 1 230.159 730.06 Tm
+(care) Tj
+1 0 0 1 249.839 730.06 Tm
+(is) Tj
+1 0 0 1 259.559 730.06 Tm
+(grading.) Tj
+1 0 0 1 63.96 719.14 Tm
+(If) Tj
+1 0 0 1 73.92 719.14 Tm
+(the) Tj
+1 0 0 1 89.5199 719.14 Tm
+(course) Tj
+1 0 0 1 118.92 719.14 Tm
+(ends) Tj
+1 0 0 1 140.52 719.14 Tm
+(with) Tj
+1 0 0 1 161.64 719.14 Tm
+(a) Tj
+1 0 0 1 169.44 719.14 Tm
+(contest,) Tj
+1 0 0 1 203.759 719.14 Tm
+(should) Tj
+1 0 0 1 233.759 719.14 Tm
+(the) Tj
+1 0 0 1 249.239 719.14 Tm
+(grading) Tj
+1 0 0 1 283.079 719.14 Tm
+(be) Tj
+1 0 0 1 63.96 708.1 Tm
+(based) Tj
+1 0 0 1 89.1599 708.1 Tm
+(on) Tj
+1 0 0 1 101.64 708.1 Tm
+(contest) Tj
+1 0 0 1 132.36 708.1 Tm
+(results?) Tj
+1 0 0 1 165.84 708.1 Tm
+(Such) Tj
+1 0 0 1 188.28 708.1 Tm
+(an) Tj
+1 0 0 1 200.16 708.1 Tm
+(approach) Tj
+1 0 0 1 239.159 708.1 Tm
+(w) Tj
+1 0 0 1 246.239 708.1 Tm
+(ould) Tj
+1 0 0 1 266.519 708.1 Tm
+(proba-) Tj
+1 0 0 1 63.96 697.18 Tm
+(bly) Tj
+1 0 0 1 79.0799 697.18 Tm
+(be) Tj
+1 0 0 1 90.9599 697.18 Tm
+(unjust) Tj
+1 0 0 1 117.72 697.18 Tm
+(b) Tj
+1 0 0 1 122.52 697.18 Tm
+(ut,) Tj
+1 0 0 1 135.24 697.18 Tm
+(on) Tj
+1 0 0 1 147.6 697.18 Tm
+(the) Tj
+1 0 0 1 162.24 697.18 Tm
+(other) Tj
+1 0 0 1 185.04 697.18 Tm
+(hand,) Tj
+1 0 0 1 209.399 697.18 Tm
+(not) Tj
+1 0 0 1 224.519 697.18 Tm
+(taking) Tj
+1 0 0 1 251.879 697.18 Tm
+(the) Tj
+1 0 0 1 266.519 697.18 Tm
+(results) Tj
+1 0 0 1 63.96 686.26 Tm
+(of) Tj
+1 0 0 1 75.72 686.26 Tm
+(a) Tj
+1 0 0 1 83.6399 686.26 Tm
+(contest) Tj
+1 0 0 1 115.32 686.26 Tm
+(into) Tj
+1 0 0 1 134.28 686.26 Tm
+(account) Tj
+1 0 0 1 168.72 686.26 Tm
+(is) Tj
+1 0 0 1 178.8 686.26 Tm
+(unjust) Tj
+1 0 0 1 206.639 686.26 Tm
+(as) Tj
+1 0 0 1 218.399 686.26 Tm
+(well,) Tj
+1 0 0 1 241.679 686.26 Tm
+(or) Tj
+1 0 0 1 253.439 686.26 Tm
+(at) Tj
+1 0 0 1 264.119 686.26 Tm
+(least) Tj
+1 0 0 1 285.839 686.26 Tm
+(is) Tj
+1 0 0 1 63.96 675.22 Tm
+(percei) Tj
+1 0 0 1 88.2 675.22 Tm
+(v) Tj
+1 0 0 1 93.1199 675.22 Tm
+(ed) Tj
+1 0 0 1 106.08 675.22 Tm
+(so) Tj
+1 0 0 1 118.68 675.22 Tm
+(by) Tj
+1 0 0 1 132.36 675.22 Tm
+(some) Tj
+1 0 0 1 157.08 675.22 Tm
+(course) Tj
+1 0 0 1 186.84 675.22 Tm
+(participants!) Tj
+1 0 0 1 243.479 675.22 Tm
+(This) Tj
+1 0 0 1 264.959 675.22 Tm
+(is) Tj
+1 0 0 1 275.399 675.22 Tm
+(usu-) Tj
+1 0 0 1 63.96 664.3 Tm
+(ally) Tj
+1 0 0 1 81.48 664.3 Tm
+(solv) Tj
+1 0 0 1 98.0399 664.3 Tm
+(ed) Tj
+1 0 0 1 109.92 664.3 Tm
+(by) Tj
+1 0 0 1 122.52 664.3 Tm
+(appropriate) Tj
+1 0 0 1 170.4 664.3 Tm
+(weighing) Tj
+1 0 0 1 210.12 664.3 Tm
+(of) Tj
+1 0 0 1 220.92 664.3 Tm
+(man) Tj
+1 0 0 1 238.079 664.3 Tm
+(y) Tj
+1 0 0 1 245.519 664.3 Tm
+(f) Tj
+1 0 0 1 248.759 664.3 Tm
+(actors,) Tj
+1 0 0 1 277.679 664.3 Tm
+(lik) Tj
+1 0 0 1 288.119 664.3 Tm
+(e) Tj
+1 0 0 1 63.96 653.38 Tm
+(daily/weekly) Tj
+1 0 0 1 118.32 653.38 Tm
+(reporting,) Tj
+1 0 0 1 160.32 653.38 Tm
+(design,) Tj
+1 0 0 1 191.88 653.38 Tm
+(possibly) Tj
+1 0 0 1 227.999 653.38 Tm
+(e) Tj
+1 0 0 1 232.319 653.38 Tm
+(xams,) Tj
+1 0 0 1 258.719 653.38 Tm
+(deadline) Tj
+1 0 0 1 63.96 642.34 Tm
+(maintenance,) Tj
+1 0 0 1 119.64 642.34 Tm
+(etc.) Tj
+1 0 0 1 137.76 642.34 Tm
+(Ho) Tj
+1 0 0 1 149.76 642.34 Tm
+(we) Tj
+1 0 0 1 161.16 642.34 Tm
+(v) Tj
+1 0 0 1 166.08 642.34 Tm
+(er) Tj
+1 0 0 1 173.52 642.34 Tm
+(,) Tj
+1 0 0 1 178.56 642.34 Tm
+(this) Tj
+1 0 0 1 195.72 642.34 Tm
+(might) Tj
+1 0 0 1 221.759 642.34 Tm
+(be) Tj
+1 0 0 1 233.999 642.34 Tm
+(a) Tj
+1 0 0 1 241.199 642.34 Tm
+(v) Tj
+1 0 0 1 246.119 642.34 Tm
+(ery) Tj
+1 0 0 1 261.479 642.34 Tm
+(compli-) Tj
+1 0 0 1 63.96 631.42 Tm
+(cated) Tj
+1 0 0 1 87.4799 631.42 Tm
+(issue) Tj
+1 0 0 1 109.92 631.42 Tm
+(for) Tj
+1 0 0 1 123.96 631.42 Tm
+(the) Tj
+1 0 0 1 138.72 631.42 Tm
+(teacher) Tj
+1 0 0 1 167.04 631.42 Tm
+(.) Tj
+ET
+q
+3.9 0 0 -3.8 54.5 620.9 cm
+/R41 Do
+Q
+BT
+1 0 0 1 63.96 616.42 Tm
+(Ho) Tj
+1 0 0 1 75.96 616.42 Tm
+(w) Tj
+1 0 0 1 84.9599 616.42 Tm
+(do) Tj
+1 0 0 1 96.8398 616.42 Tm
+(we) Tj
+1 0 0 1 110.4 616.42 Tm
+(guarantee) Tj
+1 0 0 1 151.08 616.42 Tm
+(that) Tj
+1 0 0 1 167.88 616.42 Tm
+(the) Tj
+1 0 0 1 182.04 616.42 Tm
+(students) Tj
+1 0 0 1 216.599 616.42 Tm
+(learn) Tj
+1 0 0 1 238.439 616.42 Tm
+(what) Tj
+1 0 0 1 259.679 616.42 Tm
+(we) Tj
+1 0 0 1 273.239 616.42 Tm
+(w) Tj
+1 0 0 1 280.319 616.42 Tm
+(ant) Tj
+1 0 0 1 63.96 605.5 Tm
+(them) Tj
+1 0 0 1 87.3599 605.5 Tm
+(to) Tj
+1 0 0 1 98.6398 605.5 Tm
+(learn?) Tj
+1 0 0 1 129 605.5 Tm
+(This) Tj
+1 0 0 1 150.24 605.5 Tm
+(is) Tj
+1 0 0 1 160.32 605.5 Tm
+(usually) Tj
+1 0 0 1 192.6 605.5 Tm
+(achie) Tj
+1 0 0 1 213.479 605.5 Tm
+(v) Tj
+1 0 0 1 218.399 605.5 Tm
+(ed) Tj
+1 0 0 1 231.119 605.5 Tm
+(in) Tj
+1 0 0 1 242.399 605.5 Tm
+(a) Tj
+1 0 0 1 250.319 605.5 Tm
+(number) Tj
+1 0 0 1 284.159 605.5 Tm
+(of) Tj
+1 0 0 1 63.96 594.46 Tm
+(w) Tj
+1 0 0 1 71.04 594.46 Tm
+(ays.) Tj
+ET
+endstream
+endobj
+44 0 obj
+4914
+endobj
+45 0 obj
+<< /Type /Font /Name /R45 /Subtype /Type1 /BaseFont /Times-Bold >>
+endobj
+46 0 obj
+<< /Length 47 0 R >>
+stream
+BT
+/R45 9.96264 Tf
+1 0 0 1 63.96 579.46 Tm
+(\261) Tj
+/R38 9.96264 Tf
+1 0 0 1 73.92 579.46 Tm
+(T) Tj
+1 0 0 1 79.32 579.46 Tm
+(ests) Tj
+1 0 0 1 96.5999 579.46 Tm
+(and) Tj
+1 0 0 1 113.28 579.46 Tm
+(home) Tj
+1 0 0 1 135.36 579.46 Tm
+(w) Tj
+1 0 0 1 142.44 579.46 Tm
+(orks) Tj
+1 0 0 1 161.76 579.46 Tm
+(focusing) Tj
+1 0 0 1 198.36 579.46 Tm
+(on) Tj
+1 0 0 1 210.6 579.46 Tm
+(the) Tj
+1 0 0 1 225.12 579.46 Tm
+(important) Tj
+1 0 0 1 266.159 579.46 Tm
+(topics.) Tj
+/R45 9.96264 Tf
+1 0 0 1 63.96 566.5 Tm
+(\261) Tj
+/R38 9.96264 Tf
+1 0 0 1 73.92 566.5 Tm
+(Appropriate) Tj
+1 0 0 1 127.68 566.5 Tm
+(construction) Tj
+1 0 0 1 182.52 566.5 Tm
+(of) Tj
+1 0 0 1 196.44 566.5 Tm
+(tasks) Tj
+1 0 0 1 222 566.5 Tm
+(and) Tj
+1 0 0 1 242.04 566.5 Tm
+(problems) Tj
+1 0 0 1 284.759 566.5 Tm
+(to) Tj
+1 0 0 1 73.92 555.58 Tm
+(solv) Tj
+1 0 0 1 90.48 555.58 Tm
+(e.) Tj
+1 0 0 1 103.44 555.58 Tm
+(The) Tj
+1 0 0 1 122.4 555.58 Tm
+(main) Tj
+1 0 0 1 145.8 555.58 Tm
+(issue) Tj
+1 0 0 1 169.2 555.58 Tm
+(here) Tj
+1 0 0 1 189.84 555.58 Tm
+(is) Tj
+1 0 0 1 199.92 555.58 Tm
+(to) Tj
+1 0 0 1 211.2 555.58 Tm
+(stress) Tj
+1 0 0 1 236.879 555.58 Tm
+(that) Tj
+1 0 0 1 255.239 555.58 Tm
+(the) Tj
+1 0 0 1 270.959 555.58 Tm
+(prob-) Tj
+1 0 0 1 73.92 544.54 Tm
+(lem) Tj
+1 0 0 1 91.3199 544.54 Tm
+(to) Tj
+1 0 0 1 101.52 544.54 Tm
+(solv) Tj
+1 0 0 1 118.08 544.54 Tm
+(e) Tj
+1 0 0 1 124.8 544.54 Tm
+(just) Tj
+1 0 0 1 141.72 544.54 Tm
+(illustrates) Tj
+1 0 0 1 182.879 544.54 Tm
+(the) Tj
+1 0 0 1 197.519 544.54 Tm
+(principles) Tj
+1 0 0 1 239.279 544.54 Tm
+(and) Tj
+1 0 0 1 256.079 544.54 Tm
+(is) Tj
+1 0 0 1 265.199 544.54 Tm
+(not) Tj
+1 0 0 1 280.319 544.54 Tm
+(the) Tj
+1 0 0 1 73.92 533.62 Tm
+(goal) Tj
+1 0 0 1 93.4799 533.62 Tm
+(in) Tj
+1 0 0 1 103.68 533.62 Tm
+(itself.) Tj
+1 0 0 1 129.12 533.62 Tm
+(Otherwise) Tj
+1 0 0 1 172.44 533.62 Tm
+(there) Tj
+1 0 0 1 194.759 533.62 Tm
+(is) Tj
+1 0 0 1 203.759 533.62 Tm
+(a) Tj
+1 0 0 1 210.599 533.62 Tm
+(risk) Tj
+1 0 0 1 227.879 533.62 Tm
+(that) Tj
+1 0 0 1 245.279 533.62 Tm
+(the) Tj
+1 0 0 1 259.799 533.62 Tm
+(students) Tj
+1 0 0 1 73.92 522.7 Tm
+(loose) Tj
+1 0 0 1 97.4399 522.7 Tm
+(the) Tj
+1 0 0 1 112.08 522.7 Tm
+(proper) Tj
+1 0 0 1 140.64 522.7 Tm
+(perspecti) Tj
+1 0 0 1 176.52 522.7 Tm
+(v) Tj
+1 0 0 1 181.44 522.7 Tm
+(e.) Tj
+/R45 9.96264 Tf
+1 0 0 1 63.96 509.62 Tm
+(\261) Tj
+/R38 9.96264 Tf
+1 0 0 1 73.92 509.62 Tm
+(Assessment) Tj
+1 0 0 1 125.04 509.62 Tm
+(of) Tj
+1 0 0 1 137.4 509.62 Tm
+(the) Tj
+1 0 0 1 153.6 509.62 Tm
+(course) Tj
+1 0 0 1 183.6 509.62 Tm
+(contents:) Tj
+1 0 0 1 225.72 509.62 Tm
+(The) Tj
+1 0 0 1 245.279 509.62 Tm
+(balance) Tj
+1 0 0 1 279.719 509.62 Tm
+(be-) Tj
+1 0 0 1 73.92 498.7 Tm
+(tween) Tj
+1 0 0 1 101.16 498.7 Tm
+(theory) Tj
+1 0 0 1 129.96 498.7 Tm
+(and) Tj
+1 0 0 1 147.72 498.7 Tm
+(practice) Tj
+1 0 0 1 182.64 498.7 Tm
+(must) Tj
+1 0 0 1 205.44 498.7 Tm
+(be) Tj
+1 0 0 1 218.28 498.7 Tm
+(appropriately) Tj
+1 0 0 1 274.799 498.7 Tm
+(cho-) Tj
+1 0 0 1 73.92 487.78 Tm
+(sen.) Tj
+1 0 0 1 94.5599 487.78 Tm
+(The) Tj
+1 0 0 1 113.04 487.78 Tm
+(contest-based) Tj
+1 0 0 1 170.4 487.78 Tm
+(courses) Tj
+1 0 0 1 203.28 487.78 Tm
+(tend) Tj
+1 0 0 1 223.56 487.78 Tm
+(to) Tj
+1 0 0 1 234.359 487.78 Tm
+(focus) Tj
+1 0 0 1 258.959 487.78 Tm
+(on) Tj
+1 0 0 1 272.039 487.78 Tm
+(prac-) Tj
+1 0 0 1 73.92 476.74 Tm
+(tice) Tj
+1 0 0 1 92.9999 476.74 Tm
+(and) Tj
+1 0 0 1 112.2 476.74 Tm
+(often) Tj
+1 0 0 1 137.4 476.74 Tm
+(loose) Tj
+1 0 0 1 163.2 476.74 Tm
+(the) Tj
+1 0 0 1 180.12 476.74 Tm
+(necessary) Tj
+1 0 0 1 223.56 476.74 Tm
+(theoretical) Tj
+1 0 0 1 270.359 476.74 Tm
+(back-) Tj
+1 0 0 1 73.92 465.82 Tm
+(ground.) Tj
+1 0 0 1 108.12 465.82 Tm
+(Usually) Tj
+1 0 0 1 141.72 465.82 Tm
+(this) Tj
+1 0 0 1 158.76 465.82 Tm
+(loss) Tj
+1 0 0 1 176.88 465.82 Tm
+(is) Tj
+1 0 0 1 186.12 465.82 Tm
+(in) Tj
+1 0 0 1 193.56 465.82 Tm
+(v) Tj
+1 0 0 1 198.36 465.82 Tm
+(oluntary) Tj
+1 0 0 1 231.24 465.82 Tm
+(,) Tj
+1 0 0 1 236.04 465.82 Tm
+(b) Tj
+1 0 0 1 240.839 465.82 Tm
+(ut) Tj
+1 0 0 1 251.159 465.82 Tm
+(the) Tj
+1 0 0 1 265.919 465.82 Tm
+(educa-) Tj
+1 0 0 1 73.92 454.9 Tm
+(tor) Tj
+1 0 0 1 87.4799 454.9 Tm
+(should) Tj
+1 0 0 1 116.52 454.9 Tm
+(be) Tj
+1 0 0 1 128.52 454.9 Tm
+(a) Tj
+1 0 0 1 132.84 454.9 Tm
+(w) Tj
+1 0 0 1 139.92 454.9 Tm
+(are) Tj
+1 0 0 1 154.44 454.9 Tm
+(of) Tj
+1 0 0 1 165.24 454.9 Tm
+(such) Tj
+1 0 0 1 186 454.9 Tm
+(danger) Tj
+1 0 0 1 212.759 454.9 Tm
+(.) Tj
+1 0 0 1 218.159 454.9 Tm
+(Ev) Tj
+1 0 0 1 229.199 454.9 Tm
+(en) Tj
+1 0 0 1 241.079 454.9 Tm
+(if) Tj
+1 0 0 1 249.599 454.9 Tm
+(we) Tj
+1 0 0 1 263.759 454.9 Tm
+(present) Tj
+1 0 0 1 73.92 443.86 Tm
+(the) Tj
+1 0 0 1 89.6399 443.86 Tm
+(necessary) Tj
+1 0 0 1 132 443.86 Tm
+(theory) Tj
+1 0 0 1 161.04 443.86 Tm
+(in) Tj
+1 0 0 1 172.44 443.86 Tm
+(adv) Tj
+1 0 0 1 186.72 443.86 Tm
+(ance,) Tj
+1 0 0 1 211.2 443.86 Tm
+(it) Tj
+1 0 0 1 220.319 443.86 Tm
+(is) Tj
+1 0 0 1 230.519 443.86 Tm
+(seldom) Tj
+1 0 0 1 262.919 443.86 Tm
+(used) Tj
+1 0 0 1 284.759 443.86 Tm
+(to) Tj
+1 0 0 1 73.92 432.94 Tm
+(a) Tj
+1 0 0 1 82.32 432.94 Tm
+(lar) Tj
+1 0 0 1 92.7599 432.94 Tm
+(ger) Tj
+1 0 0 1 109.2 432.94 Tm
+(e) Tj
+1 0 0 1 113.52 432.94 Tm
+(xtent.) Tj
+1 0 0 1 143.28 432.94 Tm
+(On) Tj
+1 0 0 1 159.36 432.94 Tm
+(the) Tj
+1 0 0 1 175.44 432.94 Tm
+(other) Tj
+1 0 0 1 199.8 432.94 Tm
+(hand,) Tj
+1 0 0 1 225.96 432.94 Tm
+(what) Tj
+1 0 0 1 249.239 432.94 Tm
+(can) Tj
+1 0 0 1 266.999 432.94 Tm
+(we) Tj
+1 0 0 1 282.479 432.94 Tm
+(do) Tj
+1 0 0 1 73.92 422.02 Tm
+(or) Tj
+1 0 0 1 86.16 422.02 Tm
+(e) Tj
+1 0 0 1 90.48 422.02 Tm
+(xpect) Tj
+1 0 0 1 115.8 422.02 Tm
+(more?) Tj
+1 0 0 1 147.96 422.02 Tm
+(W) Tj
+1 0 0 1 156.48 422.02 Tm
+(e) Tj
+1 0 0 1 164.88 422.02 Tm
+(are) Tj
+1 0 0 1 180.96 422.02 Tm
+(gi) Tj
+1 0 0 1 188.52 422.02 Tm
+(ving) Tj
+1 0 0 1 210 422.02 Tm
+(a) Tj
+1 0 0 1 218.279 422.02 Tm
+(course) Tj
+1 0 0 1 248.159 422.02 Tm
+(in) Tj
+1 0 0 1 259.799 422.02 Tm
+(order) Tj
+1 0 0 1 284.759 422.02 Tm
+(to) Tj
+1 0 0 1 73.92 410.98 Tm
+(present) Tj
+1 0 0 1 105.12 410.98 Tm
+(the) Tj
+1 0 0 1 119.64 410.98 Tm
+(students) Tj
+1 0 0 1 154.68 410.98 Tm
+(with) Tj
+1 0 0 1 174.72 410.98 Tm
+(some) Tj
+1 0 0 1 198.24 410.98 Tm
+(piece) Tj
+1 0 0 1 221.639 410.98 Tm
+(of) Tj
+1 0 0 1 232.319 410.98 Tm
+(kno) Tj
+1 0 0 1 247.199 410.98 Tm
+(wledge) Tj
+1 0 0 1 278.159 410.98 Tm
+(and) Tj
+1 0 0 1 73.92 400.06 Tm
+(to) Tj
+1 0 0 1 84.1199 400.06 Tm
+(demonstrate) Tj
+1 0 0 1 135.36 400.06 Tm
+(ho) Tj
+1 0 0 1 145.2 400.06 Tm
+(w) Tj
+1 0 0 1 154.8 400.06 Tm
+(it) Tj
+1 0 0 1 162.84 400.06 Tm
+(may) Tj
+1 0 0 1 182.4 400.06 Tm
+(be) Tj
+1 0 0 1 194.28 400.06 Tm
+(used) Tj
+1 0 0 1 215.039 400.06 Tm
+(in) Tj
+1 0 0 1 225.359 400.06 Tm
+(practice.) Tj
+ET
+q
+3.9 0 0 -3.8 54.5 389.6 cm
+/R41 Do
+Q
+BT
+1 0 0 1 63.96 385.06 Tm
+(What) Tj
+1 0 0 1 88.6799 385.06 Tm
+(robotic) Tj
+1 0 0 1 120.12 385.06 Tm
+(platform) Tj
+1 0 0 1 157.56 385.06 Tm
+(to) Tj
+1 0 0 1 168.48 385.06 Tm
+(use?) Tj
+1 0 0 1 191.28 385.06 Tm
+(Probably) Tj
+1 0 0 1 230.399 385.06 Tm
+(there) Tj
+1 0 0 1 253.559 385.06 Tm
+(is) Tj
+1 0 0 1 263.279 385.06 Tm
+(no) Tj
+1 0 0 1 276.479 385.06 Tm
+(uni-) Tj
+1 0 0 1 63.96 374.14 Tm
+(v) Tj
+1 0 0 1 68.88 374.14 Tm
+(ersal) Tj
+1 0 0 1 91.0799 374.14 Tm
+(answer) Tj
+1 0 0 1 122.64 374.14 Tm
+(to) Tj
+1 0 0 1 133.8 374.14 Tm
+(this) Tj
+1 0 0 1 151.68 374.14 Tm
+(question,) Tj
+1 0 0 1 191.52 374.14 Tm
+(as) Tj
+1 0 0 1 203.279 374.14 Tm
+(dif) Tj
+1 0 0 1 214.199 374.14 Tm
+(ferent) Tj
+1 0 0 1 240.719 374.14 Tm
+(courses) Tj
+1 0 0 1 274.079 374.14 Tm
+(ha) Tj
+1 0 0 1 283.319 374.14 Tm
+(v) Tj
+1 0 0 1 288.239 374.14 Tm
+(e) Tj
+1 0 0 1 63.96 363.1 Tm
+(dif) Tj
+1 0 0 1 74.88 363.1 Tm
+(ferent) Tj
+1 0 0 1 101.28 363.1 Tm
+(needs) Tj
+1 0 0 1 127.2 363.1 Tm
+(that) Tj
+1 0 0 1 145.44 363.1 Tm
+(might) Tj
+1 0 0 1 171.96 363.1 Tm
+(be) Tj
+1 0 0 1 184.56 363.1 Tm
+(best) Tj
+1 0 0 1 203.88 363.1 Tm
+(met) Tj
+1 0 0 1 222.12 363.1 Tm
+(by) Tj
+1 0 0 1 235.319 363.1 Tm
+(dif) Tj
+1 0 0 1 246.239 363.1 Tm
+(ferent) Tj
+1 0 0 1 272.639 363.1 Tm
+(tech-) Tj
+1 0 0 1 63.96 352.18 Tm
+(nologies.) Tj
+1 0 0 1 108 352.18 Tm
+(LEGO) Tj
+1 0 0 1 138.48 352.18 Tm
+(Mindstorms) Tj
+1 0 0 1 190.68 352.18 Tm
+(is) Tj
+1 0 0 1 201.36 352.18 Tm
+(v) Tj
+1 0 0 1 206.28 352.18 Tm
+(ery) Tj
+1 0 0 1 222.96 352.18 Tm
+(popular) Tj
+1 0 0 1 257.519 352.18 Tm
+(and) Tj
+1 0 0 1 275.879 352.18 Tm
+(use-) Tj
+1 0 0 1 63.96 341.26 Tm
+(ful) Tj
+1 0 0 1 77.88 341.26 Tm
+(tool,) Tj
+1 0 0 1 98.7599 341.26 Tm
+(b) Tj
+1 0 0 1 103.56 341.26 Tm
+(ut) Tj
+1 0 0 1 114.12 341.26 Tm
+(probably) Tj
+1 0 0 1 152.4 341.26 Tm
+(not) Tj
+1 0 0 1 167.88 341.26 Tm
+(for) Tj
+1 0 0 1 182.4 341.26 Tm
+(engineering) Tj
+1 0 0 1 232.199 341.26 Tm
+(majors.) Tj
+1 0 0 1 265.919 341.26 Tm
+(LEGO) Tj
+1 0 0 1 63.96 330.22 Tm
+(robots) Tj
+1 0 0 1 91.0799 330.22 Tm
+(with) Tj
+1 0 0 1 111 330.22 Tm
+(custom) Tj
+1 0 0 1 141.96 330.22 Tm
+(control) Tj
+1 0 0 1 172.32 330.22 Tm
+(board) Tj
+1 0 0 1 197.16 330.22 Tm
+(lik) Tj
+1 0 0 1 207.6 330.22 Tm
+(e) Tj
+1 0 0 1 214.199 330.22 Tm
+(Handy) Tj
+1 0 0 1 242.879 330.22 Tm
+(Board) Tj
+1 0 0 1 269.519 330.22 Tm
+(\(Mar) Tj
+1 0 0 1 289.319 330.22 Tm
+(-) Tj
+1 0 0 1 63.96 319.3 Tm
+(tin) Tj
+1 0 0 1 78.7199 319.3 Tm
+(1999\)) Tj
+1 0 0 1 106.08 319.3 Tm
+(or) Tj
+1 0 0 1 118.56 319.3 Tm
+(the) Tj
+1 0 0 1 135 319.3 Tm
+(ne) Tj
+1 0 0 1 144.24 319.3 Tm
+(w) Tj
+1 0 0 1 155.52 319.3 Tm
+(one) Tj
+1 0 0 1 174.12 319.3 Tm
+(being) Tj
+1 0 0 1 200.4 319.3 Tm
+(currently) Tj
+1 0 0 1 240.599 319.3 Tm
+(de) Tj
+1 0 0 1 249.839 319.3 Tm
+(v) Tj
+1 0 0 1 254.759 319.3 Tm
+(eloped) Tj
+1 0 0 1 285.359 319.3 Tm
+(at) Tj
+1 0 0 1 63.96 308.38 Tm
+(MIT) Tj
+1 0 0 1 84.24 308.38 Tm
+(\(Bajracharya) Tj
+1 0 0 1 137.76 308.38 Tm
+(&) Tj
+1 0 0 1 147.48 308.38 Tm
+(Olsson) Tj
+1 0 0 1 177.24 308.38 Tm
+(2001\)) Tj
+1 0 0 1 202.44 308.38 Tm
+(pro) Tj
+1 0 0 1 215.759 308.38 Tm
+(vide) Tj
+1 0 0 1 234.719 308.38 Tm
+(a) Tj
+1 0 0 1 241.199 308.38 Tm
+(more) Tj
+1 0 0 1 263.759 308.38 Tm
+(sophis-) Tj
+1 0 0 1 63.96 297.34 Tm
+(ticated) Tj
+1 0 0 1 92.8799 297.34 Tm
+(alternati) Tj
+1 0 0 1 125.4 297.34 Tm
+(v) Tj
+1 0 0 1 130.32 297.34 Tm
+(e) Tj
+1 0 0 1 136.92 297.34 Tm
+(from) Tj
+1 0 0 1 158.64 297.34 Tm
+(programming) Tj
+1 0 0 1 215.28 297.34 Tm
+(point) Tj
+1 0 0 1 238.199 297.34 Tm
+(of) Tj
+1 0 0 1 248.879 297.34 Tm
+(vie) Tj
+1 0 0 1 260.879 297.34 Tm
+(w) Tj
+1 0 0 1 270.359 297.34 Tm
+(while) Tj
+1 0 0 1 63.96 286.42 Tm
+(retaining) Tj
+1 0 0 1 102.48 286.42 Tm
+(the) Tj
+1 0 0 1 117.84 286.42 Tm
+(attracti) Tj
+1 0 0 1 145.32 286.42 Tm
+(v) Tj
+1 0 0 1 150.24 286.42 Tm
+(e) Tj
+1 0 0 1 157.56 286.42 Tm
+(price) Tj
+1 0 0 1 180.6 286.42 Tm
+(tag.) Tj
+1 0 0 1 200.28 286.42 Tm
+(Some) Tj
+1 0 0 1 226.079 286.42 Tm
+(other) Tj
+1 0 0 1 249.599 286.42 Tm
+(robots) Tj
+1 0 0 1 277.679 286.42 Tm
+(lik) Tj
+1 0 0 1 288.119 286.42 Tm
+(e) Tj
+1 0 0 1 63.96 275.5 Tm
+(Pioneer) Tj
+1 0 0 1 97.3199 275.5 Tm
+(or) Tj
+1 0 0 1 108.48 275.5 Tm
+(Khepera) Tj
+1 0 0 1 145.08 275.5 Tm
+(may) Tj
+1 0 0 1 165.12 275.5 Tm
+(be) Tj
+1 0 0 1 177.48 275.5 Tm
+(considered) Tj
+1 0 0 1 223.559 275.5 Tm
+(a) Tj
+1 0 0 1 230.759 275.5 Tm
+(viable) Tj
+1 0 0 1 257.999 275.5 Tm
+(option) Tj
+1 0 0 1 286.439 275.5 Tm
+(if) Tj
+1 0 0 1 63.96 264.46 Tm
+(price) Tj
+1 0 0 1 86.5199 264.46 Tm
+(of) Tj
+1 0 0 1 97.5599 264.46 Tm
+(the) Tj
+1 0 0 1 112.44 264.46 Tm
+(equipment) Tj
+1 0 0 1 157.2 264.46 Tm
+(is) Tj
+1 0 0 1 166.44 264.46 Tm
+(not) Tj
+1 0 0 1 181.92 264.46 Tm
+(of) Tj
+1 0 0 1 192.84 264.46 Tm
+(primary) Tj
+1 0 0 1 227.159 264.46 Tm
+(importance.) Tj
+1 0 0 1 278.159 264.46 Tm
+(But) Tj
+1 0 0 1 63.96 253.54 Tm
+(it) Tj
+1 0 0 1 72 253.54 Tm
+(usually) Tj
+1 0 0 1 103.32 253.54 Tm
+(is.) Tj
+ET
+q
+3.9 0 0 -3.8 54.5 243 cm
+/R41 Do
+Q
+BT
+1 0 0 1 63.96 238.54 Tm
+(As) Tj
+1 0 0 1 78.7199 238.54 Tm
+(educators) Tj
+1 0 0 1 120.72 238.54 Tm
+(we) Tj
+1 0 0 1 136.08 238.54 Tm
+(should) Tj
+1 0 0 1 166.32 238.54 Tm
+(be) Tj
+1 0 0 1 179.52 238.54 Tm
+(a) Tj
+1 0 0 1 183.84 238.54 Tm
+(w) Tj
+1 0 0 1 190.92 238.54 Tm
+(are) Tj
+1 0 0 1 206.76 238.54 Tm
+(of) Tj
+1 0 0 1 218.759 238.54 Tm
+(issues) Tj
+1 0 0 1 246.359 238.54 Tm
+(that) Tj
+1 0 0 1 264.959 238.54 Tm
+(we) Tj
+1 0 0 1 280.319 238.54 Tm
+(are) Tj
+1 0 0 1 63.96 227.62 Tm
+(usually) Tj
+1 0 0 1 97.1999 227.62 Tm
+(not) Tj
+1 0 0 1 114.48 227.62 Tm
+(taught) Tj
+1 0 0 1 143.88 227.62 Tm
+(about.) Tj
+1 0 0 1 177.72 227.62 Tm
+(Some) Tj
+1 0 0 1 204.96 227.62 Tm
+(of) Tj
+1 0 0 1 217.68 227.62 Tm
+(the) Tj
+1 0 0 1 234.359 227.62 Tm
+(robotics-based) Tj
+1 0 0 1 63.96 216.58 Tm
+(courses) Tj
+1 0 0 1 97.0799 216.58 Tm
+(ha) Tj
+1 0 0 1 106.32 216.58 Tm
+(v) Tj
+1 0 0 1 111.24 216.58 Tm
+(e) Tj
+1 0 0 1 118.68 216.58 Tm
+(as) Tj
+1 0 0 1 130.2 216.58 Tm
+(their) Tj
+1 0 0 1 151.68 216.58 Tm
+(e) Tj
+1 0 0 1 156 216.58 Tm
+(xplicit) Tj
+1 0 0 1 184.56 216.58 Tm
+(aim) Tj
+1 0 0 1 202.68 216.58 Tm
+(the) Tj
+1 0 0 1 218.04 216.58 Tm
+(intention) Tj
+1 0 0 1 256.679 216.58 Tm
+(to) Tj
+1 0 0 1 267.599 216.58 Tm
+(attract) Tj
+1 0 0 1 63.96 205.66 Tm
+(more) Tj
+1 0 0 1 87.1199 205.66 Tm
+(w) Tj
+1 0 0 1 94.1999 205.66 Tm
+(omen) Tj
+1 0 0 1 119.04 205.66 Tm
+(to) Tj
+1 0 0 1 129.36 205.66 Tm
+(engineering) Tj
+1 0 0 1 179.16 205.66 Tm
+(or) Tj
+1 0 0 1 190.08 205.66 Tm
+(science.) Tj
+1 0 0 1 225.48 205.66 Tm
+(First) Tj
+1 0 0 1 246.479 205.66 Tm
+(of) Tj
+1 0 0 1 257.399 205.66 Tm
+(all,) Tj
+1 0 0 1 272.639 205.66 Tm
+(there) Tj
+1 0 0 1 63.96 194.74 Tm
+(ha) Tj
+1 0 0 1 73.2 194.74 Tm
+(v) Tj
+1 0 0 1 78.1199 194.74 Tm
+(e) Tj
+1 0 0 1 85.0799 194.74 Tm
+(been) Tj
+1 0 0 1 106.56 194.74 Tm
+(man) Tj
+1 0 0 1 123.72 194.74 Tm
+(y) Tj
+1 0 0 1 131.16 194.74 Tm
+(reports) Tj
+1 0 0 1 161.52 194.74 Tm
+(during) Tj
+1 0 0 1 190.2 194.74 Tm
+(the) Tj
+1 0 0 1 204.96 194.74 Tm
+(W) Tj
+1 0 0 1 213.479 194.74 Tm
+(orkshop) Tj
+1 0 0 1 248.279 194.74 Tm
+(stating) Tj
+1 0 0 1 277.559 194.74 Tm
+(that) Tj
+1 0 0 1 63.96 183.7 Tm
+(this) Tj
+1 0 0 1 82.4399 183.7 Tm
+(aim) Tj
+1 0 0 1 101.4 183.7 Tm
+(has) Tj
+1 0 0 1 118.68 183.7 Tm
+(not) Tj
+1 0 0 1 135.48 183.7 Tm
+(been) Tj
+1 0 0 1 158.4 183.7 Tm
+(achie) Tj
+1 0 0 1 179.28 183.7 Tm
+(v) Tj
+1 0 0 1 184.2 183.7 Tm
+(ed) Tj
+1 0 0 1 197.4 183.7 Tm
+(in) Tj
+1 0 0 1 209.16 183.7 Tm
+(an) Tj
+1 0 0 1 218.52 183.7 Tm
+(y) Tj
+1 0 0 1 227.52 183.7 Tm
+(substantial) Tj
+1 0 0 1 274.199 183.7 Tm
+(w) Tj
+1 0 0 1 281.279 183.7 Tm
+(ay) Tj
+1 0 0 1 290.159 183.7 Tm
+(.) Tj
+1 0 0 1 63.96 172.78 Tm
+(Again,) Tj
+1 0 0 1 94.7999 172.78 Tm
+(in) Tj
+1 0 0 1 106.32 172.78 Tm
+(order) Tj
+1 0 0 1 131.16 172.78 Tm
+(to) Tj
+1 0 0 1 142.56 172.78 Tm
+(be) Tj
+1 0 0 1 155.76 172.78 Tm
+(able) Tj
+1 0 0 1 176.16 172.78 Tm
+(to) Tj
+1 0 0 1 187.68 172.78 Tm
+(be) Tj
+1 0 0 1 200.76 172.78 Tm
+(conclusi) Tj
+1 0 0 1 233.879 172.78 Tm
+(v) Tj
+1 0 0 1 238.799 172.78 Tm
+(e,) Tj
+1 0 0 1 249.599 172.78 Tm
+(one) Tj
+1 0 0 1 267.719 172.78 Tm
+(w) Tj
+1 0 0 1 274.799 172.78 Tm
+(ould) Tj
+1 0 0 1 63.96 161.86 Tm
+(need) Tj
+1 0 0 1 84.96 161.86 Tm
+(to) Tj
+1 0 0 1 94.9199 161.86 Tm
+(do) Tj
+1 0 0 1 107.04 161.86 Tm
+(research) Tj
+1 0 0 1 142.44 161.86 Tm
+(on) Tj
+1 0 0 1 154.56 161.86 Tm
+(this) Tj
+1 0 0 1 171.12 161.86 Tm
+(topic.) Tj
+1 0 0 1 196.559 161.86 Tm
+(A) Tj
+1 0 0 1 205.919 161.86 Tm
+(good) Tj
+1 0 0 1 227.999 161.86 Tm
+(e) Tj
+1 0 0 1 232.319 161.86 Tm
+(xample) Tj
+1 0 0 1 263.759 161.86 Tm
+(of) Tj
+1 0 0 1 274.199 161.86 Tm
+(such) Tj
+1 0 0 1 63.96 150.82 Tm
+(research) Tj
+1 0 0 1 100.2 150.82 Tm
+(is) Tj
+1 0 0 1 109.8 150.82 Tm
+(presented) Tj
+1 0 0 1 151.08 150.82 Tm
+(in) Tj
+1 0 0 1 161.76 150.82 Tm
+(\(F) Tj
+1 0 0 1 170.52 150.82 Tm
+(ossum) Tj
+ET
+endstream
+endobj
+47 0 obj
+14905
+endobj
+48 0 obj
+<< /Type /Font /Name /R48 /Subtype /Type1 /BaseFont /Times-Italic >>
+endobj
+49 0 obj
+<< /Length 50 0 R >>
+stream
+BT
+/R48 9.96264 Tf
+1 0 0 1 198.96 150.82 Tm
+(et) Tj
+1 0 0 1 209.159 150.82 Tm
+(al.) Tj
+/R38 9.96264 Tf
+1 0 0 1 224.159 150.82 Tm
+(2001\).) Tj
+1 0 0 1 254.519 150.82 Tm
+(Ho) Tj
+1 0 0 1 266.519 150.82 Tm
+(we) Tj
+1 0 0 1 277.919 150.82 Tm
+(v) Tj
+1 0 0 1 282.839 150.82 Tm
+(er) Tj
+1 0 0 1 290.279 150.82 Tm
+(,) Tj
+1 0 0 1 63.96 139.9 Tm
+(these) Tj
+1 0 0 1 86.7599 139.9 Tm
+(studies) Tj
+1 0 0 1 116.76 139.9 Tm
+(that) Tj
+1 0 0 1 134.04 139.9 Tm
+(e) Tj
+1 0 0 1 138.36 139.9 Tm
+(xist) Tj
+1 0 0 1 154.92 139.9 Tm
+(usually) Tj
+1 0 0 1 186.12 139.9 Tm
+(address) Tj
+1 0 0 1 218.279 139.9 Tm
+(outreach) Tj
+1 0 0 1 254.879 139.9 Tm
+(programs) Tj
+1 0 0 1 329.52 777.94 Tm
+(and) Tj
+1 0 0 1 346.8 777.94 Tm
+(do) Tj
+1 0 0 1 359.64 777.94 Tm
+(not) Tj
+1 0 0 1 375.24 777.94 Tm
+(analyze) Tj
+1 0 0 1 408.6 777.94 Tm
+(higher) Tj
+1 0 0 1 437.04 777.94 Tm
+(educational) Tj
+1 0 0 1 485.879 777.94 Tm
+(le) Tj
+1 0 0 1 492.839 777.94 Tm
+(v) Tj
+1 0 0 1 497.759 777.94 Tm
+(els) Tj
+1 0 0 1 511.559 777.94 Tm
+(lik) Tj
+1 0 0 1 521.999 777.94 Tm
+(e) Tj
+1 0 0 1 529.319 777.94 Tm
+(colle) Tj
+1 0 0 1 548.639 777.94 Tm
+(ge) Tj
+1 0 0 1 329.52 767.02 Tm
+(or) Tj
+1 0 0 1 340.2 767.02 Tm
+(uni) Tj
+1 0 0 1 352.8 767.02 Tm
+(v) Tj
+1 0 0 1 357.72 767.02 Tm
+(ersity) Tj
+1 0 0 1 382.2 767.02 Tm
+(courses.) Tj
+1 0 0 1 329.52 752.98 Tm
+(Personally) Tj
+1 0 0 1 371.16 752.98 Tm
+(,) Tj
+1 0 0 1 377.76 752.98 Tm
+(I) Tj
+1 0 0 1 385.08 752.98 Tm
+(ha) Tj
+1 0 0 1 394.32 752.98 Tm
+(v) Tj
+1 0 0 1 399.24 752.98 Tm
+(e) Tj
+1 0 0 1 407.52 752.98 Tm
+(not) Tj
+1 0 0 1 424.32 752.98 Tm
+(realized) Tj
+1 0 0 1 459.84 752.98 Tm
+(until) Tj
+1 0 0 1 482.159 752.98 Tm
+(the) Tj
+1 0 0 1 498.359 752.98 Tm
+(W) Tj
+1 0 0 1 506.879 752.98 Tm
+(orkshop) Tj
+1 0 0 1 542.999 752.98 Tm
+(that) Tj
+1 0 0 1 329.52 742.06 Tm
+(e) Tj
+1 0 0 1 333.72 742.06 Tm
+(v) Tj
+1 0 0 1 338.64 742.06 Tm
+(en) Tj
+1 0 0 1 351.48 742.06 Tm
+(the) Tj
+1 0 0 1 367.32 742.06 Tm
+(language) Tj
+1 0 0 1 406.92 742.06 Tm
+(we) Tj
+1 0 0 1 422.28 742.06 Tm
+(use) Tj
+1 0 0 1 439.2 742.06 Tm
+(while) Tj
+1 0 0 1 464.879 742.06 Tm
+(formulating) Tj
+1 0 0 1 515.639 742.06 Tm
+(course) Tj
+1 0 0 1 545.279 742.06 Tm
+(de-) Tj
+1 0 0 1 329.52 731.14 Tm
+(scriptions) Tj
+1 0 0 1 372.12 731.14 Tm
+(and) Tj
+1 0 0 1 390.36 731.14 Tm
+(other) Tj
+1 0 0 1 414.6 731.14 Tm
+(related) Tj
+1 0 0 1 445.68 731.14 Tm
+(documents,) Tj
+1 0 0 1 495.479 731.14 Tm
+(play) Tj
+1 0 0 1 516.479 731.14 Tm
+(role) Tj
+1 0 0 1 535.919 731.14 Tm
+(in) Tj
+1 0 0 1 547.439 731.14 Tm
+(at-) Tj
+1 0 0 1 329.52 720.1 Tm
+(tracting) Tj
+1 0 0 1 362.16 720.1 Tm
+(or) Tj
+1 0 0 1 372.72 720.1 Tm
+(repelling) Tj
+1 0 0 1 410.4 720.1 Tm
+(some) Tj
+1 0 0 1 433.8 720.1 Tm
+(students) Tj
+1 0 0 1 468.719 720.1 Tm
+(to/from) Tj
+1 0 0 1 500.879 720.1 Tm
+(the) Tj
+1 0 0 1 515.279 720.1 Tm
+(course) Tj
+1 0 0 1 543.599 720.1 Tm
+(and) Tj
+1 0 0 1 329.52 709.18 Tm
+(that) Tj
+1 0 0 1 346.68 709.18 Tm
+(this) Tj
+1 0 0 1 363.36 709.18 Tm
+(dif) Tj
+1 0 0 1 374.28 709.18 Tm
+(ference) Tj
+1 0 0 1 405.72 709.18 Tm
+(might) Tj
+1 0 0 1 431.16 709.18 Tm
+(be) Tj
+1 0 0 1 442.8 709.18 Tm
+(to) Tj
+1 0 0 1 452.88 709.18 Tm
+(some) Tj
+1 0 0 1 476.159 709.18 Tm
+(e) Tj
+1 0 0 1 480.479 709.18 Tm
+(xtent) Tj
+1 0 0 1 502.559 709.18 Tm
+(gender) Tj
+1 0 0 1 529.679 709.18 Tm
+(-based.) Tj
+1 0 0 1 329.52 698.26 Tm
+(Of) Tj
+1 0 0 1 343.08 698.26 Tm
+(course,) Tj
+1 0 0 1 374.88 698.26 Tm
+(this) Tj
+1 0 0 1 392.52 698.26 Tm
+(is) Tj
+1 0 0 1 402.24 698.26 Tm
+(a) Tj
+1 0 0 1 409.92 698.26 Tm
+(sign) Tj
+1 0 0 1 429.6 698.26 Tm
+(of) Tj
+1 0 0 1 441.12 698.26 Tm
+(my) Tj
+1 0 0 1 456.959 698.26 Tm
+(ignorance.) Tj
+1 0 0 1 503.759 698.26 Tm
+(But) Tj
+1 0 0 1 521.399 698.26 Tm
+(I) Tj
+1 0 0 1 527.879 698.26 Tm
+(w) Tj
+1 0 0 1 534.959 698.26 Tm
+(ant) Tj
+1 0 0 1 550.199 698.26 Tm
+(to) Tj
+1 0 0 1 329.52 687.22 Tm
+(present) Tj
+1 0 0 1 361.32 687.22 Tm
+(it) Tj
+1 0 0 1 369.84 687.22 Tm
+(here) Tj
+1 0 0 1 390 687.22 Tm
+(as) Tj
+1 0 0 1 401.4 687.22 Tm
+(an) Tj
+1 0 0 1 413.76 687.22 Tm
+(e) Tj
+1 0 0 1 418.08 687.22 Tm
+(xample) Tj
+1 0 0 1 450.359 687.22 Tm
+(of) Tj
+1 0 0 1 461.759 687.22 Tm
+(issues) Tj
+1 0 0 1 488.639 687.22 Tm
+(that) Tj
+1 0 0 1 506.519 687.22 Tm
+(one) Tj
+1 0 0 1 523.919 687.22 Tm
+(does) Tj
+1 0 0 1 545.279 687.22 Tm
+(not) Tj
+1 0 0 1 329.52 676.3 Tm
+(necessarily) Tj
+1 0 0 1 376.32 676.3 Tm
+(think) Tj
+1 0 0 1 399.36 676.3 Tm
+(of) Tj
+1 0 0 1 410.28 676.3 Tm
+(while) Tj
+1 0 0 1 435 676.3 Tm
+(preparing) Tj
+1 0 0 1 475.799 676.3 Tm
+(a) Tj
+1 0 0 1 482.759 676.3 Tm
+(ne) Tj
+1 0 0 1 491.999 676.3 Tm
+(w) Tj
+1 0 0 1 501.719 676.3 Tm
+(course.) Tj
+1 0 0 1 533.639 676.3 Tm
+(Possi-) Tj
+1 0 0 1 329.52 665.38 Tm
+(bly) Tj
+1 0 0 1 345.36 665.38 Tm
+(a) Tj
+1 0 0 1 353.04 665.38 Tm
+(good) Tj
+1 0 0 1 376.2 665.38 Tm
+(guide) Tj
+1 0 0 1 401.52 665.38 Tm
+(written) Tj
+1 0 0 1 433.08 665.38 Tm
+(by) Tj
+1 0 0 1 446.159 665.38 Tm
+(a) Tj
+1 0 0 1 453.839 665.38 Tm
+(pedagogical) Tj
+1 0 0 1 505.199 665.38 Tm
+(e) Tj
+1 0 0 1 509.519 665.38 Tm
+(xpert) Tj
+1 0 0 1 533.159 665.38 Tm
+(w) Tj
+1 0 0 1 540.239 665.38 Tm
+(ould) Tj
+1 0 0 1 329.52 654.34 Tm
+(be) Tj
+1 0 0 1 341.4 654.34 Tm
+(of) Tj
+1 0 0 1 352.2 654.34 Tm
+(great) Tj
+1 0 0 1 374.52 654.34 Tm
+(help) Tj
+1 0 0 1 394.2 654.34 Tm
+(to) Tj
+1 0 0 1 404.4 654.34 Tm
+(all) Tj
+1 0 0 1 416.88 654.34 Tm
+(of) Tj
+1 0 0 1 427.68 654.34 Tm
+(us) Tj
+1 0 0 1 439.079 654.34 Tm
+(ignorant) Tj
+1 0 0 1 474.719 654.34 Tm
+(in) Tj
+1 0 0 1 484.919 654.34 Tm
+(those) Tj
+1 0 0 1 508.439 654.34 Tm
+(matters.) Tj
+ET
+q
+3.9 0 0 -3.8 320.1 641.9 cm
+/R41 Do
+Q
+BT
+1 0 0 1 329.52 637.42 Tm
+(Finally) Tj
+1 0 0 1 357.24 637.42 Tm
+(,) Tj
+1 0 0 1 362.28 637.42 Tm
+(I) Tj
+1 0 0 1 368.4 637.42 Tm
+(w) Tj
+1 0 0 1 375.48 637.42 Tm
+(ould) Tj
+1 0 0 1 395.88 637.42 Tm
+(lik) Tj
+1 0 0 1 406.32 637.42 Tm
+(e) Tj
+1 0 0 1 413.4 637.42 Tm
+(to) Tj
+1 0 0 1 423.96 637.42 Tm
+(point) Tj
+1 0 0 1 447.119 637.42 Tm
+(to) Tj
+1 0 0 1 457.559 637.42 Tm
+(the) Tj
+1 0 0 1 472.439 637.42 Tm
+(f) Tj
+1 0 0 1 475.679 637.42 Tm
+(act) Tj
+1 0 0 1 490.079 637.42 Tm
+(that) Tj
+1 0 0 1 507.719 637.42 Tm
+(the) Tj
+1 0 0 1 522.599 637.42 Tm
+(robotics-) Tj
+1 0 0 1 329.52 626.5 Tm
+(based) Tj
+1 0 0 1 355.92 626.5 Tm
+(courses) Tj
+1 0 0 1 389.52 626.5 Tm
+(are) Tj
+1 0 0 1 405.36 626.5 Tm
+(much) Tj
+1 0 0 1 431.16 626.5 Tm
+(more) Tj
+1 0 0 1 455.4 626.5 Tm
+(resource) Tj
+1 0 0 1 492.839 626.5 Tm
+(demanding) Tj
+1 0 0 1 540.839 626.5 Tm
+(than) Tj
+1 0 0 1 329.52 615.46 Tm
+(the) Tj
+1 0 0 1 345.12 615.46 Tm
+(usual) Tj
+1 0 0 1 369.6 615.46 Tm
+(ones.) Tj
+1 0 0 1 396.48 615.46 Tm
+(A) Tj
+1 0 0 1 407.16 615.46 Tm
+(good) Tj
+1 0 0 1 430.56 615.46 Tm
+(description) Tj
+1 0 0 1 478.319 615.46 Tm
+(of) Tj
+1 0 0 1 490.199 615.46 Tm
+(the) Tj
+1 0 0 1 505.799 615.46 Tm
+(typical) Tj
+1 0 0 1 536.399 615.46 Tm
+(prob-) Tj
+1 0 0 1 329.52 604.54 Tm
+(lems) Tj
+1 0 0 1 351.6 604.54 Tm
+(has) Tj
+1 0 0 1 368.16 604.54 Tm
+(been) Tj
+1 0 0 1 390.36 604.54 Tm
+(gi) Tj
+1 0 0 1 397.92 604.54 Tm
+(v) Tj
+1 0 0 1 402.84 604.54 Tm
+(en) Tj
+1 0 0 1 415.44 604.54 Tm
+(in) Tj
+1 0 0 1 426.48 604.54 Tm
+(\(Congdon) Tj
+1 0 0 1 469.68 604.54 Tm
+(2001\).) Tj
+1 0 0 1 500.999 604.54 Tm
+(These) Tj
+1 0 0 1 528.119 604.54 Tm
+(courses) Tj
+1 0 0 1 329.52 593.62 Tm
+(require) Tj
+1 0 0 1 360.36 593.62 Tm
+(more) Tj
+1 0 0 1 383.52 593.62 Tm
+(\256nancial) Tj
+1 0 0 1 420.48 593.62 Tm
+(support,) Tj
+1 0 0 1 455.64 593.62 Tm
+(more) Tj
+1 0 0 1 478.68 593.62 Tm
+(space,) Tj
+1 0 0 1 506.039 593.62 Tm
+(usually) Tj
+1 0 0 1 537.479 593.62 Tm
+(more) Tj
+1 0 0 1 329.52 582.7 Tm
+(assistants) Tj
+1 0 0 1 369.36 582.7 Tm
+(and,) Tj
+1 0 0 1 388.44 582.7 Tm
+(last) Tj
+1 0 0 1 404.52 582.7 Tm
+(b) Tj
+1 0 0 1 409.32 582.7 Tm
+(ut) Tj
+1 0 0 1 419.16 582.7 Tm
+(not) Tj
+1 0 0 1 434.16 582.7 Tm
+(least,) Tj
+1 0 0 1 457.199 582.7 Tm
+(more) Tj
+1 0 0 1 479.879 582.7 Tm
+(w) Tj
+1 0 0 1 486.959 582.7 Tm
+(ork) Tj
+1 0 0 1 502.439 582.7 Tm
+(from) Tj
+1 0 0 1 523.919 582.7 Tm
+(our) Tj
+1 0 0 1 539.399 582.7 Tm
+(side.) Tj
+1 0 0 1 329.52 571.66 Tm
+(In) Tj
+1 0 0 1 340.56 571.66 Tm
+(most) Tj
+1 0 0 1 362.64 571.66 Tm
+(cases) Tj
+1 0 0 1 386.4 571.66 Tm
+(this) Tj
+1 0 0 1 403.56 571.66 Tm
+(w) Tj
+1 0 0 1 410.64 571.66 Tm
+(ork) Tj
+1 0 0 1 426.6 571.66 Tm
+(is) Tj
+1 0 0 1 436.08 571.66 Tm
+(not) Tj
+1 0 0 1 451.56 571.66 Tm
+(properly) Tj
+1 0 0 1 488.039 571.66 Tm
+(ackno) Tj
+1 0 0 1 511.799 571.66 Tm
+(wledged) Tj
+1 0 0 1 548.039 571.66 Tm
+(by) Tj
+1 0 0 1 329.52 560.74 Tm
+(our) Tj
+1 0 0 1 346.08 560.74 Tm
+(emplo) Tj
+1 0 0 1 371.04 560.74 Tm
+(yers,) Tj
+1 0 0 1 393.6 560.74 Tm
+(colle) Tj
+1 0 0 1 412.92 560.74 Tm
+(ges) Tj
+1 0 0 1 429.48 560.74 Tm
+(and) Tj
+1 0 0 1 447.24 560.74 Tm
+(uni) Tj
+1 0 0 1 459.84 560.74 Tm
+(v) Tj
+1 0 0 1 464.76 560.74 Tm
+(ersities,) Tj
+1 0 0 1 498.959 560.74 Tm
+(therefore) Tj
+1 0 0 1 538.319 560.74 Tm
+(lea) Tj
+1 0 0 1 549.719 560.74 Tm
+(v-) Tj
+1 0 0 1 329.52 549.82 Tm
+(ing) Tj
+1 0 0 1 345.24 549.82 Tm
+(just) Tj
+1 0 0 1 362.64 549.82 Tm
+(satisf) Tj
+1 0 0 1 383.52 549.82 Tm
+(action) Tj
+1 0 0 1 410.88 549.82 Tm
+(as) Tj
+1 0 0 1 422.16 549.82 Tm
+(the) Tj
+1 0 0 1 437.399 549.82 Tm
+(major) Tj
+1 0 0 1 463.679 549.82 Tm
+(re) Tj
+1 0 0 1 471.239 549.82 Tm
+(w) Tj
+1 0 0 1 478.319 549.82 Tm
+(ard.) Tj
+1 0 0 1 498.119 549.82 Tm
+(But) Tj
+1 0 0 1 515.519 549.82 Tm
+(in) Tj
+1 0 0 1 526.199 549.82 Tm
+(order) Tj
+1 0 0 1 550.199 549.82 Tm
+(to) Tj
+1 0 0 1 329.52 538.78 Tm
+(dra) Tj
+1 0 0 1 342.24 538.78 Tm
+(w) Tj
+1 0 0 1 351.48 538.78 Tm
+(attention) Tj
+1 0 0 1 388.56 538.78 Tm
+(of) Tj
+1 0 0 1 399.12 538.78 Tm
+(our) Tj
+1 0 0 1 414.6 538.78 Tm
+(sponsors) Tj
+1 0 0 1 451.68 538.78 Tm
+(to) Tj
+1 0 0 1 461.639 538.78 Tm
+(this) Tj
+1 0 0 1 478.319 538.78 Tm
+(problem) Tj
+1 0 0 1 513.719 538.78 Tm
+(and) Tj
+1 0 0 1 530.279 538.78 Tm
+(to) Tj
+1 0 0 1 540.239 538.78 Tm
+(con-) Tj
+1 0 0 1 329.52 527.86 Tm
+(vince) Tj
+1 0 0 1 354.12 527.86 Tm
+(them) Tj
+1 0 0 1 377.28 527.86 Tm
+(that) Tj
+1 0 0 1 395.28 527.86 Tm
+(some) Tj
+1 0 0 1 419.52 527.86 Tm
+(e) Tj
+1 0 0 1 423.84 527.86 Tm
+(xtra) Tj
+1 0 0 1 442.32 527.86 Tm
+(measures) Tj
+1 0 0 1 482.639 527.86 Tm
+(are) Tj
+1 0 0 1 497.879 527.86 Tm
+(appropriate) Tj
+1 0 0 1 546.359 527.86 Tm
+(we) Tj
+1 0 0 1 329.52 516.94 Tm
+(need) Tj
+1 0 0 1 350.76 516.94 Tm
+(con) Tj
+1 0 0 1 364.92 516.94 Tm
+(vincing) Tj
+1 0 0 1 397.2 516.94 Tm
+(data) Tj
+1 0 0 1 416.28 516.94 Tm
+(that) Tj
+1 0 0 1 433.68 516.94 Tm
+(this) Tj
+1 0 0 1 450.6 516.94 Tm
+(type) Tj
+1 0 0 1 470.279 516.94 Tm
+(of) Tj
+1 0 0 1 481.079 516.94 Tm
+(education) Tj
+1 0 0 1 522.239 516.94 Tm
+(is) Tj
+1 0 0 1 531.479 516.94 Tm
+(indeed) Tj
+1 0 0 1 329.52 505.9 Tm
+(bene\256cial.) Tj
+/R45 11.9552 Tf
+1 0 0 1 399.36 479.74 Tm
+(Our) Tj
+1 0 0 1 423.6 479.74 Tm
+(experience) Tj
+/R38 9.96264 Tf
+1 0 0 1 319.56 462.82 Tm
+(The) Tj
+1 0 0 1 338.16 462.82 Tm
+(courses) Tj
+1 0 0 1 371.16 462.82 Tm
+(I) Tj
+1 0 0 1 377.64 462.82 Tm
+(ha) Tj
+1 0 0 1 386.88 462.82 Tm
+(v) Tj
+1 0 0 1 391.8 462.82 Tm
+(e) Tj
+1 0 0 1 399.24 462.82 Tm
+(gi) Tj
+1 0 0 1 406.8 462.82 Tm
+(v) Tj
+1 0 0 1 411.72 462.82 Tm
+(en) Tj
+1 0 0 1 424.2 462.82 Tm
+(using) Tj
+1 0 0 1 448.919 462.82 Tm
+(robots) Tj
+1 0 0 1 476.999 462.82 Tm
+(\(real) Tj
+1 0 0 1 498.359 462.82 Tm
+(and) Tj
+1 0 0 1 515.879 462.82 Tm
+(simulated\)) Tj
+1 0 0 1 319.56 451.78 Tm
+(are) Tj
+1 0 0 1 334.2 451.78 Tm
+(the) Tj
+1 0 0 1 348.84 451.78 Tm
+(follo) Tj
+1 0 0 1 367.56 451.78 Tm
+(wing:) Tj
+ET
+q
+3.9 0 0 -3.8 320.1 439.4 cm
+/R41 Do
+Q
+BT
+/R45 9.96264 Tf
+1 0 0 1 329.52 434.86 Tm
+(Ho) Tj
+1 0 0 1 342.24 434.86 Tm
+(w) Tj
+1 0 0 1 351.72 434.86 Tm
+(to) Tj
+1 0 0 1 362.52 434.86 Tm
+(b) Tj
+1 0 0 1 367.8 434.86 Tm
+(uild) Tj
+1 0 0 1 387 434.86 Tm
+(and) Tj
+1 0 0 1 405.6 434.86 Tm
+(contr) Tj
+1 0 0 1 428.28 434.86 Tm
+(ol) Tj
+1 0 0 1 438.36 434.86 Tm
+(y) Tj
+1 0 0 1 443.16 434.86 Tm
+(our) Tj
+1 0 0 1 460.44 434.86 Tm
+(o) Tj
+1 0 0 1 465.36 434.86 Tm
+(wn) Tj
+1 0 0 1 480.599 434.86 Tm
+(mobile) Tj
+1 0 0 1 511.799 434.86 Tm
+(r) Tj
+1 0 0 1 516.119 434.86 Tm
+(obot) Tj
+/R38 9.96264 Tf
+1 0 0 1 329.52 420.94 Tm
+(A) Tj
+1 0 0 1 339.72 420.94 Tm
+(summer) Tj
+1 0 0 1 374.76 420.94 Tm
+(course,) Tj
+1 0 0 1 406.44 420.94 Tm
+(gi) Tj
+1 0 0 1 414 420.94 Tm
+(v) Tj
+1 0 0 1 418.92 420.94 Tm
+(en) Tj
+1 0 0 1 431.16 420.94 Tm
+(twice) Tj
+1 0 0 1 455.76 420.94 Tm
+(\(1996) Tj
+1 0 0 1 482.039 420.94 Tm
+(and) Tj
+1 0 0 1 499.439 420.94 Tm
+(1997\);) Tj
+1 0 0 1 528.719 420.94 Tm
+(discon-) Tj
+1 0 0 1 329.52 409.9 Tm
+(tinued) Tj
+1 0 0 1 357.84 409.9 Tm
+(due) Tj
+1 0 0 1 375.84 409.9 Tm
+(to) Tj
+1 0 0 1 387.12 409.9 Tm
+(\256nancial) Tj
+1 0 0 1 424.92 409.9 Tm
+(cuts.) Tj
+1 0 0 1 449.64 409.9 Tm
+(Under) Tj
+1 0 0 1 474.599 409.9 Tm
+(graduate,) Tj
+1 0 0 1 514.919 409.9 Tm
+(aimed) Tj
+1 0 0 1 542.879 409.9 Tm
+(at) Tj
+1 0 0 1 553.559 409.9 Tm
+(a) Tj
+1 0 0 1 329.52 398.98 Tm
+(broad) Tj
+1 0 0 1 355.44 398.98 Tm
+(spectrum) Tj
+1 0 0 1 395.16 398.98 Tm
+(of) Tj
+1 0 0 1 406.68 398.98 Tm
+(students.) Tj
+1 0 0 1 447.12 398.98 Tm
+(V) Tj
+1 0 0 1 453.24 398.98 Tm
+(ery) Tj
+1 0 0 1 469.2 398.98 Tm
+(similar) Tj
+1 0 0 1 500.159 398.98 Tm
+(in) Tj
+1 0 0 1 511.079 398.98 Tm
+(spirit) Tj
+1 0 0 1 534.839 398.98 Tm
+(to) Tj
+1 0 0 1 545.879 398.98 Tm
+(the) Tj
+1 0 0 1 329.52 388.06 Tm
+(MIT) Tj
+1 0 0 1 350.64 388.06 Tm
+(6.270) Tj
+1 0 0 1 376.08 388.06 Tm
+(course) Tj
+1 0 0 1 405 388.06 Tm
+(\(from) Tj
+1 0 0 1 430.68 388.06 Tm
+(which) Tj
+1 0 0 1 458.039 388.06 Tm
+(the) Tj
+1 0 0 1 473.159 388.06 Tm
+(idea) Tj
+1 0 0 1 492.719 388.06 Tm
+(has) Tj
+1 0 0 1 508.919 388.06 Tm
+(been) Tj
+1 0 0 1 530.759 388.06 Tm
+(tak) Tj
+1 0 0 1 542.879 388.06 Tm
+(en\).) Tj
+1 0 0 1 329.52 377.02 Tm
+(LEGO) Tj
+1 0 0 1 358.08 377.02 Tm
+(+) Tj
+1 0 0 1 365.76 377.02 Tm
+(6.270) Tj
+1 0 0 1 390.24 377.02 Tm
+(board-based) Tj
+1 0 0 1 441 377.02 Tm
+(\(in) Tj
+1 0 0 1 454.08 377.02 Tm
+(the) Tj
+1 0 0 1 468.24 377.02 Tm
+(second) Tj
+1 0 0 1 497.999 377.02 Tm
+(year) Tj
+1 0 0 1 517.199 377.02 Tm
+(the) Tj
+1 0 0 1 531.479 377.02 Tm
+(Handy) Tj
+1 0 0 1 329.52 366.1 Tm
+(board) Tj
+1 0 0 1 354.24 366.1 Tm
+(w) Tj
+1 0 0 1 361.32 366.1 Tm
+(as) Tj
+1 0 0 1 371.64 366.1 Tm
+(used\).) Tj
+1 0 0 1 398.64 366.1 Tm
+(Intended) Tj
+1 0 0 1 435.48 366.1 Tm
+(to) Tj
+1 0 0 1 445.32 366.1 Tm
+(pass) Tj
+1 0 0 1 464.519 366.1 Tm
+(the) Tj
+1 0 0 1 478.679 366.1 Tm
+(introductory) Tj
+1 0 0 1 530.039 366.1 Tm
+(kno) Tj
+1 0 0 1 544.919 366.1 Tm
+(wl-) Tj
+1 0 0 1 329.52 355.18 Tm
+(edge) Tj
+1 0 0 1 351.84 355.18 Tm
+(in) Tj
+1 0 0 1 363.12 355.18 Tm
+(robotics,) Tj
+1 0 0 1 401.52 355.18 Tm
+(reacti) Tj
+1 0 0 1 423.48 355.18 Tm
+(v) Tj
+1 0 0 1 428.4 355.18 Tm
+(e) Tj
+1 0 0 1 436.2 355.18 Tm
+(systems,) Tj
+1 0 0 1 473.999 355.18 Tm
+(design) Tj
+1 0 0 1 503.519 355.18 Tm
+(methodology) Tj
+1 0 0 1 555.959 355.18 Tm
+(,) Tj
+1 0 0 1 329.52 344.14 Tm
+(cooperati) Tj
+1 0 0 1 366.6 344.14 Tm
+(v) Tj
+1 0 0 1 371.52 344.14 Tm
+(e) Tj
+1 0 0 1 378.48 344.14 Tm
+(project) Tj
+1 0 0 1 409.2 344.14 Tm
+(w) Tj
+1 0 0 1 416.28 344.14 Tm
+(ork.) Tj
+1 0 0 1 436.68 344.14 Tm
+(Some) Tj
+1 0 0 1 462.359 344.14 Tm
+(video) Tj
+1 0 0 1 487.439 344.14 Tm
+(documentation) Tj
+1 0 0 1 549.719 344.14 Tm
+(of) Tj
+1 0 0 1 329.52 333.22 Tm
+(the) Tj
+1 0 0 1 344.16 333.22 Tm
+(course) Tj
+1 0 0 1 372.6 333.22 Tm
+(e) Tj
+1 0 0 1 376.92 333.22 Tm
+(xists.) Tj
+ET
+q
+3.9 0 0 -3.8 320.1 320.8 cm
+/R41 Do
+Q
+BT
+/R45 9.96264 Tf
+1 0 0 1 329.52 316.3 Tm
+(Situated) Tj
+1 0 0 1 367.44 316.3 Tm
+(r) Tj
+1 0 0 1 371.76 316.3 Tm
+(obotics) Tj
+/R38 9.96264 Tf
+1 0 0 1 329.52 302.38 Tm
+(A) Tj
+1 0 0 1 339.12 302.38 Tm
+(graduate) Tj
+1 0 0 1 375.96 302.38 Tm
+(course,) Tj
+1 0 0 1 406.92 302.38 Tm
+(gi) Tj
+1 0 0 1 414.48 302.38 Tm
+(v) Tj
+1 0 0 1 419.4 302.38 Tm
+(en) Tj
+1 0 0 1 431.04 302.38 Tm
+(once) Tj
+1 0 0 1 452.4 302.38 Tm
+(\(1996\),) Tj
+1 0 0 1 483.839 302.38 Tm
+(aimed) Tj
+1 0 0 1 510.719 302.38 Tm
+(at) Tj
+1 0 0 1 520.319 302.38 Tm
+(computer) Tj
+1 0 0 1 329.52 291.34 Tm
+(science) Tj
+1 0 0 1 361.2 291.34 Tm
+(students.) Tj
+1 0 0 1 399.36 291.34 Tm
+(F) Tj
+1 0 0 1 404.76 291.34 Tm
+(ocused) Tj
+1 0 0 1 434.76 291.34 Tm
+(on) Tj
+1 0 0 1 447.12 291.34 Tm
+(reacti) Tj
+1 0 0 1 469.079 291.34 Tm
+(v) Tj
+1 0 0 1 473.999 291.34 Tm
+(e,) Tj
+1 0 0 1 483.119 291.34 Tm
+(embedded) Tj
+1 0 0 1 526.439 291.34 Tm
+(systems) Tj
+1 0 0 1 329.52 280.42 Tm
+(and) Tj
+1 0 0 1 346.44 280.42 Tm
+(on) Tj
+1 0 0 1 359.04 280.42 Tm
+(discrepanc) Tj
+1 0 0 1 401.76 280.42 Tm
+(y) Tj
+1 0 0 1 409.08 280.42 Tm
+(between) Tj
+1 0 0 1 444.96 280.42 Tm
+(symbolic) Tj
+1 0 0 1 484.079 280.42 Tm
+(models) Tj
+1 0 0 1 515.519 280.42 Tm
+(and) Tj
+1 0 0 1 532.559 280.42 Tm
+(reality) Tj
+1 0 0 1 329.52 269.5 Tm
+(as) Tj
+1 0 0 1 339.96 269.5 Tm
+(percei) Tj
+1 0 0 1 364.2 269.5 Tm
+(v) Tj
+1 0 0 1 369.12 269.5 Tm
+(ed) Tj
+1 0 0 1 380.4 269.5 Tm
+(by) Tj
+1 0 0 1 392.52 269.5 Tm
+(the) Tj
+1 0 0 1 406.8 269.5 Tm
+(sensors.) Tj
+1 0 0 1 441.6 269.5 Tm
+(LEGO) Tj
+1 0 0 1 470.279 269.5 Tm
+(+) Tj
+1 0 0 1 478.079 269.5 Tm
+(Handy) Tj
+1 0 0 1 506.879 269.5 Tm
+(board-based.) Tj
+1 0 0 1 329.52 258.46 Tm
+(No) Tj
+1 0 0 1 344.16 258.46 Tm
+(remaining) Tj
+1 0 0 1 387 258.46 Tm
+(documentation.) Tj
+ET
+q
+3.9 0 0 -3.8 320.1 246 cm
+/R41 Do
+Q
+BT
+/R45 9.96264 Tf
+1 0 0 1 329.52 241.54 Tm
+(Arti\256cial) Tj
+1 0 0 1 370.08 241.54 Tm
+(Intelligence) Tj
+1 0 0 1 421.92 241.54 Tm
+(Pr) Tj
+1 0 0 1 432.36 241.54 Tm
+(ogramming) Tj
+/R38 9.96264 Tf
+1 0 0 1 329.52 227.62 Tm
+(An) Tj
+1 0 0 1 353.4 227.62 Tm
+(under) Tj
+1 0 0 1 376.2 227.62 Tm
+(graduate) Tj
+1 0 0 1 422.04 227.62 Tm
+(course,) Tj
+1 0 0 1 464.64 227.62 Tm
+(gi) Tj
+1 0 0 1 472.2 227.62 Tm
+(v) Tj
+1 0 0 1 477.12 227.62 Tm
+(en) Tj
+1 0 0 1 498.12 227.62 Tm
+(\(in) Tj
+1 0 0 1 520.92 227.62 Tm
+(its) Tj
+1 0 0 1 542.159 227.62 Tm
+(cur) Tj
+1 0 0 1 554.759 227.62 Tm
+(-) Tj
+1 0 0 1 329.52 216.58 Tm
+(rent) Tj
+1 0 0 1 360.6 216.58 Tm
+(form) Tj
+1 0 0 1 395.52 216.58 Tm
+(since) Tj
+1 0 0 1 431.52 216.58 Tm
+(1998\)) Tj
+1 0 0 1 470.4 216.58 Tm
+(until) Tj
+1 0 0 1 504.24 216.58 Tm
+(today) Tj
+1 0 0 1 541.919 216.58 Tm
+(\(see) Tj
+ET
+endstream
+endobj
+50 0 obj
+17286
+endobj
+51 0 obj
+<< /Type /Font /Name /R51 /Subtype /Type1 /BaseFont /Courier >>
+endobj
+52 0 obj
+<< /Length 53 0 R >>
+stream
+BT
+/R51 9.96264 Tf
+1 0 0 1 329.52 205.66 Tm
+(http://www.ida.liu.se/\304TDDA14) Tj
+/R38 9.96264 Tf
+1 0 0 1 503.519 205.66 Tm
+(\).) Tj
+1 0 0 1 533.639 205.66 Tm
+(Based) Tj
+1 0 0 1 329.52 194.74 Tm
+(on) Tj
+1 0 0 1 342.6 194.74 Tm
+(RoboCup,) Tj
+1 0 0 1 386.64 194.74 Tm
+(simulation) Tj
+1 0 0 1 431.76 194.74 Tm
+(league.) Tj
+1 0 0 1 465.36 194.74 Tm
+(Intended) Tj
+1 0 0 1 503.399 194.74 Tm
+(for) Tj
+1 0 0 1 518.159 194.74 Tm
+(Computer) Tj
+1 0 0 1 329.52 183.7 Tm
+(Science) Tj
+1 0 0 1 363.36 183.7 Tm
+(students) Tj
+1 0 0 1 398.76 183.7 Tm
+(that) Tj
+1 0 0 1 416.64 183.7 Tm
+(ha) Tj
+1 0 0 1 425.88 183.7 Tm
+(v) Tj
+1 0 0 1 430.8 183.7 Tm
+(e) Tj
+1 0 0 1 437.88 183.7 Tm
+(completed) Tj
+1 0 0 1 482.279 183.7 Tm
+(Introduction) Tj
+1 0 0 1 534.359 183.7 Tm
+(to) Tj
+1 0 0 1 545.039 183.7 Tm
+(AI.) Tj
+1 0 0 1 329.52 172.78 Tm
+(Its) Tj
+1 0 0 1 342.48 172.78 Tm
+(main) Tj
+1 0 0 1 365.52 172.78 Tm
+(goal) Tj
+1 0 0 1 385.68 172.78 Tm
+(is) Tj
+1 0 0 1 395.4 172.78 Tm
+(to) Tj
+1 0 0 1 406.2 172.78 Tm
+(illustrate) Tj
+1 0 0 1 444.119 172.78 Tm
+(AI) Tj
+1 0 0 1 457.799 172.78 Tm
+(in) Tj
+1 0 0 1 468.599 172.78 Tm
+(practice) Tj
+1 0 0 1 503.159 172.78 Tm
+(and) Tj
+1 0 0 1 520.679 172.78 Tm
+(stress) Tj
+1 0 0 1 545.879 172.78 Tm
+(the) Tj
+1 0 0 1 329.52 161.86 Tm
+(necessity) Tj
+1 0 0 1 369 161.86 Tm
+(of) Tj
+1 0 0 1 380.4 161.86 Tm
+(balance) Tj
+1 0 0 1 413.88 161.86 Tm
+(between) Tj
+1 0 0 1 450.12 161.86 Tm
+(reacti) Tj
+1 0 0 1 472.079 161.86 Tm
+(vity) Tj
+1 0 0 1 490.439 161.86 Tm
+(and) Tj
+1 0 0 1 507.959 161.86 Tm
+(deliberation.) Tj
+1 0 0 1 329.52 150.82 Tm
+(A) Tj
+1 0 0 1 339 150.82 Tm
+(preliminary) Tj
+1 0 0 1 387.84 150.82 Tm
+(analysis) Tj
+1 0 0 1 422.4 150.82 Tm
+(of) Tj
+1 0 0 1 433.08 150.82 Tm
+(the) Tj
+1 0 0 1 447.6 150.82 Tm
+(\256rst) Tj
+1 0 0 1 465.479 150.82 Tm
+(year) Tj
+1 0 0 1 485.039 150.82 Tm
+(of) Tj
+1 0 0 1 495.719 150.82 Tm
+(this) Tj
+1 0 0 1 512.519 150.82 Tm
+(course) Tj
+1 0 0 1 540.839 150.82 Tm
+(may) Tj
+1 0 0 1 329.52 139.9 Tm
+(be) Tj
+1 0 0 1 341.4 139.9 Tm
+(found) Tj
+1 0 0 1 367.08 139.9 Tm
+(in) Tj
+1 0 0 1 377.28 139.9 Tm
+(the) Tj
+1 0 0 1 392.04 139.9 Tm
+(paper) Tj
+1 0 0 1 416.64 139.9 Tm
+(\(Coradeschi) Tj
+1 0 0 1 467.279 139.9 Tm
+(&) Tj
+1 0 0 1 477.479 139.9 Tm
+(Malec) Tj
+1 0 0 1 504.839 139.9 Tm
+(1998\).) Tj
+ET
+Q
+endstream
+endobj
+53 0 obj
+2219
+endobj
+35 0 obj
+<<
+/Type /Page
+/MediaBox [0 0 595 842]
+/Parent 2 0 R
+/Resources << /ProcSet [/PDF /ImageB /Text]
+/Font <<
+/R51 51 0 R
+/R48 48 0 R
+/R45 45 0 R
+/R38 38 0 R
+>>
+/XObject <<
+/R41 41 0 R
+>>
+>>
+/Contents [
+36 0 R
+39 0 R
+43 0 R
+46 0 R
+49 0 R
+52 0 R
+]
+>>
+endobj
+55 0 obj
+<< /Length 56 0 R >>
+stream
+q
+endstream
+endobj
+56 0 obj
+2
+endobj
+57 0 obj
+<< /Type /XObject /Name /R57 /Subtype /Image /Length 58 0 R
+/ImageMask true /Width 39 /Height 38 /BitsPerComponent 1 /Decode [1 0] /Filter [/CCITTFaxDecode] /DecodeParms [<< /K -1 /Columns 39 /BlackIs1 true >>]
+>>
+stream
+:ìÜzpÅ˙pù?OˇAˇˇ˚ˇk⁄’®`≠NÅ| @
+endstream
+endobj
+58 0 obj
+33
+endobj
+59 0 obj
+<< /Length 60 0 R >>
+stream
+q
+3.9 0 0 -3.8 54.5 782.4 cm
+/R57 Do
+Q
+endstream
+endobj
+60 0 obj
+39
+endobj
+61 0 obj
+<< /Type /Font /Name /R61 /Subtype /Type1 /BaseFont /Times-Bold >>
+endobj
+62 0 obj
+<< /Length 63 0 R >>
+stream
+BT
+/R61 9.96264 Tf
+1 0 0 1 63.96 777.94 Tm
+(Multi-agent) Tj
+1 0 0 1 116.76 777.94 Tm
+(systems:) Tj
+1 0 0 1 155.88 777.94 Tm
+(RoboCup) Tj
+ET
+endstream
+endobj
+63 0 obj
+140
+endobj
+64 0 obj
+<< /Type /Font /Name /R64 /Subtype /Type1 /BaseFont /Times-Roman >>
+endobj
+65 0 obj
+<< /Length 66 0 R >>
+stream
+BT
+/R64 9.96264 Tf
+1 0 0 1 63.96 763.06 Tm
+(An) Tj
+1 0 0 1 80.5199 763.06 Tm
+(under) Tj
+1 0 0 1 103.32 763.06 Tm
+(graduate) Tj
+1 0 0 1 141.72 763.06 Tm
+(course,) Tj
+1 0 0 1 175.08 763.06 Tm
+(gi) Tj
+1 0 0 1 182.64 763.06 Tm
+(v) Tj
+1 0 0 1 187.56 763.06 Tm
+(en) Tj
+1 0 0 1 201.24 763.06 Tm
+(for) Tj
+1 0 0 1 217.319 763.06 Tm
+(Computer) Tj
+1 0 0 1 261.479 763.06 Tm
+(Science) Tj
+1 0 0 1 63.96 752.14 Tm
+(and) Tj
+1 0 0 1 81.3599 752.14 Tm
+(Computer) Tj
+1 0 0 1 124.2 752.14 Tm
+(Engineering) Tj
+1 0 0 1 175.92 752.14 Tm
+(students) Tj
+1 0 0 1 211.56 752.14 Tm
+(that) Tj
+1 0 0 1 229.559 752.14 Tm
+(ha) Tj
+1 0 0 1 238.799 752.14 Tm
+(v) Tj
+1 0 0 1 243.719 752.14 Tm
+(e) Tj
+1 0 0 1 251.039 752.14 Tm
+(completed) Tj
+1 0 0 1 63.96 741.1 Tm
+(Introduction) Tj
+1 0 0 1 117.6 741.1 Tm
+(to) Tj
+1 0 0 1 129.72 741.1 Tm
+(AI.) Tj
+1 0 0 1 147.12 741.1 Tm
+(It) Tj
+1 0 0 1 157.68 741.1 Tm
+(focuses) Tj
+1 0 0 1 191.88 741.1 Tm
+(mostly) Tj
+1 0 0 1 223.439 741.1 Tm
+(on) Tj
+1 0 0 1 237.719 741.1 Tm
+(the) Tj
+1 0 0 1 254.399 741.1 Tm
+(notion) Tj
+1 0 0 1 284.159 741.1 Tm
+(of) Tj
+1 0 0 1 63.96 730.18 Tm
+(agenc) Tj
+1 0 0 1 87.2399 730.18 Tm
+(y) Tj
+1 0 0 1 95.6399 730.18 Tm
+(and) Tj
+1 0 0 1 113.76 730.18 Tm
+(multi-agent) Tj
+1 0 0 1 163.32 730.18 Tm
+(systems,) Tj
+1 0 0 1 201.36 730.18 Tm
+(in) Tj
+1 0 0 1 212.759 730.18 Tm
+(particular) Tj
+1 0 0 1 254.519 730.18 Tm
+(agent) Tj
+1 0 0 1 279.719 730.18 Tm
+(co-) Tj
+1 0 0 1 63.96 719.26 Tm
+(ordination,) Tj
+1 0 0 1 109.68 719.26 Tm
+(and) Tj
+1 0 0 1 126.24 719.26 Tm
+(cooperation.) Tj
+1 0 0 1 178.8 719.26 Tm
+(Based) Tj
+1 0 0 1 205.32 719.26 Tm
+(on) Tj
+1 0 0 1 217.44 719.26 Tm
+(RoboCup,) Tj
+1 0 0 1 260.399 719.26 Tm
+(the) Tj
+1 0 0 1 274.799 719.26 Tm
+(sim-) Tj
+1 0 0 1 63.96 708.22 Tm
+(ulation) Tj
+1 0 0 1 94.0799 708.22 Tm
+(league.) Tj
+1 0 0 1 125.76 708.22 Tm
+(Documented.) Tj
+ET
+q
+3.9 0 0 -3.8 54.5 694 cm
+/R57 Do
+Q
+BT
+/R61 9.96264 Tf
+1 0 0 1 63.96 689.5 Tm
+(AI) Tj
+1 0 0 1 77.5199 689.5 Tm
+(f) Tj
+1 0 0 1 80.6399 689.5 Tm
+(or) Tj
+1 0 0 1 92.5199 689.5 Tm
+(r) Tj
+1 0 0 1 96.8399 689.5 Tm
+(obots) Tj
+/R64 9.96264 Tf
+1 0 0 1 63.96 674.62 Tm
+(A) Tj
+1 0 0 1 75 674.62 Tm
+(course) Tj
+1 0 0 1 104.88 674.62 Tm
+(\256rst) Tj
+1 0 0 1 124.32 674.62 Tm
+(gi) Tj
+1 0 0 1 131.88 674.62 Tm
+(v) Tj
+1 0 0 1 136.8 674.62 Tm
+(en) Tj
+1 0 0 1 149.88 674.62 Tm
+(in) Tj
+1 0 0 1 161.52 674.62 Tm
+(No) Tj
+1 0 0 1 173.64 674.62 Tm
+(v) Tj
+1 0 0 1 178.56 674.62 Tm
+(ember) Tj
+1 0 0 1 203.4 674.62 Tm
+(-December) Tj
+1 0 0 1 251.159 674.62 Tm
+(2000.) Tj
+1 0 0 1 280.919 674.62 Tm
+(In-) Tj
+1 0 0 1 63.96 663.7 Tm
+(tended) Tj
+1 0 0 1 95.2799 663.7 Tm
+(for) Tj
+1 0 0 1 111.6 663.7 Tm
+(Computer) Tj
+1 0 0 1 156.12 663.7 Tm
+(Science) Tj
+1 0 0 1 191.88 663.7 Tm
+(students) Tj
+1 0 0 1 229.199 663.7 Tm
+(that) Tj
+1 0 0 1 248.879 663.7 Tm
+(ha) Tj
+1 0 0 1 258.119 663.7 Tm
+(v) Tj
+1 0 0 1 263.039 663.7 Tm
+(e) Tj
+1 0 0 1 272.039 663.7 Tm
+(com-) Tj
+1 0 0 1 63.96 652.78 Tm
+(pleted) Tj
+1 0 0 1 92.5199 652.78 Tm
+(Introduction) Tj
+1 0 0 1 146.04 652.78 Tm
+(to) Tj
+1 0 0 1 157.92 652.78 Tm
+(AI.) Tj
+1 0 0 1 175.2 652.78 Tm
+(Its) Tj
+1 0 0 1 189.36 652.78 Tm
+(main) Tj
+1 0 0 1 213.479 652.78 Tm
+(goal) Tj
+1 0 0 1 234.839 652.78 Tm
+(is) Tj
+1 0 0 1 245.639 652.78 Tm
+(to) Tj
+1 0 0 1 257.639 652.78 Tm
+(illustrate) Tj
+1 0 0 1 63.96 641.74 Tm
+(AI) Tj
+1 0 0 1 79.2 641.74 Tm
+(in) Tj
+1 0 0 1 91.5599 641.74 Tm
+(practice) Tj
+1 0 0 1 127.8 641.74 Tm
+(and) Tj
+1 0 0 1 146.88 641.74 Tm
+(stress) Tj
+1 0 0 1 173.64 641.74 Tm
+(the) Tj
+1 0 0 1 190.56 641.74 Tm
+(necessity) Tj
+1 0 0 1 231.72 641.74 Tm
+(of) Tj
+1 0 0 1 244.679 641.74 Tm
+(balance) Tj
+1 0 0 1 279.719 641.74 Tm
+(be-) Tj
+1 0 0 1 63.96 630.82 Tm
+(tween) Tj
+1 0 0 1 91.6799 630.82 Tm
+(reacti) Tj
+1 0 0 1 113.64 630.82 Tm
+(vity) Tj
+1 0 0 1 132.96 630.82 Tm
+(and) Tj
+1 0 0 1 151.32 630.82 Tm
+(deliberation.) Tj
+1 0 0 1 208.68 630.82 Tm
+(Ho) Tj
+1 0 0 1 220.68 630.82 Tm
+(we) Tj
+1 0 0 1 232.08 630.82 Tm
+(v) Tj
+1 0 0 1 236.999 630.82 Tm
+(er) Tj
+1 0 0 1 244.439 630.82 Tm
+(,) Tj
+1 0 0 1 250.919 630.82 Tm
+(a) Tj
+1 0 0 1 259.319 630.82 Tm
+(substan-) Tj
+1 0 0 1 63.96 619.9 Tm
+(tial) Tj
+1 0 0 1 79.9199 619.9 Tm
+(part) Tj
+1 0 0 1 98.5199 619.9 Tm
+(is) Tj
+1 0 0 1 108.36 619.9 Tm
+(de) Tj
+1 0 0 1 117.6 619.9 Tm
+(v) Tj
+1 0 0 1 122.4 619.9 Tm
+(oted) Tj
+1 0 0 1 142.68 619.9 Tm
+(to) Tj
+1 0 0 1 153.6 619.9 Tm
+(multi-agent) Tj
+1 0 0 1 202.68 619.9 Tm
+(systems) Tj
+1 0 0 1 237.479 619.9 Tm
+(and) Tj
+1 0 0 1 254.999 619.9 Tm
+(agent) Tj
+1 0 0 1 279.719 619.9 Tm
+(co-) Tj
+1 0 0 1 63.96 608.86 Tm
+(operation.) Tj
+1 0 0 1 114.96 608.86 Tm
+(The) Tj
+1 0 0 1 135.48 608.86 Tm
+(course) Tj
+1 0 0 1 166.56 608.86 Tm
+(is) Tj
+1 0 0 1 178.32 608.86 Tm
+(based) Tj
+1 0 0 1 206.16 608.86 Tm
+(on) Tj
+1 0 0 1 221.16 608.86 Tm
+(e) Tj
+1 0 0 1 225.48 608.86 Tm
+(xperiments) Tj
+1 0 0 1 274.799 608.86 Tm
+(with) Tj
+1 0 0 1 63.96 597.94 Tm
+(Khepera) Tj
+1 0 0 1 100.92 597.94 Tm
+(robots.) Tj
+1 0 0 1 133.68 597.94 Tm
+(The) Tj
+1 0 0 1 152.4 597.94 Tm
+(course) Tj
+1 0 0 1 181.68 597.94 Tm
+(homepage) Tj
+1 0 0 1 225.84 597.94 Tm
+(may) Tj
+1 0 0 1 246.239 597.94 Tm
+(be) Tj
+1 0 0 1 258.839 597.94 Tm
+(found) Tj
+1 0 0 1 285.359 597.94 Tm
+(at) Tj
+ET
+endstream
+endobj
+66 0 obj
+5024
+endobj
+67 0 obj
+<< /Type /Font /Name /R67 /Subtype /Type1 /BaseFont /Courier >>
+endobj
+68 0 obj
+<< /Length 69 0 R >>
+stream
+BT
+/R67 9.96264 Tf
+1 0 0 1 63.96 587.02 Tm
+(http://www.cs.lth.se/\304jacek/dat125/) Tj
+/R64 9.96264 Tf
+1 0 0 1 273.839 587.02 Tm
+(.) Tj
+1 0 0 1 63.96 568.18 Tm
+(My) Tj
+1 0 0 1 81 568.18 Tm
+(e) Tj
+1 0 0 1 85.3199 568.18 Tm
+(xperiences,) Tj
+1 0 0 1 133.68 568.18 Tm
+(as) Tj
+1 0 0 1 145.08 568.18 Tm
+(sho) Tj
+1 0 0 1 158.76 568.18 Tm
+(wn) Tj
+1 0 0 1 174 568.18 Tm
+(abo) Tj
+1 0 0 1 188.4 568.18 Tm
+(v) Tj
+1 0 0 1 193.32 568.18 Tm
+(e,) Tj
+1 0 0 1 203.28 568.18 Tm
+(are) Tj
+1 0 0 1 218.64 568.18 Tm
+(mostly) Tj
+1 0 0 1 248.879 568.18 Tm
+(with) Tj
+1 0 0 1 269.759 568.18 Tm
+(Com-) Tj
+1 0 0 1 54 557.26 Tm
+(puter) Tj
+1 0 0 1 77.6399 557.26 Tm
+(Science) Tj
+1 0 0 1 111.84 557.26 Tm
+(students,) Tj
+1 0 0 1 150.36 557.26 Tm
+(either) Tj
+1 0 0 1 176.28 557.26 Tm
+(at) Tj
+1 0 0 1 186.72 557.26 Tm
+(under) Tj
+1 0 0 1 209.52 557.26 Tm
+(graduate) Tj
+1 0 0 1 246.719 557.26 Tm
+(or) Tj
+1 0 0 1 258.239 557.26 Tm
+(graduate) Tj
+1 0 0 1 54 546.34 Tm
+(le) Tj
+1 0 0 1 60.96 546.34 Tm
+(v) Tj
+1 0 0 1 65.88 546.34 Tm
+(el.) Tj
+1 0 0 1 78.7199 546.34 Tm
+(The) Tj
+1 0 0 1 96.7199 546.34 Tm
+(main) Tj
+1 0 0 1 119.16 546.34 Tm
+(aim) Tj
+1 0 0 1 136.68 546.34 Tm
+(of) Tj
+1 0 0 1 147.48 546.34 Tm
+(most) Tj
+1 0 0 1 169.44 546.34 Tm
+(of) Tj
+1 0 0 1 180.24 546.34 Tm
+(my) Tj
+1 0 0 1 195.6 546.34 Tm
+(courses) Tj
+1 0 0 1 227.999 546.34 Tm
+(w) Tj
+1 0 0 1 235.079 546.34 Tm
+(as) Tj
+1 0 0 1 245.879 546.34 Tm
+(to) Tj
+1 0 0 1 256.199 546.34 Tm
+(teach) Tj
+1 0 0 1 279.719 546.34 Tm
+(ap-) Tj
+1 0 0 1 54 535.3 Tm
+(plications) Tj
+1 0 0 1 94.9199 535.3 Tm
+(of) Tj
+1 0 0 1 105.36 535.3 Tm
+(AI.) Tj
+1 0 0 1 120.48 535.3 Tm
+(The) Tj
+1 0 0 1 138.12 535.3 Tm
+(robots) Tj
+1 0 0 1 165.24 535.3 Tm
+(\(either) Tj
+1 0 0 1 193.319 535.3 Tm
+(real) Tj
+1 0 0 1 210.479 535.3 Tm
+(or) Tj
+1 0 0 1 220.919 535.3 Tm
+(simulated\)) Tj
+1 0 0 1 265.079 535.3 Tm
+(pro) Tj
+1 0 0 1 278.399 535.3 Tm
+(v) Tj
+1 0 0 1 283.319 535.3 Tm
+(ed) Tj
+1 0 0 1 54 524.38 Tm
+(to) Tj
+1 0 0 1 64.44 524.38 Tm
+(be) Tj
+1 0 0 1 76.68 524.38 Tm
+(a) Tj
+1 0 0 1 83.7599 524.38 Tm
+(v) Tj
+1 0 0 1 88.6799 524.38 Tm
+(ery) Tj
+1 0 0 1 104.04 524.38 Tm
+(good) Tj
+1 0 0 1 126.72 524.38 Tm
+(tool) Tj
+1 0 0 1 144.96 524.38 Tm
+(for) Tj
+1 0 0 1 159.36 524.38 Tm
+(that) Tj
+1 0 0 1 177 524.38 Tm
+(purpose.) Tj
+1 0 0 1 214.8 524.38 Tm
+(Ho) Tj
+1 0 0 1 226.799 524.38 Tm
+(we) Tj
+1 0 0 1 238.199 524.38 Tm
+(v) Tj
+1 0 0 1 243.119 524.38 Tm
+(er) Tj
+1 0 0 1 250.559 524.38 Tm
+(,) Tj
+1 0 0 1 255.599 524.38 Tm
+(the) Tj
+1 0 0 1 267.719 524.38 Tm
+(y) Tj
+1 0 0 1 275.399 524.38 Tm
+(may) Tj
+1 0 0 1 54 513.46 Tm
+(be) Tj
+1 0 0 1 67.44 513.46 Tm
+(e) Tj
+1 0 0 1 71.76 513.46 Tm
+(xploited) Tj
+1 0 0 1 108.36 513.46 Tm
+(in) Tj
+1 0 0 1 120 513.46 Tm
+(man) Tj
+1 0 0 1 137.16 513.46 Tm
+(y) Tj
+1 0 0 1 146.04 513.46 Tm
+(more) Tj
+1 0 0 1 170.52 513.46 Tm
+(conte) Tj
+1 0 0 1 192.12 513.46 Tm
+(xts) Tj
+1 0 0 1 207.48 513.46 Tm
+(and) Tj
+1 0 0 1 225.84 513.46 Tm
+(for) Tj
+1 0 0 1 241.439 513.46 Tm
+(other) Tj
+1 0 0 1 265.919 513.46 Tm
+(educa-) Tj
+1 0 0 1 54 502.42 Tm
+(tional) Tj
+1 0 0 1 79.6799 502.42 Tm
+(purposes.) Tj
+1 0 0 1 121.92 502.42 Tm
+(E.g.) Tj
+1 0 0 1 142.44 502.42 Tm
+(one) Tj
+1 0 0 1 159.72 502.42 Tm
+(of) Tj
+1 0 0 1 171 502.42 Tm
+(my) Tj
+1 0 0 1 186.6 502.42 Tm
+(students) Tj
+1 0 0 1 222.24 502.42 Tm
+(has) Tj
+1 0 0 1 238.439 502.42 Tm
+(e) Tj
+1 0 0 1 242.759 502.42 Tm
+(xperimented) Tj
+1 0 0 1 54 491.5 Tm
+(with) Tj
+1 0 0 1 75.2399 491.5 Tm
+(LEGO) Tj
+1 0 0 1 105.36 491.5 Tm
+(robots) Tj
+1 0 0 1 133.8 491.5 Tm
+(used) Tj
+1 0 0 1 155.64 491.5 Tm
+(for) Tj
+1 0 0 1 170.88 491.5 Tm
+(teaching) Tj
+1 0 0 1 208.199 491.5 Tm
+(\252technology\272) Tj
+1 0 0 1 264.839 491.5 Tm
+(classes) Tj
+1 0 0 1 54 480.58 Tm
+(in) Tj
+1 0 0 1 65.4 480.58 Tm
+(some) Tj
+1 0 0 1 89.9999 480.58 Tm
+(secondary) Tj
+1 0 0 1 133.92 480.58 Tm
+(schools) Tj
+1 0 0 1 167.52 480.58 Tm
+(in) Tj
+1 0 0 1 178.8 480.58 Tm
+(Sweden.) Tj
+1 0 0 1 219.24 480.58 Tm
+(Unfortunately) Tj
+1 0 0 1 274.919 480.58 Tm
+(,) Tj
+1 0 0 1 280.919 480.58 Tm
+(his) Tj
+1 0 0 1 54 469.54 Tm
+(sample) Tj
+1 0 0 1 85.5599 469.54 Tm
+(w) Tj
+1 0 0 1 92.6399 469.54 Tm
+(as) Tj
+1 0 0 1 104.4 469.54 Tm
+(too) Tj
+1 0 0 1 120.48 469.54 Tm
+(small) Tj
+1 0 0 1 145.44 469.54 Tm
+(to) Tj
+1 0 0 1 156.6 469.54 Tm
+(dra) Tj
+1 0 0 1 169.32 469.54 Tm
+(w) Tj
+1 0 0 1 179.759 469.54 Tm
+(an) Tj
+1 0 0 1 189.119 469.54 Tm
+(y) Tj
+1 0 0 1 197.399 469.54 Tm
+(scienti\256cally) Tj
+1 0 0 1 251.759 469.54 Tm
+(v) Tj
+1 0 0 1 256.559 469.54 Tm
+(alid) Tj
+1 0 0 1 274.799 469.54 Tm
+(con-) Tj
+1 0 0 1 54 458.62 Tm
+(clusions.) Tj
+/R61 11.9552 Tf
+1 0 0 1 142.32 429.46 Tm
+(Conclusions) Tj
+/R64 9.96264 Tf
+1 0 0 1 54 409.78 Tm
+(The) Tj
+1 0 0 1 71.64 409.78 Tm
+(question) Tj
+1 0 0 1 107.64 409.78 Tm
+(I) Tj
+1 0 0 1 113.16 409.78 Tm
+(am) Tj
+1 0 0 1 127.44 409.78 Tm
+(looking) Tj
+1 0 0 1 160.08 409.78 Tm
+(an) Tj
+1 0 0 1 171.72 409.78 Tm
+(answer) Tj
+1 0 0 1 202.08 409.78 Tm
+(for) Tj
+1 0 0 1 215.879 409.78 Tm
+(is) Tj
+1 0 0 1 224.759 409.78 Tm
+(whether) Tj
+1 0 0 1 259.079 409.78 Tm
+(and) Tj
+1 0 0 1 275.639 409.78 Tm
+(ho) Tj
+1 0 0 1 285.479 409.78 Tm
+(w) Tj
+1 0 0 1 54 398.86 Tm
+(can) Tj
+1 0 0 1 70.08 398.86 Tm
+(we) Tj
+1 0 0 1 84 398.86 Tm
+(capture) Tj
+1 0 0 1 115.56 398.86 Tm
+(what) Tj
+1 0 0 1 137.16 398.86 Tm
+(do) Tj
+1 0 0 1 149.4 398.86 Tm
+(the) Tj
+1 0 0 1 163.92 398.86 Tm
+(students) Tj
+1 0 0 1 198.84 398.86 Tm
+(learn) Tj
+1 0 0 1 221.039 398.86 Tm
+(during) Tj
+1 0 0 1 249.239 398.86 Tm
+(courses) Tj
+1 0 0 1 281.399 398.86 Tm
+(in-) Tj
+1 0 0 1 54 387.94 Tm
+(corporating) Tj
+1 0 0 1 103.56 387.94 Tm
+(some) Tj
+1 0 0 1 128.16 387.94 Tm
+(form) Tj
+1 0 0 1 151.2 387.94 Tm
+(of) Tj
+1 0 0 1 163.08 387.94 Tm
+(robotics.) Tj
+1 0 0 1 204.12 387.94 Tm
+(Although) Tj
+1 0 0 1 245.399 387.94 Tm
+(most) Tj
+1 0 0 1 268.439 387.94 Tm
+(of) Tj
+1 0 0 1 280.319 387.94 Tm
+(the) Tj
+1 0 0 1 54 376.9 Tm
+(courses) Tj
+1 0 0 1 87.7199 376.9 Tm
+(get) Tj
+1 0 0 1 103.68 376.9 Tm
+(enthusiastic) Tj
+1 0 0 1 154.44 376.9 Tm
+(e) Tj
+1 0 0 1 158.64 376.9 Tm
+(v) Tj
+1 0 0 1 163.44 376.9 Tm
+(aluations,) Tj
+1 0 0 1 205.92 376.9 Tm
+(it') Tj
+1 0 0 1 214.2 376.9 Tm
+(s) Tj
+1 0 0 1 221.879 376.9 Tm
+(often) Tj
+1 0 0 1 246.239 376.9 Tm
+(hard) Tj
+1 0 0 1 267.719 376.9 Tm
+(to) Tj
+1 0 0 1 279.239 376.9 Tm
+(say) Tj
+1 0 0 1 54 365.98 Tm
+(whether) Tj
+1 0 0 1 90.3599 365.98 Tm
+(all) Tj
+1 0 0 1 104.64 365.98 Tm
+(the) Tj
+1 0 0 1 121.2 365.98 Tm
+(kno) Tj
+1 0 0 1 136.08 365.98 Tm
+(wledge) Tj
+1 0 0 1 168.96 365.98 Tm
+(de\256ned) Tj
+1 0 0 1 202.68 365.98 Tm
+(in) Tj
+1 0 0 1 214.679 365.98 Tm
+(the) Tj
+1 0 0 1 231.239 365.98 Tm
+(curriculum) Tj
+1 0 0 1 279.239 365.98 Tm
+(has) Tj
+1 0 0 1 54 355.06 Tm
+(been) Tj
+1 0 0 1 76.44 355.06 Tm
+(assimilated) Tj
+1 0 0 1 124.92 355.06 Tm
+(by) Tj
+1 0 0 1 138.6 355.06 Tm
+(the) Tj
+1 0 0 1 154.44 355.06 Tm
+(participants.) Tj
+1 0 0 1 209.88 355.06 Tm
+(Is) Tj
+1 0 0 1 220.8 355.06 Tm
+(this) Tj
+1 0 0 1 238.799 355.06 Tm
+(a) Tj
+1 0 0 1 246.839 355.06 Tm
+(wrong) Tj
+1 0 0 1 275.999 355.06 Tm
+(w) Tj
+1 0 0 1 283.079 355.06 Tm
+(ay) Tj
+1 0 0 1 54 344.02 Tm
+(of) Tj
+1 0 0 1 65.88 344.02 Tm
+(thinking) Tj
+1 0 0 1 102.6 344.02 Tm
+(about) Tj
+1 0 0 1 128.28 344.02 Tm
+(the) Tj
+1 0 0 1 144 344.02 Tm
+(problem?) Tj
+1 0 0 1 187.8 344.02 Tm
+(Maybe) Tj
+1 0 0 1 219 344.02 Tm
+(we) Tj
+1 0 0 1 234.119 344.02 Tm
+(should) Tj
+1 0 0 1 264.239 344.02 Tm
+(change) Tj
+1 0 0 1 54 333.1 Tm
+(curricula) Tj
+1 0 0 1 91.9199 333.1 Tm
+(instead?) Tj
+1 0 0 1 63.96 320.26 Tm
+(Another) Tj
+1 0 0 1 99.1199 320.26 Tm
+(important) Tj
+1 0 0 1 140.4 320.26 Tm
+(issue) Tj
+1 0 0 1 162.84 320.26 Tm
+(that) Tj
+1 0 0 1 180.24 320.26 Tm
+(should,) Tj
+1 0 0 1 211.8 320.26 Tm
+(in) Tj
+1 0 0 1 221.999 320.26 Tm
+(my) Tj
+1 0 0 1 237.239 320.26 Tm
+(opinion,) Tj
+1 0 0 1 272.759 320.26 Tm
+(dra) Tj
+1 0 0 1 285.479 320.26 Tm
+(w) Tj
+1 0 0 1 54 309.22 Tm
+(more) Tj
+1 0 0 1 77.6399 309.22 Tm
+(attention,) Tj
+1 0 0 1 118.2 309.22 Tm
+(is) Tj
+1 0 0 1 128.04 309.22 Tm
+(some) Tj
+1 0 0 1 152.16 309.22 Tm
+(form) Tj
+1 0 0 1 174.72 309.22 Tm
+(of) Tj
+1 0 0 1 186.119 309.22 Tm
+(certi\256cation) Tj
+1 0 0 1 236.759 309.22 Tm
+(or) Tj
+1 0 0 1 248.279 309.22 Tm
+(assessment) Tj
+1 0 0 1 54 298.3 Tm
+(that) Tj
+1 0 0 1 72.96 298.3 Tm
+(can) Tj
+1 0 0 1 90.9599 298.3 Tm
+(guarantee) Tj
+1 0 0 1 133.68 298.3 Tm
+(our) Tj
+1 0 0 1 151.08 298.3 Tm
+(emplo) Tj
+1 0 0 1 176.04 298.3 Tm
+(yers) Tj
+1 0 0 1 196.56 298.3 Tm
+(and) Tj
+1 0 0 1 215.04 298.3 Tm
+(our) Tj
+1 0 0 1 232.32 298.3 Tm
+(students) Tj
+1 0 0 1 269.039 298.3 Tm
+(that) Tj
+1 0 0 1 288.119 298.3 Tm
+(a) Tj
+1 0 0 1 54 287.38 Tm
+(course) Tj
+1 0 0 1 83.88 287.38 Tm
+(we) Tj
+1 0 0 1 99.2399 287.38 Tm
+(gi) Tj
+1 0 0 1 106.8 287.38 Tm
+(v) Tj
+1 0 0 1 111.72 287.38 Tm
+(e) Tj
+1 0 0 1 119.88 287.38 Tm
+(ful\256lls) Tj
+1 0 0 1 149.76 287.38 Tm
+(its) Tj
+1 0 0 1 162.96 287.38 Tm
+(promises.) Tj
+1 0 0 1 208.56 287.38 Tm
+(One) Tj
+1 0 0 1 228.96 287.38 Tm
+(can) Tj
+1 0 0 1 246.599 287.38 Tm
+(either) Tj
+1 0 0 1 273.119 287.38 Tm
+(do) Tj
+1 0 0 1 286.919 287.38 Tm
+(it) Tj
+1 0 0 1 54 276.34 Tm
+(locally) Tj
+1 0 0 1 80.64 276.34 Tm
+(,) Tj
+1 0 0 1 85.7999 276.34 Tm
+(at) Tj
+1 0 0 1 95.6399 276.34 Tm
+(a) Tj
+1 0 0 1 102.84 276.34 Tm
+(uni) Tj
+1 0 0 1 115.44 276.34 Tm
+(v) Tj
+1 0 0 1 120.36 276.34 Tm
+(ersity) Tj
+1 0 0 1 144.96 276.34 Tm
+(le) Tj
+1 0 0 1 151.92 276.34 Tm
+(v) Tj
+1 0 0 1 156.84 276.34 Tm
+(el) Tj
+1 0 0 1 166.68 276.34 Tm
+(\(the) Tj
+1 0 0 1 184.92 276.34 Tm
+(standard) Tj
+1 0 0 1 221.399 276.34 Tm
+(procedure,) Tj
+1 0 0 1 266.519 276.34 Tm
+(proba-) Tj
+1 0 0 1 54 265.42 Tm
+(bly) Tj
+1 0 0 1 69.12 265.42 Tm
+(speci\256c) Tj
+1 0 0 1 101.88 265.42 Tm
+(to) Tj
+1 0 0 1 111.96 265.42 Tm
+(each) Tj
+1 0 0 1 132.6 265.42 Tm
+(educational) Tj
+1 0 0 1 180.96 265.42 Tm
+(institution\),) Tj
+1 0 0 1 229.559 265.42 Tm
+(or) Tj
+1 0 0 1 240.239 265.42 Tm
+(refer) Tj
+1 0 0 1 261.359 265.42 Tm
+(to) Tj
+1 0 0 1 271.439 265.42 Tm
+(some) Tj
+1 0 0 1 54 254.5 Tm
+(e) Tj
+1 0 0 1 58.32 254.5 Tm
+(xternal) Tj
+1 0 0 1 88.1999 254.5 Tm
+(or) Tj
+1 0 0 1 96.4799 254.5 Tm
+(ganization,) Tj
+1 0 0 1 142.68 254.5 Tm
+(lik) Tj
+1 0 0 1 153.12 254.5 Tm
+(e) Tj
+1 0 0 1 159.84 254.5 Tm
+(ABET) Tj
+1 0 0 1 188.16 254.5 Tm
+(\(American) Tj
+1 0 0 1 233.039 254.5 Tm
+(Board) Tj
+1 0 0 1 259.799 254.5 Tm
+(of) Tj
+1 0 0 1 270.359 254.5 Tm
+(Engi-) Tj
+1 0 0 1 54 243.46 Tm
+(neering) Tj
+1 0 0 1 87.3599 243.46 Tm
+(and) Tj
+1 0 0 1 105.12 243.46 Tm
+(T) Tj
+1 0 0 1 110.52 243.46 Tm
+(echnology\)) Tj
+1 0 0 1 158.76 243.46 Tm
+(mentioned) Tj
+1 0 0 1 204.24 243.46 Tm
+(during) Tj
+1 0 0 1 233.64 243.46 Tm
+(the) Tj
+1 0 0 1 249.359 243.46 Tm
+(W) Tj
+1 0 0 1 257.879 243.46 Tm
+(orkshop,) Tj
+1 0 0 1 54 232.54 Tm
+(in) Tj
+1 0 0 1 64.2 232.54 Tm
+(order) Tj
+1 0 0 1 87.5999 232.54 Tm
+(to) Tj
+1 0 0 1 97.7998 232.54 Tm
+(obtain) Tj
+1 0 0 1 125.16 232.54 Tm
+(such) Tj
+1 0 0 1 145.8 232.54 Tm
+(certi\256cation.) Tj
+1 0 0 1 198.96 232.54 Tm
+(This) Tj
+1 0 0 1 219.119 232.54 Tm
+(w) Tj
+1 0 0 1 226.199 232.54 Tm
+(ay) Tj
+1 0 0 1 238.079 232.54 Tm
+(we) Tj
+1 0 0 1 252.119 232.54 Tm
+(may) Tj
+1 0 0 1 271.679 232.54 Tm
+(guar) Tj
+1 0 0 1 289.319 232.54 Tm
+(-) Tj
+1 0 0 1 54 221.62 Tm
+(antee) Tj
+1 0 0 1 78.1199 221.62 Tm
+(that) Tj
+1 0 0 1 95.9999 221.62 Tm
+(the) Tj
+1 0 0 1 111.24 221.62 Tm
+(contents) Tj
+1 0 0 1 147.48 221.62 Tm
+(of) Tj
+1 0 0 1 158.88 221.62 Tm
+(our) Tj
+1 0 0 1 175.2 221.62 Tm
+(courses) Tj
+1 0 0 1 208.079 221.62 Tm
+(meet) Tj
+1 0 0 1 230.519 221.62 Tm
+(the) Tj
+1 0 0 1 245.759 221.62 Tm
+(demands) Tj
+1 0 0 1 284.159 221.62 Tm
+(of) Tj
+1 0 0 1 54 210.58 Tm
+(good) Tj
+1 0 0 1 76.44 210.58 Tm
+(academic) Tj
+1 0 0 1 116.52 210.58 Tm
+(education.) Tj
+/R61 11.9552 Tf
+1 0 0 1 123.84 181.54 Tm
+(Ackno) Tj
+1 0 0 1 156.84 181.54 Tm
+(wledgements) Tj
+/R64 9.96264 Tf
+1 0 0 1 54 161.86 Tm
+(The) Tj
+1 0 0 1 72.48 161.86 Tm
+(participation) Tj
+1 0 0 1 125.88 161.86 Tm
+(of) Tj
+1 0 0 1 137.16 161.86 Tm
+(the) Tj
+1 0 0 1 152.4 161.86 Tm
+(author) Tj
+1 0 0 1 180.84 161.86 Tm
+(in) Tj
+1 0 0 1 191.64 161.86 Tm
+(the) Tj
+1 0 0 1 206.759 161.86 Tm
+(Symposium) Tj
+1 0 0 1 257.399 161.86 Tm
+(has) Tj
+1 0 0 1 273.719 161.86 Tm
+(been) Tj
+1 0 0 1 54 150.82 Tm
+(funded) Tj
+1 0 0 1 85.4399 150.82 Tm
+(by) Tj
+/R61 9.96264 Tf
+1 0 0 1 99.2399 150.82 Tm
+(Stiftelsen) Tj
+1 0 0 1 142.32 150.82 Tm
+(B) Tj
+1 0 0 1 149.76 150.94 Tm
+(\310) Tj
+1 0 0 1 148.92 150.82 Tm
+(ok) Tj
+1 0 0 1 159.36 150.82 Tm
+(elunds) Tj
+1 0 0 1 190.92 150.82 Tm
+(f) Tj
+1 0 0 1 194.04 150.82 Tm
+(ond) Tj
+1 0 0 1 213.84 150.82 Tm
+(f) Tj
+1 0 0 1 218.04 150.94 Tm
+(\310) Tj
+1 0 0 1 217.2 150.82 Tm
+(or) Tj
+1 0 0 1 230.4 150.82 Tm
+(r) Tj
+1 0 0 1 234.72 150.82 Tm
+(esestipendier) Tj
+/R64 9.96264 Tf
+1 0 0 1 290.04 150.82 Tm
+(.) Tj
+1 0 0 1 54 139.9 Tm
+(Thanks) Tj
+1 0 0 1 85.7999 139.9 Tm
+(to) Tj
+1 0 0 1 96.1199 139.9 Tm
+(L) Tj
+1 0 0 1 101.64 139.9 Tm
+(ynn) Tj
+1 0 0 1 119.04 139.9 Tm
+(Stein) Tj
+1 0 0 1 141.96 139.9 Tm
+(for) Tj
+1 0 0 1 156.12 139.9 Tm
+(a) Tj
+1 0 0 1 163.08 139.9 Tm
+(v) Tj
+1 0 0 1 168 139.9 Tm
+(ery) Tj
+1 0 0 1 183.12 139.9 Tm
+(re) Tj
+1 0 0 1 190.68 139.9 Tm
+(w) Tj
+1 0 0 1 197.76 139.9 Tm
+(arding) Tj
+1 0 0 1 225.599 139.9 Tm
+(w) Tj
+1 0 0 1 232.679 139.9 Tm
+(orkshop.) Tj
+/R61 11.9552 Tf
+1 0 0 1 411 777.94 Tm
+(Refer) Tj
+1 0 0 1 439.2 777.94 Tm
+(ences) Tj
+/R64 9.96264 Tf
+1 0 0 1 324.48 764.02 Tm
+(Bajracharya,) Tj
+1 0 0 1 378.24 764.02 Tm
+(M.,) Tj
+1 0 0 1 395.16 764.02 Tm
+(and) Tj
+1 0 0 1 412.56 764.02 Tm
+(Olsson,) Tj
+1 0 0 1 445.8 764.02 Tm
+(E.) Tj
+1 0 0 1 459.6 764.02 Tm
+(2001.) Tj
+1 0 0 1 487.079 764.02 Tm
+(A) Tj
+1 0 0 1 497.279 764.02 Tm
+(lo) Tj
+1 0 0 1 504.839 764.02 Tm
+(w-cost,) Tj
+1 0 0 1 536.999 764.02 Tm
+(high-) Tj
+1 0 0 1 324.48 752.98 Tm
+(performance) Tj
+1 0 0 1 377.52 752.98 Tm
+(robotics) Tj
+1 0 0 1 412.32 752.98 Tm
+(platform) Tj
+1 0 0 1 449.4 752.98 Tm
+(for) Tj
+1 0 0 1 463.799 752.98 Tm
+(education) Tj
+1 0 0 1 505.199 752.98 Tm
+(and) Tj
+1 0 0 1 522.359 752.98 Tm
+(research.) Tj
+1 0 0 1 324.48 742.06 Tm
+(In) Tj
+ET
+endstream
+endobj
+69 0 obj
+13454
+endobj
+70 0 obj
+<< /Type /Font /Name /R70 /Subtype /Type1 /BaseFont /Times-Italic >>
+endobj
+71 0 obj
+<< /Length 72 0 R >>
+stream
+BT
+/R70 9.96264 Tf
+1 0 0 1 336.6 742.06 Tm
+(Pr) Tj
+1 0 0 1 346.08 742.06 Tm
+(oc.) Tj
+1 0 0 1 361.8 742.06 Tm
+(2001) Tj
+1 0 0 1 385.56 742.06 Tm
+(AAAI) Tj
+1 0 0 1 411 742.06 Tm
+(Spring) Tj
+1 0 0 1 441.36 742.06 Tm
+(Symposium) Tj
+1 0 0 1 490.56 742.06 Tm
+(on) Tj
+1 0 0 1 504.359 742.06 Tm
+(Robotics) Tj
+1 0 0 1 542.999 742.06 Tm
+(and) Tj
+1 0 0 1 324.48 731.14 Tm
+(Education) Tj
+/R64 9.96264 Tf
+1 0 0 1 365.76 731.14 Tm
+(.) Tj
+1 0 0 1 370.44 731.14 Tm
+(AAAI.) Tj
+1 0 0 1 401.4 731.14 Tm
+(This) Tj
+1 0 0 1 421.56 731.14 Tm
+(v) Tj
+1 0 0 1 426.36 731.14 Tm
+(olume.) Tj
+1 0 0 1 324.48 717.46 Tm
+(Beer) Tj
+1 0 0 1 342.96 717.46 Tm
+(,) Tj
+1 0 0 1 349.08 717.46 Tm
+(R.) Tj
+1 0 0 1 361.68 717.46 Tm
+(D.;) Tj
+1 0 0 1 378.12 717.46 Tm
+(Chiel,) Tj
+1 0 0 1 405.96 717.46 Tm
+(H.) Tj
+1 0 0 1 419.16 717.46 Tm
+(J.;) Tj
+1 0 0 1 432.24 717.46 Tm
+(and) Tj
+1 0 0 1 450.119 717.46 Tm
+(Drushel,) Tj
+1 0 0 1 487.799 717.46 Tm
+(R.) Tj
+1 0 0 1 500.519 717.46 Tm
+(F) Tj
+1 0 0 1 505.199 717.46 Tm
+(.) Tj
+1 0 0 1 514.439 717.46 Tm
+(1999.) Tj
+1 0 0 1 543.599 717.46 Tm
+(Us-) Tj
+1 0 0 1 324.48 706.54 Tm
+(ing) Tj
+1 0 0 1 339.84 706.54 Tm
+(autonomous) Tj
+1 0 0 1 391.08 706.54 Tm
+(robotics) Tj
+1 0 0 1 425.76 706.54 Tm
+(to) Tj
+1 0 0 1 436.08 706.54 Tm
+(teach) Tj
+1 0 0 1 459.6 706.54 Tm
+(science) Tj
+1 0 0 1 491.519 706.54 Tm
+(and) Tj
+1 0 0 1 508.439 706.54 Tm
+(engineering.) Tj
+/R70 9.96264 Tf
+1 0 0 1 324.48 695.5 Tm
+(Communications) Tj
+1 0 0 1 394.44 695.5 Tm
+(of) Tj
+1 0 0 1 404.76 695.5 Tm
+(the) Tj
+1 0 0 1 419.4 695.5 Tm
+(A) Tj
+1 0 0 1 425.28 695.5 Tm
+(CM) Tj
+/R64 9.96264 Tf
+1 0 0 1 442.68 695.5 Tm
+(42\(6\):85\26192.) Tj
+1 0 0 1 324.48 681.82 Tm
+(Congdon,) Tj
+1 0 0 1 365.52 681.82 Tm
+(C.) Tj
+1 0 0 1 376.68 681.82 Tm
+(B.) Tj
+1 0 0 1 388.2 681.82 Tm
+(2001.) Tj
+1 0 0 1 413.04 681.82 Tm
+(Robots) Tj
+1 0 0 1 443.28 681.82 Tm
+(don') Tj
+1 0 0 1 461.639 681.82 Tm
+(t) Tj
+1 0 0 1 466.079 681.82 Tm
+(rule:) Tj
+1 0 0 1 487.079 681.82 Tm
+(Some) Tj
+1 0 0 1 511.799 681.82 Tm
+(thoughts) Tj
+1 0 0 1 548.039 681.82 Tm
+(on) Tj
+1 0 0 1 324.48 670.9 Tm
+(using) Tj
+1 0 0 1 348 670.9 Tm
+(robots) Tj
+1 0 0 1 374.76 670.9 Tm
+(for) Tj
+1 0 0 1 388.32 670.9 Tm
+(introductory) Tj
+1 0 0 1 439.44 670.9 Tm
+(cs.) Tj
+1 0 0 1 452.639 670.9 Tm
+(In) Tj
+/R70 9.96264 Tf
+1 0 0 1 462.839 670.9 Tm
+(Pr) Tj
+1 0 0 1 472.319 670.9 Tm
+(oc.) Tj
+1 0 0 1 486.119 670.9 Tm
+(2001) Tj
+1 0 0 1 507.959 670.9 Tm
+(AAAI) Tj
+1 0 0 1 531.479 670.9 Tm
+(Spring) Tj
+1 0 0 1 324.48 659.98 Tm
+(Symposium) Tj
+1 0 0 1 372.96 659.98 Tm
+(on) Tj
+1 0 0 1 386.04 659.98 Tm
+(Robotics) Tj
+1 0 0 1 423.96 659.98 Tm
+(and) Tj
+1 0 0 1 441.96 659.98 Tm
+(Education) Tj
+/R64 9.96264 Tf
+1 0 0 1 483.24 659.98 Tm
+(.) Tj
+1 0 0 1 488.519 659.98 Tm
+(AAAI.) Tj
+1 0 0 1 521.399 659.98 Tm
+(This) Tj
+1 0 0 1 542.159 659.98 Tm
+(v) Tj
+1 0 0 1 546.959 659.98 Tm
+(ol-) Tj
+1 0 0 1 324.48 648.94 Tm
+(ume.) Tj
+1 0 0 1 324.48 635.26 Tm
+(Coradeschi,) Tj
+1 0 0 1 374.76 635.26 Tm
+(S.,) Tj
+1 0 0 1 388.2 635.26 Tm
+(and) Tj
+1 0 0 1 405.48 635.26 Tm
+(Malec,) Tj
+1 0 0 1 435.84 635.26 Tm
+(J.) Tj
+1 0 0 1 447 635.26 Tm
+(1998.) Tj
+1 0 0 1 474.119 635.26 Tm
+(The) Tj
+1 0 0 1 492.479 635.26 Tm
+(use) Tj
+1 0 0 1 508.679 635.26 Tm
+(of) Tj
+1 0 0 1 519.839 635.26 Tm
+(RoboCup) Tj
+1 0 0 1 324.48 624.34 Tm
+(\(soccer) Tj
+1 0 0 1 356.16 624.34 Tm
+(simulation\)) Tj
+1 0 0 1 404.52 624.34 Tm
+(for) Tj
+1 0 0 1 419.16 624.34 Tm
+(an) Tj
+1 0 0 1 431.52 624.34 Tm
+(Arti\256cial) Tj
+1 0 0 1 470.399 624.34 Tm
+(Intelligence) Tj
+1 0 0 1 520.319 624.34 Tm
+(Program-) Tj
+1 0 0 1 324.48 613.42 Tm
+(ming) Tj
+1 0 0 1 347.76 613.42 Tm
+(course.) Tj
+/R70 9.96264 Tf
+1 0 0 1 380.64 613.42 Tm
+(the) Tj
+1 0 0 1 395.52 613.42 Tm
+(J) Tj
+1 0 0 1 399.72 613.42 Tm
+(ournal) Tj
+1 0 0 1 429 613.42 Tm
+(of) Tj
+1 0 0 1 439.44 613.42 Tm
+(the) Tj
+1 0 0 1 454.44 613.42 Tm
+(Robotics) Tj
+1 0 0 1 491.999 613.42 Tm
+(Society) Tj
+1 0 0 1 523.559 613.42 Tm
+(of) Tj
+1 0 0 1 533.999 613.42 Tm
+(J) Tj
+1 0 0 1 538.079 613.42 Tm
+(apan) Tj
+/R64 9.96264 Tf
+1 0 0 1 324.48 602.38 Tm
+(16\(4\).) Tj
+1 0 0 1 352.32 602.38 Tm
+(Also) Tj
+1 0 0 1 373.68 602.38 Tm
+(in) Tj
+1 0 0 1 383.88 602.38 Tm
+(Proc.) Tj
+1 0 0 1 407.28 602.38 Tm
+(of) Tj
+1 0 0 1 418.08 602.38 Tm
+(the) Tj
+1 0 0 1 432.72 602.38 Tm
+(RoboCup'98) Tj
+1 0 0 1 486.839 602.38 Tm
+(W) Tj
+1 0 0 1 495.359 602.38 Tm
+(orkshop,) Tj
+1 0 0 1 532.559 602.38 Tm
+(LNCS) Tj
+1 0 0 1 324.48 591.46 Tm
+(1604,) Tj
+1 0 0 1 349.44 591.46 Tm
+(Springer) Tj
+1 0 0 1 383.76 591.46 Tm
+(-V) Tj
+1 0 0 1 393.24 591.46 Tm
+(erlag,) Tj
+1 0 0 1 417.84 591.46 Tm
+(1999.) Tj
+1 0 0 1 324.48 577.78 Tm
+(F) Tj
+1 0 0 1 329.88 577.78 Tm
+(ossum,) Tj
+1 0 0 1 362.64 577.78 Tm
+(T) Tj
+1 0 0 1 368.04 577.78 Tm
+(.;) Tj
+1 0 0 1 378.6 577.78 Tm
+(Haller) Tj
+1 0 0 1 403.2 577.78 Tm
+(,) Tj
+1 0 0 1 410.4 577.78 Tm
+(S.;) Tj
+1 0 0 1 426.48 577.78 Tm
+(V) Tj
+1 0 0 1 432.36 577.78 Tm
+(o) Tj
+1 0 0 1 437.28 577.78 Tm
+(yles,) Tj
+1 0 0 1 460.56 577.78 Tm
+(M.;) Tj
+1 0 0 1 479.999 577.78 Tm
+(and) Tj
+1 0 0 1 498.719 577.78 Tm
+(Guttscho) Tj
+1 0 0 1 534.599 577.78 Tm
+(w) Tj
+1 0 0 1 541.199 577.78 Tm
+(,) Tj
+1 0 0 1 548.279 577.78 Tm
+(G.) Tj
+1 0 0 1 324.48 566.86 Tm
+(2001.) Tj
+1 0 0 1 355.32 566.86 Tm
+(A) Tj
+1 0 0 1 366.6 566.86 Tm
+(gender) Tj
+1 0 0 1 393.72 566.86 Tm
+(-based) Tj
+1 0 0 1 423.48 566.86 Tm
+(study) Tj
+1 0 0 1 449.16 566.86 Tm
+(of) Tj
+1 0 0 1 461.4 566.86 Tm
+(elementary) Tj
+1 0 0 1 509.759 566.86 Tm
+(school) Tj
+1 0 0 1 539.759 566.86 Tm
+(chil-) Tj
+1 0 0 1 324.48 555.94 Tm
+(dren) Tj
+1 0 0 1 344.28 555.94 Tm
+(w) Tj
+1 0 0 1 351.36 555.94 Tm
+(orking) Tj
+1 0 0 1 379.56 555.94 Tm
+(with) Tj
+1 0 0 1 399.36 555.94 Tm
+(R) Tj
+1 0 0 1 405.6 555.94 Tm
+(OBOLAB.) Tj
+1 0 0 1 451.799 555.94 Tm
+(In) Tj
+/R70 9.96264 Tf
+1 0 0 1 462.239 555.94 Tm
+(Pr) Tj
+1 0 0 1 471.719 555.94 Tm
+(oc.) Tj
+1 0 0 1 485.759 555.94 Tm
+(2001) Tj
+1 0 0 1 507.719 555.94 Tm
+(AAAI) Tj
+1 0 0 1 531.479 555.94 Tm
+(Spring) Tj
+1 0 0 1 324.48 544.9 Tm
+(Symposium) Tj
+1 0 0 1 372.96 544.9 Tm
+(on) Tj
+1 0 0 1 386.04 544.9 Tm
+(Robotics) Tj
+1 0 0 1 423.96 544.9 Tm
+(and) Tj
+1 0 0 1 441.96 544.9 Tm
+(Education) Tj
+/R64 9.96264 Tf
+1 0 0 1 483.24 544.9 Tm
+(.) Tj
+1 0 0 1 488.519 544.9 Tm
+(AAAI.) Tj
+1 0 0 1 521.399 544.9 Tm
+(This) Tj
+1 0 0 1 542.159 544.9 Tm
+(v) Tj
+1 0 0 1 546.959 544.9 Tm
+(ol-) Tj
+1 0 0 1 324.48 533.98 Tm
+(ume.) Tj
+1 0 0 1 324.48 520.3 Tm
+(Hobson,) Tj
+1 0 0 1 362.28 520.3 Tm
+(R.) Tj
+1 0 0 1 375.48 520.3 Tm
+(S.) Tj
+1 0 0 1 391.8 520.3 Tm
+(2001.) Tj
+1 0 0 1 422.64 520.3 Tm
+(Robotics) Tj
+1 0 0 1 462 520.3 Tm
+(and) Tj
+1 0 0 1 480.48 520.3 Tm
+(engineering) Tj
+1 0 0 1 531.479 520.3 Tm
+(educa-) Tj
+1 0 0 1 324.48 509.38 Tm
+(tion) Tj
+1 0 0 1 343.2 509.38 Tm
+(at) Tj
+1 0 0 1 353.64 509.38 Tm
+(VCU.) Tj
+1 0 0 1 380.28 509.38 Tm
+(an) Tj
+1 0 0 1 392.88 509.38 Tm
+(o) Tj
+1 0 0 1 397.8 509.38 Tm
+(v) Tj
+1 0 0 1 402.72 509.38 Tm
+(ervie) Tj
+1 0 0 1 422.52 509.38 Tm
+(w) Tj
+1 0 0 1 432.72 509.38 Tm
+(of) Tj
+1 0 0 1 444.12 509.38 Tm
+(tw) Tj
+1 0 0 1 453.959 509.38 Tm
+(o) Tj
+1 0 0 1 462.239 509.38 Tm
+(classes) Tj
+1 0 0 1 493.079 509.38 Tm
+(at) Tj
+1 0 0 1 503.519 509.38 Tm
+(vir) Tj
+1 0 0 1 514.559 509.38 Tm
+(ginia) Tj
+1 0 0 1 537.479 509.38 Tm
+(com-) Tj
+1 0 0 1 324.48 498.34 Tm
+(monwealth) Tj
+1 0 0 1 371.52 498.34 Tm
+(uni) Tj
+1 0 0 1 384.12 498.34 Tm
+(v) Tj
+1 0 0 1 389.04 498.34 Tm
+(ersity) Tj
+1 0 0 1 413.64 498.34 Tm
+(in) Tj
+1 0 0 1 424.2 498.34 Tm
+(which) Tj
+1 0 0 1 451.32 498.34 Tm
+(robots) Tj
+1 0 0 1 478.919 498.34 Tm
+(are) Tj
+1 0 0 1 493.799 498.34 Tm
+(used) Tj
+1 0 0 1 514.919 498.34 Tm
+(to) Tj
+1 0 0 1 525.359 498.34 Tm
+(enhance) Tj
+1 0 0 1 324.48 487.42 Tm
+(the) Tj
+1 0 0 1 339.72 487.42 Tm
+(student') Tj
+1 0 0 1 371.4 487.42 Tm
+(s) Tj
+1 0 0 1 378.12 487.42 Tm
+(educational) Tj
+1 0 0 1 427.08 487.42 Tm
+(e) Tj
+1 0 0 1 431.4 487.42 Tm
+(xperience.) Tj
+1 0 0 1 477.72 487.42 Tm
+(In) Tj
+/R70 9.96264 Tf
+1 0 0 1 489.119 487.42 Tm
+(Pr) Tj
+1 0 0 1 498.599 487.42 Tm
+(oc.) Tj
+1 0 0 1 513.479 487.42 Tm
+(2001) Tj
+1 0 0 1 536.399 487.42 Tm
+(AAAI) Tj
+1 0 0 1 324.48 476.5 Tm
+(Spring) Tj
+1 0 0 1 356.16 476.5 Tm
+(Symposium) Tj
+1 0 0 1 406.8 476.5 Tm
+(on) Tj
+1 0 0 1 421.92 476.5 Tm
+(Robotics) Tj
+1 0 0 1 461.88 476.5 Tm
+(and) Tj
+1 0 0 1 482.04 476.5 Tm
+(Education) Tj
+/R64 9.96264 Tf
+1 0 0 1 523.319 476.5 Tm
+(.) Tj
+1 0 0 1 530.639 476.5 Tm
+(AAAI.) Tj
+1 0 0 1 324.48 465.46 Tm
+(This) Tj
+1 0 0 1 344.64 465.46 Tm
+(v) Tj
+1 0 0 1 349.44 465.46 Tm
+(olume.) Tj
+1 0 0 1 324.48 451.78 Tm
+(K) Tj
+1 0 0 1 331.56 451.78 Tm
+(ummeneje,) Tj
+1 0 0 1 378.72 451.78 Tm
+(J.) Tj
+1 0 0 1 390.36 451.78 Tm
+(2001.) Tj
+/R70 9.96264 Tf
+1 0 0 1 418.08 451.78 Tm
+(RoboCup) Tj
+1 0 0 1 458.76 451.78 Tm
+(as) Tj
+1 0 0 1 470.639 451.78 Tm
+(a) Tj
+1 0 0 1 478.559 451.78 Tm
+(Means) Tj
+1 0 0 1 508.199 451.78 Tm
+(to) Tj
+1 0 0 1 518.999 451.78 Tm
+(Resear) Tj
+1 0 0 1 546.359 451.78 Tm
+(c) Tj
+1 0 0 1 550.679 451.78 Tm
+(h,) Tj
+1 0 0 1 324.48 440.86 Tm
+(Education,) Tj
+1 0 0 1 372.12 440.86 Tm
+(and) Tj
+1 0 0 1 390.96 440.86 Tm
+(Dissemination) Tj
+/R64 9.96264 Tf
+1 0 0 1 448.68 440.86 Tm
+(.) Tj
+1 0 0 1 458.88 440.86 Tm
+(Licentiate) Tj
+1 0 0 1 502.559 440.86 Tm
+(thesis,) Tj
+1 0 0 1 531.959 440.86 Tm
+(Stock-) Tj
+1 0 0 1 324.48 429.94 Tm
+(holm) Tj
+1 0 0 1 347.4 429.94 Tm
+(Uni) Tj
+1 0 0 1 362.16 429.94 Tm
+(v) Tj
+1 0 0 1 367.08 429.94 Tm
+(ersity) Tj
+1 0 0 1 388.68 429.94 Tm
+(.) Tj
+1 0 0 1 324.48 416.26 Tm
+(Martin,) Tj
+1 0 0 1 357.48 416.26 Tm
+(F) Tj
+1 0 0 1 362.16 416.26 Tm
+(.) Tj
+1 0 0 1 367.92 416.26 Tm
+(G.) Tj
+1 0 0 1 383.52 416.26 Tm
+(1994.) Tj
+/R70 9.96264 Tf
+1 0 0 1 411.84 416.26 Tm
+(Cir) Tj
+1 0 0 1 424.68 416.26 Tm
+(cuits) Tj
+1 0 0 1 446.76 416.26 Tm
+(to) Tj
+1 0 0 1 457.68 416.26 Tm
+(Contr) Tj
+1 0 0 1 480.479 416.26 Tm
+(ol:) Tj
+1 0 0 1 496.079 416.26 Tm
+(Learning) Tj
+1 0 0 1 535.919 416.26 Tm
+(Engi-) Tj
+1 0 0 1 324.48 405.22 Tm
+(neering) Tj
+1 0 0 1 358.32 405.22 Tm
+(by) Tj
+1 0 0 1 371.04 405.22 Tm
+(Designing) Tj
+1 0 0 1 415.32 405.22 Tm
+(LEGO) Tj
+1 0 0 1 444.72 405.22 Tm
+(Robots) Tj
+/R64 9.96264 Tf
+1 0 0 1 472.56 405.22 Tm
+(.) Tj
+1 0 0 1 481.32 405.22 Tm
+(Ph.D.) Tj
+1 0 0 1 507.359 405.22 Tm
+(Dissertation,) Tj
+1 0 0 1 324.48 394.3 Tm
+(MIT) Tj
+1 0 0 1 345.24 394.3 Tm
+(Media) Tj
+1 0 0 1 373.2 394.3 Tm
+(Lab,) Tj
+1 0 0 1 393.6 394.3 Tm
+(Cambridge,) Tj
+1 0 0 1 442.92 394.3 Tm
+(MA,) Tj
+1 0 0 1 463.92 394.3 Tm
+(U.S.A.) Tj
+1 0 0 1 324.48 380.62 Tm
+(Martin,) Tj
+1 0 0 1 357.36 380.62 Tm
+(F) Tj
+1 0 0 1 362.04 380.62 Tm
+(.) Tj
+1 0 0 1 367.68 380.62 Tm
+(G.) Tj
+1 0 0 1 382.8 380.62 Tm
+(1999.) Tj
+1 0 0 1 410.76 380.62 Tm
+(The) Tj
+1 0 0 1 429.24 380.62 Tm
+(handyboard) Tj
+1 0 0 1 479.4 380.62 Tm
+(technical) Tj
+1 0 0 1 518.399 380.62 Tm
+(reference.) Tj
+1 0 0 1 324.48 369.7 Tm
+(T) Tj
+1 0 0 1 329.88 369.7 Tm
+(echnical) Tj
+1 0 0 1 365.52 369.7 Tm
+(report,) Tj
+1 0 0 1 394.32 369.7 Tm
+(MIT) Tj
+1 0 0 1 415.08 369.7 Tm
+(Media) Tj
+1 0 0 1 443.04 369.7 Tm
+(Lab) Tj
+1 0 0 1 458.28 369.7 Tm
+(.) Tj
+1 0 0 1 324.48 356.02 Tm
+(Murphy) Tj
+1 0 0 1 356.28 356.02 Tm
+(,) Tj
+1 0 0 1 360.84 356.02 Tm
+(R.) Tj
+1 0 0 1 372.36 356.02 Tm
+(R.) Tj
+1 0 0 1 385.08 356.02 Tm
+(2000.) Tj
+1 0 0 1 411 356.02 Tm
+(Using) Tj
+1 0 0 1 437.16 356.02 Tm
+(robot) Tj
+1 0 0 1 460.679 356.02 Tm
+(competitions) Tj
+1 0 0 1 514.559 356.02 Tm
+(to) Tj
+1 0 0 1 524.759 356.02 Tm
+(promote) Tj
+1 0 0 1 324.48 345.1 Tm
+(intellectual) Tj
+1 0 0 1 371.28 345.1 Tm
+(de) Tj
+1 0 0 1 380.52 345.1 Tm
+(v) Tj
+1 0 0 1 385.44 345.1 Tm
+(elopment.) Tj
+/R70 9.96264 Tf
+1 0 0 1 428.4 345.1 Tm
+(AI) Tj
+1 0 0 1 440.28 345.1 Tm
+(Ma) Tj
+1 0 0 1 453.48 345.1 Tm
+(gazine) Tj
+/R64 9.96264 Tf
+1 0 0 1 481.919 345.1 Tm
+(\(Spring\).) Tj
+1 0 0 1 324.48 331.42 Tm
+(T) Tj
+1 0 0 1 330.12 331.42 Tm
+(urbak,) Tj
+1 0 0 1 359.52 331.42 Tm
+(F) Tj
+1 0 0 1 364.2 331.42 Tm
+(.,) Tj
+1 0 0 1 373.56 331.42 Tm
+(and) Tj
+1 0 0 1 391.8 331.42 Tm
+(Ber) Tj
+1 0 0 1 406.08 331.42 Tm
+(g,) Tj
+1 0 0 1 417.72 331.42 Tm
+(R.) Tj
+1 0 0 1 435 331.42 Tm
+(2001.) Tj
+1 0 0 1 465.48 331.42 Tm
+(Robotic) Tj
+1 0 0 1 500.999 331.42 Tm
+(design) Tj
+1 0 0 1 530.879 331.42 Tm
+(studio:) Tj
+1 0 0 1 324.48 320.38 Tm
+(Exploring) Tj
+1 0 0 1 368.88 320.38 Tm
+(the) Tj
+1 0 0 1 385.56 320.38 Tm
+(big) Tj
+1 0 0 1 402.84 320.38 Tm
+(ideas) Tj
+1 0 0 1 427.92 320.38 Tm
+(of) Tj
+1 0 0 1 440.76 320.38 Tm
+(engineering) Tj
+1 0 0 1 492.359 320.38 Tm
+(in) Tj
+1 0 0 1 504.599 320.38 Tm
+(a) Tj
+1 0 0 1 513.599 320.38 Tm
+(liberal) Tj
+1 0 0 1 543.599 320.38 Tm
+(arts) Tj
+1 0 0 1 324.48 309.46 Tm
+(en) Tj
+1 0 0 1 333.6 309.46 Tm
+(vironment.) Tj
+1 0 0 1 383.76 309.46 Tm
+(In) Tj
+/R70 9.96264 Tf
+1 0 0 1 395.64 309.46 Tm
+(Pr) Tj
+1 0 0 1 405.12 309.46 Tm
+(oc.) Tj
+1 0 0 1 420.48 309.46 Tm
+(2001) Tj
+1 0 0 1 444 309.46 Tm
+(AAAI) Tj
+1 0 0 1 469.08 309.46 Tm
+(Spring) Tj
+1 0 0 1 499.199 309.46 Tm
+(Symposium) Tj
+1 0 0 1 548.039 309.46 Tm
+(on) Tj
+1 0 0 1 324.48 298.54 Tm
+(Robotics) Tj
+1 0 0 1 361.8 298.54 Tm
+(and) Tj
+1 0 0 1 379.32 298.54 Tm
+(Education) Tj
+/R64 9.96264 Tf
+1 0 0 1 420.6 298.54 Tm
+(.) Tj
+1 0 0 1 425.16 298.54 Tm
+(AAAI.) Tj
+1 0 0 1 456.24 298.54 Tm
+(This) Tj
+1 0 0 1 476.399 298.54 Tm
+(v) Tj
+1 0 0 1 481.199 298.54 Tm
+(olume.) Tj
+ET
+Q
+endstream
+endobj
+72 0 obj
+12695
+endobj
+54 0 obj
+<<
+/Type /Page
+/MediaBox [0 0 595 842]
+/Parent 2 0 R
+/Resources << /ProcSet [/PDF /ImageB /Text]
+/Font <<
+/R70 70 0 R
+/R67 67 0 R
+/R64 64 0 R
+/R61 61 0 R
+>>
+/XObject <<
+/R57 57 0 R
+>>
+>>
+/Contents [
+55 0 R
+59 0 R
+62 0 R
+65 0 R
+68 0 R
+71 0 R
+]
+>>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [
+3 0 R
+19 0 R
+35 0 R
+54 0 R
+] /Count 4
+>>
+endobj
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R
+>>
+endobj
+73 0 obj
+<< /CreationDate (D:20010523154101)
+/Producer (Aladdin Ghostscript 5.03)
+>>
+endobj
+xref
+0 74
+0000000000 65535 f 
+0000150220 00000 n 
+0000150140 00000 n 
+0000032918 00000 n 
+0000000015 00000 n 
+0000000069 00000 n 
+0000000086 00000 n 
+0000000167 00000 n 
+0000000638 00000 n 
+0000000657 00000 n 
+0000000739 00000 n 
+0000016889 00000 n 
+0000016911 00000 n 
+0000017284 00000 n 
+0000017304 00000 n 
+0000020742 00000 n 
+0000020763 00000 n 
+0000020848 00000 n 
+0000032896 00000 n 
+0000075017 00000 n 
+0000033154 00000 n 
+0000033210 00000 n 
+0000033228 00000 n 
+0000033508 00000 n 
+0000033527 00000 n 
+0000033620 00000 n 
+0000033639 00000 n 
+0000033722 00000 n 
+0000033834 00000 n 
+0000033853 00000 n 
+0000033937 00000 n 
+0000048630 00000 n 
+0000048652 00000 n 
+0000048737 00000 n 
+0000074995 00000 n 
+0000117185 00000 n 
+0000075260 00000 n 
+0000075316 00000 n 
+0000075334 00000 n 
+0000075418 00000 n 
+0000076991 00000 n 
+0000077012 00000 n 
+0000077292 00000 n 
+0000077311 00000 n 
+0000082279 00000 n 
+0000082300 00000 n 
+0000082383 00000 n 
+0000097342 00000 n 
+0000097364 00000 n 
+0000097449 00000 n 
+0000114789 00000 n 
+0000114811 00000 n 
+0000114891 00000 n 
+0000117164 00000 n 
+0000149878 00000 n 
+0000117447 00000 n 
+0000117503 00000 n 
+0000117521 00000 n 
+0000117801 00000 n 
+0000117820 00000 n 
+0000117913 00000 n 
+0000117932 00000 n 
+0000118015 00000 n 
+0000118209 00000 n 
+0000118229 00000 n 
+0000118313 00000 n 
+0000123391 00000 n 
+0000123412 00000 n 
+0000123492 00000 n 
+0000137000 00000 n 
+0000137022 00000 n 
+0000137107 00000 n 
+0000149856 00000 n 
+0000150269 00000 n 
+trailer
+<< /Size 74 /Root 1 0 R /Info 73 0 R
+>>
+startxref
+150361
+%%EOF

@@ -152,7 +152,8 @@
 //uint16_t number_of_points;
 //float Ref;
 //float Refw;
-//float Ref1;
+//uint8_t Ref8;
+//uint16_t Ref16, speed_d16, speed_e16;
 //bool sending = 0;
 //bool flag;
 //float u_teste;
@@ -203,7 +204,7 @@
 //	Encoder ENC_D(TIM4);
 //	
 //	//Serial communication
-//	USART Serial(USART3, BD_1000000);
+//	USART Serial(USART3, BD_250000);
 //	
 //	//----------------------------------------------------------------------------------------------
 //	
@@ -226,6 +227,8 @@
 //	ENC_E.reset();
 //	while(Timer::GetTime_usec() < 2000000);
 //	Ref = 0;
+//	PWM_D.PWMWrite(Ref);
+//	PWM_E.PWMWrite(Ref);
 
 //	while(1)
 //	{
@@ -234,9 +237,9 @@
 //		{
 //			if (Serial.Available())
 //			{
-//				Ref = Serial.Receive();	//in %
-//				PWM_D.PWMWrite(Ref+dead_zone);
-//				PWM_E.PWMWrite(Ref+dead_zone);
+//				Ref8 = Serial.Receive();	//in %
+//				PWM_D.PWMWrite(Ref8+dead_zone);
+////				PWM_E.PWMWrite(Ref8+dead_zone);
 //				counter = 0;
 //			}
 //		}
@@ -246,15 +249,22 @@
 //			if (counter <= number_of_points)
 //			{
 //				counter++;
-//				Serial.sendFloat(&Ref);
-//				speed_d = ENC_D.getSpeed();
-//				speed_e = ENC_E.getSpeed();
-//				Serial.sendFloat(&speed_d);
-//				Serial.sendFloat(&speed_e);
+////				Serial.sendFloat(&Ref);
+////				speed_d = ENC_D.getSpeed();
+////				speed_e = ENC_E.getSpeed();
+////				Serial.sendFloat(&speed_d);
+////				Serial.sendFloat(&speed_e);
+//				Ref16 = (uint16_t)Ref8;
+//				Serial.Send(Ref8);
+//				speed_d16 = (uint16_t)ENC_D.getSpeed();
+////				speed_e16 = (uint16_t)ENC_E.getSpeed();
+//				Serial.sendUint16(&speed_d16);
+////				Serial.Send_Vec_16(&speed_e16, 1);
 //			}
 //		}
 //		
 //		flag = 0;
+////		Serial.Send(0);
 //		if (Board.SysTickGetEvent()) 
 //		{
 //			LED_Board.tooglePin();

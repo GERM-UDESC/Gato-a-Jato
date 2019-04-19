@@ -19,12 +19,12 @@ float Refw;
 float Ref1;
 bool sending = 0;
 bool flag;
-float u_teste;
+float u_teste, angleTest;
 float u_D, u_E;
 float speed_teste;
 float speed_d, speed_e, speedV, speedW, speed_temp;
 float xtest, ytest, tetatest;
-float testLine[9];
+float testLine[9], linevalue;
 uint32_t counter = 0;
 float time, delta_time;
 
@@ -71,9 +71,6 @@ int main()
 	Motor Motor_E(PWM_E, ENC_E, AIN2, AIN1);
 	Motor Motor_D(PWM_D, ENC_D, BIN1, BIN2);
 	
-	//Robot Kinematic
-	Kinematic Robot(Motor_D, Motor_E);
-	
 	//Line sensor
 	Reflectance_Sensor Sensor1(ADC_CH0);
 	Reflectance_Sensor Sensor2(ADC_CH1);
@@ -84,7 +81,10 @@ int main()
 	Reflectance_Sensor Sensor7(ADC_CH6);
 	Reflectance_Sensor Sensor8(ADC_CH7);
 	Line_Sensor Sensor_Board(Sensor1, Sensor2, Sensor3, Sensor4, Sensor5, Sensor6, Sensor7, Sensor8);
-
+	
+	//Robot Kinematic
+	Kinematic Robot(Motor_D, Motor_E, Sensor_Board);
+	
 	//Serial communication
 	USART Serial(USART3, BD_1000000);
 	
@@ -101,16 +101,16 @@ int main()
 	Robot.reset();
 	while(Timer::GetTime_usec() < 2000000);
 	Robot.reset();
-	Ref = 0.5;
+	Ref = 0;
 	Refw = 0;
 	Ref1 = 0;
 	Robot.setRobotSpeed(Ref, Refw);
+	Robot.calibrateLineSensor(100000);
 	
-//	Sensor_Board.Calibrate_Sensor(100000);
 	
 	while(1)
 	{
-//		time = Timer::GetTime_usec();
+		time = Timer::GetTime_usec();
 //		while(flag == 0)
 //		{
 //			if (Serial.Available())
@@ -122,29 +122,22 @@ int main()
 //				counter = 0;
 //			}
 //		}
-//		if (Timer::GetTime_usec() > 3000000) while(1);
-//		speed_e = Robot.motorE.Get_Speed();
+
+		speed_e = Robot.motorE.Get_Speed();
 		speed_d = Robot.motorD.Get_Speed();
 		xtest = Robot.getX();
 		ytest = Robot.getY();
-		tetatest = Robot.getTeta();
-		if (xtest > 1) 
+		tetatest = 180*Robot.getTeta()/pi;
+		if (sqrt(xtest*xtest + ytest*ytest) > 1) 
 		{
 			Robot.setRobotSpeed(0,0);
 			while(1)
 			{
 				xtest = Robot.getX();
-				if (xtest > 1.02) Robot.setRobotSpeed(-0.5,0);
-				if ((xtest < 1.02) && (xtest > 0.98)) Robot.setRobotSpeed(0,0);
-				if (xtest > 0.98) Robot.setRobotSpeed(0.5,0);
+				ytest = Robot.getY();
+				tetatest = 180*Robot.getTeta()/pi;
 			}
 		}
-
-		
-//		if ((speed_d > 3000) )
-//		{
-//			speed_d = Robot.motorD.encoder.getDeltaTime();
-//		}
 		
 //		if (sending) 
 //		{
@@ -163,14 +156,13 @@ int main()
 ////			}
 //		}
 //		flag = 0;
-//		testLine[8] = Sensor_Board.Read_Sensor();
-//		for(int i = 0; i < 8; i++)
-//		{
-//			testLine[i] = Sensor_Board.Sensors[i].Reflectance_Read();
-//		}
+
 		if (Board.SysTickGetEvent()) 
 		{
 			LED_Board.tooglePin();
+			Robot.calibrateAngle();
+			angleTest = Robot.getAngle();
+			linevalue = Robot.lineSensor.read();
 		}
 	}
 }

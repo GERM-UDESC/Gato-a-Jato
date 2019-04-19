@@ -7,15 +7,18 @@
 #define rpmToRads 2*pi/60
 #define rpmToV rpmToRads*r
 #define radsToRpm 60/(2*pi);
-#define r 0.016
+#define r 0.015
 
 #define desired_size 3							
 #define k (desired_size-1)
 //#define Number_of_Motor 4		//the same as encoderes
 
 
-#define K 792.7
-#define P 22.82
+//#define K 792.7
+//#define P 22.82
+
+#define K 455.5
+#define P 12.97
 
 #define ts 0.15 							//tempo de assentamento
 #define KP 4/(K*ts)

@@ -7,11 +7,10 @@ void Kinematic::handlerByTime()
 	Kinematic::ptRobot->handler();
 }
 
-Kinematic::Kinematic(Motor motorD, Motor motorE) : motorD(&motorD), motorE(&motorE), xPos(0), yPos(0)
+Kinematic::Kinematic(Motor motorD, Motor motorE, Line_Sensor lineSensor) 
+: motorD(&motorD), motorE(&motorE), lineSensor(&lineSensor), xPos(0), yPos(0)
 {
 	Kinematic::ptRobot = this;
-	xPos = 0;
-	yPos = 0;
 }
 
 void Kinematic::reset()
@@ -20,7 +19,6 @@ void Kinematic::reset()
 	motorE.reset();
 	xPos = 0;
 	yPos = 0;
-	lastTeta = 0;
 	vRef = 0;
 	wRef = 0;
 	vMotDref = 0;
@@ -69,21 +67,6 @@ void Kinematic::handler()
 //	xPos += getV()*cos(getTeta())*integrationTime;
 //	yPos += getV()*sin(getTeta())*integrationTime;
 	
-//	float deltaDistance, commonDistance, actualTeta;
-//	actualTeta = getTeta();
-//	if(motorD.getDeltaDistance() > motorE.getDeltaDistance())
-//	{ 
-//		commonDistance = motorE.getDeltaDistance();
-//		deltaDistance = motorD.getDeltaDistance() - commonDistance;
-//	}
-//	else
-//	{
-//		commonDistance = motorD.getDeltaDistance();
-//		deltaDistance = motorE.getDeltaDistance() - commonDistance;
-//	}
-//	xPos += commonDistance*cos(lastTeta) + deltaDistance*cos(actualTeta - lastTeta);
-//	yPos += commonDistance*sin(lastTeta) + deltaDistance*sin(actualTeta - lastTeta);
-//	lastTeta = actualTeta;
 	float deltaDistance;
 	deltaDistance = (motorD.getDeltaDistance() + motorE.getDeltaDistance())/2;
 	xPos += deltaDistance*cos(getTeta());
@@ -140,6 +123,26 @@ float Kinematic::getVteta()
 	return (r/(2*L))*(motorD.getSpeedRadS() - motorE.getSpeedRadS());
 }
 
+void Kinematic::calibrateLineSensor(uint32_t iterations)
+{
+	lineSensor.calibrate(iterations);
+}
+
+void Kinematic::calibrateAngle()
+{
+	if ((sqrt(xPos*xPos + yPos*yPos) - lastDistance) != 0)
+	{
+		angle = atan(lineSensor.read() - lastLineSensorReading)/(sqrt(xPos*xPos + yPos*yPos) - lastDistance); //  arctg(deltaReading/deltaDistance)
+		lastLineSensorReading = lineSensor.read();
+		lastDistance = sqrt(xPos*xPos + yPos*yPos);
+	}
+
+}
+
+float Kinematic::getAngle()
+{
+	return angle;
+}
 
 
 

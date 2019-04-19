@@ -2,9 +2,10 @@
 #define KINEMATIC_CONTROL_H
 
 #include "MOTOR.h"
+#include "LINE_SENSOR.h"
 #include "math.h"
 
-#define L 0.079
+#define L 0.069
 
 #define integrationTime Time_between_int/1000000
 
@@ -33,9 +34,16 @@ class Kinematic
 	public:
 		Motor motorD;
 		Motor motorE;
+		Line_Sensor lineSensor;
+	
+		float lineSensorReading{0};
+		float lastLineSensorReading{0};
+		float lastDistance{0};
+		
+		
 		float xPos{0};
 		float yPos{0};
-		float lastTeta{0};
+		float angle{0};
 	
 		float vMotDref;
 		float vMotEref;
@@ -55,7 +63,7 @@ class Kinematic
 		void handler();
 		
 	public:
-		Kinematic(Motor motorD, Motor motorE);
+		Kinematic(Motor motorD, Motor motorE, Line_Sensor lineSensor);
 	
 		void reset();
 		
@@ -67,6 +75,7 @@ class Kinematic
 		float getX();
 		float	getY();
 		float getTeta();
+		float getAngle();
 	
 		float getVx();
 		float	getVy();
@@ -77,6 +86,9 @@ class Kinematic
 	
 		void setX(float x);
 		void setY(float y);
+		
+		void calibrateLineSensor(uint32_t iterations);
+		void calibrateAngle();
 	
 		static void handlerByTime();
 

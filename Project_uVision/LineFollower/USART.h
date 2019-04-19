@@ -27,6 +27,7 @@ class USART
 		void Send_Vec_16(uint16_t *ptVec, uint16_t size);
 		void sendFloat(float *ptFloat);
 		void sendUint32(uint32_t *ptUint32);
+		void sendUint16(uint16_t *ptUint16);
 		uint8_t Receive();
 		bool Available();
 		

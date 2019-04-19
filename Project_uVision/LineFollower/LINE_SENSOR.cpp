@@ -29,8 +29,15 @@ Line_Sensor::Line_Sensor(Reflectance_Sensor Sensor1, Reflectance_Sensor Sensor2,
 	
 }
 
+Line_Sensor::Line_Sensor(Line_Sensor *lineSensor)
+: Sensors{&lineSensor->Sensors[0], &lineSensor->Sensors[1], &lineSensor->Sensors[2], &lineSensor->Sensors[3],
+					&lineSensor->Sensors[4], &lineSensor->Sensors[5], &lineSensor->Sensors[6], &lineSensor->Sensors[7]}
+{
+	
+}
 
-void Line_Sensor::Calibrate_Sensor(uint32_t iterations)
+
+void Line_Sensor::calibrate(uint32_t iterations)
 {
 	for(int j = 0; j < iterations; j++)
 	{
@@ -41,7 +48,7 @@ void Line_Sensor::Calibrate_Sensor(uint32_t iterations)
 	}
 }
 
-float Line_Sensor::Read_Sensor()
+float Line_Sensor::read()
 {
 	media = 0;
 	soma = 0;						
@@ -66,7 +73,8 @@ float Line_Sensor::Read_Sensor()
 //		last_error = erro;
 		
 		erro = (media/soma) - 3.5;
-		erro = maxTeta*erro/3.5;
+//		erro = maxTeta*erro/3.5;
+		erro = maxDistance*erro/3.5;
 		last_error = erro;
 	}
 	else 
