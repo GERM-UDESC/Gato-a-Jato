@@ -13,10 +13,11 @@
 #define k (desired_size-1)
 //#define Number_of_Motor 4		//the same as encoderes
 
-
+//Sem roda
 //#define K 792.7
 //#define P 22.82
 
+//Com roda
 #define K 455.5
 #define P 12.97
 

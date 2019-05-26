@@ -163,37 +163,42 @@
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>xtest</ItemText>
+          <ItemText>Ref</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>ytest</ItemText>
+          <ItemText>Refw</ItemText>
         </Ww>
         <Ww>
           <count>2</count>
           <WinNumber>1</WinNumber>
-          <ItemText>tetatest</ItemText>
+          <ItemText>speedV</ItemText>
         </Ww>
         <Ww>
           <count>3</count>
           <WinNumber>1</WinNumber>
-          <ItemText>Ref</ItemText>
+          <ItemText>speedW</ItemText>
         </Ww>
         <Ww>
           <count>4</count>
           <WinNumber>1</WinNumber>
-          <ItemText>Ref16,0x0A</ItemText>
+          <ItemText>speed16,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>5</count>
           <WinNumber>1</WinNumber>
-          <ItemText>number_of_points,0x0A</ItemText>
+          <ItemText>speed_teste</ItemText>
         </Ww>
         <Ww>
           <count>6</count>
           <WinNumber>1</WinNumber>
           <ItemText>angleTest</ItemText>
+        </Ww>
+        <Ww>
+          <count>7</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>linevalue</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>
@@ -639,6 +644,30 @@
       <bDave2>0</bDave2>
       <PathWithFileName>.\KINEMATIC_CONTROL.h</PathWithFileName>
       <FilenameWithoutPath>KINEMATIC_CONTROL.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>28</FileNumber>
+      <FileType>8</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\ANGLE_LINE_SENSOR.cpp</PathWithFileName>
+      <FilenameWithoutPath>ANGLE_LINE_SENSOR.cpp</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>29</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\ANGLE_LINE_SENSOR.h</PathWithFileName>
+      <FilenameWithoutPath>ANGLE_LINE_SENSOR.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

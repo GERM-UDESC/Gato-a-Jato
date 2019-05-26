@@ -536,6 +536,16 @@
               <FileType>5</FileType>
               <FilePath>.\KINEMATIC_CONTROL.h</FilePath>
             </File>
+            <File>
+              <FileName>ANGLE_LINE_SENSOR.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\ANGLE_LINE_SENSOR.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>ANGLE_LINE_SENSOR.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\ANGLE_LINE_SENSOR.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

@@ -3,35 +3,34 @@ clear all
 clc
 
 bits_to_receive = 2500;
-baud_rate = 250e3;
+baud_rate = 1e6;
 Ts = 1e-3;
-% rpmToV = 596.83;
 
-seguidor = serial('com3','BaudRate',baud_rate,'Parity','none', 'InputBufferSize', 15000); 
+seguidor = serial('com3','BaudRate',baud_rate,'Parity','none', 'InputBufferSize', 25000); 
 fopen(seguidor);
-fwrite(seguidor, bits_to_receive/10, 'uint8');
+
+flushinput(seguidor);
+fwrite(seguidor, 0, 'uint8');
+temp = fread(seguidor, 5000,'float');
+dados = [temp(1:2:length(temp))'; temp(2:2:length(temp))'];
+for i = 1:12
+    flushinput(seguidor);
+    fwrite(seguidor, 5*i, 'uint8');
+    temp = fread(seguidor, 5000,'float');
+    dados = [dados(1,:) temp(1:2:length(temp))'; dados(2,:) temp(2:2:length(temp))'];
+end
+flushinput(seguidor);
+fwrite(seguidor, 0, 'uint8');
+temp = fread(seguidor, 5000,'float');
+dados = [dados(1,:) temp(1:2:length(temp))'; dados(2,:) temp(2:2:length(temp))'];
+
 fclose(seguidor);
 
+ref = dados(1, :);
+speed1 = dados(2, :);
+save('refw')
+save('speedw')
 %%
-x = colect_data(0, bits_to_receive, baud_rate);
-x = [x colect_data(10, bits_to_receive, baud_rate)];
-x = [x colect_data(20, bits_to_receive, baud_rate)];
-x = [x colect_data(30, bits_to_receive, baud_rate)];
-x = [x colect_data(40, bits_to_receive, baud_rate)];
-x = [x colect_data(50, bits_to_receive, baud_rate)];
-x = [x colect_data(60, bits_to_receive, baud_rate)];
-x = [x colect_data(70, bits_to_receive, baud_rate)];
-x = [x colect_data(80, bits_to_receive, baud_rate)];
-x = [x colect_data(90, bits_to_receive, baud_rate)];
-x = [x colect_data(0, bits_to_receive, baud_rate)];
-
-ref = x(1, :);
-speed1 = x(2, :);
-speed2 = x(3, :);
-save('ref')
-save('speed1')
-%%
-
 t = 0:Ts:((length(ref)-1)*Ts);
 
 simulink_ref = [t; ref]';
@@ -46,7 +45,6 @@ simulink_u_ref1 = [t; u1]';
 % simulink_u_ref2 = [t; u2]';
 
 %% 
-s = tf('s');
 
 % sem roda
 % K = 792.7; 
@@ -60,6 +58,7 @@ ts = 0.2; %tempo de assentamento
 KP = 4/(K*ts);
 KI = P*KP;
 
+s = tf('s');
 Modelo = K/(s + P);
 Controlador = KP*(s+KI/KP)/s;
 
@@ -79,14 +78,3 @@ plot(t,speed1,'b', t,ref,'-k')
 hold on
 % plot(t,speed2,'r', t,u2,'r')
 lsim(T,':c', ref,t)
-
-%%
-
-speed1 = x(2, :);
-speed1 = speed1(1,1000:16000);
-figure
-plot(speed1)
-
-
-figure
-periodogram(speed1)

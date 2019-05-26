@@ -9,6 +9,13 @@
 
 #define integrationTime Time_between_int/1000000
 
+#define Kw 455.5
+#define Pw 12.97
+
+#define ts_w 0.05 							//tempo de assentamento
+#define KDw 4/(Kw*ts_w)
+#define KPw Pw*KDw
+
 typedef enum{
 	x,
 	y,
@@ -40,6 +47,9 @@ class Kinematic
 		float lastLineSensorReading{0};
 		float lastDistance{0};
 		
+		void posControl();
+		float Uw[desired_size]{0};	
+		float Ew[desired_size]{0};			
 		
 		float xPos{0};
 		float yPos{0};
@@ -58,9 +68,9 @@ class Kinematic
 	
 		float vRef;
 		float wRef;
-		static Kinematic *ptRobot;
 		
 		void handler();
+		static Kinematic *ptRobot;
 		
 	public:
 		Kinematic(Motor motorD, Motor motorE, Line_Sensor lineSensor);
@@ -75,20 +85,20 @@ class Kinematic
 		float getX();
 		float	getY();
 		float getTeta();
-		float getAngle();
+		float getLineAngle();
 	
 		float getVx();
 		float	getVy();
 		float getVteta();
 	
 		float getV();
-		float getw();
+		float getW();
 	
 		void setX(float x);
 		void setY(float y);
 		
 		void calibrateLineSensor(uint32_t iterations);
-		void calibrateAngle();
+		void updateLineAngle();
 	
 		static void handlerByTime();
 

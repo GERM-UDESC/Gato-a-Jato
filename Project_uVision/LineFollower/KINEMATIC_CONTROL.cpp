@@ -43,17 +43,17 @@ void Kinematic::setRobotSpeed(float V, float w)
 	motorE.Set_Speed(vMotEref);	
 }
 
-void Kinematic::setRobotRefereceSpeed(float Vx, float Vy, float Vteta)
-{
-	vMotDref = (1/r)*(Vx*cos(getTeta()) + Vy*sin(getTeta()) + L*Vteta);
-	vMotEref = (1/r)*(Vx*cos(getTeta()) + Vy*sin(getTeta()) - L*Vteta);
-	
-	vRef = (r/(2))*(vMotDref + vMotEref);
-	wRef = (r/(2*L))*(vMotDref - vMotEref);
-	
-	motorD.Set_Speed(vMotDref);
-	motorE.Set_Speed(vMotEref);
-}
+//void Kinematic::setRobotRefereceSpeed(float Vx, float Vy, float Vteta)
+//{
+//	vMotDref = (1/r)*(Vx*cos(getTeta()) + Vy*sin(getTeta()) + L*Vteta);
+//	vMotEref = (1/r)*(Vx*cos(getTeta()) + Vy*sin(getTeta()) - L*Vteta);
+//	
+//	vRef = (r/(2))*(vMotDref + vMotEref);
+//	wRef = (r/(2*L))*(vMotDref - vMotEref);
+//	
+//	motorD.Set_Speed(vMotDref);
+//	motorE.Set_Speed(vMotEref);
+//}
 
 void Kinematic::setRobotReferecePosition(float x, float y, float teta)
 {
@@ -71,6 +71,23 @@ void Kinematic::handler()
 	deltaDistance = (motorD.getDeltaDistance() + motorE.getDeltaDistance())/2;
 	xPos += deltaDistance*cos(getTeta());
 	yPos += deltaDistance*sin(getTeta());
+	
+	posControl();
+}
+
+void Kinematic::posControl()
+{
+	Ew[k] = 0 - getLineAngle();
+	Uw[k] = ((KPw*ts_w+2*KDw)*Ew[k] + (KPw*ts_w-2*KDw)*Ew[k-1] - ts_w*Uw[k-1])/ts_w;
+	
+	for (int i = 0; i < k; i++)
+	{
+		Uw[i] = Uw[i+1];
+		Ew[i] = Ew[i+1];
+	}
+	
+	setRobotSpeed(vRef, Uw[k]);
+	
 }
 
 float Kinematic::getV()
@@ -78,7 +95,7 @@ float Kinematic::getV()
 	return (r/(2))*(motorD.getSpeedRadS() + motorE.getSpeedRadS());
 }
 
-float Kinematic::getw()
+float Kinematic::getW()
 {
 	return (r/(2*L))*(motorD.getSpeedRadS() - motorE.getSpeedRadS());
 }
@@ -128,18 +145,21 @@ void Kinematic::calibrateLineSensor(uint32_t iterations)
 	lineSensor.calibrate(iterations);
 }
 
-void Kinematic::calibrateAngle()
+void Kinematic::updateLineAngle()
 {
-	if ((sqrt(xPos*xPos + yPos*yPos) - lastDistance) != 0)
-	{
-		angle = atan(lineSensor.read() - lastLineSensorReading)/(sqrt(xPos*xPos + yPos*yPos) - lastDistance); //  arctg(deltaReading/deltaDistance)
-		lastLineSensorReading = lineSensor.read();
-		lastDistance = sqrt(xPos*xPos + yPos*yPos);
-	}
-
+//	if ((sqrt(xPos*xPos + yPos*yPos) - lastDistance) != 0)
+//	{
+//		angle = atan(lineSensor.read() - lastLineSensorReading)/(sqrt(xPos*xPos + yPos*yPos) - lastDistance); //  arctg(deltaReading/deltaDistance)
+//		lastLineSensorReading = lineSensor.read();
+//		lastDistance = sqrt(xPos*xPos + yPos*yPos);
+//	}
+	float thisLoopLineRead = lineSensor.read();
+	angle = atan2(thisLoopLineRead - lastLineSensorReading, sqrt(xPos*xPos + yPos*yPos) - lastDistance);
+	lastLineSensorReading = thisLoopLineRead;
+	lastDistance = sqrt(xPos*xPos + yPos*yPos);
 }
 
-float Kinematic::getAngle()
+float Kinematic::getLineAngle()
 {
 	return angle;
 }

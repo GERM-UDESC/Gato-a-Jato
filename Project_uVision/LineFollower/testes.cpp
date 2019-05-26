@@ -96,73 +96,58 @@ int main()
 	//-----------------------------------------------------------------------------------------------
 
 	counter = 0;
-	//number_of_points = 10*Serial.Receive();
 	sending = 1;
+	number_of_points = 2500;
 	Robot.reset();
 	while(Timer::GetTime_usec() < 2000000);
 	Robot.reset();
-	Ref = 0;
+	Ref = 0.5;
 	Refw = 0;
-	Ref1 = 0;
-	Robot.setRobotSpeed(Ref, Refw);
 	Robot.calibrateLineSensor(100000);
+	Robot.setRobotSpeed(Ref, Refw);
 	
 	
 	while(1)
 	{
-		time = Timer::GetTime_usec();
+//		while(flag == 0);
+		Timer::delay(3000000);
+		Robot.updateLineAngle();
+		angleTest = Robot.getLineAngle();
+		linevalue = Robot.lineSensor.read();
+//		Robot.setRobotSpeed(Ref, Refw);
+//		speedV = Robot.getV();
+//		speedW = Robot.getW();
+//		
+//		time = Timer::GetTime_usec();
 //		while(flag == 0)
 //		{
 //			if (Serial.Available())
 //			{
-//				Ref = 10*Serial.Receive();	//in RPM
-//				Ref1 = Ref;
-//				Ref = Ref*rpmToRads*r;			
-//				Robot.setRobotSpeed(Ref,0);
+//				Ref8bit = Serial.Receive();
+//				Ref16 = (uint16_t)Ref8bit;
+//				Refw = (float)Ref8bit;		
+//				Robot.setRobotSpeed(0,Refw);
 //				counter = 0;
 //			}
-//		}
-
-		speed_e = Robot.motorE.Get_Speed();
-		speed_d = Robot.motorD.Get_Speed();
-		xtest = Robot.getX();
-		ytest = Robot.getY();
-		tetatest = 180*Robot.getTeta()/pi;
-		if (sqrt(xtest*xtest + ytest*ytest) > 1) 
-		{
-			Robot.setRobotSpeed(0,0);
-			while(1)
-			{
-				xtest = Robot.getX();
-				ytest = Robot.getY();
-				tetatest = 180*Robot.getTeta()/pi;
-			}
-		}
-		
+//		}		
 //		if (sending) 
 //		{
-////			if (counter <= number_of_points)
-////			{
-////				counter++;
-////				Serial.sendFloat(&Ref1);
-//				speed_teste = Robot.motorD.Get_Speed();
+//			if (counter <= number_of_points)
+//			{
+//				counter++;
+//				Serial.sendFloat(&Refw);
+//				speed_teste = Robot.getW();
 //				Serial.sendFloat(&speed_teste);
-////				u_teste = Robot.motorD.getU();
-////				Serial.sendFloat(&u_teste);
-////				speed_teste = Robot.motorE.Get_Speed();
-////				Serial.sendFloat(&speed_teste);
-////				u_teste = Robot.motorE.getU();
-////				Serial.sendFloat(&u_teste);
-////			}
+//			}
 //		}
-//		flag = 0;
+		flag = 0;
 
 		if (Board.SysTickGetEvent()) 
 		{
 			LED_Board.tooglePin();
-			Robot.calibrateAngle();
-			angleTest = Robot.getAngle();
-			linevalue = Robot.lineSensor.read();
+//			Robot.updateLineAngle();
+//			angleTest = Robot.getLineAngle();
+//			linevalue = Robot.lineSensor.read();
 		}
 	}
 }
