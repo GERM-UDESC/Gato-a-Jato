@@ -163,42 +163,12 @@
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>Ref</ItemText>
+          <ItemText>linevalue</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>Refw</ItemText>
-        </Ww>
-        <Ww>
-          <count>2</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>speedV</ItemText>
-        </Ww>
-        <Ww>
-          <count>3</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>speedW</ItemText>
-        </Ww>
-        <Ww>
-          <count>4</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>speed16,0x0A</ItemText>
-        </Ww>
-        <Ww>
-          <count>5</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>speed_teste</ItemText>
-        </Ww>
-        <Ww>
-          <count>6</count>
-          <WinNumber>1</WinNumber>
           <ItemText>angleTest</ItemText>
-        </Ww>
-        <Ww>
-          <count>7</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>linevalue</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>
@@ -654,8 +624,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\ANGLE_LINE_SENSOR.cpp</PathWithFileName>
-      <FilenameWithoutPath>ANGLE_LINE_SENSOR.cpp</FilenameWithoutPath>
+      <PathWithFileName>.\KANAYAMA_CONTROLER.cpp</PathWithFileName>
+      <FilenameWithoutPath>KANAYAMA_CONTROLER.cpp</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -666,8 +636,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\ANGLE_LINE_SENSOR.h</PathWithFileName>
-      <FilenameWithoutPath>ANGLE_LINE_SENSOR.h</FilenameWithoutPath>
+      <PathWithFileName>.\KANAYAMA_CONTROLER.h</PathWithFileName>
+      <FilenameWithoutPath>KANAYAMA_CONTROLER.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

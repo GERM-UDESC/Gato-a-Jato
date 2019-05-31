@@ -54,7 +54,7 @@ Ts_x = 0.05;
 Kx = 4/Ts_x;
 
 % Ky e Kteta
-Ts_y_teta = 0.05;
+Ts_y_teta = 0.1;
 qsi = 1;
 wn = 4/(qsi*Ts_y_teta);
 Tp = pi/(wn*sqrt(1-qsi^2));

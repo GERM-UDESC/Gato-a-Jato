@@ -6,7 +6,7 @@
 
 #define rpmToRads 2*pi/60
 #define rpmToV rpmToRads*r
-#define radsToRpm 60/(2*pi);
+#define radsToRpm 60/(2*pi)
 #define r 0.015
 
 #define desired_size 3							

@@ -16,26 +16,6 @@
 #define KDw 4/(Kw*ts_w)
 #define KPw Pw*KDw
 
-typedef enum{
-	x,
-	y,
-	teta,
-	Number_Of_Global_Position_Elements,
-}GLOBAL_REFERENCE_POSITION;
-
-typedef enum{
-	Vx,
-	Vy,
-	Vteta,
-	Number_Of_Global_Speed_Elements,
-}GLOBAL_REFERENCE_SPEED;
-
-typedef enum{
-	V,
-	w,
-	Number_Of_Robot_Speed_Elements
-}ROBOT_SPEED;
-
 class Kinematic
 {
 	public:
@@ -43,67 +23,42 @@ class Kinematic
 		Motor motorE;
 		Line_Sensor lineSensor;
 	
+		bool calibrationFinished{0};
+		
 		float lineSensorReading{0};
 		float lastLineSensorReading{0};
-		float lastDistance{0};
-		
-		void posControl();
-		float Uw[desired_size]{0};	
-		float Ew[desired_size]{0};			
+		float lastDistance{0};	
 		
 		float xPos{0};
 		float yPos{0};
 		float angle{0};
-	
-		float vMotDref;
-		float vMotEref;
-	
-		float xRef;
-		float yRef;
-		float tetaRef;
-	
-		float VxRef;
-		float VyRef;
-		float VtetaRef;
-	
-		float vRef;
-		float wRef;
 		
 		void handler();
 		static Kinematic *ptRobot;
 		
 	public:
 		Kinematic(Motor motorD, Motor motorE, Line_Sensor lineSensor);
+		Kinematic(Kinematic *kinematic);
 	
 		void reset();
 		
-		void setRobotSpeed(float V, float w);
-		void setRobotRefereceSpeed(float Vx, float Vy, float Vteta);
-		void setRobotReferecePosition(float x, float y, float teta);
-		void goTo(float x, float y, float teta);
+		void setSpeed(float V, float w);
 	
 		float getX();
 		float	getY();
 		float getTeta();
-		float getLineAngle();
 	
-		float getVx();
-		float	getVy();
-		float getVteta();
+		float getLineAngle();
+		float getLinePosition();
 	
 		float getV();
 		float getW();
-	
-		void setX(float x);
-		void setY(float y);
 		
 		void calibrateLineSensor(uint32_t iterations);
 		void updateLineAngle();
 	
 		static void handlerByTime();
 
-
-	
 };
 
 #endif
