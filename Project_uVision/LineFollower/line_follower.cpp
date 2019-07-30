@@ -10,7 +10,7 @@
 #include "MOTOR.h"
 #include "USART.h"
 #include "KINEMATIC_CONTROL.h"
-#include "KANAYAMA_CONTROLER.h"
+#include "FOLLOWING_CONTROLER.h"
 
 #include "math.h"
 
@@ -103,6 +103,7 @@ int main()
 	sending = 1;
 	number_of_points = 2500;
 	RobotControl.Robot.reset();
+	RobotControl.setSpeedRef(1, 0);
 //	while(Timer::GetTime_usec() < 2000000);
 //	RobotControl.Robot.reset();
 	LED_Board.tooglePin();

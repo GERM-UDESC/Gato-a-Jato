@@ -537,14 +537,14 @@
               <FilePath>.\KINEMATIC_CONTROL.h</FilePath>
             </File>
             <File>
-              <FileName>KANAYAMA_CONTROLER.cpp</FileName>
+              <FileName>FOLLOWING_CONTROLER.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>.\KANAYAMA_CONTROLER.cpp</FilePath>
+              <FilePath>.\FOLLOWING_CONTROLER.cpp</FilePath>
             </File>
             <File>
-              <FileName>KANAYAMA_CONTROLER.h</FileName>
+              <FileName>FOLLOWING_CONTROLER.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\KANAYAMA_CONTROLER.h</FilePath>
+              <FilePath>.\FOLLOWING_CONTROLER.h</FilePath>
             </File>
           </Files>
         </Group>

@@ -29,7 +29,11 @@ uint32_t Timer::GetTime_usec()
 void Timer::delay(uint32_t delayTime_usec)
 {
 	uint32_t initTime = Timer::GetTime_usec();
-	while((Timer::GetTime_usec() - initTime) < delayTime_usec);
+	uint32_t actualTime = Timer::GetTime_usec();
+	while((actualTime - initTime) < delayTime_usec)
+	{
+		actualTime = Timer::GetTime_usec();
+	};
 }
 
 //This constructor configure the respective pin as Alternated function output (it's needed to use PWM in that pin)

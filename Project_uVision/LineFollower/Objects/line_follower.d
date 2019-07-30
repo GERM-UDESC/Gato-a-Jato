@@ -12,4 +12,4 @@
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__nullptr \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\limits \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\libcxx\__undef_macros \
-  KANAYAMA_CONTROLER.h
+  FOLLOWING_CONTROLER.h

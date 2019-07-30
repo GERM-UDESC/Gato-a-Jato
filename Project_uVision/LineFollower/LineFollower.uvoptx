@@ -624,8 +624,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\KANAYAMA_CONTROLER.cpp</PathWithFileName>
-      <FilenameWithoutPath>KANAYAMA_CONTROLER.cpp</FilenameWithoutPath>
+      <PathWithFileName>.\FOLLOWING_CONTROLER.cpp</PathWithFileName>
+      <FilenameWithoutPath>FOLLOWING_CONTROLER.cpp</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -636,8 +636,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\KANAYAMA_CONTROLER.h</PathWithFileName>
-      <FilenameWithoutPath>KANAYAMA_CONTROLER.h</FilenameWithoutPath>
+      <PathWithFileName>.\FOLLOWING_CONTROLER.h</PathWithFileName>
+      <FilenameWithoutPath>FOLLOWING_CONTROLER.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

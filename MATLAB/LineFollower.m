@@ -6,6 +6,7 @@ clc
 % sisotool
 
 %% Dados do robô
+Ts = 5e-3;
 r = 16e-3;      % Raio da roda
 l = 69e-3;      % Distância do centro do robô até o centro das rodas
 
