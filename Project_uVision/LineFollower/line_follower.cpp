@@ -100,31 +100,43 @@ int main()
 	//-----------------------------------------------------------------------------------------------
 
 	counter = 0;
-	sending = 1;
+	sending = 0;
 	number_of_points = 2500;
 	RobotControl.Robot.reset();
-	RobotControl.setSpeedRef(1, 0);
-//	while(Timer::GetTime_usec() < 2000000);
-//	RobotControl.Robot.reset();
+	RobotControl.setSpeedRef(0, 0);
 	LED_Board.tooglePin();
 	RobotControl.Robot.calibrateLineSensor(100000);
-	RobotControl.Robot.reset();
 	LED_Board.tooglePin();
 	
-	while(Timer::GetTime_usec() < 10000000);
+	while(Timer::GetTime_usec() < 12000000);
+	RobotControl.Robot.reset();
+	RobotControl.setSpeedRef(0.5, 0);
+	//Serial.Receive();
 	
 	while(1)
 	{
-//		while(flag == 0);
-//		RobotControl.Robot.updateLineAngle();
-//		angleTest = RobotControl.Robot.getLineAngle();
-//		linevalue = RobotControl.Robot.getLinePosition();
-		RobotControl.controlRule();
 		flag = 0;
+//		while(flag == 0);
+		linevalue = RobotControl.Robot.getLinePosition();
+		lineangle = RobotControl.Robot.getLineAngle();
+		
 		if (Board.SysTickGetEvent()) 
 		{
 			LED_Board.tooglePin();
 		}
+//		if (Timer::GetTime_usec() > 17000000)
+//		{
+//			RobotControl.setSpeedRef(0, 0);
+//		}
+		if ((sending == 1) && (counter < number_of_points))
+		{
+			linevalue = RobotControl.Robot.getLinePosition();
+			lineangle = RobotControl.Robot.getLineAngle();
+			Serial.sendFloat(&linevalue);
+			Serial.sendFloat(&lineangle);
+			counter++;
+		}
+		
 		
 	}
 }

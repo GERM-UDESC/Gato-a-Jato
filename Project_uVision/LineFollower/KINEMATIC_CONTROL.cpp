@@ -31,6 +31,7 @@ void Kinematic::reset()
 	angle = 0;
 	lineSensorReading = 0;
 	lastLineSensorReading = 0;
+	distance = 0;
 	lastDistance = 0;
 }
 
@@ -85,21 +86,21 @@ void Kinematic::calibrateLineSensor(uint32_t iterations)
 
 void Kinematic::updateLineAngle()
 {
-	float thisLoopLineRead = lineSensor.read();
-	if ((sqrt(xPos*xPos + yPos*yPos) - lastDistance) != 0)
+	lineSensorReading = lineSensor.read();
+	distance = sqrt(xPos*xPos + yPos*yPos);
+	if ((distance - lastDistance) > 0)
+	{
+		angle = atan2(lineSensorReading - lastLineSensorReading, distance - lastDistance);
+		lastDistance = distance;
+	}
+	/*
+	if ((sqrt(xPos*xPos + yPos*yPos) - lastDistance) >= 0.001)
 	{
 		angle = atan2(thisLoopLineRead - lastLineSensorReading, sqrt(xPos*xPos + yPos*yPos) - lastDistance);
-		lastLineSensorReading = thisLoopLineRead;
 		lastDistance = sqrt(xPos*xPos + yPos*yPos);
 	}
-//	float distance = getV()*integrationTime;
-//	if ((getV()*integrationTime - lastDistance) != 0)
-//	{
-//		angle = atan2(thisLoopLineRead - lastLineSensorReading, distance - lastDistance);
-//		lastLineSensorReading = thisLoopLineRead;
-//		lastDistance = distance;
-//	}
-	
+	*/
+	lastLineSensorReading = lineSensorReading;
 }
 
 float Kinematic::getLineAngle()
@@ -109,7 +110,7 @@ float Kinematic::getLineAngle()
 
 float Kinematic::getLinePosition()
 {
-	return lastLineSensorReading;
+	return lineSensorReading;
 }
 
 

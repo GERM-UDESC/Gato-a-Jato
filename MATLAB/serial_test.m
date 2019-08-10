@@ -6,43 +6,28 @@ bits_to_receive = 2500;
 baud_rate = 1e6;
 Ts = 1e-3;
 
-seguidor = serial('com3','BaudRate',baud_rate,'Parity','none', 'InputBufferSize', 25000); 
+seguidor = serial('com4','BaudRate',baud_rate,'Parity','none', 'InputBufferSize', 25000); 
 fopen(seguidor);
 
 flushinput(seguidor);
 fwrite(seguidor, 0, 'uint8');
 temp = fread(seguidor, 5000,'float');
 dados = [temp(1:2:length(temp))'; temp(2:2:length(temp))'];
-for i = 1:12
-    flushinput(seguidor);
-    fwrite(seguidor, 5*i, 'uint8');
-    temp = fread(seguidor, 5000,'float');
-    dados = [dados(1,:) temp(1:2:length(temp))'; dados(2,:) temp(2:2:length(temp))'];
-end
-flushinput(seguidor);
-fwrite(seguidor, 0, 'uint8');
-temp = fread(seguidor, 5000,'float');
-dados = [dados(1,:) temp(1:2:length(temp))'; dados(2,:) temp(2:2:length(temp))'];
+
+% Essas linhas são para testar vários degraus de entrada, para tirar o
+% modelo, porém são desnecessárias agr
+% for i = 1:12
+%     flushinput(seguidor);
+%     fwrite(seguidor, 5*i, 'uint8');
+%     temp = fread(seguidor, 5000,'float');
+%     dados = [dados(1,:) temp(1:2:length(temp))'; dados(2,:) temp(2:2:length(temp))'];
+% end
+% flushinput(seguidor);
+% fwrite(seguidor, 0, 'uint8');
+% temp = fread(seguidor, 5000,'float');
+% dados = [dados(1,:) temp(1:2:length(temp))'; dados(2,:) temp(2:2:length(temp))'];
 
 fclose(seguidor);
-
-ref = dados(1, :);
-speed1 = dados(2, :);
-save('refw')
-save('speedw')
-%%
-t = 0:Ts:((length(ref)-1)*Ts);
-
-simulink_ref = [t; ref]';
-
-simulink_speed_ref1 = [t; speed1]';
-u1 = 10*x(3, :);
-simulink_u_ref1 = [t; u1]';
-
-% speed2 = x(4, :);
-% simulink_speed_ref2 = [t; speed2]';
-% u2 = 10*x(5, :);
-% simulink_u_ref2 = [t; u2]';
 
 %% 
 

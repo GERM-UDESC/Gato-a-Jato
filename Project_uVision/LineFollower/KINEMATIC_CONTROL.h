@@ -27,6 +27,7 @@ class Kinematic
 		
 		float lineSensorReading{0};
 		float lastLineSensorReading{0};
+		float distance{0};
 		float lastDistance{0};	
 		
 		float xPos{0};

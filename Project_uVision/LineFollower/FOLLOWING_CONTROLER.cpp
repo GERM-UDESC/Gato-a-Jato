@@ -20,14 +20,17 @@ void Controller::Handler()
 		xe = 0;
 		ye = Robot.getLinePosition();
 		tetae = Robot.getLineAngle();
-		if(tetae > pi/6) tetae = pi/6;
-		else if (tetae < -pi/6) tetae = -pi/6;
+		if(tetae > pi/4) tetae = pi/4;
+		else if (tetae < -pi/4) tetae = -pi/4;
+		ptController->controlRule();
 	}
 };
 
 void Controller::controlRule()
 {
-	kanayama_control();
+	//kanayama_control();
+	article_control();
+	//fierro_control();
 };
 
 void Controller::kanayama_control()
@@ -43,30 +46,30 @@ void Controller::fierro_control()
 	float v_read = Robot.getV();
 	float w_read = Robot.getW();
 	
-	vc = v_ref*cos(tetae) + Kx*xe;
-	wc = w_ref + Ky*v_ref*ye+Kteta*v_ref*sin(tetae);
+	vc = v_ref*cos(tetae) + Kxk*xe;
+	wc = w_ref + Kyk*v_ref*ye+Ktetak*v_ref*sin(tetae);
 
 	xep = w_read*ye-v_read + v_ref*cos(tetae);
 	yep = -w_read*xe + v_ref*sin(tetae);
 	tetaep = w_ref - w_read;
 
-	vcp = Kx*xep - tetaep*v_ref*sin(tetae);
-	wcp = Ky*v_ref*yep + Kteta*v_ref*cos(tetae)*tetaep;
+	vcp = Kxk*xep - tetaep*v_ref*sin(tetae);
+	wcp = Kyk*v_ref*yep + Ktetak*v_ref*cos(tetae)*tetaep;
 
-	v = K4*(vc - v_read) + vcp;
-	w = K4*(wc - w_read) + wcp;
+	v = K4k*(vc - v_read) + vcp;
+	w = K4k*(wc - w_read) + wcp;
 	Robot.setSpeed(v, w);
 }
 
 void Controller::article_control()
 {
-	if (tetae != 0)
+	if ((tetae > 0.005) && (tetae < - 0.005))
 	{
-		w = -K1*tetae - K2*ye*v_ref*sin(tetae)/tetae;
+		w = K1a*tetae + K2a*ye*v_ref*sin(tetae)/tetae;
 	}
 	else
 	{
-		w = - K2*ye*v_ref;
+		w = K1a*tetae + K2a*ye*v_ref;
 	}
     
 	Robot.setSpeed(v_ref, w);

@@ -4,14 +4,27 @@
 #include "KINEMATIC_CONTROL.h"
 #include "math.h"
 
-//Constants
-#define Kx 80
+//Parameters
+//Kanayama
+#define Kx 60
 #define Ky 1000
 #define Kteta 20
 #define K4 400
 #define K1 Kx
 #define K2 Ky
 #define K3 Kz
+
+
+#define Kxk 60
+#define Kyk 500
+#define Ktetak 0
+#define K4k 10
+
+#define K1a 60
+#define K2a 1000
+
+
+
 #define v_ref_ini 1
 #define w_ref_ini 0
 
