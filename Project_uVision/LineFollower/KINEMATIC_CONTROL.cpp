@@ -88,19 +88,19 @@ void Kinematic::updateLineAngle()
 {
 	lineSensorReading = lineSensor.read();
 	distance = sqrt(xPos*xPos + yPos*yPos);
-	if ((distance - lastDistance) > 0)
+//	if ((distance - lastDistance) > 0)
+//	{
+//		angle = atan2(lineSensorReading - lastLineSensorReading, distance - lastDistance);
+//		lastDistance = distance;
+//	}
+	
+	if ((distance) > 0)
 	{
-		angle = atan2(lineSensorReading - lastLineSensorReading, distance - lastDistance);
-		lastDistance = distance;
+		angle = atan2(lineSensorReading - lastLineSensorReading, distance);
 	}
-	/*
-	if ((sqrt(xPos*xPos + yPos*yPos) - lastDistance) >= 0.001)
-	{
-		angle = atan2(thisLoopLineRead - lastLineSensorReading, sqrt(xPos*xPos + yPos*yPos) - lastDistance);
-		lastDistance = sqrt(xPos*xPos + yPos*yPos);
-	}
-	*/
 	lastLineSensorReading = lineSensorReading;
+	xPos = 0;
+	yPos = 0;
 }
 
 float Kinematic::getLineAngle()

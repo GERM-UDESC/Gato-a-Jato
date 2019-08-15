@@ -24,7 +24,7 @@ float u_teste, angleTest;
 float u_D, u_E;
 float speed_teste;
 float speed_d, speed_e, speedV, speedW, speed_temp;
-float xtest, ytest, tetatest;
+float xtest, ytest, tetatest, test;
 float testLine[9], linevalue, lineangle;
 uint32_t counter = 0;
 float time, delta_time;
@@ -108,17 +108,20 @@ int main()
 	RobotControl.Robot.calibrateLineSensor(100000);
 	LED_Board.tooglePin();
 	
-	while(Timer::GetTime_usec() < 12000000);
+	//while(Timer::GetTime_usec() < 10000000);
 	RobotControl.Robot.reset();
-	RobotControl.setSpeedRef(0.5, 0);
+	RobotControl.setSpeedRef(0.7, 0);
 	//Serial.Receive();
 	
 	while(1)
 	{
 		flag = 0;
 //		while(flag == 0);
-		linevalue = RobotControl.Robot.getLinePosition();
-		lineangle = RobotControl.Robot.getLineAngle();
+//		linevalue = RobotControl.Robot.getLinePosition();
+//		lineangle = RobotControl.Robot.getLineAngle();
+		xtest = RobotControl.Robot.getX();
+		ytest = RobotControl.Robot.getY();
+		test = sqrt(xtest*xtest + ytest*ytest);
 		
 		if (Board.SysTickGetEvent()) 
 		{

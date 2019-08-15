@@ -15,13 +15,13 @@
 #define K3 Kz
 
 
-#define Kxk 60
-#define Kyk 500
+#define Kxk 10
+#define Kyk 50
 #define Ktetak 0
-#define K4k 10
+#define K4k 1
 
-#define K1a 60
-#define K2a 1000
+#define K1a 15
+#define K2a 1500
 
 
 
@@ -40,6 +40,7 @@ class Controller
 		float xep{0};
 		float yep{0};
 		float tetaep{0};
+		float lastTetae{0};
 		
 		float v_ref{v_ref_ini};
 		float w_ref{w_ref_ini};
@@ -55,6 +56,7 @@ class Controller
 		void kanayama_control();
 		void fierro_control();
 		void article_control();
+		void calculateError();
 	
 	public:
 		Kinematic Robot;

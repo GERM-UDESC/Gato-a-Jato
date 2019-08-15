@@ -17,13 +17,22 @@ void Controller::Handler()
 	if (Robot.calibrationFinished == 1)
 	{
 		Robot.updateLineAngle();
-		xe = 0;
-		ye = Robot.getLinePosition();
-		tetae = Robot.getLineAngle();
-		if(tetae > pi/4) tetae = pi/4;
-		else if (tetae < -pi/4) tetae = -pi/4;
+		ptController->calculateError();
 		ptController->controlRule();
 	}
+};
+
+void Controller::calculateError()
+{
+	float angleTemp = Robot.getLineAngle();
+	
+	if(angleTemp > pi/3) angleTemp = pi/3;
+	else if (angleTemp < -pi/3) angleTemp = -pi/3;
+	tetae = angleTemp;
+	lastTetae = angleTemp;
+	
+	ye = Robot.getLinePosition();
+	xe = tan(tetae)*ye;
 };
 
 void Controller::controlRule()

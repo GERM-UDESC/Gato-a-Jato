@@ -73,9 +73,11 @@ float Line_Sensor::read()
 //		last_error = erro;
 		
 		erro = (media/soma) - 3.5;
-//		erro = maxTeta*erro/3.5;
 		erro = maxDistance*erro/3.5;
-		last_error = erro;
+		if (erro - last_error > maxDistance)
+			erro = last_error;
+		else
+			last_error = erro;
 	}
 	else 
 	{
