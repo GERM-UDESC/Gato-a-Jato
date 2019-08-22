@@ -11,6 +11,7 @@
 #include "USART.h"
 #include "KINEMATIC_CONTROL.h"
 #include "FOLLOWING_CONTROLER.h"
+#include "SERIAL_COMMUNICATION.h"
 
 #include "math.h"
 
@@ -92,6 +93,8 @@ int main()
 	//Serial communication
 	USART Serial(USART3, BD_1000000);
 	
+	Communication Interface(&RobotControl, &Serial);
+	
 	//----------------------------------------------------------------------------------------------
 	
 	//----------------------------------Initial Conditions------------------------------------------
@@ -108,29 +111,28 @@ int main()
 	RobotControl.Robot.calibrateLineSensor(100000);
 	LED_Board.tooglePin();
 	
-	//while(Timer::GetTime_usec() < 10000000);
+	while(Timer::GetTime_usec() < 10000000);
 	RobotControl.Robot.reset();
-	RobotControl.setSpeedRef(0.7, 0);
+	RobotControl.setSpeedRef(1, 0);
 	//Serial.Receive();
 	
 	while(1)
 	{
-		flag = 0;
 //		while(flag == 0);
 //		linevalue = RobotControl.Robot.getLinePosition();
 //		lineangle = RobotControl.Robot.getLineAngle();
-		xtest = RobotControl.Robot.getX();
-		ytest = RobotControl.Robot.getY();
-		test = sqrt(xtest*xtest + ytest*ytest);
+//		xtest = RobotControl.Robot.getX();
+//		ytest = RobotControl.Robot.getY();
+//		test = sqrt(xtest*xtest + y]test*ytest);
 		
 		if (Board.SysTickGetEvent()) 
 		{
 			LED_Board.tooglePin();
 		}
-//		if (Timer::GetTime_usec() > 17000000)
-//		{
-//			RobotControl.setSpeedRef(0, 0);
-//		}
+		if (Timer::GetTime_usec() > 72000000)
+		{
+			RobotControl.setSpeedRef(0, 0);
+		}
 		if ((sending == 1) && (counter < number_of_points))
 		{
 			linevalue = RobotControl.Robot.getLinePosition();
@@ -139,7 +141,7 @@ int main()
 			Serial.sendFloat(&lineangle);
 			counter++;
 		}
-		
+		flag = 0;
 		
 	}
 }

@@ -32,13 +32,14 @@ void Controller::calculateError()
 	lastTetae = angleTemp;
 	
 	ye = Robot.getLinePosition();
-	xe = tan(tetae)*ye;
+	//xe = tan(tetae)*ye;
+	xe = 0;
 };
 
 void Controller::controlRule()
 {
-	//kanayama_control();
-	article_control();
+	kanayama_control();
+	//article_control();
 	//fierro_control();
 };
 

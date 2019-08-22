@@ -2,7 +2,7 @@
 #define LINE_SENSOR_H
 #include "REFLECTANCE_SENSOR.h"
 
-#define calib_sensores 100
+#define calib_sensores 150
 #define maxTeta 0.25594 //rad
 #define maxDistance 0.035
 

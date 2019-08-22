@@ -15,15 +15,13 @@
 #define K3 Kz
 
 
-#define Kxk 10
-#define Kyk 50
-#define Ktetak 0
-#define K4k 1
+#define Kxk 1
+#define Kyk 100
+#define Ktetak 0.1
+#define K4k 0.01
 
-#define K1a 15
-#define K2a 1500
-
-
+#define K1a 20
+#define K2a 1900
 
 #define v_ref_ini 1
 #define w_ref_ini 0

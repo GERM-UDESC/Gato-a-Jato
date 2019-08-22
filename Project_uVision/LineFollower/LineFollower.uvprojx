@@ -548,6 +548,21 @@
             </File>
           </Files>
         </Group>
+        <Group>
+          <GroupName>communication</GroupName>
+          <Files>
+            <File>
+              <FileName>SERIAL_COMMUNICATION.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\SERIAL_COMMUNICATION.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>SERIAL_COMMUNICATION.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\SERIAL_COMMUNICATION.h</FilePath>
+            </File>
+          </Files>
+        </Group>
       </Groups>
     </Target>
   </Targets>
