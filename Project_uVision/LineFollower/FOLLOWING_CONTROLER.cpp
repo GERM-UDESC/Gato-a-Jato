@@ -14,12 +14,26 @@ void Controller::HandlerByTime()
 
 void Controller::Handler()
 {
-	if (Robot.calibrationFinished == 1)
+	if ((Robot.calibrationFinished == 1) && (robotState != robotStop))
+//	if (Robot.calibrationFinished == 1)
 	{
 		Robot.updateLineAngle();
 		ptController->calculateError();
 		ptController->controlRule();
 	}
+};
+
+
+void Controller::start(float vr, float wr)
+{
+	robotState = robotStart;
+	setSpeedRef(vr, wr);
+};
+
+void Controller::stop()
+{
+	robotState = robotStop;
+	setSpeedRef(0, 0);
 };
 
 void Controller::calculateError()
@@ -32,7 +46,6 @@ void Controller::calculateError()
 	lastTetae = angleTemp;
 	
 	ye = Robot.getLinePosition();
-	//xe = tan(tetae)*ye;
 	xe = 0;
 };
 
@@ -73,7 +86,7 @@ void Controller::fierro_control()
 
 void Controller::article_control()
 {
-	if ((tetae > 0.005) && (tetae < - 0.005))
+	if ((tetae > 0.01) && (tetae < - 0.01))
 	{
 		w = K1a*tetae + K2a*ye*v_ref*sin(tetae)/tetae;
 	}
@@ -100,4 +113,14 @@ void Controller::reset()
 	v = 0;
 	w = 0;
 }
+
+float Controller::getVcontrol()
+{
+	return v;
+};
+
+float Controller::getWcontrol()
+{
+	return w;
+};
 

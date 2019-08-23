@@ -94,7 +94,7 @@ void Kinematic::updateLineAngle()
 //		lastDistance = distance;
 //	}
 	
-	if ((distance) > 0)
+	if ((distance)!= 0)
 	{
 		angle = atan2(lineSensorReading - lastLineSensorReading, distance);
 	}

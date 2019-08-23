@@ -26,11 +26,18 @@
 #define v_ref_ini 1
 #define w_ref_ini 0
 
+typedef enum{
+	robotStart,
+	robotStop,
+}RUN_MODE;
+
 class Controller
 {
 	private:
 		static Controller *ptController;
 		void Handler();
+	
+		RUN_MODE robotState{robotStop};
 	
 		float xe{0};
 		float ye{0};
@@ -65,6 +72,12 @@ class Controller
 		void setSpeedRef(float vr, float wr);
 		void controlRule();
 		void reset();
+	
+		float getVcontrol();
+		float getWcontrol();
+	
+		void start(float vr, float wr);
+		void stop();
 		
 };
 

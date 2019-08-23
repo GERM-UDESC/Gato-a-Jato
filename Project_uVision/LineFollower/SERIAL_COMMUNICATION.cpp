@@ -11,22 +11,34 @@ void Communication::doCommand()
 	switch (command)
 	{
 		case start:
-			//do nothing
+			LineFollower->start(1, 0);
 		break;
 		
-		case end:
-			//do nothing
+		case stop:
+			LineFollower->stop();
 		break;
 		
-		case sendV:
-			temporary = LineFollower->Robot.getV();
-			Serial->sendFloat(&temporary);
+		case sendV_W:
+			temporary[0] = LineFollower->Robot.getV();
+			temporary[1] = LineFollower->Robot.getW();
+			Serial->sendFloat(&temporary[0]);
+			Serial->sendFloat(&temporary[1]);
 		break;
 		
-		case sendw:
-			temporary = LineFollower->Robot.getW();
-			Serial->sendFloat(&temporary);
+		case sendV_Wcontrol:
+			temporary[0] = LineFollower->getVcontrol();
+			temporary[1] = LineFollower->getWcontrol();
+			Serial->sendFloat(&temporary[0]);
+			Serial->sendFloat(&temporary[1]);
 		break;
+		
+		case sendMotorsSpeed:
+			temporary[0] = LineFollower->Robot.motorD.Get_Speed();
+			temporary[1] = LineFollower->Robot.motorE.Get_Speed();
+			Serial->sendFloat(&temporary[0]);
+			Serial->sendFloat(&temporary[1]);
+		break;
+		
 	};
 };
 

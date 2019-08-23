@@ -8,12 +8,11 @@
 	#define sendingTime bitsToSend*Time_between_int/1000000
 		
 	typedef enum{
-		start = 0,
-		end = 1,
-		sendV = 2,
-		sendw = 3,
-		sendVcontrol = 4,
-		sendWcontrol = 5,
+		stop = 0,
+		start = 1,
+		sendV_W = 2,
+		sendV_Wcontrol = 3,
+		sendMotorsSpeed = 4,
 	}COMMANDS;
 	
 	class Communication
@@ -23,7 +22,7 @@
 		USART *Serial;
 		
 		COMMANDS command{start};
-		float temporary;
+		float temporary[4];
 		
 		void doCommand();
 		

@@ -56,7 +56,7 @@ float Line_Sensor::read()
 	for (int i = 0; i < 8; i++)
   {
 		sensor_values[i] = Sensors[i].Reflectance_Read();	//Read the sensor
-		    if (sensor_values[i] > calib_sensores)						//verify if it's not just some ruid
+				if (sensor_values[i] > calib_sensores)						//verify if it's not just some ruid
     {
       media += i * (sensor_values[i]);
       soma += sensor_values[i];
@@ -65,19 +65,16 @@ float Line_Sensor::read()
 
 	if (soma != 0)		//only calculate the error if the sum is diferent of 0
 	{
-		//I'll make the count by steps to asure that i'm not lossing data
-//		erro = 1000*media;  	
-//		erro = erro/soma;
-//		erro = erro - 3500;
-//		erro = maxTeta*erro/3500;
-//		last_error = erro;
-		
+
 		erro = (media/soma) - 3.5;
-		erro = maxDistance*erro/3.5;
-		if (erro - last_error > maxDistance)
-			erro = last_error;
-		else
-			last_error = erro;
+		erro = maxDistance*erro;
+		erro = erro/3.5;
+		if (erro > maxDistance)
+			erro = maxDistance;
+		else if (erro < -maxDistance)
+			erro = -maxDistance;
+		
+		last_error = erro;
 	}
 	else 
 	{
