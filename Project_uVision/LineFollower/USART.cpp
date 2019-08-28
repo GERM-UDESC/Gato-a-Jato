@@ -14,12 +14,14 @@ void USART::init(BD_ENUM Baud_Rate)
 		RCC->APB2ENR |= (1<<14);	//Enable the clock
 		TX_Port.SetGPIOPortPin(PA9);
 		RX_Port.SetGPIOPortPin(PA10);
-		if (Baud_Rate == BD_9600)	Usart->BRR = 0x1D4C;			
-		else if (Baud_Rate == BD_9600)	Usart->BRR = 0xEA2;	
+		if (Baud_Rate == BD_9600)	Usart->BRR = 0x1D4C;		
+		else if (Baud_Rate == BD_38400)	Usart->BRR = 0x753;	
+		else if (Baud_Rate == BD_57600)	Usart->BRR = 0xEA2;	
 		else if (Baud_Rate == BD_115200)	Usart->BRR = 0x271;
 		else if (Baud_Rate == BD_230769)	Usart->BRR = 0x138;
 		else if (Baud_Rate == BD_250000)	Usart->BRR = 0x120;
-		else if (Baud_Rate == BD_1000000)	Usart->BRR = 0x48;			
+		else if (Baud_Rate == BD_1000000)	Usart->BRR = 0x48;
+		else if (Baud_Rate == BD_1382400)	Usart->BRR = 0x34;		
 		else if (Baud_Rate == BD_2250000)	Usart->BRR = 0x20;		
 	}
 	else if (Usart == USART2) 
@@ -27,12 +29,14 @@ void USART::init(BD_ENUM Baud_Rate)
 		RCC->APB1ENR |= (1<<17);	//Enable the clock
 		TX_Port.SetGPIOPortPin(PA2);
 		RX_Port.SetGPIOPortPin(PA3);
-		if (Baud_Rate == BD_9600)	Usart->BRR = 0xEA6;			
+		if (Baud_Rate == BD_9600)	Usart->BRR = 0xEA6;
+		else if (Baud_Rate == BD_38400)	Usart->BRR = 0x3AA;		
 		else if (Baud_Rate == BD_57600)	Usart->BRR = 0x271;			
 		else if (Baud_Rate == BD_115200)	Usart->BRR = 0x138;
 		else if (Baud_Rate == BD_230769)	Usart->BRR = 0x9C;
 		else if (Baud_Rate == BD_250000)	Usart->BRR = 0x90;
 		else if (Baud_Rate == BD_1000000)	Usart->BRR = 0x24;
+		else if (Baud_Rate == BD_1382400)	Usart->BRR = 0x1A;
 		else if (Baud_Rate == BD_2250000)	Usart->BRR = 0x10;	
 	}
 	else if (Usart == USART3) 
@@ -40,12 +44,14 @@ void USART::init(BD_ENUM Baud_Rate)
 		RCC->APB1ENR |= (1<<18);	//Enable the clock
 		TX_Port.SetGPIOPortPin(PB10);
 		RX_Port.SetGPIOPortPin(PB11);
-		if (Baud_Rate == BD_9600)	Usart->BRR = 0xEA6;			
+		if (Baud_Rate == BD_9600)	Usart->BRR = 0xEA6;		
+		else if (Baud_Rate == BD_38400)	Usart->BRR = 0x3AA;
 		else if (Baud_Rate == BD_57600)	Usart->BRR = 0x271;			
 		else if (Baud_Rate == BD_115200)	Usart->BRR = 0x138;
 		else if (Baud_Rate == BD_230769)	Usart->BRR = 0x9C;
 		else if (Baud_Rate == BD_250000)	Usart->BRR = 0x90;
 		else if (Baud_Rate == BD_1000000)	Usart->BRR = 0x24;
+		else if (Baud_Rate == BD_1382400)	Usart->BRR = 0x1A;
 		else if (Baud_Rate == BD_2250000)	Usart->BRR = 0x10;	
 	}	
 	TX_Port.SetGPIOMode(AF_OUTPUT_PUSH_PULL_2MHZ);

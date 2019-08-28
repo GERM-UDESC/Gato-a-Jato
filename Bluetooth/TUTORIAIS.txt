@@ -1,0 +1,5 @@
+https://www.instructables.com/id/Modify-The-HC-05-Bluetooth-Module-Defaults-Using-A/
+
+PDFs
+https://s3-sa-east-1.amazonaws.com/robocore-lojavirtual/709/HC-05_ATCommandSet.pdf
+https://cdn.instructables.com/ORIG/FOR/4FP2/HKZAVRT6/FOR4FP2HKZAVRT6.pdf

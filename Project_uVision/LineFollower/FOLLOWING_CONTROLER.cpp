@@ -14,8 +14,7 @@ void Controller::HandlerByTime()
 
 void Controller::Handler()
 {
-	if ((Robot.calibrationFinished == 1) && (robotState != robotStop))
-//	if (Robot.calibrationFinished == 1)
+	if (Robot.calibrationFinished == 1)
 	{
 		Robot.updateLineAngle();
 		ptController->calculateError();
@@ -26,13 +25,11 @@ void Controller::Handler()
 
 void Controller::start(float vr, float wr)
 {
-	robotState = robotStart;
 	setSpeedRef(vr, wr);
 };
 
 void Controller::stop()
 {
-	robotState = robotStop;
 	setSpeedRef(0, 0);
 };
 
@@ -123,4 +120,3 @@ float Controller::getWcontrol()
 {
 	return w;
 };
-

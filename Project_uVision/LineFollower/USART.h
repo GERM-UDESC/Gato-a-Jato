@@ -3,12 +3,17 @@
 
 #include "Micro.h"
 #include "GPIO.h"
+
+//USART 1 - fclk = 72M
+//USART 2 e 3 - fclk = 36M
 typedef enum{
 	BD_9600,
+	BD_38400,
 	BD_57600,
 	BD_115200,	//BD_115384 -> this is the value if using USART 2 or 3
 	BD_230769,
 	BD_250000,
+	BD_1382400,
 	BD_1000000,
 	BD_2250000,
 } BD_ENUM;

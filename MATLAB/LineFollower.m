@@ -6,7 +6,7 @@ clc
 % sisotool
 
 %% Dados do robô
-Ts = 5e-3;
+Ts = 1e-3;
 r = 16e-3;      % Raio da roda
 l = 69e-3;      % Distância do centro do robô até o centro das rodas
 
@@ -26,22 +26,6 @@ KIm = Pm*KPm;
 Controlador = KPm*(s+KIm/KPm)/s;
 
 Tm = feedback(Modelo*Controlador, 1);
-
-%% Controlador de angulo
-% Modelo da resposta a entrada de velocidade angular
-Kw = 24.86;
-Pw = 24.89;
-
-Modelo_w = Kw/(s + Pw);
-
-% Parâmetros do controlador
-ts_w = 0.05; %tempo de assentamento
-KDw = 4/(Kw*ts_w);
-KPw = Pw*KDw;
-
-Controlador_w = KDw*(s+KPw/KDw);
-
-Tw = feedback(Modelo_w*Controlador_w, 1);
 
 %% Controlador Kanayama
 % Referência de velocidades
