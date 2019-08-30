@@ -99,17 +99,6 @@ F 3 "" H 2500 3300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Placa-rescue:barra3pins U2
-U 1 1 5B006A71
-P 1650 3350
-F 0 "U2" H 1850 3350 60  0000 C CNN
-F 1 "barra3pins" H 1650 3500 60  0000 C CNN
-F 2 "FootLibAlan:barra3pins" H 1650 3350 60  0001 C CNN
-F 3 "" H 1650 3350 60  0001 C CNN
-	1    1650 3350
-	1    0    0    -1  
-$EndComp
-$Comp
 L Placa-rescue:barra2pins U1
 U 1 1 5B006ADC
 P 1150 3350
@@ -126,9 +115,9 @@ Text Label 2050 4950 2    60   ~ 0
 V12
 Text Label 1100 3600 0    60   ~ 0
 VBat
-Text Label 1650 3600 3    60   ~ 0
+Text Label 1800 3550 3    60   ~ 0
 VCC
-Text Label 1550 3600 3    60   ~ 0
+Text Label 1300 2950 2    60   ~ 0
 VBat
 Text Label 1000 3600 2    60   ~ 0
 GND
@@ -362,93 +351,29 @@ RX_module
 Text Label 5150 4650 0    60   ~ 0
 TX_module
 $Comp
-L pspice:C C3
-U 1 1 5D229281
-P 7400 3400
-F 0 "C3" H 7222 3354 50  0000 R CNN
-F 1 "C" H 7222 3445 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 7400 3400 50  0001 C CNN
-F 3 "~" H 7400 3400 50  0001 C CNN
-	1    7400 3400
-	-1   0    0    1   
+L Placa-rescue:barra2pins U2
+U 1 1 5D66E07C
+P 1850 3300
+F 0 "U2" H 1900 3300 60  0000 C CNN
+F 1 "barra2pins" H 1750 3450 60  0000 C CNN
+F 2 "FootLibAlan:barra2pins" H 1850 3300 60  0001 C CNN
+F 3 "" H 1850 3300 60  0001 C CNN
+	1    1850 3300
+	1    0    0    -1  
 $EndComp
 $Comp
-L pspice:C C2
-U 1 1 5D22A0EF
-P 6850 3400
-F 0 "C2" H 6672 3354 50  0000 R CNN
-F 1 "C" H 6672 3445 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 6850 3400 50  0001 C CNN
-F 3 "~" H 6850 3400 50  0001 C CNN
-	1    6850 3400
-	-1   0    0    1   
+L Device:Fuse_Small F1
+U 1 1 5D67C310
+P 1400 2950
+F 0 "F1" H 1400 3135 50  0000 C CNN
+F 1 "Fuse_Small" H 1400 3044 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P5.08mm_Vertical" H 1400 2950 50  0001 C CNN
+F 3 "~" H 1400 2950 50  0001 C CNN
+	1    1400 2950
+	1    0    0    -1  
 $EndComp
-$Comp
-L pspice:C C1
-U 1 1 5D22D2F6
-P 6450 3400
-F 0 "C1" H 6272 3354 50  0000 R CNN
-F 1 "C" H 6272 3445 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 6450 3400 50  0001 C CNN
-F 3 "~" H 6450 3400 50  0001 C CNN
-	1    6450 3400
-	-1   0    0    1   
-$EndComp
-Text Label 6450 3150 0    60   ~ 0
-V3.3
-Text Label 6850 3150 2    60   ~ 0
-V5
-Text Label 7400 3150 2    60   ~ 0
-V3.3
-Text Label 6450 3650 2    60   ~ 0
-GND
-Text Label 6850 3650 2    60   ~ 0
-GND
-Text Label 7400 3650 2    60   ~ 0
-GND
-$Comp
-L pspice:C C4
-U 1 1 5D24620B
-P 7950 3400
-F 0 "C4" H 7772 3354 50  0000 R CNN
-F 1 "C" H 7772 3445 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 7950 3400 50  0001 C CNN
-F 3 "~" H 7950 3400 50  0001 C CNN
-	1    7950 3400
-	-1   0    0    1   
-$EndComp
-Text Label 7950 3150 2    60   ~ 0
-V3.3
-Text Label 7950 3650 2    60   ~ 0
-GND
-$Comp
-L pspice:C C5
-U 1 1 5D247080
-P 8500 3400
-F 0 "C5" H 8322 3354 50  0000 R CNN
-F 1 "C" H 8322 3445 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 8500 3400 50  0001 C CNN
-F 3 "~" H 8500 3400 50  0001 C CNN
-	1    8500 3400
-	-1   0    0    1   
-$EndComp
-Text Label 8500 3150 2    60   ~ 0
-V3.3
-Text Label 8500 3650 2    60   ~ 0
-GND
-$Comp
-L pspice:C C6
-U 1 1 5D24A4F0
-P 9100 3400
-F 0 "C6" H 8922 3354 50  0000 R CNN
-F 1 "C" H 8922 3445 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm" H 9100 3400 50  0001 C CNN
-F 3 "~" H 9100 3400 50  0001 C CNN
-	1    9100 3400
-	-1   0    0    1   
-$EndComp
-Text Label 9100 3150 2    60   ~ 0
-V3.3
-Text Label 9100 3650 2    60   ~ 0
-GND
+Text Label 1500 2950 0    50   ~ 0
+Vfuse
+Text Label 1700 3550 3    50   ~ 0
+Vfuse
 $EndSCHEMATC

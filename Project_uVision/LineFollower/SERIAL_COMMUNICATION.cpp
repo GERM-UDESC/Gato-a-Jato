@@ -109,6 +109,10 @@ void Communication::doCommand()
 void Communication::waitForCommand()
 {
 	command = Serial->Receive();
+	if (command != robotStop)
+	{
+		LineFollower->start(v_ref_ini, 0);
+	}
 };
 
 void Communication::verifyCommand()
@@ -116,6 +120,10 @@ void Communication::verifyCommand()
 	if (Serial->Available())
 	{
 		command = Serial->Receive();
+		if (command != robotStop)
+		{
+			LineFollower->start(v_ref_ini, 0);
+		}
 	}
 };
 
