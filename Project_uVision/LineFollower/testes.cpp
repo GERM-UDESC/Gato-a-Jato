@@ -114,7 +114,7 @@
 //	while(1)
 //	{
 ////		while(flag == 0);
-////		Robot.updateLineAngle();
+////		Robot.updateLineReading();
 ////		angleTest = Robot.getLineAngle();
 ////		linevalue = Robot.lineSensor.read();
 ////		Robot.setRobotSpeed(Ref, Refw);
@@ -148,7 +148,7 @@
 //		if (Board.SysTickGetEvent()) 
 //		{
 //			LED_Board.tooglePin();
-////			Robot.updateLineAngle();
+////			Robot.updateLineReading();
 ////			angleTest = Robot.getLineAngle();
 ////			linevalue = Robot.lineSensor.read();
 //		}

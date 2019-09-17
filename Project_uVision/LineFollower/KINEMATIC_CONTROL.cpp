@@ -28,7 +28,10 @@ void Kinematic::reset()
 	motorE.reset();
 	xPos = 0;
 	yPos = 0;
-	angle = 0;
+	for (int i = 0; i < (angleFilterOrder); i++)
+	{
+		angle[i] = 0;
+	};
 	lineSensorReading = 0;
 	lastLineSensorReading = 0;
 	distance = 0;
@@ -84,20 +87,22 @@ void Kinematic::calibrateLineSensor(uint32_t iterations)
 	calibrationFinished = 1;
 }
 
-void Kinematic::updateLineAngle()
+void Kinematic::updateLineReading()
 {
 	lineSensorReading = lineSensor.read();
 	distance = sqrt(xPos*xPos + yPos*yPos);
-//	if ((distance - lastDistance) > 0)
-//	{
-//		angle = atan2(lineSensorReading - lastLineSensorReading, distance - lastDistance);
-//		lastDistance = distance;
-//	}
 	
 	if ((distance)!= 0)
 	{
-		angle = atan2(lineSensorReading - lastLineSensorReading, distance);
+		angle[angleFilterOrder-1] = atan2(lineSensorReading - lastLineSensorReading, distance);
 	}
+	filteredAngle = 0;
+	for (int i = 0; i < (angleFilterOrder); i++)
+	{
+		filteredAngle += angle[i];
+	};
+	filteredAngle = filteredAngle/angleFilterOrder;
+	
 	lastLineSensorReading = lineSensorReading;
 	xPos = 0;
 	yPos = 0;
@@ -105,7 +110,7 @@ void Kinematic::updateLineAngle()
 
 float Kinematic::getLineAngle()
 {
-	return angle;
+	return filteredAngle;
 }
 
 float Kinematic::getLinePosition()

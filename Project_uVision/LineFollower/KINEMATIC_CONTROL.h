@@ -6,6 +6,7 @@
 #include "math.h"
 
 #define L 0.069
+#define angleFilterOrder 3
 
 #define integrationTime Time_between_int/1000000
 
@@ -32,7 +33,7 @@ class Kinematic
 		
 		float xPos{0};
 		float yPos{0};
-		float angle{0};
+		float angle[angleFilterOrder]{0}, filteredAngle{0};
 		
 		void handler();
 		static Kinematic *ptRobot;
@@ -56,7 +57,7 @@ class Kinematic
 		float getW();
 		
 		void calibrateLineSensor(uint32_t iterations);
-		void updateLineAngle();
+		void updateLineReading();
 	
 		static void handlerByTime();
 

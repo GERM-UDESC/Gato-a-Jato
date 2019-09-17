@@ -32,12 +32,17 @@ clc
 bits_to_receive = 2500;
 baud_rate = 1382400;
 Ts = 1e-3;
+TempoTotal = 10;
+bits_to_receive = (TempoTotal)/(Ts);
 
-seguidor = serial('com5','BaudRate',baud_rate,'Parity','none', 'InputBufferSize', 25000); 
+seguidor = serial('com5','BaudRate',baud_rate,'Parity','none', 'InputBufferSize', 100000); 
 fopen(seguidor);
+
 % pause
 %%
-command = 0;
+close all
+clc
+command = 5;
 flushinput(seguidor);
 fwrite(seguidor, command, 'uint8');
 
@@ -45,10 +50,7 @@ plotRobotData(command,seguidor,bits_to_receive,Ts);
 
 
 %%
-% fclose(seguidor);
-
-
-
-
-
-
+fclose(seguidor);
+close all
+clear all
+clc

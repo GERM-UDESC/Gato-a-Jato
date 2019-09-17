@@ -4,7 +4,8 @@
 	#include "FOLLOWING_CONTROLER.h"
 	#include "USART.h"
 	
-	#define bitsToSend 2500
+	#define samplingTime 10
+	#define bitsToSend (samplingTime*1000000)/(Time_between_int)
 	#define sendingTime bitsToSend*Time_between_int/1000000
 		
 //I tried to do with enum, to make the code better, but there was some problem that I couldn't find, so I've made with define
@@ -25,7 +26,7 @@
 #define sendLineReading 5
 #define	sendMotorsSpeed 6
 #define	sendMotorsSpeedAndControl 7
-
+#define	sendMotorsSpeedControlAndErrors 8
 
 	class Communication
 	{
@@ -37,7 +38,7 @@
 		USART *Serial;
 		
 		uint16_t counter{0};
-		float temporary[4];
+		float temporary[6];
 		
 		void doCommand();
 		

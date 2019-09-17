@@ -163,42 +163,42 @@
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>erro</ItemText>
+          <ItemText>linevalue</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>linevalue</ItemText>
+          <ItemText>xtest</ItemText>
         </Ww>
         <Ww>
           <count>2</count>
           <WinNumber>1</WinNumber>
-          <ItemText>xtest</ItemText>
+          <ItemText>ytest</ItemText>
         </Ww>
         <Ww>
           <count>3</count>
           <WinNumber>1</WinNumber>
-          <ItemText>ytest</ItemText>
+          <ItemText>vtest</ItemText>
         </Ww>
         <Ww>
           <count>4</count>
           <WinNumber>1</WinNumber>
-          <ItemText>delta_time</ItemText>
+          <ItemText>wtest</ItemText>
         </Ww>
         <Ww>
           <count>5</count>
           <WinNumber>1</WinNumber>
-          <ItemText>test</ItemText>
+          <ItemText>dtencd</ItemText>
         </Ww>
         <Ww>
           <count>6</count>
           <WinNumber>1</WinNumber>
-          <ItemText>command</ItemText>
+          <ItemText>dtence</ItemText>
         </Ww>
         <Ww>
           <count>7</count>
           <WinNumber>1</WinNumber>
-          <ItemText>test_serial,0x0A</ItemText>
+          <ItemText>delta_time</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>

@@ -1,39 +1,25 @@
 #include "LINE_SENSOR.h"
 
-//Line_Sensor::Line_Sensor(ADC_CHANNELS ADCChannel_0, ADC_CHANNELS ADCChannel_1, ADC_CHANNELS ADCChannel_2, ADC_CHANNELS ADCChannel_3, 
-//												 ADC_CHANNELS ADCChannel_4, ADC_CHANNELS ADCChannel_5, ADC_CHANNELS ADCChannel_6, ADC_CHANNELS ADCChannel_7)
-//{
-//	Sensors[0].adcPin.SetADCChannel(ADCChannel_0);
-//	Sensors[1].SetADCChannel(ADCChannel_1);
-//	Sensors[2].SetADCChannel(ADCChannel_2);
-//	Sensors[3].SetADCChannel(ADCChannel_3);
-//	Sensors[4].SetADCChannel(ADCChannel_4);
-//	Sensors[5].SetADCChannel(ADCChannel_5);
-//	Sensors[6].SetADCChannel(ADCChannel_6);
-//	Sensors[7].SetADCChannel(ADCChannel_7);
-//	
-//	int i = 0;
-//	for(i = 0; i < 8; i++)
-//	{
-//		Sensors[i].ConfigADCPin();
-//	}
-
-//};
-
 Line_Sensor::Line_Sensor(Reflectance_Sensor Sensor1, Reflectance_Sensor Sensor2, 
 												 Reflectance_Sensor Sensor3, Reflectance_Sensor Sensor4,
 												 Reflectance_Sensor Sensor5, Reflectance_Sensor Sensor6, 
 												 Reflectance_Sensor Sensor7, Reflectance_Sensor Sensor8)
 : Sensors{&Sensor1, &Sensor2, &Sensor3, &Sensor4, &Sensor5, &Sensor6, &Sensor7, &Sensor8}
 {
-	
+	for (int i = 0; i < (sensorFilterOrder); i++)
+	{
+		erro[i] = 0;
+	};
 }
 
 Line_Sensor::Line_Sensor(Line_Sensor *lineSensor)
 : Sensors{&lineSensor->Sensors[0], &lineSensor->Sensors[1], &lineSensor->Sensors[2], &lineSensor->Sensors[3],
 					&lineSensor->Sensors[4], &lineSensor->Sensors[5], &lineSensor->Sensors[6], &lineSensor->Sensors[7]}
 {
-	
+	for (int i = 0; i < (sensorFilterOrder); i++)
+	{
+		erro[i] = 0;
+	};
 }
 
 
@@ -51,7 +37,11 @@ void Line_Sensor::calibrate(uint32_t iterations)
 float Line_Sensor::read()
 {
 	media = 0;
-	soma = 0;						
+	soma = 0;
+	for (int i = 0; i < (sensorFilterOrder-1); i++)
+	{
+		erro[i] = erro[i+1];
+	};	
 	
 	for (int i = 0; i < 8; i++)
   {
@@ -66,21 +56,22 @@ float Line_Sensor::read()
 	if (soma != 0)		//only calculate the error if the sum is diferent of 0
 	{
 
-		erro = (media/soma) - 3.5;
-		erro = maxDistance*erro;
-		erro = erro/3.5;
-		if (erro > maxDistance)
-			erro = maxDistance;
-		else if (erro < -maxDistance)
-			erro = -maxDistance;
-		
-		last_error = erro;
-	}
-	else 
-	{
-		return last_error;			//in case the sum is zero, it will return the last valid result
+		erro[sensorFilterOrder-1] = (media/soma) - 3.5;
+		erro[sensorFilterOrder-1] = maxDistance*erro[sensorFilterOrder-1];
+		erro[sensorFilterOrder-1] = erro[sensorFilterOrder-1]/3.5;
+		if (erro[sensorFilterOrder-1] > maxDistance)
+			erro[sensorFilterOrder-1] = maxDistance;
+		else if (erro[sensorFilterOrder-1] < -maxDistance)
+			erro[sensorFilterOrder-1] = -maxDistance;
 	}
 
-	return erro; 
+	filteredError = 0;
+	for (int i = 0; i < (sensorFilterOrder); i++)
+	{
+		filteredError += erro[i];
+	};
+	filteredError = filteredError/sensorFilterOrder;
+
+	return filteredError; 
 }
 

@@ -3,14 +3,14 @@
 #include "REFLECTANCE_SENSOR.h"
 
 #define calib_sensores 220
-#define maxTeta 0.25594 //rad
 #define maxDistance 0.035
+#define sensorFilterOrder 2 //min = 2
 
 class Line_Sensor
 {
 private:
 	float last_error;
-	float erro;
+	float erro[sensorFilterOrder]{0}, filteredError{0};
 	float media;
 	float sensor_values[8];			//it's "int" because it might be under zero
 	float soma;		

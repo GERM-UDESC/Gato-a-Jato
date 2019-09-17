@@ -54,6 +54,7 @@ private:
 
 	static uint32_t time_in_usec;
 	static TIM_TypeDef *TIM_Timer_Counter;
+	static bool interruptGenerated;
 
 
 	TIM_CHANNELS TIMChannel;
@@ -76,6 +77,7 @@ public:
 	static void delay(uint32_t delayTime_usec);
 	static void Timer_Initiallize();				//Initiallize all timer's static variables
 	static void Timer_Handler();		//Take care of all that is need to maintain the time base in usec
+	static bool verifyTimeInterrupt();
 
 	//Constructor
 	Timer(TIM_TypeDef *TIM, TIM_CHANNELS TIMChannel, TIM_MODE TIMMode);	

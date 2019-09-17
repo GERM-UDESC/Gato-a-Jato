@@ -15,14 +15,17 @@
 
 #include "math.h"
 
-float xtest, ytest;
+float xtest, ytest, vtest, wtest;
 float linevalue, lineangle;
-float time, delta_time;
+float time, delta_time, dtencd, dtence;
 uint8_t test_serial;
 
 
 int main()
 {
+	NVIC->IP[TIM1_UP_IRQn] = 1;
+	NVIC->IP[TIM4_IRQn] = 2;
+	NVIC->IP[TIM3_IRQn] = 3;
 	//-----------------------------------Initiallize static parameters----------------------
 	Timer::Timer_Initiallize();
 	Encoder::Encoder_Initiallize();
@@ -95,28 +98,38 @@ int main()
 	RobotControl.Robot.reset();
 	RobotControl.stop();
 	LED_Board.tooglePin();
+//	RobotControl.Robot.calibrateLineSensor(100000);
 	RobotControl.Robot.calibrateLineSensor(100000);
 	LED_Board.tooglePin();
-	
+	//while (Timer::GetTime_usec() < 10000000);
+	//RobotControl.start(v_ref_ini, 0);
 	Interface.waitForCommand();
 	
 	while(1)
 	{
 //		linevalue = RobotControl.Robot.getLinePosition();
 //		lineangle = RobotControl.Robot.getLineAngle();
-//		xtest = RobotControl.getVcontrol();
-//		ytest = RobotControl.getWcontrol();
-		test_serial = Interface.command;
+//		vtest = RobotControl.Robot.getV();
+//		wtest = RobotControl.Robot.getW();
+//		xtest = RobotControl.Robot.motorD.encoder.getSpeed();
+//		ytest = RobotControl.Robot.motorE.encoder.getSpeed();
+//    test_serial = Interface.command;
+		if (Timer::verifyTimeInterrupt())
+		{
+			time = Timer::GetTime_usec();
+			Encoder::Encoder_Handler_by_Time();
+			Motor::Motor_Handler_by_time();
+			Kinematic::handlerByTime();
+			Controller::HandlerByTime();
+			Communication::HandlerByTime();
+			delta_time = Timer::GetTime_usec() - time;
+		}
 		
 
-		if (Board.SysTickGetEvent())
+		if ((Board.SysTickGetEvent()))// && (Interface.command != robotStop))
 		{
 			LED_Board.tooglePin();
 		}
-//		if (Timer::GetTime_usec() > 20000000)
-//		{
-//			RobotControl.stop();
-//		}
 	}
 }
 
@@ -142,13 +155,6 @@ void TIM2_IRQHandler()
 {
 	TIM2->SR &= ~(1<<0);
 	Timer::Timer_Handler();
-	time = Timer::GetTime_usec();
-	Encoder::Encoder_Handler_by_Time();
-	Motor::Motor_Handler_by_time();
-	Kinematic::handlerByTime();
-	Controller::HandlerByTime();
-	Communication::HandlerByTime();
-	delta_time = Timer::GetTime_usec() - time;
 };
 
 void TIM3_IRQHandler()

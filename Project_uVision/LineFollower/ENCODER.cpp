@@ -23,10 +23,21 @@ void Encoder::Encoder_Handler_by_Time()
 	{
 		if (Encoder::usedEncoders[i] == 1)
 		{
-			if ((( Timer::GetTime_usec() - Encoder::encPtr[i]->LastTicks_Time) > Max_delay_Ticks_Time) && (Encoder::encPtr[i]->Speed != 0))
+			if ((( Timer::GetTime_usec() - Encoder::encPtr[i]->LastTicks_Time) > Max_delay_Ticks_Time) && (Encoder::encPtr[i]->filteredSpeed != 0))
 			{
 				Encoder::encPtr[i]->LastTicks_Time = Timer::GetTime_usec();
-				Encoder::encPtr[i]->Speed = 0;
+				for (int j = 0; j < (encoderFilterOrder-1); j++)
+				{
+					encPtr[i]->Speed[j] = encPtr[i]->Speed[j+1];
+				};
+				Encoder::encPtr[i]->Speed[encoderFilterOrder-1] = 0;
+				
+				Encoder::encPtr[i]->filteredSpeed = 0;
+				for (int j = 0; j < encoderFilterOrder; j++)
+				{
+					Encoder::encPtr[i]->filteredSpeed += Encoder::encPtr[i]->Speed[j];
+				};
+				Encoder::encPtr[i]->filteredSpeed = Encoder::encPtr[i]->filteredSpeed/encoderFilterOrder;
 			}	
 		}
 	}
@@ -60,8 +71,11 @@ void Encoder::ConfigEncoder()
 	Ticks_Time = 1;
 	LastTicks_Time = 0;
 	deltaTime = 1;
-	Speed = 0;
-	Last_Speed = 0;
+	for (int i = 0; i<encoderFilterOrder; i++)
+	{
+		Speed[i] = 0;
+	};
+	filteredSpeed = 0;
 	
 	//Enable the clock of the respective timer
 	if (GetTim() == TIM1)			RCC->APB2ENR |= (1<<11);
@@ -127,13 +141,16 @@ void Encoder::reset()
 	lastDeltaTime = deltaTime;
 	LastTicks_Time = Timer::GetTime_usec();
 	Ticks_Time = LastTicks_Time;
-	Speed = 0;
-	Last_Speed = 0;
+	for (int i = 0; i<encoderFilterOrder; i++)
+	{
+		Speed[i] = 0;
+	};
+	filteredSpeed = 0;
 }
 
 float Encoder::getTicks()
 {
-	return Ticks + GetTim()->CNT;	
+	return (Ticks + GetTim()->CNT);	
 }
 
 float Encoder::getDeltaTicks()
@@ -160,17 +177,21 @@ uint32_t Encoder::getDeltaTime()
 
 float Encoder::getSpeed()
 {
-	return Speed;
+	return filteredSpeed;
+}
+
+float Encoder::getNotFilteredSpeed()
+{
+	return Speed[encoderFilterOrder-1];
 }
 
 float Encoder::getLastSpeed()
 {
-	return Last_Speed;
+	return Speed[encoderFilterOrder-2];
 }
 
 float Encoder::getTeta()
 {
-//	return ticksToRad*Ticks;	
 	return ticksToRad*getTicks();
 }
 
@@ -184,20 +205,32 @@ void Encoder::Handler()
 {
 	Ticks_Time = Timer::GetTime_usec();
 	deltaTime = Ticks_Time - LastTicks_Time;
-	if (((lastDeltaTime - deltaTime) >= (Time_between_int*0.98)) && ((lastDeltaTime - deltaTime) <= (Time_between_int*1.02)))
+	for (int i = 0; i < (encoderFilterOrder-1); i++)
 	{
-		Ticks_Time += Time_between_int;
-		deltaTime = Ticks_Time - LastTicks_Time;
-	}
-	Speed = (500000*Ticks_till_int)/(deltaTime);			//this 500000* is to convert ticks/us in rpm
+		Speed[i] = Speed[i+1];
+	};
+	
+//	if (((lastDeltaTime - deltaTime) >= (Time_between_int*0.98)) && ((lastDeltaTime - deltaTime) <= (Time_between_int*1.02)))
+//	{
+//		Ticks_Time += Time_between_int;
+//		deltaTime = Ticks_Time - LastTicks_Time;
+//	}
+	Speed[encoderFilterOrder-1] = (500000*Ticks_till_int)/(deltaTime);			//this 500000* is to convert ticks/us in rpm
+	
 	if (getDirection() == backward) 
 	{
 		Ticks -= Ticks_till_int;
-		Speed = -Speed;
+		Speed[encoderFilterOrder-1] = -Speed[encoderFilterOrder-1];
 	}
 	else Ticks += Ticks_till_int;
-
-	Last_Speed = Speed;
+	
+	filteredSpeed = 0;
+	for (int i = 0; i < (encoderFilterOrder); i++)
+	{
+		filteredSpeed += Speed[i];
+	};
+	filteredSpeed = filteredSpeed/encoderFilterOrder;
+	
 	LastTicks_Time = Ticks_Time;
 	lastDeltaTime = deltaTime;
 }

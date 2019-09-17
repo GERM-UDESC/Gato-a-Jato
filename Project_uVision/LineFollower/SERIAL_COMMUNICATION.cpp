@@ -93,12 +93,28 @@ void Communication::doCommand()
 			temporary[0] = LineFollower->Robot.motorD.Get_Speed();
 			temporary[1] = LineFollower->Robot.motorE.Get_Speed();
 			temporary[2] = LineFollower->Robot.motorD.getU();
-			temporary[3] = LineFollower->Robot.motorE.getE();
+			temporary[3] = LineFollower->Robot.motorE.getU();
 			Serial->sendFloat(&temporary[0]);
 			Serial->sendFloat(&temporary[1]);
 			Serial->sendFloat(&temporary[2]);
 			Serial->sendFloat(&temporary[3]);
 		break;
+		
+		case sendMotorsSpeedControlAndErrors:
+			temporary[0] = LineFollower->Robot.motorD.Get_Speed();
+			temporary[1] = LineFollower->Robot.motorE.Get_Speed();
+			temporary[2] = LineFollower->Robot.motorD.getU();
+			temporary[3] = LineFollower->Robot.motorE.getU();
+			temporary[4] = LineFollower->Robot.motorD.getE();
+			temporary[5] = LineFollower->Robot.motorE.getE();
+			Serial->sendFloat(&temporary[0]);
+			Serial->sendFloat(&temporary[1]);
+			Serial->sendFloat(&temporary[2]);
+			Serial->sendFloat(&temporary[3]);
+			Serial->sendFloat(&temporary[4]);
+			Serial->sendFloat(&temporary[5]);
+		break;
+		
 		
 		default:
 			LineFollower->stop();

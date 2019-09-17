@@ -29,7 +29,7 @@ Tm = feedback(Modelo*Controlador, 1);
 
 %% Controlador Kanayama
 % Referência de velocidades
-v_r = 1;
+v_r = 1.5;
 w_r = 0;
 Qr = [v_r; w_r];
 
@@ -47,17 +47,3 @@ Tp = pi/(wn*sqrt(1-qsi^2));
 Ky = (wn/v_r)^2;
 Kteta = 2*qsi*sqrt(Ky);
 % Kteta = 2*sqrt(Ky);
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -16,7 +16,7 @@ void Controller::Handler()
 {
 	if (Robot.calibrationFinished == 1)
 	{
-		Robot.updateLineAngle();
+		Robot.updateLineReading();
 		ptController->calculateError();
 		ptController->controlRule();
 	}
@@ -83,7 +83,15 @@ void Controller::fierro_control()
 
 void Controller::article_control()
 {
-	if ((tetae > 0.01) && (tetae < - 0.01))
+//	if ((tetae > 0.001) && (tetae < - 0.001))
+//	{
+//		w = K1a*tetae + K2a*ye*v_ref*sin(tetae)/tetae;
+//	}
+//	else
+//	{
+//		w = K1a*tetae + K2a*ye*v_ref;
+//	}
+	if (tetae != 0)
 	{
 		w = K1a*tetae + K2a*ye*v_ref*sin(tetae)/tetae;
 	}

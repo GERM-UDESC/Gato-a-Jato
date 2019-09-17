@@ -7,23 +7,22 @@
 //Parameters
 //Kanayama
 #define Kx 60
-#define Ky 1000
-#define Kteta 20
+#define Ky 900
+#define Kteta 22
 #define K4 400
 #define K1 Kx
 #define K2 Ky
 #define K3 Kz
-
 
 #define Kxk 1
 #define Kyk 100
 #define Ktetak 0.1
 #define K4k 0.01
 
-#define K1a 20
-#define K2a 1900
+#define K1a 22
+#define K2a 1000
 
-#define v_ref_ini 1
+#define v_ref_ini 0.6
 #define w_ref_ini 0
 
 class Controller

@@ -6,6 +6,7 @@ TIM_REMAP Timer::TIM3Remap;
 TIM_REMAP Timer::TIM4Remap;
 uint32_t Timer::time_in_usec;
 TIM_TypeDef *Timer::TIM_Timer_Counter;
+bool Timer::interruptGenerated;
 
 void Timer::Timer_Initiallize()				//Initiallize all timer's static variables
 {
@@ -14,11 +15,23 @@ void Timer::Timer_Initiallize()				//Initiallize all timer's static variables
   Timer::TIM3Remap = NO_REMAP;
   Timer::TIM4Remap = NO_REMAP;
   Timer::time_in_usec = 0;
+	Timer::interruptGenerated = 0;
 }
 
 void Timer::Timer_Handler()
 {
 	time_in_usec += Time_between_int;
+	interruptGenerated = 1;
+}
+
+bool Timer::verifyTimeInterrupt()
+{
+	if (interruptGenerated)
+	{
+		interruptGenerated = 0;
+		return 1;
+	}
+	else return 0;
 }
 
 uint32_t Timer::GetTime_usec()
