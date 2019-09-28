@@ -29,20 +29,19 @@ close all
 clear all
 clc
 
-bits_to_receive = 2500;
 baud_rate = 1382400;
 Ts = 1e-3;
-TempoTotal = 10;
+TempoTotal = 15;
 bits_to_receive = (TempoTotal)/(Ts);
+bufferSize = 2*bits_to_receive*32*6;
 
-seguidor = serial('com5','BaudRate',baud_rate,'Parity','none', 'InputBufferSize', 100000); 
+seguidor = serial('com5','BaudRate',baud_rate,'Parity','none', 'InputBufferSize', bufferSize); 
 fopen(seguidor);
 
-% pause
 %%
 close all
 clc
-command = 5;
+command = 10;
 flushinput(seguidor);
 fwrite(seguidor, command, 'uint8');
 

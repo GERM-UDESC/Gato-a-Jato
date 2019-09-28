@@ -8,21 +8,22 @@
 //Kanayama
 #define Kx 60
 #define Ky 900
-#define Kteta 22
+//#define Kteta 22
+#define Kteta 20
 #define K4 400
 #define K1 Kx
 #define K2 Ky
 #define K3 Kz
 
 #define Kxk 1
-#define Kyk 100
-#define Ktetak 0.1
-#define K4k 0.01
+#define Kyk 200
+#define Ktetak 0.01
+#define K4k 0.001
 
 #define K1a 22
 #define K2a 1000
 
-#define v_ref_ini 0.6
+#define v_ref_ini 0.5
 #define w_ref_ini 0
 
 class Controller
@@ -40,6 +41,7 @@ class Controller
 		float lastTetae{0};
 		
 		float v_ref{v_ref_ini};
+		float desired_v{v_ref_ini};
 		float w_ref{w_ref_ini};
 		
 		float v{0};

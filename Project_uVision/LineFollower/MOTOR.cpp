@@ -123,7 +123,7 @@ float Motor::getTeta()
 
 float Motor::getDistance()
 {
-	return encoder.getTicks()*ticksToRad*r;
+	return encoder.getTeta()*r;
 }
 
 float Motor::getDeltaDistance()

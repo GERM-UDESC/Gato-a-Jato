@@ -7,7 +7,7 @@
 #define rpmToRads 2*pi/60
 #define rpmToV rpmToRads*r
 #define radsToRpm 60/(2*pi)
-#define r 0.015
+#define r 0.0161
 
 #define desired_size 3							
 #define k (desired_size-1)

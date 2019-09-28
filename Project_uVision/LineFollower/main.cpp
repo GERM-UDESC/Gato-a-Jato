@@ -23,9 +23,9 @@ uint8_t test_serial;
 
 int main()
 {
-	NVIC->IP[TIM1_UP_IRQn] = 1;
-	NVIC->IP[TIM4_IRQn] = 2;
-	NVIC->IP[TIM3_IRQn] = 3;
+//	NVIC->IP[TIM1_UP_IRQn] = 1;
+//	NVIC->IP[TIM4_IRQn] = 2;
+//	NVIC->IP[TIM3_IRQn] = 3;
 	//-----------------------------------Initiallize static parameters----------------------
 	Timer::Timer_Initiallize();
 	Encoder::Encoder_Initiallize();
@@ -107,8 +107,9 @@ int main()
 	
 	while(1)
 	{
-//		linevalue = RobotControl.Robot.getLinePosition();
-//		lineangle = RobotControl.Robot.getLineAngle();
+		linevalue = RobotControl.Robot.getLinePosition();
+		lineangle = RobotControl.Robot.getLineAngle();
+		xtest = RobotControl.Robot.deltaDistance;
 //		vtest = RobotControl.Robot.getV();
 //		wtest = RobotControl.Robot.getW();
 //		xtest = RobotControl.Robot.motorD.encoder.getSpeed();
@@ -126,7 +127,7 @@ int main()
 		}
 		
 
-		if ((Board.SysTickGetEvent()))// && (Interface.command != robotStop))
+		if ((Board.SysTickGetEvent()) && (Interface.command != robotStop))
 		{
 			LED_Board.tooglePin();
 		}

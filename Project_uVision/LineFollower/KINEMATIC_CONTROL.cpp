@@ -35,6 +35,7 @@ void Kinematic::reset()
 	lineSensorReading = 0;
 	lastLineSensorReading = 0;
 	distance = 0;
+	deltaDistance = 0;
 	lastDistance = 0;
 }
 
@@ -49,10 +50,9 @@ void Kinematic::handler()
 //	xPos += getV()*cos(getTeta())*integrationTime;
 //	yPos += getV()*sin(getTeta())*integrationTime;
 	
-	float deltaDistance;
-	deltaDistance = (motorD.getDeltaDistance() + motorE.getDeltaDistance())/2;
-	xPos += deltaDistance*cos(getTeta());
-	yPos += deltaDistance*sin(getTeta());
+	this->deltaDistance = (motorD.getDeltaDistance() + motorE.getDeltaDistance())/2;
+	xPos += this->deltaDistance*cos(getTeta())*distanceCorrection;
+	yPos += this->deltaDistance*sin(getTeta())*distanceCorrection;
 	
 }
 
@@ -78,7 +78,7 @@ float	Kinematic::getY()
 
 float Kinematic::getTeta()
 {
-	return (r/(2*L))*(motorD.getTeta() - motorE.getTeta());	
+	return angleCorrection*(r/(2*L))*(motorD.getTeta() - motorE.getTeta());	
 }
 
 void Kinematic::calibrateLineSensor(uint32_t iterations)
@@ -90,12 +90,17 @@ void Kinematic::calibrateLineSensor(uint32_t iterations)
 void Kinematic::updateLineReading()
 {
 	lineSensorReading = lineSensor.read();
-	distance = sqrt(xPos*xPos + yPos*yPos);
 	
-	if ((distance)!= 0)
+	for (int i = 0; i < (angleFilterOrder-1); i++)
 	{
-		angle[angleFilterOrder-1] = atan2(lineSensorReading - lastLineSensorReading, distance);
-	}
+		angle[i] = angle[i+1];
+	};
+	
+	if ((this->deltaDistance)!= 0)
+	{
+		angle[angleFilterOrder-1] = atan2(lineSensorReading - lastLineSensorReading, this->deltaDistance);
+	}	
+		
 	filteredAngle = 0;
 	for (int i = 0; i < (angleFilterOrder); i++)
 	{
@@ -104,8 +109,8 @@ void Kinematic::updateLineReading()
 	filteredAngle = filteredAngle/angleFilterOrder;
 	
 	lastLineSensorReading = lineSensorReading;
-	xPos = 0;
-	yPos = 0;
+//	xPos = 0;
+//	yPos = 0;
 }
 
 float Kinematic::getLineAngle()
@@ -116,6 +121,11 @@ float Kinematic::getLineAngle()
 float Kinematic::getLinePosition()
 {
 	return lineSensorReading;
+}
+
+float Kinematic::getLineAngleNotFiltered()
+{
+	return angle[angleFilterOrder-1];
 }
 
 

@@ -115,6 +115,42 @@ void Communication::doCommand()
 			Serial->sendFloat(&temporary[5]);
 		break;
 		
+		case sendEverything:
+			temporary[0] = LineFollower->Robot.getV();
+			temporary[1] = LineFollower->Robot.getW();
+			temporary[2] = LineFollower->getVcontrol();
+			temporary[3] = LineFollower->getWcontrol();
+			temporary[4] = LineFollower->Robot.getLinePosition();
+			temporary[5] = LineFollower->Robot.getLineAngle();
+			temporary[6] = LineFollower->Robot.motorD.Get_Speed();
+			temporary[7] = LineFollower->Robot.motorE.Get_Speed();
+			temporary[8] = LineFollower->Robot.motorD.getU();
+			temporary[9] = LineFollower->Robot.motorE.getU();
+			temporary[10] = LineFollower->Robot.motorD.getE();
+			temporary[11] = LineFollower->Robot.motorE.getE();
+			Serial->sendFloat(&temporary[0]);
+			Serial->sendFloat(&temporary[1]);
+			Serial->sendFloat(&temporary[2]);
+			Serial->sendFloat(&temporary[3]);
+			Serial->sendFloat(&temporary[4]);
+			Serial->sendFloat(&temporary[5]);
+			Serial->sendFloat(&temporary[6]);
+			Serial->sendFloat(&temporary[7]);
+			Serial->sendFloat(&temporary[8]);
+			Serial->sendFloat(&temporary[9]);
+			Serial->sendFloat(&temporary[10]);
+			Serial->sendFloat(&temporary[11]);
+		break;
+		
+		case sendPositionAndOrientation:
+			temporary[0] = LineFollower->Robot.getX();
+			temporary[1] = LineFollower->Robot.getY();
+			temporary[2] = LineFollower->Robot.getTeta();
+			Serial->sendFloat(&temporary[0]);
+			Serial->sendFloat(&temporary[1]);
+			Serial->sendFloat(&temporary[2]);		
+		break;
+		
 		
 		default:
 			LineFollower->stop();

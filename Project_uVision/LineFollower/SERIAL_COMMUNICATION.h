@@ -4,7 +4,7 @@
 	#include "FOLLOWING_CONTROLER.h"
 	#include "USART.h"
 	
-	#define samplingTime 10
+	#define samplingTime 15
 	#define bitsToSend (samplingTime*1000000)/(Time_between_int)
 	#define sendingTime bitsToSend*Time_between_int/1000000
 		
@@ -27,6 +27,8 @@
 #define	sendMotorsSpeed 6
 #define	sendMotorsSpeedAndControl 7
 #define	sendMotorsSpeedControlAndErrors 8
+#define sendEverything 9
+#define sendPositionAndOrientation 10
 
 	class Communication
 	{
@@ -38,7 +40,7 @@
 		USART *Serial;
 		
 		uint16_t counter{0};
-		float temporary[6];
+		float temporary[12];
 		
 		void doCommand();
 		

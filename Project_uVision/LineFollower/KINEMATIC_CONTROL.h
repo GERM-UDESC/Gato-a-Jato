@@ -6,7 +6,9 @@
 #include "math.h"
 
 #define L 0.069
-#define angleFilterOrder 3
+#define angleCorrection 1//.125
+#define distanceCorrection 1//.093
+#define angleFilterOrder 2
 
 #define integrationTime Time_between_int/1000000
 
@@ -28,12 +30,13 @@ class Kinematic
 		
 		float lineSensorReading{0};
 		float lastLineSensorReading{0};
-		float distance{0};
+		float distance{0}, deltaDistance{0};
 		float lastDistance{0};	
 		
 		float xPos{0};
 		float yPos{0};
-		float angle[angleFilterOrder]{0}, filteredAngle{0};
+		float angle[angleFilterOrder]{0};
+		float filteredAngle{0};
 		
 		void handler();
 		static Kinematic *ptRobot;
@@ -52,6 +55,7 @@ class Kinematic
 	
 		float getLineAngle();
 		float getLinePosition();
+		float getLineAngleNotFiltered();
 	
 		float getV();
 		float getW();

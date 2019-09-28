@@ -155,8 +155,9 @@ float Encoder::getTicks()
 
 float Encoder::getDeltaTicks()
 {
-	deltaTicks = getTicks() - lastTicks;
-	lastTicks = getTicks();
+	float tempTicks = getTicks();
+	deltaTicks = tempTicks - lastTicks;
+	lastTicks = tempTicks;
 	return deltaTicks;
 }
 
@@ -210,11 +211,6 @@ void Encoder::Handler()
 		Speed[i] = Speed[i+1];
 	};
 	
-//	if (((lastDeltaTime - deltaTime) >= (Time_between_int*0.98)) && ((lastDeltaTime - deltaTime) <= (Time_between_int*1.02)))
-//	{
-//		Ticks_Time += Time_between_int;
-//		deltaTime = Ticks_Time - LastTicks_Time;
-//	}
 	Speed[encoderFilterOrder-1] = (500000*Ticks_till_int)/(deltaTime);			//this 500000* is to convert ticks/us in rpm
 	
 	if (getDirection() == backward) 

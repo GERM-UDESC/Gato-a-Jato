@@ -25,6 +25,7 @@ void Controller::Handler()
 
 void Controller::start(float vr, float wr)
 {
+	reset();
 	setSpeedRef(vr, wr);
 };
 
@@ -37,8 +38,8 @@ void Controller::calculateError()
 {
 	float angleTemp = Robot.getLineAngle();
 	
-	if(angleTemp > pi/3) angleTemp = pi/3;
-	else if (angleTemp < -pi/3) angleTemp = -pi/3;
+	if(angleTemp > pi/6) angleTemp = pi/6;
+	else if (angleTemp < -pi/6) angleTemp = -pi/6;
 	tetae = angleTemp;
 	lastTetae = angleTemp;
 	
@@ -55,6 +56,13 @@ void Controller::controlRule()
 
 void Controller::kanayama_control()
 {
+	if ((ye > maxDistance/8) && (desired_v != 0))
+		v_ref = desired_v*(1 - 0.1*(ye/maxDistance));
+	else if ((ye < -maxDistance/8) && (desired_v != 0))
+		v_ref = desired_v*(1 + 0.1*(ye/maxDistance));
+	else
+		v_ref = desired_v;
+	
 	v = v_ref*cos(tetae) + Kx*xe;
 	w = w_ref + v_ref*(Ky*ye + Kteta*sin(tetae));
 	
@@ -67,7 +75,7 @@ void Controller::fierro_control()
 	float w_read = Robot.getW();
 	
 	vc = v_ref*cos(tetae) + Kxk*xe;
-	wc = w_ref + Kyk*v_ref*ye+Ktetak*v_ref*sin(tetae);
+	wc = w_ref + Kyk*v_ref*ye + Ktetak*v_ref*sin(tetae);
 
 	xep = w_read*ye-v_read + v_ref*cos(tetae);
 	yep = -w_read*xe + v_ref*sin(tetae);
@@ -83,14 +91,6 @@ void Controller::fierro_control()
 
 void Controller::article_control()
 {
-//	if ((tetae > 0.001) && (tetae < - 0.001))
-//	{
-//		w = K1a*tetae + K2a*ye*v_ref*sin(tetae)/tetae;
-//	}
-//	else
-//	{
-//		w = K1a*tetae + K2a*ye*v_ref;
-//	}
 	if (tetae != 0)
 	{
 		w = K1a*tetae + K2a*ye*v_ref*sin(tetae)/tetae;
@@ -105,7 +105,7 @@ void Controller::article_control()
 
 void Controller::setSpeedRef(float vr, float wr)
 {
-	v_ref = vr;
+	desired_v = vr;
 	w_ref = wr;
 }
 

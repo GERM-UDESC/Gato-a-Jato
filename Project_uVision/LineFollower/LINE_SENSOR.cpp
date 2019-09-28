@@ -46,7 +46,7 @@ float Line_Sensor::read()
 	for (int i = 0; i < 8; i++)
   {
 		sensor_values[i] = Sensors[i].Reflectance_Read();	//Read the sensor
-				if (sensor_values[i] > calib_sensores)						//verify if it's not just some ruid
+		if (sensor_values[i] > calib_sensores)						//verify if it's not just some ruid
     {
       media += i * (sensor_values[i]);
       soma += sensor_values[i];

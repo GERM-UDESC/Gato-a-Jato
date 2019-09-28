@@ -9,7 +9,9 @@
 #define encoderFilterOrder 6 //minimum = 2
 
 #define pi 3.14159265359
-#define ticksToRad pi/60
+
+#define pulsePerRevolution 120
+#define ticksToRad 2*pi/pulsePerRevolution
 
 
 typedef enum{
