@@ -1550,153 +1550,153 @@ Image Symbol Table
     [Anonymous Symbol]                       0x080002f0   Section        0  following_controler.o(.text._ZN10Controller13HandlerByTimeEv)
     [Anonymous Symbol]                       0x080002fe   Section        0  following_controler.o(.text._ZN10Controller14calculateErrorEv)
     [Anonymous Symbol]                       0x0800036e   Section        0  following_controler.o(.text._ZN10Controller16kanayama_controlEv)
-    [Anonymous Symbol]                       0x080004ae   Section        0  following_controler.o(.text._ZN10Controller4stopEv)
-    [Anonymous Symbol]                       0x080004b6   Section        0  following_controler.o(.text._ZN10Controller5startEff)
-    [Anonymous Symbol]                       0x080004d8   Section        0  following_controler.o(.text._ZN10Controller7HandlerEv)
-    [Anonymous Symbol]                       0x08000500   Section        0  following_controler.o(.text._ZN10ControllerC2E9Kinematic)
-    [Anonymous Symbol]                       0x08000540   Section        0  line_sensor.o(.text._ZN11Line_Sensor4readEv)
-    [Anonymous Symbol]                       0x0800067a   Section        0  line_sensor.o(.text._ZN11Line_Sensor9calibrateEj)
-    [Anonymous Symbol]                       0x080006a0   Section        0  line_sensor.o(.text._ZN11Line_SensorC2E18Reflectance_SensorS0_S0_S0_S0_S0_S0_S0_)
-    [Anonymous Symbol]                       0x080007e0   Section        0  line_sensor.o(.text._ZN11Line_SensorC2EPS_)
-    [Anonymous Symbol]                       0x08000856   Section        0  serial_communication.o(.text._ZN13Communication13HandlerByTimeEv)
-    [Anonymous Symbol]                       0x08000864   Section        0  serial_communication.o(.text._ZN13Communication13verifyCommandEv)
-    [Anonymous Symbol]                       0x08000890   Section        0  serial_communication.o(.text._ZN13Communication14waitForCommandEv)
-    [Anonymous Symbol]                       0x080008b4   Section        0  serial_communication.o(.text._ZN13Communication7HandlerEv)
-    [Anonymous Symbol]                       0x080008f4   Section        0  serial_communication.o(.text._ZN13Communication9doCommandEv)
-    [Anonymous Symbol]                       0x08000bae   Section        0  serial_communication.o(.text._ZN13CommunicationC2EP10ControllerP5USART)
-    [Anonymous Symbol]                       0x08000bc6   Section        0  reflectance_sensor.o(.text._ZN18Reflectance_Sensor16Reflectance_ReadEv)
-    [Anonymous Symbol]                       0x08000bfe   Section        0  reflectance_sensor.o(.text._ZN18Reflectance_Sensor24Calib_Reflectance_SensorEv)
-    [Anonymous Symbol]                       0x08000c20   Section        0  reflectance_sensor.o(.text._ZN18Reflectance_SensorC2E12ADC_CHANNELS)
-    [Anonymous Symbol]                       0x08000c32   Section        0  reflectance_sensor.o(.text._ZN18Reflectance_SensorC2EPS_)
-    [Anonymous Symbol]                       0x08000c52   Section        0  adc.o(.text._ZN3ADC10analogReadEv)
-    [Anonymous Symbol]                       0x08000c80   Section        0  adc.o(.text._ZN3ADC12ConfigADCPinEv)
-    [Anonymous Symbol]                       0x08000d30   Section        0  adc.o(.text._ZN3ADC13GetADCChannelEv)
-    [Anonymous Symbol]                       0x08000d34   Section        0  adc.o(.text._ZN3ADCC2E12ADC_CHANNELS)
-    [Anonymous Symbol]                       0x08000d44   Section        0  pwm.o(.text._ZN3PWM12ConfigPWMPinEv)
-    [Anonymous Symbol]                       0x08000f48   Section        0  pwm.o(.text._ZN3PWM7PWMInitEv)
-    [Anonymous Symbol]                       0x08001032   Section        0  pwm.o(.text._ZN3PWM8PWMWriteEf)
-    [Anonymous Symbol]                       0x08001096   Section        0  pwm.o(.text._ZN3PWMC2EP11TIM_TypeDef12TIM_CHANNELS9TIM_REMAP)
-    [Anonymous Symbol]                       0x080010b8   Section        0  pwm.o(.text._ZN3PWMC2EPS_)
-    [Anonymous Symbol]                       0x080010f6   Section        0  gpio_1.o(.text._ZN4GPIO11SetGPIOModeE10GPIO_MODES)
-    [Anonymous Symbol]                       0x080010fa   Section        0  gpio_1.o(.text._ZN4GPIO12digitalWriteEb)
-    [Anonymous Symbol]                       0x08001114   Section        0  gpio_1.o(.text._ZN4GPIO13ConfigGPIOPinEv)
-    [Anonymous Symbol]                       0x080011c0   Section        0  gpio_1.o(.text._ZN4GPIO14SetGPIOPortPinE12GPIO_IO_ENUM)
-    [Anonymous Symbol]                       0x080011d8   Section        0  gpio_1.o(.text._ZN4GPIO9tooglePinEv)
-    [Anonymous Symbol]                       0x080011ea   Section        0  gpio_1.o(.text._ZN4GPIOC2E12GPIO_IO_ENUM10GPIO_MODES)
-    [Anonymous Symbol]                       0x08001228   Section        0  gpio_1.o(.text._ZN4GPIOC2EPS_)
-    [Anonymous Symbol]                       0x0800126c   Section        0  motor.o(.text._ZN5Motor12getSpeedRadSEv)
-    [Anonymous Symbol]                       0x080012a4   Section        0  motor.o(.text._ZN5Motor16getDeltaDistanceEv)
-    [Anonymous Symbol]                       0x080012f0   Section        0  motor.o(.text._ZN5Motor17Motor_InitialiizeEv)
-    [Anonymous Symbol]                       0x08001304   Section        0  motor.o(.text._ZN5Motor21Motor_Handler_by_timeEv)
-    [Anonymous Symbol]                       0x0800131e   Section        0  motor.o(.text._ZN5Motor4getEEv)
-    [Anonymous Symbol]                       0x08001324   Section        0  motor.o(.text._ZN5Motor4getUEv)
-    [Anonymous Symbol]                       0x0800132a   Section        0  motor.o(.text._ZN5Motor5resetEv)
-    [Anonymous Symbol]                       0x08001352   Section        0  motor.o(.text._ZN5Motor7HandlerEv)
-    [Anonymous Symbol]                       0x08001484   Section        0  motor.o(.text._ZN5Motor7getTetaEv)
-    [Anonymous Symbol]                       0x0800148a   Section        0  motor.o(.text._ZN5Motor9Get_SpeedEv)
-    [Anonymous Symbol]                       0x08001490   Section        0  motor.o(.text._ZN5Motor9Set_SpeedEf)
-    [Anonymous Symbol]                       0x08001496   Section        0  motor.o(.text._ZN5MotorC2E3PWM7Encoder4GPIOS2_)
-    [Anonymous Symbol]                       0x0800157c   Section        0  motor.o(.text._ZN5MotorC2EPS_)
-    [Anonymous Symbol]                       0x080015da   Section        0  timer.o(.text._ZN5Timer11GetTIMRemapEv)
-    [Anonymous Symbol]                       0x08001636   Section        0  timer.o(.text._ZN5Timer11SetTIMRemapE9TIM_REMAP)
-    [Anonymous Symbol]                       0x0800169a   Section        0  timer.o(.text._ZN5Timer12GetTime_usecEv)
-    [Anonymous Symbol]                       0x080016b4   Section        0  timer.o(.text._ZN5Timer13GetTIMChannelEv)
-    [Anonymous Symbol]                       0x080016b8   Section        0  timer.o(.text._ZN5Timer13Timer_HandlerEv)
-    [Anonymous Symbol]                       0x080016d6   Section        0  timer.o(.text._ZN5Timer17Timer_InitiallizeEv)
-    [Anonymous Symbol]                       0x08001716   Section        0  timer.o(.text._ZN5Timer19verifyTimeInterruptEv)
-    [Anonymous Symbol]                       0x0800172e   Section        0  timer.o(.text._ZN5Timer6GetTimEv)
-    [Anonymous Symbol]                       0x08001732   Section        0  timer.o(.text._ZN5Timer6SetTimEP11TIM_TypeDef)
-    [Anonymous Symbol]                       0x08001736   Section        0  timer.o(.text._ZN5Timer9TimerInitEv)
-    [Anonymous Symbol]                       0x08001818   Section        0  timer.o(.text._ZN5TimerC2EP11TIM_TypeDef12TIM_CHANNELS8TIM_MODE)
-    [Anonymous Symbol]                       0x0800182a   Section        0  timer.o(.text._ZN5TimerC2EP11TIM_TypeDef8TIM_MODE)
-    [Anonymous Symbol]                       0x0800183c   Section        0  usart.o(.text._ZN5USART4initE7BD_ENUM)
-    [Anonymous Symbol]                       0x080019bc   Section        0  usart.o(.text._ZN5USART7ReceiveEv)
-    [Anonymous Symbol]                       0x080019cc   Section        0  usart.o(.text._ZN5USART9AvailableEv)
-    [Anonymous Symbol]                       0x080019d6   Section        0  usart.o(.text._ZN5USART9sendFloatEPf)
-    [Anonymous Symbol]                       0x08001a0a   Section        0  usart.o(.text._ZN5USARTC2EP13USART_TypeDef7BD_ENUM)
-    [Anonymous Symbol]                       0x08001a1a   Section        0  encoder.o(.text._ZN7Encoder13ConfigEncoderEv)
-    [Anonymous Symbol]                       0x08001c70   Section        0  encoder.o(.text._ZN7Encoder13getDeltaTicksEv)
-    [Anonymous Symbol]                       0x08001c84   Section        0  encoder.o(.text._ZN7Encoder15Encoder_HandlerE12ENCODER_ENUM)
-    [Anonymous Symbol]                       0x08001c94   Section        0  encoder.o(.text._ZN7Encoder19Encoder_InitiallizeEv)
-    [Anonymous Symbol]                       0x08001ca2   Section        0  encoder.o(.text._ZN7Encoder23Encoder_Handler_by_TimeEv)
-    [Anonymous Symbol]                       0x08001d5e   Section        0  encoder.o(.text._ZN7Encoder5resetEv)
-    [Anonymous Symbol]                       0x08001d8e   Section        0  encoder.o(.text._ZN7Encoder7HandlerEv)
-    [Anonymous Symbol]                       0x08001e5e   Section        0  encoder.o(.text._ZN7Encoder7getTetaEv)
-    [Anonymous Symbol]                       0x08001e82   Section        0  encoder.o(.text._ZN7Encoder8getSpeedEv)
-    [Anonymous Symbol]                       0x08001e8e   Section        0  encoder.o(.text._ZN7Encoder8getTicksEv)
-    [Anonymous Symbol]                       0x08001ea6   Section        0  encoder.o(.text._ZN7EncoderC2EP11TIM_TypeDef)
-    [Anonymous Symbol]                       0x08001ece   Section        0  encoder.o(.text._ZN7EncoderC2EPS_)
-    [Anonymous Symbol]                       0x08001efe   Section        0  sysclock.o(.text._ZN8SysClock12SysClockInitEv)
-    [Anonymous Symbol]                       0x08001f64   Section        0  sysclock.o(.text._ZN8SysClock15SysTickGetEventEv)
-    [Anonymous Symbol]                       0x08001f74   Section        0  sysclock.o(.text._ZN8SysClockC2Ev)
-    [Anonymous Symbol]                       0x08001f96   Section        0  kinematic_control.o(.text._ZN9Kinematic12getLineAngleEv)
-    [Anonymous Symbol]                       0x08001f9c   Section        0  kinematic_control.o(.text._ZN9Kinematic13handlerByTimeEv)
-    [Anonymous Symbol]                       0x08001faa   Section        0  kinematic_control.o(.text._ZN9Kinematic15getLinePositionEv)
-    [Anonymous Symbol]                       0x08001fb0   Section        0  kinematic_control.o(.text._ZN9Kinematic17updateLineReadingEv)
-    [Anonymous Symbol]                       0x0800202a   Section        0  kinematic_control.o(.text._ZN9Kinematic19calibrateLineSensorEj)
-    [Anonymous Symbol]                       0x0800203e   Section        0  kinematic_control.o(.text._ZN9Kinematic4getVEv)
-    [Anonymous Symbol]                       0x08002076   Section        0  kinematic_control.o(.text._ZN9Kinematic4getWEv)
-    [Anonymous Symbol]                       0x080020aa   Section        0  kinematic_control.o(.text._ZN9Kinematic4getXEv)
-    [Anonymous Symbol]                       0x080020b0   Section        0  kinematic_control.o(.text._ZN9Kinematic4getYEv)
-    [Anonymous Symbol]                       0x080020b6   Section        0  kinematic_control.o(.text._ZN9Kinematic5resetEv)
-    [Anonymous Symbol]                       0x080020d2   Section        0  kinematic_control.o(.text._ZN9Kinematic7getTetaEv)
-    [Anonymous Symbol]                       0x08002106   Section        0  kinematic_control.o(.text._ZN9Kinematic7handlerEv)
-    [Anonymous Symbol]                       0x08002174   Section        0  kinematic_control.o(.text._ZN9Kinematic8setSpeedEff)
-    [Anonymous Symbol]                       0x08002236   Section        0  kinematic_control.o(.text._ZN9KinematicC2E5MotorS0_11Line_Sensor)
-    [Anonymous Symbol]                       0x0800229a   Section        0  kinematic_control.o(.text._ZN9KinematicC2EPS_)
-    [Anonymous Symbol]                       0x080022fa   Section        0  main.o(.text.main)
-    i.__ARM_fpclassifyf                      0x08002878   Section        0  fpclassifyf.o(i.__ARM_fpclassifyf)
-    i.__mathlib_flt_infnan                   0x0800289e   Section        0  funder.o(i.__mathlib_flt_infnan)
-    i.__mathlib_flt_infnan2                  0x080028a4   Section        0  funder.o(i.__mathlib_flt_infnan2)
-    i.__mathlib_flt_invalid                  0x080028a8   Section        0  funder.o(i.__mathlib_flt_invalid)
-    i.__mathlib_flt_underflow                0x080028b0   Section        0  funder.o(i.__mathlib_flt_underflow)
-    i.__mathlib_rredf2                       0x080028bc   Section        0  rredf.o(i.__mathlib_rredf2)
-    i.atan2f                                 0x08002a24   Section        0  atan2f.o(i.atan2f)
-    i.cosf                                   0x08002c80   Section        0  cosf.o(i.cosf)
-    i.sinf                                   0x08002dfc   Section        0  sinf.o(i.sinf)
-    x$fpl$d2f                                0x08002f84   Section       98  d2f.o(x$fpl$d2f)
-    x$fpl$dadd                               0x08002fe8   Section      336  daddsub_clz.o(x$fpl$dadd)
-    _dadd1                                   0x08002ff9   Thumb Code     0  daddsub_clz.o(x$fpl$dadd)
-    x$fpl$dcmpinf                            0x08003138   Section       24  dcmpi.o(x$fpl$dcmpinf)
-    x$fpl$ddiv                               0x08003150   Section      688  ddiv.o(x$fpl$ddiv)
-    ddiv_entry                               0x08003157   Thumb Code     0  ddiv.o(x$fpl$ddiv)
-    x$fpl$deqf                               0x08003400   Section      120  deqf.o(x$fpl$deqf)
-    x$fpl$dgeqf                              0x08003478   Section      120  dgeqf.o(x$fpl$dgeqf)
-    x$fpl$dleqf                              0x080034f0   Section      120  dleqf.o(x$fpl$dleqf)
-    x$fpl$dmul                               0x08003568   Section      340  dmul.o(x$fpl$dmul)
-    x$fpl$dnaninf                            0x080036bc   Section      156  dnaninf.o(x$fpl$dnaninf)
-    x$fpl$dretinf                            0x08003758   Section       12  dretinf.o(x$fpl$dretinf)
-    x$fpl$dsub                               0x08003764   Section      468  daddsub_clz.o(x$fpl$dsub)
-    _dsub1                                   0x08003775   Thumb Code     0  daddsub_clz.o(x$fpl$dsub)
-    x$fpl$f2d                                0x08003938   Section       86  f2d.o(x$fpl$f2d)
-    x$fpl$fadd                               0x08003990   Section      196  faddsub_clz.o(x$fpl$fadd)
-    _fadd1                                   0x0800399f   Thumb Code     0  faddsub_clz.o(x$fpl$fadd)
-    x$fpl$fcheck1                            0x08003a54   Section       12  fcheck1.o(x$fpl$fcheck1)
-    x$fpl$fcmp                               0x08003a60   Section       84  dcmp.o(x$fpl$fcmp)
-    x$fpl$fcmp                               0x08003ab4   Section       84  fcmp.o(x$fpl$fcmp)
-    x$fpl$fcmpinf                            0x08003b08   Section       24  fcmpi.o(x$fpl$fcmpinf)
-    x$fpl$fdiv                               0x08003b20   Section      388  fdiv.o(x$fpl$fdiv)
-    _fdiv1                                   0x08003b21   Thumb Code     0  fdiv.o(x$fpl$fdiv)
-    x$fpl$feqf                               0x08003ca4   Section      104  feqf.o(x$fpl$feqf)
-    x$fpl$ffix                               0x08003d0c   Section       54  ffix.o(x$fpl$ffix)
-    x$fpl$ffixu                              0x08003d44   Section       62  ffixu.o(x$fpl$ffixu)
-    x$fpl$fflt                               0x08003d84   Section       48  fflt_clz.o(x$fpl$fflt)
-    x$fpl$ffltu                              0x08003db4   Section       38  fflt_clz.o(x$fpl$ffltu)
-    x$fpl$fgeqf                              0x08003ddc   Section      104  fgeqf.o(x$fpl$fgeqf)
-    x$fpl$fleqf                              0x08003e44   Section      104  fleqf.o(x$fpl$fleqf)
-    x$fpl$fmul                               0x08003eac   Section      258  fmul.o(x$fpl$fmul)
-    x$fpl$fnaninf                            0x08003fae   Section      140  fnaninf.o(x$fpl$fnaninf)
-    x$fpl$fretinf                            0x0800403a   Section       10  fretinf.o(x$fpl$fretinf)
-    x$fpl$frnd                               0x08004044   Section       96  frnd.o(x$fpl$frnd)
-    x$fpl$frsb                               0x080040a4   Section       20  faddsub_clz.o(x$fpl$frsb)
-    x$fpl$fsub                               0x080040b8   Section      234  faddsub_clz.o(x$fpl$fsub)
-    _fsub1                                   0x080040c7   Thumb Code     0  faddsub_clz.o(x$fpl$fsub)
-    x$fpl$retnan                             0x080041a2   Section      100  retnan.o(x$fpl$retnan)
-    x$fpl$scalbnf                            0x08004206   Section       76  scalbnf.o(x$fpl$scalbnf)
-    x$fpl$trapveneer                         0x08004252   Section       48  trapv.o(x$fpl$trapveneer)
-    x$fpl$usenofp                            0x08004282   Section        0  usenofp.o(x$fpl$usenofp)
-    .constdata                               0x08004284   Section       32  rredf.o(.constdata)
-    twooverpi                                0x08004284   Data          32  rredf.o(.constdata)
+    [Anonymous Symbol]                       0x080004aa   Section        0  following_controler.o(.text._ZN10Controller4stopEv)
+    [Anonymous Symbol]                       0x080004b2   Section        0  following_controler.o(.text._ZN10Controller5startEff)
+    [Anonymous Symbol]                       0x080004d4   Section        0  following_controler.o(.text._ZN10Controller7HandlerEv)
+    [Anonymous Symbol]                       0x080004fc   Section        0  following_controler.o(.text._ZN10ControllerC2E9Kinematic)
+    [Anonymous Symbol]                       0x0800053c   Section        0  line_sensor.o(.text._ZN11Line_Sensor4readEv)
+    [Anonymous Symbol]                       0x08000676   Section        0  line_sensor.o(.text._ZN11Line_Sensor9calibrateEj)
+    [Anonymous Symbol]                       0x0800069c   Section        0  line_sensor.o(.text._ZN11Line_SensorC2E18Reflectance_SensorS0_S0_S0_S0_S0_S0_S0_)
+    [Anonymous Symbol]                       0x080007dc   Section        0  line_sensor.o(.text._ZN11Line_SensorC2EPS_)
+    [Anonymous Symbol]                       0x08000852   Section        0  serial_communication.o(.text._ZN13Communication13HandlerByTimeEv)
+    [Anonymous Symbol]                       0x08000860   Section        0  serial_communication.o(.text._ZN13Communication13verifyCommandEv)
+    [Anonymous Symbol]                       0x0800088c   Section        0  serial_communication.o(.text._ZN13Communication14waitForCommandEv)
+    [Anonymous Symbol]                       0x080008b0   Section        0  serial_communication.o(.text._ZN13Communication7HandlerEv)
+    [Anonymous Symbol]                       0x080008f0   Section        0  serial_communication.o(.text._ZN13Communication9doCommandEv)
+    [Anonymous Symbol]                       0x08000baa   Section        0  serial_communication.o(.text._ZN13CommunicationC2EP10ControllerP5USART)
+    [Anonymous Symbol]                       0x08000bc2   Section        0  reflectance_sensor.o(.text._ZN18Reflectance_Sensor16Reflectance_ReadEv)
+    [Anonymous Symbol]                       0x08000bfa   Section        0  reflectance_sensor.o(.text._ZN18Reflectance_Sensor24Calib_Reflectance_SensorEv)
+    [Anonymous Symbol]                       0x08000c1c   Section        0  reflectance_sensor.o(.text._ZN18Reflectance_SensorC2E12ADC_CHANNELS)
+    [Anonymous Symbol]                       0x08000c2e   Section        0  reflectance_sensor.o(.text._ZN18Reflectance_SensorC2EPS_)
+    [Anonymous Symbol]                       0x08000c4e   Section        0  adc.o(.text._ZN3ADC10analogReadEv)
+    [Anonymous Symbol]                       0x08000c7c   Section        0  adc.o(.text._ZN3ADC12ConfigADCPinEv)
+    [Anonymous Symbol]                       0x08000d2c   Section        0  adc.o(.text._ZN3ADC13GetADCChannelEv)
+    [Anonymous Symbol]                       0x08000d30   Section        0  adc.o(.text._ZN3ADCC2E12ADC_CHANNELS)
+    [Anonymous Symbol]                       0x08000d40   Section        0  pwm.o(.text._ZN3PWM12ConfigPWMPinEv)
+    [Anonymous Symbol]                       0x08000f44   Section        0  pwm.o(.text._ZN3PWM7PWMInitEv)
+    [Anonymous Symbol]                       0x0800102e   Section        0  pwm.o(.text._ZN3PWM8PWMWriteEf)
+    [Anonymous Symbol]                       0x08001092   Section        0  pwm.o(.text._ZN3PWMC2EP11TIM_TypeDef12TIM_CHANNELS9TIM_REMAP)
+    [Anonymous Symbol]                       0x080010b4   Section        0  pwm.o(.text._ZN3PWMC2EPS_)
+    [Anonymous Symbol]                       0x080010f2   Section        0  gpio_1.o(.text._ZN4GPIO11SetGPIOModeE10GPIO_MODES)
+    [Anonymous Symbol]                       0x080010f6   Section        0  gpio_1.o(.text._ZN4GPIO12digitalWriteEb)
+    [Anonymous Symbol]                       0x08001110   Section        0  gpio_1.o(.text._ZN4GPIO13ConfigGPIOPinEv)
+    [Anonymous Symbol]                       0x080011bc   Section        0  gpio_1.o(.text._ZN4GPIO14SetGPIOPortPinE12GPIO_IO_ENUM)
+    [Anonymous Symbol]                       0x080011d4   Section        0  gpio_1.o(.text._ZN4GPIO9tooglePinEv)
+    [Anonymous Symbol]                       0x080011e6   Section        0  gpio_1.o(.text._ZN4GPIOC2E12GPIO_IO_ENUM10GPIO_MODES)
+    [Anonymous Symbol]                       0x08001224   Section        0  gpio_1.o(.text._ZN4GPIOC2EPS_)
+    [Anonymous Symbol]                       0x08001268   Section        0  motor.o(.text._ZN5Motor12getSpeedRadSEv)
+    [Anonymous Symbol]                       0x080012a0   Section        0  motor.o(.text._ZN5Motor16getDeltaDistanceEv)
+    [Anonymous Symbol]                       0x080012ec   Section        0  motor.o(.text._ZN5Motor17Motor_InitialiizeEv)
+    [Anonymous Symbol]                       0x08001300   Section        0  motor.o(.text._ZN5Motor21Motor_Handler_by_timeEv)
+    [Anonymous Symbol]                       0x0800131a   Section        0  motor.o(.text._ZN5Motor4getEEv)
+    [Anonymous Symbol]                       0x08001320   Section        0  motor.o(.text._ZN5Motor4getUEv)
+    [Anonymous Symbol]                       0x08001326   Section        0  motor.o(.text._ZN5Motor5resetEv)
+    [Anonymous Symbol]                       0x0800134e   Section        0  motor.o(.text._ZN5Motor7HandlerEv)
+    [Anonymous Symbol]                       0x08001480   Section        0  motor.o(.text._ZN5Motor7getTetaEv)
+    [Anonymous Symbol]                       0x08001486   Section        0  motor.o(.text._ZN5Motor9Get_SpeedEv)
+    [Anonymous Symbol]                       0x0800148c   Section        0  motor.o(.text._ZN5Motor9Set_SpeedEf)
+    [Anonymous Symbol]                       0x08001492   Section        0  motor.o(.text._ZN5MotorC2E3PWM7Encoder4GPIOS2_)
+    [Anonymous Symbol]                       0x08001578   Section        0  motor.o(.text._ZN5MotorC2EPS_)
+    [Anonymous Symbol]                       0x080015d6   Section        0  timer.o(.text._ZN5Timer11GetTIMRemapEv)
+    [Anonymous Symbol]                       0x08001632   Section        0  timer.o(.text._ZN5Timer11SetTIMRemapE9TIM_REMAP)
+    [Anonymous Symbol]                       0x08001696   Section        0  timer.o(.text._ZN5Timer12GetTime_usecEv)
+    [Anonymous Symbol]                       0x080016b0   Section        0  timer.o(.text._ZN5Timer13GetTIMChannelEv)
+    [Anonymous Symbol]                       0x080016b4   Section        0  timer.o(.text._ZN5Timer13Timer_HandlerEv)
+    [Anonymous Symbol]                       0x080016d2   Section        0  timer.o(.text._ZN5Timer17Timer_InitiallizeEv)
+    [Anonymous Symbol]                       0x08001712   Section        0  timer.o(.text._ZN5Timer19verifyTimeInterruptEv)
+    [Anonymous Symbol]                       0x0800172a   Section        0  timer.o(.text._ZN5Timer6GetTimEv)
+    [Anonymous Symbol]                       0x0800172e   Section        0  timer.o(.text._ZN5Timer6SetTimEP11TIM_TypeDef)
+    [Anonymous Symbol]                       0x08001732   Section        0  timer.o(.text._ZN5Timer9TimerInitEv)
+    [Anonymous Symbol]                       0x08001814   Section        0  timer.o(.text._ZN5TimerC2EP11TIM_TypeDef12TIM_CHANNELS8TIM_MODE)
+    [Anonymous Symbol]                       0x08001826   Section        0  timer.o(.text._ZN5TimerC2EP11TIM_TypeDef8TIM_MODE)
+    [Anonymous Symbol]                       0x08001838   Section        0  usart.o(.text._ZN5USART4initE7BD_ENUM)
+    [Anonymous Symbol]                       0x080019b8   Section        0  usart.o(.text._ZN5USART7ReceiveEv)
+    [Anonymous Symbol]                       0x080019c8   Section        0  usart.o(.text._ZN5USART9AvailableEv)
+    [Anonymous Symbol]                       0x080019d2   Section        0  usart.o(.text._ZN5USART9sendFloatEPf)
+    [Anonymous Symbol]                       0x08001a06   Section        0  usart.o(.text._ZN5USARTC2EP13USART_TypeDef7BD_ENUM)
+    [Anonymous Symbol]                       0x08001a16   Section        0  encoder.o(.text._ZN7Encoder13ConfigEncoderEv)
+    [Anonymous Symbol]                       0x08001c6c   Section        0  encoder.o(.text._ZN7Encoder13getDeltaTicksEv)
+    [Anonymous Symbol]                       0x08001c80   Section        0  encoder.o(.text._ZN7Encoder15Encoder_HandlerE12ENCODER_ENUM)
+    [Anonymous Symbol]                       0x08001c90   Section        0  encoder.o(.text._ZN7Encoder19Encoder_InitiallizeEv)
+    [Anonymous Symbol]                       0x08001c9e   Section        0  encoder.o(.text._ZN7Encoder23Encoder_Handler_by_TimeEv)
+    [Anonymous Symbol]                       0x08001d5a   Section        0  encoder.o(.text._ZN7Encoder5resetEv)
+    [Anonymous Symbol]                       0x08001d8a   Section        0  encoder.o(.text._ZN7Encoder7HandlerEv)
+    [Anonymous Symbol]                       0x08001e5a   Section        0  encoder.o(.text._ZN7Encoder7getTetaEv)
+    [Anonymous Symbol]                       0x08001e7e   Section        0  encoder.o(.text._ZN7Encoder8getSpeedEv)
+    [Anonymous Symbol]                       0x08001e8a   Section        0  encoder.o(.text._ZN7Encoder8getTicksEv)
+    [Anonymous Symbol]                       0x08001ea2   Section        0  encoder.o(.text._ZN7EncoderC2EP11TIM_TypeDef)
+    [Anonymous Symbol]                       0x08001eca   Section        0  encoder.o(.text._ZN7EncoderC2EPS_)
+    [Anonymous Symbol]                       0x08001efa   Section        0  sysclock.o(.text._ZN8SysClock12SysClockInitEv)
+    [Anonymous Symbol]                       0x08001f60   Section        0  sysclock.o(.text._ZN8SysClock15SysTickGetEventEv)
+    [Anonymous Symbol]                       0x08001f70   Section        0  sysclock.o(.text._ZN8SysClockC2Ev)
+    [Anonymous Symbol]                       0x08001f92   Section        0  kinematic_control.o(.text._ZN9Kinematic12getLineAngleEv)
+    [Anonymous Symbol]                       0x08001f98   Section        0  kinematic_control.o(.text._ZN9Kinematic13handlerByTimeEv)
+    [Anonymous Symbol]                       0x08001fa6   Section        0  kinematic_control.o(.text._ZN9Kinematic15getLinePositionEv)
+    [Anonymous Symbol]                       0x08001fac   Section        0  kinematic_control.o(.text._ZN9Kinematic17updateLineReadingEv)
+    [Anonymous Symbol]                       0x08002026   Section        0  kinematic_control.o(.text._ZN9Kinematic19calibrateLineSensorEj)
+    [Anonymous Symbol]                       0x0800203a   Section        0  kinematic_control.o(.text._ZN9Kinematic4getVEv)
+    [Anonymous Symbol]                       0x08002072   Section        0  kinematic_control.o(.text._ZN9Kinematic4getWEv)
+    [Anonymous Symbol]                       0x080020a6   Section        0  kinematic_control.o(.text._ZN9Kinematic4getXEv)
+    [Anonymous Symbol]                       0x080020ac   Section        0  kinematic_control.o(.text._ZN9Kinematic4getYEv)
+    [Anonymous Symbol]                       0x080020b2   Section        0  kinematic_control.o(.text._ZN9Kinematic5resetEv)
+    [Anonymous Symbol]                       0x080020ce   Section        0  kinematic_control.o(.text._ZN9Kinematic7getTetaEv)
+    [Anonymous Symbol]                       0x08002102   Section        0  kinematic_control.o(.text._ZN9Kinematic7handlerEv)
+    [Anonymous Symbol]                       0x08002170   Section        0  kinematic_control.o(.text._ZN9Kinematic8setSpeedEff)
+    [Anonymous Symbol]                       0x08002232   Section        0  kinematic_control.o(.text._ZN9KinematicC2E5MotorS0_11Line_Sensor)
+    [Anonymous Symbol]                       0x08002296   Section        0  kinematic_control.o(.text._ZN9KinematicC2EPS_)
+    [Anonymous Symbol]                       0x080022f6   Section        0  main.o(.text.main)
+    i.__ARM_fpclassifyf                      0x08002874   Section        0  fpclassifyf.o(i.__ARM_fpclassifyf)
+    i.__mathlib_flt_infnan                   0x0800289a   Section        0  funder.o(i.__mathlib_flt_infnan)
+    i.__mathlib_flt_infnan2                  0x080028a0   Section        0  funder.o(i.__mathlib_flt_infnan2)
+    i.__mathlib_flt_invalid                  0x080028a4   Section        0  funder.o(i.__mathlib_flt_invalid)
+    i.__mathlib_flt_underflow                0x080028ac   Section        0  funder.o(i.__mathlib_flt_underflow)
+    i.__mathlib_rredf2                       0x080028b8   Section        0  rredf.o(i.__mathlib_rredf2)
+    i.atan2f                                 0x08002a20   Section        0  atan2f.o(i.atan2f)
+    i.cosf                                   0x08002c7c   Section        0  cosf.o(i.cosf)
+    i.sinf                                   0x08002df8   Section        0  sinf.o(i.sinf)
+    x$fpl$d2f                                0x08002f80   Section       98  d2f.o(x$fpl$d2f)
+    x$fpl$dadd                               0x08002fe4   Section      336  daddsub_clz.o(x$fpl$dadd)
+    _dadd1                                   0x08002ff5   Thumb Code     0  daddsub_clz.o(x$fpl$dadd)
+    x$fpl$dcmpinf                            0x08003134   Section       24  dcmpi.o(x$fpl$dcmpinf)
+    x$fpl$ddiv                               0x0800314c   Section      688  ddiv.o(x$fpl$ddiv)
+    ddiv_entry                               0x08003153   Thumb Code     0  ddiv.o(x$fpl$ddiv)
+    x$fpl$deqf                               0x080033fc   Section      120  deqf.o(x$fpl$deqf)
+    x$fpl$dgeqf                              0x08003474   Section      120  dgeqf.o(x$fpl$dgeqf)
+    x$fpl$dleqf                              0x080034ec   Section      120  dleqf.o(x$fpl$dleqf)
+    x$fpl$dmul                               0x08003564   Section      340  dmul.o(x$fpl$dmul)
+    x$fpl$dnaninf                            0x080036b8   Section      156  dnaninf.o(x$fpl$dnaninf)
+    x$fpl$dretinf                            0x08003754   Section       12  dretinf.o(x$fpl$dretinf)
+    x$fpl$dsub                               0x08003760   Section      468  daddsub_clz.o(x$fpl$dsub)
+    _dsub1                                   0x08003771   Thumb Code     0  daddsub_clz.o(x$fpl$dsub)
+    x$fpl$f2d                                0x08003934   Section       86  f2d.o(x$fpl$f2d)
+    x$fpl$fadd                               0x0800398c   Section      196  faddsub_clz.o(x$fpl$fadd)
+    _fadd1                                   0x0800399b   Thumb Code     0  faddsub_clz.o(x$fpl$fadd)
+    x$fpl$fcheck1                            0x08003a50   Section       12  fcheck1.o(x$fpl$fcheck1)
+    x$fpl$fcmp                               0x08003a5c   Section       84  dcmp.o(x$fpl$fcmp)
+    x$fpl$fcmp                               0x08003ab0   Section       84  fcmp.o(x$fpl$fcmp)
+    x$fpl$fcmpinf                            0x08003b04   Section       24  fcmpi.o(x$fpl$fcmpinf)
+    x$fpl$fdiv                               0x08003b1c   Section      388  fdiv.o(x$fpl$fdiv)
+    _fdiv1                                   0x08003b1d   Thumb Code     0  fdiv.o(x$fpl$fdiv)
+    x$fpl$feqf                               0x08003ca0   Section      104  feqf.o(x$fpl$feqf)
+    x$fpl$ffix                               0x08003d08   Section       54  ffix.o(x$fpl$ffix)
+    x$fpl$ffixu                              0x08003d40   Section       62  ffixu.o(x$fpl$ffixu)
+    x$fpl$fflt                               0x08003d80   Section       48  fflt_clz.o(x$fpl$fflt)
+    x$fpl$ffltu                              0x08003db0   Section       38  fflt_clz.o(x$fpl$ffltu)
+    x$fpl$fgeqf                              0x08003dd8   Section      104  fgeqf.o(x$fpl$fgeqf)
+    x$fpl$fleqf                              0x08003e40   Section      104  fleqf.o(x$fpl$fleqf)
+    x$fpl$fmul                               0x08003ea8   Section      258  fmul.o(x$fpl$fmul)
+    x$fpl$fnaninf                            0x08003faa   Section      140  fnaninf.o(x$fpl$fnaninf)
+    x$fpl$fretinf                            0x08004036   Section       10  fretinf.o(x$fpl$fretinf)
+    x$fpl$frnd                               0x08004040   Section       96  frnd.o(x$fpl$frnd)
+    x$fpl$frsb                               0x080040a0   Section       20  faddsub_clz.o(x$fpl$frsb)
+    x$fpl$fsub                               0x080040b4   Section      234  faddsub_clz.o(x$fpl$fsub)
+    _fsub1                                   0x080040c3   Thumb Code     0  faddsub_clz.o(x$fpl$fsub)
+    x$fpl$retnan                             0x0800419e   Section      100  retnan.o(x$fpl$retnan)
+    x$fpl$scalbnf                            0x08004202   Section       76  scalbnf.o(x$fpl$scalbnf)
+    x$fpl$trapveneer                         0x0800424e   Section       48  trapv.o(x$fpl$trapveneer)
+    x$fpl$usenofp                            0x0800427e   Section        0  usenofp.o(x$fpl$usenofp)
+    .constdata                               0x08004280   Section       32  rredf.o(.constdata)
+    twooverpi                                0x08004280   Data          32  rredf.o(.constdata)
     .bss                                     0x20000000   Section       96  libspace.o(.bss)
 
     Global Symbols
@@ -1859,212 +1859,212 @@ Image Symbol Table
     Controller::getWcontrol()                0x080002ed   Thumb Code     4  following_controler.o(.text._ZN10Controller11getWcontrolEv)
     Controller::HandlerByTime()              0x080002f1   Thumb Code    14  following_controler.o(.text._ZN10Controller13HandlerByTimeEv)
     Controller::calculateError()             0x080002ff   Thumb Code   112  following_controler.o(.text._ZN10Controller14calculateErrorEv)
-    Controller::kanayama_control()           0x0800036f   Thumb Code   320  following_controler.o(.text._ZN10Controller16kanayama_controlEv)
-    Controller::stop()                       0x080004af   Thumb Code     8  following_controler.o(.text._ZN10Controller4stopEv)
-    Controller::start(float, float)          0x080004b7   Thumb Code    34  following_controler.o(.text._ZN10Controller5startEff)
-    Controller::Handler()                    0x080004d9   Thumb Code    40  following_controler.o(.text._ZN10Controller7HandlerEv)
-    Controller::Controller(Kinematic)        0x08000501   Thumb Code    64  following_controler.o(.text._ZN10ControllerC2E9Kinematic)
-    Controller::Controller__sub_object(Kinematic) 0x08000501   Thumb Code    64  following_controler.o(.text._ZN10ControllerC2E9Kinematic)
-    Line_Sensor::read()                      0x08000541   Thumb Code   314  line_sensor.o(.text._ZN11Line_Sensor4readEv)
-    Line_Sensor::calibrate(unsigned)         0x0800067b   Thumb Code    38  line_sensor.o(.text._ZN11Line_Sensor9calibrateEj)
-    Line_Sensor::Line_Sensor(Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor) 0x080006a1   Thumb Code   320  line_sensor.o(.text._ZN11Line_SensorC2E18Reflectance_SensorS0_S0_S0_S0_S0_S0_S0_)
-    Line_Sensor::Line_Sensor__sub_object(Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor) 0x080006a1   Thumb Code   320  line_sensor.o(.text._ZN11Line_SensorC2E18Reflectance_SensorS0_S0_S0_S0_S0_S0_S0_)
-    Line_Sensor::Line_Sensor(Line_Sensor*)   0x080007e1   Thumb Code   118  line_sensor.o(.text._ZN11Line_SensorC2EPS_)
-    Line_Sensor::Line_Sensor__sub_object(Line_Sensor*) 0x080007e1   Thumb Code   118  line_sensor.o(.text._ZN11Line_SensorC2EPS_)
-    Communication::HandlerByTime()           0x08000857   Thumb Code    14  serial_communication.o(.text._ZN13Communication13HandlerByTimeEv)
-    Communication::verifyCommand()           0x08000865   Thumb Code    44  serial_communication.o(.text._ZN13Communication13verifyCommandEv)
-    Communication::waitForCommand()          0x08000891   Thumb Code    36  serial_communication.o(.text._ZN13Communication14waitForCommandEv)
-    Communication::Handler()                 0x080008b5   Thumb Code    62  serial_communication.o(.text._ZN13Communication7HandlerEv)
-    Communication::doCommand()               0x080008f5   Thumb Code   698  serial_communication.o(.text._ZN13Communication9doCommandEv)
-    Communication::Communication(Controller*, USART*) 0x08000baf   Thumb Code    24  serial_communication.o(.text._ZN13CommunicationC2EP10ControllerP5USART)
-    Communication::Communication__sub_object(Controller*, USART*) 0x08000baf   Thumb Code    24  serial_communication.o(.text._ZN13CommunicationC2EP10ControllerP5USART)
-    Reflectance_Sensor::Reflectance_Read()   0x08000bc7   Thumb Code    56  reflectance_sensor.o(.text._ZN18Reflectance_Sensor16Reflectance_ReadEv)
-    Reflectance_Sensor::Calib_Reflectance_Sensor() 0x08000bff   Thumb Code    34  reflectance_sensor.o(.text._ZN18Reflectance_Sensor24Calib_Reflectance_SensorEv)
-    Reflectance_Sensor::Reflectance_Sensor(ADC_CHANNELS) 0x08000c21   Thumb Code    18  reflectance_sensor.o(.text._ZN18Reflectance_SensorC2E12ADC_CHANNELS)
-    Reflectance_Sensor::Reflectance_Sensor__sub_object(ADC_CHANNELS) 0x08000c21   Thumb Code    18  reflectance_sensor.o(.text._ZN18Reflectance_SensorC2E12ADC_CHANNELS)
-    Reflectance_Sensor::Reflectance_Sensor(Reflectance_Sensor*) 0x08000c33   Thumb Code    32  reflectance_sensor.o(.text._ZN18Reflectance_SensorC2EPS_)
-    Reflectance_Sensor::Reflectance_Sensor__sub_object(Reflectance_Sensor*) 0x08000c33   Thumb Code    32  reflectance_sensor.o(.text._ZN18Reflectance_SensorC2EPS_)
-    ADC::analogRead()                        0x08000c53   Thumb Code    46  adc.o(.text._ZN3ADC10analogReadEv)
-    ADC::ConfigADCPin()                      0x08000c81   Thumb Code   176  adc.o(.text._ZN3ADC12ConfigADCPinEv)
-    ADC::GetADCChannel()                     0x08000d31   Thumb Code     4  adc.o(.text._ZN3ADC13GetADCChannelEv)
-    ADC::ADC(ADC_CHANNELS)                   0x08000d35   Thumb Code    14  adc.o(.text._ZN3ADCC2E12ADC_CHANNELS)
-    ADC::ADC__sub_object(ADC_CHANNELS)       0x08000d35   Thumb Code    14  adc.o(.text._ZN3ADCC2E12ADC_CHANNELS)
-    PWM::ConfigPWMPin()                      0x08000d45   Thumb Code   516  pwm.o(.text._ZN3PWM12ConfigPWMPinEv)
-    PWM::PWMInit()                           0x08000f49   Thumb Code   234  pwm.o(.text._ZN3PWM7PWMInitEv)
-    PWM::PWMWrite(float)                     0x08001033   Thumb Code   100  pwm.o(.text._ZN3PWM8PWMWriteEf)
-    PWM::PWM(TIM_TypeDef*, TIM_CHANNELS, TIM_REMAP) 0x08001097   Thumb Code    34  pwm.o(.text._ZN3PWMC2EP11TIM_TypeDef12TIM_CHANNELS9TIM_REMAP)
-    PWM::PWM__sub_object(TIM_TypeDef*, TIM_CHANNELS, TIM_REMAP) 0x08001097   Thumb Code    34  pwm.o(.text._ZN3PWMC2EP11TIM_TypeDef12TIM_CHANNELS9TIM_REMAP)
-    PWM::PWM(PWM*)                           0x080010b9   Thumb Code    62  pwm.o(.text._ZN3PWMC2EPS_)
-    PWM::PWM__sub_object(PWM*)               0x080010b9   Thumb Code    62  pwm.o(.text._ZN3PWMC2EPS_)
-    GPIO::SetGPIOMode(GPIO_MODES)            0x080010f7   Thumb Code     4  gpio_1.o(.text._ZN4GPIO11SetGPIOModeE10GPIO_MODES)
-    GPIO::digitalWrite(bool)                 0x080010fb   Thumb Code    26  gpio_1.o(.text._ZN4GPIO12digitalWriteEb)
-    GPIO::ConfigGPIOPin()                    0x08001115   Thumb Code   172  gpio_1.o(.text._ZN4GPIO13ConfigGPIOPinEv)
-    GPIO::SetGPIOPortPin(GPIO_IO_ENUM)       0x080011c1   Thumb Code    24  gpio_1.o(.text._ZN4GPIO14SetGPIOPortPinE12GPIO_IO_ENUM)
-    GPIO::tooglePin()                        0x080011d9   Thumb Code    18  gpio_1.o(.text._ZN4GPIO9tooglePinEv)
-    GPIO::GPIO(GPIO_IO_ENUM, GPIO_MODES)     0x080011eb   Thumb Code    62  gpio_1.o(.text._ZN4GPIOC2E12GPIO_IO_ENUM10GPIO_MODES)
-    GPIO::GPIO__sub_object(GPIO_IO_ENUM, GPIO_MODES) 0x080011eb   Thumb Code    62  gpio_1.o(.text._ZN4GPIOC2E12GPIO_IO_ENUM10GPIO_MODES)
-    GPIO::GPIO(GPIO*)                        0x08001229   Thumb Code    68  gpio_1.o(.text._ZN4GPIOC2EPS_)
-    GPIO::GPIO__sub_object(GPIO*)            0x08001229   Thumb Code    68  gpio_1.o(.text._ZN4GPIOC2EPS_)
-    Motor::getSpeedRadS()                    0x0800126d   Thumb Code    56  motor.o(.text._ZN5Motor12getSpeedRadSEv)
-    Motor::getDeltaDistance()                0x080012a5   Thumb Code    76  motor.o(.text._ZN5Motor16getDeltaDistanceEv)
-    Motor::Motor_Initialiize()               0x080012f1   Thumb Code    20  motor.o(.text._ZN5Motor17Motor_InitialiizeEv)
-    Motor::Motor_Handler_by_time()           0x08001305   Thumb Code    26  motor.o(.text._ZN5Motor21Motor_Handler_by_timeEv)
-    Motor::getE()                            0x0800131f   Thumb Code     6  motor.o(.text._ZN5Motor4getEEv)
-    Motor::getU()                            0x08001325   Thumb Code     6  motor.o(.text._ZN5Motor4getUEv)
-    Motor::reset()                           0x0800132b   Thumb Code    40  motor.o(.text._ZN5Motor5resetEv)
-    Motor::Handler()                         0x08001353   Thumb Code   306  motor.o(.text._ZN5Motor7HandlerEv)
-    Motor::getTeta()                         0x08001485   Thumb Code     6  motor.o(.text._ZN5Motor7getTetaEv)
-    Motor::Get_Speed()                       0x0800148b   Thumb Code     6  motor.o(.text._ZN5Motor9Get_SpeedEv)
-    Motor::Set_Speed(float)                  0x08001491   Thumb Code     6  motor.o(.text._ZN5Motor9Set_SpeedEf)
-    Motor::Motor(PWM, Encoder, GPIO, GPIO)   0x08001497   Thumb Code   230  motor.o(.text._ZN5MotorC2E3PWM7Encoder4GPIOS2_)
-    Motor::Motor__sub_object(PWM, Encoder, GPIO, GPIO) 0x08001497   Thumb Code   230  motor.o(.text._ZN5MotorC2E3PWM7Encoder4GPIOS2_)
-    Motor::Motor(Motor*)                     0x0800157d   Thumb Code    94  motor.o(.text._ZN5MotorC2EPS_)
-    Motor::Motor__sub_object(Motor*)         0x0800157d   Thumb Code    94  motor.o(.text._ZN5MotorC2EPS_)
-    Timer::GetTIMRemap()                     0x080015db   Thumb Code    92  timer.o(.text._ZN5Timer11GetTIMRemapEv)
-    Timer::SetTIMRemap(TIM_REMAP)            0x08001637   Thumb Code   100  timer.o(.text._ZN5Timer11SetTIMRemapE9TIM_REMAP)
-    Timer::GetTime_usec()                    0x0800169b   Thumb Code    26  timer.o(.text._ZN5Timer12GetTime_usecEv)
-    Timer::GetTIMChannel()                   0x080016b5   Thumb Code     4  timer.o(.text._ZN5Timer13GetTIMChannelEv)
-    Timer::Timer_Handler()                   0x080016b9   Thumb Code    30  timer.o(.text._ZN5Timer13Timer_HandlerEv)
-    Timer::Timer_Initiallize()               0x080016d7   Thumb Code    64  timer.o(.text._ZN5Timer17Timer_InitiallizeEv)
-    Timer::verifyTimeInterrupt()             0x08001717   Thumb Code    24  timer.o(.text._ZN5Timer19verifyTimeInterruptEv)
-    Timer::GetTim()                          0x0800172f   Thumb Code     4  timer.o(.text._ZN5Timer6GetTimEv)
-    Timer::SetTim(TIM_TypeDef*)              0x08001733   Thumb Code     4  timer.o(.text._ZN5Timer6SetTimEP11TIM_TypeDef)
-    Timer::TimerInit()                       0x08001737   Thumb Code   226  timer.o(.text._ZN5Timer9TimerInitEv)
-    Timer::Timer(TIM_TypeDef*, TIM_CHANNELS, TIM_MODE) 0x08001819   Thumb Code    18  timer.o(.text._ZN5TimerC2EP11TIM_TypeDef12TIM_CHANNELS8TIM_MODE)
-    Timer::Timer__sub_object(TIM_TypeDef*, TIM_CHANNELS, TIM_MODE) 0x08001819   Thumb Code    18  timer.o(.text._ZN5TimerC2EP11TIM_TypeDef12TIM_CHANNELS8TIM_MODE)
-    Timer::Timer(TIM_TypeDef*, TIM_MODE)     0x0800182b   Thumb Code    16  timer.o(.text._ZN5TimerC2EP11TIM_TypeDef8TIM_MODE)
-    Timer::Timer__sub_object(TIM_TypeDef*, TIM_MODE) 0x0800182b   Thumb Code    16  timer.o(.text._ZN5TimerC2EP11TIM_TypeDef8TIM_MODE)
-    USART::init(BD_ENUM)                     0x0800183d   Thumb Code   384  usart.o(.text._ZN5USART4initE7BD_ENUM)
-    USART::Receive()                         0x080019bd   Thumb Code    16  usart.o(.text._ZN5USART7ReceiveEv)
-    USART::Available()                       0x080019cd   Thumb Code    10  usart.o(.text._ZN5USART9AvailableEv)
-    USART::sendFloat(float*)                 0x080019d7   Thumb Code    52  usart.o(.text._ZN5USART9sendFloatEPf)
-    USART::USART(USART_TypeDef*, BD_ENUM)    0x08001a0b   Thumb Code    16  usart.o(.text._ZN5USARTC2EP13USART_TypeDef7BD_ENUM)
-    USART::USART__sub_object(USART_TypeDef*, BD_ENUM) 0x08001a0b   Thumb Code    16  usart.o(.text._ZN5USARTC2EP13USART_TypeDef7BD_ENUM)
-    Encoder::ConfigEncoder()                 0x08001a1b   Thumb Code   598  encoder.o(.text._ZN7Encoder13ConfigEncoderEv)
-    Encoder::getDeltaTicks()                 0x08001c71   Thumb Code    20  encoder.o(.text._ZN7Encoder13getDeltaTicksEv)
-    Encoder::Encoder_Handler(ENCODER_ENUM)   0x08001c85   Thumb Code    16  encoder.o(.text._ZN7Encoder15Encoder_HandlerE12ENCODER_ENUM)
-    Encoder::Encoder_Initiallize()           0x08001c95   Thumb Code    14  encoder.o(.text._ZN7Encoder19Encoder_InitiallizeEv)
-    Encoder::Encoder_Handler_by_Time()       0x08001ca3   Thumb Code   188  encoder.o(.text._ZN7Encoder23Encoder_Handler_by_TimeEv)
-    Encoder::reset()                         0x08001d5f   Thumb Code    48  encoder.o(.text._ZN7Encoder5resetEv)
-    Encoder::Handler()                       0x08001d8f   Thumb Code   208  encoder.o(.text._ZN7Encoder7HandlerEv)
-    Encoder::getTeta()                       0x08001e5f   Thumb Code    36  encoder.o(.text._ZN7Encoder7getTetaEv)
-    Encoder::getSpeed()                      0x08001e83   Thumb Code    12  encoder.o(.text._ZN7Encoder8getSpeedEv)
-    Encoder::getTicks()                      0x08001e8f   Thumb Code    24  encoder.o(.text._ZN7Encoder8getTicksEv)
-    Encoder::Encoder(TIM_TypeDef*)           0x08001ea7   Thumb Code    40  encoder.o(.text._ZN7EncoderC2EP11TIM_TypeDef)
-    Encoder::Encoder__sub_object(TIM_TypeDef*) 0x08001ea7   Thumb Code    40  encoder.o(.text._ZN7EncoderC2EP11TIM_TypeDef)
-    Encoder::Encoder(Encoder*)               0x08001ecf   Thumb Code    48  encoder.o(.text._ZN7EncoderC2EPS_)
-    Encoder::Encoder__sub_object(Encoder*)   0x08001ecf   Thumb Code    48  encoder.o(.text._ZN7EncoderC2EPS_)
-    SysClock::SysClockInit()                 0x08001eff   Thumb Code   102  sysclock.o(.text._ZN8SysClock12SysClockInitEv)
-    SysClock::SysTickGetEvent()              0x08001f65   Thumb Code    16  sysclock.o(.text._ZN8SysClock15SysTickGetEventEv)
-    SysClock::SysClock()                     0x08001f75   Thumb Code    34  sysclock.o(.text._ZN8SysClockC2Ev)
-    SysClock::SysClock__sub_object()         0x08001f75   Thumb Code    34  sysclock.o(.text._ZN8SysClockC2Ev)
-    Kinematic::getLineAngle()                0x08001f97   Thumb Code     6  kinematic_control.o(.text._ZN9Kinematic12getLineAngleEv)
-    Kinematic::handlerByTime()               0x08001f9d   Thumb Code    14  kinematic_control.o(.text._ZN9Kinematic13handlerByTimeEv)
-    Kinematic::getLinePosition()             0x08001fab   Thumb Code     6  kinematic_control.o(.text._ZN9Kinematic15getLinePositionEv)
-    Kinematic::updateLineReading()           0x08001fb1   Thumb Code   122  kinematic_control.o(.text._ZN9Kinematic17updateLineReadingEv)
-    Kinematic::calibrateLineSensor(unsigned) 0x0800202b   Thumb Code    20  kinematic_control.o(.text._ZN9Kinematic19calibrateLineSensorEj)
-    Kinematic::getV()                        0x0800203f   Thumb Code    56  kinematic_control.o(.text._ZN9Kinematic4getVEv)
-    Kinematic::getW()                        0x08002077   Thumb Code    52  kinematic_control.o(.text._ZN9Kinematic4getWEv)
-    Kinematic::getX()                        0x080020ab   Thumb Code     6  kinematic_control.o(.text._ZN9Kinematic4getXEv)
-    Kinematic::getY()                        0x080020b1   Thumb Code     6  kinematic_control.o(.text._ZN9Kinematic4getYEv)
-    Kinematic::reset()                       0x080020b7   Thumb Code    28  kinematic_control.o(.text._ZN9Kinematic5resetEv)
-    Kinematic::getTeta()                     0x080020d3   Thumb Code    52  kinematic_control.o(.text._ZN9Kinematic7getTetaEv)
-    Kinematic::handler()                     0x08002107   Thumb Code   110  kinematic_control.o(.text._ZN9Kinematic7handlerEv)
-    Kinematic::setSpeed(float, float)        0x08002175   Thumb Code   194  kinematic_control.o(.text._ZN9Kinematic8setSpeedEff)
-    Kinematic::Kinematic(Motor, Motor, Line_Sensor) 0x08002237   Thumb Code   100  kinematic_control.o(.text._ZN9KinematicC2E5MotorS0_11Line_Sensor)
-    Kinematic::Kinematic__sub_object(Motor, Motor, Line_Sensor) 0x08002237   Thumb Code   100  kinematic_control.o(.text._ZN9KinematicC2E5MotorS0_11Line_Sensor)
-    Kinematic::Kinematic(Kinematic*)         0x0800229b   Thumb Code    96  kinematic_control.o(.text._ZN9KinematicC2EPS_)
-    Kinematic::Kinematic__sub_object(Kinematic*) 0x0800229b   Thumb Code    96  kinematic_control.o(.text._ZN9KinematicC2EPS_)
-    main                                     0x080022fb   Thumb Code  1406  main.o(.text.main)
-    __ARM_fpclassifyf                        0x08002879   Thumb Code    38  fpclassifyf.o(i.__ARM_fpclassifyf)
-    __mathlib_flt_infnan                     0x0800289f   Thumb Code     6  funder.o(i.__mathlib_flt_infnan)
-    __mathlib_flt_infnan2                    0x080028a5   Thumb Code     4  funder.o(i.__mathlib_flt_infnan2)
-    __mathlib_flt_invalid                    0x080028a9   Thumb Code     8  funder.o(i.__mathlib_flt_invalid)
-    __mathlib_flt_underflow                  0x080028b1   Thumb Code    10  funder.o(i.__mathlib_flt_underflow)
-    __mathlib_rredf2                         0x080028bd   Thumb Code   344  rredf.o(i.__mathlib_rredf2)
-    atan2f                                   0x08002a25   Thumb Code   528  atan2f.o(i.atan2f)
-    cosf                                     0x08002c81   Thumb Code   328  cosf.o(i.cosf)
-    sinf                                     0x08002dfd   Thumb Code   338  sinf.o(i.sinf)
-    __aeabi_d2f                              0x08002f85   Thumb Code     0  d2f.o(x$fpl$d2f)
-    _d2f                                     0x08002f85   Thumb Code    98  d2f.o(x$fpl$d2f)
-    __aeabi_dadd                             0x08002fe9   Thumb Code     0  daddsub_clz.o(x$fpl$dadd)
-    _dadd                                    0x08002fe9   Thumb Code   332  daddsub_clz.o(x$fpl$dadd)
-    __fpl_dcmp_Inf                           0x08003139   Thumb Code    24  dcmpi.o(x$fpl$dcmpinf)
-    __aeabi_ddiv                             0x08003151   Thumb Code     0  ddiv.o(x$fpl$ddiv)
-    _ddiv                                    0x08003151   Thumb Code   552  ddiv.o(x$fpl$ddiv)
-    __aeabi_cdcmpeq                          0x08003401   Thumb Code     0  deqf.o(x$fpl$deqf)
-    _dcmpeq                                  0x08003401   Thumb Code   120  deqf.o(x$fpl$deqf)
-    __aeabi_cdcmpge                          0x08003479   Thumb Code     0  dgeqf.o(x$fpl$dgeqf)
-    _dcmpge                                  0x08003479   Thumb Code   120  dgeqf.o(x$fpl$dgeqf)
-    __aeabi_cdcmple                          0x080034f1   Thumb Code     0  dleqf.o(x$fpl$dleqf)
-    _dcmple                                  0x080034f1   Thumb Code   120  dleqf.o(x$fpl$dleqf)
-    __fpl_dcmple_InfNaN                      0x08003553   Thumb Code     0  dleqf.o(x$fpl$dleqf)
-    __aeabi_dmul                             0x08003569   Thumb Code     0  dmul.o(x$fpl$dmul)
-    _dmul                                    0x08003569   Thumb Code   332  dmul.o(x$fpl$dmul)
-    __fpl_dnaninf                            0x080036bd   Thumb Code   156  dnaninf.o(x$fpl$dnaninf)
-    __fpl_dretinf                            0x08003759   Thumb Code    12  dretinf.o(x$fpl$dretinf)
-    __aeabi_dsub                             0x08003765   Thumb Code     0  daddsub_clz.o(x$fpl$dsub)
-    _dsub                                    0x08003765   Thumb Code   464  daddsub_clz.o(x$fpl$dsub)
-    __aeabi_f2d                              0x08003939   Thumb Code     0  f2d.o(x$fpl$f2d)
-    _f2d                                     0x08003939   Thumb Code    86  f2d.o(x$fpl$f2d)
-    __aeabi_fadd                             0x08003991   Thumb Code     0  faddsub_clz.o(x$fpl$fadd)
-    _fadd                                    0x08003991   Thumb Code   196  faddsub_clz.o(x$fpl$fadd)
-    __fpl_fcheck_NaN1                        0x08003a55   Thumb Code     6  fcheck1.o(x$fpl$fcheck1)
-    __aeabi_dcmpeq                           0x08003a61   Thumb Code     0  dcmp.o(x$fpl$fcmp)
-    _deq                                     0x08003a61   Thumb Code    14  dcmp.o(x$fpl$fcmp)
-    _dneq                                    0x08003a6f   Thumb Code    14  dcmp.o(x$fpl$fcmp)
-    __aeabi_dcmpgt                           0x08003a7d   Thumb Code     0  dcmp.o(x$fpl$fcmp)
-    _dgr                                     0x08003a7d   Thumb Code    14  dcmp.o(x$fpl$fcmp)
-    __aeabi_dcmpge                           0x08003a8b   Thumb Code     0  dcmp.o(x$fpl$fcmp)
-    _dgeq                                    0x08003a8b   Thumb Code    14  dcmp.o(x$fpl$fcmp)
-    __aeabi_dcmple                           0x08003a99   Thumb Code     0  dcmp.o(x$fpl$fcmp)
-    _dleq                                    0x08003a99   Thumb Code    14  dcmp.o(x$fpl$fcmp)
-    __aeabi_dcmplt                           0x08003aa7   Thumb Code     0  dcmp.o(x$fpl$fcmp)
-    _dls                                     0x08003aa7   Thumb Code    14  dcmp.o(x$fpl$fcmp)
-    __aeabi_fcmpeq                           0x08003ab5   Thumb Code     0  fcmp.o(x$fpl$fcmp)
-    _feq                                     0x08003ab5   Thumb Code    14  fcmp.o(x$fpl$fcmp)
-    _fneq                                    0x08003ac3   Thumb Code    14  fcmp.o(x$fpl$fcmp)
-    __aeabi_fcmpgt                           0x08003ad1   Thumb Code     0  fcmp.o(x$fpl$fcmp)
-    _fgr                                     0x08003ad1   Thumb Code    14  fcmp.o(x$fpl$fcmp)
-    __aeabi_fcmpge                           0x08003adf   Thumb Code     0  fcmp.o(x$fpl$fcmp)
-    _fgeq                                    0x08003adf   Thumb Code    14  fcmp.o(x$fpl$fcmp)
-    __aeabi_fcmple                           0x08003aed   Thumb Code     0  fcmp.o(x$fpl$fcmp)
-    _fleq                                    0x08003aed   Thumb Code    14  fcmp.o(x$fpl$fcmp)
-    __aeabi_fcmplt                           0x08003afb   Thumb Code     0  fcmp.o(x$fpl$fcmp)
-    _fls                                     0x08003afb   Thumb Code    14  fcmp.o(x$fpl$fcmp)
-    __fpl_fcmp_Inf                           0x08003b09   Thumb Code    24  fcmpi.o(x$fpl$fcmpinf)
-    __aeabi_fdiv                             0x08003b21   Thumb Code     0  fdiv.o(x$fpl$fdiv)
-    _fdiv                                    0x08003b21   Thumb Code   384  fdiv.o(x$fpl$fdiv)
-    __aeabi_cfcmpeq                          0x08003ca5   Thumb Code     0  feqf.o(x$fpl$feqf)
-    _fcmpeq                                  0x08003ca5   Thumb Code   104  feqf.o(x$fpl$feqf)
-    __aeabi_f2iz                             0x08003d0d   Thumb Code     0  ffix.o(x$fpl$ffix)
-    _ffix                                    0x08003d0d   Thumb Code    54  ffix.o(x$fpl$ffix)
-    __aeabi_f2uiz                            0x08003d45   Thumb Code     0  ffixu.o(x$fpl$ffixu)
-    _ffixu                                   0x08003d45   Thumb Code    62  ffixu.o(x$fpl$ffixu)
-    __aeabi_i2f                              0x08003d85   Thumb Code     0  fflt_clz.o(x$fpl$fflt)
-    _fflt                                    0x08003d85   Thumb Code    48  fflt_clz.o(x$fpl$fflt)
-    __aeabi_ui2f                             0x08003db5   Thumb Code     0  fflt_clz.o(x$fpl$ffltu)
-    _ffltu                                   0x08003db5   Thumb Code    38  fflt_clz.o(x$fpl$ffltu)
-    _fcmpge                                  0x08003ddd   Thumb Code   104  fgeqf.o(x$fpl$fgeqf)
-    __aeabi_cfcmple                          0x08003e45   Thumb Code     0  fleqf.o(x$fpl$fleqf)
-    _fcmple                                  0x08003e45   Thumb Code   104  fleqf.o(x$fpl$fleqf)
-    __fpl_fcmple_InfNaN                      0x08003e97   Thumb Code     0  fleqf.o(x$fpl$fleqf)
-    __aeabi_fmul                             0x08003ead   Thumb Code     0  fmul.o(x$fpl$fmul)
-    _fmul                                    0x08003ead   Thumb Code   258  fmul.o(x$fpl$fmul)
-    __fpl_fnaninf                            0x08003faf   Thumb Code   140  fnaninf.o(x$fpl$fnaninf)
-    __fpl_fretinf                            0x0800403b   Thumb Code    10  fretinf.o(x$fpl$fretinf)
-    _frnd                                    0x08004045   Thumb Code    96  frnd.o(x$fpl$frnd)
-    __aeabi_frsub                            0x080040a5   Thumb Code     0  faddsub_clz.o(x$fpl$frsb)
-    _frsb                                    0x080040a5   Thumb Code    20  faddsub_clz.o(x$fpl$frsb)
-    __aeabi_fsub                             0x080040b9   Thumb Code     0  faddsub_clz.o(x$fpl$fsub)
-    _fsub                                    0x080040b9   Thumb Code   234  faddsub_clz.o(x$fpl$fsub)
-    __fpl_return_NaN                         0x080041a3   Thumb Code   100  retnan.o(x$fpl$retnan)
-    __ARM_scalbnf                            0x08004207   Thumb Code    76  scalbnf.o(x$fpl$scalbnf)
-    __fpl_cmpreturn                          0x08004253   Thumb Code    48  trapv.o(x$fpl$trapveneer)
-    __I$use$fp                               0x08004282   Number         0  usenofp.o(x$fpl$usenofp)
-    GPIO::GPIO_PORTS_PINS                    0x080042a4   Data         256  gpio_1.o(.rodata._ZN4GPIO15GPIO_PORTS_PINSE)
-    Region$$Table$$Base                      0x080043a4   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x080043b4   Number         0  anon$$obj.o(Region$$Table)
+    Controller::kanayama_control()           0x0800036f   Thumb Code   316  following_controler.o(.text._ZN10Controller16kanayama_controlEv)
+    Controller::stop()                       0x080004ab   Thumb Code     8  following_controler.o(.text._ZN10Controller4stopEv)
+    Controller::start(float, float)          0x080004b3   Thumb Code    34  following_controler.o(.text._ZN10Controller5startEff)
+    Controller::Handler()                    0x080004d5   Thumb Code    40  following_controler.o(.text._ZN10Controller7HandlerEv)
+    Controller::Controller(Kinematic)        0x080004fd   Thumb Code    64  following_controler.o(.text._ZN10ControllerC2E9Kinematic)
+    Controller::Controller__sub_object(Kinematic) 0x080004fd   Thumb Code    64  following_controler.o(.text._ZN10ControllerC2E9Kinematic)
+    Line_Sensor::read()                      0x0800053d   Thumb Code   314  line_sensor.o(.text._ZN11Line_Sensor4readEv)
+    Line_Sensor::calibrate(unsigned)         0x08000677   Thumb Code    38  line_sensor.o(.text._ZN11Line_Sensor9calibrateEj)
+    Line_Sensor::Line_Sensor(Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor) 0x0800069d   Thumb Code   320  line_sensor.o(.text._ZN11Line_SensorC2E18Reflectance_SensorS0_S0_S0_S0_S0_S0_S0_)
+    Line_Sensor::Line_Sensor__sub_object(Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor) 0x0800069d   Thumb Code   320  line_sensor.o(.text._ZN11Line_SensorC2E18Reflectance_SensorS0_S0_S0_S0_S0_S0_S0_)
+    Line_Sensor::Line_Sensor(Line_Sensor*)   0x080007dd   Thumb Code   118  line_sensor.o(.text._ZN11Line_SensorC2EPS_)
+    Line_Sensor::Line_Sensor__sub_object(Line_Sensor*) 0x080007dd   Thumb Code   118  line_sensor.o(.text._ZN11Line_SensorC2EPS_)
+    Communication::HandlerByTime()           0x08000853   Thumb Code    14  serial_communication.o(.text._ZN13Communication13HandlerByTimeEv)
+    Communication::verifyCommand()           0x08000861   Thumb Code    44  serial_communication.o(.text._ZN13Communication13verifyCommandEv)
+    Communication::waitForCommand()          0x0800088d   Thumb Code    36  serial_communication.o(.text._ZN13Communication14waitForCommandEv)
+    Communication::Handler()                 0x080008b1   Thumb Code    62  serial_communication.o(.text._ZN13Communication7HandlerEv)
+    Communication::doCommand()               0x080008f1   Thumb Code   698  serial_communication.o(.text._ZN13Communication9doCommandEv)
+    Communication::Communication(Controller*, USART*) 0x08000bab   Thumb Code    24  serial_communication.o(.text._ZN13CommunicationC2EP10ControllerP5USART)
+    Communication::Communication__sub_object(Controller*, USART*) 0x08000bab   Thumb Code    24  serial_communication.o(.text._ZN13CommunicationC2EP10ControllerP5USART)
+    Reflectance_Sensor::Reflectance_Read()   0x08000bc3   Thumb Code    56  reflectance_sensor.o(.text._ZN18Reflectance_Sensor16Reflectance_ReadEv)
+    Reflectance_Sensor::Calib_Reflectance_Sensor() 0x08000bfb   Thumb Code    34  reflectance_sensor.o(.text._ZN18Reflectance_Sensor24Calib_Reflectance_SensorEv)
+    Reflectance_Sensor::Reflectance_Sensor(ADC_CHANNELS) 0x08000c1d   Thumb Code    18  reflectance_sensor.o(.text._ZN18Reflectance_SensorC2E12ADC_CHANNELS)
+    Reflectance_Sensor::Reflectance_Sensor__sub_object(ADC_CHANNELS) 0x08000c1d   Thumb Code    18  reflectance_sensor.o(.text._ZN18Reflectance_SensorC2E12ADC_CHANNELS)
+    Reflectance_Sensor::Reflectance_Sensor(Reflectance_Sensor*) 0x08000c2f   Thumb Code    32  reflectance_sensor.o(.text._ZN18Reflectance_SensorC2EPS_)
+    Reflectance_Sensor::Reflectance_Sensor__sub_object(Reflectance_Sensor*) 0x08000c2f   Thumb Code    32  reflectance_sensor.o(.text._ZN18Reflectance_SensorC2EPS_)
+    ADC::analogRead()                        0x08000c4f   Thumb Code    46  adc.o(.text._ZN3ADC10analogReadEv)
+    ADC::ConfigADCPin()                      0x08000c7d   Thumb Code   176  adc.o(.text._ZN3ADC12ConfigADCPinEv)
+    ADC::GetADCChannel()                     0x08000d2d   Thumb Code     4  adc.o(.text._ZN3ADC13GetADCChannelEv)
+    ADC::ADC(ADC_CHANNELS)                   0x08000d31   Thumb Code    14  adc.o(.text._ZN3ADCC2E12ADC_CHANNELS)
+    ADC::ADC__sub_object(ADC_CHANNELS)       0x08000d31   Thumb Code    14  adc.o(.text._ZN3ADCC2E12ADC_CHANNELS)
+    PWM::ConfigPWMPin()                      0x08000d41   Thumb Code   516  pwm.o(.text._ZN3PWM12ConfigPWMPinEv)
+    PWM::PWMInit()                           0x08000f45   Thumb Code   234  pwm.o(.text._ZN3PWM7PWMInitEv)
+    PWM::PWMWrite(float)                     0x0800102f   Thumb Code   100  pwm.o(.text._ZN3PWM8PWMWriteEf)
+    PWM::PWM(TIM_TypeDef*, TIM_CHANNELS, TIM_REMAP) 0x08001093   Thumb Code    34  pwm.o(.text._ZN3PWMC2EP11TIM_TypeDef12TIM_CHANNELS9TIM_REMAP)
+    PWM::PWM__sub_object(TIM_TypeDef*, TIM_CHANNELS, TIM_REMAP) 0x08001093   Thumb Code    34  pwm.o(.text._ZN3PWMC2EP11TIM_TypeDef12TIM_CHANNELS9TIM_REMAP)
+    PWM::PWM(PWM*)                           0x080010b5   Thumb Code    62  pwm.o(.text._ZN3PWMC2EPS_)
+    PWM::PWM__sub_object(PWM*)               0x080010b5   Thumb Code    62  pwm.o(.text._ZN3PWMC2EPS_)
+    GPIO::SetGPIOMode(GPIO_MODES)            0x080010f3   Thumb Code     4  gpio_1.o(.text._ZN4GPIO11SetGPIOModeE10GPIO_MODES)
+    GPIO::digitalWrite(bool)                 0x080010f7   Thumb Code    26  gpio_1.o(.text._ZN4GPIO12digitalWriteEb)
+    GPIO::ConfigGPIOPin()                    0x08001111   Thumb Code   172  gpio_1.o(.text._ZN4GPIO13ConfigGPIOPinEv)
+    GPIO::SetGPIOPortPin(GPIO_IO_ENUM)       0x080011bd   Thumb Code    24  gpio_1.o(.text._ZN4GPIO14SetGPIOPortPinE12GPIO_IO_ENUM)
+    GPIO::tooglePin()                        0x080011d5   Thumb Code    18  gpio_1.o(.text._ZN4GPIO9tooglePinEv)
+    GPIO::GPIO(GPIO_IO_ENUM, GPIO_MODES)     0x080011e7   Thumb Code    62  gpio_1.o(.text._ZN4GPIOC2E12GPIO_IO_ENUM10GPIO_MODES)
+    GPIO::GPIO__sub_object(GPIO_IO_ENUM, GPIO_MODES) 0x080011e7   Thumb Code    62  gpio_1.o(.text._ZN4GPIOC2E12GPIO_IO_ENUM10GPIO_MODES)
+    GPIO::GPIO(GPIO*)                        0x08001225   Thumb Code    68  gpio_1.o(.text._ZN4GPIOC2EPS_)
+    GPIO::GPIO__sub_object(GPIO*)            0x08001225   Thumb Code    68  gpio_1.o(.text._ZN4GPIOC2EPS_)
+    Motor::getSpeedRadS()                    0x08001269   Thumb Code    56  motor.o(.text._ZN5Motor12getSpeedRadSEv)
+    Motor::getDeltaDistance()                0x080012a1   Thumb Code    76  motor.o(.text._ZN5Motor16getDeltaDistanceEv)
+    Motor::Motor_Initialiize()               0x080012ed   Thumb Code    20  motor.o(.text._ZN5Motor17Motor_InitialiizeEv)
+    Motor::Motor_Handler_by_time()           0x08001301   Thumb Code    26  motor.o(.text._ZN5Motor21Motor_Handler_by_timeEv)
+    Motor::getE()                            0x0800131b   Thumb Code     6  motor.o(.text._ZN5Motor4getEEv)
+    Motor::getU()                            0x08001321   Thumb Code     6  motor.o(.text._ZN5Motor4getUEv)
+    Motor::reset()                           0x08001327   Thumb Code    40  motor.o(.text._ZN5Motor5resetEv)
+    Motor::Handler()                         0x0800134f   Thumb Code   306  motor.o(.text._ZN5Motor7HandlerEv)
+    Motor::getTeta()                         0x08001481   Thumb Code     6  motor.o(.text._ZN5Motor7getTetaEv)
+    Motor::Get_Speed()                       0x08001487   Thumb Code     6  motor.o(.text._ZN5Motor9Get_SpeedEv)
+    Motor::Set_Speed(float)                  0x0800148d   Thumb Code     6  motor.o(.text._ZN5Motor9Set_SpeedEf)
+    Motor::Motor(PWM, Encoder, GPIO, GPIO)   0x08001493   Thumb Code   230  motor.o(.text._ZN5MotorC2E3PWM7Encoder4GPIOS2_)
+    Motor::Motor__sub_object(PWM, Encoder, GPIO, GPIO) 0x08001493   Thumb Code   230  motor.o(.text._ZN5MotorC2E3PWM7Encoder4GPIOS2_)
+    Motor::Motor(Motor*)                     0x08001579   Thumb Code    94  motor.o(.text._ZN5MotorC2EPS_)
+    Motor::Motor__sub_object(Motor*)         0x08001579   Thumb Code    94  motor.o(.text._ZN5MotorC2EPS_)
+    Timer::GetTIMRemap()                     0x080015d7   Thumb Code    92  timer.o(.text._ZN5Timer11GetTIMRemapEv)
+    Timer::SetTIMRemap(TIM_REMAP)            0x08001633   Thumb Code   100  timer.o(.text._ZN5Timer11SetTIMRemapE9TIM_REMAP)
+    Timer::GetTime_usec()                    0x08001697   Thumb Code    26  timer.o(.text._ZN5Timer12GetTime_usecEv)
+    Timer::GetTIMChannel()                   0x080016b1   Thumb Code     4  timer.o(.text._ZN5Timer13GetTIMChannelEv)
+    Timer::Timer_Handler()                   0x080016b5   Thumb Code    30  timer.o(.text._ZN5Timer13Timer_HandlerEv)
+    Timer::Timer_Initiallize()               0x080016d3   Thumb Code    64  timer.o(.text._ZN5Timer17Timer_InitiallizeEv)
+    Timer::verifyTimeInterrupt()             0x08001713   Thumb Code    24  timer.o(.text._ZN5Timer19verifyTimeInterruptEv)
+    Timer::GetTim()                          0x0800172b   Thumb Code     4  timer.o(.text._ZN5Timer6GetTimEv)
+    Timer::SetTim(TIM_TypeDef*)              0x0800172f   Thumb Code     4  timer.o(.text._ZN5Timer6SetTimEP11TIM_TypeDef)
+    Timer::TimerInit()                       0x08001733   Thumb Code   226  timer.o(.text._ZN5Timer9TimerInitEv)
+    Timer::Timer(TIM_TypeDef*, TIM_CHANNELS, TIM_MODE) 0x08001815   Thumb Code    18  timer.o(.text._ZN5TimerC2EP11TIM_TypeDef12TIM_CHANNELS8TIM_MODE)
+    Timer::Timer__sub_object(TIM_TypeDef*, TIM_CHANNELS, TIM_MODE) 0x08001815   Thumb Code    18  timer.o(.text._ZN5TimerC2EP11TIM_TypeDef12TIM_CHANNELS8TIM_MODE)
+    Timer::Timer(TIM_TypeDef*, TIM_MODE)     0x08001827   Thumb Code    16  timer.o(.text._ZN5TimerC2EP11TIM_TypeDef8TIM_MODE)
+    Timer::Timer__sub_object(TIM_TypeDef*, TIM_MODE) 0x08001827   Thumb Code    16  timer.o(.text._ZN5TimerC2EP11TIM_TypeDef8TIM_MODE)
+    USART::init(BD_ENUM)                     0x08001839   Thumb Code   384  usart.o(.text._ZN5USART4initE7BD_ENUM)
+    USART::Receive()                         0x080019b9   Thumb Code    16  usart.o(.text._ZN5USART7ReceiveEv)
+    USART::Available()                       0x080019c9   Thumb Code    10  usart.o(.text._ZN5USART9AvailableEv)
+    USART::sendFloat(float*)                 0x080019d3   Thumb Code    52  usart.o(.text._ZN5USART9sendFloatEPf)
+    USART::USART(USART_TypeDef*, BD_ENUM)    0x08001a07   Thumb Code    16  usart.o(.text._ZN5USARTC2EP13USART_TypeDef7BD_ENUM)
+    USART::USART__sub_object(USART_TypeDef*, BD_ENUM) 0x08001a07   Thumb Code    16  usart.o(.text._ZN5USARTC2EP13USART_TypeDef7BD_ENUM)
+    Encoder::ConfigEncoder()                 0x08001a17   Thumb Code   598  encoder.o(.text._ZN7Encoder13ConfigEncoderEv)
+    Encoder::getDeltaTicks()                 0x08001c6d   Thumb Code    20  encoder.o(.text._ZN7Encoder13getDeltaTicksEv)
+    Encoder::Encoder_Handler(ENCODER_ENUM)   0x08001c81   Thumb Code    16  encoder.o(.text._ZN7Encoder15Encoder_HandlerE12ENCODER_ENUM)
+    Encoder::Encoder_Initiallize()           0x08001c91   Thumb Code    14  encoder.o(.text._ZN7Encoder19Encoder_InitiallizeEv)
+    Encoder::Encoder_Handler_by_Time()       0x08001c9f   Thumb Code   188  encoder.o(.text._ZN7Encoder23Encoder_Handler_by_TimeEv)
+    Encoder::reset()                         0x08001d5b   Thumb Code    48  encoder.o(.text._ZN7Encoder5resetEv)
+    Encoder::Handler()                       0x08001d8b   Thumb Code   208  encoder.o(.text._ZN7Encoder7HandlerEv)
+    Encoder::getTeta()                       0x08001e5b   Thumb Code    36  encoder.o(.text._ZN7Encoder7getTetaEv)
+    Encoder::getSpeed()                      0x08001e7f   Thumb Code    12  encoder.o(.text._ZN7Encoder8getSpeedEv)
+    Encoder::getTicks()                      0x08001e8b   Thumb Code    24  encoder.o(.text._ZN7Encoder8getTicksEv)
+    Encoder::Encoder(TIM_TypeDef*)           0x08001ea3   Thumb Code    40  encoder.o(.text._ZN7EncoderC2EP11TIM_TypeDef)
+    Encoder::Encoder__sub_object(TIM_TypeDef*) 0x08001ea3   Thumb Code    40  encoder.o(.text._ZN7EncoderC2EP11TIM_TypeDef)
+    Encoder::Encoder(Encoder*)               0x08001ecb   Thumb Code    48  encoder.o(.text._ZN7EncoderC2EPS_)
+    Encoder::Encoder__sub_object(Encoder*)   0x08001ecb   Thumb Code    48  encoder.o(.text._ZN7EncoderC2EPS_)
+    SysClock::SysClockInit()                 0x08001efb   Thumb Code   102  sysclock.o(.text._ZN8SysClock12SysClockInitEv)
+    SysClock::SysTickGetEvent()              0x08001f61   Thumb Code    16  sysclock.o(.text._ZN8SysClock15SysTickGetEventEv)
+    SysClock::SysClock()                     0x08001f71   Thumb Code    34  sysclock.o(.text._ZN8SysClockC2Ev)
+    SysClock::SysClock__sub_object()         0x08001f71   Thumb Code    34  sysclock.o(.text._ZN8SysClockC2Ev)
+    Kinematic::getLineAngle()                0x08001f93   Thumb Code     6  kinematic_control.o(.text._ZN9Kinematic12getLineAngleEv)
+    Kinematic::handlerByTime()               0x08001f99   Thumb Code    14  kinematic_control.o(.text._ZN9Kinematic13handlerByTimeEv)
+    Kinematic::getLinePosition()             0x08001fa7   Thumb Code     6  kinematic_control.o(.text._ZN9Kinematic15getLinePositionEv)
+    Kinematic::updateLineReading()           0x08001fad   Thumb Code   122  kinematic_control.o(.text._ZN9Kinematic17updateLineReadingEv)
+    Kinematic::calibrateLineSensor(unsigned) 0x08002027   Thumb Code    20  kinematic_control.o(.text._ZN9Kinematic19calibrateLineSensorEj)
+    Kinematic::getV()                        0x0800203b   Thumb Code    56  kinematic_control.o(.text._ZN9Kinematic4getVEv)
+    Kinematic::getW()                        0x08002073   Thumb Code    52  kinematic_control.o(.text._ZN9Kinematic4getWEv)
+    Kinematic::getX()                        0x080020a7   Thumb Code     6  kinematic_control.o(.text._ZN9Kinematic4getXEv)
+    Kinematic::getY()                        0x080020ad   Thumb Code     6  kinematic_control.o(.text._ZN9Kinematic4getYEv)
+    Kinematic::reset()                       0x080020b3   Thumb Code    28  kinematic_control.o(.text._ZN9Kinematic5resetEv)
+    Kinematic::getTeta()                     0x080020cf   Thumb Code    52  kinematic_control.o(.text._ZN9Kinematic7getTetaEv)
+    Kinematic::handler()                     0x08002103   Thumb Code   110  kinematic_control.o(.text._ZN9Kinematic7handlerEv)
+    Kinematic::setSpeed(float, float)        0x08002171   Thumb Code   194  kinematic_control.o(.text._ZN9Kinematic8setSpeedEff)
+    Kinematic::Kinematic(Motor, Motor, Line_Sensor) 0x08002233   Thumb Code   100  kinematic_control.o(.text._ZN9KinematicC2E5MotorS0_11Line_Sensor)
+    Kinematic::Kinematic__sub_object(Motor, Motor, Line_Sensor) 0x08002233   Thumb Code   100  kinematic_control.o(.text._ZN9KinematicC2E5MotorS0_11Line_Sensor)
+    Kinematic::Kinematic(Kinematic*)         0x08002297   Thumb Code    96  kinematic_control.o(.text._ZN9KinematicC2EPS_)
+    Kinematic::Kinematic__sub_object(Kinematic*) 0x08002297   Thumb Code    96  kinematic_control.o(.text._ZN9KinematicC2EPS_)
+    main                                     0x080022f7   Thumb Code  1406  main.o(.text.main)
+    __ARM_fpclassifyf                        0x08002875   Thumb Code    38  fpclassifyf.o(i.__ARM_fpclassifyf)
+    __mathlib_flt_infnan                     0x0800289b   Thumb Code     6  funder.o(i.__mathlib_flt_infnan)
+    __mathlib_flt_infnan2                    0x080028a1   Thumb Code     4  funder.o(i.__mathlib_flt_infnan2)
+    __mathlib_flt_invalid                    0x080028a5   Thumb Code     8  funder.o(i.__mathlib_flt_invalid)
+    __mathlib_flt_underflow                  0x080028ad   Thumb Code    10  funder.o(i.__mathlib_flt_underflow)
+    __mathlib_rredf2                         0x080028b9   Thumb Code   344  rredf.o(i.__mathlib_rredf2)
+    atan2f                                   0x08002a21   Thumb Code   528  atan2f.o(i.atan2f)
+    cosf                                     0x08002c7d   Thumb Code   328  cosf.o(i.cosf)
+    sinf                                     0x08002df9   Thumb Code   338  sinf.o(i.sinf)
+    __aeabi_d2f                              0x08002f81   Thumb Code     0  d2f.o(x$fpl$d2f)
+    _d2f                                     0x08002f81   Thumb Code    98  d2f.o(x$fpl$d2f)
+    __aeabi_dadd                             0x08002fe5   Thumb Code     0  daddsub_clz.o(x$fpl$dadd)
+    _dadd                                    0x08002fe5   Thumb Code   332  daddsub_clz.o(x$fpl$dadd)
+    __fpl_dcmp_Inf                           0x08003135   Thumb Code    24  dcmpi.o(x$fpl$dcmpinf)
+    __aeabi_ddiv                             0x0800314d   Thumb Code     0  ddiv.o(x$fpl$ddiv)
+    _ddiv                                    0x0800314d   Thumb Code   552  ddiv.o(x$fpl$ddiv)
+    __aeabi_cdcmpeq                          0x080033fd   Thumb Code     0  deqf.o(x$fpl$deqf)
+    _dcmpeq                                  0x080033fd   Thumb Code   120  deqf.o(x$fpl$deqf)
+    __aeabi_cdcmpge                          0x08003475   Thumb Code     0  dgeqf.o(x$fpl$dgeqf)
+    _dcmpge                                  0x08003475   Thumb Code   120  dgeqf.o(x$fpl$dgeqf)
+    __aeabi_cdcmple                          0x080034ed   Thumb Code     0  dleqf.o(x$fpl$dleqf)
+    _dcmple                                  0x080034ed   Thumb Code   120  dleqf.o(x$fpl$dleqf)
+    __fpl_dcmple_InfNaN                      0x0800354f   Thumb Code     0  dleqf.o(x$fpl$dleqf)
+    __aeabi_dmul                             0x08003565   Thumb Code     0  dmul.o(x$fpl$dmul)
+    _dmul                                    0x08003565   Thumb Code   332  dmul.o(x$fpl$dmul)
+    __fpl_dnaninf                            0x080036b9   Thumb Code   156  dnaninf.o(x$fpl$dnaninf)
+    __fpl_dretinf                            0x08003755   Thumb Code    12  dretinf.o(x$fpl$dretinf)
+    __aeabi_dsub                             0x08003761   Thumb Code     0  daddsub_clz.o(x$fpl$dsub)
+    _dsub                                    0x08003761   Thumb Code   464  daddsub_clz.o(x$fpl$dsub)
+    __aeabi_f2d                              0x08003935   Thumb Code     0  f2d.o(x$fpl$f2d)
+    _f2d                                     0x08003935   Thumb Code    86  f2d.o(x$fpl$f2d)
+    __aeabi_fadd                             0x0800398d   Thumb Code     0  faddsub_clz.o(x$fpl$fadd)
+    _fadd                                    0x0800398d   Thumb Code   196  faddsub_clz.o(x$fpl$fadd)
+    __fpl_fcheck_NaN1                        0x08003a51   Thumb Code     6  fcheck1.o(x$fpl$fcheck1)
+    __aeabi_dcmpeq                           0x08003a5d   Thumb Code     0  dcmp.o(x$fpl$fcmp)
+    _deq                                     0x08003a5d   Thumb Code    14  dcmp.o(x$fpl$fcmp)
+    _dneq                                    0x08003a6b   Thumb Code    14  dcmp.o(x$fpl$fcmp)
+    __aeabi_dcmpgt                           0x08003a79   Thumb Code     0  dcmp.o(x$fpl$fcmp)
+    _dgr                                     0x08003a79   Thumb Code    14  dcmp.o(x$fpl$fcmp)
+    __aeabi_dcmpge                           0x08003a87   Thumb Code     0  dcmp.o(x$fpl$fcmp)
+    _dgeq                                    0x08003a87   Thumb Code    14  dcmp.o(x$fpl$fcmp)
+    __aeabi_dcmple                           0x08003a95   Thumb Code     0  dcmp.o(x$fpl$fcmp)
+    _dleq                                    0x08003a95   Thumb Code    14  dcmp.o(x$fpl$fcmp)
+    __aeabi_dcmplt                           0x08003aa3   Thumb Code     0  dcmp.o(x$fpl$fcmp)
+    _dls                                     0x08003aa3   Thumb Code    14  dcmp.o(x$fpl$fcmp)
+    __aeabi_fcmpeq                           0x08003ab1   Thumb Code     0  fcmp.o(x$fpl$fcmp)
+    _feq                                     0x08003ab1   Thumb Code    14  fcmp.o(x$fpl$fcmp)
+    _fneq                                    0x08003abf   Thumb Code    14  fcmp.o(x$fpl$fcmp)
+    __aeabi_fcmpgt                           0x08003acd   Thumb Code     0  fcmp.o(x$fpl$fcmp)
+    _fgr                                     0x08003acd   Thumb Code    14  fcmp.o(x$fpl$fcmp)
+    __aeabi_fcmpge                           0x08003adb   Thumb Code     0  fcmp.o(x$fpl$fcmp)
+    _fgeq                                    0x08003adb   Thumb Code    14  fcmp.o(x$fpl$fcmp)
+    __aeabi_fcmple                           0x08003ae9   Thumb Code     0  fcmp.o(x$fpl$fcmp)
+    _fleq                                    0x08003ae9   Thumb Code    14  fcmp.o(x$fpl$fcmp)
+    __aeabi_fcmplt                           0x08003af7   Thumb Code     0  fcmp.o(x$fpl$fcmp)
+    _fls                                     0x08003af7   Thumb Code    14  fcmp.o(x$fpl$fcmp)
+    __fpl_fcmp_Inf                           0x08003b05   Thumb Code    24  fcmpi.o(x$fpl$fcmpinf)
+    __aeabi_fdiv                             0x08003b1d   Thumb Code     0  fdiv.o(x$fpl$fdiv)
+    _fdiv                                    0x08003b1d   Thumb Code   384  fdiv.o(x$fpl$fdiv)
+    __aeabi_cfcmpeq                          0x08003ca1   Thumb Code     0  feqf.o(x$fpl$feqf)
+    _fcmpeq                                  0x08003ca1   Thumb Code   104  feqf.o(x$fpl$feqf)
+    __aeabi_f2iz                             0x08003d09   Thumb Code     0  ffix.o(x$fpl$ffix)
+    _ffix                                    0x08003d09   Thumb Code    54  ffix.o(x$fpl$ffix)
+    __aeabi_f2uiz                            0x08003d41   Thumb Code     0  ffixu.o(x$fpl$ffixu)
+    _ffixu                                   0x08003d41   Thumb Code    62  ffixu.o(x$fpl$ffixu)
+    __aeabi_i2f                              0x08003d81   Thumb Code     0  fflt_clz.o(x$fpl$fflt)
+    _fflt                                    0x08003d81   Thumb Code    48  fflt_clz.o(x$fpl$fflt)
+    __aeabi_ui2f                             0x08003db1   Thumb Code     0  fflt_clz.o(x$fpl$ffltu)
+    _ffltu                                   0x08003db1   Thumb Code    38  fflt_clz.o(x$fpl$ffltu)
+    _fcmpge                                  0x08003dd9   Thumb Code   104  fgeqf.o(x$fpl$fgeqf)
+    __aeabi_cfcmple                          0x08003e41   Thumb Code     0  fleqf.o(x$fpl$fleqf)
+    _fcmple                                  0x08003e41   Thumb Code   104  fleqf.o(x$fpl$fleqf)
+    __fpl_fcmple_InfNaN                      0x08003e93   Thumb Code     0  fleqf.o(x$fpl$fleqf)
+    __aeabi_fmul                             0x08003ea9   Thumb Code     0  fmul.o(x$fpl$fmul)
+    _fmul                                    0x08003ea9   Thumb Code   258  fmul.o(x$fpl$fmul)
+    __fpl_fnaninf                            0x08003fab   Thumb Code   140  fnaninf.o(x$fpl$fnaninf)
+    __fpl_fretinf                            0x08004037   Thumb Code    10  fretinf.o(x$fpl$fretinf)
+    _frnd                                    0x08004041   Thumb Code    96  frnd.o(x$fpl$frnd)
+    __aeabi_frsub                            0x080040a1   Thumb Code     0  faddsub_clz.o(x$fpl$frsb)
+    _frsb                                    0x080040a1   Thumb Code    20  faddsub_clz.o(x$fpl$frsb)
+    __aeabi_fsub                             0x080040b5   Thumb Code     0  faddsub_clz.o(x$fpl$fsub)
+    _fsub                                    0x080040b5   Thumb Code   234  faddsub_clz.o(x$fpl$fsub)
+    __fpl_return_NaN                         0x0800419f   Thumb Code   100  retnan.o(x$fpl$retnan)
+    __ARM_scalbnf                            0x08004203   Thumb Code    76  scalbnf.o(x$fpl$scalbnf)
+    __fpl_cmpreturn                          0x0800424f   Thumb Code    48  trapv.o(x$fpl$trapveneer)
+    __I$use$fp                               0x0800427e   Number         0  usenofp.o(x$fpl$usenofp)
+    GPIO::GPIO_PORTS_PINS                    0x080042a0   Data         256  gpio_1.o(.rodata._ZN4GPIO15GPIO_PORTS_PINSE)
+    Region$$Table$$Base                      0x080043a0   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x080043b0   Number         0  anon$$obj.o(Region$$Table)
     __libspace_start                         0x20000000   Data          96  libspace.o(.bss)
     Controller::ptController                 0x20000060   Data           4  following_controler.o(.bss._ZN10Controller12ptControllerE)
     __temporary_stack_top$libspace           0x20000060   Data           0  libspace.o(.bss)
@@ -2095,9 +2095,9 @@ Memory Map of the image
 
   Image Entry point : 0x0800016d
 
-  Load Region LR_1 (Base: 0x08000000, Size: 0x000043b4, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x08000000, Size: 0x000043b0, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000043b4, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000043b0, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2167,167 +2167,167 @@ Memory Map of the image
     0x080002ec   0x080002ec   0x00000004   Code   RO          436    .text._ZN10Controller11getWcontrolEv  following_controler.o
     0x080002f0   0x080002f0   0x0000000e   Code   RO          412    .text._ZN10Controller13HandlerByTimeEv  following_controler.o
     0x080002fe   0x080002fe   0x00000070   Code   RO          416    .text._ZN10Controller14calculateErrorEv  following_controler.o
-    0x0800036e   0x0800036e   0x00000140   Code   RO          428    .text._ZN10Controller16kanayama_controlEv  following_controler.o
-    0x080004ae   0x080004ae   0x00000008   Code   RO          426    .text._ZN10Controller4stopEv  following_controler.o
-    0x080004b6   0x080004b6   0x00000022   Code   RO          420    .text._ZN10Controller5startEff  following_controler.o
-    0x080004d8   0x080004d8   0x00000028   Code   RO          414    .text._ZN10Controller7HandlerEv  following_controler.o
-    0x08000500   0x08000500   0x00000040   Code   RO          410    .text._ZN10ControllerC2E9Kinematic  following_controler.o
-    0x08000540   0x08000540   0x0000013a   Code   RO          313    .text._ZN11Line_Sensor4readEv  line_sensor.o
-    0x0800067a   0x0800067a   0x00000026   Code   RO          311    .text._ZN11Line_Sensor9calibrateEj  line_sensor.o
-    0x080006a0   0x080006a0   0x00000140   Code   RO          307    .text._ZN11Line_SensorC2E18Reflectance_SensorS0_S0_S0_S0_S0_S0_S0_  line_sensor.o
-    0x080007e0   0x080007e0   0x00000076   Code   RO          309    .text._ZN11Line_SensorC2EPS_  line_sensor.o
-    0x08000856   0x08000856   0x0000000e   Code   RO          452    .text._ZN13Communication13HandlerByTimeEv  serial_communication.o
-    0x08000864   0x08000864   0x0000002c   Code   RO          458    .text._ZN13Communication13verifyCommandEv  serial_communication.o
-    0x08000890   0x08000890   0x00000024   Code   RO          460    .text._ZN13Communication14waitForCommandEv  serial_communication.o
-    0x080008b4   0x080008b4   0x0000003e   Code   RO          454    .text._ZN13Communication7HandlerEv  serial_communication.o
-    0x080008f2   0x080008f2   0x00000002   PAD
-    0x080008f4   0x080008f4   0x000002ba   Code   RO          456    .text._ZN13Communication9doCommandEv  serial_communication.o
-    0x08000bae   0x08000bae   0x00000018   Code   RO          450    .text._ZN13CommunicationC2EP10ControllerP5USART  serial_communication.o
-    0x08000bc6   0x08000bc6   0x00000038   Code   RO          294    .text._ZN18Reflectance_Sensor16Reflectance_ReadEv  reflectance_sensor.o
-    0x08000bfe   0x08000bfe   0x00000022   Code   RO          292    .text._ZN18Reflectance_Sensor24Calib_Reflectance_SensorEv  reflectance_sensor.o
-    0x08000c20   0x08000c20   0x00000012   Code   RO          288    .text._ZN18Reflectance_SensorC2E12ADC_CHANNELS  reflectance_sensor.o
-    0x08000c32   0x08000c32   0x00000020   Code   RO          290    .text._ZN18Reflectance_SensorC2EPS_  reflectance_sensor.o
-    0x08000c52   0x08000c52   0x0000002e   Code   RO          160    .text._ZN3ADC10analogReadEv  adc.o
-    0x08000c80   0x08000c80   0x000000b0   Code   RO          154    .text._ZN3ADC12ConfigADCPinEv  adc.o
-    0x08000d30   0x08000d30   0x00000004   Code   RO          156    .text._ZN3ADC13GetADCChannelEv  adc.o
-    0x08000d34   0x08000d34   0x0000000e   Code   RO          150    .text._ZN3ADCC2E12ADC_CHANNELS  adc.o
-    0x08000d42   0x08000d42   0x00000002   PAD
-    0x08000d44   0x08000d44   0x00000204   Code   RO          131    .text._ZN3PWM12ConfigPWMPinEv  pwm.o
-    0x08000f48   0x08000f48   0x000000ea   Code   RO          133    .text._ZN3PWM7PWMInitEv  pwm.o
-    0x08001032   0x08001032   0x00000064   Code   RO          137    .text._ZN3PWM8PWMWriteEf  pwm.o
-    0x08001096   0x08001096   0x00000022   Code   RO          129    .text._ZN3PWMC2EP11TIM_TypeDef12TIM_CHANNELS9TIM_REMAP  pwm.o
-    0x080010b8   0x080010b8   0x0000003e   Code   RO          135    .text._ZN3PWMC2EPS_  pwm.o
-    0x080010f6   0x080010f6   0x00000004   Code   RO           15    .text._ZN4GPIO11SetGPIOModeE10GPIO_MODES  gpio_1.o
-    0x080010fa   0x080010fa   0x0000001a   Code   RO           31    .text._ZN4GPIO12digitalWriteEb  gpio_1.o
-    0x08001114   0x08001114   0x000000ac   Code   RO           17    .text._ZN4GPIO13ConfigGPIOPinEv  gpio_1.o
-    0x080011c0   0x080011c0   0x00000018   Code   RO           13    .text._ZN4GPIO14SetGPIOPortPinE12GPIO_IO_ENUM  gpio_1.o
-    0x080011d8   0x080011d8   0x00000012   Code   RO           35    .text._ZN4GPIO9tooglePinEv  gpio_1.o
-    0x080011ea   0x080011ea   0x0000003e   Code   RO            9    .text._ZN4GPIOC2E12GPIO_IO_ENUM10GPIO_MODES  gpio_1.o
-    0x08001228   0x08001228   0x00000044   Code   RO           21    .text._ZN4GPIOC2EPS_  gpio_1.o
-    0x0800126c   0x0800126c   0x00000038   Code   RO          342    .text._ZN5Motor12getSpeedRadSEv  motor.o
-    0x080012a4   0x080012a4   0x0000004c   Code   RO          352    .text._ZN5Motor16getDeltaDistanceEv  motor.o
-    0x080012f0   0x080012f0   0x00000014   Code   RO          326    .text._ZN5Motor17Motor_InitialiizeEv  motor.o
-    0x08001304   0x08001304   0x0000001a   Code   RO          328    .text._ZN5Motor21Motor_Handler_by_timeEv  motor.o
-    0x0800131e   0x0800131e   0x00000006   Code   RO          346    .text._ZN5Motor4getEEv  motor.o
-    0x08001324   0x08001324   0x00000006   Code   RO          344    .text._ZN5Motor4getUEv  motor.o
-    0x0800132a   0x0800132a   0x00000028   Code   RO          338    .text._ZN5Motor5resetEv  motor.o
-    0x08001352   0x08001352   0x00000132   Code   RO          330    .text._ZN5Motor7HandlerEv  motor.o
-    0x08001484   0x08001484   0x00000006   Code   RO          348    .text._ZN5Motor7getTetaEv  motor.o
-    0x0800148a   0x0800148a   0x00000006   Code   RO          340    .text._ZN5Motor9Get_SpeedEv  motor.o
-    0x08001490   0x08001490   0x00000006   Code   RO          334    .text._ZN5Motor9Set_SpeedEf  motor.o
-    0x08001496   0x08001496   0x000000e6   Code   RO          332    .text._ZN5MotorC2E3PWM7Encoder4GPIOS2_  motor.o
-    0x0800157c   0x0800157c   0x0000005e   Code   RO          336    .text._ZN5MotorC2EPS_  motor.o
-    0x080015da   0x080015da   0x0000005c   Code   RO          109    .text._ZN5Timer11GetTIMRemapEv  timer.o
-    0x08001636   0x08001636   0x00000064   Code   RO          105    .text._ZN5Timer11SetTIMRemapE9TIM_REMAP  timer.o
-    0x0800169a   0x0800169a   0x0000001a   Code   RO           81    .text._ZN5Timer12GetTime_usecEv  timer.o
-    0x080016b4   0x080016b4   0x00000004   Code   RO          107    .text._ZN5Timer13GetTIMChannelEv  timer.o
-    0x080016b8   0x080016b8   0x0000001e   Code   RO           77    .text._ZN5Timer13Timer_HandlerEv  timer.o
-    0x080016d6   0x080016d6   0x00000040   Code   RO           75    .text._ZN5Timer17Timer_InitiallizeEv  timer.o
-    0x08001716   0x08001716   0x00000018   Code   RO           79    .text._ZN5Timer19verifyTimeInterruptEv  timer.o
-    0x0800172e   0x0800172e   0x00000004   Code   RO           97    .text._ZN5Timer6GetTimEv  timer.o
-    0x08001732   0x08001732   0x00000004   Code   RO           87    .text._ZN5Timer6SetTimEP11TIM_TypeDef  timer.o
-    0x08001736   0x08001736   0x000000e2   Code   RO           93    .text._ZN5Timer9TimerInitEv  timer.o
-    0x08001818   0x08001818   0x00000012   Code   RO           85    .text._ZN5TimerC2EP11TIM_TypeDef12TIM_CHANNELS8TIM_MODE  timer.o
-    0x0800182a   0x0800182a   0x00000010   Code   RO           95    .text._ZN5TimerC2EP11TIM_TypeDef8TIM_MODE  timer.o
-    0x0800183a   0x0800183a   0x00000002   PAD
-    0x0800183c   0x0800183c   0x00000180   Code   RO          225    .text._ZN5USART4initE7BD_ENUM  usart.o
-    0x080019bc   0x080019bc   0x00000010   Code   RO          237    .text._ZN5USART7ReceiveEv  usart.o
-    0x080019cc   0x080019cc   0x0000000a   Code   RO          239    .text._ZN5USART9AvailableEv  usart.o
-    0x080019d6   0x080019d6   0x00000034   Code   RO          233    .text._ZN5USART9sendFloatEPf  usart.o
-    0x08001a0a   0x08001a0a   0x00000010   Code   RO          223    .text._ZN5USARTC2EP13USART_TypeDef7BD_ENUM  usart.o
-    0x08001a1a   0x08001a1a   0x00000256   Code   RO          184    .text._ZN7Encoder13ConfigEncoderEv  encoder.o
-    0x08001c70   0x08001c70   0x00000014   Code   RO          192    .text._ZN7Encoder13getDeltaTicksEv  encoder.o
-    0x08001c84   0x08001c84   0x00000010   Code   RO          176    .text._ZN7Encoder15Encoder_HandlerE12ENCODER_ENUM  encoder.o
-    0x08001c94   0x08001c94   0x0000000e   Code   RO          174    .text._ZN7Encoder19Encoder_InitiallizeEv  encoder.o
-    0x08001ca2   0x08001ca2   0x000000bc   Code   RO          180    .text._ZN7Encoder23Encoder_Handler_by_TimeEv  encoder.o
-    0x08001d5e   0x08001d5e   0x00000030   Code   RO          188    .text._ZN7Encoder5resetEv  encoder.o
-    0x08001d8e   0x08001d8e   0x000000d0   Code   RO          178    .text._ZN7Encoder7HandlerEv  encoder.o
-    0x08001e5e   0x08001e5e   0x00000024   Code   RO          206    .text._ZN7Encoder7getTetaEv  encoder.o
-    0x08001e82   0x08001e82   0x0000000c   Code   RO          200    .text._ZN7Encoder8getSpeedEv  encoder.o
-    0x08001e8e   0x08001e8e   0x00000018   Code   RO          190    .text._ZN7Encoder8getTicksEv  encoder.o
-    0x08001ea6   0x08001ea6   0x00000028   Code   RO          182    .text._ZN7EncoderC2EP11TIM_TypeDef  encoder.o
-    0x08001ece   0x08001ece   0x00000030   Code   RO          186    .text._ZN7EncoderC2EPS_  encoder.o
-    0x08001efe   0x08001efe   0x00000066   Code   RO           56    .text._ZN8SysClock12SysClockInitEv  sysclock.o
-    0x08001f64   0x08001f64   0x00000010   Code   RO           62    .text._ZN8SysClock15SysTickGetEventEv  sysclock.o
-    0x08001f74   0x08001f74   0x00000022   Code   RO           54    .text._ZN8SysClockC2Ev  sysclock.o
-    0x08001f96   0x08001f96   0x00000006   Code   RO          392    .text._ZN9Kinematic12getLineAngleEv  kinematic_control.o
-    0x08001f9c   0x08001f9c   0x0000000e   Code   RO          366    .text._ZN9Kinematic13handlerByTimeEv  kinematic_control.o
-    0x08001faa   0x08001faa   0x00000006   Code   RO          394    .text._ZN9Kinematic15getLinePositionEv  kinematic_control.o
-    0x08001fb0   0x08001fb0   0x0000007a   Code   RO          390    .text._ZN9Kinematic17updateLineReadingEv  kinematic_control.o
-    0x0800202a   0x0800202a   0x00000014   Code   RO          388    .text._ZN9Kinematic19calibrateLineSensorEj  kinematic_control.o
-    0x0800203e   0x0800203e   0x00000038   Code   RO          380    .text._ZN9Kinematic4getVEv  kinematic_control.o
-    0x08002076   0x08002076   0x00000034   Code   RO          382    .text._ZN9Kinematic4getWEv  kinematic_control.o
-    0x080020aa   0x080020aa   0x00000006   Code   RO          384    .text._ZN9Kinematic4getXEv  kinematic_control.o
-    0x080020b0   0x080020b0   0x00000006   Code   RO          386    .text._ZN9Kinematic4getYEv  kinematic_control.o
-    0x080020b6   0x080020b6   0x0000001c   Code   RO          372    .text._ZN9Kinematic5resetEv  kinematic_control.o
-    0x080020d2   0x080020d2   0x00000034   Code   RO          378    .text._ZN9Kinematic7getTetaEv  kinematic_control.o
-    0x08002106   0x08002106   0x0000006e   Code   RO          368    .text._ZN9Kinematic7handlerEv  kinematic_control.o
-    0x08002174   0x08002174   0x000000c2   Code   RO          376    .text._ZN9Kinematic8setSpeedEff  kinematic_control.o
-    0x08002236   0x08002236   0x00000064   Code   RO          370    .text._ZN9KinematicC2E5MotorS0_11Line_Sensor  kinematic_control.o
-    0x0800229a   0x0800229a   0x00000060   Code   RO          374    .text._ZN9KinematicC2EPS_  kinematic_control.o
-    0x080022fa   0x080022fa   0x0000057e   Code   RO          252    .text.main          main.o
-    0x08002878   0x08002878   0x00000026   Code   RO          687    i.__ARM_fpclassifyf  m_ws.l(fpclassifyf.o)
-    0x0800289e   0x0800289e   0x00000006   Code   RO          690    i.__mathlib_flt_infnan  m_ws.l(funder.o)
-    0x080028a4   0x080028a4   0x00000004   Code   RO          691    i.__mathlib_flt_infnan2  m_ws.l(funder.o)
-    0x080028a8   0x080028a8   0x00000008   Code   RO          692    i.__mathlib_flt_invalid  m_ws.l(funder.o)
-    0x080028b0   0x080028b0   0x0000000a   Code   RO          695    i.__mathlib_flt_underflow  m_ws.l(funder.o)
-    0x080028ba   0x080028ba   0x00000002   PAD
-    0x080028bc   0x080028bc   0x00000168   Code   RO          703    i.__mathlib_rredf2  m_ws.l(rredf.o)
-    0x08002a24   0x08002a24   0x0000025c   Code   RO          558    i.atan2f            m_ws.l(atan2f.o)
-    0x08002c80   0x08002c80   0x0000017c   Code   RO          566    i.cosf              m_ws.l(cosf.o)
-    0x08002dfc   0x08002dfc   0x00000188   Code   RO          574    i.sinf              m_ws.l(sinf.o)
-    0x08002f84   0x08002f84   0x00000062   Code   RO          479    x$fpl$d2f           fz_ws.l(d2f.o)
-    0x08002fe6   0x08002fe6   0x00000002   PAD
-    0x08002fe8   0x08002fe8   0x00000150   Code   RO          481    x$fpl$dadd          fz_ws.l(daddsub_clz.o)
-    0x08003138   0x08003138   0x00000018   Code   RO          736    x$fpl$dcmpinf       fz_ws.l(dcmpi.o)
-    0x08003150   0x08003150   0x000002b0   Code   RO          490    x$fpl$ddiv          fz_ws.l(ddiv.o)
-    0x08003400   0x08003400   0x00000078   Code   RO          586    x$fpl$deqf          fz_ws.l(deqf.o)
-    0x08003478   0x08003478   0x00000078   Code   RO          588    x$fpl$dgeqf         fz_ws.l(dgeqf.o)
-    0x080034f0   0x080034f0   0x00000078   Code   RO          590    x$fpl$dleqf         fz_ws.l(dleqf.o)
-    0x08003568   0x08003568   0x00000154   Code   RO          493    x$fpl$dmul          fz_ws.l(dmul.o)
-    0x080036bc   0x080036bc   0x0000009c   Code   RO          592    x$fpl$dnaninf       fz_ws.l(dnaninf.o)
-    0x08003758   0x08003758   0x0000000c   Code   RO          594    x$fpl$dretinf       fz_ws.l(dretinf.o)
-    0x08003764   0x08003764   0x000001d4   Code   RO          483    x$fpl$dsub          fz_ws.l(daddsub_clz.o)
-    0x08003938   0x08003938   0x00000056   Code   RO          495    x$fpl$f2d           fz_ws.l(f2d.o)
-    0x0800398e   0x0800398e   0x00000002   PAD
-    0x08003990   0x08003990   0x000000c4   Code   RO          497    x$fpl$fadd          fz_ws.l(faddsub_clz.o)
-    0x08003a54   0x08003a54   0x0000000c   Code   RO          767    x$fpl$fcheck1       fz_ws.l(fcheck1.o)
-    0x08003a60   0x08003a60   0x00000054   Code   RO          487    x$fpl$fcmp          fz_ws.l(dcmp.o)
-    0x08003ab4   0x08003ab4   0x00000054   Code   RO          503    x$fpl$fcmp          fz_ws.l(fcmp.o)
-    0x08003b08   0x08003b08   0x00000018   Code   RO          738    x$fpl$fcmpinf       fz_ws.l(fcmpi.o)
-    0x08003b20   0x08003b20   0x00000184   Code   RO          506    x$fpl$fdiv          fz_ws.l(fdiv.o)
-    0x08003ca4   0x08003ca4   0x00000068   Code   RO          596    x$fpl$feqf          fz_ws.l(feqf.o)
-    0x08003d0c   0x08003d0c   0x00000036   Code   RO          598    x$fpl$ffix          fz_ws.l(ffix.o)
-    0x08003d42   0x08003d42   0x00000002   PAD
-    0x08003d44   0x08003d44   0x0000003e   Code   RO          509    x$fpl$ffixu         fz_ws.l(ffixu.o)
-    0x08003d82   0x08003d82   0x00000002   PAD
-    0x08003d84   0x08003d84   0x00000030   Code   RO          514    x$fpl$fflt          fz_ws.l(fflt_clz.o)
-    0x08003db4   0x08003db4   0x00000026   Code   RO          513    x$fpl$ffltu         fz_ws.l(fflt_clz.o)
-    0x08003dda   0x08003dda   0x00000002   PAD
-    0x08003ddc   0x08003ddc   0x00000068   Code   RO          602    x$fpl$fgeqf         fz_ws.l(fgeqf.o)
-    0x08003e44   0x08003e44   0x00000068   Code   RO          604    x$fpl$fleqf         fz_ws.l(fleqf.o)
-    0x08003eac   0x08003eac   0x00000102   Code   RO          519    x$fpl$fmul          fz_ws.l(fmul.o)
-    0x08003fae   0x08003fae   0x0000008c   Code   RO          606    x$fpl$fnaninf       fz_ws.l(fnaninf.o)
-    0x0800403a   0x0800403a   0x0000000a   Code   RO          608    x$fpl$fretinf       fz_ws.l(fretinf.o)
-    0x08004044   0x08004044   0x00000060   Code   RO          610    x$fpl$frnd          fz_ws.l(frnd.o)
-    0x080040a4   0x080040a4   0x00000014   Code   RO          498    x$fpl$frsb          fz_ws.l(faddsub_clz.o)
-    0x080040b8   0x080040b8   0x000000ea   Code   RO          499    x$fpl$fsub          fz_ws.l(faddsub_clz.o)
-    0x080041a2   0x080041a2   0x00000064   Code   RO          824    x$fpl$retnan        fz_ws.l(retnan.o)
-    0x08004206   0x08004206   0x0000004c   Code   RO          740    x$fpl$scalbnf       fz_ws.l(scalbnf.o)
-    0x08004252   0x08004252   0x00000030   Code   RO          843    x$fpl$trapveneer    fz_ws.l(trapv.o)
-    0x08004282   0x08004282   0x00000000   Code   RO          612    x$fpl$usenofp       fz_ws.l(usenofp.o)
-    0x08004282   0x08004282   0x00000002   PAD
-    0x08004284   0x08004284   0x00000020   Data   RO          704    .constdata          m_ws.l(rredf.o)
-    0x080042a4   0x080042a4   0x00000100   Data   RO           41    .rodata._ZN4GPIO15GPIO_PORTS_PINSE  gpio_1.o
-    0x080043a4   0x080043a4   0x00000010   Data   RO          894    Region$$Table       anon$$obj.o
+    0x0800036e   0x0800036e   0x0000013c   Code   RO          428    .text._ZN10Controller16kanayama_controlEv  following_controler.o
+    0x080004aa   0x080004aa   0x00000008   Code   RO          426    .text._ZN10Controller4stopEv  following_controler.o
+    0x080004b2   0x080004b2   0x00000022   Code   RO          420    .text._ZN10Controller5startEff  following_controler.o
+    0x080004d4   0x080004d4   0x00000028   Code   RO          414    .text._ZN10Controller7HandlerEv  following_controler.o
+    0x080004fc   0x080004fc   0x00000040   Code   RO          410    .text._ZN10ControllerC2E9Kinematic  following_controler.o
+    0x0800053c   0x0800053c   0x0000013a   Code   RO          313    .text._ZN11Line_Sensor4readEv  line_sensor.o
+    0x08000676   0x08000676   0x00000026   Code   RO          311    .text._ZN11Line_Sensor9calibrateEj  line_sensor.o
+    0x0800069c   0x0800069c   0x00000140   Code   RO          307    .text._ZN11Line_SensorC2E18Reflectance_SensorS0_S0_S0_S0_S0_S0_S0_  line_sensor.o
+    0x080007dc   0x080007dc   0x00000076   Code   RO          309    .text._ZN11Line_SensorC2EPS_  line_sensor.o
+    0x08000852   0x08000852   0x0000000e   Code   RO          452    .text._ZN13Communication13HandlerByTimeEv  serial_communication.o
+    0x08000860   0x08000860   0x0000002c   Code   RO          458    .text._ZN13Communication13verifyCommandEv  serial_communication.o
+    0x0800088c   0x0800088c   0x00000024   Code   RO          460    .text._ZN13Communication14waitForCommandEv  serial_communication.o
+    0x080008b0   0x080008b0   0x0000003e   Code   RO          454    .text._ZN13Communication7HandlerEv  serial_communication.o
+    0x080008ee   0x080008ee   0x00000002   PAD
+    0x080008f0   0x080008f0   0x000002ba   Code   RO          456    .text._ZN13Communication9doCommandEv  serial_communication.o
+    0x08000baa   0x08000baa   0x00000018   Code   RO          450    .text._ZN13CommunicationC2EP10ControllerP5USART  serial_communication.o
+    0x08000bc2   0x08000bc2   0x00000038   Code   RO          294    .text._ZN18Reflectance_Sensor16Reflectance_ReadEv  reflectance_sensor.o
+    0x08000bfa   0x08000bfa   0x00000022   Code   RO          292    .text._ZN18Reflectance_Sensor24Calib_Reflectance_SensorEv  reflectance_sensor.o
+    0x08000c1c   0x08000c1c   0x00000012   Code   RO          288    .text._ZN18Reflectance_SensorC2E12ADC_CHANNELS  reflectance_sensor.o
+    0x08000c2e   0x08000c2e   0x00000020   Code   RO          290    .text._ZN18Reflectance_SensorC2EPS_  reflectance_sensor.o
+    0x08000c4e   0x08000c4e   0x0000002e   Code   RO          160    .text._ZN3ADC10analogReadEv  adc.o
+    0x08000c7c   0x08000c7c   0x000000b0   Code   RO          154    .text._ZN3ADC12ConfigADCPinEv  adc.o
+    0x08000d2c   0x08000d2c   0x00000004   Code   RO          156    .text._ZN3ADC13GetADCChannelEv  adc.o
+    0x08000d30   0x08000d30   0x0000000e   Code   RO          150    .text._ZN3ADCC2E12ADC_CHANNELS  adc.o
+    0x08000d3e   0x08000d3e   0x00000002   PAD
+    0x08000d40   0x08000d40   0x00000204   Code   RO          131    .text._ZN3PWM12ConfigPWMPinEv  pwm.o
+    0x08000f44   0x08000f44   0x000000ea   Code   RO          133    .text._ZN3PWM7PWMInitEv  pwm.o
+    0x0800102e   0x0800102e   0x00000064   Code   RO          137    .text._ZN3PWM8PWMWriteEf  pwm.o
+    0x08001092   0x08001092   0x00000022   Code   RO          129    .text._ZN3PWMC2EP11TIM_TypeDef12TIM_CHANNELS9TIM_REMAP  pwm.o
+    0x080010b4   0x080010b4   0x0000003e   Code   RO          135    .text._ZN3PWMC2EPS_  pwm.o
+    0x080010f2   0x080010f2   0x00000004   Code   RO           15    .text._ZN4GPIO11SetGPIOModeE10GPIO_MODES  gpio_1.o
+    0x080010f6   0x080010f6   0x0000001a   Code   RO           31    .text._ZN4GPIO12digitalWriteEb  gpio_1.o
+    0x08001110   0x08001110   0x000000ac   Code   RO           17    .text._ZN4GPIO13ConfigGPIOPinEv  gpio_1.o
+    0x080011bc   0x080011bc   0x00000018   Code   RO           13    .text._ZN4GPIO14SetGPIOPortPinE12GPIO_IO_ENUM  gpio_1.o
+    0x080011d4   0x080011d4   0x00000012   Code   RO           35    .text._ZN4GPIO9tooglePinEv  gpio_1.o
+    0x080011e6   0x080011e6   0x0000003e   Code   RO            9    .text._ZN4GPIOC2E12GPIO_IO_ENUM10GPIO_MODES  gpio_1.o
+    0x08001224   0x08001224   0x00000044   Code   RO           21    .text._ZN4GPIOC2EPS_  gpio_1.o
+    0x08001268   0x08001268   0x00000038   Code   RO          342    .text._ZN5Motor12getSpeedRadSEv  motor.o
+    0x080012a0   0x080012a0   0x0000004c   Code   RO          352    .text._ZN5Motor16getDeltaDistanceEv  motor.o
+    0x080012ec   0x080012ec   0x00000014   Code   RO          326    .text._ZN5Motor17Motor_InitialiizeEv  motor.o
+    0x08001300   0x08001300   0x0000001a   Code   RO          328    .text._ZN5Motor21Motor_Handler_by_timeEv  motor.o
+    0x0800131a   0x0800131a   0x00000006   Code   RO          346    .text._ZN5Motor4getEEv  motor.o
+    0x08001320   0x08001320   0x00000006   Code   RO          344    .text._ZN5Motor4getUEv  motor.o
+    0x08001326   0x08001326   0x00000028   Code   RO          338    .text._ZN5Motor5resetEv  motor.o
+    0x0800134e   0x0800134e   0x00000132   Code   RO          330    .text._ZN5Motor7HandlerEv  motor.o
+    0x08001480   0x08001480   0x00000006   Code   RO          348    .text._ZN5Motor7getTetaEv  motor.o
+    0x08001486   0x08001486   0x00000006   Code   RO          340    .text._ZN5Motor9Get_SpeedEv  motor.o
+    0x0800148c   0x0800148c   0x00000006   Code   RO          334    .text._ZN5Motor9Set_SpeedEf  motor.o
+    0x08001492   0x08001492   0x000000e6   Code   RO          332    .text._ZN5MotorC2E3PWM7Encoder4GPIOS2_  motor.o
+    0x08001578   0x08001578   0x0000005e   Code   RO          336    .text._ZN5MotorC2EPS_  motor.o
+    0x080015d6   0x080015d6   0x0000005c   Code   RO          109    .text._ZN5Timer11GetTIMRemapEv  timer.o
+    0x08001632   0x08001632   0x00000064   Code   RO          105    .text._ZN5Timer11SetTIMRemapE9TIM_REMAP  timer.o
+    0x08001696   0x08001696   0x0000001a   Code   RO           81    .text._ZN5Timer12GetTime_usecEv  timer.o
+    0x080016b0   0x080016b0   0x00000004   Code   RO          107    .text._ZN5Timer13GetTIMChannelEv  timer.o
+    0x080016b4   0x080016b4   0x0000001e   Code   RO           77    .text._ZN5Timer13Timer_HandlerEv  timer.o
+    0x080016d2   0x080016d2   0x00000040   Code   RO           75    .text._ZN5Timer17Timer_InitiallizeEv  timer.o
+    0x08001712   0x08001712   0x00000018   Code   RO           79    .text._ZN5Timer19verifyTimeInterruptEv  timer.o
+    0x0800172a   0x0800172a   0x00000004   Code   RO           97    .text._ZN5Timer6GetTimEv  timer.o
+    0x0800172e   0x0800172e   0x00000004   Code   RO           87    .text._ZN5Timer6SetTimEP11TIM_TypeDef  timer.o
+    0x08001732   0x08001732   0x000000e2   Code   RO           93    .text._ZN5Timer9TimerInitEv  timer.o
+    0x08001814   0x08001814   0x00000012   Code   RO           85    .text._ZN5TimerC2EP11TIM_TypeDef12TIM_CHANNELS8TIM_MODE  timer.o
+    0x08001826   0x08001826   0x00000010   Code   RO           95    .text._ZN5TimerC2EP11TIM_TypeDef8TIM_MODE  timer.o
+    0x08001836   0x08001836   0x00000002   PAD
+    0x08001838   0x08001838   0x00000180   Code   RO          225    .text._ZN5USART4initE7BD_ENUM  usart.o
+    0x080019b8   0x080019b8   0x00000010   Code   RO          237    .text._ZN5USART7ReceiveEv  usart.o
+    0x080019c8   0x080019c8   0x0000000a   Code   RO          239    .text._ZN5USART9AvailableEv  usart.o
+    0x080019d2   0x080019d2   0x00000034   Code   RO          233    .text._ZN5USART9sendFloatEPf  usart.o
+    0x08001a06   0x08001a06   0x00000010   Code   RO          223    .text._ZN5USARTC2EP13USART_TypeDef7BD_ENUM  usart.o
+    0x08001a16   0x08001a16   0x00000256   Code   RO          184    .text._ZN7Encoder13ConfigEncoderEv  encoder.o
+    0x08001c6c   0x08001c6c   0x00000014   Code   RO          192    .text._ZN7Encoder13getDeltaTicksEv  encoder.o
+    0x08001c80   0x08001c80   0x00000010   Code   RO          176    .text._ZN7Encoder15Encoder_HandlerE12ENCODER_ENUM  encoder.o
+    0x08001c90   0x08001c90   0x0000000e   Code   RO          174    .text._ZN7Encoder19Encoder_InitiallizeEv  encoder.o
+    0x08001c9e   0x08001c9e   0x000000bc   Code   RO          180    .text._ZN7Encoder23Encoder_Handler_by_TimeEv  encoder.o
+    0x08001d5a   0x08001d5a   0x00000030   Code   RO          188    .text._ZN7Encoder5resetEv  encoder.o
+    0x08001d8a   0x08001d8a   0x000000d0   Code   RO          178    .text._ZN7Encoder7HandlerEv  encoder.o
+    0x08001e5a   0x08001e5a   0x00000024   Code   RO          206    .text._ZN7Encoder7getTetaEv  encoder.o
+    0x08001e7e   0x08001e7e   0x0000000c   Code   RO          200    .text._ZN7Encoder8getSpeedEv  encoder.o
+    0x08001e8a   0x08001e8a   0x00000018   Code   RO          190    .text._ZN7Encoder8getTicksEv  encoder.o
+    0x08001ea2   0x08001ea2   0x00000028   Code   RO          182    .text._ZN7EncoderC2EP11TIM_TypeDef  encoder.o
+    0x08001eca   0x08001eca   0x00000030   Code   RO          186    .text._ZN7EncoderC2EPS_  encoder.o
+    0x08001efa   0x08001efa   0x00000066   Code   RO           56    .text._ZN8SysClock12SysClockInitEv  sysclock.o
+    0x08001f60   0x08001f60   0x00000010   Code   RO           62    .text._ZN8SysClock15SysTickGetEventEv  sysclock.o
+    0x08001f70   0x08001f70   0x00000022   Code   RO           54    .text._ZN8SysClockC2Ev  sysclock.o
+    0x08001f92   0x08001f92   0x00000006   Code   RO          392    .text._ZN9Kinematic12getLineAngleEv  kinematic_control.o
+    0x08001f98   0x08001f98   0x0000000e   Code   RO          366    .text._ZN9Kinematic13handlerByTimeEv  kinematic_control.o
+    0x08001fa6   0x08001fa6   0x00000006   Code   RO          394    .text._ZN9Kinematic15getLinePositionEv  kinematic_control.o
+    0x08001fac   0x08001fac   0x0000007a   Code   RO          390    .text._ZN9Kinematic17updateLineReadingEv  kinematic_control.o
+    0x08002026   0x08002026   0x00000014   Code   RO          388    .text._ZN9Kinematic19calibrateLineSensorEj  kinematic_control.o
+    0x0800203a   0x0800203a   0x00000038   Code   RO          380    .text._ZN9Kinematic4getVEv  kinematic_control.o
+    0x08002072   0x08002072   0x00000034   Code   RO          382    .text._ZN9Kinematic4getWEv  kinematic_control.o
+    0x080020a6   0x080020a6   0x00000006   Code   RO          384    .text._ZN9Kinematic4getXEv  kinematic_control.o
+    0x080020ac   0x080020ac   0x00000006   Code   RO          386    .text._ZN9Kinematic4getYEv  kinematic_control.o
+    0x080020b2   0x080020b2   0x0000001c   Code   RO          372    .text._ZN9Kinematic5resetEv  kinematic_control.o
+    0x080020ce   0x080020ce   0x00000034   Code   RO          378    .text._ZN9Kinematic7getTetaEv  kinematic_control.o
+    0x08002102   0x08002102   0x0000006e   Code   RO          368    .text._ZN9Kinematic7handlerEv  kinematic_control.o
+    0x08002170   0x08002170   0x000000c2   Code   RO          376    .text._ZN9Kinematic8setSpeedEff  kinematic_control.o
+    0x08002232   0x08002232   0x00000064   Code   RO          370    .text._ZN9KinematicC2E5MotorS0_11Line_Sensor  kinematic_control.o
+    0x08002296   0x08002296   0x00000060   Code   RO          374    .text._ZN9KinematicC2EPS_  kinematic_control.o
+    0x080022f6   0x080022f6   0x0000057e   Code   RO          252    .text.main          main.o
+    0x08002874   0x08002874   0x00000026   Code   RO          687    i.__ARM_fpclassifyf  m_ws.l(fpclassifyf.o)
+    0x0800289a   0x0800289a   0x00000006   Code   RO          690    i.__mathlib_flt_infnan  m_ws.l(funder.o)
+    0x080028a0   0x080028a0   0x00000004   Code   RO          691    i.__mathlib_flt_infnan2  m_ws.l(funder.o)
+    0x080028a4   0x080028a4   0x00000008   Code   RO          692    i.__mathlib_flt_invalid  m_ws.l(funder.o)
+    0x080028ac   0x080028ac   0x0000000a   Code   RO          695    i.__mathlib_flt_underflow  m_ws.l(funder.o)
+    0x080028b6   0x080028b6   0x00000002   PAD
+    0x080028b8   0x080028b8   0x00000168   Code   RO          703    i.__mathlib_rredf2  m_ws.l(rredf.o)
+    0x08002a20   0x08002a20   0x0000025c   Code   RO          558    i.atan2f            m_ws.l(atan2f.o)
+    0x08002c7c   0x08002c7c   0x0000017c   Code   RO          566    i.cosf              m_ws.l(cosf.o)
+    0x08002df8   0x08002df8   0x00000188   Code   RO          574    i.sinf              m_ws.l(sinf.o)
+    0x08002f80   0x08002f80   0x00000062   Code   RO          479    x$fpl$d2f           fz_ws.l(d2f.o)
+    0x08002fe2   0x08002fe2   0x00000002   PAD
+    0x08002fe4   0x08002fe4   0x00000150   Code   RO          481    x$fpl$dadd          fz_ws.l(daddsub_clz.o)
+    0x08003134   0x08003134   0x00000018   Code   RO          736    x$fpl$dcmpinf       fz_ws.l(dcmpi.o)
+    0x0800314c   0x0800314c   0x000002b0   Code   RO          490    x$fpl$ddiv          fz_ws.l(ddiv.o)
+    0x080033fc   0x080033fc   0x00000078   Code   RO          586    x$fpl$deqf          fz_ws.l(deqf.o)
+    0x08003474   0x08003474   0x00000078   Code   RO          588    x$fpl$dgeqf         fz_ws.l(dgeqf.o)
+    0x080034ec   0x080034ec   0x00000078   Code   RO          590    x$fpl$dleqf         fz_ws.l(dleqf.o)
+    0x08003564   0x08003564   0x00000154   Code   RO          493    x$fpl$dmul          fz_ws.l(dmul.o)
+    0x080036b8   0x080036b8   0x0000009c   Code   RO          592    x$fpl$dnaninf       fz_ws.l(dnaninf.o)
+    0x08003754   0x08003754   0x0000000c   Code   RO          594    x$fpl$dretinf       fz_ws.l(dretinf.o)
+    0x08003760   0x08003760   0x000001d4   Code   RO          483    x$fpl$dsub          fz_ws.l(daddsub_clz.o)
+    0x08003934   0x08003934   0x00000056   Code   RO          495    x$fpl$f2d           fz_ws.l(f2d.o)
+    0x0800398a   0x0800398a   0x00000002   PAD
+    0x0800398c   0x0800398c   0x000000c4   Code   RO          497    x$fpl$fadd          fz_ws.l(faddsub_clz.o)
+    0x08003a50   0x08003a50   0x0000000c   Code   RO          767    x$fpl$fcheck1       fz_ws.l(fcheck1.o)
+    0x08003a5c   0x08003a5c   0x00000054   Code   RO          487    x$fpl$fcmp          fz_ws.l(dcmp.o)
+    0x08003ab0   0x08003ab0   0x00000054   Code   RO          503    x$fpl$fcmp          fz_ws.l(fcmp.o)
+    0x08003b04   0x08003b04   0x00000018   Code   RO          738    x$fpl$fcmpinf       fz_ws.l(fcmpi.o)
+    0x08003b1c   0x08003b1c   0x00000184   Code   RO          506    x$fpl$fdiv          fz_ws.l(fdiv.o)
+    0x08003ca0   0x08003ca0   0x00000068   Code   RO          596    x$fpl$feqf          fz_ws.l(feqf.o)
+    0x08003d08   0x08003d08   0x00000036   Code   RO          598    x$fpl$ffix          fz_ws.l(ffix.o)
+    0x08003d3e   0x08003d3e   0x00000002   PAD
+    0x08003d40   0x08003d40   0x0000003e   Code   RO          509    x$fpl$ffixu         fz_ws.l(ffixu.o)
+    0x08003d7e   0x08003d7e   0x00000002   PAD
+    0x08003d80   0x08003d80   0x00000030   Code   RO          514    x$fpl$fflt          fz_ws.l(fflt_clz.o)
+    0x08003db0   0x08003db0   0x00000026   Code   RO          513    x$fpl$ffltu         fz_ws.l(fflt_clz.o)
+    0x08003dd6   0x08003dd6   0x00000002   PAD
+    0x08003dd8   0x08003dd8   0x00000068   Code   RO          602    x$fpl$fgeqf         fz_ws.l(fgeqf.o)
+    0x08003e40   0x08003e40   0x00000068   Code   RO          604    x$fpl$fleqf         fz_ws.l(fleqf.o)
+    0x08003ea8   0x08003ea8   0x00000102   Code   RO          519    x$fpl$fmul          fz_ws.l(fmul.o)
+    0x08003faa   0x08003faa   0x0000008c   Code   RO          606    x$fpl$fnaninf       fz_ws.l(fnaninf.o)
+    0x08004036   0x08004036   0x0000000a   Code   RO          608    x$fpl$fretinf       fz_ws.l(fretinf.o)
+    0x08004040   0x08004040   0x00000060   Code   RO          610    x$fpl$frnd          fz_ws.l(frnd.o)
+    0x080040a0   0x080040a0   0x00000014   Code   RO          498    x$fpl$frsb          fz_ws.l(faddsub_clz.o)
+    0x080040b4   0x080040b4   0x000000ea   Code   RO          499    x$fpl$fsub          fz_ws.l(faddsub_clz.o)
+    0x0800419e   0x0800419e   0x00000064   Code   RO          824    x$fpl$retnan        fz_ws.l(retnan.o)
+    0x08004202   0x08004202   0x0000004c   Code   RO          740    x$fpl$scalbnf       fz_ws.l(scalbnf.o)
+    0x0800424e   0x0800424e   0x00000030   Code   RO          843    x$fpl$trapveneer    fz_ws.l(trapv.o)
+    0x0800427e   0x0800427e   0x00000000   Code   RO          612    x$fpl$usenofp       fz_ws.l(usenofp.o)
+    0x0800427e   0x0800427e   0x00000002   PAD
+    0x08004280   0x08004280   0x00000020   Data   RO          704    .constdata          m_ws.l(rredf.o)
+    0x080042a0   0x080042a0   0x00000100   Data   RO           41    .rodata._ZN4GPIO15GPIO_PORTS_PINSE  gpio_1.o
+    0x080043a0   0x080043a0   0x00000010   Data   RO          894    Region$$Table       anon$$obj.o
 
 
-    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x080043b4, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RW (Exec base: 0x20000000, Load base: 0x080043b0, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
 
     **** No section assigned to this execution region ****
 
 
-    Execution Region ER_ZI (Exec base: 0x20000000, Load base: 0x080043b4, Size: 0x000000b4, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_ZI (Exec base: 0x20000000, Load base: 0x080043b0, Size: 0x000000b4, Max: 0xffffffff, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2342,7 +2342,7 @@ Memory Map of the image
     0x20000082        -       0x00000001   Zero   RW          112    .bss._ZN5Timer9TIM2RemapE  timer.o
     0x20000083        -       0x00000001   Zero   RW          113    .bss._ZN5Timer9TIM3RemapE  timer.o
     0x20000084        -       0x00000001   Zero   RW          114    .bss._ZN5Timer9TIM4RemapE  timer.o
-    0x20000085   0x080043b4   0x00000003   PAD
+    0x20000085   0x080043b0   0x00000003   PAD
     0x20000088        -       0x00000004   Zero   RW          211    .bss._ZN7Encoder12usedEncodersE  encoder.o
     0x2000008c        -       0x00000010   Zero   RW          210    .bss._ZN7Encoder6encPtrE  encoder.o
     0x2000009c        -       0x00000004   Zero   RW          398    .bss._ZN9Kinematic7ptRobotE  kinematic_control.o
@@ -2362,7 +2362,7 @@ Image component sizes
 
        240         10          0          0          0       7495   adc.o
       1252          0          0          0         20      14836   encoder.o
-       600          0          0          0          4      25610   following_controler.o
+       596          0          0          0          4      25610   following_controler.o
        374         28        256          0          0       9133   gpio_1.o
        868          0          0          0          4      24097   kinematic_control.o
        790          0          0          0          0       8436   line_sensor.o
@@ -2377,7 +2377,7 @@ Image component sizes
        478         30          0          0          0       8945   usart.o
 
     ----------------------------------------------------------------------
-      9724        114        508          0         84     198293   Object Totals
+      9720        114        508          0         84     198293   Object Totals
          0          0         16          0          0          0   (incl. Generated)
          6          0          0          0          3          0   (incl. Padding)
 
@@ -2467,15 +2467,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     16792        652        540          0        180     200281   Grand Totals
-     16792        652        540          0        180     200281   ELF Image Totals
-     16792        652        540          0          0          0   ROM Totals
+     16788        652        540          0        180     200281   Grand Totals
+     16788        652        540          0        180     200281   ELF Image Totals
+     16788        652        540          0          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                17332 (  16.93kB)
+    Total RO  Size (Code + RO Data)                17328 (  16.92kB)
     Total RW  Size (RW Data + ZI Data)               180 (   0.18kB)
-    Total ROM Size (Code + RO Data + RW Data)      17332 (  16.93kB)
+    Total ROM Size (Code + RO Data + RW Data)      17328 (  16.92kB)
 
 ==============================================================================
 

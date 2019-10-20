@@ -7,6 +7,9 @@ if (command == 2) || (command == 3) || (command == 6)
     temp = fread(seguidor, 2*bits_to_receive,'float');
     data1 = temp(1:2:length(temp)); 
     data2 = temp(2:2:length(temp)); 
+    fid=fopen('data.txt','w');
+    fprintf(fid, '%f %f \n', [data1' data2']');
+    fclose(fid);
     figure
     subplot(2,1,1)
     plot(t,data1,'b-');
@@ -19,6 +22,9 @@ if (command == 4) || (command == 7)
     data2 = temp(2:4:length(temp));
     data3 = temp(3:4:length(temp)); 
     data4 = temp(4:4:length(temp)); 
+    fid=fopen('data.txt','w');
+    fprintf(fid, '%f %f %f %f \n', [data1' data2' data3' data4']');
+    fclose(fid);
     figure
     subplot(2,1,1)
     plot(t,data1,'b-');
@@ -33,6 +39,9 @@ if (command == 5)
     temp = fread(seguidor, 2*bits_to_receive,'float');
     data1 = temp(1:2:length(temp)); 
     data2 = 180*temp(2:2:length(temp))/pi; 
+    fid=fopen('data.txt','w');
+    fprintf(fid, '%f %f \n', [data1' data2']');
+    fclose(fid);
     figure
     subplot(2,1,1)
     plot(t,data1,'b-');
@@ -47,6 +56,9 @@ if (command == 8)
     data4 = temp(4:6:length(temp)); 
     data5 = temp(5:6:length(temp));
     data6 = temp(6:6:length(temp));
+    fid=fopen('data.txt','w');
+    fprintf(fid, '%f %f %f %f %f %f \n', [data1' data2' data3' data4' data5' data6']');
+    fclose(fid);
     figure
     subplot(2,1,1)
     plot(t,data1,'b-');
@@ -73,6 +85,10 @@ if (command == 9)
     data10 = temp(10:12:length(temp)); 
     data11 = temp(11:12:length(temp));
     data12 = temp(12:12:length(temp));
+    
+    fid=fopen('data.txt','w');
+    fprintf(fid, '%f %f %f %f %f %f %f %f %f %f %f %f \n', [data1' data2' data3' data4' data5' data6' data7' data8' data9' data10' data11' data12']');
+    fclose(fid);
     
     figure
     subplot(2,1,1)
@@ -131,6 +147,11 @@ if (command == 10)
     data1 = temp(1:3:length(temp)); 
     data2 = temp(2:3:length(temp));
     data3 = 180*temp(3:3:length(temp))/pi;
+    
+    fid=fopen('data.txt','w');
+    fprintf(fid, '%f %f %f \n', [data1' data2' data3']');
+    fclose(fid);
+    
     figure
     subplot(2,1,1)
     plot(data1,data2,'b');

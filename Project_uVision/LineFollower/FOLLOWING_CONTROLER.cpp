@@ -57,9 +57,9 @@ void Controller::controlRule()
 void Controller::kanayama_control()
 {
 	if ((ye > maxDistance/8) && (desired_v != 0))
-		v_ref = desired_v*(1 - 0.1*(ye/maxDistance));
+		v_ref = desired_v*(1 - 0.7*(ye/maxDistance));
 	else if ((ye < -maxDistance/8) && (desired_v != 0))
-		v_ref = desired_v*(1 + 0.1*(ye/maxDistance));
+		v_ref = desired_v*(1 + 0.7*(ye/maxDistance));
 	else
 		v_ref = desired_v;
 	
