@@ -10,6 +10,8 @@
 ".\objects\main.o"
 ".\objects\line_follower.o"
 ".\objects\testes.o"
+".\objects\malha_aberta.o"
+".\objects\malha_fechada.o"
 ".\objects\reflectance_sensor.o"
 ".\objects\line_sensor.o"
 ".\objects\motor.o"

@@ -5,6 +5,7 @@ TIM_REMAP Timer::TIM2Remap;
 TIM_REMAP Timer::TIM3Remap;
 TIM_REMAP Timer::TIM4Remap;
 uint32_t Timer::time_in_usec;
+uint32_t Timer::time_in_milisec;
 TIM_TypeDef *Timer::TIM_Timer_Counter;
 bool Timer::interruptGenerated;
 
@@ -15,12 +16,14 @@ void Timer::Timer_Initiallize()				//Initiallize all timer's static variables
   Timer::TIM3Remap = NO_REMAP;
   Timer::TIM4Remap = NO_REMAP;
   Timer::time_in_usec = 0;
+	Timer::time_in_milisec = 0;
 	Timer::interruptGenerated = 0;
 }
 
 void Timer::Timer_Handler()
 {
 	time_in_usec += Time_between_int;
+	time_in_milisec += Time_between_int_milis;
 	interruptGenerated = 1;
 }
 
@@ -37,6 +40,11 @@ bool Timer::verifyTimeInterrupt()
 uint32_t Timer::GetTime_usec()
 {
 	return (time_in_usec + Timer::TIM_Timer_Counter->CNT);
+}
+
+uint32_t Timer::GetTime_milisec()
+{
+	return (time_in_milisec + (Timer::TIM_Timer_Counter->CNT)/1000);
 }
 
 void Timer::delay(uint32_t delayTime_usec)

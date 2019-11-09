@@ -202,4 +202,10 @@ void PWM::PWMWrite(float value)
 		*PWM_WriteAddress  = (uint16_t)((value*Max_PWM)/100);
 	else if (value >= 100) 	*PWM_WriteAddress  = (uint16_t)Max_PWM;
 	else if (value <= 0)		*PWM_WriteAddress  = 0;
+	writedPWM = value;
+}
+
+float PWM::getWritedPWM()
+{
+	return writedPWM;
 }

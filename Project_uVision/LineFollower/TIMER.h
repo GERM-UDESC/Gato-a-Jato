@@ -35,6 +35,7 @@ typedef enum{
 
 #define Prescale 71     //Timer frequency = 72Mhz/(Prescale+1). If Prescale = 71, then Timer freq. = 1Mhz -> Timer period = 1us.
 #define Time_between_int 1000		//in usec
+#define Time_between_int_milis Time_between_int/1000		//in milisec
 #define AutoReload_Counter (Time_between_int-1)	//at 1Mhz, and autoreaload_counter = 999, the timer counter will generate an interrupt at each 1ms.
 
 
@@ -53,6 +54,7 @@ private:
 	static TIM_REMAP TIM4Remap;
 
 	static uint32_t time_in_usec;
+	static uint32_t time_in_milisec;
 	static TIM_TypeDef *TIM_Timer_Counter;
 	static bool interruptGenerated;
 
@@ -74,6 +76,7 @@ protected:
 public:
 	
 	static uint32_t GetTime_usec();
+	static uint32_t GetTime_milisec();
 	static void delay(uint32_t delayTime_usec);
 	static void Timer_Initiallize();				//Initiallize all timer's static variables
 	static void Timer_Handler();		//Take care of all that is need to maintain the time base in usec

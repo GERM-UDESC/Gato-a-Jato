@@ -151,6 +151,23 @@ void Communication::doCommand()
 			Serial->sendFloat(&temporary[2]);		
 		break;
 		
+		case sendPWMandEncoderDataRight:
+			temporary[0] = LineFollower->Robot.motorD.pwmMotor.getWritedPWM();
+			temporary[1] = LineFollower->Robot.motorD.encoder.getSpeed();
+			Serial->sendFloat(&temporary[0]);
+			Serial->sendFloat(&temporary[1]);
+		break;
+		
+		case sendMotorDdata:
+			temporary[0] = LineFollower->Robot.motorD.Get_Speed();
+			temporary[1] = LineFollower->Robot.motorD.getU();
+			temporary[2] = LineFollower->Robot.motorD.getE();
+			temporary[3] = LineFollower->Robot.motorD.Speed_Reference;
+			Serial->sendFloat(&temporary[0]);
+			Serial->sendFloat(&temporary[1]);
+			Serial->sendFloat(&temporary[2]);
+			Serial->sendFloat(&temporary[3]);
+		break;
 		
 		default:
 			LineFollower->stop();

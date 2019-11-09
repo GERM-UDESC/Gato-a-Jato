@@ -491,6 +491,16 @@
               <FileType>8</FileType>
               <FilePath>.\testes.cpp</FilePath>
             </File>
+            <File>
+              <FileName>malha_aberta.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\malha_aberta.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>malha_fechada.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\malha_fechada.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -4,7 +4,7 @@
 	#include "FOLLOWING_CONTROLER.h"
 	#include "USART.h"
 	
-	#define samplingTime 15
+	#define samplingTime 7
 	#define bitsToSend (samplingTime*1000000)/(Time_between_int)
 	#define sendingTime bitsToSend*Time_between_int/1000000
 		
@@ -29,6 +29,8 @@
 #define	sendMotorsSpeedControlAndErrors 8
 #define sendEverything 9
 #define sendPositionAndOrientation 10
+#define sendPWMandEncoderDataRight 11
+#define	sendMotorDdata 12
 
 	class Communication
 	{

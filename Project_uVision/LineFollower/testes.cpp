@@ -10,24 +10,19 @@
 //#include "MOTOR.h"
 //#include "USART.h"
 //#include "KINEMATIC_CONTROL.h"
-//#include "KANAYAMA_CONTROLER.h"
+//#include "FOLLOWING_CONTROLER.h"
+//#include "SERIAL_COMMUNICATION.h"
 
 //#include "math.h"
 
-//uint16_t number_of_points;
-//float Ref;
-//float Refw;
-//float Ref1;
-//bool sending = 0;
-//bool flag;
-//float u_teste, angleTest;
-//float u_D, u_E;
-//float speed_teste;
-//float speed_d, speed_e, speedV, speedW, speed_temp;
-//float xtest, ytest, tetatest;
-//float testLine[9], linevalue;
-//uint32_t counter = 0;
-//float time, delta_time;
+//#define stepTime 1000
+//#define	steps 11
+//#define testTime stepTime*steps
+//float xtest, ytest, vtest, wtest, pwmtest;
+//float linevalue, lineangle;
+//uint32_t t_ini, time, delta_time, time_test;
+//uint8_t counter = 0;
+//float RPM_value[12];
 
 
 //int main()
@@ -90,67 +85,62 @@
 //	Controller RobotControl(Robot);
 //	
 //	//Serial communication
-//	USART Serial(USART3, BD_1000000);
+//	USART Serial(USART3, BD_1382400);
 //	
+//	Communication Interface(&RobotControl, &Serial);
 //	//----------------------------------------------------------------------------------------------
 //	
 //	//----------------------------------Initial Conditions------------------------------------------
-//	STBY.digitalWrite(HIGH);
-
-//	//-----------------------------------------------------------------------------------------------
-
-//	counter = 0;
-//	sending = 1;
-//	number_of_points = 2500;
-//	Robot.reset();
-//	while(Timer::GetTime_usec() < 2000000);
-//	Robot.reset();
-//	Ref = 0.5;
-//	Refw = 0;
-//	Robot.calibrateLineSensor(100000);
-//	Robot.setSpeed(Ref, Refw);
+//	AIN2.digitalWrite(LOW);
+//	AIN1.digitalWrite(LOW);
+//	BIN2.digitalWrite(LOW);
+//	BIN1.digitalWrite(HIGH);
+//	STBY.digitalWrite(HIGH);	
 //	
+//	//-----------------------------------------------------------------------------------------------
+//	RobotControl.Robot.reset();
+//	LED_Board.tooglePin();
+//	counter = 0;
+//	RobotControl.Robot.motorD.Set_Speed(0);
+//	RPM_value[0] = 0;
+//	RPM_value[1] = 300;
+//	RPM_value[2] = 2000;
+//	RPM_value[3] = 1000;
+//	RPM_value[4] = 200;
+//	RPM_value[5] = 3000;
+//	RPM_value[6] = 1500;
+//	RPM_value[7] = 2500;
+//	RPM_value[8] = 1200;
+//	RPM_value[9] = 100;
+//	RPM_value[10] = 500;
+//	RPM_value[11] = 0;
+//	Interface.waitForCommand();
+//	t_ini = Timer::GetTime_milisec();
 //	
 //	while(1)
 //	{
-////		while(flag == 0);
-////		Robot.updateLineReading();
-////		angleTest = Robot.getLineAngle();
-////		linevalue = Robot.lineSensor.read();
-////		Robot.setRobotSpeed(Ref, Refw);
-////		speedV = Robot.getV();
-////		speedW = Robot.getW();
-////		
-////		time = Timer::GetTime_usec();
-////		while(flag == 0)
-////		{
-////			if (Serial.Available())
-////			{
-////				Ref8bit = Serial.Receive();
-////				Ref16 = (uint16_t)Ref8bit;
-////				Refw = (float)Ref8bit;		
-////				Robot.setRobotSpeed(0,Refw);
-////				counter = 0;
-////			}
-////		}		
-////		if (sending) 
-////		{
-////			if (counter <= number_of_points)
-////			{
-////				counter++;
-////				Serial.sendFloat(&Refw);
-////				speed_teste = Robot.getW();
-////				Serial.sendFloat(&speed_teste);
-////			}
-////		}
-//		flag = 0;
-
-//		if (Board.SysTickGetEvent()) 
+//		if (Timer::verifyTimeInterrupt())
+//		{
+//			time = Timer::GetTime_milisec();
+//			time = Timer::GetTime_milisec() - t_ini;
+//			if (time > (testTime))
+//			{
+//				RobotControl.Robot.motorD.pwmMotor.PWMWrite(0);
+//			}
+//			else if (time >= ((counter+1)*stepTime))
+//			{
+//				counter++;
+//				RobotControl.Robot.motorD.pwmMotor.PWMWrite(RPM_value[counter]);
+//			}
+//			Encoder::Encoder_Handler_by_Time();
+//			Motor::Motor_Handler_by_time();
+//			Communication::HandlerByTime();
+//			delta_time = Timer::GetTime_usec() - time;
+//		}
+//		
+//		if ((Board.SysTickGetEvent()) && (Interface.command != robotStop))
 //		{
 //			LED_Board.tooglePin();
-////			Robot.updateLineReading();
-////			angleTest = Robot.getLineAngle();
-////			linevalue = Robot.lineSensor.read();
 //		}
 //	}
 //}
@@ -160,7 +150,7 @@
 
 ////Encoder 1 - Interrupt Handler			//Encoder Esquerdo
 //extern "C" void TIM1_UP_IRQHandler();
-//////Encoder 2 - Interrupt Handler		//this timer is being used as time base for the system
+////Encoder 2 - Interrupt Handler			//this timer is being used as time base for the system
 //extern "C" void TIM2_IRQHandler();
 ////Encoder 3 - Interrupt Handler			//PWM generator
 //extern "C" void TIM3_IRQHandler();
@@ -177,12 +167,6 @@
 //{
 //	TIM2->SR &= ~(1<<0);
 //	Timer::Timer_Handler();
-//	Encoder::Encoder_Handler_by_Time();
-//	Motor::Motor_Handler_by_time();
-//	Kinematic::handlerByTime();
-//	Controller::HandlerByTime();
-//	
-//	flag = 1;
 //};
 
 //void TIM3_IRQHandler()
