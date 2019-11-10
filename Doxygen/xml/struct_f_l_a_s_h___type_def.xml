@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="struct_f_l_a_s_h___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>FLASH_TypeDef</compoundname>
+    <includes refid="_micro_8h" local="no">Micro.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_l_a_s_h___type_def_1aee15e24246c6cbbd9a082f2a1da6f4a8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t FLASH_TypeDef::ACR</definition>
+        <argsstring></argsstring>
+        <name>ACR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="233" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___type_def_1ae7ed76afe51a51d2e051cd28f0afe6ad" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t FLASH_TypeDef::KEYR</definition>
+        <argsstring></argsstring>
+        <name>KEYR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="234" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___type_def_1aebce0c2c98d58b84879bcb97b1d930ef" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t FLASH_TypeDef::OPTKEYR</definition>
+        <argsstring></argsstring>
+        <name>OPTKEYR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="235" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___type_def_1a68ba75adcbcd9dbdab37b0bc9f402146" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t FLASH_TypeDef::SR</definition>
+        <argsstring></argsstring>
+        <name>SR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="236" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___type_def_1a57b564f26046fc2cb30c5aad3e77348a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t FLASH_TypeDef::CR</definition>
+        <argsstring></argsstring>
+        <name>CR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="237" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___type_def_1a59d46205409104746b366b737746bd87" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t FLASH_TypeDef::AR</definition>
+        <argsstring></argsstring>
+        <name>AR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="238" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___type_def_1a9bee8e6d6e2f2adb3915f866b7cc04b0" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t FLASH_TypeDef::RESERVED</definition>
+        <argsstring></argsstring>
+        <name>RESERVED</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="239" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___type_def_1a12a0a5d9b85c8ce99ffcc6872a0269f2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t FLASH_TypeDef::OBR</definition>
+        <argsstring></argsstring>
+        <name>OBR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="240" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_l_a_s_h___type_def_1a881ccf7091153167b9dbc23550edc2c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t FLASH_TypeDef::WRPR</definition>
+        <argsstring></argsstring>
+        <name>WRPR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="241" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="232" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="231" bodyend="242"/>
+    <listofallmembers>
+      <member refid="struct_f_l_a_s_h___type_def_1aee15e24246c6cbbd9a082f2a1da6f4a8" prot="public" virt="non-virtual"><scope>FLASH_TypeDef</scope><name>ACR</name></member>
+      <member refid="struct_f_l_a_s_h___type_def_1a59d46205409104746b366b737746bd87" prot="public" virt="non-virtual"><scope>FLASH_TypeDef</scope><name>AR</name></member>
+      <member refid="struct_f_l_a_s_h___type_def_1a57b564f26046fc2cb30c5aad3e77348a" prot="public" virt="non-virtual"><scope>FLASH_TypeDef</scope><name>CR</name></member>
+      <member refid="struct_f_l_a_s_h___type_def_1ae7ed76afe51a51d2e051cd28f0afe6ad" prot="public" virt="non-virtual"><scope>FLASH_TypeDef</scope><name>KEYR</name></member>
+      <member refid="struct_f_l_a_s_h___type_def_1a12a0a5d9b85c8ce99ffcc6872a0269f2" prot="public" virt="non-virtual"><scope>FLASH_TypeDef</scope><name>OBR</name></member>
+      <member refid="struct_f_l_a_s_h___type_def_1aebce0c2c98d58b84879bcb97b1d930ef" prot="public" virt="non-virtual"><scope>FLASH_TypeDef</scope><name>OPTKEYR</name></member>
+      <member refid="struct_f_l_a_s_h___type_def_1a9bee8e6d6e2f2adb3915f866b7cc04b0" prot="public" virt="non-virtual"><scope>FLASH_TypeDef</scope><name>RESERVED</name></member>
+      <member refid="struct_f_l_a_s_h___type_def_1a68ba75adcbcd9dbdab37b0bc9f402146" prot="public" virt="non-virtual"><scope>FLASH_TypeDef</scope><name>SR</name></member>
+      <member refid="struct_f_l_a_s_h___type_def_1a881ccf7091153167b9dbc23550edc2c1" prot="public" virt="non-virtual"><scope>FLASH_TypeDef</scope><name>WRPR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

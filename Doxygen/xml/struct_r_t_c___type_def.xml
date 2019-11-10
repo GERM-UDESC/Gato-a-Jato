@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="struct_r_t_c___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>RTC_TypeDef</compoundname>
+    <includes refid="_micro_8h" local="no">Micro.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a00ca2e6be3c01ebe6d28ba6a0a4706f8" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>volatile uint16_t RTC_TypeDef::CRH</definition>
+        <argsstring></argsstring>
+        <name>CRH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="208" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a6d55bb337c409f849725a774364ce3bc" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t RTC_TypeDef::RESERVED0</definition>
+        <argsstring></argsstring>
+        <name>RESERVED0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="209" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a2f4245d47beafb6652cbeeb0469129cc" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>volatile uint16_t RTC_TypeDef::CRL</definition>
+        <argsstring></argsstring>
+        <name>CRL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="210" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a8a152da628dbdba2e849adf196fa341a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t RTC_TypeDef::RESERVED1</definition>
+        <argsstring></argsstring>
+        <name>RESERVED1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="211" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a7bbfc300b15a2f4102066d61bf905b56" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>volatile uint16_t RTC_TypeDef::PRLH</definition>
+        <argsstring></argsstring>
+        <name>PRLH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="212" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1aaa77e68ac9af2be5c095c05a50efe2e4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t RTC_TypeDef::RESERVED2</definition>
+        <argsstring></argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="213" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1ab188bab9fad1eddd4e8dde91f1cce5a3" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>volatile uint16_t RTC_TypeDef::PRLL</definition>
+        <argsstring></argsstring>
+        <name>PRLL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="214" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a5489f7c3119b8e7b55d77a465baf223a" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t RTC_TypeDef::RESERVED3</definition>
+        <argsstring></argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="215" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1ab41b37761f2ffe9f90d44706b65ab20d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>volatile uint16_t RTC_TypeDef::DIVH</definition>
+        <argsstring></argsstring>
+        <name>DIVH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="216" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1ae77864629c9ae9768a752e045c44833d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t RTC_TypeDef::RESERVED4</definition>
+        <argsstring></argsstring>
+        <name>RESERVED4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="217" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a7170ef8b6bde5430c9a87fe3c0f16aa4" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>volatile uint16_t RTC_TypeDef::DIVL</definition>
+        <argsstring></argsstring>
+        <name>DIVL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="218" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a052c02494c2dde3f74ff7d8987ee5230" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t RTC_TypeDef::RESERVED5</definition>
+        <argsstring></argsstring>
+        <name>RESERVED5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="219" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a734801f18cf79c0174d4c22975715200" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>volatile uint16_t RTC_TypeDef::CNTH</definition>
+        <argsstring></argsstring>
+        <name>CNTH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="220" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a74bdff4226786261b4c18b63dd21e3bd" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t RTC_TypeDef::RESERVED6</definition>
+        <argsstring></argsstring>
+        <name>RESERVED6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="221" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a4beeca9ddd9f9d353e52435d74451737" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>volatile uint16_t RTC_TypeDef::CNTL</definition>
+        <argsstring></argsstring>
+        <name>CNTL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="222" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1abb8597ac192c0d24ab6b13b031a34d37" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t RTC_TypeDef::RESERVED7</definition>
+        <argsstring></argsstring>
+        <name>RESERVED7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="223" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a5e42ad69820f00e816d59364d27139de" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>volatile uint16_t RTC_TypeDef::ALRH</definition>
+        <argsstring></argsstring>
+        <name>ALRH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="224" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a5b09d77c801dc948581ef113d8a352c9" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t RTC_TypeDef::RESERVED8</definition>
+        <argsstring></argsstring>
+        <name>RESERVED8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="225" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a53a3dd3cefbb82d8fc88e1f8c8657085" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>volatile uint16_t RTC_TypeDef::ALRL</definition>
+        <argsstring></argsstring>
+        <name>ALRL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="226" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c___type_def_1a3f83ce9cfda0c0e7f854ab65347058b1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t RTC_TypeDef::RESERVED9</definition>
+        <argsstring></argsstring>
+        <name>RESERVED9</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="227" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="207" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="206" bodyend="228"/>
+    <listofallmembers>
+      <member refid="struct_r_t_c___type_def_1a5e42ad69820f00e816d59364d27139de" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>ALRH</name></member>
+      <member refid="struct_r_t_c___type_def_1a53a3dd3cefbb82d8fc88e1f8c8657085" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>ALRL</name></member>
+      <member refid="struct_r_t_c___type_def_1a734801f18cf79c0174d4c22975715200" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>CNTH</name></member>
+      <member refid="struct_r_t_c___type_def_1a4beeca9ddd9f9d353e52435d74451737" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>CNTL</name></member>
+      <member refid="struct_r_t_c___type_def_1a00ca2e6be3c01ebe6d28ba6a0a4706f8" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>CRH</name></member>
+      <member refid="struct_r_t_c___type_def_1a2f4245d47beafb6652cbeeb0469129cc" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>CRL</name></member>
+      <member refid="struct_r_t_c___type_def_1ab41b37761f2ffe9f90d44706b65ab20d" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>DIVH</name></member>
+      <member refid="struct_r_t_c___type_def_1a7170ef8b6bde5430c9a87fe3c0f16aa4" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>DIVL</name></member>
+      <member refid="struct_r_t_c___type_def_1a7bbfc300b15a2f4102066d61bf905b56" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>PRLH</name></member>
+      <member refid="struct_r_t_c___type_def_1ab188bab9fad1eddd4e8dde91f1cce5a3" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>PRLL</name></member>
+      <member refid="struct_r_t_c___type_def_1a6d55bb337c409f849725a774364ce3bc" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>RESERVED0</name></member>
+      <member refid="struct_r_t_c___type_def_1a8a152da628dbdba2e849adf196fa341a" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>RESERVED1</name></member>
+      <member refid="struct_r_t_c___type_def_1aaa77e68ac9af2be5c095c05a50efe2e4" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>RESERVED2</name></member>
+      <member refid="struct_r_t_c___type_def_1a5489f7c3119b8e7b55d77a465baf223a" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>RESERVED3</name></member>
+      <member refid="struct_r_t_c___type_def_1ae77864629c9ae9768a752e045c44833d" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>RESERVED4</name></member>
+      <member refid="struct_r_t_c___type_def_1a052c02494c2dde3f74ff7d8987ee5230" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>RESERVED5</name></member>
+      <member refid="struct_r_t_c___type_def_1a74bdff4226786261b4c18b63dd21e3bd" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>RESERVED6</name></member>
+      <member refid="struct_r_t_c___type_def_1abb8597ac192c0d24ab6b13b031a34d37" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>RESERVED7</name></member>
+      <member refid="struct_r_t_c___type_def_1a5b09d77c801dc948581ef113d8a352c9" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>RESERVED8</name></member>
+      <member refid="struct_r_t_c___type_def_1a3f83ce9cfda0c0e7f854ab65347058b1" prot="public" virt="non-virtual"><scope>RTC_TypeDef</scope><name>RESERVED9</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

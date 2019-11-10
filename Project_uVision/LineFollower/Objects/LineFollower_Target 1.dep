@@ -78,7 +78,7 @@ I (REFLECTANCE_SENSOR.h)(0x5CA5487F)
 I (LINE_SENSOR.h)(0x5D82C503)
 I (MOTOR.h)(0x5D8930BF)
 I (USART.h)(0x5D65909A)
-I (KINEMATIC_CONTROL.h)(0x5D88E695)
+I (KINEMATIC_CONTROL.h)(0x5DC76176)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\math.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\math.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\type_traits)(0x5AA6DBEA)
@@ -121,8 +121,8 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x5AA6DBEA)
 I (TIMER.h)(0x5DBE169B)
 I (ENCODER.h)(0x5D82CE61)
 F (.\MOTOR.h)(0x5D8930BF)()
-F (.\KINEMATIC_CONTROL.cpp)(0x5D8416EB)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/kinematic_control.o -MD)
-I (KINEMATIC_CONTROL.h)(0x5D88E695)
+F (.\KINEMATIC_CONTROL.cpp)(0x5DC76176)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/kinematic_control.o -MD)
+I (KINEMATIC_CONTROL.h)(0x5DC76176)
 I (MOTOR.h)(0x5D8930BF)
 I (PWM.h)(0x5DBE1948)
 I (GPIO.h)(0x5C914A6B)
@@ -143,10 +143,10 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__nullptr)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\limits)(0x5AA6DBEA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\libcxx\__undef_macros)(0x5AA6DBEA)
-F (.\KINEMATIC_CONTROL.h)(0x5D88E695)()
+F (.\KINEMATIC_CONTROL.h)(0x5DC76176)()
 F (.\FOLLOWING_CONTROLER.cpp)(0x5D9E7DFE)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/following_controler.o -MD)
 I (FOLLOWING_CONTROLER.h)(0x5D83ABA2)
-I (KINEMATIC_CONTROL.h)(0x5D88E695)
+I (KINEMATIC_CONTROL.h)(0x5DC76176)
 I (MOTOR.h)(0x5D8930BF)
 I (PWM.h)(0x5DBE1948)
 I (GPIO.h)(0x5C914A6B)
@@ -171,7 +171,7 @@ F (.\FOLLOWING_CONTROLER.h)(0x5D83ABA2)()
 F (.\SERIAL_COMMUNICATION.cpp)(0x5DC4100E)(-xc++ -std=c++11 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-3 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/_Target_1-IC:/Keil_v5/ARM/PACK/Keil/STM32F1xx_DFP/2.3.0/Device/Include-IC:/Keil_v5/ARM/CMSIS/Include-D__UVISION_VERSION="525" -DSTM32F10X_MD-o ./objects/serial_communication.o -MD)
 I (SERIAL_COMMUNICATION.h)(0x5DC416C7)
 I (FOLLOWING_CONTROLER.h)(0x5D83ABA2)
-I (KINEMATIC_CONTROL.h)(0x5D88E695)
+I (KINEMATIC_CONTROL.h)(0x5DC76176)
 I (MOTOR.h)(0x5D8930BF)
 I (PWM.h)(0x5DBE1948)
 I (GPIO.h)(0x5C914A6B)

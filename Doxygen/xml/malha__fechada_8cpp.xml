@@ -1,0 +1,642 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="malha__fechada_8cpp" kind="file" language="C++">
+    <compoundname>malha_fechada.cpp</compoundname>
+    <includes refid="_micro_8h" local="yes">Micro.h</includes>
+    <includes refid="_sys_clock_8h" local="yes">SysClock.h</includes>
+    <includes refid="_g_p_i_o_8h" local="yes">GPIO.h</includes>
+    <includes refid="_t_i_m_e_r_8h" local="yes">TIMER.h</includes>
+    <includes refid="_p_w_m_8h" local="yes">PWM.h</includes>
+    <includes refid="_e_n_c_o_d_e_r_8h" local="yes">ENCODER.h</includes>
+    <includes refid="_a_d_c_8h" local="yes">ADC.h</includes>
+    <includes refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h" local="yes">REFLECTANCE_SENSOR.h</includes>
+    <includes refid="_l_i_n_e___s_e_n_s_o_r_8h" local="yes">LINE_SENSOR.h</includes>
+    <includes refid="_m_o_t_o_r_8h" local="yes">MOTOR.h</includes>
+    <includes refid="_u_s_a_r_t_8h" local="yes">USART.h</includes>
+    <includes refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h" local="yes">KINEMATIC_CONTROL.h</includes>
+    <includes refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h" local="yes">FOLLOWING_CONTROLER.h</includes>
+    <includes refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h" local="yes">SERIAL_COMMUNICATION.h</includes>
+    <includes local="yes">math.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</label>
+        <link refid="malha__fechada_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>REFLECTANCE_SENSOR.h</label>
+        <link refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="9">
+        <label>ADC.h</label>
+        <link refid="_a_d_c_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>MOTOR.h</label>
+        <link refid="_m_o_t_o_r_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>FOLLOWING_CONTROLER.h</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TIMER.h</label>
+        <link refid="_t_i_m_e_r_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>PWM.h</label>
+        <link refid="_p_w_m_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>SERIAL_COMMUNICATION.h</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>KINEMATIC_CONTROL.h</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ENCODER.h</label>
+        <link refid="_e_n_c_o_d_e_r_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>math.h</label>
+      </node>
+      <node id="2">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SysClock.h</label>
+        <link refid="_sys_clock_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>USART.h</label>
+        <link refid="_u_s_a_r_t_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>LINE_SENSOR.h</label>
+        <link refid="_l_i_n_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="malha__fechada_8cpp_1a676a27c0cdc60a1c6506d9f2b254a86c" prot="public" static="no">
+        <name>stepTime</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="18" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="malha__fechada_8cpp_1a9db1b3fa3698e28ae8d8e8e01c1a54dc" prot="public" static="no">
+        <name>steps</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="19" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="malha__fechada_8cpp_1a52fb1e1158019cae62c9370a59faef5b" prot="public" static="no">
+        <name>testTime</name>
+        <initializer><ref refid="malha__fechada_8cpp_1a676a27c0cdc60a1c6506d9f2b254a86c" kindref="member">stepTime</ref>*<ref refid="malha__fechada_8cpp_1a9db1b3fa3698e28ae8d8e8e01c1a54dc" kindref="member">steps</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="20" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="malha__fechada_8cpp_1a992666e46efebc314b3df44318a5c3ac" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float xtest</definition>
+        <argsstring></argsstring>
+        <name>xtest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="21" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="malha__fechada_8cpp_1ac08e825002b6ab740e45042023181158" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ytest</definition>
+        <argsstring></argsstring>
+        <name>ytest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="21" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="malha__fechada_8cpp_1aa50e05cedadd0fe0424cbd1fb4120b22" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float vtest</definition>
+        <argsstring></argsstring>
+        <name>vtest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="21" column="19" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="malha__fechada_8cpp_1a40b25a1ef0327bbdac10f6aa7cd028f9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float wtest</definition>
+        <argsstring></argsstring>
+        <name>wtest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="21" column="25" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="malha__fechada_8cpp_1a3c0bd09fe0ea135db882fe89ad45049c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float pwmtest</definition>
+        <argsstring></argsstring>
+        <name>pwmtest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="21" column="31" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="malha__fechada_8cpp_1a4f5add780e28922435334290d328a249" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float linevalue</definition>
+        <argsstring></argsstring>
+        <name>linevalue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="22" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="malha__fechada_8cpp_1a0b4878899982766548649f044f086ed2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float lineangle</definition>
+        <argsstring></argsstring>
+        <name>lineangle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="22" column="17" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="malha__fechada_8cpp_1aa854514541364b07e209e4699255b304" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t t_ini</definition>
+        <argsstring></argsstring>
+        <name>t_ini</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="23" column="10" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="malha__fechada_8cpp_1ae73654f333e4363463ad8c594eca1905" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="23" column="16" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="malha__fechada_8cpp_1a2a1f7fb92fcb50130d5daf08bf419aed" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t delta_time</definition>
+        <argsstring></argsstring>
+        <name>delta_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="23" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="malha__fechada_8cpp_1ae9c39e1d0704c67a7a0b25315b18619d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t time_test</definition>
+        <argsstring></argsstring>
+        <name>time_test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="23" column="32" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="malha__fechada_8cpp_1a0480b812cba9c1d9c71a5fb1071bd0fc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t counter</definition>
+        <argsstring></argsstring>
+        <name>counter</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="24" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="malha__fechada_8cpp_1a793f7c1be1c77b7dbfae5bbdf598c2e5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RPM_value[12]</definition>
+        <argsstring>[12]</argsstring>
+        <name>RPM_value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="25" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="malha__fechada_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="28" column="5" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="28" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="malha__fechada_8cpp_1ac13ffcf8c8dd96138053b8a854004583" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TIM1_UP_IRQHandler</definition>
+        <argsstring>()</argsstring>
+        <name>TIM1_UP_IRQHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Peripheral base address in the alias region</para>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="161" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="161" bodyend="165" declfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" declline="153" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="malha__fechada_8cpp_1a69ed77607e30e5935ea2d6994e94be10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TIM2_IRQHandler</definition>
+        <argsstring>()</argsstring>
+        <name>TIM2_IRQHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Peripheral base address in the alias region</para>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="167" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="167" bodyend="171" declfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" declline="155" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="malha__fechada_8cpp_1a2f59315000eb73fdeac2ab44fcd8b972" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TIM3_IRQHandler</definition>
+        <argsstring>()</argsstring>
+        <name>TIM3_IRQHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Peripheral base address in the alias region</para>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="173" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="173" bodyend="176" declfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" declline="157" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="malha__fechada_8cpp_1a6e7703924e97aa04dbae6b88adcec3d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TIM4_IRQHandler</definition>
+        <argsstring>()</argsstring>
+        <name>TIM4_IRQHandler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Peripheral base address in the alias region</para>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" line="178" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" bodystart="178" bodyend="182" declfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp" declline="159" declcolumn="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_micro_8h" kindref="compound">Micro.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sys_clock_8h" kindref="compound">SysClock.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_g_p_i_o_8h" kindref="compound">GPIO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_t_i_m_e_r_8h" kindref="compound">TIMER.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_p_w_m_8h" kindref="compound">PWM.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_e_n_c_o_d_e_r_8h" kindref="compound">ENCODER.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_a_d_c_8h" kindref="compound">ADC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h" kindref="compound">REFLECTANCE_SENSOR.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_l_i_n_e___s_e_n_s_o_r_8h" kindref="compound">LINE_SENSOR.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_m_o_t_o_r_8h" kindref="compound">MOTOR.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_u_s_a_r_t_8h" kindref="compound">USART.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h" kindref="compound">KINEMATIC_CONTROL.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h" kindref="compound">FOLLOWING_CONTROLER.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h" kindref="compound">SERIAL_COMMUNICATION.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;math.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>stepTime<sp/>1000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>steps<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>testTime<sp/>stepTime*steps</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="malha__fechada_8cpp_1a992666e46efebc314b3df44318a5c3ac" kindref="member">xtest</ref>,<sp/><ref refid="malha__fechada_8cpp_1ac08e825002b6ab740e45042023181158" kindref="member">ytest</ref>,<sp/><ref refid="malha__fechada_8cpp_1aa50e05cedadd0fe0424cbd1fb4120b22" kindref="member">vtest</ref>,<sp/><ref refid="malha__fechada_8cpp_1a40b25a1ef0327bbdac10f6aa7cd028f9" kindref="member">wtest</ref>,<sp/><ref refid="malha__fechada_8cpp_1a3c0bd09fe0ea135db882fe89ad45049c" kindref="member">pwmtest</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="malha__fechada_8cpp_1a4f5add780e28922435334290d328a249" kindref="member">linevalue</ref>,<sp/><ref refid="malha__fechada_8cpp_1a0b4878899982766548649f044f086ed2" kindref="member">lineangle</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">uint32_t<sp/><ref refid="malha__fechada_8cpp_1aa854514541364b07e209e4699255b304" kindref="member">t_ini</ref>,<sp/><ref refid="malha__fechada_8cpp_1ae73654f333e4363463ad8c594eca1905" kindref="member">time</ref>,<sp/><ref refid="malha__fechada_8cpp_1a2a1f7fb92fcb50130d5daf08bf419aed" kindref="member">delta_time</ref>,<sp/><ref refid="malha__fechada_8cpp_1ae9c39e1d0704c67a7a0b25315b18619d" kindref="member">time_test</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">uint8_t<sp/><ref refid="malha__fechada_8cpp_1a0480b812cba9c1d9c71a5fb1071bd0fc" kindref="member">counter</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="malha__fechada_8cpp_1a793f7c1be1c77b7dbfae5bbdf598c2e5" kindref="member">RPM_value</ref>[12];</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="malha__fechada_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-----------------------------------Initiallize<sp/>static<sp/>parameters----------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a023934c2c5220d6f52bdd5df79666d98" kindref="member">Timer::Timer_Initiallize</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_encoder_1aa3f68a13dcb956850f1661a4245646e8" kindref="member">Encoder::Encoder_Initiallize</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motor_1af8a10fa21c96ddb956d139de58857c1e" kindref="member">Motor::Motor_Initialiize</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------Setup----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sys_clock" kindref="compound">SysClock</ref><sp/>Board;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//initiallize<sp/>the<sp/>board<sp/>clock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Board<sp/>LED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref><sp/>LED_Board(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265af24b60794f891878292ab1264f328e5f" kindref="member">PC13</ref>,<sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa665bc41b04ab948dd28b7c2a7777957e" kindref="member">GP_OUTPUT_PUSH_PULL_2MHZ</ref>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer" kindref="compound">Timer</ref><sp/>Time_Generator(<ref refid="_micro_8h_1a3cfac9f2e43673f790f8668d48b4b92b" kindref="member">TIM2</ref>,<sp/><ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701a7b5e9804203d4b1300aad76e5f9a3302" kindref="member">COUNTER</ref>);<sp/></highlight><highlight class="comment">//This<sp/>one<sp/>is<sp/>dedicated<sp/>to<sp/>generate<sp/>the<sp/>time<sp/>base<sp/>in<sp/>useconds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//H<sp/>bridge<sp/>configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref><sp/>STBY(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ae77aa3a00207709990829bc656fa8e15" kindref="member">PA12</ref>,<sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa665bc41b04ab948dd28b7c2a7777957e" kindref="member">GP_OUTPUT_PUSH_PULL_2MHZ</ref>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref><sp/>AIN2(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a71181225e895f337ea7be60da873489d" kindref="member">PA10</ref>,<sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa665bc41b04ab948dd28b7c2a7777957e" kindref="member">GP_OUTPUT_PUSH_PULL_2MHZ</ref>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref><sp/>AIN1(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265afede1379f9272f8f108c613d02c34e6b" kindref="member">PA11</ref>,<sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa665bc41b04ab948dd28b7c2a7777957e" kindref="member">GP_OUTPUT_PUSH_PULL_2MHZ</ref>);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref><sp/>BIN1(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265aa551c788af416c878a0605d26466f7ad" kindref="member">PA15</ref>,<sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa665bc41b04ab948dd28b7c2a7777957e" kindref="member">GP_OUTPUT_PUSH_PULL_2MHZ</ref>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref><sp/>BIN2(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a35b5c025de3b0d725eef8468eb468fc5" kindref="member">PB3</ref>,<sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa665bc41b04ab948dd28b7c2a7777957e" kindref="member">GP_OUTPUT_PUSH_PULL_2MHZ</ref>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>AIN2.digitalWrite(<ref refid="_g_p_i_o_8h_1ab811d8c6ff3a505312d3276590444289" kindref="member">LOW</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>AIN1.digitalWrite(<ref refid="_g_p_i_o_8h_1ab811d8c6ff3a505312d3276590444289" kindref="member">LOW</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>BIN2.digitalWrite(<ref refid="_g_p_i_o_8h_1ab811d8c6ff3a505312d3276590444289" kindref="member">LOW</ref>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>BIN1.digitalWrite(<ref refid="_g_p_i_o_8h_1ab811d8c6ff3a505312d3276590444289" kindref="member">LOW</ref>);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>STBY.digitalWrite(<ref refid="_g_p_i_o_8h_1a5bb885982ff66a2e0a0a45a8ee9c35e2" kindref="member">HIGH</ref>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//PWM<sp/>configurations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_p_w_m" kindref="compound">PWM</ref><sp/>PWM_E(<ref refid="_micro_8h_1a61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>,<sp/><ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39aa8334edf1730519c9687f4649523d261" kindref="member">TIM_CH2</ref>,<sp/><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadcea6c2496247cf6b84e1c59025287564c1e" kindref="member">PARTIAL_REMAP2</ref>);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_p_w_m" kindref="compound">PWM</ref><sp/>PWM_D(<ref refid="_micro_8h_1a61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>,<sp/><ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39a6c1c6962838e245f3eb6634c23686139" kindref="member">TIM_CH1</ref>,<sp/><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadcea6c2496247cf6b84e1c59025287564c1e" kindref="member">PARTIAL_REMAP2</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>PWM_E.PWMWrite(0);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>PWM_D.PWMWrite(0);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Encoders<sp/>configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_encoder" kindref="compound">Encoder</ref><sp/>ENC_E(<ref refid="_micro_8h_1a2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_encoder" kindref="compound">Encoder</ref><sp/>ENC_D(<ref refid="_micro_8h_1a91a09bad8bdc7a1cb3d85cf49c94c8ec" kindref="member">TIM4</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Motor<sp/>configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motor" kindref="compound">Motor</ref><sp/>Motor_E(PWM_E,<sp/>ENC_E,<sp/>AIN2,<sp/>AIN1);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_motor" kindref="compound">Motor</ref><sp/>Motor_D(PWM_D,<sp/>ENC_D,<sp/>BIN1,<sp/>BIN2);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Line<sp/>sensor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor1(<ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a0db887b05fe2d35518140c53e4d3cd37" kindref="member">ADC_CH0</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor2(<ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a6642852ba79ec550f9db5aee024eafc9" kindref="member">ADC_CH1</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor3(<ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524ac4dcc5d123e548febb592bad090fa13a" kindref="member">ADC_CH2</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor4(<ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a3955d3413cc4000e0121db7f11296c21" kindref="member">ADC_CH3</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor5(<ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524adc9c466c876b5d2226155bf1ebc6e2ec" kindref="member">ADC_CH4</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor6(<ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a57679984f78b2a16619436593843da64" kindref="member">ADC_CH5</ref>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor7(<ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524aebc31ace36f08bbe5cc3ef39de3b70ac" kindref="member">ADC_CH6</ref>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor8(<ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524acf0c880171a962668da324da08aadcfe" kindref="member">ADC_CH7</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_line___sensor" kindref="compound">Line_Sensor</ref><sp/>Sensor_Board(Sensor1,<sp/>Sensor2,<sp/>Sensor3,<sp/>Sensor4,<sp/>Sensor5,<sp/>Sensor6,<sp/>Sensor7,<sp/>Sensor8);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Robot<sp/>Kinematic</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic" kindref="compound">Kinematic</ref><sp/>Robot(Motor_D,<sp/>Motor_E,<sp/>Sensor_Board);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Robot<sp/>Control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_controller" kindref="compound">Controller</ref><sp/>RobotControl(Robot);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Serial<sp/>communication</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_u_s_a_r_t" kindref="compound">USART</ref><sp/>Serial(<ref refid="_micro_8h_1a2350115553c1fe0a7bc14e6a7ec6a225" kindref="member">USART3</ref>,<sp/><ref refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a7df2a129f6e0930ecbf3443aae34910c" kindref="member">BD_1382400</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_communication" kindref="compound">Communication</ref><sp/>Interface(&amp;RobotControl,<sp/>&amp;Serial);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//----------------------------------Initial<sp/>Conditions------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>AIN2.digitalWrite(<ref refid="_g_p_i_o_8h_1ab811d8c6ff3a505312d3276590444289" kindref="member">LOW</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>AIN1.digitalWrite(<ref refid="_g_p_i_o_8h_1ab811d8c6ff3a505312d3276590444289" kindref="member">LOW</ref>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>BIN2.digitalWrite(<ref refid="_g_p_i_o_8h_1ab811d8c6ff3a505312d3276590444289" kindref="member">LOW</ref>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>BIN1.digitalWrite(<ref refid="_g_p_i_o_8h_1a5bb885982ff66a2e0a0a45a8ee9c35e2" kindref="member">HIGH</ref>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>STBY.digitalWrite(<ref refid="_g_p_i_o_8h_1a5bb885982ff66a2e0a0a45a8ee9c35e2" kindref="member">HIGH</ref>);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-----------------------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>RobotControl.Robot.reset();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>LED_Board.tooglePin();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1a0480b812cba9c1d9c71a5fb1071bd0fc" kindref="member">counter</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>RobotControl.Robot.motorD.Set_Speed(0);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1a793f7c1be1c77b7dbfae5bbdf598c2e5" kindref="member">RPM_value</ref>[0]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1a793f7c1be1c77b7dbfae5bbdf598c2e5" kindref="member">RPM_value</ref>[1]<sp/>=<sp/>700;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1a793f7c1be1c77b7dbfae5bbdf598c2e5" kindref="member">RPM_value</ref>[2]<sp/>=<sp/>1500;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1a793f7c1be1c77b7dbfae5bbdf598c2e5" kindref="member">RPM_value</ref>[3]<sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1a793f7c1be1c77b7dbfae5bbdf598c2e5" kindref="member">RPM_value</ref>[4]<sp/>=<sp/>1800;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1a793f7c1be1c77b7dbfae5bbdf598c2e5" kindref="member">RPM_value</ref>[5]<sp/>=<sp/>2200;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1a793f7c1be1c77b7dbfae5bbdf598c2e5" kindref="member">RPM_value</ref>[6]<sp/>=<sp/>500;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1a793f7c1be1c77b7dbfae5bbdf598c2e5" kindref="member">RPM_value</ref>[7]<sp/>=<sp/>2500;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1a793f7c1be1c77b7dbfae5bbdf598c2e5" kindref="member">RPM_value</ref>[8]<sp/>=<sp/>1200;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1a793f7c1be1c77b7dbfae5bbdf598c2e5" kindref="member">RPM_value</ref>[9]<sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1a793f7c1be1c77b7dbfae5bbdf598c2e5" kindref="member">RPM_value</ref>[10]<sp/>=<sp/>500;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1a793f7c1be1c77b7dbfae5bbdf598c2e5" kindref="member">RPM_value</ref>[11]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>Interface.waitForCommand();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1aa854514541364b07e209e4699255b304" kindref="member">t_ini</ref><sp/>=<sp/><ref refid="class_timer_1acc9bf0810dedd57df41a12cfa849a5ff" kindref="member">Timer::GetTime_milisec</ref>();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(1)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1a3c0bd09fe0ea135db882fe89ad45049c" kindref="member">pwmtest</ref><sp/>=<sp/>RobotControl.Robot.motorD.Speed_Reference;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1ac67a5defa2eb1e43bffa1796a8899a1a" kindref="member">Timer::verifyTimeInterrupt</ref>())</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1ae73654f333e4363463ad8c594eca1905" kindref="member">time</ref><sp/>=<sp/><ref refid="class_timer_1acc9bf0810dedd57df41a12cfa849a5ff" kindref="member">Timer::GetTime_milisec</ref>();</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1ae73654f333e4363463ad8c594eca1905" kindref="member">time</ref><sp/>=<sp/><ref refid="class_timer_1acc9bf0810dedd57df41a12cfa849a5ff" kindref="member">Timer::GetTime_milisec</ref>()<sp/>-<sp/><ref refid="malha__fechada_8cpp_1aa854514541364b07e209e4699255b304" kindref="member">t_ini</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="malha__fechada_8cpp_1ae73654f333e4363463ad8c594eca1905" kindref="member">time</ref><sp/>&gt;<sp/>(<ref refid="malha__fechada_8cpp_1a52fb1e1158019cae62c9370a59faef5b" kindref="member">testTime</ref>))</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RobotControl.Robot.motorD.Set_Speed(0);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="malha__fechada_8cpp_1ae73654f333e4363463ad8c594eca1905" kindref="member">time</ref><sp/>&gt;=<sp/>((<ref refid="malha__fechada_8cpp_1a0480b812cba9c1d9c71a5fb1071bd0fc" kindref="member">counter</ref>+1)*<ref refid="malha__fechada_8cpp_1a676a27c0cdc60a1c6506d9f2b254a86c" kindref="member">stepTime</ref>))</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1a0480b812cba9c1d9c71a5fb1071bd0fc" kindref="member">counter</ref>++;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>RobotControl.Robot.motorD.Set_Speed(<ref refid="malha__fechada_8cpp_1a793f7c1be1c77b7dbfae5bbdf598c2e5" kindref="member">RPM_value</ref>[<ref refid="malha__fechada_8cpp_1a0480b812cba9c1d9c71a5fb1071bd0fc" kindref="member">counter</ref>]);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_encoder_1a92a225e84e5675d8ca631a083106532e" kindref="member">Encoder::Encoder_Handler_by_Time</ref>();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_motor_1a04af4305d7317e01ca4673f7f30c0b23" kindref="member">Motor::Motor_Handler_by_time</ref>();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_communication_1a5d6eb07142c2137308fa39b51aee0a86" kindref="member">Communication::HandlerByTime</ref>();</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="malha__fechada_8cpp_1a2a1f7fb92fcb50130d5daf08bf419aed" kindref="member">delta_time</ref><sp/>=<sp/><ref refid="class_timer_1a1b59222052d44b81b3c26f3c88368239" kindref="member">Timer::GetTime_usec</ref>()<sp/>-<sp/><ref refid="malha__fechada_8cpp_1ae73654f333e4363463ad8c594eca1905" kindref="member">time</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((Board.<ref refid="class_sys_clock_1a8ea5a058704b60f85a1aabeb32077f1d" kindref="member">SysTickGetEvent</ref>())<sp/>&amp;&amp;<sp/>(Interface.command<sp/>!=<sp/><ref refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a233ef9e4cd78e463f9bf615da6a6d9f4" kindref="member">robotStop</ref>))</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LED_Board.tooglePin();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment">//Interruption<sp/>Part</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">//Encoder<sp/>1<sp/>-<sp/>Interrupt<sp/>Handler<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//Encoder<sp/>Esquerdo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="malha__fechada_8cpp_1ac13ffcf8c8dd96138053b8a854004583" kindref="member">TIM1_UP_IRQHandler</ref>();</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">//Encoder<sp/>2<sp/>-<sp/>Interrupt<sp/>Handler<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//this<sp/>timer<sp/>is<sp/>being<sp/>used<sp/>as<sp/>time<sp/>base<sp/>for<sp/>the<sp/>system</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="malha__fechada_8cpp_1a69ed77607e30e5935ea2d6994e94be10" kindref="member">TIM2_IRQHandler</ref>();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//Encoder<sp/>3<sp/>-<sp/>Interrupt<sp/>Handler<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//PWM<sp/>generator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="malha__fechada_8cpp_1a2f59315000eb73fdeac2ab44fcd8b972" kindref="member">TIM3_IRQHandler</ref>();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="comment">//Encoder<sp/>4<sp/>-<sp/>Interrupt<sp/>Handler<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//Encoder<sp/>direito</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="malha__fechada_8cpp_1a6e7703924e97aa04dbae6b88adcec3d1" kindref="member">TIM4_IRQHandler</ref>();</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="malha__fechada_8cpp_1ac13ffcf8c8dd96138053b8a854004583" kindref="member">TIM1_UP_IRQHandler</ref>()</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>-&gt;SR<sp/>&amp;=<sp/>~(1&lt;&lt;0);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_encoder_1ae74eccc343aad0485f3f6927ca324559" kindref="member">Encoder::Encoder_Handler</ref>(<ref refid="_e_n_c_o_d_e_r_8h_1a0b411f3235fe88be704e0e34a2fd41dcafba25b1fd714bf143c68a8e7c0429379" kindref="member">Encoder_TIM1</ref>);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="malha__fechada_8cpp_1a69ed77607e30e5935ea2d6994e94be10" kindref="member">TIM2_IRQHandler</ref>()</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a3cfac9f2e43673f790f8668d48b4b92b" kindref="member">TIM2</ref>-&gt;SR<sp/>&amp;=<sp/>~(1&lt;&lt;0);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a9d6f7719e2dcb9598bc3bca0043098d2" kindref="member">Timer::Timer_Handler</ref>();</highlight></codeline>
+<codeline lineno="171"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="malha__fechada_8cpp_1a2f59315000eb73fdeac2ab44fcd8b972" kindref="member">TIM3_IRQHandler</ref>()</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>-&gt;SR<sp/>&amp;=<sp/>~(1&lt;&lt;0);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="malha__fechada_8cpp_1a6e7703924e97aa04dbae6b88adcec3d1" kindref="member">TIM4_IRQHandler</ref>()</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a91a09bad8bdc7a1cb3d85cf49c94c8ec" kindref="member">TIM4</ref>-&gt;SR<sp/>&amp;=<sp/>~(1&lt;&lt;0);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_encoder_1ae74eccc343aad0485f3f6927ca324559" kindref="member">Encoder::Encoder_Handler</ref>(<ref refid="_e_n_c_o_d_e_r_8h_1a0b411f3235fe88be704e0e34a2fd41dca11fa001c1fcac39520275d4e6dd99f0c" kindref="member">Encoder_TIM4</ref>);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp"/>
+  </compounddef>
+</doxygen>

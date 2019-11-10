@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_t_i_m_e_r_8cpp" kind="file" language="C++">
+    <compoundname>TIMER.cpp</compoundname>
+    <includes refid="_t_i_m_e_r_8h" local="yes">TIMER.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>TIMER.h</label>
+        <link refid="_t_i_m_e_r_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp</label>
+        <link refid="_t_i_m_e_r_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_t_i_m_e_r_8h" kindref="compound">TIMER.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref><sp/>Timer::TIM1Remap;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref><sp/>Timer::TIM2Remap;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref><sp/>Timer::TIM3Remap;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref><sp/>Timer::TIM4Remap;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">uint32_t<sp/>Timer::time_in_usec;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">uint32_t<sp/>Timer::time_in_milisec;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref><sp/>*Timer::TIM_Timer_Counter;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Timer::interruptGenerated;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1a023934c2c5220d6f52bdd5df79666d98" kindref="member">Timer::Timer_Initiallize</ref>()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Initiallize<sp/>all<sp/>timer&apos;s<sp/>static<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>Timer::TIM1Remap<sp/>=<sp/><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadcea7e5ee332b74c19519a1578a853545665" kindref="member">NO_REMAP</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>Timer::TIM2Remap<sp/>=<sp/><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadcea7e5ee332b74c19519a1578a853545665" kindref="member">NO_REMAP</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/>Timer::TIM3Remap<sp/>=<sp/><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadcea7e5ee332b74c19519a1578a853545665" kindref="member">NO_REMAP</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/>Timer::TIM4Remap<sp/>=<sp/><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadcea7e5ee332b74c19519a1578a853545665" kindref="member">NO_REMAP</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>Timer::time_in_usec<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>Timer::time_in_milisec<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>Timer::interruptGenerated<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1a9d6f7719e2dcb9598bc3bca0043098d2" kindref="member">Timer::Timer_Handler</ref>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>time_in_usec<sp/>+=<sp/><ref refid="_t_i_m_e_r_8h_1a3d4ab76c869e227bc5373ba193e3986e" kindref="member">Time_between_int</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>time_in_milisec<sp/>+=<sp/><ref refid="_t_i_m_e_r_8h_1a1f1518a6cb35b7d96292d2295d4a5b1c" kindref="member">Time_between_int_milis</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>interruptGenerated<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_timer_1ac67a5defa2eb1e43bffa1796a8899a1a" kindref="member">Timer::verifyTimeInterrupt</ref>()</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(interruptGenerated)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>interruptGenerated<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">uint32_t<sp/><ref refid="class_timer_1a1b59222052d44b81b3c26f3c88368239" kindref="member">Timer::GetTime_usec</ref>()</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(time_in_usec<sp/>+<sp/>Timer::TIM_Timer_Counter-&gt;CNT);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">uint32_t<sp/><ref refid="class_timer_1acc9bf0810dedd57df41a12cfa849a5ff" kindref="member">Timer::GetTime_milisec</ref>()</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(time_in_milisec<sp/>+<sp/>(Timer::TIM_Timer_Counter-&gt;CNT)/1000);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1a8273bc9959e1c908b018003950153d21" kindref="member">Timer::delay</ref>(uint32_t<sp/>delayTime_usec)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>initTime<sp/>=<sp/><ref refid="class_timer_1a1b59222052d44b81b3c26f3c88368239" kindref="member">Timer::GetTime_usec</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>actualTime<sp/>=<sp/><ref refid="class_timer_1a1b59222052d44b81b3c26f3c88368239" kindref="member">Timer::GetTime_usec</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">((actualTime<sp/>-<sp/>initTime)<sp/>&lt;<sp/>delayTime_usec)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>actualTime<sp/>=<sp/><ref refid="class_timer_1a1b59222052d44b81b3c26f3c88368239" kindref="member">Timer::GetTime_usec</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//This<sp/>constructor<sp/>configure<sp/>the<sp/>respective<sp/>pin<sp/>as<sp/>Alternated<sp/>function<sp/>output<sp/>(it&apos;s<sp/>needed<sp/>to<sp/>use<sp/>PWM<sp/>in<sp/>that<sp/>pin)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//and<sp/>after<sp/>that<sp/>enable<sp/>the<sp/>clock<sp/>of<sp/>the<sp/>respective<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><ref refid="class_timer_1a5f16e8da27d2a5a5242dead46de05d97" kindref="member">Timer::Timer</ref>(<ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref><sp/>*TIM,<sp/><ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39" kindref="member">TIM_CHANNELS</ref><sp/>channel,<sp/><ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701" kindref="member">TIM_MODE</ref><sp/>mode)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1adbe72d40a935988e2b66e4189b85f07c" kindref="member">SetTim</ref>(<ref refid="class_timer_1a28770028f61d78e7b6b74338fb58edeb" kindref="member">TIM</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a8d22a9ef3402fea9ec05c0477492e7cc" kindref="member">SetTIMChannel</ref>(channel);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1af807c38bb86f53c4aeaed5a0787811c1" kindref="member">SetTIMMode</ref>(mode);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a14992a91f5a53a1da137424df2fcee51" kindref="member">TimerInit</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><ref refid="class_timer_1a5f16e8da27d2a5a5242dead46de05d97" kindref="member">Timer::Timer</ref>(<ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref><sp/>*TIM,<sp/><ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701" kindref="member">TIM_MODE</ref><sp/>mode)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1adbe72d40a935988e2b66e4189b85f07c" kindref="member">SetTim</ref>(<ref refid="class_timer_1a28770028f61d78e7b6b74338fb58edeb" kindref="member">TIM</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1af807c38bb86f53c4aeaed5a0787811c1" kindref="member">SetTIMMode</ref>(mode);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a14992a91f5a53a1da137424df2fcee51" kindref="member">TimerInit</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1a14992a91f5a53a1da137424df2fcee51" kindref="member">Timer::TimerInit</ref>()</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Enable<sp/>the<sp/>clock<sp/>of<sp/>the<sp/>respective<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APB2ENR<sp/>|=<sp/>(1&lt;&lt;11);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a3cfac9f2e43673f790f8668d48b4b92b" kindref="member">TIM2</ref>)<sp/><sp/><sp/><ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APB1ENR<sp/>|=<sp/>(1&lt;&lt;0);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>)<sp/><sp/><sp/><ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APB1ENR<sp/>|=<sp/>(1&lt;&lt;1);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a91a09bad8bdc7a1cb3d85cf49c94c8ec" kindref="member">TIM4</ref>)<sp/><sp/><sp/><ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APB1ENR<sp/>|=<sp/>(1&lt;&lt;2);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a8c6d407b209f92b4d2417b67a5b465a6" kindref="member">GetTIMMode</ref>())</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701a7b5e9804203d4b1300aad76e5f9a3302" kindref="member">COUNTER</ref>:</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Timer::TIM_Timer_Counter<sp/>=<sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1a284c49942fa0f1a670ac2c2d8bde01aa" kindref="member">SR</ref><sp/>&amp;=<sp/>~(1&lt;&lt;0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Clear<sp/>Update<sp/>interrupt<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1a7189f0766b2642656ee6cf5f3c4bbfa6" kindref="member">PSC</ref><sp/>=<sp/><ref refid="_t_i_m_e_r_8h_1a92e0ef06c5e8ce4f345ee977a00bce9d" kindref="member">Prescale</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Configure<sp/>the<sp/>preescaler<sp/>to<sp/>make<sp/>the<sp/>count<sp/>frequency<sp/>1MHz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1a55798bfb98e8fd2ffb2eef823f6c47f0" kindref="member">ARR</ref><sp/>=<sp/><ref refid="_t_i_m_e_r_8h_1ab63cb35d5572921ce3eec1c542124b4a" kindref="member">AutoReload_Counter</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//number<sp/>of<sp/>clocks<sp/>to<sp/>generate<sp/>an<sp/>flag/interrupt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1a6064df68974b15873904dfc117c15aa4" kindref="member">EGR</ref><sp/>|=<sp/>(1&lt;&lt;0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Update<sp/>generation<sp/>-&gt;<sp/>Generate<sp/>an<sp/>uptade<sp/>of<sp/>all<sp/>configurations<sp/>done<sp/>before</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1a284c49942fa0f1a670ac2c2d8bde01aa" kindref="member">SR</ref><sp/>&amp;=<sp/>~(1&lt;&lt;0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Clear<sp/>Update<sp/>interrupt<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1a2827cdd24a1f1c27cda6fe870e9929e2" kindref="member">DIER</ref><sp/>|=<sp/>(1&lt;&lt;0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Enable<sp/>the<sp/>timer<sp/>to<sp/>generate<sp/>a<sp/>interrupt<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)<sp/><ref refid="_micro_8h_1ac8e97e8ce56ae9f57da1363a937f8a17" kindref="member">NVIC</ref>-&gt;ISER[0]<sp/>|=<sp/>(1&lt;&lt;<ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a78ef1a20c5b8e93cb17bf90afc0c5bd9" kindref="member">TIM1_UP_IRQn</ref>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Enable<sp/>the<sp/>interrupt<sp/>in<sp/>the<sp/>NVIC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a3cfac9f2e43673f790f8668d48b4b92b" kindref="member">TIM2</ref>)<sp/><ref refid="_micro_8h_1ac8e97e8ce56ae9f57da1363a937f8a17" kindref="member">NVIC</ref>-&gt;ISER[0]<sp/>|=<sp/>(1&lt;&lt;<ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a3a4e2095a926e4095d3c846eb1c98afa" kindref="member">TIM2_IRQn</ref>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>)<sp/><ref refid="_micro_8h_1ac8e97e8ce56ae9f57da1363a937f8a17" kindref="member">NVIC</ref>-&gt;ISER[0]<sp/>|=<sp/>(1&lt;&lt;<ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a985574288f66e2a00e97387424a9a2d8" kindref="member">TIM3_IRQn</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a91a09bad8bdc7a1cb3d85cf49c94c8ec" kindref="member">TIM4</ref>)<sp/><ref refid="_micro_8h_1ac8e97e8ce56ae9f57da1363a937f8a17" kindref="member">NVIC</ref>-&gt;ISER[0]<sp/>|=<sp/>(1&lt;&lt;<ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a368b899ca740b9ae0d75841f3abf68c4" kindref="member">TIM4_IRQn</ref>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1a4f9f7bb24e6c25a7ba223ef51d707a85" kindref="member">CR1</ref><sp/>|=<sp/>(1&lt;&lt;0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Enable<sp/>the<sp/>counter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1ae82350f89d1ffcdcd730f0dd2316dc69" kindref="member">Timer::InterrupTime</ref>(uint16_t<sp/><ref refid="malha__fechada_8cpp_1ae73654f333e4363463ad8c594eca1905" kindref="member">time</ref>)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1a55798bfb98e8fd2ffb2eef823f6c47f0" kindref="member">ARR</ref><sp/>=<sp/><ref refid="malha__fechada_8cpp_1ae73654f333e4363463ad8c594eca1905" kindref="member">time</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1a52eb6a361fa6699b61d83394af2357e4" kindref="member">Timer::ClearInterruptFlag</ref>()</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1a284c49942fa0f1a670ac2c2d8bde01aa" kindref="member">SR</ref><sp/>&amp;=<sp/>~(1&lt;&lt;0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Clear<sp/>Update<sp/>interrupt<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">//-------------------------------SETTERS------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1adbe72d40a935988e2b66e4189b85f07c" kindref="member">Timer::SetTim</ref>(<ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref><sp/>*TIM)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;TIM<sp/>=<sp/><ref refid="class_timer_1a28770028f61d78e7b6b74338fb58edeb" kindref="member">TIM</ref>;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1a8d22a9ef3402fea9ec05c0477492e7cc" kindref="member">Timer::SetTIMChannel</ref>(<ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39" kindref="member">TIM_CHANNELS</ref><sp/>TIMChannel)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;TIMChannel<sp/>=<sp/>TIMChannel;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1af807c38bb86f53c4aeaed5a0787811c1" kindref="member">Timer::SetTIMMode</ref>(<ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701" kindref="member">TIM_MODE</ref><sp/>TIMMode)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;TIMMode<sp/>=<sp/>TIMMode;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1a68f6b0beb2aa79f7f22fa0d309f5521e" kindref="member">Timer::SetTIMRemap</ref>(<ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref><sp/>TIMRemap)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)<sp/><sp/>Timer::TIM1Remap<sp/>=<sp/>TIMRemap;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a3cfac9f2e43673f790f8668d48b4b92b" kindref="member">TIM2</ref>)<sp/><sp/>Timer::TIM2Remap<sp/>=<sp/>TIMRemap;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>)<sp/><sp/>Timer::TIM3Remap<sp/>=<sp/>TIMRemap;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a91a09bad8bdc7a1cb3d85cf49c94c8ec" kindref="member">TIM4</ref>)<sp/><sp/>Timer::TIM4Remap<sp/>=<sp/>TIMRemap;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="comment">//-------------------------------GETTERS------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref>*<sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">Timer::GetTim</ref>()</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="class_timer_1a28770028f61d78e7b6b74338fb58edeb" kindref="member">TIM</ref>);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39" kindref="member">TIM_CHANNELS</ref><sp/><ref refid="class_timer_1a735e9ccaba0e385d6cfb94905f8fb898" kindref="member">Timer::GetTIMChannel</ref>()</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;TIMChannel);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701" kindref="member">TIM_MODE</ref><sp/><ref refid="class_timer_1a8c6d407b209f92b4d2417b67a5b465a6" kindref="member">Timer::GetTIMMode</ref>()</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;TIMMode);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref><sp/><ref refid="class_timer_1a8ae90dbc39bbf306d554af018add9413" kindref="member">Timer::GetTIMRemap</ref>()</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)<sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>Timer::TIM1Remap;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a3cfac9f2e43673f790f8668d48b4b92b" kindref="member">TIM2</ref>)<sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>Timer::TIM2Remap;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>)<sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>Timer::TIM3Remap;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a91a09bad8bdc7a1cb3d85cf49c94c8ec" kindref="member">TIM4</ref>)<sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>Timer::TIM4Remap;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadcea7e5ee332b74c19519a1578a853545665" kindref="member">NO_REMAP</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//this<sp/>line<sp/>will<sp/>never<sp/>hapenns,<sp/>but<sp/>the<sp/>compiler<sp/>is<sp/>shows<sp/>a<sp/>warning<sp/>if<sp/>I<sp/>don&apos;t<sp/>put<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp"/>
+  </compounddef>
+</doxygen>

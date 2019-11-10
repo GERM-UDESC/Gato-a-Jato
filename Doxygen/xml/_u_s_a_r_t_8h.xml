@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_u_s_a_r_t_8h" kind="file" language="C++">
+    <compoundname>USART.h</compoundname>
+    <includes refid="_micro_8h" local="yes">Micro.h</includes>
+    <includes refid="_g_p_i_o_8h" local="yes">GPIO.h</includes>
+    <includedby refid="malha__fechada_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</includedby>
+    <includedby refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h</includedby>
+    <includedby refid="_u_s_a_r_t_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h</label>
+        <link refid="_u_s_a_r_t_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</label>
+        <link refid="malha__fechada_8cpp"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.cpp</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8cpp"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.cpp</label>
+        <link refid="_u_s_a_r_t_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h</label>
+        <link refid="_u_s_a_r_t_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_u_s_a_r_t" prot="public">USART</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>BD_ENUM</name>
+        <enumvalue id="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a98aedf35642f458a398aa7cb2c0e750d" prot="public">
+          <name>BD_9600</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a4bb83dee7aab91a2716e1c8c9c7cf3d6" prot="public">
+          <name>BD_38400</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a73bc4e3e339be1795fa6e497dac91ad8" prot="public">
+          <name>BD_57600</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5abed0849f5dce2e0c32ee0c9bad72188b" prot="public">
+          <name>BD_115200</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5aa44964b8823e2fbbe70b76931c79e40d" prot="public">
+          <name>BD_230769</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a50afc41c68117f12814e2d7ec1280422" prot="public">
+          <name>BD_250000</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a7df2a129f6e0930ecbf3443aae34910c" prot="public">
+          <name>BD_1382400</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5acfb3ae78001526b6329dfa008bf53bf2" prot="public">
+          <name>BD_1000000</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a6af58d6986c9e2a44cf04ff483661578" prot="public">
+          <name>BD_2250000</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" line="9" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" bodystart="9" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>USART_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_micro_8h" kindref="compound">Micro.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_g_p_i_o_8h" kindref="compound">GPIO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//USART<sp/>1<sp/>-<sp/>fclk<sp/>=<sp/>72M</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//USART<sp/>2<sp/>e<sp/>3<sp/>-<sp/>fclk<sp/>=<sp/>36M</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10" refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a98aedf35642f458a398aa7cb2c0e750d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a98aedf35642f458a398aa7cb2c0e750d" kindref="member">BD_9600</ref>,</highlight></codeline>
+<codeline lineno="11" refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a4bb83dee7aab91a2716e1c8c9c7cf3d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a4bb83dee7aab91a2716e1c8c9c7cf3d6" kindref="member">BD_38400</ref>,</highlight></codeline>
+<codeline lineno="12" refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a73bc4e3e339be1795fa6e497dac91ad8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a73bc4e3e339be1795fa6e497dac91ad8" kindref="member">BD_57600</ref>,</highlight></codeline>
+<codeline lineno="13" refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5abed0849f5dce2e0c32ee0c9bad72188b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5abed0849f5dce2e0c32ee0c9bad72188b" kindref="member">BD_115200</ref>,<sp/><sp/></highlight><highlight class="comment">//BD_115384<sp/>-&gt;<sp/>this<sp/>is<sp/>the<sp/>value<sp/>if<sp/>using<sp/>USART<sp/>2<sp/>or<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5aa44964b8823e2fbbe70b76931c79e40d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5aa44964b8823e2fbbe70b76931c79e40d" kindref="member">BD_230769</ref>,</highlight></codeline>
+<codeline lineno="15" refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a50afc41c68117f12814e2d7ec1280422" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a50afc41c68117f12814e2d7ec1280422" kindref="member">BD_250000</ref>,</highlight></codeline>
+<codeline lineno="16" refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a7df2a129f6e0930ecbf3443aae34910c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a7df2a129f6e0930ecbf3443aae34910c" kindref="member">BD_1382400</ref>,</highlight></codeline>
+<codeline lineno="17" refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5acfb3ae78001526b6329dfa008bf53bf2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5acfb3ae78001526b6329dfa008bf53bf2" kindref="member">BD_1000000</ref>,</highlight></codeline>
+<codeline lineno="18" refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a6af58d6986c9e2a44cf04ff483661578" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5a6af58d6986c9e2a44cf04ff483661578" kindref="member">BD_2250000</ref>,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}<sp/><ref refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5" kindref="member">BD_ENUM</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_u_s_a_r_t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_u_s_a_r_t" kindref="compound">USART</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref><sp/>TX_Port;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref><sp/>RX_Port;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_u_s_a_r_t___type_def" kindref="compound">USART_TypeDef</ref><sp/>*Usart;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>init(<ref refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5" kindref="member">BD_ENUM</ref><sp/>Baud_Rate);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_s_a_r_t_1a313f3a3aedc50a08e02bc290ad976dd2" kindref="member">USART</ref>(<ref refid="struct_u_s_a_r_t___type_def" kindref="compound">USART_TypeDef</ref><sp/>*Usart,<sp/><ref refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5" kindref="member">BD_ENUM</ref><sp/>Baud_Rate);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_s_a_r_t_1a06aaff358bf6c3f8b3a90e4c75637d3f" kindref="member">Send</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_s_a_r_t_1a0386d250e95ddee0a18af50b03a90b3a" kindref="member">Send_Vec_16</ref>(uint16_t<sp/>*ptVec,<sp/>uint16_t<sp/>size);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_s_a_r_t_1afa60575197efa986e703ac8d7c7ee2c6" kindref="member">sendFloat</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>*ptFloat);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_s_a_r_t_1a2c094ea757fcaa115a2666b63c04bdc9" kindref="member">sendUint32</ref>(uint32_t<sp/>*ptUint32);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_u_s_a_r_t_1a2d7f12cb4eba15596d24369ca0cae74b" kindref="member">sendUint16</ref>(uint16_t<sp/>*ptUint16);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_u_s_a_r_t_1a82f94a8c4d58d078dc9e1d43d748eb5a" kindref="member">Receive</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_u_s_a_r_t_1a29a0fb6eac4d03228e43417da86110fb" kindref="member">Available</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h"/>
+  </compounddef>
+</doxygen>

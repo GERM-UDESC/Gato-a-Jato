@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8cpp" kind="file" language="C++">
+    <compoundname>REFLECTANCE_SENSOR.cpp</compoundname>
+    <includes refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h" local="yes">REFLECTANCE_SENSOR.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>REFLECTANCE_SENSOR.h</label>
+        <link refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stdint.h</label>
+      </node>
+      <node id="3">
+        <label>ADC.h</label>
+        <link refid="_a_d_c_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>TIMER.h</label>
+        <link refid="_t_i_m_e_r_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.cpp</label>
+        <link refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h" kindref="compound">REFLECTANCE_SENSOR.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//Reflectance_Sensor::Reflectance_Sensor()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>calib_max<sp/>=<sp/>2000;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//initialize<sp/>the<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>calib_min<sp/>=<sp/>2000;<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//initialize<sp/>the<sp/>variable<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="class_reflectance___sensor_1ab58544f6019c6471696838768f63e958" kindref="member">Reflectance_Sensor::Reflectance_Sensor</ref>(<ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524" kindref="member">ADC_CHANNELS</ref><sp/>ADCChannel)<sp/>:<sp/>adcPin(ADCChannel)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>calib_max<sp/>=<sp/>2000;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//initialize<sp/>the<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>calib_min<sp/>=<sp/>2000;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//initialize<sp/>the<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="class_reflectance___sensor_1ab58544f6019c6471696838768f63e958" kindref="member">Reflectance_Sensor::Reflectance_Sensor</ref>(<ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>*Sensor)<sp/>:<sp/>adcPin(Sensor-&gt;adcPin.GetADCChannel())</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>calib_max<sp/>=<sp/>2000;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//initialize<sp/>the<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>calib_min<sp/>=<sp/>2000;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//initialize<sp/>the<sp/>variable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_reflectance___sensor_1a89ec5baef1c58f37c49050b8407bf77d" kindref="member">Reflectance_Sensor::Calib_Reflectance_Sensor</ref>()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>sensor_value<sp/>=<sp/>adcPin.<ref refid="class_a_d_c_1a1284108c54c5bdaa25deae6c7350a728" kindref="member">analogRead</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sensor_value<sp/>&lt;<sp/>calib_min)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>calib_min<sp/>=<sp/>sensor_value;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sensor_value<sp/>&gt;<sp/>calib_max)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>calib_max<sp/>=<sp/>sensor_value;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>range<sp/>=<sp/>calib_max<sp/>-<sp/>calib_min;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_reflectance___sensor_1ad67b725554f5205481bce69b66b7fae1" kindref="member">Reflectance_Sensor::Reflectance_Read</ref>()</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>convertedRead<sp/>=<sp/>adcPin.<ref refid="class_a_d_c_1a1284108c54c5bdaa25deae6c7350a728" kindref="member">analogRead</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>convertedRead<sp/>=<sp/>1000<sp/>*<sp/>(calib_max<sp/>-<sp/>convertedRead)<sp/>/<sp/>range;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>convertedRead;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.cpp"/>
+  </compounddef>
+</doxygen>

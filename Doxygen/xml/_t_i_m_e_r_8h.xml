@@ -1,0 +1,467 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_t_i_m_e_r_8h" kind="file" language="C++">
+    <compoundname>TIMER.h</compoundname>
+    <includes refid="_g_p_i_o_8h" local="yes">GPIO.h</includes>
+    <includes refid="_micro_8h" local="yes">Micro.h</includes>
+    <includedby refid="_a_d_c_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h</includedby>
+    <includedby refid="_e_n_c_o_d_e_r_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ENCODER.h</includedby>
+    <includedby refid="_p_w_m_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h</includedby>
+    <includedby refid="malha__fechada_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</includedby>
+    <includedby refid="_t_i_m_e_r_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h</label>
+        <link refid="_t_i_m_e_r_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="19">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp</label>
+        <link refid="_m_o_t_o_r_8cpp"/>
+      </node>
+      <node id="14">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.cpp</label>
+        <link refid="_l_i_n_e___s_e_n_s_o_r_8cpp"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</label>
+        <link refid="malha__fechada_8cpp"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h</label>
+        <link refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h</label>
+        <link refid="_a_d_c_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h</label>
+        <link refid="_m_o_t_o_r_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h</label>
+        <link refid="_t_i_m_e_r_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.cpp</label>
+        <link refid="_p_w_m_8cpp"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8cpp"/>
+      </node>
+      <node id="20">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h</label>
+        <link refid="_p_w_m_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8cpp"/>
+      </node>
+      <node id="11">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ENCODER.h</label>
+        <link refid="_e_n_c_o_d_e_r_8h"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ENCODER.cpp</label>
+        <link refid="_e_n_c_o_d_e_r_8cpp"/>
+      </node>
+      <node id="12">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.cpp</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8cpp"/>
+      </node>
+      <node id="22">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp</label>
+        <link refid="_t_i_m_e_r_8cpp"/>
+      </node>
+      <node id="15">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.cpp</label>
+        <link refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ANGLE_LINE_SENSOR.h</label>
+        <link refid="_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r_8h"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.cpp</label>
+        <link refid="_a_d_c_8cpp"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h</label>
+        <link refid="_l_i_n_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_timer" prot="public">Timer</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_t_i_m_e_r_8h_1a92e0ef06c5e8ce4f345ee977a00bce9d" prot="public" static="no">
+        <name>Prescale</name>
+        <initializer>71</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="36" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_t_i_m_e_r_8h_1a3d4ab76c869e227bc5373ba193e3986e" prot="public" static="no">
+        <name>Time_between_int</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="37" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_t_i_m_e_r_8h_1a1f1518a6cb35b7d96292d2295d4a5b1c" prot="public" static="no">
+        <name>Time_between_int_milis</name>
+        <initializer><ref refid="_t_i_m_e_r_8h_1a3d4ab76c869e227bc5373ba193e3986e" kindref="member">Time_between_int</ref>/1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="38" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_t_i_m_e_r_8h_1ab63cb35d5572921ce3eec1c542124b4a" prot="public" static="no">
+        <name>AutoReload_Counter</name>
+        <initializer>(<ref refid="_t_i_m_e_r_8h_1a3d4ab76c869e227bc5373ba193e3986e" kindref="member">Time_between_int</ref>-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="39" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TIM_MODE</name>
+        <enumvalue id="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701a7b5e9804203d4b1300aad76e5f9a3302" prot="public">
+          <name>COUNTER</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701a6ddb3b94e3599054126d1f65cd1109f3" prot="public">
+          <name>PWM_MODE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701ac9087468163f873cbfa4a4bc8eae5e25" prot="public">
+          <name>QUADRATURE_ENCODER_MODE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="9" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="enum" id="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TIM_CHANNELS</name>
+        <enumvalue id="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39a6c1c6962838e245f3eb6634c23686139" prot="public">
+          <name>TIM_CH1</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39aa8334edf1730519c9687f4649523d261" prot="public">
+          <name>TIM_CH2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39a180c50c6b884b805822709bc9514a3f0" prot="public">
+          <name>TIM_CH3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39a7acd7ead6b4eed885378554b4e2d6f93" prot="public">
+          <name>TIM_CH4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="15" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="15" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="enum" id="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TIM_REMAP</name>
+        <enumvalue id="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadcea7e5ee332b74c19519a1578a853545665" prot="public">
+          <name>NO_REMAP</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadcea59ab6e53e13c2926d9a94e62ddbd3ffd" prot="public">
+          <name>PARTIAL_REMAP1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadcea6c2496247cf6b84e1c59025287564c1e" prot="public">
+          <name>PARTIAL_REMAP2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadceaae80a0a00620da4c5497ce046a8f4a08" prot="public">
+          <name>FULL_REMAP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="28" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="28" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>TIMER_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMER_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_g_p_i_o_8h" kindref="compound">GPIO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_micro_8h" kindref="compound">Micro.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*The<sp/>PWM<sp/>and<sp/>encoder<sp/>mode<sp/>are<sp/>used<sp/>just<sp/>to<sp/>make<sp/>a<sp/>correct<sp/>distintion<sp/>between<sp/>the<sp/>modes,<sp/>but<sp/>the<sp/>only<sp/>one<sp/>that<sp/>makes<sp/>difference</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">in<sp/>this<sp/>driver<sp/>is<sp/>the<sp/>counter,<sp/>because<sp/>in<sp/>the<sp/>encoder<sp/>e<sp/>pwm<sp/>mode,<sp/>their<sp/>own<sp/>drivers<sp/>take<sp/>care<sp/>about<sp/>their<sp/>configuration.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10" refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701a7b5e9804203d4b1300aad76e5f9a3302" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701a7b5e9804203d4b1300aad76e5f9a3302" kindref="member">COUNTER</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="11" refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701a6ddb3b94e3599054126d1f65cd1109f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701a6ddb3b94e3599054126d1f65cd1109f3" kindref="member">PWM_MODE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12" refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701ac9087468163f873cbfa4a4bc8eae5e25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701ac9087468163f873cbfa4a4bc8eae5e25" kindref="member">QUADRATURE_ENCODER_MODE</ref>,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}<ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701" kindref="member">TIM_MODE</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16" refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39a6c1c6962838e245f3eb6634c23686139" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39a6c1c6962838e245f3eb6634c23686139" kindref="member">TIM_CH1</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="17" refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39aa8334edf1730519c9687f4649523d261" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39aa8334edf1730519c9687f4649523d261" kindref="member">TIM_CH2</ref>,</highlight></codeline>
+<codeline lineno="18" refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39a180c50c6b884b805822709bc9514a3f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39a180c50c6b884b805822709bc9514a3f0" kindref="member">TIM_CH3</ref>,</highlight></codeline>
+<codeline lineno="19" refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39a7acd7ead6b4eed885378554b4e2d6f93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39a7acd7ead6b4eed885378554b4e2d6f93" kindref="member">TIM_CH4</ref>,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}<ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39" kindref="member">TIM_CHANNELS</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>Timer1<sp/>-&gt;<sp/>No<sp/>remap<sp/><sp/>;<sp/>//Timer1<sp/>can<sp/>remap<sp/>some<sp/>complementary<sp/>channels,<sp/>but<sp/>I&apos;ll<sp/>avoid<sp/>to<sp/>use<sp/>it</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/>Timer2<sp/>-&gt;<sp/>All<sp/>options</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/>Timer3<sp/>-&gt;<sp/>No<sp/>remap;<sp/>Partial_Remap2</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/>Timer4<sp/>-&gt;<sp/>No<sp/>remap</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29" refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadcea7e5ee332b74c19519a1578a853545665" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadcea7e5ee332b74c19519a1578a853545665" kindref="member">NO_REMAP</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="30" refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadcea59ab6e53e13c2926d9a94e62ddbd3ffd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadcea59ab6e53e13c2926d9a94e62ddbd3ffd" kindref="member">PARTIAL_REMAP1</ref>,</highlight></codeline>
+<codeline lineno="31" refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadcea6c2496247cf6b84e1c59025287564c1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadcea6c2496247cf6b84e1c59025287564c1e" kindref="member">PARTIAL_REMAP2</ref>,</highlight></codeline>
+<codeline lineno="32" refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadceaae80a0a00620da4c5497ce046a8f4a08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadceaae80a0a00620da4c5497ce046a8f4a08" kindref="member">FULL_REMAP</ref>,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}<ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_t_i_m_e_r_8h_1a92e0ef06c5e8ce4f345ee977a00bce9d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Prescale<sp/>71<sp/><sp/><sp/><sp/><sp/>//Timer<sp/>frequency<sp/>=<sp/>72Mhz/(Prescale+1).<sp/>If<sp/>Prescale<sp/>=<sp/>71,<sp/>then<sp/>Timer<sp/>freq.<sp/>=<sp/>1Mhz<sp/>-&gt;<sp/>Timer<sp/>period<sp/>=<sp/>1us.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="_t_i_m_e_r_8h_1a3d4ab76c869e227bc5373ba193e3986e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Time_between_int<sp/>1000<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//in<sp/>usec</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="_t_i_m_e_r_8h_1a1f1518a6cb35b7d96292d2295d4a5b1c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Time_between_int_milis<sp/>Time_between_int/1000<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//in<sp/>milisec</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_t_i_m_e_r_8h_1ab63cb35d5572921ce3eec1c542124b4a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AutoReload_Counter<sp/>(Time_between_int-1)<sp/>//at<sp/>1Mhz,<sp/>and<sp/>autoreaload_counter<sp/>=<sp/>999,<sp/>the<sp/>timer<sp/>counter<sp/>will<sp/>generate<sp/>an<sp/>interrupt<sp/>at<sp/>each<sp/>1ms.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------CLASS------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//TIM2,<sp/>TIM3,<sp/>TIM4<sp/>-&gt;<sp/>GenTimer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//TIM1<sp/>-&gt;<sp/>AdvancedTimer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="class_timer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_timer" kindref="compound">Timer</ref></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Atributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref><sp/>TIM1Remap;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref><sp/>TIM2Remap;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref><sp/>TIM3Remap;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref><sp/>TIM4Remap;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/>time_in_usec;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/>time_in_milisec;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref><sp/>*TIM_Timer_Counter;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>interruptGenerated;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39" kindref="member">TIM_CHANNELS</ref><sp/>TIMChannel;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701" kindref="member">TIM_MODE</ref><sp/>TIMMode;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Atributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="class_timer_1a28770028f61d78e7b6b74338fb58edeb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref><sp/>*<ref refid="class_timer_1a28770028f61d78e7b6b74338fb58edeb" kindref="member">TIM</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69" refid="class_timer_1a5f16e8da27d2a5a5242dead46de05d97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a5f16e8da27d2a5a5242dead46de05d97" kindref="member">Timer</ref>(){};<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Default<sp/>Constructor<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Setters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1adbe72d40a935988e2b66e4189b85f07c" kindref="member">SetTim</ref>(<ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref><sp/>*<ref refid="class_timer_1a28770028f61d78e7b6b74338fb58edeb" kindref="member">TIM</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1a8d22a9ef3402fea9ec05c0477492e7cc" kindref="member">SetTIMChannel</ref>(<ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39" kindref="member">TIM_CHANNELS</ref><sp/>TIMChannel);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1af807c38bb86f53c4aeaed5a0787811c1" kindref="member">SetTIMMode</ref>(<ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701" kindref="member">TIM_MODE</ref><sp/>TIMMode);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="class_timer_1a1b59222052d44b81b3c26f3c88368239" kindref="member">GetTime_usec</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="class_timer_1acc9bf0810dedd57df41a12cfa849a5ff" kindref="member">GetTime_milisec</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1a8273bc9959e1c908b018003950153d21" kindref="member">delay</ref>(uint32_t<sp/>delayTime_usec);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1a023934c2c5220d6f52bdd5df79666d98" kindref="member">Timer_Initiallize</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Initiallize<sp/>all<sp/>timer&apos;s<sp/>static<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1a9d6f7719e2dcb9598bc3bca0043098d2" kindref="member">Timer_Handler</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Take<sp/>care<sp/>of<sp/>all<sp/>that<sp/>is<sp/>need<sp/>to<sp/>maintain<sp/>the<sp/>time<sp/>base<sp/>in<sp/>usec</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_timer_1ac67a5defa2eb1e43bffa1796a8899a1a" kindref="member">verifyTimeInterrupt</ref>();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a5f16e8da27d2a5a5242dead46de05d97" kindref="member">Timer</ref>(<ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref><sp/>*<ref refid="class_timer_1a28770028f61d78e7b6b74338fb58edeb" kindref="member">TIM</ref>,<sp/><ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39" kindref="member">TIM_CHANNELS</ref><sp/>TIMChannel,<sp/><ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701" kindref="member">TIM_MODE</ref><sp/>TIMMode);<sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a5f16e8da27d2a5a5242dead46de05d97" kindref="member">Timer</ref>(<ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref><sp/>*<ref refid="class_timer_1a28770028f61d78e7b6b74338fb58edeb" kindref="member">TIM</ref>,<sp/><ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701" kindref="member">TIM_MODE</ref><sp/>TIMMode);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Public<sp/>Setters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1a68f6b0beb2aa79f7f22fa0d309f5521e" kindref="member">SetTIMRemap</ref>(<ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref><sp/>TIMRemap);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Getters<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref>*<sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>();</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39" kindref="member">TIM_CHANNELS</ref><sp/><ref refid="class_timer_1a735e9ccaba0e385d6cfb94905f8fb898" kindref="member">GetTIMChannel</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701" kindref="member">TIM_MODE</ref><sp/><ref refid="class_timer_1a8c6d407b209f92b4d2417b67a5b465a6" kindref="member">GetTIMMode</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref><sp/><ref refid="class_timer_1a8ae90dbc39bbf306d554af018add9413" kindref="member">GetTIMRemap</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1a14992a91f5a53a1da137424df2fcee51" kindref="member">TimerInit</ref>();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1ae82350f89d1ffcdcd730f0dd2316dc69" kindref="member">InterrupTime</ref>(uint16_t<sp/><ref refid="malha__fechada_8cpp_1ae73654f333e4363463ad8c594eca1905" kindref="member">time</ref>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//in<sp/>micro<sp/>seconds<sp/>-&gt;<sp/>0&lt;time&lt;65000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_timer_1a52eb6a361fa6699b61d83394af2357e4" kindref="member">ClearInterruptFlag</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h"/>
+  </compounddef>
+</doxygen>

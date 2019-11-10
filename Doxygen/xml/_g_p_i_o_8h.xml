@@ -1,0 +1,951 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_g_p_i_o_8h" kind="file" language="C++">
+    <compoundname>GPIO.h</compoundname>
+    <includes refid="_micro_8h" local="yes">Micro.h</includes>
+    <includedby refid="_a_d_c_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h</includedby>
+    <includedby refid="_t_i_m_e_r_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h</includedby>
+    <includedby refid="_e_n_c_o_d_e_r_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ENCODER.h</includedby>
+    <includedby refid="_p_w_m_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h</includedby>
+    <includedby refid="_g_p_i_o_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp</includedby>
+    <includedby refid="_sys_clock_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SysClock.h</includedby>
+    <includedby refid="malha__fechada_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</includedby>
+    <includedby refid="_u_s_a_r_t_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="20">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp</label>
+        <link refid="_m_o_t_o_r_8cpp"/>
+      </node>
+      <node id="24">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp</label>
+        <link refid="_g_p_i_o_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.cpp</label>
+        <link refid="_l_i_n_e___s_e_n_s_o_r_8cpp"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</label>
+        <link refid="malha__fechada_8cpp"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h</label>
+        <link refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h</label>
+        <link refid="_a_d_c_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h</label>
+        <link refid="_m_o_t_o_r_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h</label>
+        <link refid="_t_i_m_e_r_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.cpp</label>
+        <link refid="_p_w_m_8cpp"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8cpp"/>
+      </node>
+      <node id="21">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h</label>
+        <link refid="_p_w_m_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8cpp"/>
+      </node>
+      <node id="11">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ENCODER.h</label>
+        <link refid="_e_n_c_o_d_e_r_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ENCODER.cpp</label>
+        <link refid="_e_n_c_o_d_e_r_8cpp"/>
+      </node>
+      <node id="12">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.cpp</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8cpp"/>
+      </node>
+      <node id="23">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp</label>
+        <link refid="_t_i_m_e_r_8cpp"/>
+      </node>
+      <node id="15">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.cpp</label>
+        <link refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8cpp"/>
+      </node>
+      <node id="28">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.cpp</label>
+        <link refid="_u_s_a_r_t_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ANGLE_LINE_SENSOR.h</label>
+        <link refid="_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r_8h"/>
+      </node>
+      <node id="25">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SysClock.h</label>
+        <link refid="_sys_clock_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h</label>
+        <link refid="_u_s_a_r_t_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SysClock.cpp</label>
+        <link refid="_sys_clock_8cpp"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.cpp</label>
+        <link refid="_a_d_c_8cpp"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h</label>
+        <link refid="_l_i_n_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_g_p_i_o___s_t_r_u_c_t" prot="public">GPIO_STRUCT</innerclass>
+    <innerclass refid="class_g_p_i_o" prot="public">GPIO</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_g_p_i_o_8h_1a5bb885982ff66a2e0a0a45a8ee9c35e2" prot="public" static="no">
+        <name>HIGH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="5" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_p_i_o_8h_1ab811d8c6ff3a505312d3276590444289" prot="public" static="no">
+        <name>LOW</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="6" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>GPIO_MODES</name>
+        <enumvalue id="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa4790094e6004d7ba65d6b662c99058d7" prot="public">
+          <name>INPUT_ANALOG</name>
+          <initializer>= 0x0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa4ca52bfab8d0fa863d9655c508cd4e97" prot="public">
+          <name>GP_OUTPUT_PUSH_PULL_10MHZ</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa665bc41b04ab948dd28b7c2a7777957e" prot="public">
+          <name>GP_OUTPUT_PUSH_PULL_2MHZ</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa830ef25d3a8636346b7df0b64a5646f4" prot="public">
+          <name>GP_OUTPUT_PUSH_PULL_50MHZ</name>
+          <initializer>= 0x3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa0ef18149ebd1d9936fe599e0ba5ae43d" prot="public">
+          <name>INPUT_FLOATING</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aaec9bf058f2f4a19a5ba65e3b67194f68" prot="public">
+          <name>GP_OUTPUT_OPEN_DRAIN_10MHZ</name>
+          <initializer>= 0x5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aabcca65116671fe5a95a74b69ca2bdb3d" prot="public">
+          <name>GP_OUTPUT_OPEN_DRAIN_2MHZ</name>
+          <initializer>= 0x6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa3a31c144aad730ee1a16430d953a8f7d" prot="public">
+          <name>GP_OUTPUT_OPEN_DRAIN_50MHZ</name>
+          <initializer>= 0x7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa1de9d160496cb74d0c9dfe45efb05df6" prot="public">
+          <name>INPUT_PULL_UP_DOWN</name>
+          <initializer>= 0x8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aab1b60fba349d8d1c62d490979c4ea713" prot="public">
+          <name>AF_OUTPUT_PUSH_PULL_10MHZ</name>
+          <initializer>= 0x9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aadf423fd87467fde9a209122fbbb3cfd5" prot="public">
+          <name>AF_OUTPUT_PUSH_PULL_2MHZ</name>
+          <initializer>= 0xA</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aaf5bdac9f8f4b320aec591a855522de8d" prot="public">
+          <name>AF_OUTPUT_PUSH_PULL_50MHZ</name>
+          <initializer>= 0xB</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa38a6004e277512eabd62aa04d6b54bce" prot="public">
+          <name>AF_OUTPUT_OPEN_DRAIN_10MHZ</name>
+          <initializer>= 0xD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa302a87649a2290d25f697753a19e5348" prot="public">
+          <name>AF_OUTPUT_OPEN_DRAIN_2MHZ</name>
+          <initializer>= 0xE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aafcf27bff3bd469bb8b001c458bc18078" prot="public">
+          <name>AF_OUTPUT_OPEN_DRAIN_50MHZ</name>
+          <initializer>= 0xF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="12" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" bodystart="12" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="enum" id="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100" prot="public" static="no" strong="no">
+        <type></type>
+        <name>PIN_NUMBERS</name>
+        <enumvalue id="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a302dbba83d47666da4b37e5a223105ec" prot="public">
+          <name>PIN0</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100afa4ff3b5642cae54b83210fcce1c39ac" prot="public">
+          <name>PIN1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100ae90c5a59f509ccf2ff2fab0a52a3774f" prot="public">
+          <name>PIN2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100ace918dad9ed9de15eb1362c94b28feb4" prot="public">
+          <name>PIN3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a4a438ef04f4b0baa53c26cb6046c0973" prot="public">
+          <name>PIN4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100aa2df961455bde47244aa7318d1c1bd51" prot="public">
+          <name>PIN5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a2a4f859ed8bfea5a9409e99dd7349558" prot="public">
+          <name>PIN6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a8aff7b07119bc9bc98d397b397dd30c7" prot="public">
+          <name>PIN7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100ae3cd01a5599e6fb565ece7536303e797" prot="public">
+          <name>PIN8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a85693b279c938126da0f458d52232191" prot="public">
+          <name>PIN9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a1792c7d1bc79b435ed4d986884999097" prot="public">
+          <name>PIN10</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a5c3ca6bb97e585e03d88f5324f63f1b2" prot="public">
+          <name>PIN11</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a168d648ca86ba79bc3323578a666f8a5" prot="public">
+          <name>PIN12</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a91eb9cff7ebaef0e873ba095911c70fd" prot="public">
+          <name>PIN13</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100aa81692b08711de60a5ac2a8b60f55c3b" prot="public">
+          <name>PIN14</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a2b7bb92b5fdcddac39c7b7bf2688fb67" prot="public">
+          <name>PIN15</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a1c95462151f01b0aecadadc6eded05ad" prot="public">
+          <name>NUMBER_OF_PINS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="31" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" bodystart="31" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="enum" id="_g_p_i_o_8h_1abbfa31a8db1fd7006b8ac7c034a19418" prot="public" static="no" strong="no">
+        <type></type>
+        <name>PU_PD_ENUM</name>
+        <enumvalue id="_g_p_i_o_8h_1abbfa31a8db1fd7006b8ac7c034a19418a0351276972489e49e38c22116a9b88be" prot="public">
+          <name>PULL_DOWN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1abbfa31a8db1fd7006b8ac7c034a19418a6d031447a3a4f4a8bd019caae5a8eefd" prot="public">
+          <name>PULL_UP</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="52" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="enum" id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265" prot="public" static="no" strong="no">
+        <type></type>
+        <name>GPIO_IO_ENUM</name>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a09c5d44fd6e7ee5daddd08009b04ac38" prot="public">
+          <name>PA0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a201be1986c3153a2eb2de811e1700f0e" prot="public">
+          <name>PA1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ada41486a507439d5f7944cb482608272" prot="public">
+          <name>PA2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a9d22824e6f426a415722fef30c17bb23" prot="public">
+          <name>PA3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a836506b72e125f74f67e68b4797113e3" prot="public">
+          <name>PA4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265abbc68c892c3b62e32a645e24b2c3f431" prot="public">
+          <name>PA5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ae3a4724611297f7aaf05b3df96500e50" prot="public">
+          <name>PA6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a854a1d26d1740bfa815bf76f027e1c90" prot="public">
+          <name>PA7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a425b946ed4ca75b99534ce59cbc8c606" prot="public">
+          <name>PA8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ad27e336d89371954807f38669532f78f" prot="public">
+          <name>PA9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a71181225e895f337ea7be60da873489d" prot="public">
+          <name>PA10</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265afede1379f9272f8f108c613d02c34e6b" prot="public">
+          <name>PA11</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ae77aa3a00207709990829bc656fa8e15" prot="public">
+          <name>PA12</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265aa551c788af416c878a0605d26466f7ad" prot="public">
+          <name>PA15</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265addf87f545e0fe02b1d66e61cda646572" prot="public">
+          <name>PB0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a137b9b5f8c427f5d138faaa7ba3d8528" prot="public">
+          <name>PB1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a35b5c025de3b0d725eef8468eb468fc5" prot="public">
+          <name>PB3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a9bdcd1e11a76de8b559e4fe7a7c88ffe" prot="public">
+          <name>PB4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a2f98730e36b3418068afb18d6b8b049d" prot="public">
+          <name>PB5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a719b788556c95b8f637797cd1779eb94" prot="public">
+          <name>PB6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a81ef9abf013c4af2ef0c863e2ebb8fba" prot="public">
+          <name>PB7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a2df42c9a8b51e329d9750d14d7822c71" prot="public">
+          <name>PB8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a4ee7fa177dff1cba755b5b5ffdc87763" prot="public">
+          <name>PB9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a1ede9cd17a3e9e6016d5846b56c327e7" prot="public">
+          <name>PB10</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265aebb4b5e54e5440bd4bb2642b8725dcd2" prot="public">
+          <name>PB11</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ac01e60c3456b47a2ee77ae94cb76b3b8" prot="public">
+          <name>PB12</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265aeb994c4d0eb8613bd636879aa1c3b679" prot="public">
+          <name>PB13</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ace964af99cb6df40df7fb5f9aa719f31" prot="public">
+          <name>PB14</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a2aa1c66ee3202df2f49a7fa058ce6944" prot="public">
+          <name>PB15</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265af24b60794f891878292ab1264f328e5f" prot="public">
+          <name>PC13</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a1193fcfd1c4b39a13201d79206376266" prot="public">
+          <name>PC14</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265afc608487d364c80862aaf9997c6be012" prot="public">
+          <name>PC15</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a7d93fcc83c6a0f221e071a80bfa8767a" prot="public">
+          <name>NUM_OF_IOs</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="59" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" bodystart="59" bodyend="93"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GPIO_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIO_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_micro_8h" kindref="compound">Micro.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_g_p_i_o_8h_1a5bb885982ff66a2e0a0a45a8ee9c35e2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HIGH<sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="_g_p_i_o_8h_1ab811d8c6ff3a505312d3276590444289" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOW<sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------ENUMs------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//All<sp/>possibles<sp/>operation<sp/>modes<sp/>are<sp/>enumerated<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa4790094e6004d7ba65d6b662c99058d7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa4790094e6004d7ba65d6b662c99058d7" kindref="member">INPUT_ANALOG</ref><sp/>=<sp/>0x0,</highlight></codeline>
+<codeline lineno="14" refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa4ca52bfab8d0fa863d9655c508cd4e97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa4ca52bfab8d0fa863d9655c508cd4e97" kindref="member">GP_OUTPUT_PUSH_PULL_10MHZ</ref><sp/>=<sp/>0x1,</highlight></codeline>
+<codeline lineno="15" refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa665bc41b04ab948dd28b7c2a7777957e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa665bc41b04ab948dd28b7c2a7777957e" kindref="member">GP_OUTPUT_PUSH_PULL_2MHZ</ref><sp/>=<sp/>0x2,</highlight></codeline>
+<codeline lineno="16" refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa830ef25d3a8636346b7df0b64a5646f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa830ef25d3a8636346b7df0b64a5646f4" kindref="member">GP_OUTPUT_PUSH_PULL_50MHZ</ref><sp/>=<sp/>0x3,</highlight></codeline>
+<codeline lineno="17" refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa0ef18149ebd1d9936fe599e0ba5ae43d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa0ef18149ebd1d9936fe599e0ba5ae43d" kindref="member">INPUT_FLOATING</ref><sp/>=<sp/>0x4,</highlight></codeline>
+<codeline lineno="18" refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aaec9bf058f2f4a19a5ba65e3b67194f68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aaec9bf058f2f4a19a5ba65e3b67194f68" kindref="member">GP_OUTPUT_OPEN_DRAIN_10MHZ</ref><sp/>=<sp/>0x5,</highlight></codeline>
+<codeline lineno="19" refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aabcca65116671fe5a95a74b69ca2bdb3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aabcca65116671fe5a95a74b69ca2bdb3d" kindref="member">GP_OUTPUT_OPEN_DRAIN_2MHZ</ref><sp/>=<sp/>0x6,</highlight></codeline>
+<codeline lineno="20" refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa3a31c144aad730ee1a16430d953a8f7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa3a31c144aad730ee1a16430d953a8f7d" kindref="member">GP_OUTPUT_OPEN_DRAIN_50MHZ</ref><sp/>=<sp/>0x7,</highlight></codeline>
+<codeline lineno="21" refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa1de9d160496cb74d0c9dfe45efb05df6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa1de9d160496cb74d0c9dfe45efb05df6" kindref="member">INPUT_PULL_UP_DOWN</ref><sp/>=<sp/>0x8,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//to<sp/>select<sp/>if<sp/>it<sp/>must<sp/>be<sp/>PU<sp/>or<sp/>PD,<sp/>we<sp/>must<sp/>use<sp/>the<sp/>ODR<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aab1b60fba349d8d1c62d490979c4ea713" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aab1b60fba349d8d1c62d490979c4ea713" kindref="member">AF_OUTPUT_PUSH_PULL_10MHZ</ref><sp/>=<sp/>0x9,</highlight></codeline>
+<codeline lineno="23" refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aadf423fd87467fde9a209122fbbb3cfd5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aadf423fd87467fde9a209122fbbb3cfd5" kindref="member">AF_OUTPUT_PUSH_PULL_2MHZ</ref><sp/>=<sp/>0xA,</highlight></codeline>
+<codeline lineno="24" refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aaf5bdac9f8f4b320aec591a855522de8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aaf5bdac9f8f4b320aec591a855522de8d" kindref="member">AF_OUTPUT_PUSH_PULL_50MHZ</ref><sp/>=<sp/>0xB,</highlight></codeline>
+<codeline lineno="25" refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa38a6004e277512eabd62aa04d6b54bce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa38a6004e277512eabd62aa04d6b54bce" kindref="member">AF_OUTPUT_OPEN_DRAIN_10MHZ</ref><sp/>=<sp/>0xD,</highlight></codeline>
+<codeline lineno="26" refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa302a87649a2290d25f697753a19e5348" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa302a87649a2290d25f697753a19e5348" kindref="member">AF_OUTPUT_OPEN_DRAIN_2MHZ</ref><sp/>=<sp/>0xE,</highlight></codeline>
+<codeline lineno="27" refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aafcf27bff3bd469bb8b001c458bc18078" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aafcf27bff3bd469bb8b001c458bc18078" kindref="member">AF_OUTPUT_OPEN_DRAIN_50MHZ</ref><sp/>=<sp/>0xF,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}<ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08a" kindref="member">GPIO_MODES</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//All<sp/>possibles<sp/>16<sp/>pins<sp/>(0<sp/>-<sp/>15)<sp/>are<sp/>enumerated<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32" refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a302dbba83d47666da4b37e5a223105ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a302dbba83d47666da4b37e5a223105ec" kindref="member">PIN0</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="33" refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100afa4ff3b5642cae54b83210fcce1c39ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100afa4ff3b5642cae54b83210fcce1c39ac" kindref="member">PIN1</ref>,</highlight></codeline>
+<codeline lineno="34" refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100ae90c5a59f509ccf2ff2fab0a52a3774f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100ae90c5a59f509ccf2ff2fab0a52a3774f" kindref="member">PIN2</ref>,</highlight></codeline>
+<codeline lineno="35" refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100ace918dad9ed9de15eb1362c94b28feb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100ace918dad9ed9de15eb1362c94b28feb4" kindref="member">PIN3</ref>,</highlight></codeline>
+<codeline lineno="36" refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a4a438ef04f4b0baa53c26cb6046c0973" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a4a438ef04f4b0baa53c26cb6046c0973" kindref="member">PIN4</ref>,</highlight></codeline>
+<codeline lineno="37" refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100aa2df961455bde47244aa7318d1c1bd51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100aa2df961455bde47244aa7318d1c1bd51" kindref="member">PIN5</ref>,</highlight></codeline>
+<codeline lineno="38" refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a2a4f859ed8bfea5a9409e99dd7349558" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a2a4f859ed8bfea5a9409e99dd7349558" kindref="member">PIN6</ref>,</highlight></codeline>
+<codeline lineno="39" refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a8aff7b07119bc9bc98d397b397dd30c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a8aff7b07119bc9bc98d397b397dd30c7" kindref="member">PIN7</ref>,</highlight></codeline>
+<codeline lineno="40" refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100ae3cd01a5599e6fb565ece7536303e797" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100ae3cd01a5599e6fb565ece7536303e797" kindref="member">PIN8</ref>,</highlight></codeline>
+<codeline lineno="41" refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a85693b279c938126da0f458d52232191" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a85693b279c938126da0f458d52232191" kindref="member">PIN9</ref>,</highlight></codeline>
+<codeline lineno="42" refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a1792c7d1bc79b435ed4d986884999097" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a1792c7d1bc79b435ed4d986884999097" kindref="member">PIN10</ref>,</highlight></codeline>
+<codeline lineno="43" refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a5c3ca6bb97e585e03d88f5324f63f1b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a5c3ca6bb97e585e03d88f5324f63f1b2" kindref="member">PIN11</ref>,</highlight></codeline>
+<codeline lineno="44" refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a168d648ca86ba79bc3323578a666f8a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a168d648ca86ba79bc3323578a666f8a5" kindref="member">PIN12</ref>,</highlight></codeline>
+<codeline lineno="45" refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a91eb9cff7ebaef0e873ba095911c70fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a91eb9cff7ebaef0e873ba095911c70fd" kindref="member">PIN13</ref>,</highlight></codeline>
+<codeline lineno="46" refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100aa81692b08711de60a5ac2a8b60f55c3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100aa81692b08711de60a5ac2a8b60f55c3b" kindref="member">PIN14</ref>,</highlight></codeline>
+<codeline lineno="47" refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a2b7bb92b5fdcddac39c7b7bf2688fb67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a2b7bb92b5fdcddac39c7b7bf2688fb67" kindref="member">PIN15</ref>,</highlight></codeline>
+<codeline lineno="48" refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a1c95462151f01b0aecadadc6eded05ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100a1c95462151f01b0aecadadc6eded05ad" kindref="member">NUMBER_OF_PINS</ref>,<sp/></highlight><highlight class="comment">//NUMBER_OF_PINS<sp/>==<sp/>16,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}<ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100" kindref="member">PIN_NUMBERS</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//Enumeration<sp/>of<sp/>pull_up/pull_down</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="_g_p_i_o_8h_1abbfa31a8db1fd7006b8ac7c034a19418" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//This<sp/>values<sp/>should<sp/>be<sp/>written<sp/>in<sp/>the<sp/>ODR<sp/>register<sp/>according<sp/>to<sp/>your<sp/>need</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="_g_p_i_o_8h_1abbfa31a8db1fd7006b8ac7c034a19418a0351276972489e49e38c22116a9b88be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1abbfa31a8db1fd7006b8ac7c034a19418a0351276972489e49e38c22116a9b88be" kindref="member">PULL_DOWN</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="54" refid="_g_p_i_o_8h_1abbfa31a8db1fd7006b8ac7c034a19418a6d031447a3a4f4a8bd019caae5a8eefd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1abbfa31a8db1fd7006b8ac7c034a19418a6d031447a3a4f4a8bd019caae5a8eefd" kindref="member">PULL_UP</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}<ref refid="_g_p_i_o_8h_1abbfa31a8db1fd7006b8ac7c034a19418" kindref="member">PU_PD_ENUM</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//---------------------------Hardware<sp/>Abstraction<sp/>Layers-----------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a09c5d44fd6e7ee5daddd08009b04ac38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a09c5d44fd6e7ee5daddd08009b04ac38" kindref="member">PA0</ref>,</highlight></codeline>
+<codeline lineno="61" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a201be1986c3153a2eb2de811e1700f0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a201be1986c3153a2eb2de811e1700f0e" kindref="member">PA1</ref>,</highlight></codeline>
+<codeline lineno="62" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ada41486a507439d5f7944cb482608272" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ada41486a507439d5f7944cb482608272" kindref="member">PA2</ref>,</highlight></codeline>
+<codeline lineno="63" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a9d22824e6f426a415722fef30c17bb23" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a9d22824e6f426a415722fef30c17bb23" kindref="member">PA3</ref>,</highlight></codeline>
+<codeline lineno="64" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a836506b72e125f74f67e68b4797113e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a836506b72e125f74f67e68b4797113e3" kindref="member">PA4</ref>,</highlight></codeline>
+<codeline lineno="65" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265abbc68c892c3b62e32a645e24b2c3f431" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265abbc68c892c3b62e32a645e24b2c3f431" kindref="member">PA5</ref>,</highlight></codeline>
+<codeline lineno="66" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ae3a4724611297f7aaf05b3df96500e50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ae3a4724611297f7aaf05b3df96500e50" kindref="member">PA6</ref>,</highlight></codeline>
+<codeline lineno="67" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a854a1d26d1740bfa815bf76f027e1c90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a854a1d26d1740bfa815bf76f027e1c90" kindref="member">PA7</ref>,</highlight></codeline>
+<codeline lineno="68" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a425b946ed4ca75b99534ce59cbc8c606" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a425b946ed4ca75b99534ce59cbc8c606" kindref="member">PA8</ref>,</highlight></codeline>
+<codeline lineno="69" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ad27e336d89371954807f38669532f78f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ad27e336d89371954807f38669532f78f" kindref="member">PA9</ref>,</highlight></codeline>
+<codeline lineno="70" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a71181225e895f337ea7be60da873489d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a71181225e895f337ea7be60da873489d" kindref="member">PA10</ref>,</highlight></codeline>
+<codeline lineno="71" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265afede1379f9272f8f108c613d02c34e6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265afede1379f9272f8f108c613d02c34e6b" kindref="member">PA11</ref>,</highlight></codeline>
+<codeline lineno="72" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ae77aa3a00207709990829bc656fa8e15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ae77aa3a00207709990829bc656fa8e15" kindref="member">PA12</ref>,</highlight></codeline>
+<codeline lineno="73" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265aa551c788af416c878a0605d26466f7ad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265aa551c788af416c878a0605d26466f7ad" kindref="member">PA15</ref>,</highlight></codeline>
+<codeline lineno="74" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265addf87f545e0fe02b1d66e61cda646572" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265addf87f545e0fe02b1d66e61cda646572" kindref="member">PB0</ref>,</highlight></codeline>
+<codeline lineno="75" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a137b9b5f8c427f5d138faaa7ba3d8528" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a137b9b5f8c427f5d138faaa7ba3d8528" kindref="member">PB1</ref>,</highlight></codeline>
+<codeline lineno="76" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a35b5c025de3b0d725eef8468eb468fc5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a35b5c025de3b0d725eef8468eb468fc5" kindref="member">PB3</ref>,</highlight></codeline>
+<codeline lineno="77" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a9bdcd1e11a76de8b559e4fe7a7c88ffe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a9bdcd1e11a76de8b559e4fe7a7c88ffe" kindref="member">PB4</ref>,</highlight></codeline>
+<codeline lineno="78" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a2f98730e36b3418068afb18d6b8b049d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a2f98730e36b3418068afb18d6b8b049d" kindref="member">PB5</ref>,</highlight></codeline>
+<codeline lineno="79" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a719b788556c95b8f637797cd1779eb94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a719b788556c95b8f637797cd1779eb94" kindref="member">PB6</ref>,</highlight></codeline>
+<codeline lineno="80" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a81ef9abf013c4af2ef0c863e2ebb8fba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a81ef9abf013c4af2ef0c863e2ebb8fba" kindref="member">PB7</ref>,</highlight></codeline>
+<codeline lineno="81" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a2df42c9a8b51e329d9750d14d7822c71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a2df42c9a8b51e329d9750d14d7822c71" kindref="member">PB8</ref>,</highlight></codeline>
+<codeline lineno="82" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a4ee7fa177dff1cba755b5b5ffdc87763" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a4ee7fa177dff1cba755b5b5ffdc87763" kindref="member">PB9</ref>,</highlight></codeline>
+<codeline lineno="83" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a1ede9cd17a3e9e6016d5846b56c327e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a1ede9cd17a3e9e6016d5846b56c327e7" kindref="member">PB10</ref>,</highlight></codeline>
+<codeline lineno="84" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265aebb4b5e54e5440bd4bb2642b8725dcd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265aebb4b5e54e5440bd4bb2642b8725dcd2" kindref="member">PB11</ref>,</highlight></codeline>
+<codeline lineno="85" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ac01e60c3456b47a2ee77ae94cb76b3b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ac01e60c3456b47a2ee77ae94cb76b3b8" kindref="member">PB12</ref>,</highlight></codeline>
+<codeline lineno="86" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265aeb994c4d0eb8613bd636879aa1c3b679" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265aeb994c4d0eb8613bd636879aa1c3b679" kindref="member">PB13</ref>,</highlight></codeline>
+<codeline lineno="87" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ace964af99cb6df40df7fb5f9aa719f31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ace964af99cb6df40df7fb5f9aa719f31" kindref="member">PB14</ref>,</highlight></codeline>
+<codeline lineno="88" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a2aa1c66ee3202df2f49a7fa058ce6944" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a2aa1c66ee3202df2f49a7fa058ce6944" kindref="member">PB15</ref>,</highlight></codeline>
+<codeline lineno="89" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265af24b60794f891878292ab1264f328e5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265af24b60794f891878292ab1264f328e5f" kindref="member">PC13</ref>,</highlight></codeline>
+<codeline lineno="90" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a1193fcfd1c4b39a13201d79206376266" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a1193fcfd1c4b39a13201d79206376266" kindref="member">PC14</ref>,</highlight></codeline>
+<codeline lineno="91" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265afc608487d364c80862aaf9997c6be012" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265afc608487d364c80862aaf9997c6be012" kindref="member">PC15</ref>,</highlight></codeline>
+<codeline lineno="92" refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a7d93fcc83c6a0f221e071a80bfa8767a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a7d93fcc83c6a0f221e071a80bfa8767a" kindref="member">NUM_OF_IOs</ref>,<sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265" kindref="member">GPIO_IO_ENUM</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="struct_g_p_i_o___s_t_r_u_c_t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96" refid="struct_g_p_i_o___s_t_r_u_c_t_1a7078dc14ecb0f7f9825c3517301e3526" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_g_p_i_o___type_def" kindref="compound">GPIO_TypeDef</ref><sp/>*<ref refid="struct_g_p_i_o___s_t_r_u_c_t_1a7078dc14ecb0f7f9825c3517301e3526" kindref="member">Port</ref>;</highlight></codeline>
+<codeline lineno="97" refid="struct_g_p_i_o___s_t_r_u_c_t_1a914345f5b0f1d2b487a6c103f09afcf6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100" kindref="member">PIN_NUMBERS</ref><sp/><ref refid="struct_g_p_i_o___s_t_r_u_c_t_1a914345f5b0f1d2b487a6c103f09afcf6" kindref="member">pinNumber</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}<ref refid="struct_g_p_i_o___s_t_r_u_c_t" kindref="compound">GPIO_STRUCT</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//typedef<sp/>enum{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>PIN_NOT_USED,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>PIN_IS_USED,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">//}USED_PINS_ENUM;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------CLASS------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="class_g_p_i_o" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Atributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265" kindref="member">GPIO_IO_ENUM</ref><sp/>IO_Pin;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Save<sp/>just<sp/>the<sp/>referente<sp/>to<sp/>port<sp/>and<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_g_p_i_o___s_t_r_u_c_t" kindref="compound">GPIO_STRUCT</ref><sp/>GPIOPortPin;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Save<sp/>the<sp/>port<sp/>and<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08a" kindref="member">GPIO_MODES</ref><sp/>GPIOMode;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Save<sp/>the<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1abbfa31a8db1fd7006b8ac7c034a19418" kindref="member">PU_PD_ENUM</ref><sp/>PU_PD;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>GPIOState;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//in<sp/>case<sp/>it&apos;s<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_g_p_i_o___s_t_r_u_c_t" kindref="compound">GPIO_STRUCT</ref><sp/>GPIO_PORTS_PINS[<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a7d93fcc83c6a0f221e071a80bfa8767a" kindref="member">NUM_OF_IOs</ref>];</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>UsedPins[<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a7d93fcc83c6a0f221e071a80bfa8767a" kindref="member">NUM_OF_IOs</ref>];<sp/><sp/><sp/></highlight><highlight class="comment">//Map<sp/>the<sp/>used<sp/>pins<sp/>to<sp/>avoid<sp/>reconfig<sp/>the<sp/>pin<sp/>-&gt;<sp/>NOT<sp/>IMPLEMENTED<sp/>YET</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Constructors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="class_g_p_i_o_1ab443a641cef81b1a9ec0211c5aa9c1ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o_1ab443a641cef81b1a9ec0211c5aa9c1ac" kindref="member">GPIO</ref>(){};</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o_1ab443a641cef81b1a9ec0211c5aa9c1ac" kindref="member">GPIO</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265" kindref="member">GPIO_IO_ENUM</ref><sp/>IO_Pin,<sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08a" kindref="member">GPIO_MODES</ref><sp/>GPIOMode);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o_1ab443a641cef81b1a9ec0211c5aa9c1ac" kindref="member">GPIO</ref>(<ref refid="class_g_p_i_o" kindref="compound">GPIO</ref><sp/>*gpio);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Setters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265" kindref="member">GPIO_IO_ENUM</ref><sp/>IO_Pin);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_p_i_o_1ad63b30938acafc3c2deb126b70258a9c" kindref="member">SetGPIOMode</ref>(<ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08a" kindref="member">GPIO_MODES</ref><sp/>GPIOMode);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_p_i_o_1af2de5cd4e4c844aa7cc344505e912390" kindref="member">SetIOPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265" kindref="member">GPIO_IO_ENUM</ref><sp/>IO_Pin);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Getters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_g_p_i_o___type_def" kindref="compound">GPIO_TypeDef</ref><sp/>*<ref refid="class_g_p_i_o_1ae729c77b07ec53fb0a429856291a50f2" kindref="member">GetGPIOPort</ref>();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100" kindref="member">PIN_NUMBERS</ref><sp/><ref refid="class_g_p_i_o_1a27baf1d6a71a2a291369fbe14dd28a1d" kindref="member">GetGPIOPinNumber</ref>();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08a" kindref="member">GPIO_MODES</ref><sp/><ref refid="class_g_p_i_o_1a141ef87565744ba096b15279a1532879" kindref="member">GetGPIOMode</ref>();</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1abbfa31a8db1fd7006b8ac7c034a19418" kindref="member">PU_PD_ENUM</ref><sp/><ref refid="class_g_p_i_o_1a76cd9eca6bb4078f395700abc869aa85" kindref="member">GetGPIOPuPd</ref>();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265" kindref="member">GPIO_IO_ENUM</ref><sp/><ref refid="class_g_p_i_o_1ae01be7f508aa9062ba2349af842ece5c" kindref="member">GetIOPin</ref>();</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_g_p_i_o_1a78492d4a195b90e30464190434e59741" kindref="member">GetGPIOState</ref>();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Public<sp/>Methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_p_i_o_1a0572d93ba912073decd7a96d90c312b0" kindref="member">ConfigGPIOPin</ref>();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_p_i_o_1ac2015f7c0e644e227008e79e54adcd6b" kindref="member">Config_PU_PD</ref>(<ref refid="_g_p_i_o_8h_1abbfa31a8db1fd7006b8ac7c034a19418" kindref="member">PU_PD_ENUM</ref><sp/>PU_PD);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//By<sp/>defaul,<sp/>PD<sp/>is<sp/>choosen,<sp/>this<sp/>functions<sp/>allows<sp/>the<sp/>user<sp/>to<sp/>change<sp/>to<sp/>PU/PD;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_p_i_o_1a870daa607286476d9e8b96b9cfceae29" kindref="member">digitalWrite</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>GPIOState);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_g_p_i_o_1a53f920b5f06b6b61b68befc90b9e4996" kindref="member">tooglePin</ref>();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_g_p_i_o_1a5b2ae8f7330caad2299483311129e8a0" kindref="member">digitalRead</ref>();</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h"/>
+  </compounddef>
+</doxygen>

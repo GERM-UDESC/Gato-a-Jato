@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8cpp" kind="file" language="C++">
+    <compoundname>KINEMATIC_CONTROL.cpp</compoundname>
+    <includes refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h" local="yes">KINEMATIC_CONTROL.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>REFLECTANCE_SENSOR.h</label>
+        <link refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stdint.h</label>
+      </node>
+      <node id="12">
+        <label>ADC.h</label>
+        <link refid="_a_d_c_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MOTOR.h</label>
+        <link refid="_m_o_t_o_r_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>TIMER.h</label>
+        <link refid="_t_i_m_e_r_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>PWM.h</label>
+        <link refid="_p_w_m_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ENCODER.h</label>
+        <link refid="_e_n_c_o_d_e_r_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>KINEMATIC_CONTROL.h</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>math.h</label>
+      </node>
+      <node id="6">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>LINE_SENSOR.h</label>
+        <link refid="_l_i_n_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h" kindref="compound">KINEMATIC_CONTROL.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="class_kinematic" kindref="compound">Kinematic</ref><sp/>*<ref refid="class_kinematic_1af87a1cfe93c3caff778e1c2a716f5962" kindref="member">Kinematic::ptRobot</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a96fabd303578de83454c28f7aa20fae6" kindref="member">Kinematic::handlerByTime</ref>()</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1af87a1cfe93c3caff778e1c2a716f5962" kindref="member">Kinematic::ptRobot</ref>-&gt;<ref refid="class_kinematic_1a2a5a41a8e10aef52019f50ccbea38c72" kindref="member">handler</ref>();</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><ref refid="class_kinematic_1ae67640080d134cef3fbd3b793693a4a3" kindref="member">Kinematic::Kinematic</ref>(<ref refid="class_motor" kindref="compound">Motor</ref><sp/>motorD,<sp/><ref refid="class_motor" kindref="compound">Motor</ref><sp/>motorE,<sp/><ref refid="class_line___sensor" kindref="compound">Line_Sensor</ref><sp/>lineSensor)<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">:<sp/>motorD(&amp;motorD),<sp/>motorE(&amp;motorE),<sp/>lineSensor(&amp;lineSensor),<sp/>xPos(0),<sp/>yPos(0)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1af87a1cfe93c3caff778e1c2a716f5962" kindref="member">Kinematic::ptRobot</ref><sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>calibrationFinished<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>reset();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="class_kinematic_1ae67640080d134cef3fbd3b793693a4a3" kindref="member">Kinematic::Kinematic</ref>(<ref refid="class_kinematic" kindref="compound">Kinematic</ref><sp/>*kinematic):motorD(&amp;kinematic-&gt;motorD),<sp/>motorE(&amp;kinematic-&gt;motorE),<sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">lineSensor(&amp;kinematic-&gt;lineSensor),<sp/>xPos(0),<sp/>yPos(0)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1af87a1cfe93c3caff778e1c2a716f5962" kindref="member">Kinematic::ptRobot</ref><sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>reset();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1ab0473396a6b13fedf23941602e2283ef" kindref="member">Kinematic::reset</ref>()</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1ab047c05d32231b85ab66935b44e612ac" kindref="member">motorD</ref>.<ref refid="class_motor_1a41e15bdd1b60545cacf209ab45f61165" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a3521b4d4fb6fcf2c59a70f963c92bfab" kindref="member">motorE</ref>.<ref refid="class_motor_1a41e15bdd1b60545cacf209ab45f61165" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a47739aebb18552c8ae499353761a9a4a" kindref="member">xPos</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a19d7ec959e58681269fa6233a08e133e" kindref="member">yPos</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a916af74e85211b8c9065bf685ef695d6" kindref="member">angleFilterOrder</ref>);<sp/>i++)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a16fa421ad7f24f69364f0fce9a8cdd26" kindref="member">angle</ref>[i]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a9a5d752c2b6ec56ec808365ddf5cc580" kindref="member">lineSensorReading</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a54038680366aaa55e5fafaae1a44dce5" kindref="member">lastLineSensorReading</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1ab4f4b37d78e40a28d034fac022313183" kindref="member">distance</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a35b0680ed1fb05c922dbbddf3b04da7c" kindref="member">deltaDistance</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1aa884b513403e058b6e0c745a236da6c7" kindref="member">lastDistance</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a6cc5ded243cb4c3d69b8b9196f11a8c4" kindref="member">Kinematic::setSpeed</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>V,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1ab047c05d32231b85ab66935b44e612ac" kindref="member">motorD</ref>.<ref refid="class_motor_1a1018eb52901a7358216de97d2da499cd" kindref="member">Set_Speed</ref>((V/<ref refid="_m_o_t_o_r_8h_1a62969232668331297e2dca1ae2ddd10d" kindref="member">r</ref><sp/>+<sp/>(<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1aa73214aa5f2f94f63d90bb4e3d99fe53" kindref="member">L</ref>*w)/<ref refid="_m_o_t_o_r_8h_1a62969232668331297e2dca1ae2ddd10d" kindref="member">r</ref>)*<ref refid="_m_o_t_o_r_8h_1a0a9267cc60162e4c524403ee6c2655f3" kindref="member">radsToRpm</ref>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a3521b4d4fb6fcf2c59a70f963c92bfab" kindref="member">motorE</ref>.<ref refid="class_motor_1a1018eb52901a7358216de97d2da499cd" kindref="member">Set_Speed</ref>((V/<ref refid="_m_o_t_o_r_8h_1a62969232668331297e2dca1ae2ddd10d" kindref="member">r</ref><sp/>-<sp/>(<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1aa73214aa5f2f94f63d90bb4e3d99fe53" kindref="member">L</ref>*w)/<ref refid="_m_o_t_o_r_8h_1a62969232668331297e2dca1ae2ddd10d" kindref="member">r</ref>)*<ref refid="_m_o_t_o_r_8h_1a0a9267cc60162e4c524403ee6c2655f3" kindref="member">radsToRpm</ref>);<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a2a5a41a8e10aef52019f50ccbea38c72" kindref="member">Kinematic::handler</ref>()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>xPos<sp/>+=<sp/>getV()*cos(getTeta())*integrationTime;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>yPos<sp/>+=<sp/>getV()*sin(getTeta())*integrationTime;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_kinematic_1a35b0680ed1fb05c922dbbddf3b04da7c" kindref="member">deltaDistance</ref><sp/>=<sp/>(<ref refid="class_kinematic_1ab047c05d32231b85ab66935b44e612ac" kindref="member">motorD</ref>.<ref refid="class_motor_1a51e71949cdd9d1c450a700f33aed2ce6" kindref="member">getDeltaDistance</ref>()<sp/>+<sp/><ref refid="class_kinematic_1a3521b4d4fb6fcf2c59a70f963c92bfab" kindref="member">motorE</ref>.<ref refid="class_motor_1a51e71949cdd9d1c450a700f33aed2ce6" kindref="member">getDeltaDistance</ref>())/2;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a47739aebb18552c8ae499353761a9a4a" kindref="member">xPos</ref><sp/>+=<sp/>this-&gt;<ref refid="class_kinematic_1a35b0680ed1fb05c922dbbddf3b04da7c" kindref="member">deltaDistance</ref>*cos(<ref refid="class_kinematic_1a7a677e002eed02afd3797e9356be9029" kindref="member">getTeta</ref>())*<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1aabb59de57e93f844e5be8551332d33a6" kindref="member">distanceCorrection</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a19d7ec959e58681269fa6233a08e133e" kindref="member">yPos</ref><sp/>+=<sp/>this-&gt;<ref refid="class_kinematic_1a35b0680ed1fb05c922dbbddf3b04da7c" kindref="member">deltaDistance</ref>*sin(<ref refid="class_kinematic_1a7a677e002eed02afd3797e9356be9029" kindref="member">getTeta</ref>())*<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1aabb59de57e93f844e5be8551332d33a6" kindref="member">distanceCorrection</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a1dcd96bb5c03a2ee341d78c5284135a3" kindref="member">Kinematic::getV</ref>()</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="_m_o_t_o_r_8h_1a62969232668331297e2dca1ae2ddd10d" kindref="member">r</ref>/(2))*(<ref refid="class_kinematic_1ab047c05d32231b85ab66935b44e612ac" kindref="member">motorD</ref>.<ref refid="class_motor_1ae0dd564fac9cb20f42596eb3af19c72b" kindref="member">getSpeedRadS</ref>()<sp/>+<sp/><ref refid="class_kinematic_1a3521b4d4fb6fcf2c59a70f963c92bfab" kindref="member">motorE</ref>.<ref refid="class_motor_1ae0dd564fac9cb20f42596eb3af19c72b" kindref="member">getSpeedRadS</ref>());</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a4a85a1a94ef14f881751137a910a03f8" kindref="member">Kinematic::getW</ref>()</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="_m_o_t_o_r_8h_1a62969232668331297e2dca1ae2ddd10d" kindref="member">r</ref>/(2*<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1aa73214aa5f2f94f63d90bb4e3d99fe53" kindref="member">L</ref>))*(<ref refid="class_kinematic_1ab047c05d32231b85ab66935b44e612ac" kindref="member">motorD</ref>.<ref refid="class_motor_1ae0dd564fac9cb20f42596eb3af19c72b" kindref="member">getSpeedRadS</ref>()<sp/>-<sp/><ref refid="class_kinematic_1a3521b4d4fb6fcf2c59a70f963c92bfab" kindref="member">motorE</ref>.<ref refid="class_motor_1ae0dd564fac9cb20f42596eb3af19c72b" kindref="member">getSpeedRadS</ref>());</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a470bcb5d12198f74e255015faf67c849" kindref="member">Kinematic::getX</ref>()</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a47739aebb18552c8ae499353761a9a4a" kindref="member">xPos</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="class_kinematic_1ae3f570f42792d5ba2a760190fb66f2bf" kindref="member">Kinematic::getY</ref>()</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a19d7ec959e58681269fa6233a08e133e" kindref="member">yPos</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a7a677e002eed02afd3797e9356be9029" kindref="member">Kinematic::getTeta</ref>()</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a370e26e218cdd094ce7a28291d9d1117" kindref="member">angleCorrection</ref>*(<ref refid="_m_o_t_o_r_8h_1a62969232668331297e2dca1ae2ddd10d" kindref="member">r</ref>/(2*<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1aa73214aa5f2f94f63d90bb4e3d99fe53" kindref="member">L</ref>))*(<ref refid="class_kinematic_1ab047c05d32231b85ab66935b44e612ac" kindref="member">motorD</ref>.<ref refid="class_motor_1a08d6998bd503b1dd3b4065bc73ad6ddd" kindref="member">getTeta</ref>()<sp/>-<sp/><ref refid="class_kinematic_1a3521b4d4fb6fcf2c59a70f963c92bfab" kindref="member">motorE</ref>.<ref refid="class_motor_1a08d6998bd503b1dd3b4065bc73ad6ddd" kindref="member">getTeta</ref>());<sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a3bbde4c9bc3a5d7beb90a89743f27a60" kindref="member">Kinematic::calibrateLineSensor</ref>(uint32_t<sp/>iterations)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a17de469ec232aeba5598613cc3f070a4" kindref="member">lineSensor</ref>.<ref refid="class_line___sensor_1a0479898aafb6ecc493c2974d20d38a70" kindref="member">calibrate</ref>(iterations);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a9ae8eb50ddfa12c6d66db4669995fedc" kindref="member">calibrationFinished</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1af201ff92e0c95d53b7b65b7b283061cb" kindref="member">Kinematic::updateLineReading</ref>()</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a9a5d752c2b6ec56ec808365ddf5cc580" kindref="member">lineSensorReading</ref><sp/>=<sp/><ref refid="class_kinematic_1a17de469ec232aeba5598613cc3f070a4" kindref="member">lineSensor</ref>.<ref refid="class_line___sensor_1aa35bdfbabbe89e69c3c17fd9792a84d2" kindref="member">read</ref>();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a916af74e85211b8c9065bf685ef695d6" kindref="member">angleFilterOrder</ref>-1);<sp/>i++)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a16fa421ad7f24f69364f0fce9a8cdd26" kindref="member">angle</ref>[i]<sp/>=<sp/><ref refid="class_kinematic_1a16fa421ad7f24f69364f0fce9a8cdd26" kindref="member">angle</ref>[i+1];</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((this-&gt;<ref refid="class_kinematic_1a35b0680ed1fb05c922dbbddf3b04da7c" kindref="member">deltaDistance</ref>)!=<sp/>0)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a16fa421ad7f24f69364f0fce9a8cdd26" kindref="member">angle</ref>[<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a916af74e85211b8c9065bf685ef695d6" kindref="member">angleFilterOrder</ref>-1]<sp/>=<sp/>atan2(<ref refid="class_kinematic_1a9a5d752c2b6ec56ec808365ddf5cc580" kindref="member">lineSensorReading</ref><sp/>-<sp/><ref refid="class_kinematic_1a54038680366aaa55e5fafaae1a44dce5" kindref="member">lastLineSensorReading</ref>,<sp/>this-&gt;<ref refid="class_kinematic_1a35b0680ed1fb05c922dbbddf3b04da7c" kindref="member">deltaDistance</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a19ced79be5359939476b3b43741e42fa" kindref="member">filteredAngle</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a916af74e85211b8c9065bf685ef695d6" kindref="member">angleFilterOrder</ref>);<sp/>i++)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a19ced79be5359939476b3b43741e42fa" kindref="member">filteredAngle</ref><sp/>+=<sp/><ref refid="class_kinematic_1a16fa421ad7f24f69364f0fce9a8cdd26" kindref="member">angle</ref>[i];</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a19ced79be5359939476b3b43741e42fa" kindref="member">filteredAngle</ref><sp/>=<sp/><ref refid="class_kinematic_1a19ced79be5359939476b3b43741e42fa" kindref="member">filteredAngle</ref>/<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a916af74e85211b8c9065bf685ef695d6" kindref="member">angleFilterOrder</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1a54038680366aaa55e5fafaae1a44dce5" kindref="member">lastLineSensorReading</ref><sp/>=<sp/><ref refid="class_kinematic_1a9a5d752c2b6ec56ec808365ddf5cc580" kindref="member">lineSensorReading</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>xPos<sp/>=<sp/>0;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>yPos<sp/>=<sp/>0;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1ae2187b81fe2229b466c2d5b2630c2a0d" kindref="member">Kinematic::getLineAngle</ref>()</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a19ced79be5359939476b3b43741e42fa" kindref="member">filteredAngle</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a15aac52325458682957a28f2b049ef84" kindref="member">Kinematic::getLinePosition</ref>()</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a9a5d752c2b6ec56ec808365ddf5cc580" kindref="member">lineSensorReading</ref>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1aec2c9720a6d54f0cc064cbe895c3d369" kindref="member">Kinematic::getLineAngleNotFiltered</ref>()</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a16fa421ad7f24f69364f0fce9a8cdd26" kindref="member">angle</ref>[<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a916af74e85211b8c9065bf685ef695d6" kindref="member">angleFilterOrder</ref>-1];</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp"/>
+  </compounddef>
+</doxygen>

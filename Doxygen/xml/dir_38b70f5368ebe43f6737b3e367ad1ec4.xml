@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="dir_38b70f5368ebe43f6737b3e367ad1ec4" kind="dir">
+    <compoundname>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower</compoundname>
+    <innerfile refid="_a_d_c_8cpp">ADC.cpp</innerfile>
+    <innerfile refid="_a_d_c_8h">ADC.h</innerfile>
+    <innerfile refid="_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r_8cpp">ANGLE_LINE_SENSOR.cpp</innerfile>
+    <innerfile refid="_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r_8h">ANGLE_LINE_SENSOR.h</innerfile>
+    <innerfile refid="_e_n_c_o_d_e_r_8cpp">ENCODER.cpp</innerfile>
+    <innerfile refid="_e_n_c_o_d_e_r_8h">ENCODER.h</innerfile>
+    <innerfile refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8cpp">FOLLOWING_CONTROLER.cpp</innerfile>
+    <innerfile refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h">FOLLOWING_CONTROLER.h</innerfile>
+    <innerfile refid="_g_p_i_o_8cpp">GPIO.cpp</innerfile>
+    <innerfile refid="_g_p_i_o_8h">GPIO.h</innerfile>
+    <innerfile refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8cpp">KINEMATIC_CONTROL.cpp</innerfile>
+    <innerfile refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h">KINEMATIC_CONTROL.h</innerfile>
+    <innerfile refid="line__follower_8cpp">line_follower.cpp</innerfile>
+    <innerfile refid="_l_i_n_e___s_e_n_s_o_r_8cpp">LINE_SENSOR.cpp</innerfile>
+    <innerfile refid="_l_i_n_e___s_e_n_s_o_r_8h">LINE_SENSOR.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="malha__aberta_8cpp">malha_aberta.cpp</innerfile>
+    <innerfile refid="malha__fechada_8cpp">malha_fechada.cpp</innerfile>
+    <innerfile refid="_micro_8c">Micro.c</innerfile>
+    <innerfile refid="_micro_8h">Micro.h</innerfile>
+    <innerfile refid="_m_o_t_o_r_8cpp">MOTOR.cpp</innerfile>
+    <innerfile refid="_m_o_t_o_r_8h">MOTOR.h</innerfile>
+    <innerfile refid="_p_w_m_8cpp">PWM.cpp</innerfile>
+    <innerfile refid="_p_w_m_8h">PWM.h</innerfile>
+    <innerfile refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8cpp">REFLECTANCE_SENSOR.cpp</innerfile>
+    <innerfile refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h">REFLECTANCE_SENSOR.h</innerfile>
+    <innerfile refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8cpp">SERIAL_COMMUNICATION.cpp</innerfile>
+    <innerfile refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h">SERIAL_COMMUNICATION.h</innerfile>
+    <innerfile refid="_sys_clock_8cpp">SysClock.cpp</innerfile>
+    <innerfile refid="_sys_clock_8h">SysClock.h</innerfile>
+    <innerfile refid="testes_8cpp">testes.cpp</innerfile>
+    <innerfile refid="_t_i_m_e_r_8cpp">TIMER.cpp</innerfile>
+    <innerfile refid="_t_i_m_e_r_8h">TIMER.h</innerfile>
+    <innerfile refid="_u_s_a_r_t_8cpp">USART.cpp</innerfile>
+    <innerfile refid="_u_s_a_r_t_8h">USART.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/"/>
+  </compounddef>
+</doxygen>

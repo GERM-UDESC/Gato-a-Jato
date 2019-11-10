@@ -1,0 +1,135 @@
+\hypertarget{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h}{}\doxysection{C\+:/\+Users/bruno/\+Documents/\+Line\+Follower/\+Project\+\_\+u\+Vision/\+Line\+Follower/\+F\+O\+L\+L\+O\+W\+I\+N\+G\+\_\+\+C\+O\+N\+T\+R\+O\+L\+ER.h File Reference}
+\label{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h}\index{C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/FOLLOWING\_CONTROLER.h@{C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/FOLLOWING\_CONTROLER.h}}
+{\ttfamily \#include \char`\"{}K\+I\+N\+E\+M\+A\+T\+I\+C\+\_\+\+C\+O\+N\+T\+R\+O\+L.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}math.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_controller}{Controller}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a9751a37abbbd9680f3c0cc311573efdf}{Kx}}~60
+\item 
+\#define \mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a830e7c52df9ae715867b447c75db7466}{Ky}}~900
+\item 
+\#define \mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a6af057e6ae3c603c5dd46c1b5dbab735}{Kteta}}~20
+\item 
+\#define \mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_ab45eb721b96f7dc4898425c6bdc0ae49}{K4}}~400
+\item 
+\#define \mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_aadecb1977e30da2f62766f1fcb8b1f95}{K1}}~\mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a9751a37abbbd9680f3c0cc311573efdf}{Kx}}
+\item 
+\#define \mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_ab6d0e745059aded06587e4b6933bca0b}{K2}}~\mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a830e7c52df9ae715867b447c75db7466}{Ky}}
+\item 
+\#define \mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_aa6d1b6ea9feee250d0e41586bd39d654}{K3}}~Kz
+\item 
+\#define \mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a2ce2a27cb06d247c2851fda21a7ac7ed}{Kxk}}~1
+\item 
+\#define \mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_ab596be2bae35e8db2a348867a68c10b5}{Kyk}}~200
+\item 
+\#define \mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_aa3a249f66ead87b07d84f304d20c36df}{Ktetak}}~0.\+01
+\item 
+\#define \mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a1f9d0c60b647fe4d3db7eb9499b8b661}{K4k}}~0.\+001
+\item 
+\#define \mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_ae15a52f722f00ef3c30b6cd77e2220b2}{K1a}}~22
+\item 
+\#define \mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a92fb4468199f4856c4783758e8ff2a00}{K2a}}~1000
+\item 
+\#define \mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_ad11c7628a847ad701d4a1aa05b7a937f}{v\+\_\+ref\+\_\+ini}}~0.\+5
+\item 
+\#define \mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a49de2ac00d565ed4f00462f2c96fa16d}{w\+\_\+ref\+\_\+ini}}~0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_aadecb1977e30da2f62766f1fcb8b1f95}\label{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_aadecb1977e30da2f62766f1fcb8b1f95}} 
+\index{FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}!K1@{K1}}
+\index{K1@{K1}!FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}}
+\doxysubsubsection{\texorpdfstring{K1}{K1}}
+{\footnotesize\ttfamily \#define K1~\mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a9751a37abbbd9680f3c0cc311573efdf}{Kx}}}
+
+\mbox{\Hypertarget{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_ae15a52f722f00ef3c30b6cd77e2220b2}\label{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_ae15a52f722f00ef3c30b6cd77e2220b2}} 
+\index{FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}!K1a@{K1a}}
+\index{K1a@{K1a}!FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}}
+\doxysubsubsection{\texorpdfstring{K1a}{K1a}}
+{\footnotesize\ttfamily \#define K1a~22}
+
+\mbox{\Hypertarget{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_ab6d0e745059aded06587e4b6933bca0b}\label{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_ab6d0e745059aded06587e4b6933bca0b}} 
+\index{FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}!K2@{K2}}
+\index{K2@{K2}!FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}}
+\doxysubsubsection{\texorpdfstring{K2}{K2}}
+{\footnotesize\ttfamily \#define K2~\mbox{\hyperlink{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a830e7c52df9ae715867b447c75db7466}{Ky}}}
+
+\mbox{\Hypertarget{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a92fb4468199f4856c4783758e8ff2a00}\label{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a92fb4468199f4856c4783758e8ff2a00}} 
+\index{FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}!K2a@{K2a}}
+\index{K2a@{K2a}!FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}}
+\doxysubsubsection{\texorpdfstring{K2a}{K2a}}
+{\footnotesize\ttfamily \#define K2a~1000}
+
+\mbox{\Hypertarget{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_aa6d1b6ea9feee250d0e41586bd39d654}\label{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_aa6d1b6ea9feee250d0e41586bd39d654}} 
+\index{FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}!K3@{K3}}
+\index{K3@{K3}!FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}}
+\doxysubsubsection{\texorpdfstring{K3}{K3}}
+{\footnotesize\ttfamily \#define K3~Kz}
+
+\mbox{\Hypertarget{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_ab45eb721b96f7dc4898425c6bdc0ae49}\label{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_ab45eb721b96f7dc4898425c6bdc0ae49}} 
+\index{FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}!K4@{K4}}
+\index{K4@{K4}!FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}}
+\doxysubsubsection{\texorpdfstring{K4}{K4}}
+{\footnotesize\ttfamily \#define K4~400}
+
+\mbox{\Hypertarget{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a1f9d0c60b647fe4d3db7eb9499b8b661}\label{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a1f9d0c60b647fe4d3db7eb9499b8b661}} 
+\index{FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}!K4k@{K4k}}
+\index{K4k@{K4k}!FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}}
+\doxysubsubsection{\texorpdfstring{K4k}{K4k}}
+{\footnotesize\ttfamily \#define K4k~0.\+001}
+
+\mbox{\Hypertarget{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a6af057e6ae3c603c5dd46c1b5dbab735}\label{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a6af057e6ae3c603c5dd46c1b5dbab735}} 
+\index{FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}!Kteta@{Kteta}}
+\index{Kteta@{Kteta}!FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}}
+\doxysubsubsection{\texorpdfstring{Kteta}{Kteta}}
+{\footnotesize\ttfamily \#define Kteta~20}
+
+\mbox{\Hypertarget{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_aa3a249f66ead87b07d84f304d20c36df}\label{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_aa3a249f66ead87b07d84f304d20c36df}} 
+\index{FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}!Ktetak@{Ktetak}}
+\index{Ktetak@{Ktetak}!FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}}
+\doxysubsubsection{\texorpdfstring{Ktetak}{Ktetak}}
+{\footnotesize\ttfamily \#define Ktetak~0.\+01}
+
+\mbox{\Hypertarget{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a9751a37abbbd9680f3c0cc311573efdf}\label{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a9751a37abbbd9680f3c0cc311573efdf}} 
+\index{FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}!Kx@{Kx}}
+\index{Kx@{Kx}!FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}}
+\doxysubsubsection{\texorpdfstring{Kx}{Kx}}
+{\footnotesize\ttfamily \#define Kx~60}
+
+\mbox{\Hypertarget{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a2ce2a27cb06d247c2851fda21a7ac7ed}\label{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a2ce2a27cb06d247c2851fda21a7ac7ed}} 
+\index{FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}!Kxk@{Kxk}}
+\index{Kxk@{Kxk}!FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}}
+\doxysubsubsection{\texorpdfstring{Kxk}{Kxk}}
+{\footnotesize\ttfamily \#define Kxk~1}
+
+\mbox{\Hypertarget{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a830e7c52df9ae715867b447c75db7466}\label{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a830e7c52df9ae715867b447c75db7466}} 
+\index{FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}!Ky@{Ky}}
+\index{Ky@{Ky}!FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}}
+\doxysubsubsection{\texorpdfstring{Ky}{Ky}}
+{\footnotesize\ttfamily \#define Ky~900}
+
+\mbox{\Hypertarget{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_ab596be2bae35e8db2a348867a68c10b5}\label{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_ab596be2bae35e8db2a348867a68c10b5}} 
+\index{FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}!Kyk@{Kyk}}
+\index{Kyk@{Kyk}!FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}}
+\doxysubsubsection{\texorpdfstring{Kyk}{Kyk}}
+{\footnotesize\ttfamily \#define Kyk~200}
+
+\mbox{\Hypertarget{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_ad11c7628a847ad701d4a1aa05b7a937f}\label{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_ad11c7628a847ad701d4a1aa05b7a937f}} 
+\index{FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}!v\_ref\_ini@{v\_ref\_ini}}
+\index{v\_ref\_ini@{v\_ref\_ini}!FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}}
+\doxysubsubsection{\texorpdfstring{v\_ref\_ini}{v\_ref\_ini}}
+{\footnotesize\ttfamily \#define v\+\_\+ref\+\_\+ini~0.\+5}
+
+\mbox{\Hypertarget{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a49de2ac00d565ed4f00462f2c96fa16d}\label{_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_a49de2ac00d565ed4f00462f2c96fa16d}} 
+\index{FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}!w\_ref\_ini@{w\_ref\_ini}}
+\index{w\_ref\_ini@{w\_ref\_ini}!FOLLOWING\_CONTROLER.h@{FOLLOWING\_CONTROLER.h}}
+\doxysubsubsection{\texorpdfstring{w\_ref\_ini}{w\_ref\_ini}}
+{\footnotesize\ttfamily \#define w\+\_\+ref\+\_\+ini~0}
+

@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_communication" kind="class" language="C++" prot="public">
+    <compoundname>Communication</compoundname>
+    <includes refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h" local="no">SERIAL_COMMUNICATION.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_communication_1a0d817d05dff6fa3d01fab1d733b7c546" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_communication" kindref="compound">Communication</ref> *</type>
+        <definition>Communication * Communication::ptCommunication</definition>
+        <argsstring></argsstring>
+        <name>ptCommunication</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="38" column="22" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_communication_1aae5b8caca2d8c9891303740a06b0f968" prot="private" static="no" mutable="no">
+        <type><ref refid="class_controller" kindref="compound">Controller</ref> *</type>
+        <definition>Controller* Communication::LineFollower</definition>
+        <argsstring></argsstring>
+        <name>LineFollower</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="41" column="12" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_communication_1a6f03768675948bbdcee2db8ff97f575e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_u_s_a_r_t" kindref="compound">USART</ref> *</type>
+        <definition>USART* Communication::Serial</definition>
+        <argsstring></argsstring>
+        <name>Serial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="42" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_communication_1a246799e7fa4c15e2e15da514b09422be" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Communication::counter</definition>
+        <argsstring></argsstring>
+        <name>counter</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="44" column="10" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_communication_1a7f41c107ae87cdb86593abb03d249537" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Communication::temporary[12]</definition>
+        <argsstring>[12]</argsstring>
+        <name>temporary</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="45" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_communication_1ab9dbb039032c4123c2e6f17eaadf17b5" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Communication::command</definition>
+        <argsstring></argsstring>
+        <name>command</name>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="57" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_communication_1a80316d076a38dee75b385bcb31ef73ec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Communication::Handler</definition>
+        <argsstring>()</argsstring>
+        <name>Handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="39" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.cpp" bodystart="19" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_communication_1a4402be940b9c614a19497fb14b68e27d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Communication::doCommand</definition>
+        <argsstring>()</argsstring>
+        <name>doCommand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="47" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.cpp" bodystart="41" bodyend="176"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_communication_1a5791b340032837166bfd0f7f35af5730" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Communication::Communication</definition>
+        <argsstring>(Controller *LineFollower_, USART *Serial_)</argsstring>
+        <name>Communication</name>
+        <param>
+          <type><ref refid="class_controller" kindref="compound">Controller</ref> *</type>
+          <declname>LineFollower_</declname>
+        </param>
+        <param>
+          <type><ref refid="class_u_s_a_r_t" kindref="compound">USART</ref> *</type>
+          <declname>Serial_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="50" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.cpp" bodystart="5" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_communication_1a5f9a1b92ab85b3dea58464b1a881472a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Communication::waitForCommand</definition>
+        <argsstring>()</argsstring>
+        <name>waitForCommand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="54" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.cpp" bodystart="178" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_communication_1a533d66ca9e46c0c8bd79493d49fab54f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Communication::verifyCommand</definition>
+        <argsstring>()</argsstring>
+        <name>verifyCommand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="55" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.cpp" bodystart="187" bodyend="197"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_communication_1a5d6eb07142c2137308fa39b51aee0a86" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Communication::HandlerByTime</definition>
+        <argsstring>()</argsstring>
+        <name>HandlerByTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="52" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.cpp" bodystart="14" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="36" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="35" bodyend="58"/>
+    <listofallmembers>
+      <member refid="class_communication_1ab9dbb039032c4123c2e6f17eaadf17b5" prot="public" virt="non-virtual"><scope>Communication</scope><name>command</name></member>
+      <member refid="class_communication_1a5791b340032837166bfd0f7f35af5730" prot="public" virt="non-virtual"><scope>Communication</scope><name>Communication</name></member>
+      <member refid="class_communication_1a246799e7fa4c15e2e15da514b09422be" prot="private" virt="non-virtual"><scope>Communication</scope><name>counter</name></member>
+      <member refid="class_communication_1a4402be940b9c614a19497fb14b68e27d" prot="private" virt="non-virtual"><scope>Communication</scope><name>doCommand</name></member>
+      <member refid="class_communication_1a80316d076a38dee75b385bcb31ef73ec" prot="private" virt="non-virtual"><scope>Communication</scope><name>Handler</name></member>
+      <member refid="class_communication_1a5d6eb07142c2137308fa39b51aee0a86" prot="public" virt="non-virtual"><scope>Communication</scope><name>HandlerByTime</name></member>
+      <member refid="class_communication_1aae5b8caca2d8c9891303740a06b0f968" prot="private" virt="non-virtual"><scope>Communication</scope><name>LineFollower</name></member>
+      <member refid="class_communication_1a0d817d05dff6fa3d01fab1d733b7c546" prot="private" virt="non-virtual"><scope>Communication</scope><name>ptCommunication</name></member>
+      <member refid="class_communication_1a6f03768675948bbdcee2db8ff97f575e" prot="private" virt="non-virtual"><scope>Communication</scope><name>Serial</name></member>
+      <member refid="class_communication_1a7f41c107ae87cdb86593abb03d249537" prot="private" virt="non-virtual"><scope>Communication</scope><name>temporary</name></member>
+      <member refid="class_communication_1a533d66ca9e46c0c8bd79493d49fab54f" prot="public" virt="non-virtual"><scope>Communication</scope><name>verifyCommand</name></member>
+      <member refid="class_communication_1a5f9a1b92ab85b3dea58464b1a881472a" prot="public" virt="non-virtual"><scope>Communication</scope><name>waitForCommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

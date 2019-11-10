@@ -1,0 +1,213 @@
+\hypertarget{malha__fechada_8cpp}{}\doxysection{C\+:/\+Users/bruno/\+Documents/\+Line\+Follower/\+Project\+\_\+u\+Vision/\+Line\+Follower/malha\+\_\+fechada.cpp File Reference}
+\label{malha__fechada_8cpp}\index{C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/malha\_fechada.cpp@{C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/malha\_fechada.cpp}}
+{\ttfamily \#include \char`\"{}Micro.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Sys\+Clock.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}G\+P\+I\+O.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}T\+I\+M\+E\+R.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}P\+W\+M.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}E\+N\+C\+O\+D\+E\+R.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}A\+D\+C.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}R\+E\+F\+L\+E\+C\+T\+A\+N\+C\+E\+\_\+\+S\+E\+N\+S\+O\+R.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}L\+I\+N\+E\+\_\+\+S\+E\+N\+S\+O\+R.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}M\+O\+T\+O\+R.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}U\+S\+A\+R\+T.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}K\+I\+N\+E\+M\+A\+T\+I\+C\+\_\+\+C\+O\+N\+T\+R\+O\+L.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}F\+O\+L\+L\+O\+W\+I\+N\+G\+\_\+\+C\+O\+N\+T\+R\+O\+L\+E\+R.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S\+E\+R\+I\+A\+L\+\_\+\+C\+O\+M\+M\+U\+N\+I\+C\+A\+T\+I\+O\+N.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}math.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{malha__fechada_8cpp_a676a27c0cdc60a1c6506d9f2b254a86c}{step\+Time}}~1000
+\item 
+\#define \mbox{\hyperlink{malha__fechada_8cpp_a9db1b3fa3698e28ae8d8e8e01c1a54dc}{steps}}~7
+\item 
+\#define \mbox{\hyperlink{malha__fechada_8cpp_a52fb1e1158019cae62c9370a59faef5b}{test\+Time}}~\mbox{\hyperlink{malha__fechada_8cpp_a676a27c0cdc60a1c6506d9f2b254a86c}{step\+Time}}$\ast$\mbox{\hyperlink{malha__fechada_8cpp_a9db1b3fa3698e28ae8d8e8e01c1a54dc}{steps}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{malha__fechada_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\item 
+void \mbox{\hyperlink{malha__fechada_8cpp_ac13ffcf8c8dd96138053b8a854004583}{T\+I\+M1\+\_\+\+U\+P\+\_\+\+I\+R\+Q\+Handler}} ()
+\item 
+void \mbox{\hyperlink{malha__fechada_8cpp_a69ed77607e30e5935ea2d6994e94be10}{T\+I\+M2\+\_\+\+I\+R\+Q\+Handler}} ()
+\item 
+void \mbox{\hyperlink{malha__fechada_8cpp_a2f59315000eb73fdeac2ab44fcd8b972}{T\+I\+M3\+\_\+\+I\+R\+Q\+Handler}} ()
+\item 
+void \mbox{\hyperlink{malha__fechada_8cpp_a6e7703924e97aa04dbae6b88adcec3d1}{T\+I\+M4\+\_\+\+I\+R\+Q\+Handler}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{malha__fechada_8cpp_a992666e46efebc314b3df44318a5c3ac}{xtest}}
+\item 
+float \mbox{\hyperlink{malha__fechada_8cpp_ac08e825002b6ab740e45042023181158}{ytest}}
+\item 
+float \mbox{\hyperlink{malha__fechada_8cpp_aa50e05cedadd0fe0424cbd1fb4120b22}{vtest}}
+\item 
+float \mbox{\hyperlink{malha__fechada_8cpp_a40b25a1ef0327bbdac10f6aa7cd028f9}{wtest}}
+\item 
+float \mbox{\hyperlink{malha__fechada_8cpp_a3c0bd09fe0ea135db882fe89ad45049c}{pwmtest}}
+\item 
+float \mbox{\hyperlink{malha__fechada_8cpp_a4f5add780e28922435334290d328a249}{linevalue}}
+\item 
+float \mbox{\hyperlink{malha__fechada_8cpp_a0b4878899982766548649f044f086ed2}{lineangle}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{malha__fechada_8cpp_aa854514541364b07e209e4699255b304}{t\+\_\+ini}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{malha__fechada_8cpp_ae73654f333e4363463ad8c594eca1905}{time}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{malha__fechada_8cpp_a2a1f7fb92fcb50130d5daf08bf419aed}{delta\+\_\+time}}
+\item 
+uint32\+\_\+t \mbox{\hyperlink{malha__fechada_8cpp_ae9c39e1d0704c67a7a0b25315b18619d}{time\+\_\+test}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{malha__fechada_8cpp_a0480b812cba9c1d9c71a5fb1071bd0fc}{counter}} = 0
+\item 
+float \mbox{\hyperlink{malha__fechada_8cpp_a793f7c1be1c77b7dbfae5bbdf598c2e5}{R\+P\+M\+\_\+value}} \mbox{[}12\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{malha__fechada_8cpp_a9db1b3fa3698e28ae8d8e8e01c1a54dc}\label{malha__fechada_8cpp_a9db1b3fa3698e28ae8d8e8e01c1a54dc}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!steps@{steps}}
+\index{steps@{steps}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{steps}{steps}}
+{\footnotesize\ttfamily \#define steps~7}
+
+\mbox{\Hypertarget{malha__fechada_8cpp_a676a27c0cdc60a1c6506d9f2b254a86c}\label{malha__fechada_8cpp_a676a27c0cdc60a1c6506d9f2b254a86c}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!stepTime@{stepTime}}
+\index{stepTime@{stepTime}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{stepTime}{stepTime}}
+{\footnotesize\ttfamily \#define step\+Time~1000}
+
+\mbox{\Hypertarget{malha__fechada_8cpp_a52fb1e1158019cae62c9370a59faef5b}\label{malha__fechada_8cpp_a52fb1e1158019cae62c9370a59faef5b}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!testTime@{testTime}}
+\index{testTime@{testTime}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{testTime}{testTime}}
+{\footnotesize\ttfamily \#define test\+Time~\mbox{\hyperlink{malha__fechada_8cpp_a676a27c0cdc60a1c6506d9f2b254a86c}{step\+Time}}$\ast$\mbox{\hyperlink{malha__fechada_8cpp_a9db1b3fa3698e28ae8d8e8e01c1a54dc}{steps}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{malha__fechada_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{malha__fechada_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!main@{main}}
+\index{main@{main}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$ Peripheral base address in the alias region
+
+$<$ Peripheral base address in the alias region
+
+$<$ Peripheral base address in the alias region
+
+$<$ Peripheral base address in the alias region
+
+$<$ Peripheral base address in the alias region
+
+$<$ Peripheral base address in the alias region\mbox{\Hypertarget{malha__fechada_8cpp_ac13ffcf8c8dd96138053b8a854004583}\label{malha__fechada_8cpp_ac13ffcf8c8dd96138053b8a854004583}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!TIM1\_UP\_IRQHandler@{TIM1\_UP\_IRQHandler}}
+\index{TIM1\_UP\_IRQHandler@{TIM1\_UP\_IRQHandler}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{TIM1\_UP\_IRQHandler()}{TIM1\_UP\_IRQHandler()}}
+{\footnotesize\ttfamily void T\+I\+M1\+\_\+\+U\+P\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$ Peripheral base address in the alias region\mbox{\Hypertarget{malha__fechada_8cpp_a69ed77607e30e5935ea2d6994e94be10}\label{malha__fechada_8cpp_a69ed77607e30e5935ea2d6994e94be10}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!TIM2\_IRQHandler@{TIM2\_IRQHandler}}
+\index{TIM2\_IRQHandler@{TIM2\_IRQHandler}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{TIM2\_IRQHandler()}{TIM2\_IRQHandler()}}
+{\footnotesize\ttfamily void T\+I\+M2\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$ Peripheral base address in the alias region\mbox{\Hypertarget{malha__fechada_8cpp_a2f59315000eb73fdeac2ab44fcd8b972}\label{malha__fechada_8cpp_a2f59315000eb73fdeac2ab44fcd8b972}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!TIM3\_IRQHandler@{TIM3\_IRQHandler}}
+\index{TIM3\_IRQHandler@{TIM3\_IRQHandler}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{TIM3\_IRQHandler()}{TIM3\_IRQHandler()}}
+{\footnotesize\ttfamily void T\+I\+M3\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$ Peripheral base address in the alias region\mbox{\Hypertarget{malha__fechada_8cpp_a6e7703924e97aa04dbae6b88adcec3d1}\label{malha__fechada_8cpp_a6e7703924e97aa04dbae6b88adcec3d1}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!TIM4\_IRQHandler@{TIM4\_IRQHandler}}
+\index{TIM4\_IRQHandler@{TIM4\_IRQHandler}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{TIM4\_IRQHandler()}{TIM4\_IRQHandler()}}
+{\footnotesize\ttfamily void T\+I\+M4\+\_\+\+I\+R\+Q\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$ Peripheral base address in the alias region
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{malha__fechada_8cpp_a0480b812cba9c1d9c71a5fb1071bd0fc}\label{malha__fechada_8cpp_a0480b812cba9c1d9c71a5fb1071bd0fc}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!counter@{counter}}
+\index{counter@{counter}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily uint8\+\_\+t counter = 0}
+
+\mbox{\Hypertarget{malha__fechada_8cpp_a2a1f7fb92fcb50130d5daf08bf419aed}\label{malha__fechada_8cpp_a2a1f7fb92fcb50130d5daf08bf419aed}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!delta\_time@{delta\_time}}
+\index{delta\_time@{delta\_time}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{delta\_time}{delta\_time}}
+{\footnotesize\ttfamily uint32\+\_\+t delta\+\_\+time}
+
+\mbox{\Hypertarget{malha__fechada_8cpp_a0b4878899982766548649f044f086ed2}\label{malha__fechada_8cpp_a0b4878899982766548649f044f086ed2}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!lineangle@{lineangle}}
+\index{lineangle@{lineangle}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{lineangle}{lineangle}}
+{\footnotesize\ttfamily float lineangle}
+
+\mbox{\Hypertarget{malha__fechada_8cpp_a4f5add780e28922435334290d328a249}\label{malha__fechada_8cpp_a4f5add780e28922435334290d328a249}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!linevalue@{linevalue}}
+\index{linevalue@{linevalue}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{linevalue}{linevalue}}
+{\footnotesize\ttfamily float linevalue}
+
+\mbox{\Hypertarget{malha__fechada_8cpp_a3c0bd09fe0ea135db882fe89ad45049c}\label{malha__fechada_8cpp_a3c0bd09fe0ea135db882fe89ad45049c}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!pwmtest@{pwmtest}}
+\index{pwmtest@{pwmtest}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{pwmtest}{pwmtest}}
+{\footnotesize\ttfamily float pwmtest}
+
+\mbox{\Hypertarget{malha__fechada_8cpp_a793f7c1be1c77b7dbfae5bbdf598c2e5}\label{malha__fechada_8cpp_a793f7c1be1c77b7dbfae5bbdf598c2e5}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!RPM\_value@{RPM\_value}}
+\index{RPM\_value@{RPM\_value}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{RPM\_value}{RPM\_value}}
+{\footnotesize\ttfamily float R\+P\+M\+\_\+value\mbox{[}12\mbox{]}}
+
+\mbox{\Hypertarget{malha__fechada_8cpp_aa854514541364b07e209e4699255b304}\label{malha__fechada_8cpp_aa854514541364b07e209e4699255b304}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!t\_ini@{t\_ini}}
+\index{t\_ini@{t\_ini}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{t\_ini}{t\_ini}}
+{\footnotesize\ttfamily uint32\+\_\+t t\+\_\+ini}
+
+\mbox{\Hypertarget{malha__fechada_8cpp_ae73654f333e4363463ad8c594eca1905}\label{malha__fechada_8cpp_ae73654f333e4363463ad8c594eca1905}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!time@{time}}
+\index{time@{time}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{time}{time}}
+{\footnotesize\ttfamily uint32\+\_\+t time}
+
+\mbox{\Hypertarget{malha__fechada_8cpp_ae9c39e1d0704c67a7a0b25315b18619d}\label{malha__fechada_8cpp_ae9c39e1d0704c67a7a0b25315b18619d}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!time\_test@{time\_test}}
+\index{time\_test@{time\_test}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{time\_test}{time\_test}}
+{\footnotesize\ttfamily uint32\+\_\+t time\+\_\+test}
+
+\mbox{\Hypertarget{malha__fechada_8cpp_aa50e05cedadd0fe0424cbd1fb4120b22}\label{malha__fechada_8cpp_aa50e05cedadd0fe0424cbd1fb4120b22}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!vtest@{vtest}}
+\index{vtest@{vtest}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{vtest}{vtest}}
+{\footnotesize\ttfamily float vtest}
+
+\mbox{\Hypertarget{malha__fechada_8cpp_a40b25a1ef0327bbdac10f6aa7cd028f9}\label{malha__fechada_8cpp_a40b25a1ef0327bbdac10f6aa7cd028f9}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!wtest@{wtest}}
+\index{wtest@{wtest}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{wtest}{wtest}}
+{\footnotesize\ttfamily float wtest}
+
+\mbox{\Hypertarget{malha__fechada_8cpp_a992666e46efebc314b3df44318a5c3ac}\label{malha__fechada_8cpp_a992666e46efebc314b3df44318a5c3ac}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!xtest@{xtest}}
+\index{xtest@{xtest}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{xtest}{xtest}}
+{\footnotesize\ttfamily float xtest}
+
+\mbox{\Hypertarget{malha__fechada_8cpp_ac08e825002b6ab740e45042023181158}\label{malha__fechada_8cpp_ac08e825002b6ab740e45042023181158}} 
+\index{malha\_fechada.cpp@{malha\_fechada.cpp}!ytest@{ytest}}
+\index{ytest@{ytest}!malha\_fechada.cpp@{malha\_fechada.cpp}}
+\doxysubsubsection{\texorpdfstring{ytest}{ytest}}
+{\footnotesize\ttfamily float ytest}
+

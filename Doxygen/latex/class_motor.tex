@@ -1,0 +1,223 @@
+\hypertarget{class_motor}{}\doxysection{Motor Class Reference}
+\label{class_motor}\index{Motor@{Motor}}
+
+
+{\ttfamily \#include $<$M\+O\+T\+O\+R.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_motor_a8836ab4247ef87a4387677b006d5f0cb}{Handler}} ()
+\item 
+\mbox{\hyperlink{class_motor_a2d501dfec5e8086250a936b4c0ca119d}{Motor}} (\mbox{\hyperlink{class_p_w_m}{P\+WM}} \mbox{\hyperlink{class_motor_abb4965dcc37819cb9dd957a4fd027a6b}{pwm\+Motor}}, \mbox{\hyperlink{class_encoder}{Encoder}} \mbox{\hyperlink{class_motor_a9510a109c4dbab498d6af583f4ddc744}{encoder}}, \mbox{\hyperlink{class_g_p_i_o}{G\+P\+IO}} In1, \mbox{\hyperlink{class_g_p_i_o}{G\+P\+IO}} In2)
+\item 
+\mbox{\hyperlink{class_motor_a50149f68de143f65a56d70cf9e4b8bb5}{Motor}} (\mbox{\hyperlink{class_motor}{Motor}} $\ast$motor)
+\item 
+void \mbox{\hyperlink{class_motor_a41e15bdd1b60545cacf209ab45f61165}{reset}} ()
+\item 
+void \mbox{\hyperlink{class_motor_a1018eb52901a7358216de97d2da499cd}{Set\+\_\+\+Speed}} (float \mbox{\hyperlink{class_motor_a1e3ff1b7e23864a1c1017f2b767a7934}{Speed\+\_\+\+Reference}})
+\item 
+float \mbox{\hyperlink{class_motor_af04b2f9210f9302d0d48954a29f967f7}{Get\+\_\+\+Speed}} ()
+\item 
+float \mbox{\hyperlink{class_motor_ac53b32c1f6f7585e0ab7ea871af374a5}{get\+Distance}} ()
+\item 
+float \mbox{\hyperlink{class_motor_a51e71949cdd9d1c450a700f33aed2ce6}{get\+Delta\+Distance}} ()
+\item 
+float \mbox{\hyperlink{class_motor_ae0dd564fac9cb20f42596eb3af19c72b}{get\+Speed\+RadS}} ()
+\item 
+float \mbox{\hyperlink{class_motor_af7df646399e0dbe5f2feb1e3497f3a8f}{getU}} ()
+\item 
+float \mbox{\hyperlink{class_motor_ae4885cc6d5d633bc0d2ac9cb3ead78d5}{getE}} ()
+\item 
+float \mbox{\hyperlink{class_motor_a08d6998bd503b1dd3b4065bc73ad6ddd}{get\+Teta}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_motor_af8a10fa21c96ddb956d139de58857c1e}{Motor\+\_\+\+Initialiize}} ()
+\item 
+static void \mbox{\hyperlink{class_motor_a04af4305d7317e01ca4673f7f30c0b23}{Motor\+\_\+\+Handler\+\_\+by\+\_\+time}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_w_m}{P\+WM}} \mbox{\hyperlink{class_motor_abb4965dcc37819cb9dd957a4fd027a6b}{pwm\+Motor}}
+\item 
+\mbox{\hyperlink{class_encoder}{Encoder}} \mbox{\hyperlink{class_motor_a9510a109c4dbab498d6af583f4ddc744}{encoder}}
+\item 
+\mbox{\hyperlink{class_g_p_i_o}{G\+P\+IO}} \mbox{\hyperlink{class_motor_adb3eb076f01ec1d82af28ac7a3301448}{I\+N1}}
+\item 
+\mbox{\hyperlink{class_g_p_i_o}{G\+P\+IO}} \mbox{\hyperlink{class_motor_a8a26353a7f36369e15a1ee1a31e90006}{I\+N2}}
+\item 
+\mbox{\hyperlink{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88}{M\+O\+T\+O\+R\+\_\+\+E\+N\+UM}} \mbox{\hyperlink{class_motor_a507fe21f7952fe382a8313ca80dc1252}{Motor\+\_\+number}}
+\item 
+float \mbox{\hyperlink{class_motor_aa3c0c0c7bf8b418dfc311ef53205380b}{U}} \mbox{[}3\mbox{]} \{0\}
+\item 
+float \mbox{\hyperlink{class_motor_affb5f61e559cccb3492223345ae7f7c6}{E}} \mbox{[}3\mbox{]} \{0\}
+\item 
+float \mbox{\hyperlink{class_motor_a1e3ff1b7e23864a1c1017f2b767a7934}{Speed\+\_\+\+Reference}} \{0\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_motor}{Motor}} $\ast$ \mbox{\hyperlink{class_motor_a7a18f7387ba0dfd2b0976e5fa4e72c7a}{mot\+Ptr}} \mbox{[}\mbox{\hyperlink{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88af1e3b7c464e4173507d66e2a32619263}{Number\+\_\+of\+\_\+\+Motor}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_motor_a2d501dfec5e8086250a936b4c0ca119d}\label{class_motor_a2d501dfec5e8086250a936b4c0ca119d}} 
+\index{Motor@{Motor}!Motor@{Motor}}
+\index{Motor@{Motor}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{Motor()}{Motor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Motor\+::\+Motor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_p_w_m}{P\+WM}}}]{pwm\+Motor,  }\item[{\mbox{\hyperlink{class_encoder}{Encoder}}}]{encoder,  }\item[{\mbox{\hyperlink{class_g_p_i_o}{G\+P\+IO}}}]{In1,  }\item[{\mbox{\hyperlink{class_g_p_i_o}{G\+P\+IO}}}]{In2 }\end{DoxyParamCaption})}
+
+$<$ Peripheral base address in the alias region
+
+$<$ Peripheral base address in the alias region
+
+$<$ Peripheral base address in the alias region
+
+$<$ Peripheral base address in the alias region\mbox{\Hypertarget{class_motor_a50149f68de143f65a56d70cf9e4b8bb5}\label{class_motor_a50149f68de143f65a56d70cf9e4b8bb5}} 
+\index{Motor@{Motor}!Motor@{Motor}}
+\index{Motor@{Motor}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{Motor()}{Motor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Motor\+::\+Motor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_motor}{Motor}} $\ast$}]{motor }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_motor_af04b2f9210f9302d0d48954a29f967f7}\label{class_motor_af04b2f9210f9302d0d48954a29f967f7}} 
+\index{Motor@{Motor}!Get\_Speed@{Get\_Speed}}
+\index{Get\_Speed@{Get\_Speed}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{Get\_Speed()}{Get\_Speed()}}
+{\footnotesize\ttfamily float Motor\+::\+Get\+\_\+\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_motor_a51e71949cdd9d1c450a700f33aed2ce6}\label{class_motor_a51e71949cdd9d1c450a700f33aed2ce6}} 
+\index{Motor@{Motor}!getDeltaDistance@{getDeltaDistance}}
+\index{getDeltaDistance@{getDeltaDistance}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{getDeltaDistance()}{getDeltaDistance()}}
+{\footnotesize\ttfamily float Motor\+::get\+Delta\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_motor_ac53b32c1f6f7585e0ab7ea871af374a5}\label{class_motor_ac53b32c1f6f7585e0ab7ea871af374a5}} 
+\index{Motor@{Motor}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{getDistance()}{getDistance()}}
+{\footnotesize\ttfamily float Motor\+::get\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_motor_ae4885cc6d5d633bc0d2ac9cb3ead78d5}\label{class_motor_ae4885cc6d5d633bc0d2ac9cb3ead78d5}} 
+\index{Motor@{Motor}!getE@{getE}}
+\index{getE@{getE}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{getE()}{getE()}}
+{\footnotesize\ttfamily float Motor\+::getE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_motor_ae0dd564fac9cb20f42596eb3af19c72b}\label{class_motor_ae0dd564fac9cb20f42596eb3af19c72b}} 
+\index{Motor@{Motor}!getSpeedRadS@{getSpeedRadS}}
+\index{getSpeedRadS@{getSpeedRadS}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{getSpeedRadS()}{getSpeedRadS()}}
+{\footnotesize\ttfamily float Motor\+::get\+Speed\+RadS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_motor_a08d6998bd503b1dd3b4065bc73ad6ddd}\label{class_motor_a08d6998bd503b1dd3b4065bc73ad6ddd}} 
+\index{Motor@{Motor}!getTeta@{getTeta}}
+\index{getTeta@{getTeta}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{getTeta()}{getTeta()}}
+{\footnotesize\ttfamily float Motor\+::get\+Teta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_motor_af7df646399e0dbe5f2feb1e3497f3a8f}\label{class_motor_af7df646399e0dbe5f2feb1e3497f3a8f}} 
+\index{Motor@{Motor}!getU@{getU}}
+\index{getU@{getU}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{getU()}{getU()}}
+{\footnotesize\ttfamily float Motor\+::getU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_motor_a8836ab4247ef87a4387677b006d5f0cb}\label{class_motor_a8836ab4247ef87a4387677b006d5f0cb}} 
+\index{Motor@{Motor}!Handler@{Handler}}
+\index{Handler@{Handler}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{Handler()}{Handler()}}
+{\footnotesize\ttfamily void Motor\+::\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_motor_a04af4305d7317e01ca4673f7f30c0b23}\label{class_motor_a04af4305d7317e01ca4673f7f30c0b23}} 
+\index{Motor@{Motor}!Motor\_Handler\_by\_time@{Motor\_Handler\_by\_time}}
+\index{Motor\_Handler\_by\_time@{Motor\_Handler\_by\_time}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{Motor\_Handler\_by\_time()}{Motor\_Handler\_by\_time()}}
+{\footnotesize\ttfamily void Motor\+::\+Motor\+\_\+\+Handler\+\_\+by\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_motor_af8a10fa21c96ddb956d139de58857c1e}\label{class_motor_af8a10fa21c96ddb956d139de58857c1e}} 
+\index{Motor@{Motor}!Motor\_Initialiize@{Motor\_Initialiize}}
+\index{Motor\_Initialiize@{Motor\_Initialiize}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{Motor\_Initialiize()}{Motor\_Initialiize()}}
+{\footnotesize\ttfamily void Motor\+::\+Motor\+\_\+\+Initialiize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_motor_a41e15bdd1b60545cacf209ab45f61165}\label{class_motor_a41e15bdd1b60545cacf209ab45f61165}} 
+\index{Motor@{Motor}!reset@{reset}}
+\index{reset@{reset}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Motor\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_motor_a1018eb52901a7358216de97d2da499cd}\label{class_motor_a1018eb52901a7358216de97d2da499cd}} 
+\index{Motor@{Motor}!Set\_Speed@{Set\_Speed}}
+\index{Set\_Speed@{Set\_Speed}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{Set\_Speed()}{Set\_Speed()}}
+{\footnotesize\ttfamily void Motor\+::\+Set\+\_\+\+Speed (\begin{DoxyParamCaption}\item[{float}]{Speed\+\_\+\+Reference }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_motor_affb5f61e559cccb3492223345ae7f7c6}\label{class_motor_affb5f61e559cccb3492223345ae7f7c6}} 
+\index{Motor@{Motor}!E@{E}}
+\index{E@{E}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{E}{E}}
+{\footnotesize\ttfamily float Motor\+::E\mbox{[}3\mbox{]} \{0\}}
+
+\mbox{\Hypertarget{class_motor_a9510a109c4dbab498d6af583f4ddc744}\label{class_motor_a9510a109c4dbab498d6af583f4ddc744}} 
+\index{Motor@{Motor}!encoder@{encoder}}
+\index{encoder@{encoder}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{encoder}{encoder}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_encoder}{Encoder}} Motor\+::encoder}
+
+\mbox{\Hypertarget{class_motor_adb3eb076f01ec1d82af28ac7a3301448}\label{class_motor_adb3eb076f01ec1d82af28ac7a3301448}} 
+\index{Motor@{Motor}!IN1@{IN1}}
+\index{IN1@{IN1}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{IN1}{IN1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_g_p_i_o}{G\+P\+IO}} Motor\+::\+I\+N1}
+
+\mbox{\Hypertarget{class_motor_a8a26353a7f36369e15a1ee1a31e90006}\label{class_motor_a8a26353a7f36369e15a1ee1a31e90006}} 
+\index{Motor@{Motor}!IN2@{IN2}}
+\index{IN2@{IN2}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{IN2}{IN2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_g_p_i_o}{G\+P\+IO}} Motor\+::\+I\+N2}
+
+\mbox{\Hypertarget{class_motor_a507fe21f7952fe382a8313ca80dc1252}\label{class_motor_a507fe21f7952fe382a8313ca80dc1252}} 
+\index{Motor@{Motor}!Motor\_number@{Motor\_number}}
+\index{Motor\_number@{Motor\_number}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{Motor\_number}{Motor\_number}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88}{M\+O\+T\+O\+R\+\_\+\+E\+N\+UM}} Motor\+::\+Motor\+\_\+number}
+
+\mbox{\Hypertarget{class_motor_a7a18f7387ba0dfd2b0976e5fa4e72c7a}\label{class_motor_a7a18f7387ba0dfd2b0976e5fa4e72c7a}} 
+\index{Motor@{Motor}!motPtr@{motPtr}}
+\index{motPtr@{motPtr}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{motPtr}{motPtr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_motor}{Motor}} $\ast$ Motor\+::mot\+Ptr\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_motor_abb4965dcc37819cb9dd957a4fd027a6b}\label{class_motor_abb4965dcc37819cb9dd957a4fd027a6b}} 
+\index{Motor@{Motor}!pwmMotor@{pwmMotor}}
+\index{pwmMotor@{pwmMotor}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{pwmMotor}{pwmMotor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_p_w_m}{P\+WM}} Motor\+::pwm\+Motor}
+
+\mbox{\Hypertarget{class_motor_a1e3ff1b7e23864a1c1017f2b767a7934}\label{class_motor_a1e3ff1b7e23864a1c1017f2b767a7934}} 
+\index{Motor@{Motor}!Speed\_Reference@{Speed\_Reference}}
+\index{Speed\_Reference@{Speed\_Reference}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{Speed\_Reference}{Speed\_Reference}}
+{\footnotesize\ttfamily float Motor\+::\+Speed\+\_\+\+Reference \{0\}}
+
+\mbox{\Hypertarget{class_motor_aa3c0c0c7bf8b418dfc311ef53205380b}\label{class_motor_aa3c0c0c7bf8b418dfc311ef53205380b}} 
+\index{Motor@{Motor}!U@{U}}
+\index{U@{U}!Motor@{Motor}}
+\doxysubsubsection{\texorpdfstring{U}{U}}
+{\footnotesize\ttfamily float Motor\+::U\mbox{[}3\mbox{]} \{0\}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/bruno/\+Documents/\+Line\+Follower/\+Project\+\_\+u\+Vision/\+Line\+Follower/\mbox{\hyperlink{_m_o_t_o_r_8h}{M\+O\+T\+O\+R.\+h}}\item 
+C\+:/\+Users/bruno/\+Documents/\+Line\+Follower/\+Project\+\_\+u\+Vision/\+Line\+Follower/\mbox{\hyperlink{_m_o_t_o_r_8cpp}{M\+O\+T\+O\+R.\+cpp}}\end{DoxyCompactItemize}

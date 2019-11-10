@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_m_o_t_o_r_8h" kind="file" language="C++">
+    <compoundname>MOTOR.h</compoundname>
+    <includes refid="_p_w_m_8h" local="yes">PWM.h</includes>
+    <includes refid="_e_n_c_o_d_e_r_8h" local="yes">ENCODER.h</includes>
+    <includedby refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h</includedby>
+    <includedby refid="malha__fechada_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</includedby>
+    <includedby refid="_m_o_t_o_r_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h</label>
+        <link refid="_m_o_t_o_r_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TIMER.h</label>
+        <link refid="_t_i_m_e_r_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>PWM.h</label>
+        <link refid="_p_w_m_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ENCODER.h</label>
+        <link refid="_e_n_c_o_d_e_r_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="9">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp</label>
+        <link refid="_m_o_t_o_r_8cpp"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</label>
+        <link refid="malha__fechada_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h</label>
+        <link refid="_m_o_t_o_r_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8cpp"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.cpp</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_motor" prot="public">Motor</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_m_o_t_o_r_8h_1a69af3eedd81e2ea6cc01b229b847854b" prot="public" static="no">
+        <name>rpmToRads</name>
+        <initializer>2*<ref refid="_e_n_c_o_d_e_r_8h_1a1daf785e3f68d293c7caa1c756d5cb74" kindref="member">pi</ref>/60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="7" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_8h_1a9ccbfc0a5b90f57e3354815a29bd0869" prot="public" static="no">
+        <name>rpmToV</name>
+        <initializer><ref refid="_m_o_t_o_r_8h_1a69af3eedd81e2ea6cc01b229b847854b" kindref="member">rpmToRads</ref>*<ref refid="_m_o_t_o_r_8h_1a62969232668331297e2dca1ae2ddd10d" kindref="member">r</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="8" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_8h_1a0a9267cc60162e4c524403ee6c2655f3" prot="public" static="no">
+        <name>radsToRpm</name>
+        <initializer>60/(2*<ref refid="_e_n_c_o_d_e_r_8h_1a1daf785e3f68d293c7caa1c756d5cb74" kindref="member">pi</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="9" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_8h_1a62969232668331297e2dca1ae2ddd10d" prot="public" static="no">
+        <name>r</name>
+        <initializer>0.0161</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="10" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_8h_1aff1e894227bb23444cf6c79bac1e967e" prot="public" static="no">
+        <name>desired_size</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="12" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_8h_1a13b230ea1d237595fb236c951a0849e0" prot="public" static="no">
+        <name>k</name>
+        <initializer>(<ref refid="_m_o_t_o_r_8h_1aff1e894227bb23444cf6c79bac1e967e" kindref="member">desired_size</ref>-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="13" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_8h_1a97d832ae23af4f215e801e37e4f94254" prot="public" static="no">
+        <name>K</name>
+        <initializer>455.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="21" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_8h_1a2748566f4c443ee77aa831e63dbb5ebe" prot="public" static="no">
+        <name>P</name>
+        <initializer>12.97</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="22" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_8h_1ac1850015a7cbc80b3bd16b0dce08ef6c" prot="public" static="no">
+        <name>ts</name>
+        <initializer>0.15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="24" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_8h_1aa4729260b732666338dee7d841aa12f3" prot="public" static="no">
+        <name>KP</name>
+        <initializer>4/(<ref refid="_m_o_t_o_r_8h_1a97d832ae23af4f215e801e37e4f94254" kindref="member">K</ref>*<ref refid="_m_o_t_o_r_8h_1ac1850015a7cbc80b3bd16b0dce08ef6c" kindref="member">ts</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="25" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_8h_1ade82752ae1652fdf0df9df7a16ffda29" prot="public" static="no">
+        <name>KI</name>
+        <initializer><ref refid="_m_o_t_o_r_8h_1a2748566f4c443ee77aa831e63dbb5ebe" kindref="member">P</ref>*<ref refid="_m_o_t_o_r_8h_1aa4729260b732666338dee7d841aa12f3" kindref="member">KP</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="26" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_o_t_o_r_8h_1ac271f2ecf44740ce9bc6f97396a74944" prot="public" static="no">
+        <name>Ts</name>
+        <initializer><ref refid="_t_i_m_e_r_8h_1a3d4ab76c869e227bc5373ba193e3986e" kindref="member">Time_between_int</ref>/1000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="27" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88" prot="public" static="no" strong="no">
+        <type></type>
+        <name>MOTOR_ENUM</name>
+        <enumvalue id="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88aae52935086ce4cff779e853c6d624ba0" prot="public">
+          <name>Motor_1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88aa353ac104543310c07a37666a6573f7a" prot="public">
+          <name>Motor_2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88a6bf685d7f4dd0c3b18468769a531aba8" prot="public">
+          <name>Motor_3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88a20e60094dc4a5eba77cac4987b4365bb" prot="public">
+          <name>Motor_4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88af1e3b7c464e4173507d66e2a32619263" prot="public">
+          <name>Number_of_Motor</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="30" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="30" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MOTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MOTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_p_w_m_8h" kindref="compound">PWM.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_e_n_c_o_d_e_r_8h" kindref="compound">ENCODER.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="_m_o_t_o_r_8h_1a69af3eedd81e2ea6cc01b229b847854b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>rpmToRads<sp/>2*pi/60</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="_m_o_t_o_r_8h_1a9ccbfc0a5b90f57e3354815a29bd0869" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>rpmToV<sp/>rpmToRads*r</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_m_o_t_o_r_8h_1a0a9267cc60162e4c524403ee6c2655f3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>radsToRpm<sp/>60/(2*pi)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="_m_o_t_o_r_8h_1a62969232668331297e2dca1ae2ddd10d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>r<sp/>0.0161</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_m_o_t_o_r_8h_1aff1e894227bb23444cf6c79bac1e967e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>desired_size<sp/>3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_m_o_t_o_r_8h_1a13b230ea1d237595fb236c951a0849e0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>k<sp/>(desired_size-1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>Number_of_Motor<sp/>4<sp/><sp/><sp/><sp/><sp/>//the<sp/>same<sp/>as<sp/>encoderes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//Sem<sp/>roda</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>K<sp/>792.7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>P<sp/>22.82</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//Com<sp/>roda</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_m_o_t_o_r_8h_1a97d832ae23af4f215e801e37e4f94254" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>K<sp/>455.5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="_m_o_t_o_r_8h_1a2748566f4c443ee77aa831e63dbb5ebe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>P<sp/>12.97</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="_m_o_t_o_r_8h_1ac1850015a7cbc80b3bd16b0dce08ef6c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ts<sp/>0.15<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//tempo<sp/>de<sp/>assentamento</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="_m_o_t_o_r_8h_1aa4729260b732666338dee7d841aa12f3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KP<sp/>4/(K*ts)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="_m_o_t_o_r_8h_1ade82752ae1652fdf0df9df7a16ffda29" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KI<sp/>P*KP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="_m_o_t_o_r_8h_1ac271f2ecf44740ce9bc6f97396a74944" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Ts<sp/>Time_between_int/1000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31" refid="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88aae52935086ce4cff779e853c6d624ba0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88aae52935086ce4cff779e853c6d624ba0" kindref="member">Motor_1</ref>,</highlight></codeline>
+<codeline lineno="32" refid="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88aa353ac104543310c07a37666a6573f7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88aa353ac104543310c07a37666a6573f7a" kindref="member">Motor_2</ref>,</highlight></codeline>
+<codeline lineno="33" refid="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88a6bf685d7f4dd0c3b18468769a531aba8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88a6bf685d7f4dd0c3b18468769a531aba8" kindref="member">Motor_3</ref>,</highlight></codeline>
+<codeline lineno="34" refid="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88a20e60094dc4a5eba77cac4987b4365bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88a20e60094dc4a5eba77cac4987b4365bb" kindref="member">Motor_4</ref>,</highlight></codeline>
+<codeline lineno="35" refid="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88af1e3b7c464e4173507d66e2a32619263" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88af1e3b7c464e4173507d66e2a32619263" kindref="member">Number_of_Motor</ref>,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}<ref refid="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88" kindref="member">MOTOR_ENUM</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_motor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_motor" kindref="compound">Motor</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41" refid="class_motor_1abb4965dcc37819cb9dd957a4fd027a6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_p_w_m" kindref="compound">PWM</ref><sp/><ref refid="class_motor_1abb4965dcc37819cb9dd957a4fd027a6b" kindref="member">pwmMotor</ref>;</highlight></codeline>
+<codeline lineno="42" refid="class_motor_1a9510a109c4dbab498d6af583f4ddc744" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_encoder" kindref="compound">Encoder</ref><sp/><ref refid="class_motor_1a9510a109c4dbab498d6af583f4ddc744" kindref="member">encoder</ref>;</highlight></codeline>
+<codeline lineno="43" refid="class_motor_1adb3eb076f01ec1d82af28ac7a3301448" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref><sp/><ref refid="class_motor_1adb3eb076f01ec1d82af28ac7a3301448" kindref="member">IN1</ref>;</highlight></codeline>
+<codeline lineno="44" refid="class_motor_1a8a26353a7f36369e15a1ee1a31e90006" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref><sp/><ref refid="class_motor_1a8a26353a7f36369e15a1ee1a31e90006" kindref="member">IN2</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="class_motor_1a507fe21f7952fe382a8313ca80dc1252" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88" kindref="member">MOTOR_ENUM</ref><sp/><ref refid="class_motor_1a507fe21f7952fe382a8313ca80dc1252" kindref="member">Motor_number</ref>;</highlight></codeline>
+<codeline lineno="47" refid="class_motor_1aa3c0c0c7bf8b418dfc311ef53205380b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_motor_1aa3c0c0c7bf8b418dfc311ef53205380b" kindref="member">U</ref>[<ref refid="_m_o_t_o_r_8h_1aff1e894227bb23444cf6c79bac1e967e" kindref="member">desired_size</ref>]{0};<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="class_motor_1affb5f61e559cccb3492223345ae7f7c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_motor_1affb5f61e559cccb3492223345ae7f7c6" kindref="member">E</ref>[<ref refid="_m_o_t_o_r_8h_1aff1e894227bb23444cf6c79bac1e967e" kindref="member">desired_size</ref>]{0};<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="class_motor_1a1e3ff1b7e23864a1c1017f2b767a7934" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_motor_1a1e3ff1b7e23864a1c1017f2b767a7934" kindref="member">Speed_Reference</ref>{0};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="class_motor_1a7a18f7387ba0dfd2b0976e5fa4e72c7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_motor" kindref="compound">Motor</ref><sp/>*<ref refid="class_motor_1a7a18f7387ba0dfd2b0976e5fa4e72c7a" kindref="member">motPtr</ref>[<ref refid="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88af1e3b7c464e4173507d66e2a32619263" kindref="member">Number_of_Motor</ref>];</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_motor_1a8836ab4247ef87a4387677b006d5f0cb" kindref="member">Handler</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_motor_1a2d501dfec5e8086250a936b4c0ca119d" kindref="member">Motor</ref>(<ref refid="class_p_w_m" kindref="compound">PWM</ref><sp/><ref refid="class_motor_1abb4965dcc37819cb9dd957a4fd027a6b" kindref="member">pwmMotor</ref>,<sp/><ref refid="class_encoder" kindref="compound">Encoder</ref><sp/><ref refid="class_motor_1a9510a109c4dbab498d6af583f4ddc744" kindref="member">encoder</ref>,<sp/><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref><sp/>In1,<sp/><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref><sp/>In2);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_motor_1a2d501dfec5e8086250a936b4c0ca119d" kindref="member">Motor</ref>(<ref refid="class_motor" kindref="compound">Motor</ref><sp/>*motor);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_motor_1a41e15bdd1b60545cacf209ab45f61165" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_motor_1a1018eb52901a7358216de97d2da499cd" kindref="member">Set_Speed</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_motor_1a1e3ff1b7e23864a1c1017f2b767a7934" kindref="member">Speed_Reference</ref>);<sp/><sp/></highlight><highlight class="comment">//Set<sp/>the<sp/>desired<sp/>speed<sp/>in<sp/>RPM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_motor_1af04b2f9210f9302d0d48954a29f967f7" kindref="member">Get_Speed</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_motor_1ac53b32c1f6f7585e0ab7ea871af374a5" kindref="member">getDistance</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_motor_1a51e71949cdd9d1c450a700f33aed2ce6" kindref="member">getDeltaDistance</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_motor_1ae0dd564fac9cb20f42596eb3af19c72b" kindref="member">getSpeedRadS</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_motor_1af7df646399e0dbe5f2feb1e3497f3a8f" kindref="member">getU</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_motor_1ae4885cc6d5d633bc0d2ac9cb3ead78d5" kindref="member">getE</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_motor_1a08d6998bd503b1dd3b4065bc73ad6ddd" kindref="member">getTeta</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_motor_1af8a10fa21c96ddb956d139de58857c1e" kindref="member">Motor_Initialiize</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_motor_1a04af4305d7317e01ca4673f7f30c0b23" kindref="member">Motor_Handler_by_time</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h"/>
+  </compounddef>
+</doxygen>

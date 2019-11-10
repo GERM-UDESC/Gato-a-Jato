@@ -1,0 +1,421 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_motor" kind="class" language="C++" prot="public">
+    <compoundname>Motor</compoundname>
+    <includes refid="_m_o_t_o_r_8h" local="no">MOTOR.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_motor_1abb4965dcc37819cb9dd957a4fd027a6b" prot="public" static="no" mutable="no">
+        <type><ref refid="class_p_w_m" kindref="compound">PWM</ref></type>
+        <definition>PWM Motor::pwmMotor</definition>
+        <argsstring></argsstring>
+        <name>pwmMotor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="41" column="5" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motor_1a9510a109c4dbab498d6af583f4ddc744" prot="public" static="no" mutable="no">
+        <type><ref refid="class_encoder" kindref="compound">Encoder</ref></type>
+        <definition>Encoder Motor::encoder</definition>
+        <argsstring></argsstring>
+        <name>encoder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="42" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motor_1adb3eb076f01ec1d82af28ac7a3301448" prot="public" static="no" mutable="no">
+        <type><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref></type>
+        <definition>GPIO Motor::IN1</definition>
+        <argsstring></argsstring>
+        <name>IN1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="43" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motor_1a8a26353a7f36369e15a1ee1a31e90006" prot="public" static="no" mutable="no">
+        <type><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref></type>
+        <definition>GPIO Motor::IN2</definition>
+        <argsstring></argsstring>
+        <name>IN2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="44" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motor_1a507fe21f7952fe382a8313ca80dc1252" prot="public" static="no" mutable="no">
+        <type><ref refid="_m_o_t_o_r_8h_1aacba3dda132d8a7c56a400d7edaa8f88" kindref="member">MOTOR_ENUM</ref></type>
+        <definition>MOTOR_ENUM Motor::Motor_number</definition>
+        <argsstring></argsstring>
+        <name>Motor_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="46" column="12" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motor_1aa3c0c0c7bf8b418dfc311ef53205380b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Motor::U[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>U</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="47" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motor_1affb5f61e559cccb3492223345ae7f7c6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Motor::E[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>E</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="48" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_motor_1a1e3ff1b7e23864a1c1017f2b767a7934" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Motor::Speed_Reference</definition>
+        <argsstring></argsstring>
+        <name>Speed_Reference</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="49" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_motor_1a7a18f7387ba0dfd2b0976e5fa4e72c7a" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_motor" kindref="compound">Motor</ref> *</type>
+        <definition>Motor * Motor::motPtr</definition>
+        <argsstring>[Number_of_Motor]</argsstring>
+        <name>motPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="51" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_motor_1a8836ab4247ef87a4387677b006d5f0cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Motor::Handler</definition>
+        <argsstring>()</argsstring>
+        <name>Handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="52" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp" bodystart="70" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_1a2d501dfec5e8086250a936b4c0ca119d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Motor::Motor</definition>
+        <argsstring>(PWM pwmMotor, Encoder encoder, GPIO In1, GPIO In2)</argsstring>
+        <name>Motor</name>
+        <param>
+          <type><ref refid="class_p_w_m" kindref="compound">PWM</ref></type>
+          <declname>pwmMotor</declname>
+        </param>
+        <param>
+          <type><ref refid="class_encoder" kindref="compound">Encoder</ref></type>
+          <declname>encoder</declname>
+        </param>
+        <param>
+          <type><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref></type>
+          <declname>In1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref></type>
+          <declname>In2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="55" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp" bodystart="19" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_1a50149f68de143f65a56d70cf9e4b8bb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Motor::Motor</definition>
+        <argsstring>(Motor *motor)</argsstring>
+        <name>Motor</name>
+        <param>
+          <type><ref refid="class_motor" kindref="compound">Motor</ref> *</type>
+          <declname>motor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="56" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp" bodystart="35" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_1a41e15bdd1b60545cacf209ab45f61165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Motor::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="58" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp" bodystart="48" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_1a1018eb52901a7358216de97d2da499cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Motor::Set_Speed</definition>
+        <argsstring>(float Speed_Reference)</argsstring>
+        <name>Set_Speed</name>
+        <param>
+          <type>float</type>
+          <declname>Speed_Reference</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="60" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_1af04b2f9210f9302d0d48954a29f967f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Motor::Get_Speed</definition>
+        <argsstring>()</argsstring>
+        <name>Get_Speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="61" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_1ac53b32c1f6f7585e0ab7ea871af374a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Motor::getDistance</definition>
+        <argsstring>()</argsstring>
+        <name>getDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="62" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_1a51e71949cdd9d1c450a700f33aed2ce6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Motor::getDeltaDistance</definition>
+        <argsstring>()</argsstring>
+        <name>getDeltaDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="63" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp" bodystart="129" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_1ae0dd564fac9cb20f42596eb3af19c72b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Motor::getSpeedRadS</definition>
+        <argsstring>()</argsstring>
+        <name>getSpeedRadS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="64" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_1af7df646399e0dbe5f2feb1e3497f3a8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Motor::getU</definition>
+        <argsstring>()</argsstring>
+        <name>getU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="65" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_1ae4885cc6d5d633bc0d2ac9cb3ead78d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Motor::getE</definition>
+        <argsstring>()</argsstring>
+        <name>getE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="66" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_1a08d6998bd503b1dd3b4065bc73ad6ddd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Motor::getTeta</definition>
+        <argsstring>()</argsstring>
+        <name>getTeta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="67" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp" bodystart="119" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_motor_1af8a10fa21c96ddb956d139de58857c1e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Motor::Motor_Initialiize</definition>
+        <argsstring>()</argsstring>
+        <name>Motor_Initialiize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="69" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp" bodystart="5" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_motor_1a04af4305d7317e01ca4673f7f30c0b23" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Motor::Motor_Handler_by_time</definition>
+        <argsstring>()</argsstring>
+        <name>Motor_Handler_by_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="70" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp" bodystart="13" bodyend="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Motor</label>
+        <link refid="class_motor"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>motPtr</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>encoder</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>pwmMotor</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>IN1</edgelabel>
+          <edgelabel>IN2</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Encoder</label>
+        <link refid="class_encoder"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>TIM_TypeDef</label>
+        <link refid="struct_t_i_m___type_def"/>
+      </node>
+      <node id="3">
+        <label>Timer</label>
+        <link refid="class_timer"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>TIM</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>PWM</label>
+        <link refid="class_p_w_m"/>
+        <childnode refid="3" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>GPIO</label>
+        <link refid="class_g_p_i_o"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" line="39" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h" bodystart="38" bodyend="72"/>
+    <listofallmembers>
+      <member refid="class_motor_1affb5f61e559cccb3492223345ae7f7c6" prot="public" virt="non-virtual"><scope>Motor</scope><name>E</name></member>
+      <member refid="class_motor_1a9510a109c4dbab498d6af583f4ddc744" prot="public" virt="non-virtual"><scope>Motor</scope><name>encoder</name></member>
+      <member refid="class_motor_1af04b2f9210f9302d0d48954a29f967f7" prot="public" virt="non-virtual"><scope>Motor</scope><name>Get_Speed</name></member>
+      <member refid="class_motor_1a51e71949cdd9d1c450a700f33aed2ce6" prot="public" virt="non-virtual"><scope>Motor</scope><name>getDeltaDistance</name></member>
+      <member refid="class_motor_1ac53b32c1f6f7585e0ab7ea871af374a5" prot="public" virt="non-virtual"><scope>Motor</scope><name>getDistance</name></member>
+      <member refid="class_motor_1ae4885cc6d5d633bc0d2ac9cb3ead78d5" prot="public" virt="non-virtual"><scope>Motor</scope><name>getE</name></member>
+      <member refid="class_motor_1ae0dd564fac9cb20f42596eb3af19c72b" prot="public" virt="non-virtual"><scope>Motor</scope><name>getSpeedRadS</name></member>
+      <member refid="class_motor_1a08d6998bd503b1dd3b4065bc73ad6ddd" prot="public" virt="non-virtual"><scope>Motor</scope><name>getTeta</name></member>
+      <member refid="class_motor_1af7df646399e0dbe5f2feb1e3497f3a8f" prot="public" virt="non-virtual"><scope>Motor</scope><name>getU</name></member>
+      <member refid="class_motor_1a8836ab4247ef87a4387677b006d5f0cb" prot="public" virt="non-virtual"><scope>Motor</scope><name>Handler</name></member>
+      <member refid="class_motor_1adb3eb076f01ec1d82af28ac7a3301448" prot="public" virt="non-virtual"><scope>Motor</scope><name>IN1</name></member>
+      <member refid="class_motor_1a8a26353a7f36369e15a1ee1a31e90006" prot="public" virt="non-virtual"><scope>Motor</scope><name>IN2</name></member>
+      <member refid="class_motor_1a2d501dfec5e8086250a936b4c0ca119d" prot="public" virt="non-virtual"><scope>Motor</scope><name>Motor</name></member>
+      <member refid="class_motor_1a50149f68de143f65a56d70cf9e4b8bb5" prot="public" virt="non-virtual"><scope>Motor</scope><name>Motor</name></member>
+      <member refid="class_motor_1a04af4305d7317e01ca4673f7f30c0b23" prot="public" virt="non-virtual"><scope>Motor</scope><name>Motor_Handler_by_time</name></member>
+      <member refid="class_motor_1af8a10fa21c96ddb956d139de58857c1e" prot="public" virt="non-virtual"><scope>Motor</scope><name>Motor_Initialiize</name></member>
+      <member refid="class_motor_1a507fe21f7952fe382a8313ca80dc1252" prot="public" virt="non-virtual"><scope>Motor</scope><name>Motor_number</name></member>
+      <member refid="class_motor_1a7a18f7387ba0dfd2b0976e5fa4e72c7a" prot="public" virt="non-virtual"><scope>Motor</scope><name>motPtr</name></member>
+      <member refid="class_motor_1abb4965dcc37819cb9dd957a4fd027a6b" prot="public" virt="non-virtual"><scope>Motor</scope><name>pwmMotor</name></member>
+      <member refid="class_motor_1a41e15bdd1b60545cacf209ab45f61165" prot="public" virt="non-virtual"><scope>Motor</scope><name>reset</name></member>
+      <member refid="class_motor_1a1018eb52901a7358216de97d2da499cd" prot="public" virt="non-virtual"><scope>Motor</scope><name>Set_Speed</name></member>
+      <member refid="class_motor_1a1e3ff1b7e23864a1c1017f2b767a7934" prot="public" virt="non-virtual"><scope>Motor</scope><name>Speed_Reference</name></member>
+      <member refid="class_motor_1aa3c0c0c7bf8b418dfc311ef53205380b" prot="public" virt="non-virtual"><scope>Motor</scope><name>U</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

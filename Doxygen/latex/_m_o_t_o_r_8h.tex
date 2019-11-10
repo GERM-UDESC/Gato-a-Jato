@@ -1,0 +1,154 @@
+\hypertarget{_m_o_t_o_r_8h}{}\doxysection{C\+:/\+Users/bruno/\+Documents/\+Line\+Follower/\+Project\+\_\+u\+Vision/\+Line\+Follower/\+M\+O\+T\+OR.h File Reference}
+\label{_m_o_t_o_r_8h}\index{C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/MOTOR.h@{C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/MOTOR.h}}
+{\ttfamily \#include \char`\"{}P\+W\+M.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}E\+N\+C\+O\+D\+E\+R.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_motor}{Motor}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_m_o_t_o_r_8h_a69af3eedd81e2ea6cc01b229b847854b}{rpm\+To\+Rads}}~2$\ast$\mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a1daf785e3f68d293c7caa1c756d5cb74}{pi}}/60
+\item 
+\#define \mbox{\hyperlink{_m_o_t_o_r_8h_a9ccbfc0a5b90f57e3354815a29bd0869}{rpm\+ToV}}~\mbox{\hyperlink{_m_o_t_o_r_8h_a69af3eedd81e2ea6cc01b229b847854b}{rpm\+To\+Rads}}$\ast$\mbox{\hyperlink{_m_o_t_o_r_8h_a62969232668331297e2dca1ae2ddd10d}{r}}
+\item 
+\#define \mbox{\hyperlink{_m_o_t_o_r_8h_a0a9267cc60162e4c524403ee6c2655f3}{rads\+To\+Rpm}}~60/(2$\ast$\mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a1daf785e3f68d293c7caa1c756d5cb74}{pi}})
+\item 
+\#define \mbox{\hyperlink{_m_o_t_o_r_8h_a62969232668331297e2dca1ae2ddd10d}{r}}~0.\+0161
+\item 
+\#define \mbox{\hyperlink{_m_o_t_o_r_8h_aff1e894227bb23444cf6c79bac1e967e}{desired\+\_\+size}}~3
+\item 
+\#define \mbox{\hyperlink{_m_o_t_o_r_8h_a13b230ea1d237595fb236c951a0849e0}{k}}~(\mbox{\hyperlink{_m_o_t_o_r_8h_aff1e894227bb23444cf6c79bac1e967e}{desired\+\_\+size}}-\/1)
+\item 
+\#define \mbox{\hyperlink{_m_o_t_o_r_8h_a97d832ae23af4f215e801e37e4f94254}{K}}~455.\+5
+\item 
+\#define \mbox{\hyperlink{_m_o_t_o_r_8h_a2748566f4c443ee77aa831e63dbb5ebe}{P}}~12.\+97
+\item 
+\#define \mbox{\hyperlink{_m_o_t_o_r_8h_ac1850015a7cbc80b3bd16b0dce08ef6c}{ts}}~0.\+15
+\item 
+\#define \mbox{\hyperlink{_m_o_t_o_r_8h_aa4729260b732666338dee7d841aa12f3}{KP}}~4/(\mbox{\hyperlink{_m_o_t_o_r_8h_a97d832ae23af4f215e801e37e4f94254}{K}}$\ast$\mbox{\hyperlink{_m_o_t_o_r_8h_ac1850015a7cbc80b3bd16b0dce08ef6c}{ts}})
+\item 
+\#define \mbox{\hyperlink{_m_o_t_o_r_8h_ade82752ae1652fdf0df9df7a16ffda29}{KI}}~\mbox{\hyperlink{_m_o_t_o_r_8h_a2748566f4c443ee77aa831e63dbb5ebe}{P}}$\ast$\mbox{\hyperlink{_m_o_t_o_r_8h_aa4729260b732666338dee7d841aa12f3}{KP}}
+\item 
+\#define \mbox{\hyperlink{_m_o_t_o_r_8h_ac271f2ecf44740ce9bc6f97396a74944}{Ts}}~\mbox{\hyperlink{_t_i_m_e_r_8h_a3d4ab76c869e227bc5373ba193e3986e}{Time\+\_\+between\+\_\+int}}/1000000
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88}{M\+O\+T\+O\+R\+\_\+\+E\+N\+UM}} \{ \newline
+\mbox{\hyperlink{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88aae52935086ce4cff779e853c6d624ba0}{Motor\+\_\+1}}, 
+\mbox{\hyperlink{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88aa353ac104543310c07a37666a6573f7a}{Motor\+\_\+2}}, 
+\mbox{\hyperlink{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88a6bf685d7f4dd0c3b18468769a531aba8}{Motor\+\_\+3}}, 
+\mbox{\hyperlink{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88a20e60094dc4a5eba77cac4987b4365bb}{Motor\+\_\+4}}, 
+\newline
+\mbox{\hyperlink{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88af1e3b7c464e4173507d66e2a32619263}{Number\+\_\+of\+\_\+\+Motor}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_m_o_t_o_r_8h_aff1e894227bb23444cf6c79bac1e967e}\label{_m_o_t_o_r_8h_aff1e894227bb23444cf6c79bac1e967e}} 
+\index{MOTOR.h@{MOTOR.h}!desired\_size@{desired\_size}}
+\index{desired\_size@{desired\_size}!MOTOR.h@{MOTOR.h}}
+\doxysubsubsection{\texorpdfstring{desired\_size}{desired\_size}}
+{\footnotesize\ttfamily \#define desired\+\_\+size~3}
+
+\mbox{\Hypertarget{_m_o_t_o_r_8h_a13b230ea1d237595fb236c951a0849e0}\label{_m_o_t_o_r_8h_a13b230ea1d237595fb236c951a0849e0}} 
+\index{MOTOR.h@{MOTOR.h}!k@{k}}
+\index{k@{k}!MOTOR.h@{MOTOR.h}}
+\doxysubsubsection{\texorpdfstring{k}{k}}
+{\footnotesize\ttfamily \#define k~(\mbox{\hyperlink{_m_o_t_o_r_8h_aff1e894227bb23444cf6c79bac1e967e}{desired\+\_\+size}}-\/1)}
+
+\mbox{\Hypertarget{_m_o_t_o_r_8h_a97d832ae23af4f215e801e37e4f94254}\label{_m_o_t_o_r_8h_a97d832ae23af4f215e801e37e4f94254}} 
+\index{MOTOR.h@{MOTOR.h}!K@{K}}
+\index{K@{K}!MOTOR.h@{MOTOR.h}}
+\doxysubsubsection{\texorpdfstring{K}{K}}
+{\footnotesize\ttfamily \#define K~455.\+5}
+
+\mbox{\Hypertarget{_m_o_t_o_r_8h_ade82752ae1652fdf0df9df7a16ffda29}\label{_m_o_t_o_r_8h_ade82752ae1652fdf0df9df7a16ffda29}} 
+\index{MOTOR.h@{MOTOR.h}!KI@{KI}}
+\index{KI@{KI}!MOTOR.h@{MOTOR.h}}
+\doxysubsubsection{\texorpdfstring{KI}{KI}}
+{\footnotesize\ttfamily \#define KI~\mbox{\hyperlink{_m_o_t_o_r_8h_a2748566f4c443ee77aa831e63dbb5ebe}{P}}$\ast$\mbox{\hyperlink{_m_o_t_o_r_8h_aa4729260b732666338dee7d841aa12f3}{KP}}}
+
+\mbox{\Hypertarget{_m_o_t_o_r_8h_aa4729260b732666338dee7d841aa12f3}\label{_m_o_t_o_r_8h_aa4729260b732666338dee7d841aa12f3}} 
+\index{MOTOR.h@{MOTOR.h}!KP@{KP}}
+\index{KP@{KP}!MOTOR.h@{MOTOR.h}}
+\doxysubsubsection{\texorpdfstring{KP}{KP}}
+{\footnotesize\ttfamily \#define KP~4/(\mbox{\hyperlink{_m_o_t_o_r_8h_a97d832ae23af4f215e801e37e4f94254}{K}}$\ast$\mbox{\hyperlink{_m_o_t_o_r_8h_ac1850015a7cbc80b3bd16b0dce08ef6c}{ts}})}
+
+\mbox{\Hypertarget{_m_o_t_o_r_8h_a2748566f4c443ee77aa831e63dbb5ebe}\label{_m_o_t_o_r_8h_a2748566f4c443ee77aa831e63dbb5ebe}} 
+\index{MOTOR.h@{MOTOR.h}!P@{P}}
+\index{P@{P}!MOTOR.h@{MOTOR.h}}
+\doxysubsubsection{\texorpdfstring{P}{P}}
+{\footnotesize\ttfamily \#define P~12.\+97}
+
+\mbox{\Hypertarget{_m_o_t_o_r_8h_a62969232668331297e2dca1ae2ddd10d}\label{_m_o_t_o_r_8h_a62969232668331297e2dca1ae2ddd10d}} 
+\index{MOTOR.h@{MOTOR.h}!r@{r}}
+\index{r@{r}!MOTOR.h@{MOTOR.h}}
+\doxysubsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily \#define r~0.\+0161}
+
+\mbox{\Hypertarget{_m_o_t_o_r_8h_a0a9267cc60162e4c524403ee6c2655f3}\label{_m_o_t_o_r_8h_a0a9267cc60162e4c524403ee6c2655f3}} 
+\index{MOTOR.h@{MOTOR.h}!radsToRpm@{radsToRpm}}
+\index{radsToRpm@{radsToRpm}!MOTOR.h@{MOTOR.h}}
+\doxysubsubsection{\texorpdfstring{radsToRpm}{radsToRpm}}
+{\footnotesize\ttfamily \#define rads\+To\+Rpm~60/(2$\ast$\mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a1daf785e3f68d293c7caa1c756d5cb74}{pi}})}
+
+\mbox{\Hypertarget{_m_o_t_o_r_8h_a69af3eedd81e2ea6cc01b229b847854b}\label{_m_o_t_o_r_8h_a69af3eedd81e2ea6cc01b229b847854b}} 
+\index{MOTOR.h@{MOTOR.h}!rpmToRads@{rpmToRads}}
+\index{rpmToRads@{rpmToRads}!MOTOR.h@{MOTOR.h}}
+\doxysubsubsection{\texorpdfstring{rpmToRads}{rpmToRads}}
+{\footnotesize\ttfamily \#define rpm\+To\+Rads~2$\ast$\mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a1daf785e3f68d293c7caa1c756d5cb74}{pi}}/60}
+
+\mbox{\Hypertarget{_m_o_t_o_r_8h_a9ccbfc0a5b90f57e3354815a29bd0869}\label{_m_o_t_o_r_8h_a9ccbfc0a5b90f57e3354815a29bd0869}} 
+\index{MOTOR.h@{MOTOR.h}!rpmToV@{rpmToV}}
+\index{rpmToV@{rpmToV}!MOTOR.h@{MOTOR.h}}
+\doxysubsubsection{\texorpdfstring{rpmToV}{rpmToV}}
+{\footnotesize\ttfamily \#define rpm\+ToV~\mbox{\hyperlink{_m_o_t_o_r_8h_a69af3eedd81e2ea6cc01b229b847854b}{rpm\+To\+Rads}}$\ast$\mbox{\hyperlink{_m_o_t_o_r_8h_a62969232668331297e2dca1ae2ddd10d}{r}}}
+
+\mbox{\Hypertarget{_m_o_t_o_r_8h_ac1850015a7cbc80b3bd16b0dce08ef6c}\label{_m_o_t_o_r_8h_ac1850015a7cbc80b3bd16b0dce08ef6c}} 
+\index{MOTOR.h@{MOTOR.h}!ts@{ts}}
+\index{ts@{ts}!MOTOR.h@{MOTOR.h}}
+\doxysubsubsection{\texorpdfstring{ts}{ts}}
+{\footnotesize\ttfamily \#define ts~0.\+15}
+
+\mbox{\Hypertarget{_m_o_t_o_r_8h_ac271f2ecf44740ce9bc6f97396a74944}\label{_m_o_t_o_r_8h_ac271f2ecf44740ce9bc6f97396a74944}} 
+\index{MOTOR.h@{MOTOR.h}!Ts@{Ts}}
+\index{Ts@{Ts}!MOTOR.h@{MOTOR.h}}
+\doxysubsubsection{\texorpdfstring{Ts}{Ts}}
+{\footnotesize\ttfamily \#define Ts~\mbox{\hyperlink{_t_i_m_e_r_8h_a3d4ab76c869e227bc5373ba193e3986e}{Time\+\_\+between\+\_\+int}}/1000000}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88}\label{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88}} 
+\index{MOTOR.h@{MOTOR.h}!MOTOR\_ENUM@{MOTOR\_ENUM}}
+\index{MOTOR\_ENUM@{MOTOR\_ENUM}!MOTOR.h@{MOTOR.h}}
+\doxysubsubsection{\texorpdfstring{MOTOR\_ENUM}{MOTOR\_ENUM}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88}{M\+O\+T\+O\+R\+\_\+\+E\+N\+UM}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Motor\_1@{Motor\_1}!MOTOR.h@{MOTOR.h}}\index{MOTOR.h@{MOTOR.h}!Motor\_1@{Motor\_1}}}\mbox{\Hypertarget{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88aae52935086ce4cff779e853c6d624ba0}\label{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88aae52935086ce4cff779e853c6d624ba0}} 
+Motor\+\_\+1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Motor\_2@{Motor\_2}!MOTOR.h@{MOTOR.h}}\index{MOTOR.h@{MOTOR.h}!Motor\_2@{Motor\_2}}}\mbox{\Hypertarget{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88aa353ac104543310c07a37666a6573f7a}\label{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88aa353ac104543310c07a37666a6573f7a}} 
+Motor\+\_\+2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Motor\_3@{Motor\_3}!MOTOR.h@{MOTOR.h}}\index{MOTOR.h@{MOTOR.h}!Motor\_3@{Motor\_3}}}\mbox{\Hypertarget{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88a6bf685d7f4dd0c3b18468769a531aba8}\label{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88a6bf685d7f4dd0c3b18468769a531aba8}} 
+Motor\+\_\+3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Motor\_4@{Motor\_4}!MOTOR.h@{MOTOR.h}}\index{MOTOR.h@{MOTOR.h}!Motor\_4@{Motor\_4}}}\mbox{\Hypertarget{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88a20e60094dc4a5eba77cac4987b4365bb}\label{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88a20e60094dc4a5eba77cac4987b4365bb}} 
+Motor\+\_\+4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Number\_of\_Motor@{Number\_of\_Motor}!MOTOR.h@{MOTOR.h}}\index{MOTOR.h@{MOTOR.h}!Number\_of\_Motor@{Number\_of\_Motor}}}\mbox{\Hypertarget{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88af1e3b7c464e4173507d66e2a32619263}\label{_m_o_t_o_r_8h_aacba3dda132d8a7c56a400d7edaa8f88af1e3b7c464e4173507d66e2a32619263}} 
+Number\+\_\+of\+\_\+\+Motor&\\
+\hline
+
+\end{DoxyEnumFields}

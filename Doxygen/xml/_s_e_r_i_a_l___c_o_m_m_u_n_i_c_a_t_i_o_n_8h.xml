@@ -1,0 +1,382 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h" kind="file" language="C++">
+    <compoundname>SERIAL_COMMUNICATION.h</compoundname>
+    <includes refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h" local="yes">FOLLOWING_CONTROLER.h</includes>
+    <includes refid="_u_s_a_r_t_8h" local="yes">USART.h</includes>
+    <includedby refid="malha__fechada_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</includedby>
+    <includedby refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.cpp</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>REFLECTANCE_SENSOR.h</label>
+        <link refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>stdint.h</label>
+      </node>
+      <node id="13">
+        <label>ADC.h</label>
+        <link refid="_a_d_c_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MOTOR.h</label>
+        <link refid="_m_o_t_o_r_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FOLLOWING_CONTROLER.h</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>TIMER.h</label>
+        <link refid="_t_i_m_e_r_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>PWM.h</label>
+        <link refid="_p_w_m_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ENCODER.h</label>
+        <link refid="_e_n_c_o_d_e_r_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>KINEMATIC_CONTROL.h</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>math.h</label>
+      </node>
+      <node id="7">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>USART.h</label>
+        <link refid="_u_s_a_r_t_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>LINE_SENSOR.h</label>
+        <link refid="_l_i_n_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</label>
+        <link refid="malha__fechada_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.cpp</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_communication" prot="public">Communication</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1af6f19c3204394ef9cc358ef3c3d45c05" prot="public" static="no">
+        <name>samplingTime</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="7" column="10" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a6c5c95258c8d97c1b2998ddc227c8b56" prot="public" static="no">
+        <name>bitsToSend</name>
+        <initializer>(<ref refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1af6f19c3204394ef9cc358ef3c3d45c05" kindref="member">samplingTime</ref>*1000000)/(<ref refid="_t_i_m_e_r_8h_1a3d4ab76c869e227bc5373ba193e3986e" kindref="member">Time_between_int</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="8" column="10" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a3e57a4126d44752d64b4fe87f6ca3fb9" prot="public" static="no">
+        <name>sendingTime</name>
+        <initializer><ref refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a6c5c95258c8d97c1b2998ddc227c8b56" kindref="member">bitsToSend</ref>*<ref refid="_t_i_m_e_r_8h_1a3d4ab76c869e227bc5373ba193e3986e" kindref="member">Time_between_int</ref>/1000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="9" column="10" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a233ef9e4cd78e463f9bf615da6a6d9f4" prot="public" static="no">
+        <name>robotStop</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="21" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a8c50f0a1dea208d6d786a6cd447ae848" prot="public" static="no">
+        <name>robotRun</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="22" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1aaba215882ef3e02a8c8211574e7a240e" prot="public" static="no">
+        <name>sendV_W</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="23" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a3de2de8be5f87f41eeb2ca689f3cc022" prot="public" static="no">
+        <name>sendV_Wcontrol</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="24" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a3a530a86959873522f3e212a3489b016" prot="public" static="no">
+        <name>sendV_W_and_V_Wcontrol</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="25" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a40a7fb1b97d02a28d20611f862d44536" prot="public" static="no">
+        <name>sendLineReading</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="26" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1ad81577ed48d151c06969c1d7cbad6066" prot="public" static="no">
+        <name>sendMotorsSpeed</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="27" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a4de49ea511d62ee9f9e3eaca5312ca25" prot="public" static="no">
+        <name>sendMotorsSpeedAndControl</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="28" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a722b21cd17abdb8043c2055599a28ad6" prot="public" static="no">
+        <name>sendMotorsSpeedControlAndErrors</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="29" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1af7548683eddf2ea9e358d20d0750ddc0" prot="public" static="no">
+        <name>sendEverything</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="30" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a7149eb67637d966132dd6eab515e66b3" prot="public" static="no">
+        <name>sendPositionAndOrientation</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="31" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a0d7be4eec553109d888e1d36b7483f46" prot="public" static="no">
+        <name>sendPWMandEncoderDataRight</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="32" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a6b511b2271c64938b25bd4e12472d547" prot="public" static="no">
+        <name>sendMotorDdata</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" line="33" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifndef<sp/>SERIAL_COMMUNICATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>SERIAL_COMMUNICATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;<ref refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h" kindref="compound">FOLLOWING_CONTROLER.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&quot;<ref refid="_u_s_a_r_t_8h" kindref="compound">USART.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="7" refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1af6f19c3204394ef9cc358ef3c3d45c05" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>samplingTime<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a6c5c95258c8d97c1b2998ddc227c8b56" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>bitsToSend<sp/>(samplingTime*1000000)/(Time_between_int)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a3e57a4126d44752d64b4fe87f6ca3fb9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>sendingTime<sp/>bitsToSend*Time_between_int/1000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//I<sp/>tried<sp/>to<sp/>do<sp/>with<sp/>enum,<sp/>to<sp/>make<sp/>the<sp/>code<sp/>better,<sp/>but<sp/>there<sp/>was<sp/>some<sp/>problem<sp/>that<sp/>I<sp/>couldn&apos;t<sp/>find,<sp/>so<sp/>I&apos;ve<sp/>made<sp/>with<sp/>define</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>typedef<sp/>enum{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>stop<sp/>=<sp/>0,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>start<sp/>=<sp/>1,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>sendV_W<sp/>=<sp/>2,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>sendV_Wcontrol<sp/>=<sp/>3,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>sendMotorsSpeed<sp/>=<sp/>4,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}COMMANDS;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//List<sp/>of<sp/>communication<sp/>commands:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a233ef9e4cd78e463f9bf615da6a6d9f4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>robotStop<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a8c50f0a1dea208d6d786a6cd447ae848" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>robotRun<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1aaba215882ef3e02a8c8211574e7a240e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>sendV_W<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a3de2de8be5f87f41eeb2ca689f3cc022" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>sendV_Wcontrol<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a3a530a86959873522f3e212a3489b016" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>sendV_W_and_V_Wcontrol<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a40a7fb1b97d02a28d20611f862d44536" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>sendLineReading<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1ad81577ed48d151c06969c1d7cbad6066" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>sendMotorsSpeed<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a4de49ea511d62ee9f9e3eaca5312ca25" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>sendMotorsSpeedAndControl<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a722b21cd17abdb8043c2055599a28ad6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>sendMotorsSpeedControlAndErrors<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1af7548683eddf2ea9e358d20d0750ddc0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>sendEverything<sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a7149eb67637d966132dd6eab515e66b3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>sendPositionAndOrientation<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a0d7be4eec553109d888e1d36b7483f46" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>sendPWMandEncoderDataRight<sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a6b511b2271c64938b25bd4e12472d547" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>sendMotorDdata<sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_communication" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_communication" kindref="compound">Communication</ref></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_communication" kindref="compound">Communication</ref><sp/>*ptCommunication;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Handler();<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_controller" kindref="compound">Controller</ref><sp/>*LineFollower;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_u_s_a_r_t" kindref="compound">USART</ref><sp/>*Serial;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>counter{0};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>temporary[12];</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>doCommand();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_communication_1a5791b340032837166bfd0f7f35af5730" kindref="member">Communication</ref>(<ref refid="class_controller" kindref="compound">Controller</ref><sp/>*LineFollower_,<sp/><ref refid="class_u_s_a_r_t" kindref="compound">USART</ref><sp/>*Serial_);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_communication_1a5d6eb07142c2137308fa39b51aee0a86" kindref="member">HandlerByTime</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_communication_1a5f9a1b92ab85b3dea58464b1a881472a" kindref="member">waitForCommand</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_communication_1a533d66ca9e46c0c8bd79493d49fab54f" kindref="member">verifyCommand</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57" refid="class_communication_1ab9dbb039032c4123c2e6f17eaadf17b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_communication_1ab9dbb039032c4123c2e6f17eaadf17b5" kindref="member">command</ref>{<ref refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_1a233ef9e4cd78e463f9bf615da6a6d9f4" kindref="member">robotStop</ref>};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h"/>
+  </compounddef>
+</doxygen>

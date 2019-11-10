@@ -1,0 +1,296 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="struct_a_d_c___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>ADC_TypeDef</compoundname>
+    <includes refid="_micro_8h" local="no">Micro.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1a0c1b55bc0f0e5157ceffa52545ee6bcd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::SR</definition>
+        <argsstring></argsstring>
+        <name>SR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="72" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1a29fed74ebdf1224d19d6d3006b47374c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::CR1</definition>
+        <argsstring></argsstring>
+        <name>CR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="73" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1a86ed892643ccec7b52474d7bbc841224" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::CR2</definition>
+        <argsstring></argsstring>
+        <name>CR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="74" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1acff404d17eb4c3810bc164f9d7965dcd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::SMPR1</definition>
+        <argsstring></argsstring>
+        <name>SMPR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="75" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1a2db4d359308ba387ab0d956ff7708b12" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::SMPR2</definition>
+        <argsstring></argsstring>
+        <name>SMPR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="76" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1a0c4d16d25c6e36626ca0a6625b4f5918" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::JOFR1</definition>
+        <argsstring></argsstring>
+        <name>JOFR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="77" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1a2ebf2efec73f1724c2a4b97fb21aebca" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::JOFR2</definition>
+        <argsstring></argsstring>
+        <name>JOFR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="78" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1a485bee31847f63911c75d38d2fb781db" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::JOFR3</definition>
+        <argsstring></argsstring>
+        <name>JOFR3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="79" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1a595ed7f2bc1c19437288984daf5f04c1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::JOFR4</definition>
+        <argsstring></argsstring>
+        <name>JOFR4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="80" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1a2aafe30a367f715d836c240619803470" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::HTR</definition>
+        <argsstring></argsstring>
+        <name>HTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="81" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1a2093c1607b4686ce758f886f806299c6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::LTR</definition>
+        <argsstring></argsstring>
+        <name>LTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="82" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1ad79d35c39e420ff9bde76647de67cf7d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::SQR1</definition>
+        <argsstring></argsstring>
+        <name>SQR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="83" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1a9d6c38de5dd39c75377b95e767b58de6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::SQR2</definition>
+        <argsstring></argsstring>
+        <name>SQR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="84" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1aa7e588adbbbce768ab3bf28038829c86" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::SQR3</definition>
+        <argsstring></argsstring>
+        <name>SQR3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="85" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1a845714f0943d62b573055e7651b2e391" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::JSQR</definition>
+        <argsstring></argsstring>
+        <name>JSQR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="86" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1a98944dad75ed68cee7ddc6e6167251e9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::JDR1</definition>
+        <argsstring></argsstring>
+        <name>JDR1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="87" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1a5c535031d79e1ee16f77bed43702ac62" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::JDR2</definition>
+        <argsstring></argsstring>
+        <name>JDR2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="88" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1adb72c6da7cc174eb2476de301771ec0c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::JDR3</definition>
+        <argsstring></argsstring>
+        <name>JDR3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="89" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1a2c14db0c984a6d25985bea00a65eefbf" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::JDR4</definition>
+        <argsstring></argsstring>
+        <name>JDR4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="90" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_d_c___type_def_1af59d5641aab8676a0eb78c790d7c72bd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t ADC_TypeDef::DR</definition>
+        <argsstring></argsstring>
+        <name>DR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="91" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="71" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="70" bodyend="92"/>
+    <listofallmembers>
+      <member refid="struct_a_d_c___type_def_1a29fed74ebdf1224d19d6d3006b47374c" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>CR1</name></member>
+      <member refid="struct_a_d_c___type_def_1a86ed892643ccec7b52474d7bbc841224" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>CR2</name></member>
+      <member refid="struct_a_d_c___type_def_1af59d5641aab8676a0eb78c790d7c72bd" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>DR</name></member>
+      <member refid="struct_a_d_c___type_def_1a2aafe30a367f715d836c240619803470" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>HTR</name></member>
+      <member refid="struct_a_d_c___type_def_1a98944dad75ed68cee7ddc6e6167251e9" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>JDR1</name></member>
+      <member refid="struct_a_d_c___type_def_1a5c535031d79e1ee16f77bed43702ac62" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>JDR2</name></member>
+      <member refid="struct_a_d_c___type_def_1adb72c6da7cc174eb2476de301771ec0c" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>JDR3</name></member>
+      <member refid="struct_a_d_c___type_def_1a2c14db0c984a6d25985bea00a65eefbf" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>JDR4</name></member>
+      <member refid="struct_a_d_c___type_def_1a0c4d16d25c6e36626ca0a6625b4f5918" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>JOFR1</name></member>
+      <member refid="struct_a_d_c___type_def_1a2ebf2efec73f1724c2a4b97fb21aebca" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>JOFR2</name></member>
+      <member refid="struct_a_d_c___type_def_1a485bee31847f63911c75d38d2fb781db" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>JOFR3</name></member>
+      <member refid="struct_a_d_c___type_def_1a595ed7f2bc1c19437288984daf5f04c1" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>JOFR4</name></member>
+      <member refid="struct_a_d_c___type_def_1a845714f0943d62b573055e7651b2e391" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>JSQR</name></member>
+      <member refid="struct_a_d_c___type_def_1a2093c1607b4686ce758f886f806299c6" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>LTR</name></member>
+      <member refid="struct_a_d_c___type_def_1acff404d17eb4c3810bc164f9d7965dcd" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>SMPR1</name></member>
+      <member refid="struct_a_d_c___type_def_1a2db4d359308ba387ab0d956ff7708b12" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>SMPR2</name></member>
+      <member refid="struct_a_d_c___type_def_1ad79d35c39e420ff9bde76647de67cf7d" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>SQR1</name></member>
+      <member refid="struct_a_d_c___type_def_1a9d6c38de5dd39c75377b95e767b58de6" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>SQR2</name></member>
+      <member refid="struct_a_d_c___type_def_1aa7e588adbbbce768ab3bf28038829c86" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>SQR3</name></member>
+      <member refid="struct_a_d_c___type_def_1a0c1b55bc0f0e5157ceffa52545ee6bcd" prot="public" virt="non-virtual"><scope>ADC_TypeDef</scope><name>SR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

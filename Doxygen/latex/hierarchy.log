@@ -1,0 +1,2344 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.20)  9 NOV 2019 10:25
+entering extended mode
+**./hierarchy.tex
+(hierarchy.tex
+LaTeX2e <2018-12-01>
+! Undefined control sequence.
+l.1 \doxysection
+                {Class Hierarchy}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \doxysection{C
+                  lass Hierarchy}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no y in font nullfont!
+! Undefined control sequence.
+l.2 ...ughly, but not completely, alphabetically\+
+                                                  :\begin{DoxyCompactList}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no : in font nullfont!
+
+! LaTeX Error: Environment DoxyCompactList undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 ...y, alphabetically\+:\begin{DoxyCompactList}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--3
+[]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \item \contentsline
+                       {section}{A\+D\+C\+\_\+\+Type\+Def}{\pageref{struct_a...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no A in font nullfont!
+! Undefined control sequence.
+l.3 \item \contentsline{section}{A\+
+                                    D\+C\+\_\+\+Type\+Def}{\pageref{struct_a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+! Undefined control sequence.
+l.3 \item \contentsline{section}{A\+D\+
+                                       C\+\_\+\+Type\+Def}{\pageref{struct_a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+! Undefined control sequence.
+l.3 \item \contentsline{section}{A\+D\+C\+
+                                          \_\+\+Type\+Def}{\pageref{struct_a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.3 \item \contentsline{section}{A\+D\+C\+\_\+
+                                              \+Type\+Def}{\pageref{struct_a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.3 \item \contentsline{section}{A\+D\+C\+\_\+\+
+                                                Type\+Def}{\pageref{struct_a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.3 ...contentsline{section}{A\+D\+C\+\_\+\+Type\+
+                                                  Def}{\pageref{struct_a_d_c...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+! Undefined control sequence.
+<write> ...uct_a_d_c___type_def' on page \thepage 
+                                                  \space undefined\on@line .
+l.3 ...ype\+Def}{\pageref{struct_a_d_c___type_def}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `struct_a_d_c___type_def' on page  undefined on input 
+line 3.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 3--4
+[][] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \item \contentsline
+                       {section}{A\+F\+I\+O\+\_\+\+Type\+Def}{\pageref{struc...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no A in font nullfont!
+! Undefined control sequence.
+l.4 \item \contentsline{section}{A\+
+                                    F\+I\+O\+\_\+\+Type\+Def}{\pageref{struc...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no F in font nullfont!
+! Undefined control sequence.
+l.4 \item \contentsline{section}{A\+F\+
+                                       I\+O\+\_\+\+Type\+Def}{\pageref{struc...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no I in font nullfont!
+! Undefined control sequence.
+l.4 \item \contentsline{section}{A\+F\+I\+
+                                          O\+\_\+\+Type\+Def}{\pageref{struc...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no O in font nullfont!
+! Undefined control sequence.
+l.4 \item \contentsline{section}{A\+F\+I\+O\+
+                                             \_\+\+Type\+Def}{\pageref{struc...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.4 \item \contentsline{section}{A\+F\+I\+O\+\_\+
+                                                 \+Type\+Def}{\pageref{struc...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.4 ...m \contentsline{section}{A\+F\+I\+O\+\_\+\+
+                                                  Type\+Def}{\pageref{struct...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.4 ...tentsline{section}{A\+F\+I\+O\+\_\+\+Type\+
+                                                  Def}{\pageref{struct_a_f_i...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+! Undefined control sequence.
+<write> ...t_a_f_i_o___type_def' on page \thepage 
+                                                  \space undefined\on@line .
+l.4 ...e\+Def}{\pageref{struct_a_f_i_o___type_def}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `struct_a_f_i_o___type_def' on page  undefined on inpu
+t line 4.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 4--5
+[][] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \item \contentsline
+                       {section}{Communication}{\pageref{class_communication...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+! Undefined control sequence.
+<write> ...`class_communication' on page \thepage 
+                                                  \space undefined\on@line .
+l.5 ...ommunication}{\pageref{class_communication}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `class_communication' on page  undefined on input line
+ 5.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 5--6
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \item \contentsline
+                       {section}{Controller}{\pageref{class_controller}}{}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+! Undefined control sequence.
+<write> ...ce `class_controller' on page \thepage 
+                                                  \space undefined\on@line .
+l.6 ...ion}{Controller}{\pageref{class_controller}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `class_controller' on page  undefined on input line 6.
+
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 6--7
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \item \contentsline
+                       {section}{F\+L\+A\+S\+H\+\_\+\+Type\+Def}{\pageref{st...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no F in font nullfont!
+! Undefined control sequence.
+l.7 \item \contentsline{section}{F\+
+                                    L\+A\+S\+H\+\_\+\+Type\+Def}{\pageref{st...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no L in font nullfont!
+! Undefined control sequence.
+l.7 \item \contentsline{section}{F\+L\+
+                                       A\+S\+H\+\_\+\+Type\+Def}{\pageref{st...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no A in font nullfont!
+! Undefined control sequence.
+l.7 \item \contentsline{section}{F\+L\+A\+
+                                          S\+H\+\_\+\+Type\+Def}{\pageref{st...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+! Undefined control sequence.
+l.7 \item \contentsline{section}{F\+L\+A\+S\+
+                                             H\+\_\+\+Type\+Def}{\pageref{st...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no H in font nullfont!
+! Undefined control sequence.
+l.7 \item \contentsline{section}{F\+L\+A\+S\+H\+
+                                                \_\+\+Type\+Def}{\pageref{st...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.7 ... \contentsline{section}{F\+L\+A\+S\+H\+\_\+
+                                                  \+Type\+Def}{\pageref{stru...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.7 ...contentsline{section}{F\+L\+A\+S\+H\+\_\+\+
+                                                  Type\+Def}{\pageref{struct...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.7 ...tsline{section}{F\+L\+A\+S\+H\+\_\+\+Type\+
+                                                  Def}{\pageref{struct_f_l_a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+! Undefined control sequence.
+<write> ...f_l_a_s_h___type_def' on page \thepage 
+                                                  \space undefined\on@line .
+l.7 ...+Def}{\pageref{struct_f_l_a_s_h___type_def}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `struct_f_l_a_s_h___type_def' on page  undefined on in
+put line 7.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 7--8
+[][] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \item \contentsline
+                       {section}{G\+P\+IO}{\pageref{class_g_p_i_o}}{}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no G in font nullfont!
+! Undefined control sequence.
+l.8 \item \contentsline{section}{G\+
+                                    P\+IO}{\pageref{class_g_p_i_o}}{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+! Undefined control sequence.
+l.8 \item \contentsline{section}{G\+P\+
+                                       IO}{\pageref{class_g_p_i_o}}{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no I in font nullfont!
+Missing character: There is no O in font nullfont!
+! Undefined control sequence.
+<write> ...rence `class_g_p_i_o' on page \thepage 
+                                                  \space undefined\on@line .
+l.8 ...{section}{G\+P\+IO}{\pageref{class_g_p_i_o}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `class_g_p_i_o' on page  undefined on input line 8.
+
+
+! LaTeX Error: Environment DoxyCompactList undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \begin{DoxyCompactList}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 8--10
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \item \contentsline
+                        {section}{A\+DC}{\pageref{class_a_d_c}}{}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no A in font nullfont!
+! Undefined control sequence.
+l.10 \item \contentsline{section}{A\+
+                                     DC}{\pageref{class_a_d_c}}{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no C in font nullfont!
+! Undefined control sequence.
+<write> ...ference `class_a_d_c' on page \thepage 
+                                                  \space undefined\on@line .
+l.10 ...line{section}{A\+DC}{\pageref{class_a_d_c}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `class_a_d_c' on page  undefined on input line 10.
+
+
+! LaTeX Error: \begin{document} ended by \end{DoxyCompactList}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \end{DoxyCompactList}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 10--12
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \item \contentsline
+                        {section}{G\+P\+I\+O\+\_\+\+S\+T\+R\+U\+CT}{\pageref...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no G in font nullfont!
+! Undefined control sequence.
+l.12 \item \contentsline{section}{G\+
+                                     P\+I\+O\+\_\+\+S\+T\+R\+U\+CT}{\pageref...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+! Undefined control sequence.
+l.12 \item \contentsline{section}{G\+P\+
+                                        I\+O\+\_\+\+S\+T\+R\+U\+CT}{\pageref...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no I in font nullfont!
+! Undefined control sequence.
+l.12 \item \contentsline{section}{G\+P\+I\+
+                                           O\+\_\+\+S\+T\+R\+U\+CT}{\pageref...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no O in font nullfont!
+! Undefined control sequence.
+l.12 \item \contentsline{section}{G\+P\+I\+O\+
+                                              \_\+\+S\+T\+R\+U\+CT}{\pageref...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.12 \item \contentsline{section}{G\+P\+I\+O\+\_\+
+                                                  \+S\+T\+R\+U\+CT}{\pageref...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.12 ... \contentsline{section}{G\+P\+I\+O\+\_\+\+
+                                                  S\+T\+R\+U\+CT}{\pageref{s...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+! Undefined control sequence.
+l.12 ...ontentsline{section}{G\+P\+I\+O\+\_\+\+S\+
+                                                  T\+R\+U\+CT}{\pageref{stru...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+! Undefined control sequence.
+l.12 ...entsline{section}{G\+P\+I\+O\+\_\+\+S\+T\+
+                                                  R\+U\+CT}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+! Undefined control sequence.
+l.12 ...sline{section}{G\+P\+I\+O\+\_\+\+S\+T\+R\+
+                                                  U\+CT}{\pageref{struct_g_p...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no U in font nullfont!
+! Undefined control sequence.
+l.12 ...ne{section}{G\+P\+I\+O\+\_\+\+S\+T\+R\+U\+
+                                                  CT}{\pageref{struct_g_p_i_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no T in font nullfont!
+! Undefined control sequence.
+<write> ..._p_i_o___s_t_r_u_c_t' on page \thepage 
+                                                  \space undefined\on@line .
+l.12 ...CT}{\pageref{struct_g_p_i_o___s_t_r_u_c_t}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `struct_g_p_i_o___s_t_r_u_c_t' on page  undefined on i
+nput line 12.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 12--13
+[][] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \item \contentsline
+                        {section}{G\+P\+I\+O\+\_\+\+Type\+Def}{\pageref{stru...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no G in font nullfont!
+! Undefined control sequence.
+l.13 \item \contentsline{section}{G\+
+                                     P\+I\+O\+\_\+\+Type\+Def}{\pageref{stru...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no P in font nullfont!
+! Undefined control sequence.
+l.13 \item \contentsline{section}{G\+P\+
+                                        I\+O\+\_\+\+Type\+Def}{\pageref{stru...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no I in font nullfont!
+! Undefined control sequence.
+l.13 \item \contentsline{section}{G\+P\+I\+
+                                           O\+\_\+\+Type\+Def}{\pageref{stru...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no O in font nullfont!
+! Undefined control sequence.
+l.13 \item \contentsline{section}{G\+P\+I\+O\+
+                                              \_\+\+Type\+Def}{\pageref{stru...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.13 \item \contentsline{section}{G\+P\+I\+O\+\_\+
+                                                  \+Type\+Def}{\pageref{stru...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.13 ... \contentsline{section}{G\+P\+I\+O\+\_\+\+
+                                                  Type\+Def}{\pageref{struct...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.13 ...entsline{section}{G\+P\+I\+O\+\_\+\+Type\+
+                                                  Def}{\pageref{struct_g_p_i...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+! Undefined control sequence.
+<write> ...t_g_p_i_o___type_def' on page \thepage 
+                                                  \space undefined\on@line .
+l.13 ...\+Def}{\pageref{struct_g_p_i_o___type_def}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `struct_g_p_i_o___type_def' on page  undefined on inpu
+t line 13.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 13--14
+[][] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \item \contentsline
+                        {section}{Kinematic}{\pageref{class_kinematic}}{}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no K in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+! Undefined control sequence.
+<write> ...nce `class_kinematic' on page \thepage 
+                                                  \space undefined\on@line .
+l.14 ...tion}{Kinematic}{\pageref{class_kinematic}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `class_kinematic' on page  undefined on input line 14.
+
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 14--15
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \item \contentsline
+                        {section}{Line\+\_\+\+Sensor}{\pageref{class_line___...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no L in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.15 \item \contentsline{section}{Line\+
+                                        \_\+\+Sensor}{\pageref{class_line___...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.15 \item \contentsline{section}{Line\+\_\+
+                                            \+Sensor}{\pageref{class_line___...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.15 \item \contentsline{section}{Line\+\_\+\+
+                                              Sensor}{\pageref{class_line___...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+! Undefined control sequence.
+<write> ...`class_line___sensor' on page \thepage 
+                                                  \space undefined\on@line .
+l.15 ..._\+\+Sensor}{\pageref{class_line___sensor}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `class_line___sensor' on page  undefined on input line
+ 15.
+
+
+! LaTeX Error: Environment DoxyCompactList undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \begin{DoxyCompactList}
+                            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 15--17
+[][] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \item \contentsline
+                        {section}{A\+N\+G\+L\+E\+\_\+\+L\+I\+N\+E\+\_\+\+S\+...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no A in font nullfont!
+! Undefined control sequence.
+l.17 \item \contentsline{section}{A\+
+                                     N\+G\+L\+E\+\_\+\+L\+I\+N\+E\+\_\+\+S\+...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no N in font nullfont!
+! Undefined control sequence.
+l.17 \item \contentsline{section}{A\+N\+
+                                        G\+L\+E\+\_\+\+L\+I\+N\+E\+\_\+\+S\+...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no G in font nullfont!
+! Undefined control sequence.
+l.17 \item \contentsline{section}{A\+N\+G\+
+                                           L\+E\+\_\+\+L\+I\+N\+E\+\_\+\+S\+...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no L in font nullfont!
+! Undefined control sequence.
+l.17 \item \contentsline{section}{A\+N\+G\+L\+
+                                              E\+\_\+\+L\+I\+N\+E\+\_\+\+S\+...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no E in font nullfont!
+! Undefined control sequence.
+l.17 \item \contentsline{section}{A\+N\+G\+L\+E\+
+                                                 \_\+\+L\+I\+N\+E\+\_\+\+S\+...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.17 ...\contentsline{section}{A\+N\+G\+L\+E\+\_\+
+                                                  \+L\+I\+N\+E\+\_\+\+S\+E\+...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.17 ...ontentsline{section}{A\+N\+G\+L\+E\+\_\+\+
+                                                  L\+I\+N\+E\+\_\+\+S\+E\+N\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no L in font nullfont!
+! Undefined control sequence.
+l.17 ...entsline{section}{A\+N\+G\+L\+E\+\_\+\+L\+
+                                                  I\+N\+E\+\_\+\+S\+E\+N\+S\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no I in font nullfont!
+! Undefined control sequence.
+l.17 ...sline{section}{A\+N\+G\+L\+E\+\_\+\+L\+I\+
+                                                  N\+E\+\_\+\+S\+E\+N\+S\+O\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no N in font nullfont!
+! Undefined control sequence.
+l.17 ...ne{section}{A\+N\+G\+L\+E\+\_\+\+L\+I\+N\+
+                                                  E\+\_\+\+S\+E\+N\+S\+O\+R\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no E in font nullfont!
+! Undefined control sequence.
+l.17 ...section}{A\+N\+G\+L\+E\+\_\+\+L\+I\+N\+E\+
+                                                  \_\+\+S\+E\+N\+S\+O\+R\+\_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.17 ...ion}{A\+N\+G\+L\+E\+\_\+\+L\+I\+N\+E\+\_\+
+                                                  \+S\+E\+N\+S\+O\+R\+\_\+H}...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.17 ...n}{A\+N\+G\+L\+E\+\_\+\+L\+I\+N\+E\+\_\+\+
+                                                  S\+E\+N\+S\+O\+R\+\_\+H}{\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+! Undefined control sequence.
+l.17 ...A\+N\+G\+L\+E\+\_\+\+L\+I\+N\+E\+\_\+\+S\+
+                                                  E\+N\+S\+O\+R\+\_\+H}{\pag...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no E in font nullfont!
+! Undefined control sequence.
+l.17 ...N\+G\+L\+E\+\_\+\+L\+I\+N\+E\+\_\+\+S\+E\+
+                                                  N\+S\+O\+R\+\_\+H}{\pagere...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no N in font nullfont!
+! Undefined control sequence.
+l.17 ...G\+L\+E\+\_\+\+L\+I\+N\+E\+\_\+\+S\+E\+N\+
+                                                  S\+O\+R\+\_\+H}{\pageref{c...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+! Undefined control sequence.
+l.17 ...L\+E\+\_\+\+L\+I\+N\+E\+\_\+\+S\+E\+N\+S\+
+                                                  O\+R\+\_\+H}{\pageref{clas...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no O in font nullfont!
+! Undefined control sequence.
+l.17 ...E\+\_\+\+L\+I\+N\+E\+\_\+\+S\+E\+N\+S\+O\+
+                                                  R\+\_\+H}{\pageref{class_a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+! Undefined control sequence.
+l.17 ...\_\+\+L\+I\+N\+E\+\_\+\+S\+E\+N\+S\+O\+R\+
+                                                  \_\+H}{\pageref{class_a_n_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.17 ...\+L\+I\+N\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+
+                                                  H}{\pageref{class_a_n_g_l_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no H in font nullfont!
+! Undefined control sequence.
+<write> ..._e___s_e_n_s_o_r___h' on page \thepage 
+                                                  \space undefined\on@line .
+l.17 ...ass_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `class_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h' on page 
+ undefined on input line 17.
+
+
+! LaTeX Error: \begin{document} ended by \end{DoxyCompactList}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \end{DoxyCompactList}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 17--19
+[][][][] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \item \contentsline
+                        {section}{Motor}{\pageref{class_motor}}{}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+! Undefined control sequence.
+<write> ...ference `class_motor' on page \thepage 
+                                                  \space undefined\on@line .
+l.19 ...line{section}{Motor}{\pageref{class_motor}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `class_motor' on page  undefined on input line 19.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 19--20
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \item \contentsline
+                        {section}{N\+V\+I\+C\+\_\+\+Type}{\pageref{struct_n_...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no N in font nullfont!
+! Undefined control sequence.
+l.20 \item \contentsline{section}{N\+
+                                     V\+I\+C\+\_\+\+Type}{\pageref{struct_n_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no V in font nullfont!
+! Undefined control sequence.
+l.20 \item \contentsline{section}{N\+V\+
+                                        I\+C\+\_\+\+Type}{\pageref{struct_n_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no I in font nullfont!
+! Undefined control sequence.
+l.20 \item \contentsline{section}{N\+V\+I\+
+                                           C\+\_\+\+Type}{\pageref{struct_n_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+! Undefined control sequence.
+l.20 \item \contentsline{section}{N\+V\+I\+C\+
+                                              \_\+\+Type}{\pageref{struct_n_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.20 \item \contentsline{section}{N\+V\+I\+C\+\_\+
+                                                  \+Type}{\pageref{struct_n_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.20 ... \contentsline{section}{N\+V\+I\+C\+\_\+\+
+                                                  Type}{\pageref{struct_n_v_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+<write> ...truct_n_v_i_c___type' on page \thepage 
+                                                  \space undefined\on@line .
+l.20 ..._\+\+Type}{\pageref{struct_n_v_i_c___type}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `struct_n_v_i_c___type' on page  undefined on input li
+ne 20.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 20--21
+[][] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \item \contentsline
+                        {section}{P\+W\+R\+\_\+\+Type\+Def}{\pageref{struct_...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no P in font nullfont!
+! Undefined control sequence.
+l.21 \item \contentsline{section}{P\+
+                                     W\+R\+\_\+\+Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no W in font nullfont!
+! Undefined control sequence.
+l.21 \item \contentsline{section}{P\+W\+
+                                        R\+\_\+\+Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+! Undefined control sequence.
+l.21 \item \contentsline{section}{P\+W\+R\+
+                                           \_\+\+Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.21 \item \contentsline{section}{P\+W\+R\+\_\+
+                                               \+Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.21 \item \contentsline{section}{P\+W\+R\+\_\+\+
+                                                 Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.21 ...ontentsline{section}{P\+W\+R\+\_\+\+Type\+
+                                                  Def}{\pageref{struct_p_w_r...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+! Undefined control sequence.
+<write> ...uct_p_w_r___type_def' on page \thepage 
+                                                  \space undefined\on@line .
+l.21 ...pe\+Def}{\pageref{struct_p_w_r___type_def}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `struct_p_w_r___type_def' on page  undefined on input 
+line 21.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 21--22
+[][] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \item \contentsline
+                        {section}{R\+C\+C\+\_\+\+Type\+Def}{\pageref{struct_...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no R in font nullfont!
+! Undefined control sequence.
+l.22 \item \contentsline{section}{R\+
+                                     C\+C\+\_\+\+Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+! Undefined control sequence.
+l.22 \item \contentsline{section}{R\+C\+
+                                        C\+\_\+\+Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+! Undefined control sequence.
+l.22 \item \contentsline{section}{R\+C\+C\+
+                                           \_\+\+Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.22 \item \contentsline{section}{R\+C\+C\+\_\+
+                                               \+Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.22 \item \contentsline{section}{R\+C\+C\+\_\+\+
+                                                 Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.22 ...ontentsline{section}{R\+C\+C\+\_\+\+Type\+
+                                                  Def}{\pageref{struct_r_c_c...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+! Undefined control sequence.
+<write> ...uct_r_c_c___type_def' on page \thepage 
+                                                  \space undefined\on@line .
+l.22 ...pe\+Def}{\pageref{struct_r_c_c___type_def}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `struct_r_c_c___type_def' on page  undefined on input 
+line 22.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 22--23
+[][] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \item \contentsline
+                        {section}{Reflectance\+\_\+\+Sensor}{\pageref{class_...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.23 \item \contentsline{section}{Reflectance\+
+                                               \_\+\+Sensor}{\pageref{class_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.23 ...m \contentsline{section}{Reflectance\+\_\+
+                                                  \+Sensor}{\pageref{class_r...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.23 ...\contentsline{section}{Reflectance\+\_\+\+
+                                                  Sensor}{\pageref{class_ref...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+! Undefined control sequence.
+<write> ...reflectance___sensor' on page \thepage 
+                                                  \space undefined\on@line .
+l.23 ...nsor}{\pageref{class_reflectance___sensor}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `class_reflectance___sensor' on page  undefined on inp
+ut line 23.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 23--24
+[][] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 \item \contentsline
+                        {section}{R\+T\+C\+\_\+\+Type\+Def}{\pageref{struct_...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no R in font nullfont!
+! Undefined control sequence.
+l.24 \item \contentsline{section}{R\+
+                                     T\+C\+\_\+\+Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+! Undefined control sequence.
+l.24 \item \contentsline{section}{R\+T\+
+                                        C\+\_\+\+Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+! Undefined control sequence.
+l.24 \item \contentsline{section}{R\+T\+C\+
+                                           \_\+\+Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.24 \item \contentsline{section}{R\+T\+C\+\_\+
+                                               \+Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.24 \item \contentsline{section}{R\+T\+C\+\_\+\+
+                                                 Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.24 ...ontentsline{section}{R\+T\+C\+\_\+\+Type\+
+                                                  Def}{\pageref{struct_r_t_c...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+! Undefined control sequence.
+<write> ...uct_r_t_c___type_def' on page \thepage 
+                                                  \space undefined\on@line .
+l.24 ...pe\+Def}{\pageref{struct_r_t_c___type_def}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `struct_r_t_c___type_def' on page  undefined on input 
+line 24.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 24--25
+[][] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \item \contentsline
+                        {section}{Sys\+Clock}{\pageref{class_sys_clock}}{}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+! Undefined control sequence.
+l.25 \item \contentsline{section}{Sys\+
+                                       Clock}{\pageref{class_sys_clock}}{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+! Undefined control sequence.
+<write> ...nce `class_sys_clock' on page \thepage 
+                                                  \space undefined\on@line .
+l.25 ...ion}{Sys\+Clock}{\pageref{class_sys_clock}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `class_sys_clock' on page  undefined on input line 25.
+
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 25--26
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \item \contentsline
+                        {section}{Sys\+Tick\+\_\+\+Type}{\pageref{struct_sys...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+! Undefined control sequence.
+l.26 \item \contentsline{section}{Sys\+
+                                       Tick\+\_\+\+Type}{\pageref{struct_sys...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+! Undefined control sequence.
+l.26 \item \contentsline{section}{Sys\+Tick\+
+                                             \_\+\+Type}{\pageref{struct_sys...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.26 \item \contentsline{section}{Sys\+Tick\+\_\+
+                                                 \+Type}{\pageref{struct_sys...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.26 ...m \contentsline{section}{Sys\+Tick\+\_\+\+
+                                                  Type}{\pageref{struct_sys_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+<write> ...ruct_sys_tick___type' on page \thepage 
+                                                  \space undefined\on@line .
+l.26 ...\+\+Type}{\pageref{struct_sys_tick___type}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `struct_sys_tick___type' on page  undefined on input l
+ine 26.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 26--27
+[][] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \item \contentsline
+                        {section}{T\+I\+M\+\_\+\+Type\+Def}{\pageref{struct_...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no T in font nullfont!
+! Undefined control sequence.
+l.27 \item \contentsline{section}{T\+
+                                     I\+M\+\_\+\+Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no I in font nullfont!
+! Undefined control sequence.
+l.27 \item \contentsline{section}{T\+I\+
+                                        M\+\_\+\+Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no M in font nullfont!
+! Undefined control sequence.
+l.27 \item \contentsline{section}{T\+I\+M\+
+                                           \_\+\+Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.27 \item \contentsline{section}{T\+I\+M\+\_\+
+                                               \+Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.27 \item \contentsline{section}{T\+I\+M\+\_\+\+
+                                                 Type\+Def}{\pageref{struct_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.27 ...ontentsline{section}{T\+I\+M\+\_\+\+Type\+
+                                                  Def}{\pageref{struct_t_i_m...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+! Undefined control sequence.
+<write> ...uct_t_i_m___type_def' on page \thepage 
+                                                  \space undefined\on@line .
+l.27 ...pe\+Def}{\pageref{struct_t_i_m___type_def}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `struct_t_i_m___type_def' on page  undefined on input 
+line 27.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 27--28
+[][] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 \item \contentsline
+                        {section}{Timer}{\pageref{class_timer}}{}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+! Undefined control sequence.
+<write> ...ference `class_timer' on page \thepage 
+                                                  \space undefined\on@line .
+l.28 ...line{section}{Timer}{\pageref{class_timer}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `class_timer' on page  undefined on input line 28.
+
+
+! LaTeX Error: Environment DoxyCompactList undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \begin{DoxyCompactList}
+                            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 28--30
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 \item \contentsline
+                        {section}{Encoder}{\pageref{class_encoder}}{}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no E in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+! Undefined control sequence.
+<write> ...rence `class_encoder' on page \thepage 
+                                                  \space undefined\on@line .
+l.30 ...{section}{Encoder}{\pageref{class_encoder}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `class_encoder' on page  undefined on input line 30.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 30--31
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 \item \contentsline
+                        {section}{P\+WM}{\pageref{class_p_w_m}}{}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no P in font nullfont!
+! Undefined control sequence.
+l.31 \item \contentsline{section}{P\+
+                                     WM}{\pageref{class_p_w_m}}{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no W in font nullfont!
+Missing character: There is no M in font nullfont!
+! Undefined control sequence.
+<write> ...ference `class_p_w_m' on page \thepage 
+                                                  \space undefined\on@line .
+l.31 ...line{section}{P\+WM}{\pageref{class_p_w_m}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `class_p_w_m' on page  undefined on input line 31.
+
+
+! LaTeX Error: \begin{document} ended by \end{DoxyCompactList}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 \end{DoxyCompactList}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 31--33
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \item \contentsline
+                        {section}{U\+S\+A\+RT}{\pageref{class_u_s_a_r_t}}{}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no U in font nullfont!
+! Undefined control sequence.
+l.33 \item \contentsline{section}{U\+
+                                     S\+A\+RT}{\pageref{class_u_s_a_r_t}}{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+! Undefined control sequence.
+l.33 \item \contentsline{section}{U\+S\+
+                                        A\+RT}{\pageref{class_u_s_a_r_t}}{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no A in font nullfont!
+! Undefined control sequence.
+l.33 \item \contentsline{section}{U\+S\+A\+
+                                           RT}{\pageref{class_u_s_a_r_t}}{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no T in font nullfont!
+! Undefined control sequence.
+<write> ...nce `class_u_s_a_r_t' on page \thepage 
+                                                  \space undefined\on@line .
+l.33 ...on}{U\+S\+A\+RT}{\pageref{class_u_s_a_r_t}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `class_u_s_a_r_t' on page  undefined on input line 33.
+
+
+
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 33--34
+[] 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 \item \contentsline
+                        {section}{U\+S\+A\+R\+T\+\_\+\+Type\+Def}{\pageref{s...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no U in font nullfont!
+! Undefined control sequence.
+l.34 \item \contentsline{section}{U\+
+                                     S\+A\+R\+T\+\_\+\+Type\+Def}{\pageref{s...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+! Undefined control sequence.
+l.34 \item \contentsline{section}{U\+S\+
+                                        A\+R\+T\+\_\+\+Type\+Def}{\pageref{s...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no A in font nullfont!
+! Undefined control sequence.
+l.34 \item \contentsline{section}{U\+S\+A\+
+                                           R\+T\+\_\+\+Type\+Def}{\pageref{s...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+! Undefined control sequence.
+l.34 \item \contentsline{section}{U\+S\+A\+R\+
+                                              T\+\_\+\+Type\+Def}{\pageref{s...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+! Undefined control sequence.
+l.34 \item \contentsline{section}{U\+S\+A\+R\+T\+
+                                                 \_\+\+Type\+Def}{\pageref{s...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.34 ...\contentsline{section}{U\+S\+A\+R\+T\+\_\+
+                                                  \+Type\+Def}{\pageref{stru...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.34 ...ontentsline{section}{U\+S\+A\+R\+T\+\_\+\+
+                                                  Type\+Def}{\pageref{struct...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no T in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.34 ...sline{section}{U\+S\+A\+R\+T\+\_\+\+Type\+
+                                                  Def}{\pageref{struct_u_s_a...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+! Undefined control sequence.
+<write> ...u_s_a_r_t___type_def' on page \thepage 
+                                                  \space undefined\on@line .
+l.34 ...Def}{\pageref{struct_u_s_a_r_t___type_def}
+                                                  }{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `struct_u_s_a_r_t___type_def' on page  undefined on in
+put line 34.
+
+
+! LaTeX Error: \begin{document} ended by \end{DoxyCompactList}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \end{DoxyCompactList}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> ./hierarchy.tex
+                   
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 39 strings out of 492946
+ 848 string characters out of 3135628
+ 61061 words of memory out of 3000000
+ 4036 multiletter control sequences out of 15000+200000
+ 3948 words of font info for 15 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 19i,2n,19p,213b,109s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

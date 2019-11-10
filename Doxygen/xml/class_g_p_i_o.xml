@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_g_p_i_o" kind="class" language="C++" prot="public">
+    <compoundname>GPIO</compoundname>
+    <derivedcompoundref refid="class_a_d_c" prot="protected" virt="non-virtual">ADC</derivedcompoundref>
+    <includes refid="_g_p_i_o_8h" local="no">GPIO.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_g_p_i_o_1a65e5eac036af30de89390a69cd2c7db6" prot="private" static="no" mutable="no">
+        <type><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265" kindref="member">GPIO_IO_ENUM</ref></type>
+        <definition>GPIO_IO_ENUM GPIO::IO_Pin</definition>
+        <argsstring></argsstring>
+        <name>IO_Pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="112" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_p_i_o_1ab6b7e6d56a6995ee15c83bf9b4e41db4" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_g_p_i_o___s_t_r_u_c_t" kindref="compound">GPIO_STRUCT</ref></type>
+        <definition>GPIO_STRUCT GPIO::GPIOPortPin</definition>
+        <argsstring></argsstring>
+        <name>GPIOPortPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="113" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_p_i_o_1a31d21e09f904769ffdfe40fd2a88ca61" prot="private" static="no" mutable="no">
+        <type><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08a" kindref="member">GPIO_MODES</ref></type>
+        <definition>GPIO_MODES GPIO::GPIOMode</definition>
+        <argsstring></argsstring>
+        <name>GPIOMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="114" column="12" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_p_i_o_1a58f3d895e5e6a4201968f1e8ea1f6b06" prot="private" static="no" mutable="no">
+        <type><ref refid="_g_p_i_o_8h_1abbfa31a8db1fd7006b8ac7c034a19418" kindref="member">PU_PD_ENUM</ref></type>
+        <definition>PU_PD_ENUM GPIO::PU_PD</definition>
+        <argsstring></argsstring>
+        <name>PU_PD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="115" column="12" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_p_i_o_1aae7873a1ef076537735318ea509b992a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool GPIO::GPIOState</definition>
+        <argsstring></argsstring>
+        <name>GPIOState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="116" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_g_p_i_o_1ac58e22b341462d45be09cd36a2410b9d" prot="private" static="yes" mutable="no">
+        <type>const <ref refid="struct_g_p_i_o___s_t_r_u_c_t" kindref="compound">GPIO_STRUCT</ref></type>
+        <definition>const GPIO_STRUCT GPIO::GPIO_PORTS_PINS</definition>
+        <argsstring>[NUM_OF_IOs]</argsstring>
+        <name>GPIO_PORTS_PINS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="118" column="26" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_g_p_i_o_1aa67299fd4d1815397005400eac00d9d5" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool GPIO::UsedPins</definition>
+        <argsstring>[NUM_OF_IOs]</argsstring>
+        <name>UsedPins</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="119" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_g_p_i_o_1ab443a641cef81b1a9ec0211c5aa9c1ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>GPIO::GPIO</definition>
+        <argsstring>()</argsstring>
+        <name>GPIO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="124" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" bodystart="124" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_i_o_1a3577e885d2a9dc635dcf2521ef1c5e49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GPIO::GPIO</definition>
+        <argsstring>(GPIO_IO_ENUM IO_Pin, GPIO_MODES GPIOMode)</argsstring>
+        <name>GPIO</name>
+        <param>
+          <type><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265" kindref="member">GPIO_IO_ENUM</ref></type>
+          <declname>IO_Pin</declname>
+        </param>
+        <param>
+          <type><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08a" kindref="member">GPIO_MODES</ref></type>
+          <declname>GPIOMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="125" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp" bodystart="44" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_i_o_1ac90d2f0c0bed1ce5ac7381d00209e64b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GPIO::GPIO</definition>
+        <argsstring>(GPIO *gpio)</argsstring>
+        <name>GPIO</name>
+        <param>
+          <type><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref> *</type>
+          <declname>gpio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="126" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp" bodystart="53" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GPIO::SetGPIOPortPin</definition>
+        <argsstring>(GPIO_IO_ENUM IO_Pin)</argsstring>
+        <name>SetGPIOPortPin</name>
+        <param>
+          <type><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265" kindref="member">GPIO_IO_ENUM</ref></type>
+          <declname>IO_Pin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="129" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp" bodystart="149" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_i_o_1ad63b30938acafc3c2deb126b70258a9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GPIO::SetGPIOMode</definition>
+        <argsstring>(GPIO_MODES GPIOMode)</argsstring>
+        <name>SetGPIOMode</name>
+        <param>
+          <type><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08a" kindref="member">GPIO_MODES</ref></type>
+          <declname>GPIOMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="130" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_i_o_1af2de5cd4e4c844aa7cc344505e912390" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GPIO::SetIOPin</definition>
+        <argsstring>(GPIO_IO_ENUM IO_Pin)</argsstring>
+        <name>SetIOPin</name>
+        <param>
+          <type><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265" kindref="member">GPIO_IO_ENUM</ref></type>
+          <declname>IO_Pin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="131" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp" bodystart="158" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_i_o_1ae729c77b07ec53fb0a429856291a50f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_g_p_i_o___type_def" kindref="compound">GPIO_TypeDef</ref> *</type>
+        <definition>GPIO_TypeDef * GPIO::GetGPIOPort</definition>
+        <argsstring>()</argsstring>
+        <name>GetGPIOPort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="134" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp" bodystart="163" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_i_o_1a27baf1d6a71a2a291369fbe14dd28a1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_p_i_o_8h_1a54738e9cbbe63af2394fba51c0af2100" kindref="member">PIN_NUMBERS</ref></type>
+        <definition>PIN_NUMBERS GPIO::GetGPIOPinNumber</definition>
+        <argsstring>()</argsstring>
+        <name>GetGPIOPinNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="135" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_i_o_1a141ef87565744ba096b15279a1532879" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08a" kindref="member">GPIO_MODES</ref></type>
+        <definition>GPIO_MODES GPIO::GetGPIOMode</definition>
+        <argsstring>()</argsstring>
+        <name>GetGPIOMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="136" column="12" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp" bodystart="171" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_i_o_1a76cd9eca6bb4078f395700abc869aa85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_p_i_o_8h_1abbfa31a8db1fd7006b8ac7c034a19418" kindref="member">PU_PD_ENUM</ref></type>
+        <definition>PU_PD_ENUM GPIO::GetGPIOPuPd</definition>
+        <argsstring>()</argsstring>
+        <name>GetGPIOPuPd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="137" column="12" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_i_o_1ae01be7f508aa9062ba2349af842ece5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265" kindref="member">GPIO_IO_ENUM</ref></type>
+        <definition>GPIO_IO_ENUM GPIO::GetIOPin</definition>
+        <argsstring>()</argsstring>
+        <name>GetIOPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="138" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp" bodystart="179" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_i_o_1a78492d4a195b90e30464190434e59741" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GPIO::GetGPIOState</definition>
+        <argsstring>()</argsstring>
+        <name>GetGPIOState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="139" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp" bodystart="183" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_i_o_1a0572d93ba912073decd7a96d90c312b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GPIO::ConfigGPIOPin</definition>
+        <argsstring>()</argsstring>
+        <name>ConfigGPIOPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="142" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp" bodystart="63" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_i_o_1ac2015f7c0e644e227008e79e54adcd6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GPIO::Config_PU_PD</definition>
+        <argsstring>(PU_PD_ENUM PU_PD)</argsstring>
+        <name>Config_PU_PD</name>
+        <param>
+          <type><ref refid="_g_p_i_o_8h_1abbfa31a8db1fd7006b8ac7c034a19418" kindref="member">PU_PD_ENUM</ref></type>
+          <declname>PU_PD</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="143" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp" bodystart="116" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_i_o_1a870daa607286476d9e8b96b9cfceae29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GPIO::digitalWrite</definition>
+        <argsstring>(bool GPIOState)</argsstring>
+        <name>digitalWrite</name>
+        <param>
+          <type>bool</type>
+          <declname>GPIOState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="144" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp" bodystart="127" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_i_o_1a53f920b5f06b6b61b68befc90b9e4996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GPIO::tooglePin</definition>
+        <argsstring>()</argsstring>
+        <name>tooglePin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="145" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_p_i_o_1a5b2ae8f7330caad2299483311129e8a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GPIO::digitalRead</definition>
+        <argsstring>()</argsstring>
+        <name>digitalRead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="146" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp" bodystart="143" bodyend="146"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ADC</label>
+        <link refid="class_a_d_c"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GPIO</label>
+        <link refid="class_g_p_i_o"/>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" line="109" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h" bodystart="108" bodyend="147"/>
+    <listofallmembers>
+      <member refid="class_g_p_i_o_1ac2015f7c0e644e227008e79e54adcd6b" prot="public" virt="non-virtual"><scope>GPIO</scope><name>Config_PU_PD</name></member>
+      <member refid="class_g_p_i_o_1a0572d93ba912073decd7a96d90c312b0" prot="public" virt="non-virtual"><scope>GPIO</scope><name>ConfigGPIOPin</name></member>
+      <member refid="class_g_p_i_o_1a5b2ae8f7330caad2299483311129e8a0" prot="public" virt="non-virtual"><scope>GPIO</scope><name>digitalRead</name></member>
+      <member refid="class_g_p_i_o_1a870daa607286476d9e8b96b9cfceae29" prot="public" virt="non-virtual"><scope>GPIO</scope><name>digitalWrite</name></member>
+      <member refid="class_g_p_i_o_1a141ef87565744ba096b15279a1532879" prot="public" virt="non-virtual"><scope>GPIO</scope><name>GetGPIOMode</name></member>
+      <member refid="class_g_p_i_o_1a27baf1d6a71a2a291369fbe14dd28a1d" prot="public" virt="non-virtual"><scope>GPIO</scope><name>GetGPIOPinNumber</name></member>
+      <member refid="class_g_p_i_o_1ae729c77b07ec53fb0a429856291a50f2" prot="public" virt="non-virtual"><scope>GPIO</scope><name>GetGPIOPort</name></member>
+      <member refid="class_g_p_i_o_1a76cd9eca6bb4078f395700abc869aa85" prot="public" virt="non-virtual"><scope>GPIO</scope><name>GetGPIOPuPd</name></member>
+      <member refid="class_g_p_i_o_1a78492d4a195b90e30464190434e59741" prot="public" virt="non-virtual"><scope>GPIO</scope><name>GetGPIOState</name></member>
+      <member refid="class_g_p_i_o_1ae01be7f508aa9062ba2349af842ece5c" prot="public" virt="non-virtual"><scope>GPIO</scope><name>GetIOPin</name></member>
+      <member refid="class_g_p_i_o_1ab443a641cef81b1a9ec0211c5aa9c1ac" prot="public" virt="non-virtual"><scope>GPIO</scope><name>GPIO</name></member>
+      <member refid="class_g_p_i_o_1a3577e885d2a9dc635dcf2521ef1c5e49" prot="public" virt="non-virtual"><scope>GPIO</scope><name>GPIO</name></member>
+      <member refid="class_g_p_i_o_1ac90d2f0c0bed1ce5ac7381d00209e64b" prot="public" virt="non-virtual"><scope>GPIO</scope><name>GPIO</name></member>
+      <member refid="class_g_p_i_o_1ac58e22b341462d45be09cd36a2410b9d" prot="private" virt="non-virtual"><scope>GPIO</scope><name>GPIO_PORTS_PINS</name></member>
+      <member refid="class_g_p_i_o_1a31d21e09f904769ffdfe40fd2a88ca61" prot="private" virt="non-virtual"><scope>GPIO</scope><name>GPIOMode</name></member>
+      <member refid="class_g_p_i_o_1ab6b7e6d56a6995ee15c83bf9b4e41db4" prot="private" virt="non-virtual"><scope>GPIO</scope><name>GPIOPortPin</name></member>
+      <member refid="class_g_p_i_o_1aae7873a1ef076537735318ea509b992a" prot="private" virt="non-virtual"><scope>GPIO</scope><name>GPIOState</name></member>
+      <member refid="class_g_p_i_o_1a65e5eac036af30de89390a69cd2c7db6" prot="private" virt="non-virtual"><scope>GPIO</scope><name>IO_Pin</name></member>
+      <member refid="class_g_p_i_o_1a58f3d895e5e6a4201968f1e8ea1f6b06" prot="private" virt="non-virtual"><scope>GPIO</scope><name>PU_PD</name></member>
+      <member refid="class_g_p_i_o_1ad63b30938acafc3c2deb126b70258a9c" prot="public" virt="non-virtual"><scope>GPIO</scope><name>SetGPIOMode</name></member>
+      <member refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" prot="public" virt="non-virtual"><scope>GPIO</scope><name>SetGPIOPortPin</name></member>
+      <member refid="class_g_p_i_o_1af2de5cd4e4c844aa7cc344505e912390" prot="public" virt="non-virtual"><scope>GPIO</scope><name>SetIOPin</name></member>
+      <member refid="class_g_p_i_o_1a53f920b5f06b6b61b68befc90b9e4996" prot="public" virt="non-virtual"><scope>GPIO</scope><name>tooglePin</name></member>
+      <member refid="class_g_p_i_o_1aa67299fd4d1815397005400eac00d9d5" prot="private" virt="non-virtual"><scope>GPIO</scope><name>UsedPins</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

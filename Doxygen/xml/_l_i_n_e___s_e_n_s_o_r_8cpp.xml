@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_l_i_n_e___s_e_n_s_o_r_8cpp" kind="file" language="C++">
+    <compoundname>LINE_SENSOR.cpp</compoundname>
+    <includes refid="_l_i_n_e___s_e_n_s_o_r_8h" local="yes">LINE_SENSOR.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.cpp</label>
+        <link refid="_l_i_n_e___s_e_n_s_o_r_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>REFLECTANCE_SENSOR.h</label>
+        <link refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stdint.h</label>
+      </node>
+      <node id="4">
+        <label>ADC.h</label>
+        <link refid="_a_d_c_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>TIMER.h</label>
+        <link refid="_t_i_m_e_r_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>LINE_SENSOR.h</label>
+        <link refid="_l_i_n_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_l_i_n_e___s_e_n_s_o_r_8h" kindref="compound">LINE_SENSOR.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="class_line___sensor_1a95601c1a8c6415dcbbcbb14f208c546a" kindref="member">Line_Sensor::Line_Sensor</ref>(<ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor1,<sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor2,<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor3,<sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor4,</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor5,<sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor6,<sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor7,<sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor8)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">:<sp/>Sensors{&amp;Sensor1,<sp/>&amp;Sensor2,<sp/>&amp;Sensor3,<sp/>&amp;Sensor4,<sp/>&amp;Sensor5,<sp/>&amp;Sensor6,<sp/>&amp;Sensor7,<sp/>&amp;Sensor8}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(<ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1adcbfe97abf69f394d59e8f1312008c4c" kindref="member">sensorFilterOrder</ref>);<sp/>i++)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>erro[i]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="class_line___sensor_1a95601c1a8c6415dcbbcbb14f208c546a" kindref="member">Line_Sensor::Line_Sensor</ref>(<ref refid="class_line___sensor" kindref="compound">Line_Sensor</ref><sp/>*lineSensor)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">:<sp/>Sensors{&amp;<ref refid="class_kinematic_1a17de469ec232aeba5598613cc3f070a4" kindref="member">lineSensor</ref>-&gt;<ref refid="class_line___sensor_1a8fd57f9ca9bfcadfb292eadf911167b6" kindref="member">Sensors</ref>[0],<sp/>&amp;<ref refid="class_kinematic_1a17de469ec232aeba5598613cc3f070a4" kindref="member">lineSensor</ref>-&gt;<ref refid="class_line___sensor_1a8fd57f9ca9bfcadfb292eadf911167b6" kindref="member">Sensors</ref>[1],<sp/>&amp;<ref refid="class_kinematic_1a17de469ec232aeba5598613cc3f070a4" kindref="member">lineSensor</ref>-&gt;<ref refid="class_line___sensor_1a8fd57f9ca9bfcadfb292eadf911167b6" kindref="member">Sensors</ref>[2],<sp/>&amp;<ref refid="class_kinematic_1a17de469ec232aeba5598613cc3f070a4" kindref="member">lineSensor</ref>-&gt;<ref refid="class_line___sensor_1a8fd57f9ca9bfcadfb292eadf911167b6" kindref="member">Sensors</ref>[3],</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;<ref refid="class_kinematic_1a17de469ec232aeba5598613cc3f070a4" kindref="member">lineSensor</ref>-&gt;<ref refid="class_line___sensor_1a8fd57f9ca9bfcadfb292eadf911167b6" kindref="member">Sensors</ref>[4],<sp/>&amp;<ref refid="class_kinematic_1a17de469ec232aeba5598613cc3f070a4" kindref="member">lineSensor</ref>-&gt;<ref refid="class_line___sensor_1a8fd57f9ca9bfcadfb292eadf911167b6" kindref="member">Sensors</ref>[5],<sp/>&amp;<ref refid="class_kinematic_1a17de469ec232aeba5598613cc3f070a4" kindref="member">lineSensor</ref>-&gt;<ref refid="class_line___sensor_1a8fd57f9ca9bfcadfb292eadf911167b6" kindref="member">Sensors</ref>[6],<sp/>&amp;<ref refid="class_kinematic_1a17de469ec232aeba5598613cc3f070a4" kindref="member">lineSensor</ref>-&gt;<ref refid="class_line___sensor_1a8fd57f9ca9bfcadfb292eadf911167b6" kindref="member">Sensors</ref>[7]}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(<ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1adcbfe97abf69f394d59e8f1312008c4c" kindref="member">sensorFilterOrder</ref>);<sp/>i++)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>erro[i]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_line___sensor_1a0479898aafb6ecc493c2974d20d38a70" kindref="member">Line_Sensor::calibrate</ref>(uint32_t<sp/>iterations)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>iterations;<sp/>j++)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>8;<sp/>i++)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_line___sensor_1a8fd57f9ca9bfcadfb292eadf911167b6" kindref="member">Sensors</ref>[i].<ref refid="class_reflectance___sensor_1a89ec5baef1c58f37c49050b8407bf77d" kindref="member">Calib_Reflectance_Sensor</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_line___sensor_1aa35bdfbabbe89e69c3c17fd9792a84d2" kindref="member">Line_Sensor::read</ref>()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>media<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>soma<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(<ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1adcbfe97abf69f394d59e8f1312008c4c" kindref="member">sensorFilterOrder</ref>-1);<sp/>i++)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>erro[i]<sp/>=<sp/>erro[i+1];</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>};<sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>8;<sp/>i++)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sensor_values[i]<sp/>=<sp/><ref refid="class_line___sensor_1a8fd57f9ca9bfcadfb292eadf911167b6" kindref="member">Sensors</ref>[i].<ref refid="class_reflectance___sensor_1ad67b725554f5205481bce69b66b7fae1" kindref="member">Reflectance_Read</ref>();<sp/><sp/><sp/></highlight><highlight class="comment">//Read<sp/>the<sp/>sensor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sensor_values[i]<sp/>&gt;<sp/><ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1a57a339f7b9bb040949c63ad16c037bc6" kindref="member">calib_sensores</ref>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//verify<sp/>if<sp/>it&apos;s<sp/>not<sp/>just<sp/>some<sp/>ruid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>media<sp/>+=<sp/>i<sp/>*<sp/>(sensor_values[i]);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>soma<sp/>+=<sp/>sensor_values[i];</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(soma<sp/>!=<sp/>0)<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//only<sp/>calculate<sp/>the<sp/>error<sp/>if<sp/>the<sp/>sum<sp/>is<sp/>diferent<sp/>of<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>erro[<ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1adcbfe97abf69f394d59e8f1312008c4c" kindref="member">sensorFilterOrder</ref>-1]<sp/>=<sp/>(media/soma)<sp/>-<sp/>3.5;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>erro[<ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1adcbfe97abf69f394d59e8f1312008c4c" kindref="member">sensorFilterOrder</ref>-1]<sp/>=<sp/><ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1acd99347fc513aadfa4a1bcbc1ebc5eb6" kindref="member">maxDistance</ref>*erro[<ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1adcbfe97abf69f394d59e8f1312008c4c" kindref="member">sensorFilterOrder</ref>-1];</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>erro[<ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1adcbfe97abf69f394d59e8f1312008c4c" kindref="member">sensorFilterOrder</ref>-1]<sp/>=<sp/>erro[<ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1adcbfe97abf69f394d59e8f1312008c4c" kindref="member">sensorFilterOrder</ref>-1]/3.5;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(erro[<ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1adcbfe97abf69f394d59e8f1312008c4c" kindref="member">sensorFilterOrder</ref>-1]<sp/>&gt;<sp/><ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1acd99347fc513aadfa4a1bcbc1ebc5eb6" kindref="member">maxDistance</ref>)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>erro[<ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1adcbfe97abf69f394d59e8f1312008c4c" kindref="member">sensorFilterOrder</ref>-1]<sp/>=<sp/><ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1acd99347fc513aadfa4a1bcbc1ebc5eb6" kindref="member">maxDistance</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(erro[<ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1adcbfe97abf69f394d59e8f1312008c4c" kindref="member">sensorFilterOrder</ref>-1]<sp/>&lt;<sp/>-<ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1acd99347fc513aadfa4a1bcbc1ebc5eb6" kindref="member">maxDistance</ref>)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>erro[<ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1adcbfe97abf69f394d59e8f1312008c4c" kindref="member">sensorFilterOrder</ref>-1]<sp/>=<sp/>-<ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1acd99347fc513aadfa4a1bcbc1ebc5eb6" kindref="member">maxDistance</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>filteredError<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(<ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1adcbfe97abf69f394d59e8f1312008c4c" kindref="member">sensorFilterOrder</ref>);<sp/>i++)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filteredError<sp/>+=<sp/>erro[i];</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>filteredError<sp/>=<sp/>filteredError/<ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1adcbfe97abf69f394d59e8f1312008c4c" kindref="member">sensorFilterOrder</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>filteredError;<sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.cpp"/>
+  </compounddef>
+</doxygen>

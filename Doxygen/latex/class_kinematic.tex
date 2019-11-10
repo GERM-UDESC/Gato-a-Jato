@@ -1,0 +1,273 @@
+\hypertarget{class_kinematic}{}\doxysection{Kinematic Class Reference}
+\label{class_kinematic}\index{Kinematic@{Kinematic}}
+
+
+{\ttfamily \#include $<$K\+I\+N\+E\+M\+A\+T\+I\+C\+\_\+\+C\+O\+N\+T\+R\+O\+L.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_kinematic_a2a5a41a8e10aef52019f50ccbea38c72}{handler}} ()
+\item 
+\mbox{\hyperlink{class_kinematic_ae67640080d134cef3fbd3b793693a4a3}{Kinematic}} (\mbox{\hyperlink{class_motor}{Motor}} \mbox{\hyperlink{class_kinematic_ab047c05d32231b85ab66935b44e612ac}{motorD}}, \mbox{\hyperlink{class_motor}{Motor}} \mbox{\hyperlink{class_kinematic_a3521b4d4fb6fcf2c59a70f963c92bfab}{motorE}}, \mbox{\hyperlink{class_line___sensor}{Line\+\_\+\+Sensor}} \mbox{\hyperlink{class_kinematic_a17de469ec232aeba5598613cc3f070a4}{line\+Sensor}})
+\item 
+\mbox{\hyperlink{class_kinematic_aba1a385a30c3e24692724f8778f97b18}{Kinematic}} (\mbox{\hyperlink{class_kinematic}{Kinematic}} $\ast$kinematic)
+\item 
+void \mbox{\hyperlink{class_kinematic_ab0473396a6b13fedf23941602e2283ef}{reset}} ()
+\item 
+void \mbox{\hyperlink{class_kinematic_a6cc5ded243cb4c3d69b8b9196f11a8c4}{set\+Speed}} (float V, float w)
+\item 
+float \mbox{\hyperlink{class_kinematic_a470bcb5d12198f74e255015faf67c849}{getX}} ()
+\item 
+float \mbox{\hyperlink{class_kinematic_ae3f570f42792d5ba2a760190fb66f2bf}{getY}} ()
+\item 
+float \mbox{\hyperlink{class_kinematic_a7a677e002eed02afd3797e9356be9029}{get\+Teta}} ()
+\item 
+float \mbox{\hyperlink{class_kinematic_ae2187b81fe2229b466c2d5b2630c2a0d}{get\+Line\+Angle}} ()
+\item 
+float \mbox{\hyperlink{class_kinematic_a15aac52325458682957a28f2b049ef84}{get\+Line\+Position}} ()
+\item 
+float \mbox{\hyperlink{class_kinematic_aec2c9720a6d54f0cc064cbe895c3d369}{get\+Line\+Angle\+Not\+Filtered}} ()
+\item 
+float \mbox{\hyperlink{class_kinematic_a1dcd96bb5c03a2ee341d78c5284135a3}{getV}} ()
+\item 
+float \mbox{\hyperlink{class_kinematic_a4a85a1a94ef14f881751137a910a03f8}{getW}} ()
+\item 
+void \mbox{\hyperlink{class_kinematic_a3bbde4c9bc3a5d7beb90a89743f27a60}{calibrate\+Line\+Sensor}} (uint32\+\_\+t iterations)
+\item 
+void \mbox{\hyperlink{class_kinematic_af201ff92e0c95d53b7b65b7b283061cb}{update\+Line\+Reading}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_kinematic_a96fabd303578de83454c28f7aa20fae6}{handler\+By\+Time}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_motor}{Motor}} \mbox{\hyperlink{class_kinematic_ab047c05d32231b85ab66935b44e612ac}{motorD}}
+\item 
+\mbox{\hyperlink{class_motor}{Motor}} \mbox{\hyperlink{class_kinematic_a3521b4d4fb6fcf2c59a70f963c92bfab}{motorE}}
+\item 
+\mbox{\hyperlink{class_line___sensor}{Line\+\_\+\+Sensor}} \mbox{\hyperlink{class_kinematic_a17de469ec232aeba5598613cc3f070a4}{line\+Sensor}}
+\item 
+bool \mbox{\hyperlink{class_kinematic_a9ae8eb50ddfa12c6d66db4669995fedc}{calibration\+Finished}} \{0\}
+\item 
+float \mbox{\hyperlink{class_kinematic_a9a5d752c2b6ec56ec808365ddf5cc580}{line\+Sensor\+Reading}} \{0\}
+\item 
+float \mbox{\hyperlink{class_kinematic_a54038680366aaa55e5fafaae1a44dce5}{last\+Line\+Sensor\+Reading}} \{0\}
+\item 
+float \mbox{\hyperlink{class_kinematic_ab4f4b37d78e40a28d034fac022313183}{distance}} \{0\}
+\item 
+float \mbox{\hyperlink{class_kinematic_a35b0680ed1fb05c922dbbddf3b04da7c}{delta\+Distance}} \{0\}
+\item 
+float \mbox{\hyperlink{class_kinematic_aa884b513403e058b6e0c745a236da6c7}{last\+Distance}} \{0\}
+\item 
+float \mbox{\hyperlink{class_kinematic_a47739aebb18552c8ae499353761a9a4a}{x\+Pos}} \{0\}
+\item 
+float \mbox{\hyperlink{class_kinematic_a19d7ec959e58681269fa6233a08e133e}{y\+Pos}} \{0\}
+\item 
+float \mbox{\hyperlink{class_kinematic_a16fa421ad7f24f69364f0fce9a8cdd26}{angle}} \mbox{[}2\mbox{]} \{0\}
+\item 
+float \mbox{\hyperlink{class_kinematic_a19ced79be5359939476b3b43741e42fa}{filtered\+Angle}} \{0\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_kinematic}{Kinematic}} $\ast$ \mbox{\hyperlink{class_kinematic_af87a1cfe93c3caff778e1c2a716f5962}{pt\+Robot}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_kinematic_ae67640080d134cef3fbd3b793693a4a3}\label{class_kinematic_ae67640080d134cef3fbd3b793693a4a3}} 
+\index{Kinematic@{Kinematic}!Kinematic@{Kinematic}}
+\index{Kinematic@{Kinematic}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{Kinematic()}{Kinematic()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Kinematic\+::\+Kinematic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_motor}{Motor}}}]{motorD,  }\item[{\mbox{\hyperlink{class_motor}{Motor}}}]{motorE,  }\item[{\mbox{\hyperlink{class_line___sensor}{Line\+\_\+\+Sensor}}}]{line\+Sensor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_kinematic_aba1a385a30c3e24692724f8778f97b18}\label{class_kinematic_aba1a385a30c3e24692724f8778f97b18}} 
+\index{Kinematic@{Kinematic}!Kinematic@{Kinematic}}
+\index{Kinematic@{Kinematic}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{Kinematic()}{Kinematic()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Kinematic\+::\+Kinematic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_kinematic}{Kinematic}} $\ast$}]{kinematic }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_kinematic_a3bbde4c9bc3a5d7beb90a89743f27a60}\label{class_kinematic_a3bbde4c9bc3a5d7beb90a89743f27a60}} 
+\index{Kinematic@{Kinematic}!calibrateLineSensor@{calibrateLineSensor}}
+\index{calibrateLineSensor@{calibrateLineSensor}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{calibrateLineSensor()}{calibrateLineSensor()}}
+{\footnotesize\ttfamily void Kinematic\+::calibrate\+Line\+Sensor (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{iterations }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_kinematic_ae2187b81fe2229b466c2d5b2630c2a0d}\label{class_kinematic_ae2187b81fe2229b466c2d5b2630c2a0d}} 
+\index{Kinematic@{Kinematic}!getLineAngle@{getLineAngle}}
+\index{getLineAngle@{getLineAngle}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{getLineAngle()}{getLineAngle()}}
+{\footnotesize\ttfamily float Kinematic\+::get\+Line\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_kinematic_aec2c9720a6d54f0cc064cbe895c3d369}\label{class_kinematic_aec2c9720a6d54f0cc064cbe895c3d369}} 
+\index{Kinematic@{Kinematic}!getLineAngleNotFiltered@{getLineAngleNotFiltered}}
+\index{getLineAngleNotFiltered@{getLineAngleNotFiltered}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{getLineAngleNotFiltered()}{getLineAngleNotFiltered()}}
+{\footnotesize\ttfamily float Kinematic\+::get\+Line\+Angle\+Not\+Filtered (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_kinematic_a15aac52325458682957a28f2b049ef84}\label{class_kinematic_a15aac52325458682957a28f2b049ef84}} 
+\index{Kinematic@{Kinematic}!getLinePosition@{getLinePosition}}
+\index{getLinePosition@{getLinePosition}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{getLinePosition()}{getLinePosition()}}
+{\footnotesize\ttfamily float Kinematic\+::get\+Line\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_kinematic_a7a677e002eed02afd3797e9356be9029}\label{class_kinematic_a7a677e002eed02afd3797e9356be9029}} 
+\index{Kinematic@{Kinematic}!getTeta@{getTeta}}
+\index{getTeta@{getTeta}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{getTeta()}{getTeta()}}
+{\footnotesize\ttfamily float Kinematic\+::get\+Teta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_kinematic_a1dcd96bb5c03a2ee341d78c5284135a3}\label{class_kinematic_a1dcd96bb5c03a2ee341d78c5284135a3}} 
+\index{Kinematic@{Kinematic}!getV@{getV}}
+\index{getV@{getV}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{getV()}{getV()}}
+{\footnotesize\ttfamily float Kinematic\+::getV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_kinematic_a4a85a1a94ef14f881751137a910a03f8}\label{class_kinematic_a4a85a1a94ef14f881751137a910a03f8}} 
+\index{Kinematic@{Kinematic}!getW@{getW}}
+\index{getW@{getW}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{getW()}{getW()}}
+{\footnotesize\ttfamily float Kinematic\+::getW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_kinematic_a470bcb5d12198f74e255015faf67c849}\label{class_kinematic_a470bcb5d12198f74e255015faf67c849}} 
+\index{Kinematic@{Kinematic}!getX@{getX}}
+\index{getX@{getX}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily float Kinematic\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_kinematic_ae3f570f42792d5ba2a760190fb66f2bf}\label{class_kinematic_ae3f570f42792d5ba2a760190fb66f2bf}} 
+\index{Kinematic@{Kinematic}!getY@{getY}}
+\index{getY@{getY}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily float Kinematic\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_kinematic_a2a5a41a8e10aef52019f50ccbea38c72}\label{class_kinematic_a2a5a41a8e10aef52019f50ccbea38c72}} 
+\index{Kinematic@{Kinematic}!handler@{handler}}
+\index{handler@{handler}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{handler()}{handler()}}
+{\footnotesize\ttfamily void Kinematic\+::handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_kinematic_a96fabd303578de83454c28f7aa20fae6}\label{class_kinematic_a96fabd303578de83454c28f7aa20fae6}} 
+\index{Kinematic@{Kinematic}!handlerByTime@{handlerByTime}}
+\index{handlerByTime@{handlerByTime}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{handlerByTime()}{handlerByTime()}}
+{\footnotesize\ttfamily void Kinematic\+::handler\+By\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_kinematic_ab0473396a6b13fedf23941602e2283ef}\label{class_kinematic_ab0473396a6b13fedf23941602e2283ef}} 
+\index{Kinematic@{Kinematic}!reset@{reset}}
+\index{reset@{reset}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Kinematic\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_kinematic_a6cc5ded243cb4c3d69b8b9196f11a8c4}\label{class_kinematic_a6cc5ded243cb4c3d69b8b9196f11a8c4}} 
+\index{Kinematic@{Kinematic}!setSpeed@{setSpeed}}
+\index{setSpeed@{setSpeed}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{setSpeed()}{setSpeed()}}
+{\footnotesize\ttfamily void Kinematic\+::set\+Speed (\begin{DoxyParamCaption}\item[{float}]{V,  }\item[{float}]{w }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_kinematic_af201ff92e0c95d53b7b65b7b283061cb}\label{class_kinematic_af201ff92e0c95d53b7b65b7b283061cb}} 
+\index{Kinematic@{Kinematic}!updateLineReading@{updateLineReading}}
+\index{updateLineReading@{updateLineReading}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{updateLineReading()}{updateLineReading()}}
+{\footnotesize\ttfamily void Kinematic\+::update\+Line\+Reading (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_kinematic_a16fa421ad7f24f69364f0fce9a8cdd26}\label{class_kinematic_a16fa421ad7f24f69364f0fce9a8cdd26}} 
+\index{Kinematic@{Kinematic}!angle@{angle}}
+\index{angle@{angle}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{angle}{angle}}
+{\footnotesize\ttfamily float Kinematic\+::angle\mbox{[}2\mbox{]} \{0\}}
+
+\mbox{\Hypertarget{class_kinematic_a9ae8eb50ddfa12c6d66db4669995fedc}\label{class_kinematic_a9ae8eb50ddfa12c6d66db4669995fedc}} 
+\index{Kinematic@{Kinematic}!calibrationFinished@{calibrationFinished}}
+\index{calibrationFinished@{calibrationFinished}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{calibrationFinished}{calibrationFinished}}
+{\footnotesize\ttfamily bool Kinematic\+::calibration\+Finished \{0\}}
+
+\mbox{\Hypertarget{class_kinematic_a35b0680ed1fb05c922dbbddf3b04da7c}\label{class_kinematic_a35b0680ed1fb05c922dbbddf3b04da7c}} 
+\index{Kinematic@{Kinematic}!deltaDistance@{deltaDistance}}
+\index{deltaDistance@{deltaDistance}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{deltaDistance}{deltaDistance}}
+{\footnotesize\ttfamily float Kinematic\+::delta\+Distance \{0\}}
+
+\mbox{\Hypertarget{class_kinematic_ab4f4b37d78e40a28d034fac022313183}\label{class_kinematic_ab4f4b37d78e40a28d034fac022313183}} 
+\index{Kinematic@{Kinematic}!distance@{distance}}
+\index{distance@{distance}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{distance}{distance}}
+{\footnotesize\ttfamily float Kinematic\+::distance \{0\}}
+
+\mbox{\Hypertarget{class_kinematic_a19ced79be5359939476b3b43741e42fa}\label{class_kinematic_a19ced79be5359939476b3b43741e42fa}} 
+\index{Kinematic@{Kinematic}!filteredAngle@{filteredAngle}}
+\index{filteredAngle@{filteredAngle}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{filteredAngle}{filteredAngle}}
+{\footnotesize\ttfamily float Kinematic\+::filtered\+Angle \{0\}}
+
+\mbox{\Hypertarget{class_kinematic_aa884b513403e058b6e0c745a236da6c7}\label{class_kinematic_aa884b513403e058b6e0c745a236da6c7}} 
+\index{Kinematic@{Kinematic}!lastDistance@{lastDistance}}
+\index{lastDistance@{lastDistance}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{lastDistance}{lastDistance}}
+{\footnotesize\ttfamily float Kinematic\+::last\+Distance \{0\}}
+
+\mbox{\Hypertarget{class_kinematic_a54038680366aaa55e5fafaae1a44dce5}\label{class_kinematic_a54038680366aaa55e5fafaae1a44dce5}} 
+\index{Kinematic@{Kinematic}!lastLineSensorReading@{lastLineSensorReading}}
+\index{lastLineSensorReading@{lastLineSensorReading}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{lastLineSensorReading}{lastLineSensorReading}}
+{\footnotesize\ttfamily float Kinematic\+::last\+Line\+Sensor\+Reading \{0\}}
+
+\mbox{\Hypertarget{class_kinematic_a17de469ec232aeba5598613cc3f070a4}\label{class_kinematic_a17de469ec232aeba5598613cc3f070a4}} 
+\index{Kinematic@{Kinematic}!lineSensor@{lineSensor}}
+\index{lineSensor@{lineSensor}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{lineSensor}{lineSensor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_line___sensor}{Line\+\_\+\+Sensor}} Kinematic\+::line\+Sensor}
+
+\mbox{\Hypertarget{class_kinematic_a9a5d752c2b6ec56ec808365ddf5cc580}\label{class_kinematic_a9a5d752c2b6ec56ec808365ddf5cc580}} 
+\index{Kinematic@{Kinematic}!lineSensorReading@{lineSensorReading}}
+\index{lineSensorReading@{lineSensorReading}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{lineSensorReading}{lineSensorReading}}
+{\footnotesize\ttfamily float Kinematic\+::line\+Sensor\+Reading \{0\}}
+
+\mbox{\Hypertarget{class_kinematic_ab047c05d32231b85ab66935b44e612ac}\label{class_kinematic_ab047c05d32231b85ab66935b44e612ac}} 
+\index{Kinematic@{Kinematic}!motorD@{motorD}}
+\index{motorD@{motorD}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{motorD}{motorD}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_motor}{Motor}} Kinematic\+::motorD}
+
+\mbox{\Hypertarget{class_kinematic_a3521b4d4fb6fcf2c59a70f963c92bfab}\label{class_kinematic_a3521b4d4fb6fcf2c59a70f963c92bfab}} 
+\index{Kinematic@{Kinematic}!motorE@{motorE}}
+\index{motorE@{motorE}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{motorE}{motorE}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_motor}{Motor}} Kinematic\+::motorE}
+
+\mbox{\Hypertarget{class_kinematic_af87a1cfe93c3caff778e1c2a716f5962}\label{class_kinematic_af87a1cfe93c3caff778e1c2a716f5962}} 
+\index{Kinematic@{Kinematic}!ptRobot@{ptRobot}}
+\index{ptRobot@{ptRobot}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{ptRobot}{ptRobot}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_kinematic}{Kinematic}} $\ast$ Kinematic\+::pt\+Robot\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_kinematic_a47739aebb18552c8ae499353761a9a4a}\label{class_kinematic_a47739aebb18552c8ae499353761a9a4a}} 
+\index{Kinematic@{Kinematic}!xPos@{xPos}}
+\index{xPos@{xPos}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{xPos}{xPos}}
+{\footnotesize\ttfamily float Kinematic\+::x\+Pos \{0\}}
+
+\mbox{\Hypertarget{class_kinematic_a19d7ec959e58681269fa6233a08e133e}\label{class_kinematic_a19d7ec959e58681269fa6233a08e133e}} 
+\index{Kinematic@{Kinematic}!yPos@{yPos}}
+\index{yPos@{yPos}!Kinematic@{Kinematic}}
+\doxysubsubsection{\texorpdfstring{yPos}{yPos}}
+{\footnotesize\ttfamily float Kinematic\+::y\+Pos \{0\}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/bruno/\+Documents/\+Line\+Follower/\+Project\+\_\+u\+Vision/\+Line\+Follower/\mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h}{K\+I\+N\+E\+M\+A\+T\+I\+C\+\_\+\+C\+O\+N\+T\+R\+O\+L.\+h}}\item 
+C\+:/\+Users/bruno/\+Documents/\+Line\+Follower/\+Project\+\_\+u\+Vision/\+Line\+Follower/\mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8cpp}{K\+I\+N\+E\+M\+A\+T\+I\+C\+\_\+\+C\+O\+N\+T\+R\+O\+L.\+cpp}}\end{DoxyCompactItemize}

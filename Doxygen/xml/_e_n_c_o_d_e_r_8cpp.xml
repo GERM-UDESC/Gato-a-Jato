@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_e_n_c_o_d_e_r_8cpp" kind="file" language="C++">
+    <compoundname>ENCODER.cpp</compoundname>
+    <includes refid="_e_n_c_o_d_e_r_8h" local="yes">ENCODER.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+      <node id="6">
+        <label>TIMER.h</label>
+        <link refid="_t_i_m_e_r_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ENCODER.h</label>
+        <link refid="_e_n_c_o_d_e_r_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ENCODER.cpp</label>
+        <link refid="_e_n_c_o_d_e_r_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_e_n_c_o_d_e_r_8h" kindref="compound">ENCODER.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="class_encoder" kindref="compound">Encoder</ref><sp/>*Encoder::encPtr[<ref refid="_e_n_c_o_d_e_r_8h_1a0b411f3235fe88be704e0e34a2fd41dca628d19c1e9ac6f10a4e1354d4d3e286d" kindref="member">NUMBER_OF_ENCODERS</ref>];</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Encoder::usedEncoders[<ref refid="_e_n_c_o_d_e_r_8h_1a0b411f3235fe88be704e0e34a2fd41dca628d19c1e9ac6f10a4e1354d4d3e286d" kindref="member">NUMBER_OF_ENCODERS</ref>];</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_encoder_1aa3f68a13dcb956850f1661a4245646e8" kindref="member">Encoder::Encoder_Initiallize</ref>()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i&lt;<ref refid="_e_n_c_o_d_e_r_8h_1a0b411f3235fe88be704e0e34a2fd41dca628d19c1e9ac6f10a4e1354d4d3e286d" kindref="member">NUMBER_OF_ENCODERS</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Encoder::usedEncoders[i]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_encoder_1ae74eccc343aad0485f3f6927ca324559" kindref="member">Encoder::Encoder_Handler</ref>(<ref refid="_e_n_c_o_d_e_r_8h_1a0b411f3235fe88be704e0e34a2fd41dc" kindref="member">ENCODER_ENUM</ref><sp/>enc)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>Encoder::encPtr[enc]-&gt;Handler();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_encoder_1a92a225e84e5675d8ca631a083106532e" kindref="member">Encoder::Encoder_Handler_by_Time</ref>()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="_e_n_c_o_d_e_r_8h_1a0b411f3235fe88be704e0e34a2fd41dca628d19c1e9ac6f10a4e1354d4d3e286d" kindref="member">NUMBER_OF_ENCODERS</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Encoder::usedEncoders[i]<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((<sp/><ref refid="class_timer_1a1b59222052d44b81b3c26f3c88368239" kindref="member">Timer::GetTime_usec</ref>()<sp/>-<sp/>Encoder::encPtr[i]-&gt;LastTicks_Time)<sp/>&gt;<sp/><ref refid="_e_n_c_o_d_e_r_8h_1aab3232034811f9e1e2d1999864e6c0eb" kindref="member">Max_delay_Ticks_Time</ref>)<sp/>&amp;&amp;<sp/>(Encoder::encPtr[i]-&gt;filteredSpeed<sp/>!=<sp/>0))</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Encoder::encPtr[i]-&gt;LastTicks_Time<sp/>=<sp/><ref refid="class_timer_1a1b59222052d44b81b3c26f3c88368239" kindref="member">Timer::GetTime_usec</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>(<ref refid="_e_n_c_o_d_e_r_8h_1ab26e1463d4f8f6ba175509661cb7f653" kindref="member">encoderFilterOrder</ref>-1);<sp/>j++)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>encPtr[i]-&gt;Speed[j]<sp/>=<sp/>encPtr[i]-&gt;Speed[j+1];</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Encoder::encPtr[i]-&gt;Speed[<ref refid="_e_n_c_o_d_e_r_8h_1ab26e1463d4f8f6ba175509661cb7f653" kindref="member">encoderFilterOrder</ref>-1]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Encoder::encPtr[i]-&gt;filteredSpeed<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/><ref refid="_e_n_c_o_d_e_r_8h_1ab26e1463d4f8f6ba175509661cb7f653" kindref="member">encoderFilterOrder</ref>;<sp/>j++)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Encoder::encPtr[i]-&gt;filteredSpeed<sp/>+=<sp/>Encoder::encPtr[i]-&gt;Speed[j];</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Encoder::encPtr[i]-&gt;filteredSpeed<sp/>=<sp/>Encoder::encPtr[i]-&gt;filteredSpeed/<ref refid="_e_n_c_o_d_e_r_8h_1ab26e1463d4f8f6ba175509661cb7f653" kindref="member">encoderFilterOrder</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><ref refid="class_encoder_1ac13a1a57fbae0695512e5021881ca775" kindref="member">Encoder::Encoder</ref>(<ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref><sp/>*TIM)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1adbe72d40a935988e2b66e4189b85f07c" kindref="member">SetTim</ref>(<ref refid="class_timer_1a28770028f61d78e7b6b74338fb58edeb" kindref="member">TIM</ref>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>ConfigEncoder();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><ref refid="class_encoder_1ac13a1a57fbae0695512e5021881ca775" kindref="member">Encoder::Encoder</ref>(<ref refid="class_encoder" kindref="compound">Encoder</ref><sp/>*encoder)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1adbe72d40a935988e2b66e4189b85f07c" kindref="member">SetTim</ref>(encoder-&gt;<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>());</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>ConfigEncoder();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Encoder::ConfigEncoder()</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)<sp/><sp/>encoderNumber<sp/>=<sp/><ref refid="_e_n_c_o_d_e_r_8h_1a0b411f3235fe88be704e0e34a2fd41dcafba25b1fd714bf143c68a8e7c0429379" kindref="member">Encoder_TIM1</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a3cfac9f2e43673f790f8668d48b4b92b" kindref="member">TIM2</ref>)<sp/><sp/>encoderNumber<sp/>=<sp/><ref refid="_e_n_c_o_d_e_r_8h_1a0b411f3235fe88be704e0e34a2fd41dca6e7cf71811d029b420e101e8f771b760" kindref="member">Encoder_TIM2</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>)<sp/><sp/>encoderNumber<sp/>=<sp/><ref refid="_e_n_c_o_d_e_r_8h_1a0b411f3235fe88be704e0e34a2fd41dca5c2be1a98a830624cb6d02333bd6af89" kindref="member">Encoder_TIM3</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a91a09bad8bdc7a1cb3d85cf49c94c8ec" kindref="member">TIM4</ref>)<sp/><sp/>encoderNumber<sp/>=<sp/><ref refid="_e_n_c_o_d_e_r_8h_1a0b411f3235fe88be704e0e34a2fd41dca11fa001c1fcac39520275d4e6dd99f0c" kindref="member">Encoder_TIM4</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>Encoder::encPtr[encoderNumber]<sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>Encoder::usedEncoders[encoderNumber]<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>GetTim()-&gt;CNT<sp/>=<sp/>0;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>Ticks<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>lastTicks<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>deltaTicks<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>Ticks_Time<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>LastTicks_Time<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>deltaTime<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i&lt;<ref refid="_e_n_c_o_d_e_r_8h_1ab26e1463d4f8f6ba175509661cb7f653" kindref="member">encoderFilterOrder</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Speed[i]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>filteredSpeed<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Enable<sp/>the<sp/>clock<sp/>of<sp/>the<sp/>respective<sp/>timer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APB2ENR<sp/>|=<sp/>(1&lt;&lt;11);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a3cfac9f2e43673f790f8668d48b4b92b" kindref="member">TIM2</ref>)<sp/><sp/><sp/><ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APB1ENR<sp/>|=<sp/>(1&lt;&lt;0);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>)<sp/><sp/><sp/><ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APB1ENR<sp/>|=<sp/>(1&lt;&lt;1);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a91a09bad8bdc7a1cb3d85cf49c94c8ec" kindref="member">TIM4</ref>)<sp/><sp/><sp/><ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APB1ENR<sp/>|=<sp/>(1&lt;&lt;2);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EncCH1.<ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a425b946ed4ca75b99534ce59cbc8c606" kindref="member">PA8</ref>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EncCH2.<ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ad27e336d89371954807f38669532f78f" kindref="member">PA9</ref>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a3cfac9f2e43673f790f8668d48b4b92b" kindref="member">TIM2</ref>)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EncCH1.<ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a09c5d44fd6e7ee5daddd08009b04ac38" kindref="member">PA0</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EncCH2.<ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a201be1986c3153a2eb2de811e1700f0e" kindref="member">PA1</ref>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EncCH1.<ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ae3a4724611297f7aaf05b3df96500e50" kindref="member">PA6</ref>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EncCH2.<ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a854a1d26d1740bfa815bf76f027e1c90" kindref="member">PA7</ref>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a91a09bad8bdc7a1cb3d85cf49c94c8ec" kindref="member">TIM4</ref>)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EncCH1.<ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a719b788556c95b8f637797cd1779eb94" kindref="member">PB6</ref>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EncCH2.<ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a81ef9abf013c4af2ef0c863e2ebb8fba" kindref="member">PB7</ref>);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>EncCH1.<ref refid="class_g_p_i_o_1ad63b30938acafc3c2deb126b70258a9c" kindref="member">SetGPIOMode</ref>(<ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa0ef18149ebd1d9936fe599e0ba5ae43d" kindref="member">INPUT_FLOATING</ref>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>EncCH2.<ref refid="class_g_p_i_o_1ad63b30938acafc3c2deb126b70258a9c" kindref="member">SetGPIOMode</ref>(<ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa0ef18149ebd1d9936fe599e0ba5ae43d" kindref="member">INPUT_FLOATING</ref>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>EncCH1.<ref refid="class_g_p_i_o_1a0572d93ba912073decd7a96d90c312b0" kindref="member">ConfigGPIOPin</ref>();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>EncCH2.<ref refid="class_g_p_i_o_1a0572d93ba912073decd7a96d90c312b0" kindref="member">ConfigGPIOPin</ref>();</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1a284c49942fa0f1a670ac2c2d8bde01aa" kindref="member">SR</ref><sp/>&amp;=<sp/>~(1&lt;&lt;0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Clear<sp/>Update<sp/>interrupt<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1a182d9f6022ddfc9a65a7e8f8b22e6930" kindref="member">SMCR</ref><sp/>|=<sp/>(1&lt;&lt;1)<sp/>|<sp/>(1&lt;&lt;0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Encoder<sp/>counting<sp/>on<sp/>both<sp/>channels<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1a55798bfb98e8fd2ffb2eef823f6c47f0" kindref="member">ARR</ref><sp/>=<sp/><ref refid="_e_n_c_o_d_e_r_8h_1a4407e639d341f0d88fc2e87f7a981b3b" kindref="member">AutoReaload_Ticks</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//In<sp/>case<sp/>there<sp/>is<sp/>an<sp/>overflow,<sp/>we<sp/>know<sp/>that<sp/>it&apos;ll<sp/>occur<sp/>in<sp/>a<sp/>rounded<sp/>number<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1aa60a12d30ec9f8b91ffea5eeb76863b1" kindref="member">CCMR1</ref><sp/>|=<sp/>(1&lt;&lt;0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//IC1<sp/>is<sp/>mapped<sp/>on<sp/>TI1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1aa60a12d30ec9f8b91ffea5eeb76863b1" kindref="member">CCMR1</ref><sp/>|=<sp/>(1&lt;&lt;8);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//IC2<sp/>is<sp/>mapped<sp/>on<sp/>TI2<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1a0ee416056e6a8632dda4d92f048625cd" kindref="member">CCER</ref><sp/>|=<sp/>(1&lt;&lt;1);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//invert<sp/>the<sp/>polarity,<sp/>just<sp/>because<sp/>of<sp/>the<sp/>line<sp/>follower.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">//-----interrupt<sp/>part-----------<sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1a6064df68974b15873904dfc117c15aa4" kindref="member">EGR</ref><sp/>|=<sp/>(1&lt;&lt;0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Update<sp/>generation<sp/>-&gt;<sp/>Generate<sp/>an<sp/>uptade<sp/>of<sp/>all<sp/>configurations<sp/>done<sp/>before</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1a284c49942fa0f1a670ac2c2d8bde01aa" kindref="member">SR</ref><sp/>&amp;=<sp/>~(1&lt;&lt;0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Clear<sp/>Update<sp/>interrupt<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1a2827cdd24a1f1c27cda6fe870e9929e2" kindref="member">DIER</ref><sp/>|=<sp/>(1&lt;&lt;0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Enable<sp/>the<sp/>timer<sp/>to<sp/>generate<sp/>a<sp/>interrupt<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a2e87451fea8dc9380056d3cfc5ed81fb" kindref="member">TIM1</ref>)<sp/><ref refid="_micro_8h_1ac8e97e8ce56ae9f57da1363a937f8a17" kindref="member">NVIC</ref>-&gt;ISER[0]<sp/>|=<sp/>(1&lt;&lt;<ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a78ef1a20c5b8e93cb17bf90afc0c5bd9" kindref="member">TIM1_UP_IRQn</ref>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Enable<sp/>the<sp/>interrupt<sp/>in<sp/>the<sp/>NVIC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a3cfac9f2e43673f790f8668d48b4b92b" kindref="member">TIM2</ref>)<sp/><ref refid="_micro_8h_1ac8e97e8ce56ae9f57da1363a937f8a17" kindref="member">NVIC</ref>-&gt;ISER[0]<sp/>|=<sp/>(1&lt;&lt;<ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a3a4e2095a926e4095d3c846eb1c98afa" kindref="member">TIM2_IRQn</ref>);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a61ee4c391385607d7af432b63905fcc9" kindref="member">TIM3</ref>)<sp/><ref refid="_micro_8h_1ac8e97e8ce56ae9f57da1363a937f8a17" kindref="member">NVIC</ref>-&gt;ISER[0]<sp/>|=<sp/>(1&lt;&lt;<ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a985574288f66e2a00e97387424a9a2d8" kindref="member">TIM3_IRQn</ref>);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()<sp/>==<sp/><ref refid="_micro_8h_1a91a09bad8bdc7a1cb3d85cf49c94c8ec" kindref="member">TIM4</ref>)<sp/><ref refid="_micro_8h_1ac8e97e8ce56ae9f57da1363a937f8a17" kindref="member">NVIC</ref>-&gt;ISER[0]<sp/>|=<sp/>(1&lt;&lt;<ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a368b899ca740b9ae0d75841f3abf68c4" kindref="member">TIM4_IRQn</ref>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">//------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1a4f9f7bb24e6c25a7ba223ef51d707a85" kindref="member">CR1</ref><sp/>|=<sp/>(1&lt;&lt;0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Enable<sp/>the<sp/>counter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_encoder_1a8ad34a60288f78310ee465da3832b405" kindref="member">Encoder::reset</ref>()</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>Ticks<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>lastTicks<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>deltaTicks<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;<ref refid="struct_t_i_m___type_def_1a508092646ed34fbee8cd342f268e00f8" kindref="member">CNT</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>deltaTime<sp/>=<sp/>Ticks_Time<sp/>-<sp/>LastTicks_Time;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>lastDeltaTime<sp/>=<sp/>deltaTime;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>LastTicks_Time<sp/>=<sp/><ref refid="class_timer_1a1b59222052d44b81b3c26f3c88368239" kindref="member">Timer::GetTime_usec</ref>();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>Ticks_Time<sp/>=<sp/>LastTicks_Time;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i&lt;<ref refid="_e_n_c_o_d_e_r_8h_1ab26e1463d4f8f6ba175509661cb7f653" kindref="member">encoderFilterOrder</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Speed[i]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>filteredSpeed<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_encoder_1a9292166dc33e4564bf30f35a9e46e92e" kindref="member">Encoder::getTicks</ref>()</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(Ticks<sp/>+<sp/><ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;CNT);<sp/></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_encoder_1a33eb14107c16aeba0ce49b152f7ccdba" kindref="member">Encoder::getDeltaTicks</ref>()</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>tempTicks<sp/>=<sp/><ref refid="class_encoder_1a9292166dc33e4564bf30f35a9e46e92e" kindref="member">getTicks</ref>();</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>deltaTicks<sp/>=<sp/>tempTicks<sp/>-<sp/>lastTicks;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>lastTicks<sp/>=<sp/>tempTicks;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>deltaTicks;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">uint32_t<sp/><ref refid="class_encoder_1a821953f3040954bfee8b5107e186e817" kindref="member">Encoder::getTicksTime</ref>()</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Ticks_Time;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal">uint32_t<sp/><ref refid="class_encoder_1a1c7086156972a5d74b32ff2664e34afe" kindref="member">Encoder::getLastTicksTime</ref>()</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>LastTicks_Time;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal">uint32_t<sp/><ref refid="class_encoder_1af53102095c328cf97a37556219fbed4a" kindref="member">Encoder::getDeltaTime</ref>()</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>deltaTime;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_encoder_1a1d2c3dd272bc05bf6a8ba06fb7191a11" kindref="member">Encoder::getSpeed</ref>()</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>filteredSpeed;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_encoder_1a1b9ad647d696a4e32c7d937ab8c7bcdc" kindref="member">Encoder::getNotFilteredSpeed</ref>()</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Speed[<ref refid="_e_n_c_o_d_e_r_8h_1ab26e1463d4f8f6ba175509661cb7f653" kindref="member">encoderFilterOrder</ref>-1];</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_encoder_1a19605eda06fb6134c2fdada4b9b53d1d" kindref="member">Encoder::getLastSpeed</ref>()</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Speed[<ref refid="_e_n_c_o_d_e_r_8h_1ab26e1463d4f8f6ba175509661cb7f653" kindref="member">encoderFilterOrder</ref>-2];</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_encoder_1a6cca483c9d1f3c5ba5e3119443ae2415" kindref="member">Encoder::getTeta</ref>()</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_e_n_c_o_d_e_r_8h_1ab127e74a19dfd28e6125ba0a7adccf6e" kindref="member">ticksToRad</ref>*<ref refid="class_encoder_1a9292166dc33e4564bf30f35a9e46e92e" kindref="member">getTicks</ref>();</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_encoder_1adfdb1bc3927c906f155bad7752ed6972" kindref="member">Encoder::getDirection</ref>()</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" kindref="member">GetTim</ref>()-&gt;CR1)<sp/>&amp;<sp/>(1&lt;&lt;4))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Encoder::Handler()</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>Ticks_Time<sp/>=<sp/><ref refid="class_timer_1a1b59222052d44b81b3c26f3c88368239" kindref="member">Timer::GetTime_usec</ref>();</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>deltaTime<sp/>=<sp/>Ticks_Time<sp/>-<sp/>LastTicks_Time;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(<ref refid="_e_n_c_o_d_e_r_8h_1ab26e1463d4f8f6ba175509661cb7f653" kindref="member">encoderFilterOrder</ref>-1);<sp/>i++)</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Speed[i]<sp/>=<sp/>Speed[i+1];</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>Speed[<ref refid="_e_n_c_o_d_e_r_8h_1ab26e1463d4f8f6ba175509661cb7f653" kindref="member">encoderFilterOrder</ref>-1]<sp/>=<sp/>(500000*<ref refid="_e_n_c_o_d_e_r_8h_1a75c8949a066fd8c0b465c00f0bf8dd8e" kindref="member">Ticks_till_int</ref>)/(deltaTime);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//this<sp/>500000*<sp/>is<sp/>to<sp/>convert<sp/>ticks/us<sp/>in<sp/>rpm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_encoder_1adfdb1bc3927c906f155bad7752ed6972" kindref="member">getDirection</ref>()<sp/>==<sp/><ref refid="_e_n_c_o_d_e_r_8h_1ab0f1f34e23a98983145d7faee847b61bab3d7481243d86f5bf31d617c7ba70220" kindref="member">backward</ref>)<sp/></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ticks<sp/>-=<sp/><ref refid="_e_n_c_o_d_e_r_8h_1a75c8949a066fd8c0b465c00f0bf8dd8e" kindref="member">Ticks_till_int</ref>;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Speed[<ref refid="_e_n_c_o_d_e_r_8h_1ab26e1463d4f8f6ba175509661cb7f653" kindref="member">encoderFilterOrder</ref>-1]<sp/>=<sp/>-Speed[<ref refid="_e_n_c_o_d_e_r_8h_1ab26e1463d4f8f6ba175509661cb7f653" kindref="member">encoderFilterOrder</ref>-1];</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>Ticks<sp/>+=<sp/><ref refid="_e_n_c_o_d_e_r_8h_1a75c8949a066fd8c0b465c00f0bf8dd8e" kindref="member">Ticks_till_int</ref>;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>filteredSpeed<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>(<ref refid="_e_n_c_o_d_e_r_8h_1ab26e1463d4f8f6ba175509661cb7f653" kindref="member">encoderFilterOrder</ref>);<sp/>i++)</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filteredSpeed<sp/>+=<sp/>Speed[i];</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>filteredSpeed<sp/>=<sp/>filteredSpeed/<ref refid="_e_n_c_o_d_e_r_8h_1ab26e1463d4f8f6ba175509661cb7f653" kindref="member">encoderFilterOrder</ref>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>LastTicks_Time<sp/>=<sp/>Ticks_Time;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>lastDeltaTime<sp/>=<sp/>deltaTime;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ENCODER.cpp"/>
+  </compounddef>
+</doxygen>

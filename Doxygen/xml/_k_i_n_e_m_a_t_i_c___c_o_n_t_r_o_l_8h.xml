@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h" kind="file" language="C++">
+    <compoundname>KINEMATIC_CONTROL.h</compoundname>
+    <includes refid="_m_o_t_o_r_8h" local="yes">MOTOR.h</includes>
+    <includes refid="_l_i_n_e___s_e_n_s_o_r_8h" local="yes">LINE_SENSOR.h</includes>
+    <includes local="yes">math.h</includes>
+    <includedby refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h</includedby>
+    <includedby refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp</includedby>
+    <includedby refid="malha__fechada_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>REFLECTANCE_SENSOR.h</label>
+        <link refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stdint.h</label>
+      </node>
+      <node id="11">
+        <label>ADC.h</label>
+        <link refid="_a_d_c_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MOTOR.h</label>
+        <link refid="_m_o_t_o_r_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>TIMER.h</label>
+        <link refid="_t_i_m_e_r_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>PWM.h</label>
+        <link refid="_p_w_m_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>ENCODER.h</label>
+        <link refid="_e_n_c_o_d_e_r_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>math.h</label>
+      </node>
+      <node id="5">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>LINE_SENSOR.h</label>
+        <link refid="_l_i_n_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</label>
+        <link refid="malha__fechada_8cpp"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8cpp"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.cpp</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_kinematic" prot="public">Kinematic</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1aa73214aa5f2f94f63d90bb4e3d99fe53" prot="public" static="no">
+        <name>L</name>
+        <initializer>0.069</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="8" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a370e26e218cdd094ce7a28291d9d1117" prot="public" static="no">
+        <name>angleCorrection</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="9" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1aabb59de57e93f844e5be8551332d33a6" prot="public" static="no">
+        <name>distanceCorrection</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="10" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a916af74e85211b8c9065bf685ef695d6" prot="public" static="no">
+        <name>angleFilterOrder</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="11" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a7259bbc04e36a85d36da439fe3983531" prot="public" static="no">
+        <name>integrationTime</name>
+        <initializer><ref refid="_t_i_m_e_r_8h_1a3d4ab76c869e227bc5373ba193e3986e" kindref="member">Time_between_int</ref>/1000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="13" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1ad2029b570bdbc0cd4e4de82160c24642" prot="public" static="no">
+        <name>Kw</name>
+        <initializer>455.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="15" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a8d53749dee8abc63dd8730a250ee5eef" prot="public" static="no">
+        <name>Pw</name>
+        <initializer>12.97</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="16" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a29089289a3c36b44c528a17931f8e9d5" prot="public" static="no">
+        <name>ts_w</name>
+        <initializer>0.05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="18" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1ae4ee311484bc525db07bb2e49c2c3942" prot="public" static="no">
+        <name>KDw</name>
+        <initializer>4/(<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1ad2029b570bdbc0cd4e4de82160c24642" kindref="member">Kw</ref>*<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a29089289a3c36b44c528a17931f8e9d5" kindref="member">ts_w</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="19" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a7b7588c8e9c89bda5114459c9af06542" prot="public" static="no">
+        <name>KPw</name>
+        <initializer><ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a8d53749dee8abc63dd8730a250ee5eef" kindref="member">Pw</ref>*<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1ae4ee311484bc525db07bb2e49c2c3942" kindref="member">KDw</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="20" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>KINEMATIC_CONTROL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KINEMATIC_CONTROL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_m_o_t_o_r_8h" kindref="compound">MOTOR.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_l_i_n_e___s_e_n_s_o_r_8h" kindref="compound">LINE_SENSOR.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;math.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1aa73214aa5f2f94f63d90bb4e3d99fe53" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>L<sp/>0.069</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a370e26e218cdd094ce7a28291d9d1117" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>angleCorrection<sp/>1//.125</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1aabb59de57e93f844e5be8551332d33a6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>distanceCorrection<sp/>1//.093</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a916af74e85211b8c9065bf685ef695d6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>angleFilterOrder<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a7259bbc04e36a85d36da439fe3983531" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>integrationTime<sp/>Time_between_int/1000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1ad2029b570bdbc0cd4e4de82160c24642" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Kw<sp/>455.5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a8d53749dee8abc63dd8730a250ee5eef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Pw<sp/>12.97</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a29089289a3c36b44c528a17931f8e9d5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ts_w<sp/>0.05<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//tempo<sp/>de<sp/>assentamento</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1ae4ee311484bc525db07bb2e49c2c3942" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KDw<sp/>4/(Kw*ts_w)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a7b7588c8e9c89bda5114459c9af06542" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KPw<sp/>Pw*KDw</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_kinematic" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_kinematic" kindref="compound">Kinematic</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25" refid="class_kinematic_1ab047c05d32231b85ab66935b44e612ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_motor" kindref="compound">Motor</ref><sp/><ref refid="class_kinematic_1ab047c05d32231b85ab66935b44e612ac" kindref="member">motorD</ref>;</highlight></codeline>
+<codeline lineno="26" refid="class_kinematic_1a3521b4d4fb6fcf2c59a70f963c92bfab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_motor" kindref="compound">Motor</ref><sp/><ref refid="class_kinematic_1a3521b4d4fb6fcf2c59a70f963c92bfab" kindref="member">motorE</ref>;</highlight></codeline>
+<codeline lineno="27" refid="class_kinematic_1a17de469ec232aeba5598613cc3f070a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_line___sensor" kindref="compound">Line_Sensor</ref><sp/><ref refid="class_kinematic_1a17de469ec232aeba5598613cc3f070a4" kindref="member">lineSensor</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29" refid="class_kinematic_1a9ae8eb50ddfa12c6d66db4669995fedc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a9ae8eb50ddfa12c6d66db4669995fedc" kindref="member">calibrationFinished</ref>{0};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31" refid="class_kinematic_1a9a5d752c2b6ec56ec808365ddf5cc580" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a9a5d752c2b6ec56ec808365ddf5cc580" kindref="member">lineSensorReading</ref>{0};</highlight></codeline>
+<codeline lineno="32" refid="class_kinematic_1a54038680366aaa55e5fafaae1a44dce5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a54038680366aaa55e5fafaae1a44dce5" kindref="member">lastLineSensorReading</ref>{0};</highlight></codeline>
+<codeline lineno="33" refid="class_kinematic_1ab4f4b37d78e40a28d034fac022313183" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1ab4f4b37d78e40a28d034fac022313183" kindref="member">distance</ref>{0},<sp/><ref refid="class_kinematic_1a35b0680ed1fb05c922dbbddf3b04da7c" kindref="member">deltaDistance</ref>{0};</highlight></codeline>
+<codeline lineno="34" refid="class_kinematic_1aa884b513403e058b6e0c745a236da6c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1aa884b513403e058b6e0c745a236da6c7" kindref="member">lastDistance</ref>{0};<sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36" refid="class_kinematic_1a47739aebb18552c8ae499353761a9a4a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a47739aebb18552c8ae499353761a9a4a" kindref="member">xPos</ref>{0};</highlight></codeline>
+<codeline lineno="37" refid="class_kinematic_1a19d7ec959e58681269fa6233a08e133e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a19d7ec959e58681269fa6233a08e133e" kindref="member">yPos</ref>{0};</highlight></codeline>
+<codeline lineno="38" refid="class_kinematic_1a16fa421ad7f24f69364f0fce9a8cdd26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a16fa421ad7f24f69364f0fce9a8cdd26" kindref="member">angle</ref>[<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_1a916af74e85211b8c9065bf685ef695d6" kindref="member">angleFilterOrder</ref>]{0};</highlight></codeline>
+<codeline lineno="39" refid="class_kinematic_1a19ced79be5359939476b3b43741e42fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a19ced79be5359939476b3b43741e42fa" kindref="member">filteredAngle</ref>{0};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a2a5a41a8e10aef52019f50ccbea38c72" kindref="member">handler</ref>();</highlight></codeline>
+<codeline lineno="42" refid="class_kinematic_1af87a1cfe93c3caff778e1c2a716f5962" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_kinematic" kindref="compound">Kinematic</ref><sp/>*<ref refid="class_kinematic_1af87a1cfe93c3caff778e1c2a716f5962" kindref="member">ptRobot</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1ae67640080d134cef3fbd3b793693a4a3" kindref="member">Kinematic</ref>(<ref refid="class_motor" kindref="compound">Motor</ref><sp/><ref refid="class_kinematic_1ab047c05d32231b85ab66935b44e612ac" kindref="member">motorD</ref>,<sp/><ref refid="class_motor" kindref="compound">Motor</ref><sp/><ref refid="class_kinematic_1a3521b4d4fb6fcf2c59a70f963c92bfab" kindref="member">motorE</ref>,<sp/><ref refid="class_line___sensor" kindref="compound">Line_Sensor</ref><sp/><ref refid="class_kinematic_1a17de469ec232aeba5598613cc3f070a4" kindref="member">lineSensor</ref>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_kinematic_1ae67640080d134cef3fbd3b793693a4a3" kindref="member">Kinematic</ref>(<ref refid="class_kinematic" kindref="compound">Kinematic</ref><sp/>*kinematic);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1ab0473396a6b13fedf23941602e2283ef" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a6cc5ded243cb4c3d69b8b9196f11a8c4" kindref="member">setSpeed</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>V,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a470bcb5d12198f74e255015faf67c849" kindref="member">getX</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><sp/><sp/><ref refid="class_kinematic_1ae3f570f42792d5ba2a760190fb66f2bf" kindref="member">getY</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a7a677e002eed02afd3797e9356be9029" kindref="member">getTeta</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1ae2187b81fe2229b466c2d5b2630c2a0d" kindref="member">getLineAngle</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a15aac52325458682957a28f2b049ef84" kindref="member">getLinePosition</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1aec2c9720a6d54f0cc064cbe895c3d369" kindref="member">getLineAngleNotFiltered</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a1dcd96bb5c03a2ee341d78c5284135a3" kindref="member">getV</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a4a85a1a94ef14f881751137a910a03f8" kindref="member">getW</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a3bbde4c9bc3a5d7beb90a89743f27a60" kindref="member">calibrateLineSensor</ref>(uint32_t<sp/>iterations);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1af201ff92e0c95d53b7b65b7b283061cb" kindref="member">updateLineReading</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_kinematic_1a96fabd303578de83454c28f7aa20fae6" kindref="member">handlerByTime</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h"/>
+  </compounddef>
+</doxygen>

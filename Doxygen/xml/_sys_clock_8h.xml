@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_sys_clock_8h" kind="file" language="C++">
+    <compoundname>SysClock.h</compoundname>
+    <includes refid="_micro_8h" local="yes">Micro.h</includes>
+    <includes refid="_g_p_i_o_8h" local="yes">GPIO.h</includes>
+    <includedby refid="malha__fechada_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</includedby>
+    <includedby refid="_sys_clock_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SysClock.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SysClock.h</label>
+        <link refid="_sys_clock_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</label>
+        <link refid="malha__fechada_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SysClock.h</label>
+        <link refid="_sys_clock_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SysClock.cpp</label>
+        <link refid="_sys_clock_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_sys_clock" prot="public">SysClock</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SysTickBaseTimeEnum</name>
+        <enumvalue id="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1fa2bcdfedc316cba441582940983fae81d" prot="public">
+          <name>BASE_100ms</name>
+          <initializer>= (7200000-1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1fa6718e158df40f744606da9f709bd5033" prot="public">
+          <name>BASE_10ms</name>
+          <initializer>= (720000	-1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1fa43360859fc9735ffde1598b6b5966d41" prot="public">
+          <name>BASE_1ms</name>
+          <initializer>= (72000	-1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1fa75ddb29f4be16d97e375b69c91437c30" prot="public">
+          <name>BASE_100us</name>
+          <initializer>= (7200		-1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1fa5411180f8a5470c970b32b76019ac4fb" prot="public">
+          <name>BASE_10us</name>
+          <initializer>= (720		-1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1faf9bce33f56e5b57830ce9df7b0057947" prot="public">
+          <name>BASE_1us</name>
+          <initializer>= (72			-1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SysClock.h" line="7" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SysClock.h" bodystart="7" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SysClock_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SysClock_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_micro_8h" kindref="compound">Micro.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_g_p_i_o_8h" kindref="compound">GPIO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1fa2bcdfedc316cba441582940983fae81d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1fa2bcdfedc316cba441582940983fae81d" kindref="member">BASE_100ms</ref><sp/><sp/>=<sp/>(7200000-1),<sp/><sp/></highlight></codeline>
+<codeline lineno="9" refid="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1fa6718e158df40f744606da9f709bd5033" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1fa6718e158df40f744606da9f709bd5033" kindref="member">BASE_10ms</ref><sp/><sp/><sp/>=<sp/>(720000<sp/><sp/><sp/>-1),</highlight></codeline>
+<codeline lineno="10" refid="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1fa43360859fc9735ffde1598b6b5966d41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1fa43360859fc9735ffde1598b6b5966d41" kindref="member">BASE_1ms</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(72000<sp/><sp/><sp/><sp/>-1),</highlight></codeline>
+<codeline lineno="11" refid="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1fa75ddb29f4be16d97e375b69c91437c30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1fa75ddb29f4be16d97e375b69c91437c30" kindref="member">BASE_100us</ref><sp/><sp/>=<sp/>(7200<sp/><sp/><sp/><sp/><sp/>-1),</highlight></codeline>
+<codeline lineno="12" refid="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1fa5411180f8a5470c970b32b76019ac4fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1fa5411180f8a5470c970b32b76019ac4fb" kindref="member">BASE_10us</ref><sp/><sp/><sp/>=<sp/>(720<sp/><sp/><sp/><sp/><sp/><sp/>-1),</highlight></codeline>
+<codeline lineno="13" refid="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1faf9bce33f56e5b57830ce9df7b0057947" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1faf9bce33f56e5b57830ce9df7b0057947" kindref="member">BASE_1us</ref><sp/><sp/><sp/><sp/>=<sp/>(72<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-1),</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}<ref refid="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1f" kindref="member">SysTickBaseTimeEnum</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_sys_clock" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/><sp/><sp/></highlight><highlight class="normal"><ref refid="class_sys_clock" kindref="compound">SysClock</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>HSEClockInit();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sys_clock_1a1a126a29d38a7ca94c53f3f530404286" kindref="member">SysClock</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sys_clock_1a06d3c5e27e705ecad0676ba8cb2f34e2" kindref="member">SysClockInit</ref>();<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Initillizes<sp/>the<sp/>clock<sp/>as<sp/>72MHz<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sys_clock_1adae8f5e4cf26f51d0dfdc8dca6ef51cb" kindref="member">MCO</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Config.<sp/>PA8<sp/>as<sp/>a<sp/>output<sp/>clock<sp/>source</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sys_clock_1ab2cb3079470ad249b66d23a324f9669e" kindref="member">SysTickInit</ref>(<ref refid="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1f" kindref="member">SysTickBaseTimeEnum</ref><sp/>BASE_TIME);<sp/></highlight><highlight class="comment">//Initialize<sp/>the<sp/>SysTick</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_sys_clock_1a8ea5a058704b60f85a1aabeb32077f1d" kindref="member">SysTickGetEvent</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SysClock.h"/>
+  </compounddef>
+</doxygen>

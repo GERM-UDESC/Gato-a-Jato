@@ -6,8 +6,9 @@
 #include "math.h"
 
 #define L 0.069
-#define angleCorrection 1//.125
-#define distanceCorrection 1//.093
+#define comprimento 0.105
+#define angleCorrection 1 //use for calibration
+#define distanceCorrection 1
 #define angleFilterOrder 2
 
 #define integrationTime Time_between_int/1000000
@@ -35,6 +36,8 @@ class Kinematic
 		
 		float xPos{0};
 		float yPos{0};
+		float xPosSensor{0};
+		float yPosSensor{0};
 		float angle[angleFilterOrder]{0};
 		float filteredAngle{0};
 		

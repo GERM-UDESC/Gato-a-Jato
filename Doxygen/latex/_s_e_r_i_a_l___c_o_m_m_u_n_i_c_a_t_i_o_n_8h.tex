@@ -1,0 +1,143 @@
+\hypertarget{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h}{}\doxysection{C\+:/\+Users/bruno/\+Documents/\+Line\+Follower/\+Project\+\_\+u\+Vision/\+Line\+Follower/\+S\+E\+R\+I\+A\+L\+\_\+\+C\+O\+M\+M\+U\+N\+I\+C\+A\+T\+I\+ON.h File Reference}
+\label{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h}\index{C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/SERIAL\_COMMUNICATION.h@{C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/SERIAL\_COMMUNICATION.h}}
+{\ttfamily \#include \char`\"{}F\+O\+L\+L\+O\+W\+I\+N\+G\+\_\+\+C\+O\+N\+T\+R\+O\+L\+E\+R.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}U\+S\+A\+R\+T.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_communication}{Communication}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_af6f19c3204394ef9cc358ef3c3d45c05}{sampling\+Time}}~7
+\item 
+\#define \mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a6c5c95258c8d97c1b2998ddc227c8b56}{bits\+To\+Send}}~(\mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_af6f19c3204394ef9cc358ef3c3d45c05}{sampling\+Time}}$\ast$1000000)/(\mbox{\hyperlink{_t_i_m_e_r_8h_a3d4ab76c869e227bc5373ba193e3986e}{Time\+\_\+between\+\_\+int}})
+\item 
+\#define \mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a3e57a4126d44752d64b4fe87f6ca3fb9}{sending\+Time}}~\mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a6c5c95258c8d97c1b2998ddc227c8b56}{bits\+To\+Send}}$\ast$\mbox{\hyperlink{_t_i_m_e_r_8h_a3d4ab76c869e227bc5373ba193e3986e}{Time\+\_\+between\+\_\+int}}/1000000
+\item 
+\#define \mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a233ef9e4cd78e463f9bf615da6a6d9f4}{robot\+Stop}}~0
+\item 
+\#define \mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a8c50f0a1dea208d6d786a6cd447ae848}{robot\+Run}}~1
+\item 
+\#define \mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_aaba215882ef3e02a8c8211574e7a240e}{send\+V\+\_\+W}}~2
+\item 
+\#define \mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a3de2de8be5f87f41eeb2ca689f3cc022}{send\+V\+\_\+\+Wcontrol}}~3
+\item 
+\#define \mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a3a530a86959873522f3e212a3489b016}{send\+V\+\_\+\+W\+\_\+and\+\_\+\+V\+\_\+\+Wcontrol}}~4
+\item 
+\#define \mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a40a7fb1b97d02a28d20611f862d44536}{send\+Line\+Reading}}~5
+\item 
+\#define \mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_ad81577ed48d151c06969c1d7cbad6066}{send\+Motors\+Speed}}~6
+\item 
+\#define \mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a4de49ea511d62ee9f9e3eaca5312ca25}{send\+Motors\+Speed\+And\+Control}}~7
+\item 
+\#define \mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a722b21cd17abdb8043c2055599a28ad6}{send\+Motors\+Speed\+Control\+And\+Errors}}~8
+\item 
+\#define \mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_af7548683eddf2ea9e358d20d0750ddc0}{send\+Everything}}~9
+\item 
+\#define \mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a7149eb67637d966132dd6eab515e66b3}{send\+Position\+And\+Orientation}}~10
+\item 
+\#define \mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a0d7be4eec553109d888e1d36b7483f46}{send\+P\+W\+Mand\+Encoder\+Data\+Right}}~11
+\item 
+\#define \mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a6b511b2271c64938b25bd4e12472d547}{send\+Motor\+Ddata}}~12
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a6c5c95258c8d97c1b2998ddc227c8b56}\label{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a6c5c95258c8d97c1b2998ddc227c8b56}} 
+\index{SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}!bitsToSend@{bitsToSend}}
+\index{bitsToSend@{bitsToSend}!SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}}
+\doxysubsubsection{\texorpdfstring{bitsToSend}{bitsToSend}}
+{\footnotesize\ttfamily \#define bits\+To\+Send~(\mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_af6f19c3204394ef9cc358ef3c3d45c05}{sampling\+Time}}$\ast$1000000)/(\mbox{\hyperlink{_t_i_m_e_r_8h_a3d4ab76c869e227bc5373ba193e3986e}{Time\+\_\+between\+\_\+int}})}
+
+\mbox{\Hypertarget{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a8c50f0a1dea208d6d786a6cd447ae848}\label{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a8c50f0a1dea208d6d786a6cd447ae848}} 
+\index{SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}!robotRun@{robotRun}}
+\index{robotRun@{robotRun}!SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}}
+\doxysubsubsection{\texorpdfstring{robotRun}{robotRun}}
+{\footnotesize\ttfamily \#define robot\+Run~1}
+
+\mbox{\Hypertarget{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a233ef9e4cd78e463f9bf615da6a6d9f4}\label{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a233ef9e4cd78e463f9bf615da6a6d9f4}} 
+\index{SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}!robotStop@{robotStop}}
+\index{robotStop@{robotStop}!SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}}
+\doxysubsubsection{\texorpdfstring{robotStop}{robotStop}}
+{\footnotesize\ttfamily \#define robot\+Stop~0}
+
+\mbox{\Hypertarget{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_af6f19c3204394ef9cc358ef3c3d45c05}\label{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_af6f19c3204394ef9cc358ef3c3d45c05}} 
+\index{SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}!samplingTime@{samplingTime}}
+\index{samplingTime@{samplingTime}!SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}}
+\doxysubsubsection{\texorpdfstring{samplingTime}{samplingTime}}
+{\footnotesize\ttfamily \#define sampling\+Time~7}
+
+\mbox{\Hypertarget{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_af7548683eddf2ea9e358d20d0750ddc0}\label{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_af7548683eddf2ea9e358d20d0750ddc0}} 
+\index{SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}!sendEverything@{sendEverything}}
+\index{sendEverything@{sendEverything}!SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}}
+\doxysubsubsection{\texorpdfstring{sendEverything}{sendEverything}}
+{\footnotesize\ttfamily \#define send\+Everything~9}
+
+\mbox{\Hypertarget{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a3e57a4126d44752d64b4fe87f6ca3fb9}\label{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a3e57a4126d44752d64b4fe87f6ca3fb9}} 
+\index{SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}!sendingTime@{sendingTime}}
+\index{sendingTime@{sendingTime}!SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}}
+\doxysubsubsection{\texorpdfstring{sendingTime}{sendingTime}}
+{\footnotesize\ttfamily \#define sending\+Time~\mbox{\hyperlink{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a6c5c95258c8d97c1b2998ddc227c8b56}{bits\+To\+Send}}$\ast$\mbox{\hyperlink{_t_i_m_e_r_8h_a3d4ab76c869e227bc5373ba193e3986e}{Time\+\_\+between\+\_\+int}}/1000000}
+
+\mbox{\Hypertarget{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a40a7fb1b97d02a28d20611f862d44536}\label{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a40a7fb1b97d02a28d20611f862d44536}} 
+\index{SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}!sendLineReading@{sendLineReading}}
+\index{sendLineReading@{sendLineReading}!SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}}
+\doxysubsubsection{\texorpdfstring{sendLineReading}{sendLineReading}}
+{\footnotesize\ttfamily \#define send\+Line\+Reading~5}
+
+\mbox{\Hypertarget{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a6b511b2271c64938b25bd4e12472d547}\label{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a6b511b2271c64938b25bd4e12472d547}} 
+\index{SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}!sendMotorDdata@{sendMotorDdata}}
+\index{sendMotorDdata@{sendMotorDdata}!SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}}
+\doxysubsubsection{\texorpdfstring{sendMotorDdata}{sendMotorDdata}}
+{\footnotesize\ttfamily \#define send\+Motor\+Ddata~12}
+
+\mbox{\Hypertarget{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_ad81577ed48d151c06969c1d7cbad6066}\label{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_ad81577ed48d151c06969c1d7cbad6066}} 
+\index{SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}!sendMotorsSpeed@{sendMotorsSpeed}}
+\index{sendMotorsSpeed@{sendMotorsSpeed}!SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}}
+\doxysubsubsection{\texorpdfstring{sendMotorsSpeed}{sendMotorsSpeed}}
+{\footnotesize\ttfamily \#define send\+Motors\+Speed~6}
+
+\mbox{\Hypertarget{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a4de49ea511d62ee9f9e3eaca5312ca25}\label{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a4de49ea511d62ee9f9e3eaca5312ca25}} 
+\index{SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}!sendMotorsSpeedAndControl@{sendMotorsSpeedAndControl}}
+\index{sendMotorsSpeedAndControl@{sendMotorsSpeedAndControl}!SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}}
+\doxysubsubsection{\texorpdfstring{sendMotorsSpeedAndControl}{sendMotorsSpeedAndControl}}
+{\footnotesize\ttfamily \#define send\+Motors\+Speed\+And\+Control~7}
+
+\mbox{\Hypertarget{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a722b21cd17abdb8043c2055599a28ad6}\label{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a722b21cd17abdb8043c2055599a28ad6}} 
+\index{SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}!sendMotorsSpeedControlAndErrors@{sendMotorsSpeedControlAndErrors}}
+\index{sendMotorsSpeedControlAndErrors@{sendMotorsSpeedControlAndErrors}!SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}}
+\doxysubsubsection{\texorpdfstring{sendMotorsSpeedControlAndErrors}{sendMotorsSpeedControlAndErrors}}
+{\footnotesize\ttfamily \#define send\+Motors\+Speed\+Control\+And\+Errors~8}
+
+\mbox{\Hypertarget{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a7149eb67637d966132dd6eab515e66b3}\label{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a7149eb67637d966132dd6eab515e66b3}} 
+\index{SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}!sendPositionAndOrientation@{sendPositionAndOrientation}}
+\index{sendPositionAndOrientation@{sendPositionAndOrientation}!SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}}
+\doxysubsubsection{\texorpdfstring{sendPositionAndOrientation}{sendPositionAndOrientation}}
+{\footnotesize\ttfamily \#define send\+Position\+And\+Orientation~10}
+
+\mbox{\Hypertarget{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a0d7be4eec553109d888e1d36b7483f46}\label{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a0d7be4eec553109d888e1d36b7483f46}} 
+\index{SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}!sendPWMandEncoderDataRight@{sendPWMandEncoderDataRight}}
+\index{sendPWMandEncoderDataRight@{sendPWMandEncoderDataRight}!SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}}
+\doxysubsubsection{\texorpdfstring{sendPWMandEncoderDataRight}{sendPWMandEncoderDataRight}}
+{\footnotesize\ttfamily \#define send\+P\+W\+Mand\+Encoder\+Data\+Right~11}
+
+\mbox{\Hypertarget{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_aaba215882ef3e02a8c8211574e7a240e}\label{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_aaba215882ef3e02a8c8211574e7a240e}} 
+\index{SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}!sendV\_W@{sendV\_W}}
+\index{sendV\_W@{sendV\_W}!SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}}
+\doxysubsubsection{\texorpdfstring{sendV\_W}{sendV\_W}}
+{\footnotesize\ttfamily \#define send\+V\+\_\+W~2}
+
+\mbox{\Hypertarget{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a3a530a86959873522f3e212a3489b016}\label{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a3a530a86959873522f3e212a3489b016}} 
+\index{SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}!sendV\_W\_and\_V\_Wcontrol@{sendV\_W\_and\_V\_Wcontrol}}
+\index{sendV\_W\_and\_V\_Wcontrol@{sendV\_W\_and\_V\_Wcontrol}!SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}}
+\doxysubsubsection{\texorpdfstring{sendV\_W\_and\_V\_Wcontrol}{sendV\_W\_and\_V\_Wcontrol}}
+{\footnotesize\ttfamily \#define send\+V\+\_\+\+W\+\_\+and\+\_\+\+V\+\_\+\+Wcontrol~4}
+
+\mbox{\Hypertarget{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a3de2de8be5f87f41eeb2ca689f3cc022}\label{_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h_a3de2de8be5f87f41eeb2ca689f3cc022}} 
+\index{SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}!sendV\_Wcontrol@{sendV\_Wcontrol}}
+\index{sendV\_Wcontrol@{sendV\_Wcontrol}!SERIAL\_COMMUNICATION.h@{SERIAL\_COMMUNICATION.h}}
+\doxysubsubsection{\texorpdfstring{sendV\_Wcontrol}{sendV\_Wcontrol}}
+{\footnotesize\ttfamily \#define send\+V\+\_\+\+Wcontrol~3}
+

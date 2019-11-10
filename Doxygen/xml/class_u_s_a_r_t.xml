@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_u_s_a_r_t" kind="class" language="C++" prot="public">
+    <compoundname>USART</compoundname>
+    <includes refid="_u_s_a_r_t_8h" local="no">USART.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_u_s_a_r_t_1a3329b62efbf637005c81a183063e0f07" prot="private" static="no" mutable="no">
+        <type><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref></type>
+        <definition>GPIO USART::TX_Port</definition>
+        <argsstring></argsstring>
+        <name>TX_Port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" line="24" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_s_a_r_t_1a630fa940becce948ef0f29b044be3754" prot="private" static="no" mutable="no">
+        <type><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref></type>
+        <definition>GPIO USART::RX_Port</definition>
+        <argsstring></argsstring>
+        <name>RX_Port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" line="25" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_u_s_a_r_t_1a2742f89a096789094563aef1e0390337" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_u_s_a_r_t___type_def" kindref="compound">USART_TypeDef</ref> *</type>
+        <definition>USART_TypeDef* USART::Usart</definition>
+        <argsstring></argsstring>
+        <name>Usart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" line="26" column="15" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_u_s_a_r_t_1a254a715cc56e71b0c769cbf55b8bb76a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USART::init</definition>
+        <argsstring>(BD_ENUM Baud_Rate)</argsstring>
+        <name>init</name>
+        <param>
+          <type><ref refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5" kindref="member">BD_ENUM</ref></type>
+          <declname>Baud_Rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" line="27" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.cpp" bodystart="9" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_u_s_a_r_t_1a313f3a3aedc50a08e02bc290ad976dd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>USART::USART</definition>
+        <argsstring>(USART_TypeDef *Usart, BD_ENUM Baud_Rate)</argsstring>
+        <name>USART</name>
+        <param>
+          <type><ref refid="struct_u_s_a_r_t___type_def" kindref="compound">USART_TypeDef</ref> *</type>
+          <declname>Usart</declname>
+        </param>
+        <param>
+          <type><ref refid="_u_s_a_r_t_8h_1ae4ce6df2a0832aa5a4a2dcce046a07c5" kindref="member">BD_ENUM</ref></type>
+          <declname>Baud_Rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" line="30" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.cpp" bodystart="3" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_s_a_r_t_1a06aaff358bf6c3f8b3a90e4c75637d3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USART::Send</definition>
+        <argsstring>(char value)</argsstring>
+        <name>Send</name>
+        <param>
+          <type>char</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" line="31" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.cpp" bodystart="68" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_s_a_r_t_1a0386d250e95ddee0a18af50b03a90b3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USART::Send_Vec_16</definition>
+        <argsstring>(uint16_t *ptVec, uint16_t size)</argsstring>
+        <name>Send_Vec_16</name>
+        <param>
+          <type>uint16_t *</type>
+          <declname>ptVec</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" line="32" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.cpp" bodystart="74" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_s_a_r_t_1afa60575197efa986e703ac8d7c7ee2c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USART::sendFloat</definition>
+        <argsstring>(float *ptFloat)</argsstring>
+        <name>sendFloat</name>
+        <param>
+          <type>float *</type>
+          <declname>ptFloat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" line="33" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.cpp" bodystart="92" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_s_a_r_t_1a2c094ea757fcaa115a2666b63c04bdc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USART::sendUint32</definition>
+        <argsstring>(uint32_t *ptUint32)</argsstring>
+        <name>sendUint32</name>
+        <param>
+          <type>uint32_t *</type>
+          <declname>ptUint32</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" line="34" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.cpp" bodystart="102" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_s_a_r_t_1a2d7f12cb4eba15596d24369ca0cae74b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void USART::sendUint16</definition>
+        <argsstring>(uint16_t *ptUint16)</argsstring>
+        <name>sendUint16</name>
+        <param>
+          <type>uint16_t *</type>
+          <declname>ptUint16</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" line="35" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.cpp" bodystart="84" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_s_a_r_t_1a82f94a8c4d58d078dc9e1d43d748eb5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t USART::Receive</definition>
+        <argsstring>()</argsstring>
+        <name>Receive</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" line="36" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.cpp" bodystart="114" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_u_s_a_r_t_1a29a0fb6eac4d03228e43417da86110fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool USART::Available</definition>
+        <argsstring>()</argsstring>
+        <name>Available</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" line="37" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.cpp" bodystart="121" bodyend="125"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" line="22" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h" bodystart="21" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_u_s_a_r_t_1a29a0fb6eac4d03228e43417da86110fb" prot="public" virt="non-virtual"><scope>USART</scope><name>Available</name></member>
+      <member refid="class_u_s_a_r_t_1a254a715cc56e71b0c769cbf55b8bb76a" prot="private" virt="non-virtual"><scope>USART</scope><name>init</name></member>
+      <member refid="class_u_s_a_r_t_1a82f94a8c4d58d078dc9e1d43d748eb5a" prot="public" virt="non-virtual"><scope>USART</scope><name>Receive</name></member>
+      <member refid="class_u_s_a_r_t_1a630fa940becce948ef0f29b044be3754" prot="private" virt="non-virtual"><scope>USART</scope><name>RX_Port</name></member>
+      <member refid="class_u_s_a_r_t_1a06aaff358bf6c3f8b3a90e4c75637d3f" prot="public" virt="non-virtual"><scope>USART</scope><name>Send</name></member>
+      <member refid="class_u_s_a_r_t_1a0386d250e95ddee0a18af50b03a90b3a" prot="public" virt="non-virtual"><scope>USART</scope><name>Send_Vec_16</name></member>
+      <member refid="class_u_s_a_r_t_1afa60575197efa986e703ac8d7c7ee2c6" prot="public" virt="non-virtual"><scope>USART</scope><name>sendFloat</name></member>
+      <member refid="class_u_s_a_r_t_1a2d7f12cb4eba15596d24369ca0cae74b" prot="public" virt="non-virtual"><scope>USART</scope><name>sendUint16</name></member>
+      <member refid="class_u_s_a_r_t_1a2c094ea757fcaa115a2666b63c04bdc9" prot="public" virt="non-virtual"><scope>USART</scope><name>sendUint32</name></member>
+      <member refid="class_u_s_a_r_t_1a3329b62efbf637005c81a183063e0f07" prot="private" virt="non-virtual"><scope>USART</scope><name>TX_Port</name></member>
+      <member refid="class_u_s_a_r_t_1a2742f89a096789094563aef1e0390337" prot="private" virt="non-virtual"><scope>USART</scope><name>Usart</name></member>
+      <member refid="class_u_s_a_r_t_1a313f3a3aedc50a08e02bc290ad976dd2" prot="public" virt="non-virtual"><scope>USART</scope><name>USART</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

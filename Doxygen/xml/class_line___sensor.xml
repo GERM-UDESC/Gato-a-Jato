@@ -1,0 +1,242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_line___sensor" kind="class" language="C++" prot="public">
+    <compoundname>Line_Sensor</compoundname>
+    <derivedcompoundref refid="class_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h" prot="private" virt="non-virtual">ANGLE_LINE_SENSOR_H</derivedcompoundref>
+    <includes refid="_l_i_n_e___s_e_n_s_o_r_8h" local="no">LINE_SENSOR.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_line___sensor_1a0bac2580964e364e5bbc94a73c79fc58" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Line_Sensor::last_error</definition>
+        <argsstring></argsstring>
+        <name>last_error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" line="12" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line___sensor_1aee1382e45a1c90a88b5d96134fdb344d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Line_Sensor::erro[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>erro</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" line="13" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line___sensor_1a9ab4ff4a5afb9d647c90ddbc0879200f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Line_Sensor::filteredError</definition>
+        <argsstring></argsstring>
+        <name>filteredError</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" line="13" column="12" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line___sensor_1aca52313b327a263a85299c9e4b279126" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Line_Sensor::media</definition>
+        <argsstring></argsstring>
+        <name>media</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" line="14" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line___sensor_1a72f4bae15247d35528e78771372f0cfc" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Line_Sensor::sensor_values[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>sensor_values</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" line="15" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_line___sensor_1a4c5ab337824eea1590e7ff218e4b001e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Line_Sensor::soma</definition>
+        <argsstring></argsstring>
+        <name>soma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" line="16" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_line___sensor_1a8fd57f9ca9bfcadfb292eadf911167b6" prot="public" static="no" mutable="no">
+        <type><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref></type>
+        <definition>Reflectance_Sensor Line_Sensor::Sensors[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>Sensors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" line="24" column="20" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_line___sensor_1a95601c1a8c6415dcbbcbb14f208c546a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Line_Sensor::Line_Sensor</definition>
+        <argsstring>(Reflectance_Sensor Sensor1, Reflectance_Sensor Sensor2, Reflectance_Sensor Sensor3, Reflectance_Sensor Sensor4, Reflectance_Sensor Sensor5, Reflectance_Sensor Sensor6, Reflectance_Sensor Sensor7, Reflectance_Sensor Sensor8)</argsstring>
+        <name>Line_Sensor</name>
+        <param>
+          <type><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref></type>
+          <declname>Sensor1</declname>
+        </param>
+        <param>
+          <type><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref></type>
+          <declname>Sensor2</declname>
+        </param>
+        <param>
+          <type><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref></type>
+          <declname>Sensor3</declname>
+        </param>
+        <param>
+          <type><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref></type>
+          <declname>Sensor4</declname>
+        </param>
+        <param>
+          <type><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref></type>
+          <declname>Sensor5</declname>
+        </param>
+        <param>
+          <type><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref></type>
+          <declname>Sensor6</declname>
+        </param>
+        <param>
+          <type><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref></type>
+          <declname>Sensor7</declname>
+        </param>
+        <param>
+          <type><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref></type>
+          <declname>Sensor8</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" line="21" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.cpp" bodystart="3" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line___sensor_1a910b78d932671acd52a33d9c55ecf760" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Line_Sensor::Line_Sensor</definition>
+        <argsstring>(Line_Sensor *lineSensor)</argsstring>
+        <name>Line_Sensor</name>
+        <param>
+          <type><ref refid="class_line___sensor" kindref="compound">Line_Sensor</ref> *</type>
+          <declname>lineSensor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" line="23" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.cpp" bodystart="15" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line___sensor_1a0479898aafb6ecc493c2974d20d38a70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Line_Sensor::calibrate</definition>
+        <argsstring>(uint32_t iterations)</argsstring>
+        <name>calibrate</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>iterations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" line="25" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.cpp" bodystart="26" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_line___sensor_1aa35bdfbabbe89e69c3c17fd9792a84d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Line_Sensor::read</definition>
+        <argsstring>()</argsstring>
+        <name>read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" line="26" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.cpp" bodystart="37" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ANGLE_LINE_SENSOR_H</label>
+        <link refid="class_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h"/>
+        <childnode refid="1" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Line_Sensor</label>
+        <link refid="class_line___sensor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Line_Sensor</label>
+        <link refid="class_line___sensor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Sensors</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Reflectance_Sensor</label>
+        <link refid="class_reflectance___sensor"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" line="10" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" bodystart="9" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_line___sensor_1a0479898aafb6ecc493c2974d20d38a70" prot="public" virt="non-virtual"><scope>Line_Sensor</scope><name>calibrate</name></member>
+      <member refid="class_line___sensor_1aee1382e45a1c90a88b5d96134fdb344d" prot="private" virt="non-virtual"><scope>Line_Sensor</scope><name>erro</name></member>
+      <member refid="class_line___sensor_1a9ab4ff4a5afb9d647c90ddbc0879200f" prot="private" virt="non-virtual"><scope>Line_Sensor</scope><name>filteredError</name></member>
+      <member refid="class_line___sensor_1a0bac2580964e364e5bbc94a73c79fc58" prot="private" virt="non-virtual"><scope>Line_Sensor</scope><name>last_error</name></member>
+      <member refid="class_line___sensor_1a95601c1a8c6415dcbbcbb14f208c546a" prot="public" virt="non-virtual"><scope>Line_Sensor</scope><name>Line_Sensor</name></member>
+      <member refid="class_line___sensor_1a910b78d932671acd52a33d9c55ecf760" prot="public" virt="non-virtual"><scope>Line_Sensor</scope><name>Line_Sensor</name></member>
+      <member refid="class_line___sensor_1aca52313b327a263a85299c9e4b279126" prot="private" virt="non-virtual"><scope>Line_Sensor</scope><name>media</name></member>
+      <member refid="class_line___sensor_1aa35bdfbabbe89e69c3c17fd9792a84d2" prot="public" virt="non-virtual"><scope>Line_Sensor</scope><name>read</name></member>
+      <member refid="class_line___sensor_1a72f4bae15247d35528e78771372f0cfc" prot="private" virt="non-virtual"><scope>Line_Sensor</scope><name>sensor_values</name></member>
+      <member refid="class_line___sensor_1a8fd57f9ca9bfcadfb292eadf911167b6" prot="public" virt="non-virtual"><scope>Line_Sensor</scope><name>Sensors</name></member>
+      <member refid="class_line___sensor_1a4c5ab337824eea1590e7ff218e4b001e" prot="private" virt="non-virtual"><scope>Line_Sensor</scope><name>soma</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

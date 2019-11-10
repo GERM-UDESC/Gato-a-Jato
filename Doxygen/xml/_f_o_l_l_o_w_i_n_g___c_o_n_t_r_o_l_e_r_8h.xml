@@ -1,0 +1,386 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h" kind="file" language="C++">
+    <compoundname>FOLLOWING_CONTROLER.h</compoundname>
+    <includes refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h" local="yes">KINEMATIC_CONTROL.h</includes>
+    <includes local="yes">math.h</includes>
+    <includedby refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp</includedby>
+    <includedby refid="malha__fechada_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</includedby>
+    <includedby refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>REFLECTANCE_SENSOR.h</label>
+        <link refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>stdint.h</label>
+      </node>
+      <node id="12">
+        <label>ADC.h</label>
+        <link refid="_a_d_c_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MOTOR.h</label>
+        <link refid="_m_o_t_o_r_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>TIMER.h</label>
+        <link refid="_t_i_m_e_r_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>PWM.h</label>
+        <link refid="_p_w_m_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ENCODER.h</label>
+        <link refid="_e_n_c_o_d_e_r_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>KINEMATIC_CONTROL.h</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>math.h</label>
+      </node>
+      <node id="6">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>LINE_SENSOR.h</label>
+        <link refid="_l_i_n_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</label>
+        <link refid="malha__fechada_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8cpp"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.cpp</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_controller" prot="public">Controller</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1a9751a37abbbd9680f3c0cc311573efdf" prot="public" static="no">
+        <name>Kx</name>
+        <initializer>60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="9" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1a830e7c52df9ae715867b447c75db7466" prot="public" static="no">
+        <name>Ky</name>
+        <initializer>900</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="10" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1a6af057e6ae3c603c5dd46c1b5dbab735" prot="public" static="no">
+        <name>Kteta</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="12" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1ab45eb721b96f7dc4898425c6bdc0ae49" prot="public" static="no">
+        <name>K4</name>
+        <initializer>400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="13" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1aadecb1977e30da2f62766f1fcb8b1f95" prot="public" static="no">
+        <name>K1</name>
+        <initializer><ref refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1a9751a37abbbd9680f3c0cc311573efdf" kindref="member">Kx</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="14" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1ab6d0e745059aded06587e4b6933bca0b" prot="public" static="no">
+        <name>K2</name>
+        <initializer><ref refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1a830e7c52df9ae715867b447c75db7466" kindref="member">Ky</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="15" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1aa6d1b6ea9feee250d0e41586bd39d654" prot="public" static="no">
+        <name>K3</name>
+        <initializer>Kz</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="16" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1a2ce2a27cb06d247c2851fda21a7ac7ed" prot="public" static="no">
+        <name>Kxk</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="18" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1ab596be2bae35e8db2a348867a68c10b5" prot="public" static="no">
+        <name>Kyk</name>
+        <initializer>200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="19" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1aa3a249f66ead87b07d84f304d20c36df" prot="public" static="no">
+        <name>Ktetak</name>
+        <initializer>0.01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="20" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1a1f9d0c60b647fe4d3db7eb9499b8b661" prot="public" static="no">
+        <name>K4k</name>
+        <initializer>0.001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="21" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1ae15a52f722f00ef3c30b6cd77e2220b2" prot="public" static="no">
+        <name>K1a</name>
+        <initializer>22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="23" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1a92fb4468199f4856c4783758e8ff2a00" prot="public" static="no">
+        <name>K2a</name>
+        <initializer>1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="24" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1ad11c7628a847ad701d4a1aa05b7a937f" prot="public" static="no">
+        <name>v_ref_ini</name>
+        <initializer>0.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="26" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1a49de2ac00d565ed4f00462f2c96fa16d" prot="public" static="no">
+        <name>w_ref_ini</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="27" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>FOLLOWING_CONTROLER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FOLLOWING_CONTROLER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h" kindref="compound">KINEMATIC_CONTROL.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;math.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//Parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//Kanayama</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1a9751a37abbbd9680f3c0cc311573efdf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Kx<sp/>60</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1a830e7c52df9ae715867b447c75db7466" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Ky<sp/>900</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>Kteta<sp/>22</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1a6af057e6ae3c603c5dd46c1b5dbab735" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Kteta<sp/>20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1ab45eb721b96f7dc4898425c6bdc0ae49" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>K4<sp/>400</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1aadecb1977e30da2f62766f1fcb8b1f95" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>K1<sp/>Kx</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1ab6d0e745059aded06587e4b6933bca0b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>K2<sp/>Ky</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1aa6d1b6ea9feee250d0e41586bd39d654" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>K3<sp/>Kz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1a2ce2a27cb06d247c2851fda21a7ac7ed" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Kxk<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1ab596be2bae35e8db2a348867a68c10b5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Kyk<sp/>200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1aa3a249f66ead87b07d84f304d20c36df" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Ktetak<sp/>0.01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1a1f9d0c60b647fe4d3db7eb9499b8b661" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>K4k<sp/>0.001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1ae15a52f722f00ef3c30b6cd77e2220b2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>K1a<sp/>22</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1a92fb4468199f4856c4783758e8ff2a00" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>K2a<sp/>1000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1ad11c7628a847ad701d4a1aa05b7a937f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>v_ref_ini<sp/>0.5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1a49de2ac00d565ed4f00462f2c96fa16d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>w_ref_ini<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_controller" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_controller" kindref="compound">Controller</ref></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_controller" kindref="compound">Controller</ref><sp/>*ptController;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Handler();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>xe{0};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>ye{0};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>tetae{0};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>xep{0};</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>yep{0};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>tetaep{0};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lastTetae{0};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>v_ref{<ref refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1ad11c7628a847ad701d4a1aa05b7a937f" kindref="member">v_ref_ini</ref>};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>desired_v{<ref refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1ad11c7628a847ad701d4a1aa05b7a937f" kindref="member">v_ref_ini</ref>};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w_ref{<ref refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h_1a49de2ac00d565ed4f00462f2c96fa16d" kindref="member">w_ref_ini</ref>};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>v{0};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>w{0};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vc{0};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>wc{0};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vcp{0};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>wcp{0};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>kanayama_control();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>fierro_control();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>article_control();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>calculateError();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="61" refid="class_controller_1adde90eb65a82d95773067bff39442655" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_kinematic" kindref="compound">Kinematic</ref><sp/><ref refid="class_controller_1adde90eb65a82d95773067bff39442655" kindref="member">Robot</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_controller_1a5d8197a059ed4eb34d3e8636240f4054" kindref="member">Controller</ref>(<ref refid="class_kinematic" kindref="compound">Kinematic</ref><sp/><ref refid="class_controller_1adde90eb65a82d95773067bff39442655" kindref="member">Robot</ref>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controller_1aa5ad9ad11dd6fc7973c1ec737679ab25" kindref="member">HandlerByTime</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controller_1a9605194ba9762e08def2c78be58033c6" kindref="member">setSpeedRef</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vr,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>wr);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controller_1ab3e96e958d21b9e481ea27c553da6de5" kindref="member">controlRule</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controller_1ab5515748f1b0c82f015e039c817ee5f7" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_controller_1a111a295d417256c64b8102f6e79daaf1" kindref="member">getVcontrol</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_controller_1ac926234ff88a982d07a97da7309a1e40" kindref="member">getWcontrol</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controller_1a1abef24ed38b6dc29dbfc250c561d162" kindref="member">start</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>vr,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>wr);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_controller_1ad2abd6ee544cb1cb39705f31c6700f0c" kindref="member">stop</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="struct_n_v_i_c___type" kind="struct" language="C++" prot="public">
+    <compoundname>NVIC_Type</compoundname>
+    <includes refid="_micro_8h" local="no">Micro.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1a000c09bee2a14c669d17c4ddd7fd28ae" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t NVIC_Type::ISER[8U]</definition>
+        <argsstring>[8U]</argsstring>
+        <name>ISER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x000 (R/W) Interrupt Set Enable Register </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="332" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1a93c66a8842929d5f8e0d691a97261cc2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t NVIC_Type::RESERVED0[24U]</definition>
+        <argsstring>[24U]</argsstring>
+        <name>RESERVED0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="333" column="18" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1ae04cb540ccae60778cd4b1de736e03e7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t NVIC_Type::ICER[8U]</definition>
+        <argsstring>[8U]</argsstring>
+        <name>ICER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x080 (R/W) Interrupt Clear Enable Register </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="334" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1af7bfc2f8bd72f5e3e472edb209d9876c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t NVIC_Type::RSERVED1[24U]</definition>
+        <argsstring>[24U]</argsstring>
+        <name>RSERVED1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="335" column="18" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1af304cd2bdcbf0ea42e3a618b459068ca" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t NVIC_Type::ISPR[8U]</definition>
+        <argsstring>[8U]</argsstring>
+        <name>ISPR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x100 (R/W) Interrupt Set Pending Register </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="336" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1a80bce60f3405a1cde3d621eea35ac6b6" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t NVIC_Type::RESERVED2[24U]</definition>
+        <argsstring>[24U]</argsstring>
+        <name>RESERVED2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="337" column="18" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1a645bdfc936519f964ff454732a1c4c1e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t NVIC_Type::ICPR[8U]</definition>
+        <argsstring>[8U]</argsstring>
+        <name>ICPR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x180 (R/W) Interrupt Clear Pending Register </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="338" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1adf6616e950b18b3ef9c9c64e535b3ee2" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t NVIC_Type::RESERVED3[24U]</definition>
+        <argsstring>[24U]</argsstring>
+        <name>RESERVED3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="339" column="18" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1aaffbfe74a31f8857f47c123c4f530b6a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t NVIC_Type::IABR[8U]</definition>
+        <argsstring>[8U]</argsstring>
+        <name>IABR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x200 (R/W) Interrupt Active bit Register </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="340" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1ade202178a4bd7c973b7db69d30046f50" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t NVIC_Type::RESERVED4[56U]</definition>
+        <argsstring>[56U]</argsstring>
+        <name>RESERVED4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="341" column="18" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1aae9107508ef117bb70373eaabba2fa10" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>volatile uint8_t NVIC_Type::IP[240U]</definition>
+        <argsstring>[240U]</argsstring>
+        <name>IP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0x300 (R/W) Interrupt Priority Register (8Bit wide) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="342" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1ab105e118183b4a205c3c1dddcea70d62" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t NVIC_Type::RESERVED5[644U]</definition>
+        <argsstring>[644U]</argsstring>
+        <name>RESERVED5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="343" column="18" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_n_v_i_c___type_1a1f096289b55386cf0df6d0e2483f2ea1" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t NVIC_Type::STIR</definition>
+        <argsstring></argsstring>
+        <name>STIR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Offset: 0xE00 ( /W) Software Trigger Interrupt Register </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="344" column="22" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="331" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="330" bodyend="345"/>
+    <listofallmembers>
+      <member refid="struct_n_v_i_c___type_1aaffbfe74a31f8857f47c123c4f530b6a" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>IABR</name></member>
+      <member refid="struct_n_v_i_c___type_1ae04cb540ccae60778cd4b1de736e03e7" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>ICER</name></member>
+      <member refid="struct_n_v_i_c___type_1a645bdfc936519f964ff454732a1c4c1e" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>ICPR</name></member>
+      <member refid="struct_n_v_i_c___type_1aae9107508ef117bb70373eaabba2fa10" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>IP</name></member>
+      <member refid="struct_n_v_i_c___type_1a000c09bee2a14c669d17c4ddd7fd28ae" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>ISER</name></member>
+      <member refid="struct_n_v_i_c___type_1af304cd2bdcbf0ea42e3a618b459068ca" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>ISPR</name></member>
+      <member refid="struct_n_v_i_c___type_1a93c66a8842929d5f8e0d691a97261cc2" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>RESERVED0</name></member>
+      <member refid="struct_n_v_i_c___type_1a80bce60f3405a1cde3d621eea35ac6b6" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>RESERVED2</name></member>
+      <member refid="struct_n_v_i_c___type_1adf6616e950b18b3ef9c9c64e535b3ee2" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>RESERVED3</name></member>
+      <member refid="struct_n_v_i_c___type_1ade202178a4bd7c973b7db69d30046f50" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>RESERVED4</name></member>
+      <member refid="struct_n_v_i_c___type_1ab105e118183b4a205c3c1dddcea70d62" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>RESERVED5</name></member>
+      <member refid="struct_n_v_i_c___type_1af7bfc2f8bd72f5e3e472edb209d9876c" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>RSERVED1</name></member>
+      <member refid="struct_n_v_i_c___type_1a1f096289b55386cf0df6d0e2483f2ea1" prot="public" virt="non-virtual"><scope>NVIC_Type</scope><name>STIR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

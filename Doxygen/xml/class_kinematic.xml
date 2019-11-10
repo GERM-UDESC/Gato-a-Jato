@@ -1,0 +1,551 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_kinematic" kind="class" language="C++" prot="public">
+    <compoundname>Kinematic</compoundname>
+    <includes refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h" local="no">KINEMATIC_CONTROL.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_kinematic_1ab047c05d32231b85ab66935b44e612ac" prot="public" static="no" mutable="no">
+        <type><ref refid="class_motor" kindref="compound">Motor</ref></type>
+        <definition>Motor Kinematic::motorD</definition>
+        <argsstring></argsstring>
+        <name>motorD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="25" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kinematic_1a3521b4d4fb6fcf2c59a70f963c92bfab" prot="public" static="no" mutable="no">
+        <type><ref refid="class_motor" kindref="compound">Motor</ref></type>
+        <definition>Motor Kinematic::motorE</definition>
+        <argsstring></argsstring>
+        <name>motorE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="26" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kinematic_1a17de469ec232aeba5598613cc3f070a4" prot="public" static="no" mutable="no">
+        <type><ref refid="class_line___sensor" kindref="compound">Line_Sensor</ref></type>
+        <definition>Line_Sensor Kinematic::lineSensor</definition>
+        <argsstring></argsstring>
+        <name>lineSensor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="27" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kinematic_1a9ae8eb50ddfa12c6d66db4669995fedc" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Kinematic::calibrationFinished</definition>
+        <argsstring></argsstring>
+        <name>calibrationFinished</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="29" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kinematic_1a9a5d752c2b6ec56ec808365ddf5cc580" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Kinematic::lineSensorReading</definition>
+        <argsstring></argsstring>
+        <name>lineSensorReading</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="31" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kinematic_1a54038680366aaa55e5fafaae1a44dce5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Kinematic::lastLineSensorReading</definition>
+        <argsstring></argsstring>
+        <name>lastLineSensorReading</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="32" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kinematic_1ab4f4b37d78e40a28d034fac022313183" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Kinematic::distance</definition>
+        <argsstring></argsstring>
+        <name>distance</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="33" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kinematic_1a35b0680ed1fb05c922dbbddf3b04da7c" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Kinematic::deltaDistance</definition>
+        <argsstring></argsstring>
+        <name>deltaDistance</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="33" column="16" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kinematic_1aa884b513403e058b6e0c745a236da6c7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Kinematic::lastDistance</definition>
+        <argsstring></argsstring>
+        <name>lastDistance</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="34" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kinematic_1a47739aebb18552c8ae499353761a9a4a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Kinematic::xPos</definition>
+        <argsstring></argsstring>
+        <name>xPos</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="36" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kinematic_1a19d7ec959e58681269fa6233a08e133e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Kinematic::yPos</definition>
+        <argsstring></argsstring>
+        <name>yPos</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="37" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kinematic_1a16fa421ad7f24f69364f0fce9a8cdd26" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Kinematic::angle[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>angle</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="38" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_kinematic_1a19ced79be5359939476b3b43741e42fa" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Kinematic::filteredAngle</definition>
+        <argsstring></argsstring>
+        <name>filteredAngle</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="39" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_kinematic_1af87a1cfe93c3caff778e1c2a716f5962" prot="public" static="yes" mutable="no">
+        <type><ref refid="class_kinematic" kindref="compound">Kinematic</ref> *</type>
+        <definition>Kinematic * Kinematic::ptRobot</definition>
+        <argsstring></argsstring>
+        <name>ptRobot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="42" column="18" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_kinematic_1a2a5a41a8e10aef52019f50ccbea38c72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Kinematic::handler</definition>
+        <argsstring>()</argsstring>
+        <name>handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="41" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp" bodystart="48" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_kinematic_1ae67640080d134cef3fbd3b793693a4a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Kinematic::Kinematic</definition>
+        <argsstring>(Motor motorD, Motor motorE, Line_Sensor lineSensor)</argsstring>
+        <name>Kinematic</name>
+        <param>
+          <type><ref refid="class_motor" kindref="compound">Motor</ref></type>
+          <declname>motorD</declname>
+        </param>
+        <param>
+          <type><ref refid="class_motor" kindref="compound">Motor</ref></type>
+          <declname>motorE</declname>
+        </param>
+        <param>
+          <type><ref refid="class_line___sensor" kindref="compound">Line_Sensor</ref></type>
+          <declname>lineSensor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="45" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp" bodystart="10" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_kinematic_1aba1a385a30c3e24692724f8778f97b18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Kinematic::Kinematic</definition>
+        <argsstring>(Kinematic *kinematic)</argsstring>
+        <name>Kinematic</name>
+        <param>
+          <type><ref refid="class_kinematic" kindref="compound">Kinematic</ref> *</type>
+          <declname>kinematic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="46" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp" bodystart="18" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_kinematic_1ab0473396a6b13fedf23941602e2283ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Kinematic::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="48" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp" bodystart="25" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_kinematic_1a6cc5ded243cb4c3d69b8b9196f11a8c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Kinematic::setSpeed</definition>
+        <argsstring>(float V, float w)</argsstring>
+        <name>setSpeed</name>
+        <param>
+          <type>float</type>
+          <declname>V</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="50" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_kinematic_1a470bcb5d12198f74e255015faf67c849" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Kinematic::getX</definition>
+        <argsstring>()</argsstring>
+        <name>getX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="52" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_kinematic_1ae3f570f42792d5ba2a760190fb66f2bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Kinematic::getY</definition>
+        <argsstring>()</argsstring>
+        <name>getY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="53" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_kinematic_1a7a677e002eed02afd3797e9356be9029" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Kinematic::getTeta</definition>
+        <argsstring>()</argsstring>
+        <name>getTeta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="54" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_kinematic_1ae2187b81fe2229b466c2d5b2630c2a0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Kinematic::getLineAngle</definition>
+        <argsstring>()</argsstring>
+        <name>getLineAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="56" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_kinematic_1a15aac52325458682957a28f2b049ef84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Kinematic::getLinePosition</definition>
+        <argsstring>()</argsstring>
+        <name>getLinePosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="57" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_kinematic_1aec2c9720a6d54f0cc064cbe895c3d369" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Kinematic::getLineAngleNotFiltered</definition>
+        <argsstring>()</argsstring>
+        <name>getLineAngleNotFiltered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="58" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_kinematic_1a1dcd96bb5c03a2ee341d78c5284135a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Kinematic::getV</definition>
+        <argsstring>()</argsstring>
+        <name>getV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="60" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_kinematic_1a4a85a1a94ef14f881751137a910a03f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Kinematic::getW</definition>
+        <argsstring>()</argsstring>
+        <name>getW</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="61" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp" bodystart="64" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_kinematic_1a3bbde4c9bc3a5d7beb90a89743f27a60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Kinematic::calibrateLineSensor</definition>
+        <argsstring>(uint32_t iterations)</argsstring>
+        <name>calibrateLineSensor</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>iterations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="63" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp" bodystart="84" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_kinematic_1af201ff92e0c95d53b7b65b7b283061cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Kinematic::updateLineReading</definition>
+        <argsstring>()</argsstring>
+        <name>updateLineReading</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="64" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp" bodystart="90" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_kinematic_1a96fabd303578de83454c28f7aa20fae6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Kinematic::handlerByTime</definition>
+        <argsstring>()</argsstring>
+        <name>handlerByTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="66" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Motor</label>
+        <link refid="class_motor"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>motPtr</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>encoder</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>pwmMotor</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>IN1</edgelabel>
+          <edgelabel>IN2</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Encoder</label>
+        <link refid="class_encoder"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>TIM_TypeDef</label>
+        <link refid="struct_t_i_m___type_def"/>
+      </node>
+      <node id="4">
+        <label>Timer</label>
+        <link refid="class_timer"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>TIM</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Line_Sensor</label>
+        <link refid="class_line___sensor"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>Sensors</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>PWM</label>
+        <link refid="class_p_w_m"/>
+        <childnode refid="4" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>GPIO</label>
+        <link refid="class_g_p_i_o"/>
+      </node>
+      <node id="1">
+        <label>Kinematic</label>
+        <link refid="class_kinematic"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>motorD</edgelabel>
+          <edgelabel>motorE</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>ptRobot</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>lineSensor</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Reflectance_Sensor</label>
+        <link refid="class_reflectance___sensor"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" line="23" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h" bodystart="22" bodyend="68"/>
+    <listofallmembers>
+      <member refid="class_kinematic_1a16fa421ad7f24f69364f0fce9a8cdd26" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>angle</name></member>
+      <member refid="class_kinematic_1a3bbde4c9bc3a5d7beb90a89743f27a60" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>calibrateLineSensor</name></member>
+      <member refid="class_kinematic_1a9ae8eb50ddfa12c6d66db4669995fedc" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>calibrationFinished</name></member>
+      <member refid="class_kinematic_1a35b0680ed1fb05c922dbbddf3b04da7c" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>deltaDistance</name></member>
+      <member refid="class_kinematic_1ab4f4b37d78e40a28d034fac022313183" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>distance</name></member>
+      <member refid="class_kinematic_1a19ced79be5359939476b3b43741e42fa" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>filteredAngle</name></member>
+      <member refid="class_kinematic_1ae2187b81fe2229b466c2d5b2630c2a0d" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>getLineAngle</name></member>
+      <member refid="class_kinematic_1aec2c9720a6d54f0cc064cbe895c3d369" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>getLineAngleNotFiltered</name></member>
+      <member refid="class_kinematic_1a15aac52325458682957a28f2b049ef84" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>getLinePosition</name></member>
+      <member refid="class_kinematic_1a7a677e002eed02afd3797e9356be9029" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>getTeta</name></member>
+      <member refid="class_kinematic_1a1dcd96bb5c03a2ee341d78c5284135a3" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>getV</name></member>
+      <member refid="class_kinematic_1a4a85a1a94ef14f881751137a910a03f8" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>getW</name></member>
+      <member refid="class_kinematic_1a470bcb5d12198f74e255015faf67c849" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>getX</name></member>
+      <member refid="class_kinematic_1ae3f570f42792d5ba2a760190fb66f2bf" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>getY</name></member>
+      <member refid="class_kinematic_1a2a5a41a8e10aef52019f50ccbea38c72" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>handler</name></member>
+      <member refid="class_kinematic_1a96fabd303578de83454c28f7aa20fae6" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>handlerByTime</name></member>
+      <member refid="class_kinematic_1ae67640080d134cef3fbd3b793693a4a3" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>Kinematic</name></member>
+      <member refid="class_kinematic_1aba1a385a30c3e24692724f8778f97b18" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>Kinematic</name></member>
+      <member refid="class_kinematic_1aa884b513403e058b6e0c745a236da6c7" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>lastDistance</name></member>
+      <member refid="class_kinematic_1a54038680366aaa55e5fafaae1a44dce5" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>lastLineSensorReading</name></member>
+      <member refid="class_kinematic_1a17de469ec232aeba5598613cc3f070a4" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>lineSensor</name></member>
+      <member refid="class_kinematic_1a9a5d752c2b6ec56ec808365ddf5cc580" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>lineSensorReading</name></member>
+      <member refid="class_kinematic_1ab047c05d32231b85ab66935b44e612ac" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>motorD</name></member>
+      <member refid="class_kinematic_1a3521b4d4fb6fcf2c59a70f963c92bfab" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>motorE</name></member>
+      <member refid="class_kinematic_1af87a1cfe93c3caff778e1c2a716f5962" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>ptRobot</name></member>
+      <member refid="class_kinematic_1ab0473396a6b13fedf23941602e2283ef" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>reset</name></member>
+      <member refid="class_kinematic_1a6cc5ded243cb4c3d69b8b9196f11a8c4" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>setSpeed</name></member>
+      <member refid="class_kinematic_1af201ff92e0c95d53b7b65b7b283061cb" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>updateLineReading</name></member>
+      <member refid="class_kinematic_1a47739aebb18552c8ae499353761a9a4a" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>xPos</name></member>
+      <member refid="class_kinematic_1a19d7ec959e58681269fa6233a08e133e" prot="public" virt="non-virtual"><scope>Kinematic</scope><name>yPos</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

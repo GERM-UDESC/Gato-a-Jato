@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_p_w_m_8h" kind="file" language="C++">
+    <compoundname>PWM.h</compoundname>
+    <includes refid="_g_p_i_o_8h" local="yes">GPIO.h</includes>
+    <includes refid="_t_i_m_e_r_8h" local="yes">TIMER.h</includes>
+    <includedby refid="_m_o_t_o_r_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h</includedby>
+    <includedby refid="malha__fechada_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</includedby>
+    <includedby refid="_p_w_m_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>TIMER.h</label>
+        <link refid="_t_i_m_e_r_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h</label>
+        <link refid="_p_w_m_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="10">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp</label>
+        <link refid="_m_o_t_o_r_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</label>
+        <link refid="malha__fechada_8cpp"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h</label>
+        <link refid="_m_o_t_o_r_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.cpp</label>
+        <link refid="_p_w_m_8cpp"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h</label>
+        <link refid="_p_w_m_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.cpp</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_p_w_m" prot="public">PWM</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_p_w_m_8h_1a85ca5761a9675de67baea6f1ee821a96" prot="public" static="no">
+        <name>Timer_Frequency</name>
+        <initializer>36000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" line="6" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_p_w_m_8h_1ad15239929a09e2d6193f590200ebcf6a" prot="public" static="no">
+        <name>PWM_Frequency</name>
+        <initializer>10000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" line="7" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_p_w_m_8h_1a9d9a073f4bdd21da8c8f67262b8ea68a" prot="public" static="no">
+        <name>AutoReloadPWM</name>
+        <initializer>((<ref refid="_p_w_m_8h_1a85ca5761a9675de67baea6f1ee821a96" kindref="member">Timer_Frequency</ref>/<ref refid="_p_w_m_8h_1ad15239929a09e2d6193f590200ebcf6a" kindref="member">PWM_Frequency</ref>) - 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" line="8" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_p_w_m_8h_1a8e56cfeecb77e6404ace0ed5cc00929c" prot="public" static="no">
+        <name>Max_PWM</name>
+        <initializer><ref refid="_p_w_m_8h_1a9d9a073f4bdd21da8c8f67262b8ea68a" kindref="member">AutoReloadPWM</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" line="9" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PWM_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWM_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_g_p_i_o_8h" kindref="compound">GPIO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_t_i_m_e_r_8h" kindref="compound">TIMER.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="_p_w_m_8h_1a85ca5761a9675de67baea6f1ee821a96" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Timer_Frequency<sp/>36000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="_p_w_m_8h_1ad15239929a09e2d6193f590200ebcf6a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWM_Frequency<sp/>10000<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//min<sp/>PWM<sp/>frequecy<sp/>==<sp/>600</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="_p_w_m_8h_1a9d9a073f4bdd21da8c8f67262b8ea68a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AutoReloadPWM<sp/>((Timer_Frequency/PWM_Frequency)<sp/>-<sp/>1)<sp/>//this<sp/>is<sp/>also<sp/>the<sp/>maximum<sp/>writtable<sp/>pwm<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_p_w_m_8h_1a8e56cfeecb77e6404ace0ed5cc00929c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>Max_PWM<sp/>AutoReloadPWM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------------CLASS------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_p_w_m" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_p_w_m" kindref="compound">PWM</ref><sp/>:<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="class_timer" kindref="compound">Timer</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref><sp/>PWMPin;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/>*PWM_WriteAddress;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Pointer<sp/>to<sp/>the<sp/>CCRx<sp/>Register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>writedPWM{0};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ConfigPWMPin();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PWMInit();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//This<sp/>function<sp/>initialize<sp/>the<sp/>PWM<sp/>with<sp/>no<sp/>prescaler<sp/>and<sp/>the<sp/>reset<sp/>value<sp/>at<sp/>ARR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="23" refid="class_p_w_m_1ab3333b13b539a7dc1c712a73a53bbd3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_p_w_m_1ab3333b13b539a7dc1c712a73a53bbd3b" kindref="member">PWM</ref>(){};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_p_w_m_1ab3333b13b539a7dc1c712a73a53bbd3b" kindref="member">PWM</ref>(<ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref><sp/>*<ref refid="class_timer_1a28770028f61d78e7b6b74338fb58edeb" kindref="member">TIM</ref>,<sp/><ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39" kindref="member">TIM_CHANNELS</ref><sp/>channel,<sp/><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref><sp/>PWMremap);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//This<sp/>constructor<sp/>configure<sp/>the<sp/>gpio<sp/>and<sp/>timer<sp/>and<sp/>start<sp/>the<sp/>PWM<sp/>with<sp/>a<sp/>0<sp/>duty<sp/>cicle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_p_w_m_1ab3333b13b539a7dc1c712a73a53bbd3b" kindref="member">PWM</ref>(<ref refid="class_p_w_m" kindref="compound">PWM</ref><sp/>*pwm);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_p_w_m_1a8fe1afc207745c5a0f11cbbfeaa6e427" kindref="member">PWMWrite</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value);<sp/></highlight><highlight class="comment">//This<sp/>function<sp/>write<sp/>a<sp/>PWM<sp/>value<sp/>0-100%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_p_w_m_1a9c00aaed9498d4ae62c60fdcefb19cce" kindref="member">getWritedPWM</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h"/>
+  </compounddef>
+</doxygen>

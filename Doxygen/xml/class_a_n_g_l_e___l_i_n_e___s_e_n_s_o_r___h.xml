@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h" kind="class" language="C++" prot="public">
+    <compoundname>ANGLE_LINE_SENSOR_H</compoundname>
+    <basecompoundref refid="class_line___sensor" prot="private" virt="non-virtual">Line_Sensor</basecompoundref>
+    <includes refid="_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r_8h" local="no">ANGLE_LINE_SENSOR.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h_1a9a32a6dafa019b6b823a8ab2388b8d7c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ANGLE_LINE_SENSOR_H::lineSensorReading</definition>
+        <argsstring></argsstring>
+        <name>lineSensorReading</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ANGLE_LINE_SENSOR.h" line="9" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ANGLE_LINE_SENSOR.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h_1a06f13d9369ec3130a613adb2ee2cd087" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ANGLE_LINE_SENSOR_H::lastLineSensorReading</definition>
+        <argsstring></argsstring>
+        <name>lastLineSensorReading</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ANGLE_LINE_SENSOR.h" line="10" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ANGLE_LINE_SENSOR.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h_1a3a03e044366a6ab628e6a57eb79a4a95" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ANGLE_LINE_SENSOR_H::lastDistance</definition>
+        <argsstring></argsstring>
+        <name>lastDistance</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ANGLE_LINE_SENSOR.h" line="11" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ANGLE_LINE_SENSOR.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h_1a119d6090d46cd6082a69de4a1b48d47c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ANGLE_LINE_SENSOR_H::angle</definition>
+        <argsstring></argsstring>
+        <name>angle</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ANGLE_LINE_SENSOR.h" line="12" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ANGLE_LINE_SENSOR.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h_1a864905a457ef5e9b32ef823828d2dfaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float ANGLE_LINE_SENSOR_H::readAngle</definition>
+        <argsstring>()</argsstring>
+        <name>readAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ANGLE_LINE_SENSOR.h" line="15" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h_1a2557a7e162c25ed74aabbd0582288485" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ANGLE_LINE_SENSOR_H::updateLineAngle</definition>
+        <argsstring>()</argsstring>
+        <name>updateLineAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ANGLE_LINE_SENSOR.h" line="16" column="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ANGLE_LINE_SENSOR_H</label>
+        <link refid="class_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h"/>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Line_Sensor</label>
+        <link refid="class_line___sensor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ANGLE_LINE_SENSOR_H</label>
+        <link refid="class_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h"/>
+        <childnode refid="2" relation="private-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Line_Sensor</label>
+        <link refid="class_line___sensor"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Sensors</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Reflectance_Sensor</label>
+        <link refid="class_reflectance___sensor"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ANGLE_LINE_SENSOR.h" line="7" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ANGLE_LINE_SENSOR.h" bodystart="6" bodyend="17"/>
+    <listofallmembers>
+      <member refid="class_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h_1a119d6090d46cd6082a69de4a1b48d47c" prot="private" virt="non-virtual"><scope>ANGLE_LINE_SENSOR_H</scope><name>angle</name></member>
+      <member refid="class_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h_1a3a03e044366a6ab628e6a57eb79a4a95" prot="private" virt="non-virtual"><scope>ANGLE_LINE_SENSOR_H</scope><name>lastDistance</name></member>
+      <member refid="class_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h_1a06f13d9369ec3130a613adb2ee2cd087" prot="private" virt="non-virtual"><scope>ANGLE_LINE_SENSOR_H</scope><name>lastLineSensorReading</name></member>
+      <member refid="class_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h_1a9a32a6dafa019b6b823a8ab2388b8d7c" prot="private" virt="non-virtual"><scope>ANGLE_LINE_SENSOR_H</scope><name>lineSensorReading</name></member>
+      <member refid="class_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h_1a864905a457ef5e9b32ef823828d2dfaa" prot="public" virt="non-virtual"><scope>ANGLE_LINE_SENSOR_H</scope><name>readAngle</name></member>
+      <member refid="class_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r___h_1a2557a7e162c25ed74aabbd0582288485" prot="public" virt="non-virtual"><scope>ANGLE_LINE_SENSOR_H</scope><name>updateLineAngle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

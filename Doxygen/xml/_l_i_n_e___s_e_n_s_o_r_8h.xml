@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_l_i_n_e___s_e_n_s_o_r_8h" kind="file" language="C++">
+    <compoundname>LINE_SENSOR.h</compoundname>
+    <includes refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h" local="yes">REFLECTANCE_SENSOR.h</includes>
+    <includedby refid="_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ANGLE_LINE_SENSOR.h</includedby>
+    <includedby refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h</includedby>
+    <includedby refid="_l_i_n_e___s_e_n_s_o_r_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.cpp</includedby>
+    <includedby refid="malha__fechada_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>REFLECTANCE_SENSOR.h</label>
+        <link refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>stdint.h</label>
+      </node>
+      <node id="3">
+        <label>ADC.h</label>
+        <link refid="_a_d_c_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>TIMER.h</label>
+        <link refid="_t_i_m_e_r_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h</label>
+        <link refid="_l_i_n_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="10">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.cpp</label>
+        <link refid="_l_i_n_e___s_e_n_s_o_r_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</label>
+        <link refid="malha__fechada_8cpp"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8cpp"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.cpp</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8cpp"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ANGLE_LINE_SENSOR.h</label>
+        <link refid="_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r_8h"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h</label>
+        <link refid="_l_i_n_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_line___sensor" prot="public">Line_Sensor</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_l_i_n_e___s_e_n_s_o_r_8h_1a57a339f7b9bb040949c63ad16c037bc6" prot="public" static="no">
+        <name>calib_sensores</name>
+        <initializer>220</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" line="5" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_i_n_e___s_e_n_s_o_r_8h_1acd99347fc513aadfa4a1bcbc1ebc5eb6" prot="public" static="no">
+        <name>maxDistance</name>
+        <initializer>0.035</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" line="6" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_i_n_e___s_e_n_s_o_r_8h_1adcbfe97abf69f394d59e8f1312008c4c" prot="public" static="no">
+        <name>sensorFilterOrder</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" line="7" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LINE_SENSOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINE_SENSOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h" kindref="compound">REFLECTANCE_SENSOR.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_l_i_n_e___s_e_n_s_o_r_8h_1a57a339f7b9bb040949c63ad16c037bc6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>calib_sensores<sp/>220</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="_l_i_n_e___s_e_n_s_o_r_8h_1acd99347fc513aadfa4a1bcbc1ebc5eb6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>maxDistance<sp/>0.035</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="_l_i_n_e___s_e_n_s_o_r_8h_1adcbfe97abf69f394d59e8f1312008c4c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>sensorFilterOrder<sp/>2<sp/>//min<sp/>=<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_line___sensor" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_line___sensor" kindref="compound">Line_Sensor</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>last_error;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>erro[<ref refid="_l_i_n_e___s_e_n_s_o_r_8h_1adcbfe97abf69f394d59e8f1312008c4c" kindref="member">sensorFilterOrder</ref>]{0},<sp/>filteredError{0};</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>media;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>sensor_values[8];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//it&apos;s<sp/>&quot;int&quot;<sp/>because<sp/>it<sp/>might<sp/>be<sp/>under<sp/>zero</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>soma;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Line_Sensor(ADC_CHANNELS<sp/>ADCChannel_0,<sp/>ADC_CHANNELS<sp/>ADCChannel_1,<sp/>ADC_CHANNELS<sp/>ADCChannel_2,<sp/>ADC_CHANNELS<sp/>ADCChannel_3,<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADC_CHANNELS<sp/>ADCChannel_4,<sp/>ADC_CHANNELS<sp/>ADCChannel_5,<sp/>ADC_CHANNELS<sp/>ADCChannel_6,<sp/>ADC_CHANNELS<sp/>ADCChannel_7);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_line___sensor_1a95601c1a8c6415dcbbcbb14f208c546a" kindref="member">Line_Sensor</ref>(<ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor1,<sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor2,<sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor3,<sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor4,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor5,<sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor6,<sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor7,<sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/>Sensor8);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_line___sensor_1a95601c1a8c6415dcbbcbb14f208c546a" kindref="member">Line_Sensor</ref>(<ref refid="class_line___sensor" kindref="compound">Line_Sensor</ref><sp/>*lineSensor);</highlight></codeline>
+<codeline lineno="24" refid="class_line___sensor_1a8fd57f9ca9bfcadfb292eadf911167b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref><sp/><ref refid="class_line___sensor_1a8fd57f9ca9bfcadfb292eadf911167b6" kindref="member">Sensors</ref>[8];</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_line___sensor_1a0479898aafb6ecc493c2974d20d38a70" kindref="member">calibrate</ref>(uint32_t<sp/>iterations);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_line___sensor_1aa35bdfbabbe89e69c3c17fd9792a84d2" kindref="member">read</ref>();<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h"/>
+  </compounddef>
+</doxygen>

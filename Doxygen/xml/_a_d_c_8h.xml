@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_a_d_c_8h" kind="file" language="C++">
+    <compoundname>ADC.h</compoundname>
+    <includes refid="_g_p_i_o_8h" local="yes">GPIO.h</includes>
+    <includes refid="_t_i_m_e_r_8h" local="yes">TIMER.h</includes>
+    <includedby refid="_a_d_c_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.cpp</includedby>
+    <includedby refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h</includedby>
+    <includedby refid="malha__fechada_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h</label>
+        <link refid="_a_d_c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>TIMER.h</label>
+        <link refid="_t_i_m_e_r_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="13">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.cpp</label>
+        <link refid="_l_i_n_e___s_e_n_s_o_r_8cpp"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</label>
+        <link refid="malha__fechada_8cpp"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h</label>
+        <link refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h</label>
+        <link refid="_a_d_c_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8cpp"/>
+      </node>
+      <node id="12">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8cpp"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.cpp</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8cpp"/>
+      </node>
+      <node id="14">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.cpp</label>
+        <link refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8cpp"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ANGLE_LINE_SENSOR.h</label>
+        <link refid="_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r_8h"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.cpp</label>
+        <link refid="_a_d_c_8cpp"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h</label>
+        <link refid="_l_i_n_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_a_d_c" prot="public">ADC</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_a_d_c_8h_1ad55dfa2e9899dc523df471591391ca5e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ADC_CONVERSION_MODES</name>
+        <enumvalue id="_a_d_c_8h_1ad55dfa2e9899dc523df471591391ca5ea192044c1df908c9c5eb05dcfe9401ee4" prot="public">
+          <name>SINGLE_CONVERSION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_a_d_c_8h_1ad55dfa2e9899dc523df471591391ca5ea5406436132c4458e675bc4fc0af96098" prot="public">
+          <name>CONTINUOUS_CONVERSION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h" line="7" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="enum" id="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ADC_CHANNELS</name>
+        <enumvalue id="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a0db887b05fe2d35518140c53e4d3cd37" prot="public">
+          <name>ADC_CH0</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a6642852ba79ec550f9db5aee024eafc9" prot="public">
+          <name>ADC_CH1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524ac4dcc5d123e548febb592bad090fa13a" prot="public">
+          <name>ADC_CH2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a3955d3413cc4000e0121db7f11296c21" prot="public">
+          <name>ADC_CH3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524adc9c466c876b5d2226155bf1ebc6e2ec" prot="public">
+          <name>ADC_CH4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a57679984f78b2a16619436593843da64" prot="public">
+          <name>ADC_CH5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524aebc31ace36f08bbe5cc3ef39de3b70ac" prot="public">
+          <name>ADC_CH6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524acf0c880171a962668da324da08aadcfe" prot="public">
+          <name>ADC_CH7</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a5c245839a7fc1c2cbc5319987772b6e0" prot="public">
+          <name>ADC_CH8</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a73d8dbb2047e3c7e9c4803ec355b8451" prot="public">
+          <name>ADC_CH9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h" line="12" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h" bodystart="12" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ADC_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_g_p_i_o_8h" kindref="compound">GPIO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_t_i_m_e_r_8h" kindref="compound">TIMER.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="_a_d_c_8h_1ad55dfa2e9899dc523df471591391ca5e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="_a_d_c_8h_1ad55dfa2e9899dc523df471591391ca5ea192044c1df908c9c5eb05dcfe9401ee4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_c_8h_1ad55dfa2e9899dc523df471591391ca5ea192044c1df908c9c5eb05dcfe9401ee4" kindref="member">SINGLE_CONVERSION</ref>,</highlight></codeline>
+<codeline lineno="9" refid="_a_d_c_8h_1ad55dfa2e9899dc523df471591391ca5ea5406436132c4458e675bc4fc0af96098" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_c_8h_1ad55dfa2e9899dc523df471591391ca5ea5406436132c4458e675bc4fc0af96098" kindref="member">CONTINUOUS_CONVERSION</ref>,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}<ref refid="_a_d_c_8h_1ad55dfa2e9899dc523df471591391ca5e" kindref="member">ADC_CONVERSION_MODES</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a0db887b05fe2d35518140c53e4d3cd37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a0db887b05fe2d35518140c53e4d3cd37" kindref="member">ADC_CH0</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="14" refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a6642852ba79ec550f9db5aee024eafc9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a6642852ba79ec550f9db5aee024eafc9" kindref="member">ADC_CH1</ref>,</highlight></codeline>
+<codeline lineno="15" refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524ac4dcc5d123e548febb592bad090fa13a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524ac4dcc5d123e548febb592bad090fa13a" kindref="member">ADC_CH2</ref>,</highlight></codeline>
+<codeline lineno="16" refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a3955d3413cc4000e0121db7f11296c21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a3955d3413cc4000e0121db7f11296c21" kindref="member">ADC_CH3</ref>,</highlight></codeline>
+<codeline lineno="17" refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524adc9c466c876b5d2226155bf1ebc6e2ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524adc9c466c876b5d2226155bf1ebc6e2ec" kindref="member">ADC_CH4</ref>,</highlight></codeline>
+<codeline lineno="18" refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a57679984f78b2a16619436593843da64" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a57679984f78b2a16619436593843da64" kindref="member">ADC_CH5</ref>,</highlight></codeline>
+<codeline lineno="19" refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524aebc31ace36f08bbe5cc3ef39de3b70ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524aebc31ace36f08bbe5cc3ef39de3b70ac" kindref="member">ADC_CH6</ref>,</highlight></codeline>
+<codeline lineno="20" refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524acf0c880171a962668da324da08aadcfe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524acf0c880171a962668da324da08aadcfe" kindref="member">ADC_CH7</ref>,</highlight></codeline>
+<codeline lineno="21" refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a5c245839a7fc1c2cbc5319987772b6e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a5c245839a7fc1c2cbc5319987772b6e0" kindref="member">ADC_CH8</ref>,</highlight></codeline>
+<codeline lineno="22" refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a73d8dbb2047e3c7e9c4803ec355b8451" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a73d8dbb2047e3c7e9c4803ec355b8451" kindref="member">ADC_CH9</ref>,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}<ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524" kindref="member">ADC_CHANNELS</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="class_a_d_c" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_a_d_c" kindref="compound">ADC</ref><sp/>:<sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_a_d_c_8h_1ad55dfa2e9899dc523df471591391ca5e" kindref="member">ADC_CONVERSION_MODES</ref><sp/>ADCMode;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524" kindref="member">ADC_CHANNELS</ref><sp/>ADCChannel;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ADCCalibrate();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_d_c_1a88fb915be4ac7aebd0e807b9950c806c" kindref="member">ConfigADCPin</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//SETTERS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//void<sp/>SetADCMode(ADC_CONVERSION_MODES<sp/>ADCMode);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_d_c_1a5952d760b737e7fafa952b8527d09110" kindref="member">SetADCChannel</ref>(<ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524" kindref="member">ADC_CHANNELS</ref><sp/>ADCChannel);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>ADC(){};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_d_c_1a4fdc585a52f4ffe079b4addb67c15e3d" kindref="member">ADC</ref>(<ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524" kindref="member">ADC_CHANNELS</ref><sp/>ADCChannel);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_a_d_c_1a1284108c54c5bdaa25deae6c7350a728" kindref="member">analogRead</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//GETTERS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>ADC_CONVERSION_MODES<sp/>GetADCMode();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524" kindref="member">ADC_CHANNELS</ref><sp/><ref refid="class_a_d_c_1a53581b9cb2dbf089ace5fb9eb2d92ed0" kindref="member">GetADCChannel</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h"/>
+  </compounddef>
+</doxygen>

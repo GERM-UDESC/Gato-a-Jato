@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="struct_r_c_c___type_def" kind="struct" language="C++" prot="public">
+    <compoundname>RCC_TypeDef</compoundname>
+    <includes refid="_micro_8h" local="no">Micro.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1ad2cb841ca751e3df815a8e57397da658" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t RCC_TypeDef::CR</definition>
+        <argsstring></argsstring>
+        <name>CR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="97" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a04ce7253d43a2f5e7d9ee60ff9101251" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t RCC_TypeDef::CFGR</definition>
+        <argsstring></argsstring>
+        <name>CFGR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="98" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a210d59a644d751c965c79aa141ba4d4b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t RCC_TypeDef::CIR</definition>
+        <argsstring></argsstring>
+        <name>CIR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="99" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a0c4ecd86c9e11731900e016a5e1fd760" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t RCC_TypeDef::APB2RSTR</definition>
+        <argsstring></argsstring>
+        <name>APB2RSTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="100" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a2b0ac063b1e705fbbc627c71fdfdddac" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t RCC_TypeDef::APB1RSTR</definition>
+        <argsstring></argsstring>
+        <name>APB1RSTR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="101" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1ae1df9f63c0f73c1594740503ec6e8930" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t RCC_TypeDef::AHBENR</definition>
+        <argsstring></argsstring>
+        <name>AHBENR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="102" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a8916e1149d43ca86fdcb498e91b139c4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t RCC_TypeDef::APB2ENR</definition>
+        <argsstring></argsstring>
+        <name>APB2ENR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="103" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1aa73682a6e7d72272df55dc69c15f1dad" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t RCC_TypeDef::APB1ENR</definition>
+        <argsstring></argsstring>
+        <name>APB1ENR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="104" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a1ad6ba64750c1188a8745312ef09ea32" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t RCC_TypeDef::BDCR</definition>
+        <argsstring></argsstring>
+        <name>BDCR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="105" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_c_c___type_def_1a4275b77f0cd025dcf7a2e5bc9a3c482e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>volatile uint32_t RCC_TypeDef::CSR</definition>
+        <argsstring></argsstring>
+        <name>CSR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="106" column="21" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="96" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="95" bodyend="107"/>
+    <listofallmembers>
+      <member refid="struct_r_c_c___type_def_1ae1df9f63c0f73c1594740503ec6e8930" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>AHBENR</name></member>
+      <member refid="struct_r_c_c___type_def_1aa73682a6e7d72272df55dc69c15f1dad" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>APB1ENR</name></member>
+      <member refid="struct_r_c_c___type_def_1a2b0ac063b1e705fbbc627c71fdfdddac" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>APB1RSTR</name></member>
+      <member refid="struct_r_c_c___type_def_1a8916e1149d43ca86fdcb498e91b139c4" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>APB2ENR</name></member>
+      <member refid="struct_r_c_c___type_def_1a0c4ecd86c9e11731900e016a5e1fd760" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>APB2RSTR</name></member>
+      <member refid="struct_r_c_c___type_def_1a1ad6ba64750c1188a8745312ef09ea32" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>BDCR</name></member>
+      <member refid="struct_r_c_c___type_def_1a04ce7253d43a2f5e7d9ee60ff9101251" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>CFGR</name></member>
+      <member refid="struct_r_c_c___type_def_1a210d59a644d751c965c79aa141ba4d4b" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>CIR</name></member>
+      <member refid="struct_r_c_c___type_def_1ad2cb841ca751e3df815a8e57397da658" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>CR</name></member>
+      <member refid="struct_r_c_c___type_def_1a4275b77f0cd025dcf7a2e5bc9a3c482e" prot="public" virt="non-virtual"><scope>RCC_TypeDef</scope><name>CSR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

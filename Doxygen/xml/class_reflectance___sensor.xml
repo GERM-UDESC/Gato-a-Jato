@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_reflectance___sensor" kind="class" language="C++" prot="public">
+    <compoundname>Reflectance_Sensor</compoundname>
+    <includes refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h" local="no">REFLECTANCE_SENSOR.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_reflectance___sensor_1a73d9c843ea61ecca3f889ace2e1ee53e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Line_Sensor</definition>
+        <argsstring></argsstring>
+        <name>Line_Sensor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" line="7" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_reflectance___sensor_1a1f342bb85d731545e52babdda66d4e14" prot="private" static="no" mutable="no">
+        <type><ref refid="class_a_d_c" kindref="compound">ADC</ref></type>
+        <definition>ADC Reflectance_Sensor::adcPin</definition>
+        <argsstring></argsstring>
+        <name>adcPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" line="9" column="5" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_reflectance___sensor_1aa90e264c21450223f0d52cab96bdff15" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Reflectance_Sensor::convertedRead</definition>
+        <argsstring></argsstring>
+        <name>convertedRead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" line="10" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_reflectance___sensor_1a0ba31946aca9fc2f8df0fbbb50114376" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Reflectance_Sensor::calib_max</definition>
+        <argsstring></argsstring>
+        <name>calib_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" line="11" column="10" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_reflectance___sensor_1a32e05eaff859d7043277d6da0e150a96" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Reflectance_Sensor::calib_min</definition>
+        <argsstring></argsstring>
+        <name>calib_min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" line="12" column="10" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_reflectance___sensor_1a37be45e4099fcb747681828d1e2dea0e" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Reflectance_Sensor::range</definition>
+        <argsstring></argsstring>
+        <name>range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" line="13" column="10" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_reflectance___sensor_1ab58544f6019c6471696838768f63e958" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Reflectance_Sensor::Reflectance_Sensor</definition>
+        <argsstring>()</argsstring>
+        <name>Reflectance_Sensor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" line="16" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_reflectance___sensor_1ac717b55ab94297ced40d580f36449ab6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Reflectance_Sensor::Reflectance_Sensor</definition>
+        <argsstring>(Reflectance_Sensor *Sensor)</argsstring>
+        <name>Reflectance_Sensor</name>
+        <param>
+          <type><ref refid="class_reflectance___sensor" kindref="compound">Reflectance_Sensor</ref> *</type>
+          <declname>Sensor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" line="19" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.cpp" bodystart="15" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reflectance___sensor_1a79fb9822439413c6235bd08a9a7092d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Reflectance_Sensor::Reflectance_Sensor</definition>
+        <argsstring>(ADC_CHANNELS ADCChannel)</argsstring>
+        <name>Reflectance_Sensor</name>
+        <param>
+          <type><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524" kindref="member">ADC_CHANNELS</ref></type>
+          <declname>ADCChannel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" line="20" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.cpp" bodystart="9" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reflectance___sensor_1a89ec5baef1c58f37c49050b8407bf77d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Reflectance_Sensor::Calib_Reflectance_Sensor</definition>
+        <argsstring>()</argsstring>
+        <name>Calib_Reflectance_Sensor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" line="22" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.cpp" bodystart="21" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_reflectance___sensor_1ad67b725554f5205481bce69b66b7fae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Reflectance_Sensor::Reflectance_Read</definition>
+        <argsstring>()</argsstring>
+        <name>Reflectance_Read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" line="23" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.cpp" bodystart="35" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" line="6" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h" bodystart="5" bodyend="25"/>
+    <listofallmembers>
+      <member refid="class_reflectance___sensor_1a1f342bb85d731545e52babdda66d4e14" prot="private" virt="non-virtual"><scope>Reflectance_Sensor</scope><name>adcPin</name></member>
+      <member refid="class_reflectance___sensor_1a0ba31946aca9fc2f8df0fbbb50114376" prot="private" virt="non-virtual"><scope>Reflectance_Sensor</scope><name>calib_max</name></member>
+      <member refid="class_reflectance___sensor_1a32e05eaff859d7043277d6da0e150a96" prot="private" virt="non-virtual"><scope>Reflectance_Sensor</scope><name>calib_min</name></member>
+      <member refid="class_reflectance___sensor_1a89ec5baef1c58f37c49050b8407bf77d" prot="public" virt="non-virtual"><scope>Reflectance_Sensor</scope><name>Calib_Reflectance_Sensor</name></member>
+      <member refid="class_reflectance___sensor_1aa90e264c21450223f0d52cab96bdff15" prot="private" virt="non-virtual"><scope>Reflectance_Sensor</scope><name>convertedRead</name></member>
+      <member refid="class_reflectance___sensor_1a73d9c843ea61ecca3f889ace2e1ee53e" prot="private" virt="non-virtual"><scope>Reflectance_Sensor</scope><name>Line_Sensor</name></member>
+      <member refid="class_reflectance___sensor_1a37be45e4099fcb747681828d1e2dea0e" prot="private" virt="non-virtual"><scope>Reflectance_Sensor</scope><name>range</name></member>
+      <member refid="class_reflectance___sensor_1ad67b725554f5205481bce69b66b7fae1" prot="public" virt="non-virtual"><scope>Reflectance_Sensor</scope><name>Reflectance_Read</name></member>
+      <member refid="class_reflectance___sensor_1ab58544f6019c6471696838768f63e958" prot="protected" virt="non-virtual"><scope>Reflectance_Sensor</scope><name>Reflectance_Sensor</name></member>
+      <member refid="class_reflectance___sensor_1ac717b55ab94297ced40d580f36449ab6" prot="public" virt="non-virtual"><scope>Reflectance_Sensor</scope><name>Reflectance_Sensor</name></member>
+      <member refid="class_reflectance___sensor_1a79fb9822439413c6235bd08a9a7092d9" prot="public" virt="non-virtual"><scope>Reflectance_Sensor</scope><name>Reflectance_Sensor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

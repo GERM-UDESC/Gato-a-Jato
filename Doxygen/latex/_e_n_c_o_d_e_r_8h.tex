@@ -1,0 +1,134 @@
+\hypertarget{_e_n_c_o_d_e_r_8h}{}\doxysection{C\+:/\+Users/bruno/\+Documents/\+Line\+Follower/\+Project\+\_\+u\+Vision/\+Line\+Follower/\+E\+N\+C\+O\+D\+ER.h File Reference}
+\label{_e_n_c_o_d_e_r_8h}\index{C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/ENCODER.h@{C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/ENCODER.h}}
+{\ttfamily \#include \char`\"{}G\+P\+I\+O.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}T\+I\+M\+E\+R.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_encoder}{Encoder}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_e_n_c_o_d_e_r_8h_aab3232034811f9e1e2d1999864e6c0eb}{Max\+\_\+delay\+\_\+\+Ticks\+\_\+\+Time}}~50000
+\item 
+\#define \mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a4407e639d341f0d88fc2e87f7a981b3b}{Auto\+Reaload\+\_\+\+Ticks}}~1
+\item 
+\#define \mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a75c8949a066fd8c0b465c00f0bf8dd8e}{Ticks\+\_\+till\+\_\+int}}~(\mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a4407e639d341f0d88fc2e87f7a981b3b}{Auto\+Reaload\+\_\+\+Ticks}}+1)
+\item 
+\#define \mbox{\hyperlink{_e_n_c_o_d_e_r_8h_ab26e1463d4f8f6ba175509661cb7f653}{encoder\+Filter\+Order}}~6
+\item 
+\#define \mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a1daf785e3f68d293c7caa1c756d5cb74}{pi}}~3.\+14159265359
+\item 
+\#define \mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a217cdb0d2f3ef6cf60ec8ae134079f6e}{pulse\+Per\+Revolution}}~120
+\item 
+\#define \mbox{\hyperlink{_e_n_c_o_d_e_r_8h_ab127e74a19dfd28e6125ba0a7adccf6e}{ticks\+To\+Rad}}~2$\ast$\mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a1daf785e3f68d293c7caa1c756d5cb74}{pi}}/\mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a217cdb0d2f3ef6cf60ec8ae134079f6e}{pulse\+Per\+Revolution}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dc}{E\+N\+C\+O\+D\+E\+R\+\_\+\+E\+N\+UM}} \{ \newline
+\mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dcafba25b1fd714bf143c68a8e7c0429379}{Encoder\+\_\+\+T\+I\+M1}} = 0, 
+\mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dca6e7cf71811d029b420e101e8f771b760}{Encoder\+\_\+\+T\+I\+M2}}, 
+\mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dca5c2be1a98a830624cb6d02333bd6af89}{Encoder\+\_\+\+T\+I\+M3}}, 
+\mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dca11fa001c1fcac39520275d4e6dd99f0c}{Encoder\+\_\+\+T\+I\+M4}}, 
+\newline
+\mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dca628d19c1e9ac6f10a4e1354d4d3e286d}{N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+E\+N\+C\+O\+D\+E\+RS}}
+ \}
+\item 
+enum \mbox{\hyperlink{_e_n_c_o_d_e_r_8h_ab0f1f34e23a98983145d7faee847b61b}{E\+N\+C\+O\+D\+E\+R\+\_\+\+D\+I\+R\+E\+C\+T\+I\+ON}} \{ \mbox{\hyperlink{_e_n_c_o_d_e_r_8h_ab0f1f34e23a98983145d7faee847b61ba726a0af5164861adac8c015a742dcf21}{forward}}, 
+\mbox{\hyperlink{_e_n_c_o_d_e_r_8h_ab0f1f34e23a98983145d7faee847b61bab3d7481243d86f5bf31d617c7ba70220}{backward}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_e_n_c_o_d_e_r_8h_a4407e639d341f0d88fc2e87f7a981b3b}\label{_e_n_c_o_d_e_r_8h_a4407e639d341f0d88fc2e87f7a981b3b}} 
+\index{ENCODER.h@{ENCODER.h}!AutoReaload\_Ticks@{AutoReaload\_Ticks}}
+\index{AutoReaload\_Ticks@{AutoReaload\_Ticks}!ENCODER.h@{ENCODER.h}}
+\doxysubsubsection{\texorpdfstring{AutoReaload\_Ticks}{AutoReaload\_Ticks}}
+{\footnotesize\ttfamily \#define Auto\+Reaload\+\_\+\+Ticks~1}
+
+\mbox{\Hypertarget{_e_n_c_o_d_e_r_8h_ab26e1463d4f8f6ba175509661cb7f653}\label{_e_n_c_o_d_e_r_8h_ab26e1463d4f8f6ba175509661cb7f653}} 
+\index{ENCODER.h@{ENCODER.h}!encoderFilterOrder@{encoderFilterOrder}}
+\index{encoderFilterOrder@{encoderFilterOrder}!ENCODER.h@{ENCODER.h}}
+\doxysubsubsection{\texorpdfstring{encoderFilterOrder}{encoderFilterOrder}}
+{\footnotesize\ttfamily \#define encoder\+Filter\+Order~6}
+
+\mbox{\Hypertarget{_e_n_c_o_d_e_r_8h_aab3232034811f9e1e2d1999864e6c0eb}\label{_e_n_c_o_d_e_r_8h_aab3232034811f9e1e2d1999864e6c0eb}} 
+\index{ENCODER.h@{ENCODER.h}!Max\_delay\_Ticks\_Time@{Max\_delay\_Ticks\_Time}}
+\index{Max\_delay\_Ticks\_Time@{Max\_delay\_Ticks\_Time}!ENCODER.h@{ENCODER.h}}
+\doxysubsubsection{\texorpdfstring{Max\_delay\_Ticks\_Time}{Max\_delay\_Ticks\_Time}}
+{\footnotesize\ttfamily \#define Max\+\_\+delay\+\_\+\+Ticks\+\_\+\+Time~50000}
+
+\mbox{\Hypertarget{_e_n_c_o_d_e_r_8h_a1daf785e3f68d293c7caa1c756d5cb74}\label{_e_n_c_o_d_e_r_8h_a1daf785e3f68d293c7caa1c756d5cb74}} 
+\index{ENCODER.h@{ENCODER.h}!pi@{pi}}
+\index{pi@{pi}!ENCODER.h@{ENCODER.h}}
+\doxysubsubsection{\texorpdfstring{pi}{pi}}
+{\footnotesize\ttfamily \#define pi~3.\+14159265359}
+
+\mbox{\Hypertarget{_e_n_c_o_d_e_r_8h_a217cdb0d2f3ef6cf60ec8ae134079f6e}\label{_e_n_c_o_d_e_r_8h_a217cdb0d2f3ef6cf60ec8ae134079f6e}} 
+\index{ENCODER.h@{ENCODER.h}!pulsePerRevolution@{pulsePerRevolution}}
+\index{pulsePerRevolution@{pulsePerRevolution}!ENCODER.h@{ENCODER.h}}
+\doxysubsubsection{\texorpdfstring{pulsePerRevolution}{pulsePerRevolution}}
+{\footnotesize\ttfamily \#define pulse\+Per\+Revolution~120}
+
+\mbox{\Hypertarget{_e_n_c_o_d_e_r_8h_a75c8949a066fd8c0b465c00f0bf8dd8e}\label{_e_n_c_o_d_e_r_8h_a75c8949a066fd8c0b465c00f0bf8dd8e}} 
+\index{ENCODER.h@{ENCODER.h}!Ticks\_till\_int@{Ticks\_till\_int}}
+\index{Ticks\_till\_int@{Ticks\_till\_int}!ENCODER.h@{ENCODER.h}}
+\doxysubsubsection{\texorpdfstring{Ticks\_till\_int}{Ticks\_till\_int}}
+{\footnotesize\ttfamily \#define Ticks\+\_\+till\+\_\+int~(\mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a4407e639d341f0d88fc2e87f7a981b3b}{Auto\+Reaload\+\_\+\+Ticks}}+1)}
+
+\mbox{\Hypertarget{_e_n_c_o_d_e_r_8h_ab127e74a19dfd28e6125ba0a7adccf6e}\label{_e_n_c_o_d_e_r_8h_ab127e74a19dfd28e6125ba0a7adccf6e}} 
+\index{ENCODER.h@{ENCODER.h}!ticksToRad@{ticksToRad}}
+\index{ticksToRad@{ticksToRad}!ENCODER.h@{ENCODER.h}}
+\doxysubsubsection{\texorpdfstring{ticksToRad}{ticksToRad}}
+{\footnotesize\ttfamily \#define ticks\+To\+Rad~2$\ast$\mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a1daf785e3f68d293c7caa1c756d5cb74}{pi}}/\mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a217cdb0d2f3ef6cf60ec8ae134079f6e}{pulse\+Per\+Revolution}}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_e_n_c_o_d_e_r_8h_ab0f1f34e23a98983145d7faee847b61b}\label{_e_n_c_o_d_e_r_8h_ab0f1f34e23a98983145d7faee847b61b}} 
+\index{ENCODER.h@{ENCODER.h}!ENCODER\_DIRECTION@{ENCODER\_DIRECTION}}
+\index{ENCODER\_DIRECTION@{ENCODER\_DIRECTION}!ENCODER.h@{ENCODER.h}}
+\doxysubsubsection{\texorpdfstring{ENCODER\_DIRECTION}{ENCODER\_DIRECTION}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_e_n_c_o_d_e_r_8h_ab0f1f34e23a98983145d7faee847b61b}{E\+N\+C\+O\+D\+E\+R\+\_\+\+D\+I\+R\+E\+C\+T\+I\+ON}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{forward@{forward}!ENCODER.h@{ENCODER.h}}\index{ENCODER.h@{ENCODER.h}!forward@{forward}}}\mbox{\Hypertarget{_e_n_c_o_d_e_r_8h_ab0f1f34e23a98983145d7faee847b61ba726a0af5164861adac8c015a742dcf21}\label{_e_n_c_o_d_e_r_8h_ab0f1f34e23a98983145d7faee847b61ba726a0af5164861adac8c015a742dcf21}} 
+forward&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{backward@{backward}!ENCODER.h@{ENCODER.h}}\index{ENCODER.h@{ENCODER.h}!backward@{backward}}}\mbox{\Hypertarget{_e_n_c_o_d_e_r_8h_ab0f1f34e23a98983145d7faee847b61bab3d7481243d86f5bf31d617c7ba70220}\label{_e_n_c_o_d_e_r_8h_ab0f1f34e23a98983145d7faee847b61bab3d7481243d86f5bf31d617c7ba70220}} 
+backward&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dc}\label{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dc}} 
+\index{ENCODER.h@{ENCODER.h}!ENCODER\_ENUM@{ENCODER\_ENUM}}
+\index{ENCODER\_ENUM@{ENCODER\_ENUM}!ENCODER.h@{ENCODER.h}}
+\doxysubsubsection{\texorpdfstring{ENCODER\_ENUM}{ENCODER\_ENUM}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dc}{E\+N\+C\+O\+D\+E\+R\+\_\+\+E\+N\+UM}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Encoder\_TIM1@{Encoder\_TIM1}!ENCODER.h@{ENCODER.h}}\index{ENCODER.h@{ENCODER.h}!Encoder\_TIM1@{Encoder\_TIM1}}}\mbox{\Hypertarget{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dcafba25b1fd714bf143c68a8e7c0429379}\label{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dcafba25b1fd714bf143c68a8e7c0429379}} 
+Encoder\+\_\+\+T\+I\+M1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Encoder\_TIM2@{Encoder\_TIM2}!ENCODER.h@{ENCODER.h}}\index{ENCODER.h@{ENCODER.h}!Encoder\_TIM2@{Encoder\_TIM2}}}\mbox{\Hypertarget{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dca6e7cf71811d029b420e101e8f771b760}\label{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dca6e7cf71811d029b420e101e8f771b760}} 
+Encoder\+\_\+\+T\+I\+M2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Encoder\_TIM3@{Encoder\_TIM3}!ENCODER.h@{ENCODER.h}}\index{ENCODER.h@{ENCODER.h}!Encoder\_TIM3@{Encoder\_TIM3}}}\mbox{\Hypertarget{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dca5c2be1a98a830624cb6d02333bd6af89}\label{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dca5c2be1a98a830624cb6d02333bd6af89}} 
+Encoder\+\_\+\+T\+I\+M3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Encoder\_TIM4@{Encoder\_TIM4}!ENCODER.h@{ENCODER.h}}\index{ENCODER.h@{ENCODER.h}!Encoder\_TIM4@{Encoder\_TIM4}}}\mbox{\Hypertarget{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dca11fa001c1fcac39520275d4e6dd99f0c}\label{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dca11fa001c1fcac39520275d4e6dd99f0c}} 
+Encoder\+\_\+\+T\+I\+M4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NUMBER\_OF\_ENCODERS@{NUMBER\_OF\_ENCODERS}!ENCODER.h@{ENCODER.h}}\index{ENCODER.h@{ENCODER.h}!NUMBER\_OF\_ENCODERS@{NUMBER\_OF\_ENCODERS}}}\mbox{\Hypertarget{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dca628d19c1e9ac6f10a4e1354d4d3e286d}\label{_e_n_c_o_d_e_r_8h_a0b411f3235fe88be704e0e34a2fd41dca628d19c1e9ac6f10a4e1354d4d3e286d}} 
+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+E\+N\+C\+O\+D\+E\+RS&\\
+\hline
+
+\end{DoxyEnumFields}

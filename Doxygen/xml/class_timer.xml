@@ -1,0 +1,569 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_timer" kind="class" language="C++" prot="public">
+    <compoundname>Timer</compoundname>
+    <derivedcompoundref refid="class_encoder" prot="public" virt="non-virtual">Encoder</derivedcompoundref>
+    <derivedcompoundref refid="class_p_w_m" prot="protected" virt="non-virtual">PWM</derivedcompoundref>
+    <includes refid="_t_i_m_e_r_8h" local="no">TIMER.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_timer_1a8bf420ba379fd36d8c9dbf15f65f0035" prot="private" static="yes" mutable="no">
+        <type><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref></type>
+        <definition>TIM_REMAP Timer::TIM1Remap</definition>
+        <argsstring></argsstring>
+        <name>TIM1Remap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="51" column="18" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_timer_1a891ce25b9894740e35759d7f90d630a8" prot="private" static="yes" mutable="no">
+        <type><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref></type>
+        <definition>TIM_REMAP Timer::TIM2Remap</definition>
+        <argsstring></argsstring>
+        <name>TIM2Remap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="52" column="18" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_timer_1a6a20ca693f5296707d77ba8e931bfb74" prot="private" static="yes" mutable="no">
+        <type><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref></type>
+        <definition>TIM_REMAP Timer::TIM3Remap</definition>
+        <argsstring></argsstring>
+        <name>TIM3Remap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="53" column="18" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_timer_1ae4196d0906a6186ab07fa6ebbe91c69a" prot="private" static="yes" mutable="no">
+        <type><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref></type>
+        <definition>TIM_REMAP Timer::TIM4Remap</definition>
+        <argsstring></argsstring>
+        <name>TIM4Remap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="54" column="18" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_timer_1a0df8c94f65252348562d13df83846b77" prot="private" static="yes" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Timer::time_in_usec</definition>
+        <argsstring></argsstring>
+        <name>time_in_usec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="56" column="17" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_timer_1a95517a2e2a6391a1faebb2a8394e7fb6" prot="private" static="yes" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Timer::time_in_milisec</definition>
+        <argsstring></argsstring>
+        <name>time_in_milisec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="57" column="17" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_timer_1a1d25f705d6b7eff9d414262a6e7e9b1f" prot="private" static="yes" mutable="no">
+        <type><ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref> *</type>
+        <definition>TIM_TypeDef * Timer::TIM_Timer_Counter</definition>
+        <argsstring></argsstring>
+        <name>TIM_Timer_Counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="58" column="20" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_timer_1a3abc965eaa4ef534b63b8ace615e5d4b" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool Timer::interruptGenerated</definition>
+        <argsstring></argsstring>
+        <name>interruptGenerated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="59" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_timer_1aa9a4e61f31e134cf75bd927aa8e9176c" prot="private" static="no" mutable="no">
+        <type><ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39" kindref="member">TIM_CHANNELS</ref></type>
+        <definition>TIM_CHANNELS Timer::TIMChannel</definition>
+        <argsstring></argsstring>
+        <name>TIMChannel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="62" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_timer_1a2d4a69c3f274f41178c0cd88bf266957" prot="private" static="no" mutable="no">
+        <type><ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701" kindref="member">TIM_MODE</ref></type>
+        <definition>TIM_MODE Timer::TIMMode</definition>
+        <argsstring></argsstring>
+        <name>TIMMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="63" column="10" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_timer_1a28770028f61d78e7b6b74338fb58edeb" prot="protected" static="no" mutable="no">
+        <type><ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref> *</type>
+        <definition>TIM_TypeDef* Timer::TIM</definition>
+        <argsstring></argsstring>
+        <name>TIM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="67" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_timer_1a5f16e8da27d2a5a5242dead46de05d97" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Timer::Timer</definition>
+        <argsstring>()</argsstring>
+        <name>Timer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="69" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="69" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1adbe72d40a935988e2b66e4189b85f07c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timer::SetTim</definition>
+        <argsstring>(TIM_TypeDef *TIM)</argsstring>
+        <name>SetTim</name>
+        <param>
+          <type><ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref> *</type>
+          <declname>TIM</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="72" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1a8d22a9ef3402fea9ec05c0477492e7cc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timer::SetTIMChannel</definition>
+        <argsstring>(TIM_CHANNELS TIMChannel)</argsstring>
+        <name>SetTIMChannel</name>
+        <param>
+          <type><ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39" kindref="member">TIM_CHANNELS</ref></type>
+          <declname>TIMChannel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="73" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1af807c38bb86f53c4aeaed5a0787811c1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timer::SetTIMMode</definition>
+        <argsstring>(TIM_MODE TIMMode)</argsstring>
+        <name>SetTIMMode</name>
+        <param>
+          <type><ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701" kindref="member">TIM_MODE</ref></type>
+          <declname>TIMMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="74" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="139" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_timer_1a1b59222052d44b81b3c26f3c88368239" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t Timer::GetTime_usec</definition>
+        <argsstring>()</argsstring>
+        <name>GetTime_usec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="78" column="17" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1acc9bf0810dedd57df41a12cfa849a5ff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t Timer::GetTime_milisec</definition>
+        <argsstring>()</argsstring>
+        <name>GetTime_milisec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="79" column="17" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1a8273bc9959e1c908b018003950153d21" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timer::delay</definition>
+        <argsstring>(uint32_t delayTime_usec)</argsstring>
+        <name>delay</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>delayTime_usec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="80" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="50" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1a023934c2c5220d6f52bdd5df79666d98" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timer::Timer_Initiallize</definition>
+        <argsstring>()</argsstring>
+        <name>Timer_Initiallize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="81" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="12" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1a9d6f7719e2dcb9598bc3bca0043098d2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timer::Timer_Handler</definition>
+        <argsstring>()</argsstring>
+        <name>Timer_Handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="82" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="23" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1ac67a5defa2eb1e43bffa1796a8899a1a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Timer::verifyTimeInterrupt</definition>
+        <argsstring>()</argsstring>
+        <name>verifyTimeInterrupt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="83" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="30" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_timer_1aad48b169f08eba0caed873d02f3cc582" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Timer::Timer</definition>
+        <argsstring>(TIM_TypeDef *TIM, TIM_CHANNELS TIMChannel, TIM_MODE TIMMode)</argsstring>
+        <name>Timer</name>
+        <param>
+          <type><ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref> *</type>
+          <declname>TIM</declname>
+        </param>
+        <param>
+          <type><ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39" kindref="member">TIM_CHANNELS</ref></type>
+          <declname>TIMChannel</declname>
+        </param>
+        <param>
+          <type><ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701" kindref="member">TIM_MODE</ref></type>
+          <declname>TIMMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="86" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="62" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1aed9007700e41aeb68d39ed7a78bfdbeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Timer::Timer</definition>
+        <argsstring>(TIM_TypeDef *TIM, TIM_MODE TIMMode)</argsstring>
+        <name>Timer</name>
+        <param>
+          <type><ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref> *</type>
+          <declname>TIM</declname>
+        </param>
+        <param>
+          <type><ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701" kindref="member">TIM_MODE</ref></type>
+          <declname>TIMMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="87" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="71" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1a68f6b0beb2aa79f7f22fa0d309f5521e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timer::SetTIMRemap</definition>
+        <argsstring>(TIM_REMAP TIMRemap)</argsstring>
+        <name>SetTIMRemap</name>
+        <param>
+          <type><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref></type>
+          <declname>TIMRemap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="90" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="143" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref> *</type>
+        <definition>TIM_TypeDef * Timer::GetTim</definition>
+        <argsstring>()</argsstring>
+        <name>GetTim</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="93" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1a735e9ccaba0e385d6cfb94905f8fb898" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39" kindref="member">TIM_CHANNELS</ref></type>
+        <definition>TIM_CHANNELS Timer::GetTIMChannel</definition>
+        <argsstring>()</argsstring>
+        <name>GetTIMChannel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="94" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="156" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1a8c6d407b209f92b4d2417b67a5b465a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_t_i_m_e_r_8h_1a4d643ce91cc2d0a8d14324a436c00701" kindref="member">TIM_MODE</ref></type>
+        <definition>TIM_MODE Timer::GetTIMMode</definition>
+        <argsstring>()</argsstring>
+        <name>GetTIMMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="95" column="10" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="160" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1a8ae90dbc39bbf306d554af018add9413" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref></type>
+        <definition>TIM_REMAP Timer::GetTIMRemap</definition>
+        <argsstring>()</argsstring>
+        <name>GetTIMRemap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="96" column="11" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="164" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1a14992a91f5a53a1da137424df2fcee51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timer::TimerInit</definition>
+        <argsstring>()</argsstring>
+        <name>TimerInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; System Control Space Base Address</para>
+<para>&lt; NVIC Base Address</para>
+<para>&lt; NVIC configuration struct</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; System Control Space Base Address</para>
+<para>&lt; NVIC Base Address</para>
+<para>&lt; NVIC configuration struct</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; System Control Space Base Address</para>
+<para>&lt; NVIC Base Address</para>
+<para>&lt; NVIC configuration struct</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; System Control Space Base Address</para>
+<para>&lt; NVIC Base Address</para>
+<para>&lt; NVIC configuration struct</para>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="99" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="79" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1ae82350f89d1ffcdcd730f0dd2316dc69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timer::InterrupTime</definition>
+        <argsstring>(uint16_t time)</argsstring>
+        <name>InterrupTime</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="100" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_timer_1a52eb6a361fa6699b61d83394af2357e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Timer::ClearInterruptFlag</definition>
+        <argsstring>()</argsstring>
+        <name>ClearInterruptFlag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="101" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp" bodystart="125" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Encoder</label>
+        <link refid="class_encoder"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Timer</label>
+        <link refid="class_timer"/>
+      </node>
+      <node id="3">
+        <label>PWM</label>
+        <link refid="class_p_w_m"/>
+        <childnode refid="1" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>TIM_TypeDef</label>
+        <link refid="struct_t_i_m___type_def"/>
+      </node>
+      <node id="1">
+        <label>Timer</label>
+        <link refid="class_timer"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>TIM</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" line="48" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h" bodystart="47" bodyend="103"/>
+    <listofallmembers>
+      <member refid="class_timer_1a52eb6a361fa6699b61d83394af2357e4" prot="public" virt="non-virtual"><scope>Timer</scope><name>ClearInterruptFlag</name></member>
+      <member refid="class_timer_1a8273bc9959e1c908b018003950153d21" prot="public" virt="non-virtual"><scope>Timer</scope><name>delay</name></member>
+      <member refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" prot="public" virt="non-virtual"><scope>Timer</scope><name>GetTim</name></member>
+      <member refid="class_timer_1a735e9ccaba0e385d6cfb94905f8fb898" prot="public" virt="non-virtual"><scope>Timer</scope><name>GetTIMChannel</name></member>
+      <member refid="class_timer_1acc9bf0810dedd57df41a12cfa849a5ff" prot="public" virt="non-virtual"><scope>Timer</scope><name>GetTime_milisec</name></member>
+      <member refid="class_timer_1a1b59222052d44b81b3c26f3c88368239" prot="public" virt="non-virtual"><scope>Timer</scope><name>GetTime_usec</name></member>
+      <member refid="class_timer_1a8c6d407b209f92b4d2417b67a5b465a6" prot="public" virt="non-virtual"><scope>Timer</scope><name>GetTIMMode</name></member>
+      <member refid="class_timer_1a8ae90dbc39bbf306d554af018add9413" prot="public" virt="non-virtual"><scope>Timer</scope><name>GetTIMRemap</name></member>
+      <member refid="class_timer_1a3abc965eaa4ef534b63b8ace615e5d4b" prot="private" virt="non-virtual"><scope>Timer</scope><name>interruptGenerated</name></member>
+      <member refid="class_timer_1ae82350f89d1ffcdcd730f0dd2316dc69" prot="public" virt="non-virtual"><scope>Timer</scope><name>InterrupTime</name></member>
+      <member refid="class_timer_1adbe72d40a935988e2b66e4189b85f07c" prot="protected" virt="non-virtual"><scope>Timer</scope><name>SetTim</name></member>
+      <member refid="class_timer_1a8d22a9ef3402fea9ec05c0477492e7cc" prot="protected" virt="non-virtual"><scope>Timer</scope><name>SetTIMChannel</name></member>
+      <member refid="class_timer_1af807c38bb86f53c4aeaed5a0787811c1" prot="protected" virt="non-virtual"><scope>Timer</scope><name>SetTIMMode</name></member>
+      <member refid="class_timer_1a68f6b0beb2aa79f7f22fa0d309f5521e" prot="public" virt="non-virtual"><scope>Timer</scope><name>SetTIMRemap</name></member>
+      <member refid="class_timer_1a28770028f61d78e7b6b74338fb58edeb" prot="protected" virt="non-virtual"><scope>Timer</scope><name>TIM</name></member>
+      <member refid="class_timer_1a8bf420ba379fd36d8c9dbf15f65f0035" prot="private" virt="non-virtual"><scope>Timer</scope><name>TIM1Remap</name></member>
+      <member refid="class_timer_1a891ce25b9894740e35759d7f90d630a8" prot="private" virt="non-virtual"><scope>Timer</scope><name>TIM2Remap</name></member>
+      <member refid="class_timer_1a6a20ca693f5296707d77ba8e931bfb74" prot="private" virt="non-virtual"><scope>Timer</scope><name>TIM3Remap</name></member>
+      <member refid="class_timer_1ae4196d0906a6186ab07fa6ebbe91c69a" prot="private" virt="non-virtual"><scope>Timer</scope><name>TIM4Remap</name></member>
+      <member refid="class_timer_1a1d25f705d6b7eff9d414262a6e7e9b1f" prot="private" virt="non-virtual"><scope>Timer</scope><name>TIM_Timer_Counter</name></member>
+      <member refid="class_timer_1aa9a4e61f31e134cf75bd927aa8e9176c" prot="private" virt="non-virtual"><scope>Timer</scope><name>TIMChannel</name></member>
+      <member refid="class_timer_1a95517a2e2a6391a1faebb2a8394e7fb6" prot="private" virt="non-virtual"><scope>Timer</scope><name>time_in_milisec</name></member>
+      <member refid="class_timer_1a0df8c94f65252348562d13df83846b77" prot="private" virt="non-virtual"><scope>Timer</scope><name>time_in_usec</name></member>
+      <member refid="class_timer_1a5f16e8da27d2a5a5242dead46de05d97" prot="protected" virt="non-virtual"><scope>Timer</scope><name>Timer</name></member>
+      <member refid="class_timer_1aad48b169f08eba0caed873d02f3cc582" prot="public" virt="non-virtual"><scope>Timer</scope><name>Timer</name></member>
+      <member refid="class_timer_1aed9007700e41aeb68d39ed7a78bfdbeb" prot="public" virt="non-virtual"><scope>Timer</scope><name>Timer</name></member>
+      <member refid="class_timer_1a9d6f7719e2dcb9598bc3bca0043098d2" prot="public" virt="non-virtual"><scope>Timer</scope><name>Timer_Handler</name></member>
+      <member refid="class_timer_1a023934c2c5220d6f52bdd5df79666d98" prot="public" virt="non-virtual"><scope>Timer</scope><name>Timer_Initiallize</name></member>
+      <member refid="class_timer_1a14992a91f5a53a1da137424df2fcee51" prot="public" virt="non-virtual"><scope>Timer</scope><name>TimerInit</name></member>
+      <member refid="class_timer_1a2d4a69c3f274f41178c0cd88bf266957" prot="private" virt="non-virtual"><scope>Timer</scope><name>TIMMode</name></member>
+      <member refid="class_timer_1ac67a5defa2eb1e43bffa1796a8899a1a" prot="public" virt="non-virtual"><scope>Timer</scope><name>verifyTimeInterrupt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

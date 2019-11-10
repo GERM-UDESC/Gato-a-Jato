@@ -1,0 +1,1928 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_micro_8h" kind="file" language="C++">
+    <compoundname>Micro.h</compoundname>
+    <includes local="yes">stdint.h</includes>
+    <includedby refid="_g_p_i_o_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h</includedby>
+    <includedby refid="_t_i_m_e_r_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h</includedby>
+    <includedby refid="_g_p_i_o_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp</includedby>
+    <includedby refid="malha__fechada_8cpp" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</includedby>
+    <includedby refid="_sys_clock_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SysClock.h</includedby>
+    <includedby refid="_u_s_a_r_t_8h" local="yes">C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="21">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.cpp</label>
+        <link refid="_m_o_t_o_r_8cpp"/>
+      </node>
+      <node id="25">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.cpp</label>
+        <link refid="_g_p_i_o_8cpp"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.cpp</label>
+        <link refid="_l_i_n_e___s_e_n_s_o_r_8cpp"/>
+      </node>
+      <node id="11">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/malha_fechada.cpp</label>
+        <link refid="malha__fechada_8cpp"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.h</label>
+        <link refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h</label>
+        <link refid="_a_d_c_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/MOTOR.h</label>
+        <link refid="_m_o_t_o_r_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.h</label>
+        <link refid="_t_i_m_e_r_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.cpp</label>
+        <link refid="_p_w_m_8cpp"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp</label>
+        <link refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8cpp"/>
+      </node>
+      <node id="22">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h</label>
+        <link refid="_p_w_m_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.cpp</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8cpp"/>
+      </node>
+      <node id="12">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.h</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ENCODER.h</label>
+        <link refid="_e_n_c_o_d_e_r_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/KINEMATIC_CONTROL.h</label>
+        <link refid="_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ENCODER.cpp</label>
+        <link refid="_e_n_c_o_d_e_r_8cpp"/>
+      </node>
+      <node id="13">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SERIAL_COMMUNICATION.cpp</label>
+        <link refid="_s_e_r_i_a_l___c_o_m_m_u_n_i_c_a_t_i_o_n_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/TIMER.cpp</label>
+        <link refid="_t_i_m_e_r_8cpp"/>
+      </node>
+      <node id="16">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/REFLECTANCE_SENSOR.cpp</label>
+        <link refid="_r_e_f_l_e_c_t_a_n_c_e___s_e_n_s_o_r_8cpp"/>
+      </node>
+      <node id="29">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.cpp</label>
+        <link refid="_u_s_a_r_t_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ANGLE_LINE_SENSOR.h</label>
+        <link refid="_a_n_g_l_e___l_i_n_e___s_e_n_s_o_r_8h"/>
+      </node>
+      <node id="26">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SysClock.h</label>
+        <link refid="_sys_clock_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/USART.h</label>
+        <link refid="_u_s_a_r_t_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SysClock.cpp</label>
+        <link refid="_sys_clock_8cpp"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.cpp</label>
+        <link refid="_a_d_c_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/LINE_SENSOR.h</label>
+        <link refid="_l_i_n_e___s_e_n_s_o_r_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_a_d_c___type_def" prot="public">ADC_TypeDef</innerclass>
+    <innerclass refid="struct_r_c_c___type_def" prot="public">RCC_TypeDef</innerclass>
+    <innerclass refid="struct_t_i_m___type_def" prot="public">TIM_TypeDef</innerclass>
+    <innerclass refid="struct_u_s_a_r_t___type_def" prot="public">USART_TypeDef</innerclass>
+    <innerclass refid="struct_g_p_i_o___type_def" prot="public">GPIO_TypeDef</innerclass>
+    <innerclass refid="struct_a_f_i_o___type_def" prot="public">AFIO_TypeDef</innerclass>
+    <innerclass refid="struct_p_w_r___type_def" prot="public">PWR_TypeDef</innerclass>
+    <innerclass refid="struct_r_t_c___type_def" prot="public">RTC_TypeDef</innerclass>
+    <innerclass refid="struct_f_l_a_s_h___type_def" prot="public">FLASH_TypeDef</innerclass>
+    <innerclass refid="struct_n_v_i_c___type" prot="public">NVIC_Type</innerclass>
+    <innerclass refid="struct_sys_tick___type" prot="public">SysTick_Type</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_micro_8h_1a23a9099a5f8fc9c6e253c0eecb2be8db" prot="public" static="no">
+        <name>FLASH_BASE</name>
+        <initializer>((uint32_t)0x08000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FLASH base address in the alias region </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="249" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a05e8f3d2e5868754a7cd88614955aecc" prot="public" static="no">
+        <name>SRAM_BASE</name>
+        <initializer>((uint32_t)0x20000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SRAM base address in the alias region </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="250" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a9171f49478fa86d932f89e78e73b88b0" prot="public" static="no">
+        <name>PERIPH_BASE</name>
+        <initializer>((uint32_t)0x40000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral base address in the alias region </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="251" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1ad3548b6e2f017f39d399358f3ac98454" prot="public" static="no">
+        <name>SRAM_BB_BASE</name>
+        <initializer>((uint32_t)0x22000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SRAM base address in the bit-band region </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="253" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1aed7efc100877000845c236ccdc9e144a" prot="public" static="no">
+        <name>PERIPH_BB_BASE</name>
+        <initializer>((uint32_t)0x42000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Peripheral base address in the bit-band region </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="254" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1addf0e199dccba83272b20c9fb4d3aaed" prot="public" static="no">
+        <name>FSMC_R_BASE</name>
+        <initializer>((uint32_t)0xA0000000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>FSMC registers base address Peripheral memory map </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="256" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a45666d911f39addd4c8c0a0ac3388cfb" prot="public" static="no">
+        <name>APB1PERIPH_BASE</name>
+        <initializer><ref refid="_micro_8h_1a9171f49478fa86d932f89e78e73b88b0" kindref="member">PERIPH_BASE</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="259" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a25b99d6065f1c8f751e78f43ade652cb" prot="public" static="no">
+        <name>APB2PERIPH_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a9171f49478fa86d932f89e78e73b88b0" kindref="member">PERIPH_BASE</ref> + 0x10000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="260" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a92eb5d49730765d2abd0f5b09548f9f5" prot="public" static="no">
+        <name>AHBPERIPH_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a9171f49478fa86d932f89e78e73b88b0" kindref="member">PERIPH_BASE</ref> + 0x20000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="261" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a00d0fe6ad532ab32f0f81cafca8d3aa5" prot="public" static="no">
+        <name>TIM2_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a45666d911f39addd4c8c0a0ac3388cfb" kindref="member">APB1PERIPH_BASE</ref> + 0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="263" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1af0c34a518f87e1e505cd2332e989564a" prot="public" static="no">
+        <name>TIM3_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a45666d911f39addd4c8c0a0ac3388cfb" kindref="member">APB1PERIPH_BASE</ref> + 0x0400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="264" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a56e2d44b0002f316527b8913866a370d" prot="public" static="no">
+        <name>TIM4_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a45666d911f39addd4c8c0a0ac3388cfb" kindref="member">APB1PERIPH_BASE</ref> + 0x0800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="265" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a4265e665d56225412e57a61d87417022" prot="public" static="no">
+        <name>RTC_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a45666d911f39addd4c8c0a0ac3388cfb" kindref="member">APB1PERIPH_BASE</ref> + 0x2800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="267" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1ade83162a04bca0b15b39018a8e8ec090" prot="public" static="no">
+        <name>USART2_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a45666d911f39addd4c8c0a0ac3388cfb" kindref="member">APB1PERIPH_BASE</ref> + 0x4400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="269" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1abe0d6539ac0026d598274ee7f45b0251" prot="public" static="no">
+        <name>USART3_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a45666d911f39addd4c8c0a0ac3388cfb" kindref="member">APB1PERIPH_BASE</ref> + 0x4800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="270" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1ac691ec23dace8b7a649a25acb110217a" prot="public" static="no">
+        <name>PWR_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a45666d911f39addd4c8c0a0ac3388cfb" kindref="member">APB1PERIPH_BASE</ref> + 0x7000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="272" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a5f7e3eacfcf4c313c25012795148a680" prot="public" static="no">
+        <name>AFIO_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a25b99d6065f1c8f751e78f43ade652cb" kindref="member">APB2PERIPH_BASE</ref> + 0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="274" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1ad7723846cc5db8e43a44d78cf21f6efa" prot="public" static="no">
+        <name>GPIOA_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a25b99d6065f1c8f751e78f43ade652cb" kindref="member">APB2PERIPH_BASE</ref> + 0x0800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="275" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1ac944a89eb789000ece920c0f89cb6a68" prot="public" static="no">
+        <name>GPIOB_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a25b99d6065f1c8f751e78f43ade652cb" kindref="member">APB2PERIPH_BASE</ref> + 0x0C00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="276" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a26f267dc35338eef219544c51f1e6b3f" prot="public" static="no">
+        <name>GPIOC_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a25b99d6065f1c8f751e78f43ade652cb" kindref="member">APB2PERIPH_BASE</ref> + 0x1000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="277" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a1a93ab27129f04064089616910c296ec" prot="public" static="no">
+        <name>GPIOD_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a25b99d6065f1c8f751e78f43ade652cb" kindref="member">APB2PERIPH_BASE</ref> + 0x1400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="278" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1ab487b1983d936c4fee3e9e88b95aad9d" prot="public" static="no">
+        <name>GPIOE_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a25b99d6065f1c8f751e78f43ade652cb" kindref="member">APB2PERIPH_BASE</ref> + 0x1800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="279" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a7f9a3f4223a1a784af464a114978d26e" prot="public" static="no">
+        <name>GPIOF_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a25b99d6065f1c8f751e78f43ade652cb" kindref="member">APB2PERIPH_BASE</ref> + 0x1C00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="280" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a5d8ca4020f2e8c00bde974e8e7c13cfe" prot="public" static="no">
+        <name>GPIOG_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a25b99d6065f1c8f751e78f43ade652cb" kindref="member">APB2PERIPH_BASE</ref> + 0x2000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="281" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a695c9a2f892363a1c942405c8d351b91" prot="public" static="no">
+        <name>ADC1_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a25b99d6065f1c8f751e78f43ade652cb" kindref="member">APB2PERIPH_BASE</ref> + 0x2400)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="282" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a6544abc57f9759f610eee09a02442ae6" prot="public" static="no">
+        <name>ADC2_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a25b99d6065f1c8f751e78f43ade652cb" kindref="member">APB2PERIPH_BASE</ref> + 0x2800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="283" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1af8aa324ca5011b8173ab16585ed7324a" prot="public" static="no">
+        <name>TIM1_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a25b99d6065f1c8f751e78f43ade652cb" kindref="member">APB2PERIPH_BASE</ref> + 0x2C00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="284" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a86162ab3f740db9026c1320d46938b4d" prot="public" static="no">
+        <name>USART1_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a25b99d6065f1c8f751e78f43ade652cb" kindref="member">APB2PERIPH_BASE</ref> + 0x3800)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="286" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a0e681b03f364532055d88f63fec0d99d" prot="public" static="no">
+        <name>RCC_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a92eb5d49730765d2abd0f5b09548f9f5" kindref="member">AHBPERIPH_BASE</ref> + 0x1000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="288" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a8e21f4845015730c5731763169ec0e9b" prot="public" static="no">
+        <name>FLASH_R_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a92eb5d49730765d2abd0f5b09548f9f5" kindref="member">AHBPERIPH_BASE</ref> + 0x2000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flash registers base address </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="290" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a3cfac9f2e43673f790f8668d48b4b92b" prot="public" static="no">
+        <name>TIM2</name>
+        <initializer>((<ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref> *) <ref refid="_micro_8h_1a00d0fe6ad532ab32f0f81cafca8d3aa5" kindref="member">TIM2_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="292" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a61ee4c391385607d7af432b63905fcc9" prot="public" static="no">
+        <name>TIM3</name>
+        <initializer>((<ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref> *) <ref refid="_micro_8h_1af0c34a518f87e1e505cd2332e989564a" kindref="member">TIM3_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="293" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a91a09bad8bdc7a1cb3d85cf49c94c8ec" prot="public" static="no">
+        <name>TIM4</name>
+        <initializer>((<ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref> *) <ref refid="_micro_8h_1a56e2d44b0002f316527b8913866a370d" kindref="member">TIM4_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="294" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a5359a088f5d8b20ce74d920e46059304" prot="public" static="no">
+        <name>RTC</name>
+        <initializer>((<ref refid="struct_r_t_c___type_def" kindref="compound">RTC_TypeDef</ref> *) <ref refid="_micro_8h_1a4265e665d56225412e57a61d87417022" kindref="member">RTC_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="296" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1af114a9eab03ca08a6fb720e511595930" prot="public" static="no">
+        <name>USART2</name>
+        <initializer>((<ref refid="struct_u_s_a_r_t___type_def" kindref="compound">USART_TypeDef</ref> *) <ref refid="_micro_8h_1ade83162a04bca0b15b39018a8e8ec090" kindref="member">USART2_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="298" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a2350115553c1fe0a7bc14e6a7ec6a225" prot="public" static="no">
+        <name>USART3</name>
+        <initializer>((<ref refid="struct_u_s_a_r_t___type_def" kindref="compound">USART_TypeDef</ref> *) <ref refid="_micro_8h_1abe0d6539ac0026d598274ee7f45b0251" kindref="member">USART3_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="299" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a582e09473429414015b1de90cf767fa8" prot="public" static="no">
+        <name>AFIO</name>
+        <initializer>((<ref refid="struct_a_f_i_o___type_def" kindref="compound">AFIO_TypeDef</ref> *) <ref refid="_micro_8h_1a5f7e3eacfcf4c313c25012795148a680" kindref="member">AFIO_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="301" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1ac485358099728ddae050db37924dd6b7" prot="public" static="no">
+        <name>GPIOA</name>
+        <initializer>((<ref refid="struct_g_p_i_o___type_def" kindref="compound">GPIO_TypeDef</ref> *) <ref refid="_micro_8h_1ad7723846cc5db8e43a44d78cf21f6efa" kindref="member">GPIOA_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="302" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a68b66ac73be4c836db878a42e1fea3cd" prot="public" static="no">
+        <name>GPIOB</name>
+        <initializer>((<ref refid="struct_g_p_i_o___type_def" kindref="compound">GPIO_TypeDef</ref> *) <ref refid="_micro_8h_1ac944a89eb789000ece920c0f89cb6a68" kindref="member">GPIOB_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="303" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a2dca03332d620196ba943bc2346eaa08" prot="public" static="no">
+        <name>GPIOC</name>
+        <initializer>((<ref refid="struct_g_p_i_o___type_def" kindref="compound">GPIO_TypeDef</ref> *) <ref refid="_micro_8h_1a26f267dc35338eef219544c51f1e6b3f" kindref="member">GPIOC_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="304" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a7580b1a929ea9df59725ba9c18eba6ac" prot="public" static="no">
+        <name>GPIOD</name>
+        <initializer>((<ref refid="struct_g_p_i_o___type_def" kindref="compound">GPIO_TypeDef</ref> *) <ref refid="_micro_8h_1a1a93ab27129f04064089616910c296ec" kindref="member">GPIOD_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="305" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1ae04bdb5e8acc47cab1d0532e6b0d0763" prot="public" static="no">
+        <name>GPIOE</name>
+        <initializer>((<ref refid="struct_g_p_i_o___type_def" kindref="compound">GPIO_TypeDef</ref> *) <ref refid="_micro_8h_1ab487b1983d936c4fee3e9e88b95aad9d" kindref="member">GPIOE_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="306" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a43c3022dede7c9db7a58d3c3409dbc8d" prot="public" static="no">
+        <name>GPIOF</name>
+        <initializer>((<ref refid="struct_g_p_i_o___type_def" kindref="compound">GPIO_TypeDef</ref> *) <ref refid="_micro_8h_1a7f9a3f4223a1a784af464a114978d26e" kindref="member">GPIOF_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="307" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a02a2a23a32f9b02166a8c64012842414" prot="public" static="no">
+        <name>GPIOG</name>
+        <initializer>((<ref refid="struct_g_p_i_o___type_def" kindref="compound">GPIO_TypeDef</ref> *) <ref refid="_micro_8h_1a5d8ca4020f2e8c00bde974e8e7c13cfe" kindref="member">GPIOG_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="308" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a90d2d5c526ce5c0a551f533eccbee71a" prot="public" static="no">
+        <name>ADC1</name>
+        <initializer>((<ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *) <ref refid="_micro_8h_1a695c9a2f892363a1c942405c8d351b91" kindref="member">ADC1_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="309" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1ac5503ae96c26b4475226f96715a1bf1e" prot="public" static="no">
+        <name>ADC2</name>
+        <initializer>((<ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref> *) <ref refid="_micro_8h_1a6544abc57f9759f610eee09a02442ae6" kindref="member">ADC2_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="310" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a2e87451fea8dc9380056d3cfc5ed81fb" prot="public" static="no">
+        <name>TIM1</name>
+        <initializer>((<ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref> *) <ref refid="_micro_8h_1af8aa324ca5011b8173ab16585ed7324a" kindref="member">TIM1_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="311" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a74944438a086975793d26ae48d5882d4" prot="public" static="no">
+        <name>RCC</name>
+        <initializer>((<ref refid="struct_r_c_c___type_def" kindref="compound">RCC_TypeDef</ref> *) <ref refid="_micro_8h_1a0e681b03f364532055d88f63fec0d99d" kindref="member">RCC_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="313" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a92871691058ff7ccffd7635930cb08da" prot="public" static="no">
+        <name>USART1</name>
+        <initializer>((<ref refid="struct_u_s_a_r_t___type_def" kindref="compound">USART_TypeDef</ref> *) <ref refid="_micro_8h_1a86162ab3f740db9026c1320d46938b4d" kindref="member">USART1_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="315" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a04651c526497822a859942b928e57f8e" prot="public" static="no">
+        <name>PWR</name>
+        <initializer>((<ref refid="struct_p_w_r___type_def" kindref="compound">PWR_TypeDef</ref> *) <ref refid="_micro_8h_1ac691ec23dace8b7a649a25acb110217a" kindref="member">PWR_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="317" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a844ea28ba1e0a5a0e497f16b61ea306b" prot="public" static="no">
+        <name>FLASH</name>
+        <initializer>((<ref refid="struct_f_l_a_s_h___type_def" kindref="compound">FLASH_TypeDef</ref> *) <ref refid="_micro_8h_1a8e21f4845015730c5731763169ec0e9b" kindref="member">FLASH_R_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="319" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a3c14ed93192c8d9143322bbf77ebf770" prot="public" static="no">
+        <name>SCS_BASE</name>
+        <initializer>(0xE000E000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Control Space Base Address </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="361" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1add76251e412a195ec0a8f47227a8359e" prot="public" static="no">
+        <name>ITM_BASE</name>
+        <initializer>(0xE0000000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM Base Address </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="362" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1afdab534f961bf8935eb456cb7700dcd2" prot="public" static="no">
+        <name>DWT_BASE</name>
+        <initializer>(0xE0001000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DWT Base Address </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="363" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a2b1eeff850a7e418844ca847145a1a68" prot="public" static="no">
+        <name>TPI_BASE</name>
+        <initializer>(0xE0040000UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI Base Address </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="364" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="364" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a680604dbcda9e9b31a1639fcffe5230b" prot="public" static="no">
+        <name>CoreDebug_BASE</name>
+        <initializer>(0xE000EDF0UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Core Debug Base Address </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="365" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a58effaac0b93006b756d33209e814646" prot="public" static="no">
+        <name>SysTick_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0010UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick Base Address </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="366" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1aa0288691785a5f868238e0468b39523d" prot="public" static="no">
+        <name>NVIC_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0100UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NVIC Base Address </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="367" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1ad55a7ddb8d4b2398b0c1cfec76c0d9fd" prot="public" static="no">
+        <name>SCB_BASE</name>
+        <initializer>(<ref refid="_micro_8h_1a3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref> +  0x0D00UL)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Control Block Base Address </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="368" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a9fe0cd2eef83a8adad94490d9ecca63f" prot="public" static="no">
+        <name>SCnSCB</name>
+        <initializer>((SCnSCB_Type    *)     <ref refid="_micro_8h_1a3c14ed93192c8d9143322bbf77ebf770" kindref="member">SCS_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System control Register not in SCB </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="370" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1aaaf6477c2bde2f00f99e3c2fd1060b01" prot="public" static="no">
+        <name>SCB</name>
+        <initializer>((SCB_Type       *)     <ref refid="_micro_8h_1ad55a7ddb8d4b2398b0c1cfec76c0d9fd" kindref="member">SCB_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SCB configuration struct </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="371" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1acd96c53beeaff8f603fcda425eb295de" prot="public" static="no">
+        <name>SysTick</name>
+        <initializer>((<ref refid="struct_sys_tick___type" kindref="compound">SysTick_Type</ref>   *)     <ref refid="_micro_8h_1a58effaac0b93006b756d33209e814646" kindref="member">SysTick_BASE</ref>  )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SysTick configuration struct </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="372" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1ac8e97e8ce56ae9f57da1363a937f8a17" prot="public" static="no">
+        <name>NVIC</name>
+        <initializer>((<ref refid="struct_n_v_i_c___type" kindref="compound">NVIC_Type</ref>      *)     <ref refid="_micro_8h_1aa0288691785a5f868238e0468b39523d" kindref="member">NVIC_BASE</ref>     )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>NVIC configuration struct </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="373" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1abae7cdf882def602cb787bb039ff6a43" prot="public" static="no">
+        <name>ITM</name>
+        <initializer>((ITM_Type       *)     <ref refid="_micro_8h_1add76251e412a195ec0a8f47227a8359e" kindref="member">ITM_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ITM configuration struct </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="374" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1abbe5a060185e1d5afa3f85b14e10a6ce" prot="public" static="no">
+        <name>DWT</name>
+        <initializer>((DWT_Type       *)     <ref refid="_micro_8h_1afdab534f961bf8935eb456cb7700dcd2" kindref="member">DWT_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DWT configuration struct </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="375" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1a8b4dd00016aed25a0ea54e9a9acd1239" prot="public" static="no">
+        <name>TPI</name>
+        <initializer>((TPI_Type       *)     <ref refid="_micro_8h_1a2b1eeff850a7e418844ca847145a1a68" kindref="member">TPI_BASE</ref>      )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TPI configuration struct </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="376" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_micro_8h_1ab6e30a2b802d9021619dbb0be7f5d63d" prot="public" static="no">
+        <name>CoreDebug</name>
+        <initializer>((CoreDebug_Type *)     <ref refid="_micro_8h_1a680604dbcda9e9b31a1639fcffe5230b" kindref="member">CoreDebug_BASE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Core Debug configuration struct </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="377" column="9" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083" prot="public" static="no" strong="no">
+        <type></type>
+        <name>IRQn</name>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ade177d9c70c89e084093024b932a4e30" prot="public">
+          <name>NonMaskableInt_IRQn</name>
+          <initializer>= -14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>2 Non Maskable Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a33ff1cf7098de65d61b6354fee6cd5aa" prot="public">
+          <name>MemoryManagement_IRQn</name>
+          <initializer>= -12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>4 Cortex-M3 Memory Management Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a8693500eff174f16119e96234fee73af" prot="public">
+          <name>BusFault_IRQn</name>
+          <initializer>= -11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>5 Cortex-M3 Bus Fault Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a6895237c9443601ac832efa635dd8bbf" prot="public">
+          <name>UsageFault_IRQn</name>
+          <initializer>= -10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>6 Cortex-M3 Usage Fault Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a4ce820b3cc6cf3a796b41aadc0cf1237" prot="public">
+          <name>SVCall_IRQn</name>
+          <initializer>= -5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>11 Cortex-M3 SV Call Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a8e033fcef7aed98a31c60a7de206722c" prot="public">
+          <name>DebugMonitor_IRQn</name>
+          <initializer>= -4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>12 Cortex-M3 Debug Monitor Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a03c3cc89984928816d81793fc7bce4a2" prot="public">
+          <name>PendSV_IRQn</name>
+          <initializer>= -2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>14 Cortex-M3 Pend SV Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a6dbff8f8543325f3474cbae2446776e7" prot="public">
+          <name>SysTick_IRQn</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>15 Cortex-M3 System Tick Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a971089d7566ef902dfa0c80ac3a8fd52" prot="public">
+          <name>WWDG_IRQn</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Window WatchDog Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ab0b51ffcc4dcf5661141b79c8e5bd924" prot="public">
+          <name>PVD_IRQn</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PVD through EXTI Line detection Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a285d93ad54a43d831dc4955299c5b862" prot="public">
+          <name>TAMPER_IRQn</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Tamper Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083adcc0f2770f7f57f75fac3d8bcac0e858" prot="public">
+          <name>RTC_IRQn</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>RTC global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a91b73963ce243a1d031576d49e137fab" prot="public">
+          <name>FLASH_IRQn</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FLASH global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a5710b22392997bac63daa5c999730f77" prot="public">
+          <name>RCC_IRQn</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>RCC global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ab6aa6f87d26bbc6cf99b067b8d75c2f7" prot="public">
+          <name>EXTI0_IRQn</name>
+          <initializer>= 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EXTI Line0 Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ae4badcdecdb94eb10129c4c0577c5e19" prot="public">
+          <name>EXTI1_IRQn</name>
+          <initializer>= 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EXTI Line1 Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a082cb3f7839069a0715fd76c7eacbbc9" prot="public">
+          <name>EXTI2_IRQn</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EXTI Line2 Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083add889c84ba5de466ced209069e05d602" prot="public">
+          <name>EXTI3_IRQn</name>
+          <initializer>= 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EXTI Line3 Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ab70a40106ca4486770df5d2072d9ac0e" prot="public">
+          <name>EXTI4_IRQn</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>EXTI Line4 Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a3ccf41a34f494246c67d3239afa9c97f" prot="public">
+          <name>DMA1_Channel1_IRQn</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DMA1 Channel 1 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a1c7824eed187b747bcf8a3b4cd22c8fc" prot="public">
+          <name>DMA1_Channel2_IRQn</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DMA1 Channel 2 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a3d575a484e3cb668a42e6f9074112d23" prot="public">
+          <name>DMA1_Channel3_IRQn</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DMA1 Channel 3 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ae36905d55d7cbb8ffb2de44c9b88bb31" prot="public">
+          <name>DMA1_Channel4_IRQn</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DMA1 Channel 4 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083abf98e4379328f74686524faa05bf6177" prot="public">
+          <name>DMA1_Channel5_IRQn</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DMA1 Channel 5 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083aab3710849c919f2327eaa001d9e2a7a0" prot="public">
+          <name>DMA1_Channel6_IRQn</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DMA1 Channel 6 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a6617c3c1d75470b8bfcc48f82ff38fd1" prot="public">
+          <name>DMA1_Channel7_IRQn</name>
+          <initializer>= 17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DMA1 Channel 7 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a19cf421347f52d547d370887640c158a" prot="public">
+          <name>ADC1_2_IRQn</name>
+          <initializer>= 18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ADC1 and ADC2 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a6baa609f83561f41f7715ff14eeb7d0f" prot="public">
+          <name>USB_HP_CAN1_TX_IRQn</name>
+          <initializer>= 19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USB Device High Priority or CAN1 TX Interrupts <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a44d80f3b50a6e2526b806ddc87c4ce86" prot="public">
+          <name>USB_LP_CAN1_RX0_IRQn</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USB Device Low Priority or CAN1 RX0 Interrupts <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083af71ef06c4f9ff0e1691c21ff3670acd4" prot="public">
+          <name>CAN1_RX1_IRQn</name>
+          <initializer>= 21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CAN1 RX1 Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a0f5f129d88a5606a378811e43039e274" prot="public">
+          <name>CAN1_SCE_IRQn</name>
+          <initializer>= 22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>CAN1 SCE Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083aa3aa50e0353871985facf62d055faa52" prot="public">
+          <name>EXTI9_5_IRQn</name>
+          <initializer>= 23</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>External Line[9:5] Interrupts <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a53b88408ead2373e64f39fd0c79fa88f" prot="public">
+          <name>TIM1_BRK_IRQn</name>
+          <initializer>= 24</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TIM1 Break Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a78ef1a20c5b8e93cb17bf90afc0c5bd9" prot="public">
+          <name>TIM1_UP_IRQn</name>
+          <initializer>= 25</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TIM1 Update Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ac50e91f8ec34b86d84dec304e2b61a6c" prot="public">
+          <name>TIM1_TRG_COM_IRQn</name>
+          <initializer>= 26</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TIM1 Trigger and Commutation Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083af312f0a21f600f9b286427e50c549ca9" prot="public">
+          <name>TIM1_CC_IRQn</name>
+          <initializer>= 27</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TIM1 Capture Compare Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a3a4e2095a926e4095d3c846eb1c98afa" prot="public">
+          <name>TIM2_IRQn</name>
+          <initializer>= 28</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TIM2 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a985574288f66e2a00e97387424a9a2d8" prot="public">
+          <name>TIM3_IRQn</name>
+          <initializer>= 29</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TIM3 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a368b899ca740b9ae0d75841f3abf68c4" prot="public">
+          <name>TIM4_IRQn</name>
+          <initializer>= 30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TIM4 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a9852dbbe8c014e716ce7e03a7b809751" prot="public">
+          <name>I2C1_EV_IRQn</name>
+          <initializer>= 31</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2C1 Event Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a2ec363869f4488782dc10a60abce3b34" prot="public">
+          <name>I2C1_ER_IRQn</name>
+          <initializer>= 32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2C1 Error Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a3020193786527c47d2e4d8c92ceee804" prot="public">
+          <name>I2C2_EV_IRQn</name>
+          <initializer>= 33</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2C2 Event Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a60c35f2d48d512bd6818bc9fef7053d7" prot="public">
+          <name>I2C2_ER_IRQn</name>
+          <initializer>= 34</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>I2C2 Error Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083aacdff1a9c42582ed663214cbe62c1174" prot="public">
+          <name>SPI1_IRQn</name>
+          <initializer>= 35</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SPI1 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a505fbd4ccf7c2a14c8b76dc9e58f7ede" prot="public">
+          <name>SPI2_IRQn</name>
+          <initializer>= 36</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SPI2 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ad97cb163e1f678367e37c50d54d161ab" prot="public">
+          <name>USART1_IRQn</name>
+          <initializer>= 37</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USART1 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a3f9c48714d0e5baaba6613343f0da68e" prot="public">
+          <name>USART2_IRQn</name>
+          <initializer>= 38</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USART2 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083afb13802afc1f5fdf5c90e73ee99e5ff3" prot="public">
+          <name>USART3_IRQn</name>
+          <initializer>= 39</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USART3 global Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a9fb0ad0c850234d1983fafdb17378e2f" prot="public">
+          <name>EXTI15_10_IRQn</name>
+          <initializer>= 40</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>External Line[15:10] Interrupts <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a657f8d70d4aaa199064e6b1017d3ab54" prot="public">
+          <name>RTCAlarm_IRQn</name>
+          <initializer>= 41</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>RTC Alarm through EXTI Line Interrupt <linebreak/>
+ </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a2ad262973688511beafcd1312ce78357" prot="public">
+          <name>USBWakeUp_IRQn</name>
+          <initializer>= 42</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USB Device WakeUp from suspend through EXTI Line Interrupt </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="9" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" bodystart="8" bodyend="64"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_micro_8h_1ac3af4a32370fb28c4ade8bf2add80251" prot="public" static="no">
+        <type>enum <ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083" kindref="member">IRQn</ref></type>
+        <definition>typedef enum IRQn  IRQn_Type</definition>
+        <argsstring></argsstring>
+        <name>IRQn_Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h" line="64" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>STM32F103C8T6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32F103C8T6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stdint.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Enumeration<sp/>for<sp/>the<sp/>IRQ<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083" kindref="member">IRQn</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/******<sp/><sp/>Cortex-M3<sp/>Processor<sp/>Exceptions<sp/>Numbers<sp/>***************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ade177d9c70c89e084093024b932a4e30" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ade177d9c70c89e084093024b932a4e30" kindref="member">NonMaskableInt_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-14,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a33ff1cf7098de65d61b6354fee6cd5aa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a33ff1cf7098de65d61b6354fee6cd5aa" kindref="member">MemoryManagement_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-12,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="13" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a8693500eff174f16119e96234fee73af" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a8693500eff174f16119e96234fee73af" kindref="member">BusFault_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-11,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a6895237c9443601ac832efa635dd8bbf" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a6895237c9443601ac832efa635dd8bbf" kindref="member">UsageFault_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-10,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a4ce820b3cc6cf3a796b41aadc0cf1237" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a4ce820b3cc6cf3a796b41aadc0cf1237" kindref="member">SVCall_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-5,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a8e033fcef7aed98a31c60a7de206722c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a8e033fcef7aed98a31c60a7de206722c" kindref="member">DebugMonitor_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-4,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a03c3cc89984928816d81793fc7bce4a2" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a03c3cc89984928816d81793fc7bce4a2" kindref="member">PendSV_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-2,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a6dbff8f8543325f3474cbae2446776e7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a6dbff8f8543325f3474cbae2446776e7" kindref="member">SysTick_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-1,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="comment">/******<sp/><sp/>STM32<sp/>specific<sp/>Interrupt<sp/>Numbers<sp/>*********************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a971089d7566ef902dfa0c80ac3a8fd52" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a971089d7566ef902dfa0c80ac3a8fd52" kindref="member">WWDG_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ab0b51ffcc4dcf5661141b79c8e5bd924" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ab0b51ffcc4dcf5661141b79c8e5bd924" kindref="member">PVD_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>1,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a285d93ad54a43d831dc4955299c5b862" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a285d93ad54a43d831dc4955299c5b862" kindref="member">TAMPER_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>2,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083adcc0f2770f7f57f75fac3d8bcac0e858" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083adcc0f2770f7f57f75fac3d8bcac0e858" kindref="member">RTC_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>3,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a91b73963ce243a1d031576d49e137fab" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a91b73963ce243a1d031576d49e137fab" kindref="member">FLASH_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>4,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a5710b22392997bac63daa5c999730f77" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a5710b22392997bac63daa5c999730f77" kindref="member">RCC_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>5,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ab6aa6f87d26bbc6cf99b067b8d75c2f7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ab6aa6f87d26bbc6cf99b067b8d75c2f7" kindref="member">EXTI0_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>6,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ae4badcdecdb94eb10129c4c0577c5e19" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ae4badcdecdb94eb10129c4c0577c5e19" kindref="member">EXTI1_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>7,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a082cb3f7839069a0715fd76c7eacbbc9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a082cb3f7839069a0715fd76c7eacbbc9" kindref="member">EXTI2_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>8,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083add889c84ba5de466ced209069e05d602" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083add889c84ba5de466ced209069e05d602" kindref="member">EXTI3_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>9,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ab70a40106ca4486770df5d2072d9ac0e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ab70a40106ca4486770df5d2072d9ac0e" kindref="member">EXTI4_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>10,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a3ccf41a34f494246c67d3239afa9c97f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a3ccf41a34f494246c67d3239afa9c97f" kindref="member">DMA1_Channel1_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>11,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a1c7824eed187b747bcf8a3b4cd22c8fc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a1c7824eed187b747bcf8a3b4cd22c8fc" kindref="member">DMA1_Channel2_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>12,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a3d575a484e3cb668a42e6f9074112d23" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a3d575a484e3cb668a42e6f9074112d23" kindref="member">DMA1_Channel3_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>13,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ae36905d55d7cbb8ffb2de44c9b88bb31" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ae36905d55d7cbb8ffb2de44c9b88bb31" kindref="member">DMA1_Channel4_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>14,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083abf98e4379328f74686524faa05bf6177" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083abf98e4379328f74686524faa05bf6177" kindref="member">DMA1_Channel5_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>15,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083aab3710849c919f2327eaa001d9e2a7a0" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083aab3710849c919f2327eaa001d9e2a7a0" kindref="member">DMA1_Channel6_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>16,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a6617c3c1d75470b8bfcc48f82ff38fd1" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a6617c3c1d75470b8bfcc48f82ff38fd1" kindref="member">DMA1_Channel7_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>17,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a19cf421347f52d547d370887640c158a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a19cf421347f52d547d370887640c158a" kindref="member">ADC1_2_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>18,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a6baa609f83561f41f7715ff14eeb7d0f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a6baa609f83561f41f7715ff14eeb7d0f" kindref="member">USB_HP_CAN1_TX_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>19,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a44d80f3b50a6e2526b806ddc87c4ce86" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a44d80f3b50a6e2526b806ddc87c4ce86" kindref="member">USB_LP_CAN1_RX0_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>20,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083af71ef06c4f9ff0e1691c21ff3670acd4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083af71ef06c4f9ff0e1691c21ff3670acd4" kindref="member">CAN1_RX1_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>21,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="43" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a0f5f129d88a5606a378811e43039e274" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a0f5f129d88a5606a378811e43039e274" kindref="member">CAN1_SCE_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>22,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083aa3aa50e0353871985facf62d055faa52" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083aa3aa50e0353871985facf62d055faa52" kindref="member">EXTI9_5_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>23,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a53b88408ead2373e64f39fd0c79fa88f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a53b88408ead2373e64f39fd0c79fa88f" kindref="member">TIM1_BRK_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>24,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a78ef1a20c5b8e93cb17bf90afc0c5bd9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a78ef1a20c5b8e93cb17bf90afc0c5bd9" kindref="member">TIM1_UP_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>25,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ac50e91f8ec34b86d84dec304e2b61a6c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ac50e91f8ec34b86d84dec304e2b61a6c" kindref="member">TIM1_TRG_COM_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>26,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083af312f0a21f600f9b286427e50c549ca9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083af312f0a21f600f9b286427e50c549ca9" kindref="member">TIM1_CC_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>27,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a3a4e2095a926e4095d3c846eb1c98afa" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a3a4e2095a926e4095d3c846eb1c98afa" kindref="member">TIM2_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>28,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a985574288f66e2a00e97387424a9a2d8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a985574288f66e2a00e97387424a9a2d8" kindref="member">TIM3_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>29,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a368b899ca740b9ae0d75841f3abf68c4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a368b899ca740b9ae0d75841f3abf68c4" kindref="member">TIM4_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>30,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a9852dbbe8c014e716ce7e03a7b809751" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a9852dbbe8c014e716ce7e03a7b809751" kindref="member">I2C1_EV_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>31,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a2ec363869f4488782dc10a60abce3b34" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a2ec363869f4488782dc10a60abce3b34" kindref="member">I2C1_ER_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>32,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a3020193786527c47d2e4d8c92ceee804" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a3020193786527c47d2e4d8c92ceee804" kindref="member">I2C2_EV_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>33,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a60c35f2d48d512bd6818bc9fef7053d7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a60c35f2d48d512bd6818bc9fef7053d7" kindref="member">I2C2_ER_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>34,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="56" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083aacdff1a9c42582ed663214cbe62c1174" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083aacdff1a9c42582ed663214cbe62c1174" kindref="member">SPI1_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>35,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a505fbd4ccf7c2a14c8b76dc9e58f7ede" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a505fbd4ccf7c2a14c8b76dc9e58f7ede" kindref="member">SPI2_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>36,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ad97cb163e1f678367e37c50d54d161ab" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083ad97cb163e1f678367e37c50d54d161ab" kindref="member">USART1_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>37,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a3f9c48714d0e5baaba6613343f0da68e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a3f9c48714d0e5baaba6613343f0da68e" kindref="member">USART2_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>38,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083afb13802afc1f5fdf5c90e73ee99e5ff3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083afb13802afc1f5fdf5c90e73ee99e5ff3" kindref="member">USART3_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>39,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a9fb0ad0c850234d1983fafdb17378e2f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a9fb0ad0c850234d1983fafdb17378e2f" kindref="member">EXTI15_10_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>40,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a657f8d70d4aaa199064e6b1017d3ab54" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a657f8d70d4aaa199064e6b1017d3ab54" kindref="member">RTCAlarm_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>41,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63" refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a2ad262973688511beafcd1312ce78357" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_micro_8h_1a666eb0caeb12ec0e281415592ae89083a2ad262973688511beafcd1312ce78357" kindref="member">USBWakeUp_IRQn</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>42<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}<sp/><ref refid="_micro_8h_1ac3af4a32370fb28c4ade8bf2add80251" kindref="member">IRQn_Type</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//ADC<sp/>definitions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="struct_a_d_c___type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72" refid="struct_a_d_c___type_def_1a0c1b55bc0f0e5157ceffa52545ee6bcd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1a0c1b55bc0f0e5157ceffa52545ee6bcd" kindref="member">SR</ref>;</highlight></codeline>
+<codeline lineno="73" refid="struct_a_d_c___type_def_1a29fed74ebdf1224d19d6d3006b47374c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1a29fed74ebdf1224d19d6d3006b47374c" kindref="member">CR1</ref>;</highlight></codeline>
+<codeline lineno="74" refid="struct_a_d_c___type_def_1a86ed892643ccec7b52474d7bbc841224" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1a86ed892643ccec7b52474d7bbc841224" kindref="member">CR2</ref>;</highlight></codeline>
+<codeline lineno="75" refid="struct_a_d_c___type_def_1acff404d17eb4c3810bc164f9d7965dcd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1acff404d17eb4c3810bc164f9d7965dcd" kindref="member">SMPR1</ref>;</highlight></codeline>
+<codeline lineno="76" refid="struct_a_d_c___type_def_1a2db4d359308ba387ab0d956ff7708b12" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1a2db4d359308ba387ab0d956ff7708b12" kindref="member">SMPR2</ref>;</highlight></codeline>
+<codeline lineno="77" refid="struct_a_d_c___type_def_1a0c4d16d25c6e36626ca0a6625b4f5918" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1a0c4d16d25c6e36626ca0a6625b4f5918" kindref="member">JOFR1</ref>;</highlight></codeline>
+<codeline lineno="78" refid="struct_a_d_c___type_def_1a2ebf2efec73f1724c2a4b97fb21aebca" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1a2ebf2efec73f1724c2a4b97fb21aebca" kindref="member">JOFR2</ref>;</highlight></codeline>
+<codeline lineno="79" refid="struct_a_d_c___type_def_1a485bee31847f63911c75d38d2fb781db" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1a485bee31847f63911c75d38d2fb781db" kindref="member">JOFR3</ref>;</highlight></codeline>
+<codeline lineno="80" refid="struct_a_d_c___type_def_1a595ed7f2bc1c19437288984daf5f04c1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1a595ed7f2bc1c19437288984daf5f04c1" kindref="member">JOFR4</ref>;</highlight></codeline>
+<codeline lineno="81" refid="struct_a_d_c___type_def_1a2aafe30a367f715d836c240619803470" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1a2aafe30a367f715d836c240619803470" kindref="member">HTR</ref>;</highlight></codeline>
+<codeline lineno="82" refid="struct_a_d_c___type_def_1a2093c1607b4686ce758f886f806299c6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1a2093c1607b4686ce758f886f806299c6" kindref="member">LTR</ref>;</highlight></codeline>
+<codeline lineno="83" refid="struct_a_d_c___type_def_1ad79d35c39e420ff9bde76647de67cf7d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1ad79d35c39e420ff9bde76647de67cf7d" kindref="member">SQR1</ref>;</highlight></codeline>
+<codeline lineno="84" refid="struct_a_d_c___type_def_1a9d6c38de5dd39c75377b95e767b58de6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1a9d6c38de5dd39c75377b95e767b58de6" kindref="member">SQR2</ref>;</highlight></codeline>
+<codeline lineno="85" refid="struct_a_d_c___type_def_1aa7e588adbbbce768ab3bf28038829c86" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1aa7e588adbbbce768ab3bf28038829c86" kindref="member">SQR3</ref>;</highlight></codeline>
+<codeline lineno="86" refid="struct_a_d_c___type_def_1a845714f0943d62b573055e7651b2e391" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1a845714f0943d62b573055e7651b2e391" kindref="member">JSQR</ref>;</highlight></codeline>
+<codeline lineno="87" refid="struct_a_d_c___type_def_1a98944dad75ed68cee7ddc6e6167251e9" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1a98944dad75ed68cee7ddc6e6167251e9" kindref="member">JDR1</ref>;</highlight></codeline>
+<codeline lineno="88" refid="struct_a_d_c___type_def_1a5c535031d79e1ee16f77bed43702ac62" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1a5c535031d79e1ee16f77bed43702ac62" kindref="member">JDR2</ref>;</highlight></codeline>
+<codeline lineno="89" refid="struct_a_d_c___type_def_1adb72c6da7cc174eb2476de301771ec0c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1adb72c6da7cc174eb2476de301771ec0c" kindref="member">JDR3</ref>;</highlight></codeline>
+<codeline lineno="90" refid="struct_a_d_c___type_def_1a2c14db0c984a6d25985bea00a65eefbf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1a2c14db0c984a6d25985bea00a65eefbf" kindref="member">JDR4</ref>;</highlight></codeline>
+<codeline lineno="91" refid="struct_a_d_c___type_def_1af59d5641aab8676a0eb78c790d7c72bd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_d_c___type_def_1af59d5641aab8676a0eb78c790d7c72bd" kindref="member">DR</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}<sp/><ref refid="struct_a_d_c___type_def" kindref="compound">ADC_TypeDef</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//RCC<sp/>definitions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="struct_r_c_c___type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97" refid="struct_r_c_c___type_def_1ad2cb841ca751e3df815a8e57397da658" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_r_c_c___type_def_1ad2cb841ca751e3df815a8e57397da658" kindref="member">CR</ref>;</highlight></codeline>
+<codeline lineno="98" refid="struct_r_c_c___type_def_1a04ce7253d43a2f5e7d9ee60ff9101251" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_r_c_c___type_def_1a04ce7253d43a2f5e7d9ee60ff9101251" kindref="member">CFGR</ref>;</highlight></codeline>
+<codeline lineno="99" refid="struct_r_c_c___type_def_1a210d59a644d751c965c79aa141ba4d4b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_r_c_c___type_def_1a210d59a644d751c965c79aa141ba4d4b" kindref="member">CIR</ref>;</highlight></codeline>
+<codeline lineno="100" refid="struct_r_c_c___type_def_1a0c4ecd86c9e11731900e016a5e1fd760" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_r_c_c___type_def_1a0c4ecd86c9e11731900e016a5e1fd760" kindref="member">APB2RSTR</ref>;</highlight></codeline>
+<codeline lineno="101" refid="struct_r_c_c___type_def_1a2b0ac063b1e705fbbc627c71fdfdddac" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_r_c_c___type_def_1a2b0ac063b1e705fbbc627c71fdfdddac" kindref="member">APB1RSTR</ref>;</highlight></codeline>
+<codeline lineno="102" refid="struct_r_c_c___type_def_1ae1df9f63c0f73c1594740503ec6e8930" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_r_c_c___type_def_1ae1df9f63c0f73c1594740503ec6e8930" kindref="member">AHBENR</ref>;</highlight></codeline>
+<codeline lineno="103" refid="struct_r_c_c___type_def_1a8916e1149d43ca86fdcb498e91b139c4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_r_c_c___type_def_1a8916e1149d43ca86fdcb498e91b139c4" kindref="member">APB2ENR</ref>;</highlight></codeline>
+<codeline lineno="104" refid="struct_r_c_c___type_def_1aa73682a6e7d72272df55dc69c15f1dad" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_r_c_c___type_def_1aa73682a6e7d72272df55dc69c15f1dad" kindref="member">APB1ENR</ref>;</highlight></codeline>
+<codeline lineno="105" refid="struct_r_c_c___type_def_1a1ad6ba64750c1188a8745312ef09ea32" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_r_c_c___type_def_1a1ad6ba64750c1188a8745312ef09ea32" kindref="member">BDCR</ref>;</highlight></codeline>
+<codeline lineno="106" refid="struct_r_c_c___type_def_1a4275b77f0cd025dcf7a2e5bc9a3c482e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_r_c_c___type_def_1a4275b77f0cd025dcf7a2e5bc9a3c482e" kindref="member">CSR</ref>;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}<sp/><ref refid="struct_r_c_c___type_def" kindref="compound">RCC_TypeDef</ref>;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//Timers<sp/>definitions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="struct_t_i_m___type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="112" refid="struct_t_i_m___type_def_1a4f9f7bb24e6c25a7ba223ef51d707a85" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1a4f9f7bb24e6c25a7ba223ef51d707a85" kindref="member">CR1</ref>;</highlight></codeline>
+<codeline lineno="113" refid="struct_t_i_m___type_def_1a88caad1e82960cc6df99d935ece26c1b" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1a88caad1e82960cc6df99d935ece26c1b" kindref="member">RESERVED0</ref>;</highlight></codeline>
+<codeline lineno="114" refid="struct_t_i_m___type_def_1ac8c209f1e5a2e455532a880d01725f1e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1ac8c209f1e5a2e455532a880d01725f1e" kindref="member">CR2</ref>;</highlight></codeline>
+<codeline lineno="115" refid="struct_t_i_m___type_def_1a59c46ac3a56c6966a7f8f379a2fd1e3e" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1a59c46ac3a56c6966a7f8f379a2fd1e3e" kindref="member">RESERVED1</ref>;</highlight></codeline>
+<codeline lineno="116" refid="struct_t_i_m___type_def_1a182d9f6022ddfc9a65a7e8f8b22e6930" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1a182d9f6022ddfc9a65a7e8f8b22e6930" kindref="member">SMCR</ref>;</highlight></codeline>
+<codeline lineno="117" refid="struct_t_i_m___type_def_1af62f86f55f2a387518f3de10d916eb7c" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1af62f86f55f2a387518f3de10d916eb7c" kindref="member">RESERVED2</ref>;</highlight></codeline>
+<codeline lineno="118" refid="struct_t_i_m___type_def_1a2827cdd24a1f1c27cda6fe870e9929e2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1a2827cdd24a1f1c27cda6fe870e9929e2" kindref="member">DIER</ref>;</highlight></codeline>
+<codeline lineno="119" refid="struct_t_i_m___type_def_1a8f952613a22049f3ea2b50b7e0d10472" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1a8f952613a22049f3ea2b50b7e0d10472" kindref="member">RESERVED3</ref>;</highlight></codeline>
+<codeline lineno="120" refid="struct_t_i_m___type_def_1a284c49942fa0f1a670ac2c2d8bde01aa" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1a284c49942fa0f1a670ac2c2d8bde01aa" kindref="member">SR</ref>;</highlight></codeline>
+<codeline lineno="121" refid="struct_t_i_m___type_def_1a36afe894c9b0878347d0c038c80e4c22" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1a36afe894c9b0878347d0c038c80e4c22" kindref="member">RESERVED4</ref>;</highlight></codeline>
+<codeline lineno="122" refid="struct_t_i_m___type_def_1a6064df68974b15873904dfc117c15aa4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1a6064df68974b15873904dfc117c15aa4" kindref="member">EGR</ref>;</highlight></codeline>
+<codeline lineno="123" refid="struct_t_i_m___type_def_1a15944db86d7a7a69db35512f68eca15c" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1a15944db86d7a7a69db35512f68eca15c" kindref="member">RESERVED5</ref>;</highlight></codeline>
+<codeline lineno="124" refid="struct_t_i_m___type_def_1aa60a12d30ec9f8b91ffea5eeb76863b1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1aa60a12d30ec9f8b91ffea5eeb76863b1" kindref="member">CCMR1</ref>;</highlight></codeline>
+<codeline lineno="125" refid="struct_t_i_m___type_def_1a7fd09a4911f813464a454b507832a0b9" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1a7fd09a4911f813464a454b507832a0b9" kindref="member">RESERVED6</ref>;</highlight></codeline>
+<codeline lineno="126" refid="struct_t_i_m___type_def_1a15596c5c37b12e7ae8bc825dce887224" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1a15596c5c37b12e7ae8bc825dce887224" kindref="member">CCMR2</ref>;</highlight></codeline>
+<codeline lineno="127" refid="struct_t_i_m___type_def_1a4157fa8f6e188281292f019ea24f5599" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1a4157fa8f6e188281292f019ea24f5599" kindref="member">RESERVED7</ref>;</highlight></codeline>
+<codeline lineno="128" refid="struct_t_i_m___type_def_1a0ee416056e6a8632dda4d92f048625cd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1a0ee416056e6a8632dda4d92f048625cd" kindref="member">CCER</ref>;</highlight></codeline>
+<codeline lineno="129" refid="struct_t_i_m___type_def_1ac708e4f0f142ac14d7e1c46778ed6f96" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1ac708e4f0f142ac14d7e1c46778ed6f96" kindref="member">RESERVED8</ref>;</highlight></codeline>
+<codeline lineno="130" refid="struct_t_i_m___type_def_1a508092646ed34fbee8cd342f268e00f8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1a508092646ed34fbee8cd342f268e00f8" kindref="member">CNT</ref>;</highlight></codeline>
+<codeline lineno="131" refid="struct_t_i_m___type_def_1a6754dd714ff0885e8e511977d2f393ce" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1a6754dd714ff0885e8e511977d2f393ce" kindref="member">RESERVED9</ref>;</highlight></codeline>
+<codeline lineno="132" refid="struct_t_i_m___type_def_1a7189f0766b2642656ee6cf5f3c4bbfa6" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1a7189f0766b2642656ee6cf5f3c4bbfa6" kindref="member">PSC</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="133" refid="struct_t_i_m___type_def_1ab0e228ff39a37b472aa48ba3afd18333" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1ab0e228ff39a37b472aa48ba3afd18333" kindref="member">RESERVED10</ref>;</highlight></codeline>
+<codeline lineno="134" refid="struct_t_i_m___type_def_1a55798bfb98e8fd2ffb2eef823f6c47f0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1a55798bfb98e8fd2ffb2eef823f6c47f0" kindref="member">ARR</ref>;</highlight></codeline>
+<codeline lineno="135" refid="struct_t_i_m___type_def_1a7a96436f300141eb48768ffa90ee6e71" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1a7a96436f300141eb48768ffa90ee6e71" kindref="member">RESERVED11</ref>;</highlight></codeline>
+<codeline lineno="136" refid="struct_t_i_m___type_def_1a3e4b21239ea40c978372e85f35dad62a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1a3e4b21239ea40c978372e85f35dad62a" kindref="member">RCR</ref>;</highlight></codeline>
+<codeline lineno="137" refid="struct_t_i_m___type_def_1a994061b8b26ae9b2e8ddb981cb3eec11" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1a994061b8b26ae9b2e8ddb981cb3eec11" kindref="member">RESERVED12</ref>;</highlight></codeline>
+<codeline lineno="138" refid="struct_t_i_m___type_def_1a2d7efb233adbafaf133a48d69f9f2977" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1a2d7efb233adbafaf133a48d69f9f2977" kindref="member">CCR1</ref>;</highlight></codeline>
+<codeline lineno="139" refid="struct_t_i_m___type_def_1a5a831b0a42a5428fbbfd550b7a9c8108" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1a5a831b0a42a5428fbbfd550b7a9c8108" kindref="member">RESERVED13</ref>;</highlight></codeline>
+<codeline lineno="140" refid="struct_t_i_m___type_def_1a79cee8d5a6d99891b5a0b89316d19335" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1a79cee8d5a6d99891b5a0b89316d19335" kindref="member">CCR2</ref>;</highlight></codeline>
+<codeline lineno="141" refid="struct_t_i_m___type_def_1a548510ebbe395a3947dbbc49fcccec0d" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1a548510ebbe395a3947dbbc49fcccec0d" kindref="member">RESERVED14</ref>;</highlight></codeline>
+<codeline lineno="142" refid="struct_t_i_m___type_def_1a887a432de69552a6418575752ccdb3b2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1a887a432de69552a6418575752ccdb3b2" kindref="member">CCR3</ref>;</highlight></codeline>
+<codeline lineno="143" refid="struct_t_i_m___type_def_1af3eef319e095eadf480919b02c899dbd" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1af3eef319e095eadf480919b02c899dbd" kindref="member">RESERVED15</ref>;</highlight></codeline>
+<codeline lineno="144" refid="struct_t_i_m___type_def_1a7c65f2598f1f8c2ed3dad41f8abd9c24" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1a7c65f2598f1f8c2ed3dad41f8abd9c24" kindref="member">CCR4</ref>;</highlight></codeline>
+<codeline lineno="145" refid="struct_t_i_m___type_def_1ada594311432f31830545027e195980ed" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1ada594311432f31830545027e195980ed" kindref="member">RESERVED16</ref>;</highlight></codeline>
+<codeline lineno="146" refid="struct_t_i_m___type_def_1af893b47afc9b51debe9bdb3cda906f6d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1af893b47afc9b51debe9bdb3cda906f6d" kindref="member">BDTR</ref>;</highlight></codeline>
+<codeline lineno="147" refid="struct_t_i_m___type_def_1aad6f1eb74535c7cda84b8ad8cb76d65e" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1aad6f1eb74535c7cda84b8ad8cb76d65e" kindref="member">RESERVED17</ref>;</highlight></codeline>
+<codeline lineno="148" refid="struct_t_i_m___type_def_1ad9c3bd5f9e99fffe609e83ccae99e305" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1ad9c3bd5f9e99fffe609e83ccae99e305" kindref="member">DCR</ref>;</highlight></codeline>
+<codeline lineno="149" refid="struct_t_i_m___type_def_1a5f03da5369c7b0bf10fd480011b12718" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1a5f03da5369c7b0bf10fd480011b12718" kindref="member">RESERVED18</ref>;</highlight></codeline>
+<codeline lineno="150" refid="struct_t_i_m___type_def_1a0eafc33d97ef98a236515186cedff062" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_t_i_m___type_def_1a0eafc33d97ef98a236515186cedff062" kindref="member">DMAR</ref>;</highlight></codeline>
+<codeline lineno="151" refid="struct_t_i_m___type_def_1a58477bdaaf8fcbcd9c8411729daaf535" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_t_i_m___type_def_1a58477bdaaf8fcbcd9c8411729daaf535" kindref="member">RESERVED19</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}<sp/><ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="struct_u_s_a_r_t___type_def" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="160" refid="struct_u_s_a_r_t___type_def_1a5c307f8d29b58ffeb5e80cdc7d585c19" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_u_s_a_r_t___type_def_1a5c307f8d29b58ffeb5e80cdc7d585c19" kindref="member">SR</ref>;</highlight></codeline>
+<codeline lineno="161" refid="struct_u_s_a_r_t___type_def_1a84ccd64c74c8dbc78b94172ce759de10" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_u_s_a_r_t___type_def_1a84ccd64c74c8dbc78b94172ce759de10" kindref="member">RESERVED0</ref>;</highlight></codeline>
+<codeline lineno="162" refid="struct_u_s_a_r_t___type_def_1ace6f9ba3240329ae70ec7a244b310b22" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_u_s_a_r_t___type_def_1ace6f9ba3240329ae70ec7a244b310b22" kindref="member">DR</ref>;</highlight></codeline>
+<codeline lineno="163" refid="struct_u_s_a_r_t___type_def_1a6d78680272a465db0ee43eba4e9c54f3" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_u_s_a_r_t___type_def_1a6d78680272a465db0ee43eba4e9c54f3" kindref="member">RESERVED1</ref>;</highlight></codeline>
+<codeline lineno="164" refid="struct_u_s_a_r_t___type_def_1ac100980b808c2f34cd324b84639075da" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_u_s_a_r_t___type_def_1ac100980b808c2f34cd324b84639075da" kindref="member">BRR</ref>;</highlight></codeline>
+<codeline lineno="165" refid="struct_u_s_a_r_t___type_def_1af2b7924854e56d0ebd3e8699dfd0e369" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_u_s_a_r_t___type_def_1af2b7924854e56d0ebd3e8699dfd0e369" kindref="member">RESERVED2</ref>;</highlight></codeline>
+<codeline lineno="166" refid="struct_u_s_a_r_t___type_def_1ae72fe09c7c61718d8c55a3a707fc6246" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_u_s_a_r_t___type_def_1ae72fe09c7c61718d8c55a3a707fc6246" kindref="member">CR1</ref>;</highlight></codeline>
+<codeline lineno="167" refid="struct_u_s_a_r_t___type_def_1a158066c974911c14efd7ea492ea31137" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_u_s_a_r_t___type_def_1a158066c974911c14efd7ea492ea31137" kindref="member">RESERVED3</ref>;</highlight></codeline>
+<codeline lineno="168" refid="struct_u_s_a_r_t___type_def_1a61132eae3ea05354fd13d400ae0bf490" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_u_s_a_r_t___type_def_1a61132eae3ea05354fd13d400ae0bf490" kindref="member">CR2</ref>;</highlight></codeline>
+<codeline lineno="169" refid="struct_u_s_a_r_t___type_def_1a6ac527c7428ad8807a7740c1f33f0351" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_u_s_a_r_t___type_def_1a6ac527c7428ad8807a7740c1f33f0351" kindref="member">RESERVED4</ref>;</highlight></codeline>
+<codeline lineno="170" refid="struct_u_s_a_r_t___type_def_1ab585c72d863d3557d65dffff3978ca7e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_u_s_a_r_t___type_def_1ab585c72d863d3557d65dffff3978ca7e" kindref="member">CR3</ref>;</highlight></codeline>
+<codeline lineno="171" refid="struct_u_s_a_r_t___type_def_1aa893512291681dfbecc5baa899cfafbf" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_u_s_a_r_t___type_def_1aa893512291681dfbecc5baa899cfafbf" kindref="member">RESERVED5</ref>;</highlight></codeline>
+<codeline lineno="172" refid="struct_u_s_a_r_t___type_def_1a649942507d385f6543b39808653bd0f0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_u_s_a_r_t___type_def_1a649942507d385f6543b39808653bd0f0" kindref="member">GTPR</ref>;</highlight></codeline>
+<codeline lineno="173" refid="struct_u_s_a_r_t___type_def_1acd89bb1cba0381c2be8a551e6d14e9f7" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_u_s_a_r_t___type_def_1acd89bb1cba0381c2be8a551e6d14e9f7" kindref="member">RESERVED6</ref>;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal">}<sp/><ref refid="struct_u_s_a_r_t___type_def" kindref="compound">USART_TypeDef</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="comment">//GPIO<sp/>definitions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="struct_g_p_i_o___type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="179" refid="struct_g_p_i_o___type_def_1a2f3bd454399de93c3ea175d5a6f7114e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_g_p_i_o___type_def_1a2f3bd454399de93c3ea175d5a6f7114e" kindref="member">CRL</ref>;</highlight></codeline>
+<codeline lineno="180" refid="struct_g_p_i_o___type_def_1a155672eb45405323dfd75a8185c4ec31" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_g_p_i_o___type_def_1a155672eb45405323dfd75a8185c4ec31" kindref="member">CRH</ref>;</highlight></codeline>
+<codeline lineno="181" refid="struct_g_p_i_o___type_def_1aaeb10779e90965a31fd21e6a929a6597" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_g_p_i_o___type_def_1aaeb10779e90965a31fd21e6a929a6597" kindref="member">IDR</ref>;</highlight></codeline>
+<codeline lineno="182" refid="struct_g_p_i_o___type_def_1a845e01039cf7ad8cc6439c58748e42e5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_g_p_i_o___type_def_1a845e01039cf7ad8cc6439c58748e42e5" kindref="member">ODR</ref>;</highlight></codeline>
+<codeline lineno="183" refid="struct_g_p_i_o___type_def_1a339be3e24fd21a4dbe815ffa6908e3ff" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_g_p_i_o___type_def_1a339be3e24fd21a4dbe815ffa6908e3ff" kindref="member">BSRR</ref>;</highlight></codeline>
+<codeline lineno="184" refid="struct_g_p_i_o___type_def_1a847c88a81b1e0acfbdd053bc70d12d8f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_g_p_i_o___type_def_1a847c88a81b1e0acfbdd053bc70d12d8f" kindref="member">BRR</ref>;</highlight></codeline>
+<codeline lineno="185" refid="struct_g_p_i_o___type_def_1a688cba9da61c7a2b121ad3e25862dd91" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_g_p_i_o___type_def_1a688cba9da61c7a2b121ad3e25862dd91" kindref="member">LCKR</ref>;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">}<sp/><ref refid="struct_g_p_i_o___type_def" kindref="compound">GPIO_TypeDef</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="comment">//AFIO<sp/>-&gt;<sp/>Alternated<sp/>functions<sp/>IO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="struct_a_f_i_o___type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="191" refid="struct_a_f_i_o___type_def_1a4495e9811864ddb502dfd09c26593244" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_f_i_o___type_def_1a4495e9811864ddb502dfd09c26593244" kindref="member">EVCR</ref>;</highlight></codeline>
+<codeline lineno="192" refid="struct_a_f_i_o___type_def_1a150765a75aa7e7fb119aa9dc6c378fd4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_f_i_o___type_def_1a150765a75aa7e7fb119aa9dc6c378fd4" kindref="member">MAPR</ref>;</highlight></codeline>
+<codeline lineno="193" refid="struct_a_f_i_o___type_def_1a4537078987b2dd67c728f3f64dc712ac" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>EXTICR[4];</highlight></codeline>
+<codeline lineno="194" refid="struct_a_f_i_o___type_def_1a6cf52816787797115664f0c8167a92b9" refkind="member"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_a_f_i_o___type_def_1a6cf52816787797115664f0c8167a92b9" kindref="member">RESERVED0</ref>;</highlight></codeline>
+<codeline lineno="195" refid="struct_a_f_i_o___type_def_1aefb8c2a428dc11625387616cfdf10c9a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_a_f_i_o___type_def_1aefb8c2a428dc11625387616cfdf10c9a" kindref="member">MAPR2</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}<sp/><ref refid="struct_a_f_i_o___type_def" kindref="compound">AFIO_TypeDef</ref>;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment">//PWR<sp/>-&gt;<sp/>Power<sp/>Control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="struct_p_w_r___type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="201" refid="struct_p_w_r___type_def_1aceb77c46a5d18127c1e1ba7b53ed080a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_p_w_r___type_def_1aceb77c46a5d18127c1e1ba7b53ed080a" kindref="member">CR</ref>;</highlight></codeline>
+<codeline lineno="202" refid="struct_p_w_r___type_def_1ac4d2e7f4062ae41d7d870534d7cd1137" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_p_w_r___type_def_1ac4d2e7f4062ae41d7d870534d7cd1137" kindref="member">CSR</ref>;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}<sp/><ref refid="struct_p_w_r___type_def" kindref="compound">PWR_TypeDef</ref>;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="comment">//RTC<sp/>-&gt;<sp/>Real<sp/>Time<sp/>clock<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="struct_r_t_c___type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="208" refid="struct_r_t_c___type_def_1a00ca2e6be3c01ebe6d28ba6a0a4706f8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_r_t_c___type_def_1a00ca2e6be3c01ebe6d28ba6a0a4706f8" kindref="member">CRH</ref>;</highlight></codeline>
+<codeline lineno="209" refid="struct_r_t_c___type_def_1a6d55bb337c409f849725a774364ce3bc" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_r_t_c___type_def_1a6d55bb337c409f849725a774364ce3bc" kindref="member">RESERVED0</ref>;</highlight></codeline>
+<codeline lineno="210" refid="struct_r_t_c___type_def_1a2f4245d47beafb6652cbeeb0469129cc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_r_t_c___type_def_1a2f4245d47beafb6652cbeeb0469129cc" kindref="member">CRL</ref>;</highlight></codeline>
+<codeline lineno="211" refid="struct_r_t_c___type_def_1a8a152da628dbdba2e849adf196fa341a" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_r_t_c___type_def_1a8a152da628dbdba2e849adf196fa341a" kindref="member">RESERVED1</ref>;</highlight></codeline>
+<codeline lineno="212" refid="struct_r_t_c___type_def_1a7bbfc300b15a2f4102066d61bf905b56" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_r_t_c___type_def_1a7bbfc300b15a2f4102066d61bf905b56" kindref="member">PRLH</ref>;</highlight></codeline>
+<codeline lineno="213" refid="struct_r_t_c___type_def_1aaa77e68ac9af2be5c095c05a50efe2e4" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_r_t_c___type_def_1aaa77e68ac9af2be5c095c05a50efe2e4" kindref="member">RESERVED2</ref>;</highlight></codeline>
+<codeline lineno="214" refid="struct_r_t_c___type_def_1ab188bab9fad1eddd4e8dde91f1cce5a3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_r_t_c___type_def_1ab188bab9fad1eddd4e8dde91f1cce5a3" kindref="member">PRLL</ref>;</highlight></codeline>
+<codeline lineno="215" refid="struct_r_t_c___type_def_1a5489f7c3119b8e7b55d77a465baf223a" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_r_t_c___type_def_1a5489f7c3119b8e7b55d77a465baf223a" kindref="member">RESERVED3</ref>;</highlight></codeline>
+<codeline lineno="216" refid="struct_r_t_c___type_def_1ab41b37761f2ffe9f90d44706b65ab20d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_r_t_c___type_def_1ab41b37761f2ffe9f90d44706b65ab20d" kindref="member">DIVH</ref>;</highlight></codeline>
+<codeline lineno="217" refid="struct_r_t_c___type_def_1ae77864629c9ae9768a752e045c44833d" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_r_t_c___type_def_1ae77864629c9ae9768a752e045c44833d" kindref="member">RESERVED4</ref>;</highlight></codeline>
+<codeline lineno="218" refid="struct_r_t_c___type_def_1a7170ef8b6bde5430c9a87fe3c0f16aa4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_r_t_c___type_def_1a7170ef8b6bde5430c9a87fe3c0f16aa4" kindref="member">DIVL</ref>;</highlight></codeline>
+<codeline lineno="219" refid="struct_r_t_c___type_def_1a052c02494c2dde3f74ff7d8987ee5230" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_r_t_c___type_def_1a052c02494c2dde3f74ff7d8987ee5230" kindref="member">RESERVED5</ref>;</highlight></codeline>
+<codeline lineno="220" refid="struct_r_t_c___type_def_1a734801f18cf79c0174d4c22975715200" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_r_t_c___type_def_1a734801f18cf79c0174d4c22975715200" kindref="member">CNTH</ref>;</highlight></codeline>
+<codeline lineno="221" refid="struct_r_t_c___type_def_1a74bdff4226786261b4c18b63dd21e3bd" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_r_t_c___type_def_1a74bdff4226786261b4c18b63dd21e3bd" kindref="member">RESERVED6</ref>;</highlight></codeline>
+<codeline lineno="222" refid="struct_r_t_c___type_def_1a4beeca9ddd9f9d353e52435d74451737" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_r_t_c___type_def_1a4beeca9ddd9f9d353e52435d74451737" kindref="member">CNTL</ref>;</highlight></codeline>
+<codeline lineno="223" refid="struct_r_t_c___type_def_1abb8597ac192c0d24ab6b13b031a34d37" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_r_t_c___type_def_1abb8597ac192c0d24ab6b13b031a34d37" kindref="member">RESERVED7</ref>;</highlight></codeline>
+<codeline lineno="224" refid="struct_r_t_c___type_def_1a5e42ad69820f00e816d59364d27139de" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_r_t_c___type_def_1a5e42ad69820f00e816d59364d27139de" kindref="member">ALRH</ref>;</highlight></codeline>
+<codeline lineno="225" refid="struct_r_t_c___type_def_1a5b09d77c801dc948581ef113d8a352c9" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_r_t_c___type_def_1a5b09d77c801dc948581ef113d8a352c9" kindref="member">RESERVED8</ref>;</highlight></codeline>
+<codeline lineno="226" refid="struct_r_t_c___type_def_1a53a3dd3cefbb82d8fc88e1f8c8657085" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="struct_r_t_c___type_def_1a53a3dd3cefbb82d8fc88e1f8c8657085" kindref="member">ALRL</ref>;</highlight></codeline>
+<codeline lineno="227" refid="struct_r_t_c___type_def_1a3f83ce9cfda0c0e7f854ab65347058b1" refkind="member"><highlight class="normal"><sp/><sp/>uint16_t<sp/><sp/><ref refid="struct_r_t_c___type_def_1a3f83ce9cfda0c0e7f854ab65347058b1" kindref="member">RESERVED9</ref>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">}<sp/><ref refid="struct_r_t_c___type_def" kindref="compound">RTC_TypeDef</ref>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="struct_f_l_a_s_h___type_def" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="233" refid="struct_f_l_a_s_h___type_def_1aee15e24246c6cbbd9a082f2a1da6f4a8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___type_def_1aee15e24246c6cbbd9a082f2a1da6f4a8" kindref="member">ACR</ref>;</highlight></codeline>
+<codeline lineno="234" refid="struct_f_l_a_s_h___type_def_1ae7ed76afe51a51d2e051cd28f0afe6ad" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___type_def_1ae7ed76afe51a51d2e051cd28f0afe6ad" kindref="member">KEYR</ref>;</highlight></codeline>
+<codeline lineno="235" refid="struct_f_l_a_s_h___type_def_1aebce0c2c98d58b84879bcb97b1d930ef" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___type_def_1aebce0c2c98d58b84879bcb97b1d930ef" kindref="member">OPTKEYR</ref>;</highlight></codeline>
+<codeline lineno="236" refid="struct_f_l_a_s_h___type_def_1a68ba75adcbcd9dbdab37b0bc9f402146" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___type_def_1a68ba75adcbcd9dbdab37b0bc9f402146" kindref="member">SR</ref>;</highlight></codeline>
+<codeline lineno="237" refid="struct_f_l_a_s_h___type_def_1a57b564f26046fc2cb30c5aad3e77348a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___type_def_1a57b564f26046fc2cb30c5aad3e77348a" kindref="member">CR</ref>;</highlight></codeline>
+<codeline lineno="238" refid="struct_f_l_a_s_h___type_def_1a59d46205409104746b366b737746bd87" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___type_def_1a59d46205409104746b366b737746bd87" kindref="member">AR</ref>;</highlight></codeline>
+<codeline lineno="239" refid="struct_f_l_a_s_h___type_def_1a9bee8e6d6e2f2adb3915f866b7cc04b0" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___type_def_1a9bee8e6d6e2f2adb3915f866b7cc04b0" kindref="member">RESERVED</ref>;</highlight></codeline>
+<codeline lineno="240" refid="struct_f_l_a_s_h___type_def_1a12a0a5d9b85c8ce99ffcc6872a0269f2" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___type_def_1a12a0a5d9b85c8ce99ffcc6872a0269f2" kindref="member">OBR</ref>;</highlight></codeline>
+<codeline lineno="241" refid="struct_f_l_a_s_h___type_def_1a881ccf7091153167b9dbc23550edc2c1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_f_l_a_s_h___type_def_1a881ccf7091153167b9dbc23550edc2c1" kindref="member">WRPR</ref>;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/>}<sp/><ref refid="struct_f_l_a_s_h___type_def" kindref="compound">FLASH_TypeDef</ref>;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="comment">//Memory<sp/>mapping</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="comment">//why<sp/>did<sp/>they<sp/>use<sp/>typecast<sp/>with<sp/>uint32_t<sp/>before<sp/>the<sp/>addresses????</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249" refid="_micro_8h_1a23a9099a5f8fc9c6e253c0eecb2be8db" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x08000000)<sp/></highlight></codeline>
+<codeline lineno="250" refid="_micro_8h_1a05e8f3d2e5868754a7cd88614955aecc" refkind="member"><highlight class="preprocessor">#define<sp/>SRAM_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x20000000)<sp/></highlight></codeline>
+<codeline lineno="251" refid="_micro_8h_1a9171f49478fa86d932f89e78e73b88b0" refkind="member"><highlight class="preprocessor">#define<sp/>PERIPH_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x40000000)<sp/></highlight></codeline>
+<codeline lineno="253" refid="_micro_8h_1ad3548b6e2f017f39d399358f3ac98454" refkind="member"><highlight class="preprocessor">#define<sp/>SRAM_BB_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x22000000)<sp/></highlight></codeline>
+<codeline lineno="254" refid="_micro_8h_1aed7efc100877000845c236ccdc9e144a" refkind="member"><highlight class="preprocessor">#define<sp/>PERIPH_BB_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0x42000000)<sp/></highlight></codeline>
+<codeline lineno="256" refid="_micro_8h_1addf0e199dccba83272b20c9fb4d3aaed" refkind="member"><highlight class="preprocessor">#define<sp/>FSMC_R_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((uint32_t)0xA0000000)<sp/></highlight></codeline>
+<codeline lineno="259" refid="_micro_8h_1a45666d911f39addd4c8c0a0ac3388cfb" refkind="member"><highlight class="preprocessor">#define<sp/>APB1PERIPH_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>PERIPH_BASE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260" refid="_micro_8h_1a25b99d6065f1c8f751e78f43ade652cb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>APB2PERIPH_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PERIPH_BASE<sp/>+<sp/>0x10000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261" refid="_micro_8h_1a92eb5d49730765d2abd0f5b09548f9f5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AHBPERIPH_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(PERIPH_BASE<sp/>+<sp/>0x20000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="_micro_8h_1a00d0fe6ad532ab32f0f81cafca8d3aa5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIM2_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB1PERIPH_BASE<sp/>+<sp/>0x0000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264" refid="_micro_8h_1af0c34a518f87e1e505cd2332e989564a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIM3_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB1PERIPH_BASE<sp/>+<sp/>0x0400)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265" refid="_micro_8h_1a56e2d44b0002f316527b8913866a370d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIM4_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB1PERIPH_BASE<sp/>+<sp/>0x0800)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267" refid="_micro_8h_1a4265e665d56225412e57a61d87417022" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RTC_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB1PERIPH_BASE<sp/>+<sp/>0x2800)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269" refid="_micro_8h_1ade83162a04bca0b15b39018a8e8ec090" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART2_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB1PERIPH_BASE<sp/>+<sp/>0x4400)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270" refid="_micro_8h_1abe0d6539ac0026d598274ee7f45b0251" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART3_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB1PERIPH_BASE<sp/>+<sp/>0x4800)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272" refid="_micro_8h_1ac691ec23dace8b7a649a25acb110217a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB1PERIPH_BASE<sp/>+<sp/>0x7000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274" refid="_micro_8h_1a5f7e3eacfcf4c313c25012795148a680" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AFIO_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB2PERIPH_BASE<sp/>+<sp/>0x0000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275" refid="_micro_8h_1ad7723846cc5db8e43a44d78cf21f6efa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIOA_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB2PERIPH_BASE<sp/>+<sp/>0x0800)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276" refid="_micro_8h_1ac944a89eb789000ece920c0f89cb6a68" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIOB_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB2PERIPH_BASE<sp/>+<sp/>0x0C00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277" refid="_micro_8h_1a26f267dc35338eef219544c51f1e6b3f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIOC_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB2PERIPH_BASE<sp/>+<sp/>0x1000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278" refid="_micro_8h_1a1a93ab27129f04064089616910c296ec" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIOD_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB2PERIPH_BASE<sp/>+<sp/>0x1400)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279" refid="_micro_8h_1ab487b1983d936c4fee3e9e88b95aad9d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIOE_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB2PERIPH_BASE<sp/>+<sp/>0x1800)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280" refid="_micro_8h_1a7f9a3f4223a1a784af464a114978d26e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIOF_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB2PERIPH_BASE<sp/>+<sp/>0x1C00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281" refid="_micro_8h_1a5d8ca4020f2e8c00bde974e8e7c13cfe" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIOG_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB2PERIPH_BASE<sp/>+<sp/>0x2000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282" refid="_micro_8h_1a695c9a2f892363a1c942405c8d351b91" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC1_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB2PERIPH_BASE<sp/>+<sp/>0x2400)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283" refid="_micro_8h_1a6544abc57f9759f610eee09a02442ae6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC2_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB2PERIPH_BASE<sp/>+<sp/>0x2800)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284" refid="_micro_8h_1af8aa324ca5011b8173ab16585ed7324a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIM1_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB2PERIPH_BASE<sp/>+<sp/>0x2C00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286" refid="_micro_8h_1a86162ab3f740db9026c1320d46938b4d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART1_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(APB2PERIPH_BASE<sp/>+<sp/>0x3800)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288" refid="_micro_8h_1a0e681b03f364532055d88f63fec0d99d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RCC_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(AHBPERIPH_BASE<sp/>+<sp/>0x1000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290" refid="_micro_8h_1a8e21f4845015730c5731763169ec0e9b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH_R_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(AHBPERIPH_BASE<sp/>+<sp/>0x2000)<sp/></highlight></codeline>
+<codeline lineno="292" refid="_micro_8h_1a3cfac9f2e43673f790f8668d48b4b92b" refkind="member"><highlight class="preprocessor">#define<sp/>TIM2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((TIM_TypeDef<sp/>*)<sp/>TIM2_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293" refid="_micro_8h_1a61ee4c391385607d7af432b63905fcc9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIM3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((TIM_TypeDef<sp/>*)<sp/>TIM3_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294" refid="_micro_8h_1a91a09bad8bdc7a1cb3d85cf49c94c8ec" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIM4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((TIM_TypeDef<sp/>*)<sp/>TIM4_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296" refid="_micro_8h_1a5359a088f5d8b20ce74d920e46059304" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RTC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((RTC_TypeDef<sp/>*)<sp/>RTC_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298" refid="_micro_8h_1af114a9eab03ca08a6fb720e511595930" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((USART_TypeDef<sp/>*)<sp/>USART2_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299" refid="_micro_8h_1a2350115553c1fe0a7bc14e6a7ec6a225" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((USART_TypeDef<sp/>*)<sp/>USART3_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301" refid="_micro_8h_1a582e09473429414015b1de90cf767fa8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AFIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((AFIO_TypeDef<sp/>*)<sp/>AFIO_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302" refid="_micro_8h_1ac485358099728ddae050db37924dd6b7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIOA<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((GPIO_TypeDef<sp/>*)<sp/>GPIOA_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303" refid="_micro_8h_1a68b66ac73be4c836db878a42e1fea3cd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIOB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((GPIO_TypeDef<sp/>*)<sp/>GPIOB_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304" refid="_micro_8h_1a2dca03332d620196ba943bc2346eaa08" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIOC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((GPIO_TypeDef<sp/>*)<sp/>GPIOC_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305" refid="_micro_8h_1a7580b1a929ea9df59725ba9c18eba6ac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIOD<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((GPIO_TypeDef<sp/>*)<sp/>GPIOD_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306" refid="_micro_8h_1ae04bdb5e8acc47cab1d0532e6b0d0763" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIOE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((GPIO_TypeDef<sp/>*)<sp/>GPIOE_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307" refid="_micro_8h_1a43c3022dede7c9db7a58d3c3409dbc8d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIOF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((GPIO_TypeDef<sp/>*)<sp/>GPIOF_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308" refid="_micro_8h_1a02a2a23a32f9b02166a8c64012842414" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GPIOG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((GPIO_TypeDef<sp/>*)<sp/>GPIOG_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309" refid="_micro_8h_1a90d2d5c526ce5c0a551f533eccbee71a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((ADC_TypeDef<sp/>*)<sp/>ADC1_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="310" refid="_micro_8h_1ac5503ae96c26b4475226f96715a1bf1e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ADC2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((ADC_TypeDef<sp/>*)<sp/>ADC2_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311" refid="_micro_8h_1a2e87451fea8dc9380056d3cfc5ed81fb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIM1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((TIM_TypeDef<sp/>*)<sp/>TIM1_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313" refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RCC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((RCC_TypeDef<sp/>*)<sp/>RCC_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315" refid="_micro_8h_1a92871691058ff7ccffd7635930cb08da" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USART1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((USART_TypeDef<sp/>*)<sp/>USART1_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317" refid="_micro_8h_1a04651c526497822a859942b928e57f8e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PWR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((PWR_TypeDef<sp/>*)<sp/>PWR_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319" refid="_micro_8h_1a844ea28ba1e0a5a0e497f16b61ea306b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLASH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((FLASH_TypeDef<sp/>*)<sp/>FLASH_R_BASE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight><highlight class="comment">//****************************************CORTEX-M3*********************************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------Structures----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330" refid="struct_n_v_i_c___type" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="332" refid="struct_n_v_i_c___type_1a000c09bee2a14c669d17c4ddd7fd28ae" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>ISER[8U];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="333" refid="struct_n_v_i_c___type_1a93c66a8842929d5f8e0d691a97261cc2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>RESERVED0[24U];</highlight></codeline>
+<codeline lineno="334" refid="struct_n_v_i_c___type_1ae04cb540ccae60778cd4b1de736e03e7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>ICER[8U];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="335" refid="struct_n_v_i_c___type_1af7bfc2f8bd72f5e3e472edb209d9876c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>RSERVED1[24U];</highlight></codeline>
+<codeline lineno="336" refid="struct_n_v_i_c___type_1af304cd2bdcbf0ea42e3a618b459068ca" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>ISPR[8U];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="337" refid="struct_n_v_i_c___type_1a80bce60f3405a1cde3d621eea35ac6b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>RESERVED2[24U];</highlight></codeline>
+<codeline lineno="338" refid="struct_n_v_i_c___type_1a645bdfc936519f964ff454732a1c4c1e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>ICPR[8U];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="339" refid="struct_n_v_i_c___type_1adf6616e950b18b3ef9c9c64e535b3ee2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>RESERVED3[24U];</highlight></codeline>
+<codeline lineno="340" refid="struct_n_v_i_c___type_1aaffbfe74a31f8857f47c123c4f530b6a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>IABR[8U];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="341" refid="struct_n_v_i_c___type_1ade202178a4bd7c973b7db69d30046f50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>RESERVED4[56U];</highlight></codeline>
+<codeline lineno="342" refid="struct_n_v_i_c___type_1aae9107508ef117bb70373eaabba2fa10" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t<sp/><sp/>IP[240U];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="343" refid="struct_n_v_i_c___type_1ab105e118183b4a205c3c1dddcea70d62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>RESERVED5[644U];</highlight></codeline>
+<codeline lineno="344" refid="struct_n_v_i_c___type_1a1f096289b55386cf0df6d0e2483f2ea1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_n_v_i_c___type_1a1f096289b55386cf0df6d0e2483f2ea1" kindref="member">STIR</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="345"><highlight class="normal">}<sp/><sp/><ref refid="struct_n_v_i_c___type" kindref="compound">NVIC_Type</ref>;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347" refid="struct_sys_tick___type" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="349" refid="struct_sys_tick___type_1a470f260058b0a6b5ba38680639c02c13" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_sys_tick___type_1a470f260058b0a6b5ba38680639c02c13" kindref="member">CTRL</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="350" refid="struct_sys_tick___type_1ae74f109b648864baa6b016633fee6776" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_sys_tick___type_1ae74f109b648864baa6b016633fee6776" kindref="member">LOAD</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="351" refid="struct_sys_tick___type_1aab6a046dcdf8d1ecdd8fb2b206384836" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="struct_sys_tick___type_1aab6a046dcdf8d1ecdd8fb2b206384836" kindref="member">VAL</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="352" refid="struct_sys_tick___type_1ab50effb21c2392cfae6b4fdad29ee861" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="struct_sys_tick___type_1ab50effb21c2392cfae6b4fdad29ee861" kindref="member">CALIB</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="353"><highlight class="normal">}<sp/><ref refid="struct_sys_tick___type" kindref="compound">SysTick_Type</ref>;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight><highlight class="comment">//--------------------------------------Memory<sp/>Mapping----------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Memory<sp/>mapping<sp/>of<sp/>Core<sp/>Hardware<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="361" refid="_micro_8h_1a3c14ed93192c8d9143322bbf77ebf770" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCS_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xE000E000UL)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="362" refid="_micro_8h_1add76251e412a195ec0a8f47227a8359e" refkind="member"><highlight class="preprocessor">#define<sp/>ITM_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xE0000000UL)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="363" refid="_micro_8h_1afdab534f961bf8935eb456cb7700dcd2" refkind="member"><highlight class="preprocessor">#define<sp/>DWT_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xE0001000UL)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="364" refid="_micro_8h_1a2b1eeff850a7e418844ca847145a1a68" refkind="member"><highlight class="preprocessor">#define<sp/>TPI_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0xE0040000UL)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="365" refid="_micro_8h_1a680604dbcda9e9b31a1639fcffe5230b" refkind="member"><highlight class="preprocessor">#define<sp/>CoreDebug_BASE<sp/><sp/><sp/><sp/><sp/><sp/>(0xE000EDF0UL)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="366" refid="_micro_8h_1a58effaac0b93006b756d33209e814646" refkind="member"><highlight class="preprocessor">#define<sp/>SysTick_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SCS_BASE<sp/>+<sp/><sp/>0x0010UL)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="367" refid="_micro_8h_1aa0288691785a5f868238e0468b39523d" refkind="member"><highlight class="preprocessor">#define<sp/>NVIC_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SCS_BASE<sp/>+<sp/><sp/>0x0100UL)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="368" refid="_micro_8h_1ad55a7ddb8d4b2398b0c1cfec76c0d9fd" refkind="member"><highlight class="preprocessor">#define<sp/>SCB_BASE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(SCS_BASE<sp/>+<sp/><sp/>0x0D00UL)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="370" refid="_micro_8h_1a9fe0cd2eef83a8adad94490d9ecca63f" refkind="member"><highlight class="preprocessor">#define<sp/>SCnSCB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((SCnSCB_Type<sp/><sp/><sp/><sp/>*)<sp/><sp/><sp/><sp/><sp/>SCS_BASE<sp/><sp/><sp/><sp/><sp/><sp/>)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="371" refid="_micro_8h_1aaaf6477c2bde2f00f99e3c2fd1060b01" refkind="member"><highlight class="preprocessor">#define<sp/>SCB<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((SCB_Type<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*)<sp/><sp/><sp/><sp/><sp/>SCB_BASE<sp/><sp/><sp/><sp/><sp/><sp/>)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="372" refid="_micro_8h_1acd96c53beeaff8f603fcda425eb295de" refkind="member"><highlight class="preprocessor">#define<sp/>SysTick<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((SysTick_Type<sp/><sp/><sp/>*)<sp/><sp/><sp/><sp/><sp/>SysTick_BASE<sp/><sp/>)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="373" refid="_micro_8h_1ac8e97e8ce56ae9f57da1363a937f8a17" refkind="member"><highlight class="preprocessor">#define<sp/>NVIC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((NVIC_Type<sp/><sp/><sp/><sp/><sp/><sp/>*)<sp/><sp/><sp/><sp/><sp/>NVIC_BASE<sp/><sp/><sp/><sp/><sp/>)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="374" refid="_micro_8h_1abae7cdf882def602cb787bb039ff6a43" refkind="member"><highlight class="preprocessor">#define<sp/>ITM<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((ITM_Type<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*)<sp/><sp/><sp/><sp/><sp/>ITM_BASE<sp/><sp/><sp/><sp/><sp/><sp/>)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="375" refid="_micro_8h_1abbe5a060185e1d5afa3f85b14e10a6ce" refkind="member"><highlight class="preprocessor">#define<sp/>DWT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((DWT_Type<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*)<sp/><sp/><sp/><sp/><sp/>DWT_BASE<sp/><sp/><sp/><sp/><sp/><sp/>)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="376" refid="_micro_8h_1a8b4dd00016aed25a0ea54e9a9acd1239" refkind="member"><highlight class="preprocessor">#define<sp/>TPI<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((TPI_Type<sp/><sp/><sp/><sp/><sp/><sp/><sp/>*)<sp/><sp/><sp/><sp/><sp/>TPI_BASE<sp/><sp/><sp/><sp/><sp/><sp/>)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="377" refid="_micro_8h_1ab6e30a2b802d9021619dbb0be7f5d63d" refkind="member"><highlight class="preprocessor">#define<sp/>CoreDebug<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((CoreDebug_Type<sp/>*)<sp/><sp/><sp/><sp/><sp/>CoreDebug_BASE)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="380"><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/Micro.h"/>
+  </compounddef>
+</doxygen>

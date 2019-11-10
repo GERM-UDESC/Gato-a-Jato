@@ -1,0 +1,588 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_controller" kind="class" language="C++" prot="public">
+    <compoundname>Controller</compoundname>
+    <includes refid="_f_o_l_l_o_w_i_n_g___c_o_n_t_r_o_l_e_r_8h" local="no">FOLLOWING_CONTROLER.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_controller_1a3696d4c6691dbef18a06dc8227032897" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_controller" kindref="compound">Controller</ref> *</type>
+        <definition>Controller * Controller::ptController</definition>
+        <argsstring></argsstring>
+        <name>ptController</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="32" column="19" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_controller_1a2a5f2fd2571a870df01155afdf777fd6" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Controller::xe</definition>
+        <argsstring></argsstring>
+        <name>xe</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="35" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1aeaf726679e68ed820c8aba2b7d5a4632" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Controller::ye</definition>
+        <argsstring></argsstring>
+        <name>ye</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="36" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1af91f0aa231afef2abf8bb9f88019cded" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Controller::tetae</definition>
+        <argsstring></argsstring>
+        <name>tetae</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="37" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1a130305059740df7071478152ad73fa1a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Controller::xep</definition>
+        <argsstring></argsstring>
+        <name>xep</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="38" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1ad2b0ddac3b3b09b79c1f814683bd69fb" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Controller::yep</definition>
+        <argsstring></argsstring>
+        <name>yep</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="39" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1aadd762b78e88cca48a1199aec077bb90" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Controller::tetaep</definition>
+        <argsstring></argsstring>
+        <name>tetaep</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="40" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1a6fd333e1d819130e94933a7a1ee8ed8a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Controller::lastTetae</definition>
+        <argsstring></argsstring>
+        <name>lastTetae</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="41" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1a87e3251527014dbeb299a11ecb79b044" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Controller::v_ref</definition>
+        <argsstring></argsstring>
+        <name>v_ref</name>
+        <initializer>{ 0.5 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="43" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1a08faf6f1f8dd465efc66a60cb817f8cf" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Controller::desired_v</definition>
+        <argsstring></argsstring>
+        <name>desired_v</name>
+        <initializer>{ 0.5 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="44" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1aa1cbabeeb96c3a2c23482a902394a851" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Controller::w_ref</definition>
+        <argsstring></argsstring>
+        <name>w_ref</name>
+        <initializer>{ 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="45" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1aadd036c1989e35a7a6c50154a50f55ae" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Controller::v</definition>
+        <argsstring></argsstring>
+        <name>v</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="47" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1acd68655282c0e94fbb0ee6686ef65db9" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Controller::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="48" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1a3a79e87b16f43ea6425ddb166476f433" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Controller::vc</definition>
+        <argsstring></argsstring>
+        <name>vc</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="50" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1a02f15a6efb4705eba25aad2fadd61d04" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Controller::wc</definition>
+        <argsstring></argsstring>
+        <name>wc</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="51" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1a6e58d78805dcc059b54dfe9eeee56046" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Controller::vcp</definition>
+        <argsstring></argsstring>
+        <name>vcp</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="52" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_controller_1a9c31632dbf06e7a6c69c49544dc0ac08" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Controller::wcp</definition>
+        <argsstring></argsstring>
+        <name>wcp</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="53" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_controller_1adde90eb65a82d95773067bff39442655" prot="public" static="no" mutable="no">
+        <type><ref refid="class_kinematic" kindref="compound">Kinematic</ref></type>
+        <definition>Kinematic Controller::Robot</definition>
+        <argsstring></argsstring>
+        <name>Robot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="61" column="11" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_controller_1ab8d404cfeb8763c9b9075f52fdb5ec9c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::Handler</definition>
+        <argsstring>()</argsstring>
+        <name>Handler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="33" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp" bodystart="15" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1aeee92b830520588e8142feb9a712fbdb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::kanayama_control</definition>
+        <argsstring>()</argsstring>
+        <name>kanayama_control</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="55" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp" bodystart="57" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1aaf9a12f880ec76087b1321c819c588b2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::fierro_control</definition>
+        <argsstring>()</argsstring>
+        <name>fierro_control</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="56" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp" bodystart="72" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1aaa061f954e5210699731af49d8750321" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::article_control</definition>
+        <argsstring>()</argsstring>
+        <name>article_control</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="57" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp" bodystart="92" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1a22c4fd657400a462becfbbe0ca5f0ddf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::calculateError</definition>
+        <argsstring>()</argsstring>
+        <name>calculateError</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="58" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp" bodystart="37" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_controller_1a5d8197a059ed4eb34d3e8636240f4054" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Controller::Controller</definition>
+        <argsstring>(Kinematic Robot)</argsstring>
+        <name>Controller</name>
+        <param>
+          <type><ref refid="class_kinematic" kindref="compound">Kinematic</ref></type>
+          <declname>Robot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="63" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1a9605194ba9762e08def2c78be58033c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::setSpeedRef</definition>
+        <argsstring>(float vr, float wr)</argsstring>
+        <name>setSpeedRef</name>
+        <param>
+          <type>float</type>
+          <declname>vr</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>wr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="66" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp" bodystart="106" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1ab3e96e958d21b9e481ea27c553da6de5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::controlRule</definition>
+        <argsstring>()</argsstring>
+        <name>controlRule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="67" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp" bodystart="50" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1ab5515748f1b0c82f015e039c817ee5f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="68" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp" bodystart="112" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1a111a295d417256c64b8102f6e79daaf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Controller::getVcontrol</definition>
+        <argsstring>()</argsstring>
+        <name>getVcontrol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="70" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1ac926234ff88a982d07a97da7309a1e40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Controller::getWcontrol</definition>
+        <argsstring>()</argsstring>
+        <name>getWcontrol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="71" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1a1abef24ed38b6dc29dbfc250c561d162" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::start</definition>
+        <argsstring>(float vr, float wr)</argsstring>
+        <name>start</name>
+        <param>
+          <type>float</type>
+          <declname>vr</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>wr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="73" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="class_controller_1ad2abd6ee544cb1cb39705f31c6700f0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="74" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_controller_1aa5ad9ad11dd6fc7973c1ec737679ab25" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Controller::HandlerByTime</definition>
+        <argsstring>()</argsstring>
+        <name>HandlerByTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="65" column="13" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.cpp" bodystart="10" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>Motor</label>
+        <link refid="class_motor"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>motPtr</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>encoder</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>pwmMotor</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>IN1</edgelabel>
+          <edgelabel>IN2</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Encoder</label>
+        <link refid="class_encoder"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TIM_TypeDef</label>
+        <link refid="struct_t_i_m___type_def"/>
+      </node>
+      <node id="5">
+        <label>Timer</label>
+        <link refid="class_timer"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>TIM</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Line_Sensor</label>
+        <link refid="class_line___sensor"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>Sensors</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>PWM</label>
+        <link refid="class_p_w_m"/>
+        <childnode refid="5" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>GPIO</label>
+        <link refid="class_g_p_i_o"/>
+      </node>
+      <node id="2">
+        <label>Kinematic</label>
+        <link refid="class_kinematic"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>motorD</edgelabel>
+          <edgelabel>motorE</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ptRobot</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>lineSensor</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Controller</label>
+        <link refid="class_controller"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Robot</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Reflectance_Sensor</label>
+        <link refid="class_reflectance___sensor"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" line="30" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/FOLLOWING_CONTROLER.h" bodystart="29" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_controller_1aaa061f954e5210699731af49d8750321" prot="private" virt="non-virtual"><scope>Controller</scope><name>article_control</name></member>
+      <member refid="class_controller_1a22c4fd657400a462becfbbe0ca5f0ddf" prot="private" virt="non-virtual"><scope>Controller</scope><name>calculateError</name></member>
+      <member refid="class_controller_1a5d8197a059ed4eb34d3e8636240f4054" prot="public" virt="non-virtual"><scope>Controller</scope><name>Controller</name></member>
+      <member refid="class_controller_1ab3e96e958d21b9e481ea27c553da6de5" prot="public" virt="non-virtual"><scope>Controller</scope><name>controlRule</name></member>
+      <member refid="class_controller_1a08faf6f1f8dd465efc66a60cb817f8cf" prot="private" virt="non-virtual"><scope>Controller</scope><name>desired_v</name></member>
+      <member refid="class_controller_1aaf9a12f880ec76087b1321c819c588b2" prot="private" virt="non-virtual"><scope>Controller</scope><name>fierro_control</name></member>
+      <member refid="class_controller_1a111a295d417256c64b8102f6e79daaf1" prot="public" virt="non-virtual"><scope>Controller</scope><name>getVcontrol</name></member>
+      <member refid="class_controller_1ac926234ff88a982d07a97da7309a1e40" prot="public" virt="non-virtual"><scope>Controller</scope><name>getWcontrol</name></member>
+      <member refid="class_controller_1ab8d404cfeb8763c9b9075f52fdb5ec9c" prot="private" virt="non-virtual"><scope>Controller</scope><name>Handler</name></member>
+      <member refid="class_controller_1aa5ad9ad11dd6fc7973c1ec737679ab25" prot="public" virt="non-virtual"><scope>Controller</scope><name>HandlerByTime</name></member>
+      <member refid="class_controller_1aeee92b830520588e8142feb9a712fbdb" prot="private" virt="non-virtual"><scope>Controller</scope><name>kanayama_control</name></member>
+      <member refid="class_controller_1a6fd333e1d819130e94933a7a1ee8ed8a" prot="private" virt="non-virtual"><scope>Controller</scope><name>lastTetae</name></member>
+      <member refid="class_controller_1a3696d4c6691dbef18a06dc8227032897" prot="private" virt="non-virtual"><scope>Controller</scope><name>ptController</name></member>
+      <member refid="class_controller_1ab5515748f1b0c82f015e039c817ee5f7" prot="public" virt="non-virtual"><scope>Controller</scope><name>reset</name></member>
+      <member refid="class_controller_1adde90eb65a82d95773067bff39442655" prot="public" virt="non-virtual"><scope>Controller</scope><name>Robot</name></member>
+      <member refid="class_controller_1a9605194ba9762e08def2c78be58033c6" prot="public" virt="non-virtual"><scope>Controller</scope><name>setSpeedRef</name></member>
+      <member refid="class_controller_1a1abef24ed38b6dc29dbfc250c561d162" prot="public" virt="non-virtual"><scope>Controller</scope><name>start</name></member>
+      <member refid="class_controller_1ad2abd6ee544cb1cb39705f31c6700f0c" prot="public" virt="non-virtual"><scope>Controller</scope><name>stop</name></member>
+      <member refid="class_controller_1af91f0aa231afef2abf8bb9f88019cded" prot="private" virt="non-virtual"><scope>Controller</scope><name>tetae</name></member>
+      <member refid="class_controller_1aadd762b78e88cca48a1199aec077bb90" prot="private" virt="non-virtual"><scope>Controller</scope><name>tetaep</name></member>
+      <member refid="class_controller_1aadd036c1989e35a7a6c50154a50f55ae" prot="private" virt="non-virtual"><scope>Controller</scope><name>v</name></member>
+      <member refid="class_controller_1a87e3251527014dbeb299a11ecb79b044" prot="private" virt="non-virtual"><scope>Controller</scope><name>v_ref</name></member>
+      <member refid="class_controller_1a3a79e87b16f43ea6425ddb166476f433" prot="private" virt="non-virtual"><scope>Controller</scope><name>vc</name></member>
+      <member refid="class_controller_1a6e58d78805dcc059b54dfe9eeee56046" prot="private" virt="non-virtual"><scope>Controller</scope><name>vcp</name></member>
+      <member refid="class_controller_1acd68655282c0e94fbb0ee6686ef65db9" prot="private" virt="non-virtual"><scope>Controller</scope><name>w</name></member>
+      <member refid="class_controller_1aa1cbabeeb96c3a2c23482a902394a851" prot="private" virt="non-virtual"><scope>Controller</scope><name>w_ref</name></member>
+      <member refid="class_controller_1a02f15a6efb4705eba25aad2fadd61d04" prot="private" virt="non-virtual"><scope>Controller</scope><name>wc</name></member>
+      <member refid="class_controller_1a9c31632dbf06e7a6c69c49544dc0ac08" prot="private" virt="non-virtual"><scope>Controller</scope><name>wcp</name></member>
+      <member refid="class_controller_1a2a5f2fd2571a870df01155afdf777fd6" prot="private" virt="non-virtual"><scope>Controller</scope><name>xe</name></member>
+      <member refid="class_controller_1a130305059740df7071478152ad73fa1a" prot="private" virt="non-virtual"><scope>Controller</scope><name>xep</name></member>
+      <member refid="class_controller_1aeaf726679e68ed820c8aba2b7d5a4632" prot="private" virt="non-virtual"><scope>Controller</scope><name>ye</name></member>
+      <member refid="class_controller_1ad2b0ddac3b3b09b79c1f814683bd69fb" prot="private" virt="non-virtual"><scope>Controller</scope><name>yep</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

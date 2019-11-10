@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_a_d_c_8cpp" kind="file" language="C++">
+    <compoundname>ADC.cpp</compoundname>
+    <includes refid="_a_d_c_8h" local="yes">ADC.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>stdint.h</label>
+      </node>
+      <node id="2">
+        <label>ADC.h</label>
+        <link refid="_a_d_c_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>TIMER.h</label>
+        <link refid="_t_i_m_e_r_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.cpp</label>
+        <link refid="_a_d_c_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_a_d_c_8h" kindref="compound">ADC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><ref refid="_a_d_c_8h_1ad55dfa2e9899dc523df471591391ca5e" kindref="member">ADC_CONVERSION_MODES</ref><sp/>ADC::ADCMode<sp/>=<sp/><ref refid="_a_d_c_8h_1ad55dfa2e9899dc523df471591391ca5ea192044c1df908c9c5eb05dcfe9401ee4" kindref="member">SINGLE_CONVERSION</ref>;<sp/><sp/></highlight><highlight class="comment">//Initialize<sp/>the<sp/>static<sp/>member</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><ref refid="class_a_d_c_1a4fdc585a52f4ffe079b4addb67c15e3d" kindref="member">ADC::ADC</ref>(<ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524" kindref="member">ADC_CHANNELS</ref><sp/>ADCChannel)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_d_c_1a5952d760b737e7fafa952b8527d09110" kindref="member">SetADCChannel</ref>(ADCChannel);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_a_d_c_1a88fb915be4ac7aebd0e807b9950c806c" kindref="member">ConfigADCPin</ref>();</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_d_c_1a88fb915be4ac7aebd0e807b9950c806c" kindref="member">ADC::ConfigADCPin</ref>()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;APB2ENR<sp/>|=<sp/>(1&lt;&lt;9)<sp/>|<sp/>(1&lt;&lt;10);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//IF<sp/>not<sp/>enable,<sp/>enable<sp/>the<sp/>clock<sp/>of<sp/>adc1<sp/>and<sp/>adc2<sp/>peripherals</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_a_d_c_1a53581b9cb2dbf089ace5fb9eb2d92ed0" kindref="member">GetADCChannel</ref>()<sp/>==<sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a0db887b05fe2d35518140c53e4d3cd37" kindref="member">ADC_CH0</ref>)<sp/><sp/><ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a09c5d44fd6e7ee5daddd08009b04ac38" kindref="member">PA0</ref>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_a_d_c_1a53581b9cb2dbf089ace5fb9eb2d92ed0" kindref="member">GetADCChannel</ref>()<sp/>==<sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a6642852ba79ec550f9db5aee024eafc9" kindref="member">ADC_CH1</ref>)<sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a201be1986c3153a2eb2de811e1700f0e" kindref="member">PA1</ref>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_a_d_c_1a53581b9cb2dbf089ace5fb9eb2d92ed0" kindref="member">GetADCChannel</ref>()<sp/>==<sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524ac4dcc5d123e548febb592bad090fa13a" kindref="member">ADC_CH2</ref>)<sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ada41486a507439d5f7944cb482608272" kindref="member">PA2</ref>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_a_d_c_1a53581b9cb2dbf089ace5fb9eb2d92ed0" kindref="member">GetADCChannel</ref>()<sp/>==<sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a3955d3413cc4000e0121db7f11296c21" kindref="member">ADC_CH3</ref>)<sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a9d22824e6f426a415722fef30c17bb23" kindref="member">PA3</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_a_d_c_1a53581b9cb2dbf089ace5fb9eb2d92ed0" kindref="member">GetADCChannel</ref>()<sp/>==<sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524adc9c466c876b5d2226155bf1ebc6e2ec" kindref="member">ADC_CH4</ref>)<sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a836506b72e125f74f67e68b4797113e3" kindref="member">PA4</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_a_d_c_1a53581b9cb2dbf089ace5fb9eb2d92ed0" kindref="member">GetADCChannel</ref>()<sp/>==<sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a57679984f78b2a16619436593843da64" kindref="member">ADC_CH5</ref>)<sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265abbc68c892c3b62e32a645e24b2c3f431" kindref="member">PA5</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_a_d_c_1a53581b9cb2dbf089ace5fb9eb2d92ed0" kindref="member">GetADCChannel</ref>()<sp/>==<sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524aebc31ace36f08bbe5cc3ef39de3b70ac" kindref="member">ADC_CH6</ref>)<sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265ae3a4724611297f7aaf05b3df96500e50" kindref="member">PA6</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_a_d_c_1a53581b9cb2dbf089ace5fb9eb2d92ed0" kindref="member">GetADCChannel</ref>()<sp/>==<sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524acf0c880171a962668da324da08aadcfe" kindref="member">ADC_CH7</ref>)<sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a854a1d26d1740bfa815bf76f027e1c90" kindref="member">PA7</ref>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_a_d_c_1a53581b9cb2dbf089ace5fb9eb2d92ed0" kindref="member">GetADCChannel</ref>()<sp/>==<sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a5c245839a7fc1c2cbc5319987772b6e0" kindref="member">ADC_CH8</ref>)<sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265addf87f545e0fe02b1d66e61cda646572" kindref="member">PB0</ref>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_a_d_c_1a53581b9cb2dbf089ace5fb9eb2d92ed0" kindref="member">GetADCChannel</ref>()<sp/>==<sp/><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524a73d8dbb2047e3c7e9c4803ec355b8451" kindref="member">ADC_CH9</ref>)<sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" kindref="member">SetGPIOPortPin</ref>(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a137b9b5f8c427f5d138faaa7ba3d8528" kindref="member">PB1</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o_1ad63b30938acafc3c2deb126b70258a9c" kindref="member">SetGPIOMode</ref>(<ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aa4790094e6004d7ba65d6b662c99058d7" kindref="member">INPUT_ANALOG</ref>);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Default<sp/>for<sp/>adc<sp/>channels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o_1a0572d93ba912073decd7a96d90c312b0" kindref="member">ConfigGPIOPin</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a90d2d5c526ce5c0a551f533eccbee71a" kindref="member">ADC1</ref>-&gt;CR2<sp/>|=<sp/>(1&lt;&lt;19)<sp/>|<sp/>(1&lt;&lt;18)<sp/>|<sp/>(1&lt;&lt;17);<sp/><sp/><sp/></highlight><highlight class="comment">//select<sp/>swstart<sp/>as<sp/>trigger<sp/>for<sp/>convertion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a90d2d5c526ce5c0a551f533eccbee71a" kindref="member">ADC1</ref>-&gt;SMPR2<sp/>|=<sp/>(6&lt;&lt;(<ref refid="class_a_d_c_1a53581b9cb2dbf089ace5fb9eb2d92ed0" kindref="member">GetADCChannel</ref>()*3));</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>ADCCalibrate();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ADC::ADCCalibrate()</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a90d2d5c526ce5c0a551f533eccbee71a" kindref="member">ADC1</ref>-&gt;CR2<sp/>|=<sp/>(1&lt;&lt;0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Enable<sp/>the<sp/>ADON<sp/>bit,<sp/>the<sp/>first<sp/>time<sp/>is<sp/>just<sp/>to<sp/>enable,<sp/>the<sp/>next<sp/>one<sp/>is<sp/>to<sp/>start<sp/>converting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>250;<sp/>i++);<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//It&apos;s<sp/>needed<sp/>to<sp/>wait<sp/>at<sp/>least<sp/>2<sp/>ADC<sp/>cycles<sp/>before<sp/>starting<sp/>the<sp/>calibration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a90d2d5c526ce5c0a551f533eccbee71a" kindref="member">ADC1</ref>-&gt;CR2<sp/>|=<sp/>(1&lt;&lt;2);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Start<sp/>the<sp/>calibration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="_micro_8h_1a90d2d5c526ce5c0a551f533eccbee71a" kindref="member">ADC1</ref>-&gt;CR2<sp/>&amp;<sp/>(1&lt;&lt;2));<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Wait<sp/>until<sp/>the<sp/>calibration<sp/>stops</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">uint16_t<sp/><ref refid="class_a_d_c_1a1284108c54c5bdaa25deae6c7350a728" kindref="member">ADC::analogRead</ref>()</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a90d2d5c526ce5c0a551f533eccbee71a" kindref="member">ADC1</ref>-&gt;SQR3<sp/>&amp;=<sp/>~(0xF&lt;&lt;0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//clear<sp/>the<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a90d2d5c526ce5c0a551f533eccbee71a" kindref="member">ADC1</ref>-&gt;SQR3<sp/>|=<sp/>(<ref refid="class_a_d_c_1a53581b9cb2dbf089ace5fb9eb2d92ed0" kindref="member">GetADCChannel</ref>()&lt;&lt;0);<sp/></highlight><highlight class="comment">//select<sp/>the<sp/>channel<sp/>to<sp/>start<sp/>converting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a90d2d5c526ce5c0a551f533eccbee71a" kindref="member">ADC1</ref>-&gt;CR2<sp/>|=<sp/>(1&lt;&lt;0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Start<sp/>converting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!((<ref refid="_micro_8h_1a90d2d5c526ce5c0a551f533eccbee71a" kindref="member">ADC1</ref>-&gt;SR)<sp/>&amp;<sp/>(1&lt;&lt;1)));<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Wait<sp/>until<sp/>the<sp/>convertion<sp/>is<sp/>finished</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="_micro_8h_1a90d2d5c526ce5c0a551f533eccbee71a" kindref="member">ADC1</ref>-&gt;DR);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//return<sp/>the<sp/>convertion<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//Setters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>ADC::SetADCMode(ADC_CONVERSION_MODES<sp/>ADCMode)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>ADC::ADCMode<sp/>=<sp/>ADCMode;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_a_d_c_1a5952d760b737e7fafa952b8527d09110" kindref="member">ADC::SetADCChannel</ref>(<ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524" kindref="member">ADC_CHANNELS</ref><sp/>ADCChannel)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;ADCChannel<sp/>=<sp/>ADCChannel;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//Getters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//ADC_CONVERSION_MODES<sp/>ADC::GetADCMode()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>return<sp/>(this-&gt;ADCMode);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524" kindref="member">ADC_CHANNELS</ref><sp/><ref refid="class_a_d_c_1a53581b9cb2dbf089ace5fb9eb2d92ed0" kindref="member">ADC::GetADCChannel</ref>()</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;ADCChannel);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.cpp"/>
+  </compounddef>
+</doxygen>

@@ -28,6 +28,8 @@ void Kinematic::reset()
 	motorE.reset();
 	xPos = 0;
 	yPos = 0;
+	xPosSensor = 0;
+	yPosSensor = 0;
 	for (int i = 0; i < (angleFilterOrder); i++)
 	{
 		angle[i] = 0;
@@ -53,7 +55,8 @@ void Kinematic::handler()
 	this->deltaDistance = (motorD.getDeltaDistance() + motorE.getDeltaDistance())/2;
 	xPos += this->deltaDistance*cos(getTeta())*distanceCorrection;
 	yPos += this->deltaDistance*sin(getTeta())*distanceCorrection;
-	
+	xPosSensor = xPos + comprimento*cos(getTeta());
+	yPosSensor = yPos + comprimento*sin(getTeta());
 }
 
 float Kinematic::getV()
@@ -68,12 +71,12 @@ float Kinematic::getW()
 
 float Kinematic::getX()
 {
-	return xPos;		
+	return xPosSensor;		
 }
 
 float	Kinematic::getY()
 {
-	return yPos;		
+	return yPosSensor;		
 }
 
 float Kinematic::getTeta()
@@ -101,6 +104,11 @@ void Kinematic::updateLineReading()
 		angle[angleFilterOrder-1] = atan2(lineSensorReading - lastLineSensorReading, this->deltaDistance);
 	}	
 		
+//	if ((this->deltaDistance)!= 0)
+//	{
+//		angle[angleFilterOrder-1] = asin((lineSensorReading - lastLineSensorReading)/(this->deltaDistance));
+//	}	
+//	
 	filteredAngle = 0;
 	for (int i = 0; i < (angleFilterOrder); i++)
 	{

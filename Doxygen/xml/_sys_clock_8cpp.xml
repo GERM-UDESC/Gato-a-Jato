@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="_sys_clock_8cpp" kind="file" language="C++">
+    <compoundname>SysClock.cpp</compoundname>
+    <includes refid="_sys_clock_8h" local="yes">SysClock.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>GPIO.h</label>
+        <link refid="_g_p_i_o_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="3">
+        <label>Micro.h</label>
+        <link refid="_micro_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>SysClock.h</label>
+        <link refid="_sys_clock_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SysClock.cpp</label>
+        <link refid="_sys_clock_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sys_clock_8h" kindref="compound">SysClock.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">This<sp/>function<sp/>will<sp/>set<sp/>as<sp/>default<sp/>the<sp/>HSE<sp/>as<sp/>clock<sp/>Source,<sp/>making<sp/>it<sp/>pass<sp/>through<sp/>the<sp/>PLL<sp/>and<sp/>be<sp/>multiplied<sp/>by<sp/>9<sp/>to<sp/>get<sp/>the<sp/>72MHz</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">HSE<sp/>=<sp/>High<sp/>Speed<sp/>External<sp/>Clock<sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">As<sp/>in<sp/>this<sp/>board<sp/>we<sp/>have<sp/>the<sp/>External<sp/>Crystal,<sp/>which<sp/>is<sp/>much<sp/>more<sp/>acurated<sp/>than<sp/>the<sp/>internal<sp/>clock,<sp/>and<sp/>we<sp/>are<sp/>not<sp/>aimming<sp/>to<sp/>a<sp/>low<sp/>power</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">application,<sp/>there<sp/>is<sp/>no<sp/>reason<sp/>to<sp/>avoid<sp/>using<sp/>the<sp/>External<sp/>Crystal</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment">It<sp/>will<sp/>also<sp/>configure<sp/>the<sp/>external<sp/>32.764kHz<sp/>oscilator<sp/>as<sp/>the<sp/>RTC<sp/>source</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">This<sp/>function<sp/>will<sp/>also<sp/>configure<sp/>the<sp/>clock<sp/>off<sp/>all<sp/>periferals<sp/>and<sp/>buses<sp/>as<sp/>the<sp/>maximus<sp/>allowed</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="class_sys_clock_1a1a126a29d38a7ca94c53f3f530404286" kindref="member">SysClock::SysClock</ref>()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sys_clock_1a06d3c5e27e705ecad0676ba8cb2f34e2" kindref="member">SysClockInit</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sys_clock_1ab2cb3079470ad249b66d23a324f9669e" kindref="member">SysTickInit</ref>(<ref refid="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1fa2bcdfedc316cba441582940983fae81d" kindref="member">BASE_100ms</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sys_clock_1a06d3c5e27e705ecad0676ba8cb2f34e2" kindref="member">SysClock::SysClockInit</ref>()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//1.<sp/>Fisrt<sp/>enable<sp/>the<sp/>required<sp/>clock<sp/>and<sp/>wait<sp/>until<sp/>the<sp/>clock<sp/>is<sp/>Ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CR<sp/>|=<sp/>(1&lt;&lt;16);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Turn<sp/>on<sp/>HSE<sp/>clock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!(<ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CR<sp/>&amp;<sp/>(1&lt;&lt;17)));<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Wait<sp/>until<sp/>its<sp/>Ready</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//2.<sp/>Configure<sp/>the<sp/>PLL<sp/>and<sp/>enable<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CFGR<sp/>|=<sp/>((1&lt;&lt;20)<sp/>|<sp/>(1&lt;&lt;19)<sp/>|<sp/>(1&lt;&lt;18));<sp/></highlight><highlight class="comment">//Set<sp/>the<sp/>PLL<sp/>multiplication<sp/>factor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CFGR<sp/>|=<sp/>(1&lt;&lt;16);<sp/><sp/><sp/></highlight><highlight class="comment">//Select<sp/>the<sp/>HSE<sp/>as<sp/>clock<sp/>source<sp/>instead<sp/>off<sp/>HSI<sp/>in<sp/>the<sp/>PLL<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CR<sp/>|=<sp/>(1&lt;&lt;24);<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Enable<sp/>de<sp/>PLL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!(<ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CR<sp/>&amp;<sp/>(1&lt;&lt;25)));<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Wait<sp/>until<sp/>the<sp/>PLL<sp/>clock<sp/>is<sp/>stable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//3.<sp/>Initialises<sp/>the<sp/>busses<sp/>clock<sp/>prescalers<sp/>according<sp/>to<sp/>the<sp/>application<sp/>requiriments<sp/>and<sp/>maximum<sp/>limits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//APB1<sp/>bus<sp/>must<sp/>not<sp/>exced<sp/>36MHz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CFGR<sp/>|=<sp/>(1&lt;&lt;10);<sp/><sp/><sp/></highlight><highlight class="comment">//APB1<sp/>prescalers<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//ADCs<sp/>clock<sp/>must<sp/>not<sp/>exced<sp/>14MHz???,<sp/>as<sp/>the<sp/>input<sp/>clock<sp/>to<sp/>this<sp/>peripheral<sp/>is<sp/>72MHz,<sp/>it<sp/>must<sp/>be<sp/>divided<sp/>by<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CFGR<sp/>|=<sp/>(1&lt;&lt;15);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//4.<sp/>Configure<sp/>the<sp/>Flash<sp/>latency<sp/>properly<sp/>by<sp/>referring<sp/>to<sp/>MCU<sp/>RM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a844ea28ba1e0a5a0e497f16b61ea306b" kindref="member">FLASH</ref>-&gt;ACR<sp/>|=<sp/>(1&lt;&lt;1);<sp/><sp/><sp/></highlight><highlight class="comment">//Put<sp/>2<sp/>wait<sp/>states<sp/>into<sp/>the<sp/>read/write<sp/>operations<sp/>with<sp/>the<sp/>flash<sp/>memory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//5.<sp/>Select<sp/>newly<sp/>enabled<sp/>Clock<sp/>as<sp/>SYSCLK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CFGR<sp/>|=<sp/>(1&lt;&lt;1);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Changes<sp/>from<sp/>HSI<sp/>to<sp/>PLL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CR<sp/>&amp;=<sp/>~(1&lt;&lt;0);<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Turn<sp/>off<sp/>HSI<sp/>to<sp/>save<sp/>power</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/>/*************************************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>//Low<sp/>Speed<sp/>Clock<sp/>configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>/*</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>After<sp/>reset,<sp/>access<sp/>to<sp/>the<sp/>Backup<sp/>registers<sp/>and<sp/>RTC<sp/>is<sp/>disabled<sp/>and<sp/>the<sp/>Backup<sp/>domain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>(BKP)<sp/>is<sp/>protected<sp/>against<sp/>possible<sp/>parasitic<sp/>write<sp/>access.<sp/>To<sp/>enable<sp/>access<sp/>to<sp/>the<sp/>Backup</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>registers<sp/>and<sp/>the<sp/>RTC,<sp/>proceed<sp/>as<sp/>follows:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>//enable<sp/>the<sp/>power<sp/>and<sp/>backup<sp/>interface<sp/>clocks<sp/>by<sp/>setting<sp/>the<sp/>PWREN<sp/>and<sp/>BKPEN<sp/>bits<sp/>in<sp/>the<sp/>RCC_APB1ENR<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>RCC-&gt;APB1ENR<sp/>|=<sp/>(1&lt;&lt;27)<sp/>|<sp/>(1&lt;&lt;28);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>//set<sp/>the<sp/>DBP<sp/>bit<sp/>the<sp/>Power<sp/>Control<sp/>Register<sp/>(PWR_CR)<sp/>to<sp/>enable<sp/>access<sp/>to<sp/>the<sp/>Backup<sp/>registers<sp/>and<sp/>RTC.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>PWR-&gt;CR<sp/>|=<sp/>(1&lt;&lt;8);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>//Now<sp/>the<sp/>RTC<sp/>Clock<sp/>initialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>//1.<sp/>Turn<sp/>on<sp/>LSE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>RCC-&gt;BDCR<sp/>|=<sp/>(1&lt;&lt;0);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>//2.<sp/>Wait<sp/>until<sp/>the<sp/>LSE<sp/>is<sp/>stable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>while(!(RCC-&gt;BDCR<sp/>&amp;<sp/>(1&lt;&lt;1)));<sp/><sp/><sp/>//Wait<sp/>until<sp/>the<sp/>PLL<sp/>clock<sp/>is<sp/>stable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>//3.<sp/>Select<sp/>LSE<sp/>as<sp/>RTC<sp/>Clock<sp/>source</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>RCC-&gt;BDCR<sp/>|=<sp/>(1&lt;&lt;8);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>//4.<sp/>Reset<sp/>the<sp/>backup<sp/>Domain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>RCC-&gt;BDCR<sp/>|=<sp/>(1&lt;&lt;16);<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//this<sp/>is<sp/>actually<sp/>not<sp/>needed,<sp/>but<sp/>just<sp/>to<sp/>be<sp/>sure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>//5.<sp/>Enable<sp/>the<sp/>RTC<sp/>clock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>RCC-&gt;BDCR<sp/>|=<sp/>(1&lt;&lt;15);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>/*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>//Start<sp/>the<sp/>RTC<sp/>configuration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>//After<sp/>every<sp/>configuration,<sp/>it&apos;s<sp/>needed<sp/>to<sp/>wait<sp/>the<sp/>last<sp/>operation<sp/>to<sp/>be<sp/>finished<sp/>before<sp/>doing<sp/>another<sp/>one</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>//1.<sp/>Enter<sp/>in<sp/>configuration<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>while(!(RTC-&gt;CRL<sp/>&amp;<sp/>(1&lt;&lt;5)));<sp/><sp/><sp/><sp/>//Wait<sp/>until<sp/>the<sp/>Last<sp/>write<sp/>operation<sp/>on<sp/>RTC<sp/>registers<sp/>is<sp/>finished<sp/>(this<sp/>one<sp/>is<sp/>just<sp/>to<sp/>be<sp/>sure)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>RTC-&gt;CRL<sp/>|=<sp/>(1&lt;&lt;4);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>while(!(RTC-&gt;CRL<sp/>&amp;<sp/>(1&lt;&lt;5)));<sp/><sp/><sp/><sp/>//Wait<sp/>until<sp/>the<sp/>Last<sp/>write<sp/>operation<sp/>on<sp/>RTC<sp/>registers<sp/>is<sp/>finished</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>//2.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sys_clock_1adae8f5e4cf26f51d0dfdc8dca6ef51cb" kindref="member">SysClock::MCO</ref>()</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref><sp/>OutClock(<ref refid="_g_p_i_o_8h_1a6f3b48a675d88a3f93b204f661ed0265a425b946ed4ca75b99534ce59cbc8c606" kindref="member">PA8</ref>,<sp/><ref refid="_g_p_i_o_8h_1ae3be909f40ff6d0293e60c9dded0b08aaf5bdac9f8f4b320aec591a855522de8d" kindref="member">AF_OUTPUT_PUSH_PULL_50MHZ</ref>);<sp/><sp/></highlight><highlight class="comment">//just<sp/>to<sp/>test<sp/>the<sp/>board<sp/>clock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1a74944438a086975793d26ae48d5882d4" kindref="member">RCC</ref>-&gt;CFGR<sp/>|=<sp/>((1&lt;&lt;26)<sp/>|<sp/>(1&lt;&lt;24)<sp/>|<sp/>(1&lt;&lt;25));<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sys_clock_1ab2cb3079470ad249b66d23a324f9669e" kindref="member">SysClock::SysTickInit</ref>(<ref refid="_sys_clock_8h_1a72107f0f5d350a8b594d1abdf1f9dc1f" kindref="member">SysTickBaseTimeEnum</ref><sp/>BASE_TIME)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1acd96c53beeaff8f603fcda425eb295de" kindref="member">SysTick</ref>-&gt;LOAD<sp/>=<sp/>BASE_TIME;<sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_micro_8h_1acd96c53beeaff8f603fcda425eb295de" kindref="member">SysTick</ref>-&gt;CTRL<sp/>=<sp/>5;<sp/><sp/></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_sys_clock_1a8ea5a058704b60f85a1aabeb32077f1d" kindref="member">SysClock::SysTickGetEvent</ref>()</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_micro_8h_1acd96c53beeaff8f603fcda425eb295de" kindref="member">SysTick</ref>-&gt;CTRL<sp/>&amp;<sp/>(1&lt;&lt;16);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/SysClock.cpp"/>
+  </compounddef>
+</doxygen>

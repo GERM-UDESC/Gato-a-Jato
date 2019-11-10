@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_a_d_c" kind="class" language="C++" prot="public">
+    <compoundname>ADC</compoundname>
+    <basecompoundref refid="class_g_p_i_o" prot="protected" virt="non-virtual">GPIO</basecompoundref>
+    <includes refid="_a_d_c_8h" local="no">ADC.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_a_d_c_1a3848f5cf21f171b96cafa1d4589728bd" prot="private" static="yes" mutable="no">
+        <type><ref refid="_a_d_c_8h_1ad55dfa2e9899dc523df471591391ca5e" kindref="member">ADC_CONVERSION_MODES</ref></type>
+        <definition>ADC_CONVERSION_MODES ADC::ADCMode</definition>
+        <argsstring></argsstring>
+        <name>ADCMode</name>
+        <initializer>= <ref refid="_a_d_c_8h_1ad55dfa2e9899dc523df471591391ca5ea192044c1df908c9c5eb05dcfe9401ee4" kindref="member">SINGLE_CONVERSION</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h" line="28" column="29" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_a_d_c_1ae4ddcba059d65a718220450429d02173" prot="private" static="no" mutable="no">
+        <type><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524" kindref="member">ADC_CHANNELS</ref></type>
+        <definition>ADC_CHANNELS ADC::ADCChannel</definition>
+        <argsstring></argsstring>
+        <name>ADCChannel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h" line="29" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_a_d_c_1af54cfc1c65f4305a3f9f7f5d1029e0e6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC::ADCCalibrate</definition>
+        <argsstring>()</argsstring>
+        <name>ADCCalibrate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h" line="31" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.cpp" bodystart="35" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_a_d_c_1a88fb915be4ac7aebd0e807b9950c806c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC::ConfigADCPin</definition>
+        <argsstring>()</argsstring>
+        <name>ConfigADCPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h" line="35" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.cpp" bodystart="11" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_d_c_1a5952d760b737e7fafa952b8527d09110" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ADC::SetADCChannel</definition>
+        <argsstring>(ADC_CHANNELS ADCChannel)</argsstring>
+        <name>SetADCChannel</name>
+        <param>
+          <type><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524" kindref="member">ADC_CHANNELS</ref></type>
+          <declname>ADCChannel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h" line="38" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.cpp" bodystart="57" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_a_d_c_1a4fdc585a52f4ffe079b4addb67c15e3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ADC::ADC</definition>
+        <argsstring>(ADC_CHANNELS ADCChannel)</argsstring>
+        <name>ADC</name>
+        <param>
+          <type><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524" kindref="member">ADC_CHANNELS</ref></type>
+          <declname>ADCChannel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h" line="43" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.cpp" bodystart="5" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_d_c_1a1284108c54c5bdaa25deae6c7350a728" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t ADC::analogRead</definition>
+        <argsstring>()</argsstring>
+        <name>analogRead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h" line="46" column="10" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.cpp" bodystart="43" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_a_d_c_1a53581b9cb2dbf089ace5fb9eb2d92ed0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_a_d_c_8h_1a73ea1033e294f002cce15a3de6696524" kindref="member">ADC_CHANNELS</ref></type>
+        <definition>ADC_CHANNELS ADC::GetADCChannel</definition>
+        <argsstring>()</argsstring>
+        <name>GetADCChannel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h" line="50" column="14" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.cpp" bodystart="67" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ADC</label>
+        <link refid="class_a_d_c"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GPIO</label>
+        <link refid="class_g_p_i_o"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ADC</label>
+        <link refid="class_a_d_c"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>GPIO</label>
+        <link refid="class_g_p_i_o"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h" line="26" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/ADC.h" bodystart="25" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_a_d_c_1a4fdc585a52f4ffe079b4addb67c15e3d" prot="public" virt="non-virtual"><scope>ADC</scope><name>ADC</name></member>
+      <member refid="class_a_d_c_1af54cfc1c65f4305a3f9f7f5d1029e0e6" prot="private" virt="non-virtual"><scope>ADC</scope><name>ADCCalibrate</name></member>
+      <member refid="class_a_d_c_1ae4ddcba059d65a718220450429d02173" prot="private" virt="non-virtual"><scope>ADC</scope><name>ADCChannel</name></member>
+      <member refid="class_a_d_c_1a3848f5cf21f171b96cafa1d4589728bd" prot="private" virt="non-virtual"><scope>ADC</scope><name>ADCMode</name></member>
+      <member refid="class_a_d_c_1a1284108c54c5bdaa25deae6c7350a728" prot="public" virt="non-virtual"><scope>ADC</scope><name>analogRead</name></member>
+      <member refid="class_g_p_i_o_1ac2015f7c0e644e227008e79e54adcd6b" prot="protected" virt="non-virtual"><scope>ADC</scope><name>Config_PU_PD</name></member>
+      <member refid="class_a_d_c_1a88fb915be4ac7aebd0e807b9950c806c" prot="protected" virt="non-virtual"><scope>ADC</scope><name>ConfigADCPin</name></member>
+      <member refid="class_g_p_i_o_1a0572d93ba912073decd7a96d90c312b0" prot="protected" virt="non-virtual"><scope>ADC</scope><name>ConfigGPIOPin</name></member>
+      <member refid="class_g_p_i_o_1a5b2ae8f7330caad2299483311129e8a0" prot="protected" virt="non-virtual"><scope>ADC</scope><name>digitalRead</name></member>
+      <member refid="class_g_p_i_o_1a870daa607286476d9e8b96b9cfceae29" prot="protected" virt="non-virtual"><scope>ADC</scope><name>digitalWrite</name></member>
+      <member refid="class_a_d_c_1a53581b9cb2dbf089ace5fb9eb2d92ed0" prot="public" virt="non-virtual"><scope>ADC</scope><name>GetADCChannel</name></member>
+      <member refid="class_g_p_i_o_1a141ef87565744ba096b15279a1532879" prot="protected" virt="non-virtual"><scope>ADC</scope><name>GetGPIOMode</name></member>
+      <member refid="class_g_p_i_o_1a27baf1d6a71a2a291369fbe14dd28a1d" prot="protected" virt="non-virtual"><scope>ADC</scope><name>GetGPIOPinNumber</name></member>
+      <member refid="class_g_p_i_o_1ae729c77b07ec53fb0a429856291a50f2" prot="protected" virt="non-virtual"><scope>ADC</scope><name>GetGPIOPort</name></member>
+      <member refid="class_g_p_i_o_1a76cd9eca6bb4078f395700abc869aa85" prot="protected" virt="non-virtual"><scope>ADC</scope><name>GetGPIOPuPd</name></member>
+      <member refid="class_g_p_i_o_1a78492d4a195b90e30464190434e59741" prot="protected" virt="non-virtual"><scope>ADC</scope><name>GetGPIOState</name></member>
+      <member refid="class_g_p_i_o_1ae01be7f508aa9062ba2349af842ece5c" prot="protected" virt="non-virtual"><scope>ADC</scope><name>GetIOPin</name></member>
+      <member refid="class_g_p_i_o_1ab443a641cef81b1a9ec0211c5aa9c1ac" prot="protected" virt="non-virtual"><scope>ADC</scope><name>GPIO</name></member>
+      <member refid="class_g_p_i_o_1a3577e885d2a9dc635dcf2521ef1c5e49" prot="protected" virt="non-virtual"><scope>ADC</scope><name>GPIO</name></member>
+      <member refid="class_g_p_i_o_1ac90d2f0c0bed1ce5ac7381d00209e64b" prot="protected" virt="non-virtual"><scope>ADC</scope><name>GPIO</name></member>
+      <member refid="class_a_d_c_1a5952d760b737e7fafa952b8527d09110" prot="protected" virt="non-virtual"><scope>ADC</scope><name>SetADCChannel</name></member>
+      <member refid="class_g_p_i_o_1ad63b30938acafc3c2deb126b70258a9c" prot="protected" virt="non-virtual"><scope>ADC</scope><name>SetGPIOMode</name></member>
+      <member refid="class_g_p_i_o_1ae73124de59f9a2b6287aef102d0f432f" prot="protected" virt="non-virtual"><scope>ADC</scope><name>SetGPIOPortPin</name></member>
+      <member refid="class_g_p_i_o_1af2de5cd4e4c844aa7cc344505e912390" prot="protected" virt="non-virtual"><scope>ADC</scope><name>SetIOPin</name></member>
+      <member refid="class_g_p_i_o_1a53f920b5f06b6b61b68befc90b9e4996" prot="protected" virt="non-virtual"><scope>ADC</scope><name>tooglePin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

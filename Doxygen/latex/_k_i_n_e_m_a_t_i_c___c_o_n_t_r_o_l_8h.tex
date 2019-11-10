@@ -1,0 +1,96 @@
+\hypertarget{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h}{}\doxysection{C\+:/\+Users/bruno/\+Documents/\+Line\+Follower/\+Project\+\_\+u\+Vision/\+Line\+Follower/\+K\+I\+N\+E\+M\+A\+T\+I\+C\+\_\+\+C\+O\+N\+T\+R\+OL.h File Reference}
+\label{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h}\index{C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/KINEMATIC\_CONTROL.h@{C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/KINEMATIC\_CONTROL.h}}
+{\ttfamily \#include \char`\"{}M\+O\+T\+O\+R.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}L\+I\+N\+E\+\_\+\+S\+E\+N\+S\+O\+R.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}math.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_kinematic}{Kinematic}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_aa73214aa5f2f94f63d90bb4e3d99fe53}{L}}~0.\+069
+\item 
+\#define \mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a370e26e218cdd094ce7a28291d9d1117}{angle\+Correction}}~1
+\item 
+\#define \mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_aabb59de57e93f844e5be8551332d33a6}{distance\+Correction}}~1
+\item 
+\#define \mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a916af74e85211b8c9065bf685ef695d6}{angle\+Filter\+Order}}~2
+\item 
+\#define \mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a7259bbc04e36a85d36da439fe3983531}{integration\+Time}}~\mbox{\hyperlink{_t_i_m_e_r_8h_a3d4ab76c869e227bc5373ba193e3986e}{Time\+\_\+between\+\_\+int}}/1000000
+\item 
+\#define \mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_ad2029b570bdbc0cd4e4de82160c24642}{Kw}}~455.\+5
+\item 
+\#define \mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a8d53749dee8abc63dd8730a250ee5eef}{Pw}}~12.\+97
+\item 
+\#define \mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a29089289a3c36b44c528a17931f8e9d5}{ts\+\_\+w}}~0.\+05
+\item 
+\#define \mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_ae4ee311484bc525db07bb2e49c2c3942}{K\+Dw}}~4/(\mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_ad2029b570bdbc0cd4e4de82160c24642}{Kw}}$\ast$\mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a29089289a3c36b44c528a17931f8e9d5}{ts\+\_\+w}})
+\item 
+\#define \mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a7b7588c8e9c89bda5114459c9af06542}{K\+Pw}}~\mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a8d53749dee8abc63dd8730a250ee5eef}{Pw}}$\ast$\mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_ae4ee311484bc525db07bb2e49c2c3942}{K\+Dw}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a370e26e218cdd094ce7a28291d9d1117}\label{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a370e26e218cdd094ce7a28291d9d1117}} 
+\index{KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}!angleCorrection@{angleCorrection}}
+\index{angleCorrection@{angleCorrection}!KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}}
+\doxysubsubsection{\texorpdfstring{angleCorrection}{angleCorrection}}
+{\footnotesize\ttfamily \#define angle\+Correction~1}
+
+\mbox{\Hypertarget{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a916af74e85211b8c9065bf685ef695d6}\label{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a916af74e85211b8c9065bf685ef695d6}} 
+\index{KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}!angleFilterOrder@{angleFilterOrder}}
+\index{angleFilterOrder@{angleFilterOrder}!KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}}
+\doxysubsubsection{\texorpdfstring{angleFilterOrder}{angleFilterOrder}}
+{\footnotesize\ttfamily \#define angle\+Filter\+Order~2}
+
+\mbox{\Hypertarget{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_aabb59de57e93f844e5be8551332d33a6}\label{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_aabb59de57e93f844e5be8551332d33a6}} 
+\index{KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}!distanceCorrection@{distanceCorrection}}
+\index{distanceCorrection@{distanceCorrection}!KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}}
+\doxysubsubsection{\texorpdfstring{distanceCorrection}{distanceCorrection}}
+{\footnotesize\ttfamily \#define distance\+Correction~1}
+
+\mbox{\Hypertarget{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a7259bbc04e36a85d36da439fe3983531}\label{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a7259bbc04e36a85d36da439fe3983531}} 
+\index{KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}!integrationTime@{integrationTime}}
+\index{integrationTime@{integrationTime}!KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}}
+\doxysubsubsection{\texorpdfstring{integrationTime}{integrationTime}}
+{\footnotesize\ttfamily \#define integration\+Time~\mbox{\hyperlink{_t_i_m_e_r_8h_a3d4ab76c869e227bc5373ba193e3986e}{Time\+\_\+between\+\_\+int}}/1000000}
+
+\mbox{\Hypertarget{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_ae4ee311484bc525db07bb2e49c2c3942}\label{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_ae4ee311484bc525db07bb2e49c2c3942}} 
+\index{KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}!KDw@{KDw}}
+\index{KDw@{KDw}!KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}}
+\doxysubsubsection{\texorpdfstring{KDw}{KDw}}
+{\footnotesize\ttfamily \#define K\+Dw~4/(\mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_ad2029b570bdbc0cd4e4de82160c24642}{Kw}}$\ast$\mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a29089289a3c36b44c528a17931f8e9d5}{ts\+\_\+w}})}
+
+\mbox{\Hypertarget{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a7b7588c8e9c89bda5114459c9af06542}\label{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a7b7588c8e9c89bda5114459c9af06542}} 
+\index{KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}!KPw@{KPw}}
+\index{KPw@{KPw}!KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}}
+\doxysubsubsection{\texorpdfstring{KPw}{KPw}}
+{\footnotesize\ttfamily \#define K\+Pw~\mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a8d53749dee8abc63dd8730a250ee5eef}{Pw}}$\ast$\mbox{\hyperlink{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_ae4ee311484bc525db07bb2e49c2c3942}{K\+Dw}}}
+
+\mbox{\Hypertarget{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_ad2029b570bdbc0cd4e4de82160c24642}\label{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_ad2029b570bdbc0cd4e4de82160c24642}} 
+\index{KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}!Kw@{Kw}}
+\index{Kw@{Kw}!KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}}
+\doxysubsubsection{\texorpdfstring{Kw}{Kw}}
+{\footnotesize\ttfamily \#define Kw~455.\+5}
+
+\mbox{\Hypertarget{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_aa73214aa5f2f94f63d90bb4e3d99fe53}\label{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_aa73214aa5f2f94f63d90bb4e3d99fe53}} 
+\index{KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}!L@{L}}
+\index{L@{L}!KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}}
+\doxysubsubsection{\texorpdfstring{L}{L}}
+{\footnotesize\ttfamily \#define L~0.\+069}
+
+\mbox{\Hypertarget{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a8d53749dee8abc63dd8730a250ee5eef}\label{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a8d53749dee8abc63dd8730a250ee5eef}} 
+\index{KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}!Pw@{Pw}}
+\index{Pw@{Pw}!KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}}
+\doxysubsubsection{\texorpdfstring{Pw}{Pw}}
+{\footnotesize\ttfamily \#define Pw~12.\+97}
+
+\mbox{\Hypertarget{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a29089289a3c36b44c528a17931f8e9d5}\label{_k_i_n_e_m_a_t_i_c___c_o_n_t_r_o_l_8h_a29089289a3c36b44c528a17931f8e9d5}} 
+\index{KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}!ts\_w@{ts\_w}}
+\index{ts\_w@{ts\_w}!KINEMATIC\_CONTROL.h@{KINEMATIC\_CONTROL.h}}
+\doxysubsubsection{\texorpdfstring{ts\_w}{ts\_w}}
+{\footnotesize\ttfamily \#define ts\+\_\+w~0.\+05}
+

@@ -1,0 +1,2030 @@
+\begin{theindex}
+
+  \item {ACR}
+    \subitem {FLASH\_TypeDef}, \hyperpage{20}
+  \item {ADC}, \hyperpage{7}
+    \subitem {ADC}, \hyperpage{7}
+    \subitem {analogRead}, \hyperpage{8}
+    \subitem {ConfigADCPin}, \hyperpage{8}
+    \subitem {GetADCChannel}, \hyperpage{8}
+    \subitem {SetADCChannel}, \hyperpage{8}
+  \item {ADC.h}
+    \subitem {ADC\_CH0}, \hyperpage{70}
+    \subitem {ADC\_CH1}, \hyperpage{70}
+    \subitem {ADC\_CH2}, \hyperpage{70}
+    \subitem {ADC\_CH3}, \hyperpage{70}
+    \subitem {ADC\_CH4}, \hyperpage{70}
+    \subitem {ADC\_CH5}, \hyperpage{70}
+    \subitem {ADC\_CH6}, \hyperpage{70}
+    \subitem {ADC\_CH7}, \hyperpage{70}
+    \subitem {ADC\_CH8}, \hyperpage{70}
+    \subitem {ADC\_CH9}, \hyperpage{70}
+    \subitem {ADC\_CHANNELS}, \hyperpage{69}
+    \subitem {ADC\_CONVERSION\_MODES}, \hyperpage{70}
+    \subitem {CONTINUOUS\_CONVERSION}, \hyperpage{70}
+    \subitem {SINGLE\_CONVERSION}, \hyperpage{70}
+  \item {ADC1}
+    \subitem {Micro.h}, \hyperpage{89}
+  \item {ADC1\_2\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {ADC1\_BASE}
+    \subitem {Micro.h}, \hyperpage{89}
+  \item {ADC2}
+    \subitem {Micro.h}, \hyperpage{90}
+  \item {ADC2\_BASE}
+    \subitem {Micro.h}, \hyperpage{90}
+  \item {ADC\_CH0}
+    \subitem {ADC.h}, \hyperpage{70}
+  \item {ADC\_CH1}
+    \subitem {ADC.h}, \hyperpage{70}
+  \item {ADC\_CH2}
+    \subitem {ADC.h}, \hyperpage{70}
+  \item {ADC\_CH3}
+    \subitem {ADC.h}, \hyperpage{70}
+  \item {ADC\_CH4}
+    \subitem {ADC.h}, \hyperpage{70}
+  \item {ADC\_CH5}
+    \subitem {ADC.h}, \hyperpage{70}
+  \item {ADC\_CH6}
+    \subitem {ADC.h}, \hyperpage{70}
+  \item {ADC\_CH7}
+    \subitem {ADC.h}, \hyperpage{70}
+  \item {ADC\_CH8}
+    \subitem {ADC.h}, \hyperpage{70}
+  \item {ADC\_CH9}
+    \subitem {ADC.h}, \hyperpage{70}
+  \item {ADC\_CHANNELS}
+    \subitem {ADC.h}, \hyperpage{69}
+  \item {ADC\_CONVERSION\_MODES}
+    \subitem {ADC.h}, \hyperpage{70}
+  \item {ADC\_TypeDef}, \hyperpage{8}
+    \subitem {CR1}, \hyperpage{9}
+    \subitem {CR2}, \hyperpage{9}
+    \subitem {DR}, \hyperpage{9}
+    \subitem {HTR}, \hyperpage{9}
+    \subitem {JDR1}, \hyperpage{9}
+    \subitem {JDR2}, \hyperpage{10}
+    \subitem {JDR3}, \hyperpage{10}
+    \subitem {JDR4}, \hyperpage{10}
+    \subitem {JOFR1}, \hyperpage{10}
+    \subitem {JOFR2}, \hyperpage{10}
+    \subitem {JOFR3}, \hyperpage{10}
+    \subitem {JOFR4}, \hyperpage{10}
+    \subitem {JSQR}, \hyperpage{10}
+    \subitem {LTR}, \hyperpage{11}
+    \subitem {SMPR1}, \hyperpage{11}
+    \subitem {SMPR2}, \hyperpage{11}
+    \subitem {SQR1}, \hyperpage{11}
+    \subitem {SQR2}, \hyperpage{11}
+    \subitem {SQR3}, \hyperpage{11}
+    \subitem {SR}, \hyperpage{11}
+  \item {AF\_OUTPUT\_OPEN\_DRAIN\_10MHZ}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {AF\_OUTPUT\_OPEN\_DRAIN\_2MHZ}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {AF\_OUTPUT\_OPEN\_DRAIN\_50MHZ}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {AF\_OUTPUT\_PUSH\_PULL\_10MHZ}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {AF\_OUTPUT\_PUSH\_PULL\_2MHZ}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {AF\_OUTPUT\_PUSH\_PULL\_50MHZ}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {AFIO}
+    \subitem {Micro.h}, \hyperpage{90}
+  \item {AFIO\_BASE}
+    \subitem {Micro.h}, \hyperpage{90}
+  \item {AFIO\_TypeDef}, \hyperpage{12}
+    \subitem {EVCR}, \hyperpage{12}
+    \subitem {EXTICR}, \hyperpage{12}
+    \subitem {MAPR}, \hyperpage{12}
+    \subitem {MAPR2}, \hyperpage{12}
+    \subitem {RESERVED0}, \hyperpage{13}
+  \item {AHBENR}
+    \subitem {RCC\_TypeDef}, \hyperpage{43}
+  \item {AHBPERIPH\_BASE}
+    \subitem {Micro.h}, \hyperpage{90}
+  \item {ALRH}
+    \subitem {RTC\_TypeDef}, \hyperpage{47}
+  \item {ALRL}
+    \subitem {RTC\_TypeDef}, \hyperpage{47}
+  \item {analogRead}
+    \subitem {ADC}, \hyperpage{8}
+  \item {angle}
+    \subitem {Kinematic}, \hyperpage{31}
+  \item {ANGLE\_LINE\_SENSOR\_H}, \hyperpage{13}
+    \subitem {readAngle}, \hyperpage{13}
+    \subitem {updateLineAngle}, \hyperpage{13}
+  \item {angleCorrection}
+    \subitem {KINEMATIC\_CONTROL.h}, \hyperpage{80}
+  \item {angleFilterOrder}
+    \subitem {KINEMATIC\_CONTROL.h}, \hyperpage{80}
+  \item {APB1ENR}
+    \subitem {RCC\_TypeDef}, \hyperpage{44}
+  \item {APB1PERIPH\_BASE}
+    \subitem {Micro.h}, \hyperpage{90}
+  \item {APB1RSTR}
+    \subitem {RCC\_TypeDef}, \hyperpage{44}
+  \item {APB2ENR}
+    \subitem {RCC\_TypeDef}, \hyperpage{44}
+  \item {APB2PERIPH\_BASE}
+    \subitem {Micro.h}, \hyperpage{90}
+  \item {APB2RSTR}
+    \subitem {RCC\_TypeDef}, \hyperpage{44}
+  \item {AR}
+    \subitem {FLASH\_TypeDef}, \hyperpage{20}
+  \item {ARR}
+    \subitem {TIM\_TypeDef}, \hyperpage{53}
+  \item {AutoReaload\_Ticks}
+    \subitem {ENCODER.h}, \hyperpage{71}
+  \item {AutoReload\_Counter}
+    \subitem {TIMER.h}, \hyperpage{109}
+  \item {AutoReloadPWM}
+    \subitem {PWM.h}, \hyperpage{103}
+  \item {Available}
+    \subitem {USART}, \hyperpage{64}
+
+  \indexspace
+
+  \item {backward}
+    \subitem {ENCODER.h}, \hyperpage{72}
+  \item {BASE\_100ms}
+    \subitem {SysClock.h}, \hyperpage{108}
+  \item {BASE\_100us}
+    \subitem {SysClock.h}, \hyperpage{108}
+  \item {BASE\_10ms}
+    \subitem {SysClock.h}, \hyperpage{108}
+  \item {BASE\_10us}
+    \subitem {SysClock.h}, \hyperpage{108}
+  \item {BASE\_1ms}
+    \subitem {SysClock.h}, \hyperpage{108}
+  \item {BASE\_1us}
+    \subitem {SysClock.h}, \hyperpage{108}
+  \item {BD\_1000000}
+    \subitem {USART.h}, \hyperpage{112}
+  \item {BD\_115200}
+    \subitem {USART.h}, \hyperpage{112}
+  \item {BD\_1382400}
+    \subitem {USART.h}, \hyperpage{112}
+  \item {BD\_2250000}
+    \subitem {USART.h}, \hyperpage{112}
+  \item {BD\_230769}
+    \subitem {USART.h}, \hyperpage{112}
+  \item {BD\_250000}
+    \subitem {USART.h}, \hyperpage{112}
+  \item {BD\_38400}
+    \subitem {USART.h}, \hyperpage{112}
+  \item {BD\_57600}
+    \subitem {USART.h}, \hyperpage{112}
+  \item {BD\_9600}
+    \subitem {USART.h}, \hyperpage{112}
+  \item {BD\_ENUM}
+    \subitem {USART.h}, \hyperpage{112}
+  \item {BDCR}
+    \subitem {RCC\_TypeDef}, \hyperpage{44}
+  \item {BDTR}
+    \subitem {TIM\_TypeDef}, \hyperpage{54}
+  \item {bitsToSend}
+    \subitem {SERIAL\_COMMUNICATION.h}, \hyperpage{105}
+  \item {BRR}
+    \subitem {GPIO\_TypeDef}, \hyperpage{26}
+    \subitem {USART\_TypeDef}, \hyperpage{66}
+  \item {BSRR}
+    \subitem {GPIO\_TypeDef}, \hyperpage{26}
+  \item {BusFault\_IRQn}
+    \subitem {Micro.h}, \hyperpage{98}
+
+  \indexspace
+
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/ADC.cpp}, 
+		\hyperpage{69}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/ADC.h}, 
+		\hyperpage{69}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/ANGLE\_LINE\_SENSOR.cpp}, 
+		\hyperpage{70}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/ANGLE\_LINE\_SENSOR.h}, 
+		\hyperpage{70}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/ENCODER.cpp}, 
+		\hyperpage{70}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/ENCODER.h}, 
+		\hyperpage{71}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/FOLLOWING\_CONTROLER.cpp}, 
+		\hyperpage{73}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/FOLLOWING\_CONTROLER.h}, 
+		\hyperpage{73}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/GPIO.cpp}, 
+		\hyperpage{76}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/GPIO.h}, 
+		\hyperpage{76}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/KINEMATIC\_CONTROL.cpp}, 
+		\hyperpage{79}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/KINEMATIC\_CONTROL.h}, 
+		\hyperpage{79}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/line\_follower.cpp}, 
+		\hyperpage{81}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/LINE\_SENSOR.cpp}, 
+		\hyperpage{81}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/LINE\_SENSOR.h}, 
+		\hyperpage{82}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/main.cpp}, 
+		\hyperpage{83}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/malha\_aberta.cpp}, 
+		\hyperpage{83}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/malha\_fechada.cpp}, 
+		\hyperpage{83}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/Micro.c}, 
+		\hyperpage{87}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/Micro.h}, 
+		\hyperpage{87}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/MOTOR.cpp}, 
+		\hyperpage{100}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/MOTOR.h}, 
+		\hyperpage{100}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/PWM.cpp}, 
+		\hyperpage{103}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/PWM.h}, 
+		\hyperpage{103}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/REFLECTANCE\_SENSOR.cpp}, 
+		\hyperpage{104}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/REFLECTANCE\_SENSOR.h}, 
+		\hyperpage{104}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/SERIAL\_COMMUNICATION.cpp}, 
+		\hyperpage{104}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/SERIAL\_COMMUNICATION.h}, 
+		\hyperpage{105}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/SysClock.cpp}, 
+		\hyperpage{107}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/SysClock.h}, 
+		\hyperpage{108}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/testes.cpp}, 
+		\hyperpage{109}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/TIMER.cpp}, 
+		\hyperpage{109}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/TIMER.h}, 
+		\hyperpage{109}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/USART.cpp}, 
+		\hyperpage{111}
+  \item {C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/USART.h}, 
+		\hyperpage{111}
+  \item {CALIB}
+    \subitem {SysTick\_Type}, \hyperpage{52}
+  \item {Calib\_Reflectance\_Sensor}
+    \subitem {Reflectance\_Sensor}, \hyperpage{46}
+  \item {calib\_sensores}
+    \subitem {LINE\_SENSOR.h}, \hyperpage{82}
+  \item {calibrate}
+    \subitem {Line\_Sensor}, \hyperpage{34}
+  \item {calibrateLineSensor}
+    \subitem {Kinematic}, \hyperpage{29}
+  \item {calibrationFinished}
+    \subitem {Kinematic}, \hyperpage{31}
+  \item {CAN1\_RX1\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {CAN1\_SCE\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {CCER}
+    \subitem {TIM\_TypeDef}, \hyperpage{54}
+  \item {CCMR1}
+    \subitem {TIM\_TypeDef}, \hyperpage{54}
+  \item {CCMR2}
+    \subitem {TIM\_TypeDef}, \hyperpage{54}
+  \item {CCR1}
+    \subitem {TIM\_TypeDef}, \hyperpage{54}
+  \item {CCR2}
+    \subitem {TIM\_TypeDef}, \hyperpage{54}
+  \item {CCR3}
+    \subitem {TIM\_TypeDef}, \hyperpage{54}
+  \item {CCR4}
+    \subitem {TIM\_TypeDef}, \hyperpage{54}
+  \item {CFGR}
+    \subitem {RCC\_TypeDef}, \hyperpage{44}
+  \item {CIR}
+    \subitem {RCC\_TypeDef}, \hyperpage{44}
+  \item {ClearInterruptFlag}
+    \subitem {Timer}, \hyperpage{60}
+  \item {CNT}
+    \subitem {TIM\_TypeDef}, \hyperpage{55}
+  \item {CNTH}
+    \subitem {RTC\_TypeDef}, \hyperpage{47}
+  \item {CNTL}
+    \subitem {RTC\_TypeDef}, \hyperpage{47}
+  \item {command}
+    \subitem {Communication}, \hyperpage{15}
+  \item {Communication}, \hyperpage{14}
+    \subitem {command}, \hyperpage{15}
+    \subitem {Communication}, \hyperpage{14}
+    \subitem {HandlerByTime}, \hyperpage{14}
+    \subitem {verifyCommand}, \hyperpage{14}
+    \subitem {waitForCommand}, \hyperpage{14}
+  \item {Config\_PU\_PD}
+    \subitem {GPIO}, \hyperpage{23}
+  \item {ConfigADCPin}
+    \subitem {ADC}, \hyperpage{8}
+  \item {ConfigGPIOPin}
+    \subitem {GPIO}, \hyperpage{23}
+  \item {CONTINUOUS\_CONVERSION}
+    \subitem {ADC.h}, \hyperpage{70}
+  \item {Controller}, \hyperpage{15}
+    \subitem {Controller}, \hyperpage{15}
+    \subitem {controlRule}, \hyperpage{16}
+    \subitem {getVcontrol}, \hyperpage{16}
+    \subitem {getWcontrol}, \hyperpage{16}
+    \subitem {HandlerByTime}, \hyperpage{16}
+    \subitem {reset}, \hyperpage{16}
+    \subitem {Robot}, \hyperpage{17}
+    \subitem {setSpeedRef}, \hyperpage{16}
+    \subitem {start}, \hyperpage{16}
+    \subitem {stop}, \hyperpage{17}
+  \item {controlRule}
+    \subitem {Controller}, \hyperpage{16}
+  \item {CoreDebug}
+    \subitem {Micro.h}, \hyperpage{90}
+  \item {CoreDebug\_BASE}
+    \subitem {Micro.h}, \hyperpage{91}
+  \item {COUNTER}
+    \subitem {TIMER.h}, \hyperpage{110}
+  \item {counter}
+    \subitem {malha\_fechada.cpp}, \hyperpage{85}
+  \item {CR}
+    \subitem {FLASH\_TypeDef}, \hyperpage{21}
+    \subitem {PWR\_TypeDef}, \hyperpage{43}
+    \subitem {RCC\_TypeDef}, \hyperpage{44}
+  \item {CR1}
+    \subitem {ADC\_TypeDef}, \hyperpage{9}
+    \subitem {TIM\_TypeDef}, \hyperpage{55}
+    \subitem {USART\_TypeDef}, \hyperpage{66}
+  \item {CR2}
+    \subitem {ADC\_TypeDef}, \hyperpage{9}
+    \subitem {TIM\_TypeDef}, \hyperpage{55}
+    \subitem {USART\_TypeDef}, \hyperpage{66}
+  \item {CR3}
+    \subitem {USART\_TypeDef}, \hyperpage{66}
+  \item {CRH}
+    \subitem {GPIO\_TypeDef}, \hyperpage{27}
+    \subitem {RTC\_TypeDef}, \hyperpage{47}
+  \item {CRL}
+    \subitem {GPIO\_TypeDef}, \hyperpage{27}
+    \subitem {RTC\_TypeDef}, \hyperpage{48}
+  \item {CSR}
+    \subitem {PWR\_TypeDef}, \hyperpage{43}
+    \subitem {RCC\_TypeDef}, \hyperpage{45}
+  \item {CTRL}
+    \subitem {SysTick\_Type}, \hyperpage{52}
+
+  \indexspace
+
+  \item {DCR}
+    \subitem {TIM\_TypeDef}, \hyperpage{55}
+  \item {DebugMonitor\_IRQn}
+    \subitem {Micro.h}, \hyperpage{98}
+  \item {delay}
+    \subitem {Timer}, \hyperpage{60}
+  \item {delta\_time}
+    \subitem {malha\_fechada.cpp}, \hyperpage{85}
+  \item {deltaDistance}
+    \subitem {Kinematic}, \hyperpage{31}
+  \item {desired\_size}
+    \subitem {MOTOR.h}, \hyperpage{101}
+  \item {DIER}
+    \subitem {TIM\_TypeDef}, \hyperpage{55}
+  \item {digitalRead}
+    \subitem {GPIO}, \hyperpage{23}
+  \item {digitalWrite}
+    \subitem {GPIO}, \hyperpage{24}
+  \item {distance}
+    \subitem {Kinematic}, \hyperpage{31}
+  \item {distanceCorrection}
+    \subitem {KINEMATIC\_CONTROL.h}, \hyperpage{80}
+  \item {DIVH}
+    \subitem {RTC\_TypeDef}, \hyperpage{48}
+  \item {DIVL}
+    \subitem {RTC\_TypeDef}, \hyperpage{48}
+  \item {DMA1\_Channel1\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {DMA1\_Channel2\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {DMA1\_Channel3\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {DMA1\_Channel4\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {DMA1\_Channel5\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {DMA1\_Channel6\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {DMA1\_Channel7\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {DMAR}
+    \subitem {TIM\_TypeDef}, \hyperpage{55}
+  \item {DR}
+    \subitem {ADC\_TypeDef}, \hyperpage{9}
+    \subitem {USART\_TypeDef}, \hyperpage{67}
+  \item {DWT}
+    \subitem {Micro.h}, \hyperpage{91}
+  \item {DWT\_BASE}
+    \subitem {Micro.h}, \hyperpage{91}
+
+  \indexspace
+
+  \item {E}
+    \subitem {Motor}, \hyperpage{37}
+  \item {EGR}
+    \subitem {TIM\_TypeDef}, \hyperpage{55}
+  \item {Encoder}, \hyperpage{17}
+    \subitem {Encoder}, \hyperpage{18}
+    \subitem {Encoder\_Handler}, \hyperpage{18}
+    \subitem {Encoder\_Handler\_by\_Time}, \hyperpage{18}
+    \subitem {Encoder\_Initiallize}, \hyperpage{18}
+    \subitem {getDeltaTicks}, \hyperpage{18}
+    \subitem {getDeltaTime}, \hyperpage{19}
+    \subitem {getDirection}, \hyperpage{19}
+    \subitem {getLastSpeed}, \hyperpage{19}
+    \subitem {getLastTicksTime}, \hyperpage{19}
+    \subitem {getNotFilteredSpeed}, \hyperpage{19}
+    \subitem {getSpeed}, \hyperpage{19}
+    \subitem {getTeta}, \hyperpage{19}
+    \subitem {getTicks}, \hyperpage{19}
+    \subitem {getTicksTime}, \hyperpage{20}
+    \subitem {reset}, \hyperpage{20}
+  \item {encoder}
+    \subitem {Motor}, \hyperpage{37}
+  \item {ENCODER.h}
+    \subitem {AutoReaload\_Ticks}, \hyperpage{71}
+    \subitem {backward}, \hyperpage{72}
+    \subitem {ENCODER\_DIRECTION}, \hyperpage{72}
+    \subitem {ENCODER\_ENUM}, \hyperpage{72}
+    \subitem {Encoder\_TIM1}, \hyperpage{73}
+    \subitem {Encoder\_TIM2}, \hyperpage{73}
+    \subitem {Encoder\_TIM3}, \hyperpage{73}
+    \subitem {Encoder\_TIM4}, \hyperpage{73}
+    \subitem {encoderFilterOrder}, \hyperpage{71}
+    \subitem {forward}, \hyperpage{72}
+    \subitem {Max\_delay\_Ticks\_Time}, \hyperpage{71}
+    \subitem {NUMBER\_OF\_ENCODERS}, \hyperpage{73}
+    \subitem {pi}, \hyperpage{72}
+    \subitem {pulsePerRevolution}, \hyperpage{72}
+    \subitem {Ticks\_till\_int}, \hyperpage{72}
+    \subitem {ticksToRad}, \hyperpage{72}
+  \item {ENCODER\_DIRECTION}
+    \subitem {ENCODER.h}, \hyperpage{72}
+  \item {ENCODER\_ENUM}
+    \subitem {ENCODER.h}, \hyperpage{72}
+  \item {Encoder\_Handler}
+    \subitem {Encoder}, \hyperpage{18}
+  \item {Encoder\_Handler\_by\_Time}
+    \subitem {Encoder}, \hyperpage{18}
+  \item {Encoder\_Initiallize}
+    \subitem {Encoder}, \hyperpage{18}
+  \item {Encoder\_TIM1}
+    \subitem {ENCODER.h}, \hyperpage{73}
+  \item {Encoder\_TIM2}
+    \subitem {ENCODER.h}, \hyperpage{73}
+  \item {Encoder\_TIM3}
+    \subitem {ENCODER.h}, \hyperpage{73}
+  \item {Encoder\_TIM4}
+    \subitem {ENCODER.h}, \hyperpage{73}
+  \item {encoderFilterOrder}
+    \subitem {ENCODER.h}, \hyperpage{71}
+  \item {EVCR}
+    \subitem {AFIO\_TypeDef}, \hyperpage{12}
+  \item {EXTI0\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {EXTI15\_10\_IRQn}
+    \subitem {Micro.h}, \hyperpage{100}
+  \item {EXTI1\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {EXTI2\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {EXTI3\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {EXTI4\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {EXTI9\_5\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {EXTICR}
+    \subitem {AFIO\_TypeDef}, \hyperpage{12}
+
+  \indexspace
+
+  \item {filteredAngle}
+    \subitem {Kinematic}, \hyperpage{31}
+  \item {FLASH}
+    \subitem {Micro.h}, \hyperpage{91}
+  \item {FLASH\_BASE}
+    \subitem {Micro.h}, \hyperpage{91}
+  \item {FLASH\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {FLASH\_R\_BASE}
+    \subitem {Micro.h}, \hyperpage{91}
+  \item {FLASH\_TypeDef}, \hyperpage{20}
+    \subitem {ACR}, \hyperpage{20}
+    \subitem {AR}, \hyperpage{20}
+    \subitem {CR}, \hyperpage{21}
+    \subitem {KEYR}, \hyperpage{21}
+    \subitem {OBR}, \hyperpage{21}
+    \subitem {OPTKEYR}, \hyperpage{21}
+    \subitem {RESERVED}, \hyperpage{21}
+    \subitem {SR}, \hyperpage{21}
+    \subitem {WRPR}, \hyperpage{21}
+  \item {FOLLOWING\_CONTROLER.h}
+    \subitem {K1}, \hyperpage{74}
+    \subitem {K1a}, \hyperpage{74}
+    \subitem {K2}, \hyperpage{74}
+    \subitem {K2a}, \hyperpage{74}
+    \subitem {K3}, \hyperpage{74}
+    \subitem {K4}, \hyperpage{74}
+    \subitem {K4k}, \hyperpage{74}
+    \subitem {Kteta}, \hyperpage{74}
+    \subitem {Ktetak}, \hyperpage{75}
+    \subitem {Kx}, \hyperpage{75}
+    \subitem {Kxk}, \hyperpage{75}
+    \subitem {Ky}, \hyperpage{75}
+    \subitem {Kyk}, \hyperpage{75}
+    \subitem {v\_ref\_ini}, \hyperpage{75}
+    \subitem {w\_ref\_ini}, \hyperpage{75}
+  \item {forward}
+    \subitem {ENCODER.h}, \hyperpage{72}
+  \item {FSMC\_R\_BASE}
+    \subitem {Micro.h}, \hyperpage{91}
+  \item {FULL\_REMAP}
+    \subitem {TIMER.h}, \hyperpage{111}
+
+  \indexspace
+
+  \item {Get\_Speed}
+    \subitem {Motor}, \hyperpage{36}
+  \item {GetADCChannel}
+    \subitem {ADC}, \hyperpage{8}
+  \item {getDeltaDistance}
+    \subitem {Motor}, \hyperpage{36}
+  \item {getDeltaTicks}
+    \subitem {Encoder}, \hyperpage{18}
+  \item {getDeltaTime}
+    \subitem {Encoder}, \hyperpage{19}
+  \item {getDirection}
+    \subitem {Encoder}, \hyperpage{19}
+  \item {getDistance}
+    \subitem {Motor}, \hyperpage{36}
+  \item {getE}
+    \subitem {Motor}, \hyperpage{36}
+  \item {GetGPIOMode}
+    \subitem {GPIO}, \hyperpage{24}
+  \item {GetGPIOPinNumber}
+    \subitem {GPIO}, \hyperpage{24}
+  \item {GetGPIOPort}
+    \subitem {GPIO}, \hyperpage{24}
+  \item {GetGPIOPuPd}
+    \subitem {GPIO}, \hyperpage{24}
+  \item {GetGPIOState}
+    \subitem {GPIO}, \hyperpage{24}
+  \item {GetIOPin}
+    \subitem {GPIO}, \hyperpage{24}
+  \item {getLastSpeed}
+    \subitem {Encoder}, \hyperpage{19}
+  \item {getLastTicksTime}
+    \subitem {Encoder}, \hyperpage{19}
+  \item {getLineAngle}
+    \subitem {Kinematic}, \hyperpage{29}
+  \item {getLineAngleNotFiltered}
+    \subitem {Kinematic}, \hyperpage{29}
+  \item {getLinePosition}
+    \subitem {Kinematic}, \hyperpage{29}
+  \item {getNotFilteredSpeed}
+    \subitem {Encoder}, \hyperpage{19}
+  \item {getSpeed}
+    \subitem {Encoder}, \hyperpage{19}
+  \item {getSpeedRadS}
+    \subitem {Motor}, \hyperpage{36}
+  \item {getTeta}
+    \subitem {Encoder}, \hyperpage{19}
+    \subitem {Kinematic}, \hyperpage{29}
+    \subitem {Motor}, \hyperpage{36}
+  \item {getTicks}
+    \subitem {Encoder}, \hyperpage{19}
+  \item {getTicksTime}
+    \subitem {Encoder}, \hyperpage{20}
+  \item {GetTim}
+    \subitem {Timer}, \hyperpage{60}
+  \item {GetTIMChannel}
+    \subitem {Timer}, \hyperpage{61}
+  \item {GetTime\_milisec}
+    \subitem {Timer}, \hyperpage{61}
+  \item {GetTime\_usec}
+    \subitem {Timer}, \hyperpage{61}
+  \item {GetTIMMode}
+    \subitem {Timer}, \hyperpage{61}
+  \item {GetTIMRemap}
+    \subitem {Timer}, \hyperpage{61}
+  \item {getU}
+    \subitem {Motor}, \hyperpage{36}
+  \item {getV}
+    \subitem {Kinematic}, \hyperpage{30}
+  \item {getVcontrol}
+    \subitem {Controller}, \hyperpage{16}
+  \item {getW}
+    \subitem {Kinematic}, \hyperpage{30}
+  \item {getWcontrol}
+    \subitem {Controller}, \hyperpage{16}
+  \item {getWritedPWM}
+    \subitem {PWM}, \hyperpage{42}
+  \item {getX}
+    \subitem {Kinematic}, \hyperpage{30}
+  \item {getY}
+    \subitem {Kinematic}, \hyperpage{30}
+  \item {GP\_OUTPUT\_OPEN\_DRAIN\_10MHZ}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {GP\_OUTPUT\_OPEN\_DRAIN\_2MHZ}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {GP\_OUTPUT\_OPEN\_DRAIN\_50MHZ}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {GP\_OUTPUT\_PUSH\_PULL\_10MHZ}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {GP\_OUTPUT\_PUSH\_PULL\_2MHZ}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {GP\_OUTPUT\_PUSH\_PULL\_50MHZ}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {GPIO}, \hyperpage{22}
+    \subitem {Config\_PU\_PD}, \hyperpage{23}
+    \subitem {ConfigGPIOPin}, \hyperpage{23}
+    \subitem {digitalRead}, \hyperpage{23}
+    \subitem {digitalWrite}, \hyperpage{24}
+    \subitem {GetGPIOMode}, \hyperpage{24}
+    \subitem {GetGPIOPinNumber}, \hyperpage{24}
+    \subitem {GetGPIOPort}, \hyperpage{24}
+    \subitem {GetGPIOPuPd}, \hyperpage{24}
+    \subitem {GetGPIOState}, \hyperpage{24}
+    \subitem {GetIOPin}, \hyperpage{24}
+    \subitem {GPIO}, \hyperpage{22, 23}
+    \subitem {SetGPIOMode}, \hyperpage{25}
+    \subitem {SetGPIOPortPin}, \hyperpage{25}
+    \subitem {SetIOPin}, \hyperpage{25}
+    \subitem {tooglePin}, \hyperpage{25}
+  \item {GPIO.h}
+    \subitem {AF\_OUTPUT\_OPEN\_DRAIN\_10MHZ}, \hyperpage{78}
+    \subitem {AF\_OUTPUT\_OPEN\_DRAIN\_2MHZ}, \hyperpage{78}
+    \subitem {AF\_OUTPUT\_OPEN\_DRAIN\_50MHZ}, \hyperpage{78}
+    \subitem {AF\_OUTPUT\_PUSH\_PULL\_10MHZ}, \hyperpage{78}
+    \subitem {AF\_OUTPUT\_PUSH\_PULL\_2MHZ}, \hyperpage{78}
+    \subitem {AF\_OUTPUT\_PUSH\_PULL\_50MHZ}, \hyperpage{78}
+    \subitem {GP\_OUTPUT\_OPEN\_DRAIN\_10MHZ}, \hyperpage{78}
+    \subitem {GP\_OUTPUT\_OPEN\_DRAIN\_2MHZ}, \hyperpage{78}
+    \subitem {GP\_OUTPUT\_OPEN\_DRAIN\_50MHZ}, \hyperpage{78}
+    \subitem {GP\_OUTPUT\_PUSH\_PULL\_10MHZ}, \hyperpage{78}
+    \subitem {GP\_OUTPUT\_PUSH\_PULL\_2MHZ}, \hyperpage{78}
+    \subitem {GP\_OUTPUT\_PUSH\_PULL\_50MHZ}, \hyperpage{78}
+    \subitem {GPIO\_IO\_ENUM}, \hyperpage{77}
+    \subitem {GPIO\_MODES}, \hyperpage{78}
+    \subitem {HIGH}, \hyperpage{77}
+    \subitem {INPUT\_ANALOG}, \hyperpage{78}
+    \subitem {INPUT\_FLOATING}, \hyperpage{78}
+    \subitem {INPUT\_PULL\_UP\_DOWN}, \hyperpage{78}
+    \subitem {LOW}, \hyperpage{77}
+    \subitem {NUM\_OF\_IOs}, \hyperpage{78}
+    \subitem {NUMBER\_OF\_PINS}, \hyperpage{79}
+    \subitem {PA0}, \hyperpage{77}
+    \subitem {PA1}, \hyperpage{77}
+    \subitem {PA10}, \hyperpage{77}
+    \subitem {PA11}, \hyperpage{77}
+    \subitem {PA12}, \hyperpage{77}
+    \subitem {PA15}, \hyperpage{77}
+    \subitem {PA2}, \hyperpage{77}
+    \subitem {PA3}, \hyperpage{77}
+    \subitem {PA4}, \hyperpage{77}
+    \subitem {PA5}, \hyperpage{77}
+    \subitem {PA6}, \hyperpage{77}
+    \subitem {PA7}, \hyperpage{77}
+    \subitem {PA8}, \hyperpage{77}
+    \subitem {PA9}, \hyperpage{77}
+    \subitem {PB0}, \hyperpage{77}
+    \subitem {PB1}, \hyperpage{77}
+    \subitem {PB10}, \hyperpage{77}
+    \subitem {PB11}, \hyperpage{78}
+    \subitem {PB12}, \hyperpage{78}
+    \subitem {PB13}, \hyperpage{78}
+    \subitem {PB14}, \hyperpage{78}
+    \subitem {PB15}, \hyperpage{78}
+    \subitem {PB3}, \hyperpage{77}
+    \subitem {PB4}, \hyperpage{77}
+    \subitem {PB5}, \hyperpage{77}
+    \subitem {PB6}, \hyperpage{77}
+    \subitem {PB7}, \hyperpage{77}
+    \subitem {PB8}, \hyperpage{77}
+    \subitem {PB9}, \hyperpage{77}
+    \subitem {PC13}, \hyperpage{78}
+    \subitem {PC14}, \hyperpage{78}
+    \subitem {PC15}, \hyperpage{78}
+    \subitem {PIN0}, \hyperpage{78}
+    \subitem {PIN1}, \hyperpage{78}
+    \subitem {PIN10}, \hyperpage{79}
+    \subitem {PIN11}, \hyperpage{79}
+    \subitem {PIN12}, \hyperpage{79}
+    \subitem {PIN13}, \hyperpage{79}
+    \subitem {PIN14}, \hyperpage{79}
+    \subitem {PIN15}, \hyperpage{79}
+    \subitem {PIN2}, \hyperpage{78}
+    \subitem {PIN3}, \hyperpage{78}
+    \subitem {PIN4}, \hyperpage{78}
+    \subitem {PIN5}, \hyperpage{79}
+    \subitem {PIN6}, \hyperpage{79}
+    \subitem {PIN7}, \hyperpage{79}
+    \subitem {PIN8}, \hyperpage{79}
+    \subitem {PIN9}, \hyperpage{79}
+    \subitem {PIN\_NUMBERS}, \hyperpage{78}
+    \subitem {PU\_PD\_ENUM}, \hyperpage{79}
+    \subitem {PULL\_DOWN}, \hyperpage{79}
+    \subitem {PULL\_UP}, \hyperpage{79}
+  \item {GPIO\_IO\_ENUM}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {GPIO\_MODES}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {GPIO\_STRUCT}, \hyperpage{25}
+    \subitem {pinNumber}, \hyperpage{26}
+    \subitem {Port}, \hyperpage{26}
+  \item {GPIO\_TypeDef}, \hyperpage{26}
+    \subitem {BRR}, \hyperpage{26}
+    \subitem {BSRR}, \hyperpage{26}
+    \subitem {CRH}, \hyperpage{27}
+    \subitem {CRL}, \hyperpage{27}
+    \subitem {IDR}, \hyperpage{27}
+    \subitem {LCKR}, \hyperpage{27}
+    \subitem {ODR}, \hyperpage{27}
+  \item {GPIOA}
+    \subitem {Micro.h}, \hyperpage{91}
+  \item {GPIOA\_BASE}
+    \subitem {Micro.h}, \hyperpage{92}
+  \item {GPIOB}
+    \subitem {Micro.h}, \hyperpage{92}
+  \item {GPIOB\_BASE}
+    \subitem {Micro.h}, \hyperpage{92}
+  \item {GPIOC}
+    \subitem {Micro.h}, \hyperpage{92}
+  \item {GPIOC\_BASE}
+    \subitem {Micro.h}, \hyperpage{92}
+  \item {GPIOD}
+    \subitem {Micro.h}, \hyperpage{92}
+  \item {GPIOD\_BASE}
+    \subitem {Micro.h}, \hyperpage{92}
+  \item {GPIOE}
+    \subitem {Micro.h}, \hyperpage{92}
+  \item {GPIOE\_BASE}
+    \subitem {Micro.h}, \hyperpage{93}
+  \item {GPIOF}
+    \subitem {Micro.h}, \hyperpage{93}
+  \item {GPIOF\_BASE}
+    \subitem {Micro.h}, \hyperpage{93}
+  \item {GPIOG}
+    \subitem {Micro.h}, \hyperpage{93}
+  \item {GPIOG\_BASE}
+    \subitem {Micro.h}, \hyperpage{93}
+  \item {GTPR}
+    \subitem {USART\_TypeDef}, \hyperpage{67}
+
+  \indexspace
+
+  \item {Handler}
+    \subitem {Motor}, \hyperpage{37}
+  \item {handler}
+    \subitem {Kinematic}, \hyperpage{30}
+  \item {HandlerByTime}
+    \subitem {Communication}, \hyperpage{14}
+    \subitem {Controller}, \hyperpage{16}
+  \item {handlerByTime}
+    \subitem {Kinematic}, \hyperpage{30}
+  \item {HIGH}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {HTR}
+    \subitem {ADC\_TypeDef}, \hyperpage{9}
+
+  \indexspace
+
+  \item {I2C1\_ER\_IRQn}
+    \subitem {Micro.h}, \hyperpage{100}
+  \item {I2C1\_EV\_IRQn}
+    \subitem {Micro.h}, \hyperpage{100}
+  \item {I2C2\_ER\_IRQn}
+    \subitem {Micro.h}, \hyperpage{100}
+  \item {I2C2\_EV\_IRQn}
+    \subitem {Micro.h}, \hyperpage{100}
+  \item {IABR}
+    \subitem {NVIC\_Type}, \hyperpage{39}
+  \item {ICER}
+    \subitem {NVIC\_Type}, \hyperpage{39}
+  \item {ICPR}
+    \subitem {NVIC\_Type}, \hyperpage{39}
+  \item {IDR}
+    \subitem {GPIO\_TypeDef}, \hyperpage{27}
+  \item {IN1}
+    \subitem {Motor}, \hyperpage{38}
+  \item {IN2}
+    \subitem {Motor}, \hyperpage{38}
+  \item {INPUT\_ANALOG}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {INPUT\_FLOATING}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {INPUT\_PULL\_UP\_DOWN}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {integrationTime}
+    \subitem {KINEMATIC\_CONTROL.h}, \hyperpage{80}
+  \item {InterrupTime}
+    \subitem {Timer}, \hyperpage{61}
+  \item {IP}
+    \subitem {NVIC\_Type}, \hyperpage{40}
+  \item {IRQn}
+    \subitem {Micro.h}, \hyperpage{98}
+  \item {IRQn\_Type}
+    \subitem {Micro.h}, \hyperpage{98}
+  \item {ISER}
+    \subitem {NVIC\_Type}, \hyperpage{40}
+  \item {ISPR}
+    \subitem {NVIC\_Type}, \hyperpage{40}
+  \item {ITM}
+    \subitem {Micro.h}, \hyperpage{93}
+  \item {ITM\_BASE}
+    \subitem {Micro.h}, \hyperpage{93}
+
+  \indexspace
+
+  \item {JDR1}
+    \subitem {ADC\_TypeDef}, \hyperpage{9}
+  \item {JDR2}
+    \subitem {ADC\_TypeDef}, \hyperpage{10}
+  \item {JDR3}
+    \subitem {ADC\_TypeDef}, \hyperpage{10}
+  \item {JDR4}
+    \subitem {ADC\_TypeDef}, \hyperpage{10}
+  \item {JOFR1}
+    \subitem {ADC\_TypeDef}, \hyperpage{10}
+  \item {JOFR2}
+    \subitem {ADC\_TypeDef}, \hyperpage{10}
+  \item {JOFR3}
+    \subitem {ADC\_TypeDef}, \hyperpage{10}
+  \item {JOFR4}
+    \subitem {ADC\_TypeDef}, \hyperpage{10}
+  \item {JSQR}
+    \subitem {ADC\_TypeDef}, \hyperpage{10}
+
+  \indexspace
+
+  \item {K}
+    \subitem {MOTOR.h}, \hyperpage{101}
+  \item {k}
+    \subitem {MOTOR.h}, \hyperpage{101}
+  \item {K1}
+    \subitem {FOLLOWING\_CONTROLER.h}, \hyperpage{74}
+  \item {K1a}
+    \subitem {FOLLOWING\_CONTROLER.h}, \hyperpage{74}
+  \item {K2}
+    \subitem {FOLLOWING\_CONTROLER.h}, \hyperpage{74}
+  \item {K2a}
+    \subitem {FOLLOWING\_CONTROLER.h}, \hyperpage{74}
+  \item {K3}
+    \subitem {FOLLOWING\_CONTROLER.h}, \hyperpage{74}
+  \item {K4}
+    \subitem {FOLLOWING\_CONTROLER.h}, \hyperpage{74}
+  \item {K4k}
+    \subitem {FOLLOWING\_CONTROLER.h}, \hyperpage{74}
+  \item {KDw}
+    \subitem {KINEMATIC\_CONTROL.h}, \hyperpage{80}
+  \item {KEYR}
+    \subitem {FLASH\_TypeDef}, \hyperpage{21}
+  \item {KI}
+    \subitem {MOTOR.h}, \hyperpage{101}
+  \item {Kinematic}, \hyperpage{27}
+    \subitem {angle}, \hyperpage{31}
+    \subitem {calibrateLineSensor}, \hyperpage{29}
+    \subitem {calibrationFinished}, \hyperpage{31}
+    \subitem {deltaDistance}, \hyperpage{31}
+    \subitem {distance}, \hyperpage{31}
+    \subitem {filteredAngle}, \hyperpage{31}
+    \subitem {getLineAngle}, \hyperpage{29}
+    \subitem {getLineAngleNotFiltered}, \hyperpage{29}
+    \subitem {getLinePosition}, \hyperpage{29}
+    \subitem {getTeta}, \hyperpage{29}
+    \subitem {getV}, \hyperpage{30}
+    \subitem {getW}, \hyperpage{30}
+    \subitem {getX}, \hyperpage{30}
+    \subitem {getY}, \hyperpage{30}
+    \subitem {handler}, \hyperpage{30}
+    \subitem {handlerByTime}, \hyperpage{30}
+    \subitem {Kinematic}, \hyperpage{28, 29}
+    \subitem {lastDistance}, \hyperpage{31}
+    \subitem {lastLineSensorReading}, \hyperpage{32}
+    \subitem {lineSensor}, \hyperpage{32}
+    \subitem {lineSensorReading}, \hyperpage{32}
+    \subitem {motorD}, \hyperpage{32}
+    \subitem {motorE}, \hyperpage{32}
+    \subitem {ptRobot}, \hyperpage{32}
+    \subitem {reset}, \hyperpage{30}
+    \subitem {setSpeed}, \hyperpage{30}
+    \subitem {updateLineReading}, \hyperpage{31}
+    \subitem {xPos}, \hyperpage{32}
+    \subitem {yPos}, \hyperpage{32}
+  \item {KINEMATIC\_CONTROL.h}
+    \subitem {angleCorrection}, \hyperpage{80}
+    \subitem {angleFilterOrder}, \hyperpage{80}
+    \subitem {distanceCorrection}, \hyperpage{80}
+    \subitem {integrationTime}, \hyperpage{80}
+    \subitem {KDw}, \hyperpage{80}
+    \subitem {KPw}, \hyperpage{80}
+    \subitem {Kw}, \hyperpage{81}
+    \subitem {L}, \hyperpage{81}
+    \subitem {Pw}, \hyperpage{81}
+    \subitem {ts\_w}, \hyperpage{81}
+  \item {KP}
+    \subitem {MOTOR.h}, \hyperpage{101}
+  \item {KPw}
+    \subitem {KINEMATIC\_CONTROL.h}, \hyperpage{80}
+  \item {Kteta}
+    \subitem {FOLLOWING\_CONTROLER.h}, \hyperpage{74}
+  \item {Ktetak}
+    \subitem {FOLLOWING\_CONTROLER.h}, \hyperpage{75}
+  \item {Kw}
+    \subitem {KINEMATIC\_CONTROL.h}, \hyperpage{81}
+  \item {Kx}
+    \subitem {FOLLOWING\_CONTROLER.h}, \hyperpage{75}
+  \item {Kxk}
+    \subitem {FOLLOWING\_CONTROLER.h}, \hyperpage{75}
+  \item {Ky}
+    \subitem {FOLLOWING\_CONTROLER.h}, \hyperpage{75}
+  \item {Kyk}
+    \subitem {FOLLOWING\_CONTROLER.h}, \hyperpage{75}
+
+  \indexspace
+
+  \item {L}
+    \subitem {KINEMATIC\_CONTROL.h}, \hyperpage{81}
+  \item {lastDistance}
+    \subitem {Kinematic}, \hyperpage{31}
+  \item {lastLineSensorReading}
+    \subitem {Kinematic}, \hyperpage{32}
+  \item {LCKR}
+    \subitem {GPIO\_TypeDef}, \hyperpage{27}
+  \item {Line\_Sensor}, \hyperpage{33}
+    \subitem {calibrate}, \hyperpage{34}
+    \subitem {Line\_Sensor}, \hyperpage{33}
+    \subitem {read}, \hyperpage{34}
+    \subitem {Reflectance\_Sensor}, \hyperpage{46}
+    \subitem {Sensors}, \hyperpage{34}
+  \item {LINE\_SENSOR.h}
+    \subitem {calib\_sensores}, \hyperpage{82}
+    \subitem {maxDistance}, \hyperpage{82}
+    \subitem {sensorFilterOrder}, \hyperpage{82}
+  \item {lineangle}
+    \subitem {malha\_fechada.cpp}, \hyperpage{86}
+  \item {lineSensor}
+    \subitem {Kinematic}, \hyperpage{32}
+  \item {lineSensorReading}
+    \subitem {Kinematic}, \hyperpage{32}
+  \item {linevalue}
+    \subitem {malha\_fechada.cpp}, \hyperpage{86}
+  \item {LOAD}
+    \subitem {SysTick\_Type}, \hyperpage{52}
+  \item {LOW}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {LTR}
+    \subitem {ADC\_TypeDef}, \hyperpage{11}
+
+  \indexspace
+
+  \item {main}
+    \subitem {malha\_fechada.cpp}, \hyperpage{84}
+  \item {malha\_fechada.cpp}
+    \subitem {counter}, \hyperpage{85}
+    \subitem {delta\_time}, \hyperpage{85}
+    \subitem {lineangle}, \hyperpage{86}
+    \subitem {linevalue}, \hyperpage{86}
+    \subitem {main}, \hyperpage{84}
+    \subitem {pwmtest}, \hyperpage{86}
+    \subitem {RPM\_value}, \hyperpage{86}
+    \subitem {steps}, \hyperpage{84}
+    \subitem {stepTime}, \hyperpage{84}
+    \subitem {t\_ini}, \hyperpage{86}
+    \subitem {testTime}, \hyperpage{84}
+    \subitem {TIM1\_UP\_IRQHandler}, \hyperpage{85}
+    \subitem {TIM2\_IRQHandler}, \hyperpage{85}
+    \subitem {TIM3\_IRQHandler}, \hyperpage{85}
+    \subitem {TIM4\_IRQHandler}, \hyperpage{85}
+    \subitem {time}, \hyperpage{86}
+    \subitem {time\_test}, \hyperpage{86}
+    \subitem {vtest}, \hyperpage{86}
+    \subitem {wtest}, \hyperpage{87}
+    \subitem {xtest}, \hyperpage{87}
+    \subitem {ytest}, \hyperpage{87}
+  \item {MAPR}
+    \subitem {AFIO\_TypeDef}, \hyperpage{12}
+  \item {MAPR2}
+    \subitem {AFIO\_TypeDef}, \hyperpage{12}
+  \item {Max\_delay\_Ticks\_Time}
+    \subitem {ENCODER.h}, \hyperpage{71}
+  \item {Max\_PWM}
+    \subitem {PWM.h}, \hyperpage{103}
+  \item {maxDistance}
+    \subitem {LINE\_SENSOR.h}, \hyperpage{82}
+  \item {MCO}
+    \subitem {SysClock}, \hyperpage{50}
+  \item {MemoryManagement\_IRQn}
+    \subitem {Micro.h}, \hyperpage{98}
+  \item {Micro.h}
+    \subitem {ADC1}, \hyperpage{89}
+    \subitem {ADC1\_2\_IRQn}, \hyperpage{99}
+    \subitem {ADC1\_BASE}, \hyperpage{89}
+    \subitem {ADC2}, \hyperpage{90}
+    \subitem {ADC2\_BASE}, \hyperpage{90}
+    \subitem {AFIO}, \hyperpage{90}
+    \subitem {AFIO\_BASE}, \hyperpage{90}
+    \subitem {AHBPERIPH\_BASE}, \hyperpage{90}
+    \subitem {APB1PERIPH\_BASE}, \hyperpage{90}
+    \subitem {APB2PERIPH\_BASE}, \hyperpage{90}
+    \subitem {BusFault\_IRQn}, \hyperpage{98}
+    \subitem {CAN1\_RX1\_IRQn}, \hyperpage{99}
+    \subitem {CAN1\_SCE\_IRQn}, \hyperpage{99}
+    \subitem {CoreDebug}, \hyperpage{90}
+    \subitem {CoreDebug\_BASE}, \hyperpage{91}
+    \subitem {DebugMonitor\_IRQn}, \hyperpage{98}
+    \subitem {DMA1\_Channel1\_IRQn}, \hyperpage{99}
+    \subitem {DMA1\_Channel2\_IRQn}, \hyperpage{99}
+    \subitem {DMA1\_Channel3\_IRQn}, \hyperpage{99}
+    \subitem {DMA1\_Channel4\_IRQn}, \hyperpage{99}
+    \subitem {DMA1\_Channel5\_IRQn}, \hyperpage{99}
+    \subitem {DMA1\_Channel6\_IRQn}, \hyperpage{99}
+    \subitem {DMA1\_Channel7\_IRQn}, \hyperpage{99}
+    \subitem {DWT}, \hyperpage{91}
+    \subitem {DWT\_BASE}, \hyperpage{91}
+    \subitem {EXTI0\_IRQn}, \hyperpage{99}
+    \subitem {EXTI15\_10\_IRQn}, \hyperpage{100}
+    \subitem {EXTI1\_IRQn}, \hyperpage{99}
+    \subitem {EXTI2\_IRQn}, \hyperpage{99}
+    \subitem {EXTI3\_IRQn}, \hyperpage{99}
+    \subitem {EXTI4\_IRQn}, \hyperpage{99}
+    \subitem {EXTI9\_5\_IRQn}, \hyperpage{99}
+    \subitem {FLASH}, \hyperpage{91}
+    \subitem {FLASH\_BASE}, \hyperpage{91}
+    \subitem {FLASH\_IRQn}, \hyperpage{99}
+    \subitem {FLASH\_R\_BASE}, \hyperpage{91}
+    \subitem {FSMC\_R\_BASE}, \hyperpage{91}
+    \subitem {GPIOA}, \hyperpage{91}
+    \subitem {GPIOA\_BASE}, \hyperpage{92}
+    \subitem {GPIOB}, \hyperpage{92}
+    \subitem {GPIOB\_BASE}, \hyperpage{92}
+    \subitem {GPIOC}, \hyperpage{92}
+    \subitem {GPIOC\_BASE}, \hyperpage{92}
+    \subitem {GPIOD}, \hyperpage{92}
+    \subitem {GPIOD\_BASE}, \hyperpage{92}
+    \subitem {GPIOE}, \hyperpage{92}
+    \subitem {GPIOE\_BASE}, \hyperpage{93}
+    \subitem {GPIOF}, \hyperpage{93}
+    \subitem {GPIOF\_BASE}, \hyperpage{93}
+    \subitem {GPIOG}, \hyperpage{93}
+    \subitem {GPIOG\_BASE}, \hyperpage{93}
+    \subitem {I2C1\_ER\_IRQn}, \hyperpage{100}
+    \subitem {I2C1\_EV\_IRQn}, \hyperpage{100}
+    \subitem {I2C2\_ER\_IRQn}, \hyperpage{100}
+    \subitem {I2C2\_EV\_IRQn}, \hyperpage{100}
+    \subitem {IRQn}, \hyperpage{98}
+    \subitem {IRQn\_Type}, \hyperpage{98}
+    \subitem {ITM}, \hyperpage{93}
+    \subitem {ITM\_BASE}, \hyperpage{93}
+    \subitem {MemoryManagement\_IRQn}, \hyperpage{98}
+    \subitem {NonMaskableInt\_IRQn}, \hyperpage{98}
+    \subitem {NVIC}, \hyperpage{93}
+    \subitem {NVIC\_BASE}, \hyperpage{94}
+    \subitem {PendSV\_IRQn}, \hyperpage{98}
+    \subitem {PERIPH\_BASE}, \hyperpage{94}
+    \subitem {PERIPH\_BB\_BASE}, \hyperpage{94}
+    \subitem {PVD\_IRQn}, \hyperpage{98}
+    \subitem {PWR}, \hyperpage{94}
+    \subitem {PWR\_BASE}, \hyperpage{94}
+    \subitem {RCC}, \hyperpage{94}
+    \subitem {RCC\_BASE}, \hyperpage{94}
+    \subitem {RCC\_IRQn}, \hyperpage{99}
+    \subitem {RTC}, \hyperpage{94}
+    \subitem {RTC\_BASE}, \hyperpage{95}
+    \subitem {RTC\_IRQn}, \hyperpage{99}
+    \subitem {RTCAlarm\_IRQn}, \hyperpage{100}
+    \subitem {SCB}, \hyperpage{95}
+    \subitem {SCB\_BASE}, \hyperpage{95}
+    \subitem {SCnSCB}, \hyperpage{95}
+    \subitem {SCS\_BASE}, \hyperpage{95}
+    \subitem {SPI1\_IRQn}, \hyperpage{100}
+    \subitem {SPI2\_IRQn}, \hyperpage{100}
+    \subitem {SRAM\_BASE}, \hyperpage{95}
+    \subitem {SRAM\_BB\_BASE}, \hyperpage{95}
+    \subitem {SVCall\_IRQn}, \hyperpage{98}
+    \subitem {SysTick}, \hyperpage{95}
+    \subitem {SysTick\_BASE}, \hyperpage{96}
+    \subitem {SysTick\_IRQn}, \hyperpage{98}
+    \subitem {TAMPER\_IRQn}, \hyperpage{99}
+    \subitem {TIM1}, \hyperpage{96}
+    \subitem {TIM1\_BASE}, \hyperpage{96}
+    \subitem {TIM1\_BRK\_IRQn}, \hyperpage{99}
+    \subitem {TIM1\_CC\_IRQn}, \hyperpage{99}
+    \subitem {TIM1\_TRG\_COM\_IRQn}, \hyperpage{99}
+    \subitem {TIM1\_UP\_IRQn}, \hyperpage{99}
+    \subitem {TIM2}, \hyperpage{96}
+    \subitem {TIM2\_BASE}, \hyperpage{96}
+    \subitem {TIM2\_IRQn}, \hyperpage{99}
+    \subitem {TIM3}, \hyperpage{96}
+    \subitem {TIM3\_BASE}, \hyperpage{96}
+    \subitem {TIM3\_IRQn}, \hyperpage{100}
+    \subitem {TIM4}, \hyperpage{96}
+    \subitem {TIM4\_BASE}, \hyperpage{97}
+    \subitem {TIM4\_IRQn}, \hyperpage{100}
+    \subitem {TPI}, \hyperpage{97}
+    \subitem {TPI\_BASE}, \hyperpage{97}
+    \subitem {UsageFault\_IRQn}, \hyperpage{98}
+    \subitem {USART1}, \hyperpage{97}
+    \subitem {USART1\_BASE}, \hyperpage{97}
+    \subitem {USART1\_IRQn}, \hyperpage{100}
+    \subitem {USART2}, \hyperpage{97}
+    \subitem {USART2\_BASE}, \hyperpage{97}
+    \subitem {USART2\_IRQn}, \hyperpage{100}
+    \subitem {USART3}, \hyperpage{97}
+    \subitem {USART3\_BASE}, \hyperpage{98}
+    \subitem {USART3\_IRQn}, \hyperpage{100}
+    \subitem {USB\_HP\_CAN1\_TX\_IRQn}, \hyperpage{99}
+    \subitem {USB\_LP\_CAN1\_RX0\_IRQn}, \hyperpage{99}
+    \subitem {USBWakeUp\_IRQn}, \hyperpage{100}
+    \subitem {WWDG\_IRQn}, \hyperpage{98}
+  \item {Motor}, \hyperpage{34}
+    \subitem {E}, \hyperpage{37}
+    \subitem {encoder}, \hyperpage{37}
+    \subitem {Get\_Speed}, \hyperpage{36}
+    \subitem {getDeltaDistance}, \hyperpage{36}
+    \subitem {getDistance}, \hyperpage{36}
+    \subitem {getE}, \hyperpage{36}
+    \subitem {getSpeedRadS}, \hyperpage{36}
+    \subitem {getTeta}, \hyperpage{36}
+    \subitem {getU}, \hyperpage{36}
+    \subitem {Handler}, \hyperpage{37}
+    \subitem {IN1}, \hyperpage{38}
+    \subitem {IN2}, \hyperpage{38}
+    \subitem {Motor}, \hyperpage{35}
+    \subitem {Motor\_Handler\_by\_time}, \hyperpage{37}
+    \subitem {Motor\_Initialiize}, \hyperpage{37}
+    \subitem {Motor\_number}, \hyperpage{38}
+    \subitem {motPtr}, \hyperpage{38}
+    \subitem {pwmMotor}, \hyperpage{38}
+    \subitem {reset}, \hyperpage{37}
+    \subitem {Set\_Speed}, \hyperpage{37}
+    \subitem {Speed\_Reference}, \hyperpage{38}
+    \subitem {U}, \hyperpage{38}
+  \item {MOTOR.h}
+    \subitem {desired\_size}, \hyperpage{101}
+    \subitem {K}, \hyperpage{101}
+    \subitem {k}, \hyperpage{101}
+    \subitem {KI}, \hyperpage{101}
+    \subitem {KP}, \hyperpage{101}
+    \subitem {Motor\_1}, \hyperpage{103}
+    \subitem {Motor\_2}, \hyperpage{103}
+    \subitem {Motor\_3}, \hyperpage{103}
+    \subitem {Motor\_4}, \hyperpage{103}
+    \subitem {MOTOR\_ENUM}, \hyperpage{102}
+    \subitem {Number\_of\_Motor}, \hyperpage{103}
+    \subitem {P}, \hyperpage{102}
+    \subitem {r}, \hyperpage{102}
+    \subitem {radsToRpm}, \hyperpage{102}
+    \subitem {rpmToRads}, \hyperpage{102}
+    \subitem {rpmToV}, \hyperpage{102}
+    \subitem {Ts}, \hyperpage{102}
+    \subitem {ts}, \hyperpage{102}
+  \item {Motor\_1}
+    \subitem {MOTOR.h}, \hyperpage{103}
+  \item {Motor\_2}
+    \subitem {MOTOR.h}, \hyperpage{103}
+  \item {Motor\_3}
+    \subitem {MOTOR.h}, \hyperpage{103}
+  \item {Motor\_4}
+    \subitem {MOTOR.h}, \hyperpage{103}
+  \item {MOTOR\_ENUM}
+    \subitem {MOTOR.h}, \hyperpage{102}
+  \item {Motor\_Handler\_by\_time}
+    \subitem {Motor}, \hyperpage{37}
+  \item {Motor\_Initialiize}
+    \subitem {Motor}, \hyperpage{37}
+  \item {Motor\_number}
+    \subitem {Motor}, \hyperpage{38}
+  \item {motorD}
+    \subitem {Kinematic}, \hyperpage{32}
+  \item {motorE}
+    \subitem {Kinematic}, \hyperpage{32}
+  \item {motPtr}
+    \subitem {Motor}, \hyperpage{38}
+
+  \indexspace
+
+  \item {NO\_REMAP}
+    \subitem {TIMER.h}, \hyperpage{111}
+  \item {NonMaskableInt\_IRQn}
+    \subitem {Micro.h}, \hyperpage{98}
+  \item {NUM\_OF\_IOs}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {NUMBER\_OF\_ENCODERS}
+    \subitem {ENCODER.h}, \hyperpage{73}
+  \item {Number\_of\_Motor}
+    \subitem {MOTOR.h}, \hyperpage{103}
+  \item {NUMBER\_OF\_PINS}
+    \subitem {GPIO.h}, \hyperpage{79}
+  \item {NVIC}
+    \subitem {Micro.h}, \hyperpage{93}
+  \item {NVIC\_BASE}
+    \subitem {Micro.h}, \hyperpage{94}
+  \item {NVIC\_Type}, \hyperpage{39}
+    \subitem {IABR}, \hyperpage{39}
+    \subitem {ICER}, \hyperpage{39}
+    \subitem {ICPR}, \hyperpage{39}
+    \subitem {IP}, \hyperpage{40}
+    \subitem {ISER}, \hyperpage{40}
+    \subitem {ISPR}, \hyperpage{40}
+    \subitem {RESERVED0}, \hyperpage{40}
+    \subitem {RESERVED2}, \hyperpage{40}
+    \subitem {RESERVED3}, \hyperpage{40}
+    \subitem {RESERVED4}, \hyperpage{40}
+    \subitem {RESERVED5}, \hyperpage{40}
+    \subitem {RSERVED1}, \hyperpage{41}
+    \subitem {STIR}, \hyperpage{41}
+
+  \indexspace
+
+  \item {OBR}
+    \subitem {FLASH\_TypeDef}, \hyperpage{21}
+  \item {ODR}
+    \subitem {GPIO\_TypeDef}, \hyperpage{27}
+  \item {OPTKEYR}
+    \subitem {FLASH\_TypeDef}, \hyperpage{21}
+
+  \indexspace
+
+  \item {P}
+    \subitem {MOTOR.h}, \hyperpage{102}
+  \item {PA0}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PA1}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PA10}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PA11}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PA12}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PA15}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PA2}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PA3}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PA4}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PA5}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PA6}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PA7}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PA8}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PA9}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PARTIAL\_REMAP1}
+    \subitem {TIMER.h}, \hyperpage{111}
+  \item {PARTIAL\_REMAP2}
+    \subitem {TIMER.h}, \hyperpage{111}
+  \item {PB0}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PB1}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PB10}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PB11}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {PB12}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {PB13}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {PB14}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {PB15}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {PB3}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PB4}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PB5}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PB6}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PB7}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PB8}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PB9}
+    \subitem {GPIO.h}, \hyperpage{77}
+  \item {PC13}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {PC14}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {PC15}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {PendSV\_IRQn}
+    \subitem {Micro.h}, \hyperpage{98}
+  \item {PERIPH\_BASE}
+    \subitem {Micro.h}, \hyperpage{94}
+  \item {PERIPH\_BB\_BASE}
+    \subitem {Micro.h}, \hyperpage{94}
+  \item {pi}
+    \subitem {ENCODER.h}, \hyperpage{72}
+  \item {PIN0}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {PIN1}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {PIN10}
+    \subitem {GPIO.h}, \hyperpage{79}
+  \item {PIN11}
+    \subitem {GPIO.h}, \hyperpage{79}
+  \item {PIN12}
+    \subitem {GPIO.h}, \hyperpage{79}
+  \item {PIN13}
+    \subitem {GPIO.h}, \hyperpage{79}
+  \item {PIN14}
+    \subitem {GPIO.h}, \hyperpage{79}
+  \item {PIN15}
+    \subitem {GPIO.h}, \hyperpage{79}
+  \item {PIN2}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {PIN3}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {PIN4}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {PIN5}
+    \subitem {GPIO.h}, \hyperpage{79}
+  \item {PIN6}
+    \subitem {GPIO.h}, \hyperpage{79}
+  \item {PIN7}
+    \subitem {GPIO.h}, \hyperpage{79}
+  \item {PIN8}
+    \subitem {GPIO.h}, \hyperpage{79}
+  \item {PIN9}
+    \subitem {GPIO.h}, \hyperpage{79}
+  \item {PIN\_NUMBERS}
+    \subitem {GPIO.h}, \hyperpage{78}
+  \item {pinNumber}
+    \subitem {GPIO\_STRUCT}, \hyperpage{26}
+  \item {Port}
+    \subitem {GPIO\_STRUCT}, \hyperpage{26}
+  \item {Prescale}
+    \subitem {TIMER.h}, \hyperpage{109}
+  \item {PRLH}
+    \subitem {RTC\_TypeDef}, \hyperpage{48}
+  \item {PRLL}
+    \subitem {RTC\_TypeDef}, \hyperpage{48}
+  \item {PSC}
+    \subitem {TIM\_TypeDef}, \hyperpage{55}
+  \item {ptRobot}
+    \subitem {Kinematic}, \hyperpage{32}
+  \item {PU\_PD\_ENUM}
+    \subitem {GPIO.h}, \hyperpage{79}
+  \item {PULL\_DOWN}
+    \subitem {GPIO.h}, \hyperpage{79}
+  \item {PULL\_UP}
+    \subitem {GPIO.h}, \hyperpage{79}
+  \item {pulsePerRevolution}
+    \subitem {ENCODER.h}, \hyperpage{72}
+  \item {PVD\_IRQn}
+    \subitem {Micro.h}, \hyperpage{98}
+  \item {Pw}
+    \subitem {KINEMATIC\_CONTROL.h}, \hyperpage{81}
+  \item {PWM}, \hyperpage{41}
+    \subitem {getWritedPWM}, \hyperpage{42}
+    \subitem {PWM}, \hyperpage{41, 42}
+    \subitem {PWMWrite}, \hyperpage{42}
+  \item {PWM.h}
+    \subitem {AutoReloadPWM}, \hyperpage{103}
+    \subitem {Max\_PWM}, \hyperpage{103}
+    \subitem {PWM\_Frequency}, \hyperpage{104}
+    \subitem {Timer\_Frequency}, \hyperpage{104}
+  \item {PWM\_Frequency}
+    \subitem {PWM.h}, \hyperpage{104}
+  \item {PWM\_MODE}
+    \subitem {TIMER.h}, \hyperpage{110}
+  \item {pwmMotor}
+    \subitem {Motor}, \hyperpage{38}
+  \item {pwmtest}
+    \subitem {malha\_fechada.cpp}, \hyperpage{86}
+  \item {PWMWrite}
+    \subitem {PWM}, \hyperpage{42}
+  \item {PWR}
+    \subitem {Micro.h}, \hyperpage{94}
+  \item {PWR\_BASE}
+    \subitem {Micro.h}, \hyperpage{94}
+  \item {PWR\_TypeDef}, \hyperpage{42}
+    \subitem {CR}, \hyperpage{43}
+    \subitem {CSR}, \hyperpage{43}
+
+  \indexspace
+
+  \item {QUADRATURE\_ENCODER\_MODE}
+    \subitem {TIMER.h}, \hyperpage{110}
+
+  \indexspace
+
+  \item {r}
+    \subitem {MOTOR.h}, \hyperpage{102}
+  \item {radsToRpm}
+    \subitem {MOTOR.h}, \hyperpage{102}
+  \item {RCC}
+    \subitem {Micro.h}, \hyperpage{94}
+  \item {RCC\_BASE}
+    \subitem {Micro.h}, \hyperpage{94}
+  \item {RCC\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {RCC\_TypeDef}, \hyperpage{43}
+    \subitem {AHBENR}, \hyperpage{43}
+    \subitem {APB1ENR}, \hyperpage{44}
+    \subitem {APB1RSTR}, \hyperpage{44}
+    \subitem {APB2ENR}, \hyperpage{44}
+    \subitem {APB2RSTR}, \hyperpage{44}
+    \subitem {BDCR}, \hyperpage{44}
+    \subitem {CFGR}, \hyperpage{44}
+    \subitem {CIR}, \hyperpage{44}
+    \subitem {CR}, \hyperpage{44}
+    \subitem {CSR}, \hyperpage{45}
+  \item {RCR}
+    \subitem {TIM\_TypeDef}, \hyperpage{56}
+  \item {read}
+    \subitem {Line\_Sensor}, \hyperpage{34}
+  \item {readAngle}
+    \subitem {ANGLE\_LINE\_SENSOR\_H}, \hyperpage{13}
+  \item {Receive}
+    \subitem {USART}, \hyperpage{65}
+  \item {Reflectance\_Read}
+    \subitem {Reflectance\_Sensor}, \hyperpage{46}
+  \item {Reflectance\_Sensor}, \hyperpage{45}
+    \subitem {Calib\_Reflectance\_Sensor}, \hyperpage{46}
+    \subitem {Line\_Sensor}, \hyperpage{46}
+    \subitem {Reflectance\_Read}, \hyperpage{46}
+    \subitem {Reflectance\_Sensor}, \hyperpage{45, 46}
+  \item {RESERVED}
+    \subitem {FLASH\_TypeDef}, \hyperpage{21}
+  \item {RESERVED0}
+    \subitem {AFIO\_TypeDef}, \hyperpage{13}
+    \subitem {NVIC\_Type}, \hyperpage{40}
+    \subitem {RTC\_TypeDef}, \hyperpage{48}
+    \subitem {TIM\_TypeDef}, \hyperpage{56}
+    \subitem {USART\_TypeDef}, \hyperpage{67}
+  \item {RESERVED1}
+    \subitem {RTC\_TypeDef}, \hyperpage{48}
+    \subitem {TIM\_TypeDef}, \hyperpage{56}
+    \subitem {USART\_TypeDef}, \hyperpage{67}
+  \item {RESERVED10}
+    \subitem {TIM\_TypeDef}, \hyperpage{56}
+  \item {RESERVED11}
+    \subitem {TIM\_TypeDef}, \hyperpage{56}
+  \item {RESERVED12}
+    \subitem {TIM\_TypeDef}, \hyperpage{56}
+  \item {RESERVED13}
+    \subitem {TIM\_TypeDef}, \hyperpage{56}
+  \item {RESERVED14}
+    \subitem {TIM\_TypeDef}, \hyperpage{56}
+  \item {RESERVED15}
+    \subitem {TIM\_TypeDef}, \hyperpage{57}
+  \item {RESERVED16}
+    \subitem {TIM\_TypeDef}, \hyperpage{57}
+  \item {RESERVED17}
+    \subitem {TIM\_TypeDef}, \hyperpage{57}
+  \item {RESERVED18}
+    \subitem {TIM\_TypeDef}, \hyperpage{57}
+  \item {RESERVED19}
+    \subitem {TIM\_TypeDef}, \hyperpage{57}
+  \item {RESERVED2}
+    \subitem {NVIC\_Type}, \hyperpage{40}
+    \subitem {RTC\_TypeDef}, \hyperpage{48}
+    \subitem {TIM\_TypeDef}, \hyperpage{57}
+    \subitem {USART\_TypeDef}, \hyperpage{67}
+  \item {RESERVED3}
+    \subitem {NVIC\_Type}, \hyperpage{40}
+    \subitem {RTC\_TypeDef}, \hyperpage{49}
+    \subitem {TIM\_TypeDef}, \hyperpage{57}
+    \subitem {USART\_TypeDef}, \hyperpage{67}
+  \item {RESERVED4}
+    \subitem {NVIC\_Type}, \hyperpage{40}
+    \subitem {RTC\_TypeDef}, \hyperpage{49}
+    \subitem {TIM\_TypeDef}, \hyperpage{57}
+    \subitem {USART\_TypeDef}, \hyperpage{67}
+  \item {RESERVED5}
+    \subitem {NVIC\_Type}, \hyperpage{40}
+    \subitem {RTC\_TypeDef}, \hyperpage{49}
+    \subitem {TIM\_TypeDef}, \hyperpage{58}
+    \subitem {USART\_TypeDef}, \hyperpage{67}
+  \item {RESERVED6}
+    \subitem {RTC\_TypeDef}, \hyperpage{49}
+    \subitem {TIM\_TypeDef}, \hyperpage{58}
+    \subitem {USART\_TypeDef}, \hyperpage{68}
+  \item {RESERVED7}
+    \subitem {RTC\_TypeDef}, \hyperpage{49}
+    \subitem {TIM\_TypeDef}, \hyperpage{58}
+  \item {RESERVED8}
+    \subitem {RTC\_TypeDef}, \hyperpage{49}
+    \subitem {TIM\_TypeDef}, \hyperpage{58}
+  \item {RESERVED9}
+    \subitem {RTC\_TypeDef}, \hyperpage{49}
+    \subitem {TIM\_TypeDef}, \hyperpage{58}
+  \item {reset}
+    \subitem {Controller}, \hyperpage{16}
+    \subitem {Encoder}, \hyperpage{20}
+    \subitem {Kinematic}, \hyperpage{30}
+    \subitem {Motor}, \hyperpage{37}
+  \item {Robot}
+    \subitem {Controller}, \hyperpage{17}
+  \item {robotRun}
+    \subitem {SERIAL\_COMMUNICATION.h}, \hyperpage{105}
+  \item {robotStop}
+    \subitem {SERIAL\_COMMUNICATION.h}, \hyperpage{105}
+  \item {RPM\_value}
+    \subitem {malha\_fechada.cpp}, \hyperpage{86}
+  \item {rpmToRads}
+    \subitem {MOTOR.h}, \hyperpage{102}
+  \item {rpmToV}
+    \subitem {MOTOR.h}, \hyperpage{102}
+  \item {RSERVED1}
+    \subitem {NVIC\_Type}, \hyperpage{41}
+  \item {RTC}
+    \subitem {Micro.h}, \hyperpage{94}
+  \item {RTC\_BASE}
+    \subitem {Micro.h}, \hyperpage{95}
+  \item {RTC\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {RTC\_TypeDef}, \hyperpage{46}
+    \subitem {ALRH}, \hyperpage{47}
+    \subitem {ALRL}, \hyperpage{47}
+    \subitem {CNTH}, \hyperpage{47}
+    \subitem {CNTL}, \hyperpage{47}
+    \subitem {CRH}, \hyperpage{47}
+    \subitem {CRL}, \hyperpage{48}
+    \subitem {DIVH}, \hyperpage{48}
+    \subitem {DIVL}, \hyperpage{48}
+    \subitem {PRLH}, \hyperpage{48}
+    \subitem {PRLL}, \hyperpage{48}
+    \subitem {RESERVED0}, \hyperpage{48}
+    \subitem {RESERVED1}, \hyperpage{48}
+    \subitem {RESERVED2}, \hyperpage{48}
+    \subitem {RESERVED3}, \hyperpage{49}
+    \subitem {RESERVED4}, \hyperpage{49}
+    \subitem {RESERVED5}, \hyperpage{49}
+    \subitem {RESERVED6}, \hyperpage{49}
+    \subitem {RESERVED7}, \hyperpage{49}
+    \subitem {RESERVED8}, \hyperpage{49}
+    \subitem {RESERVED9}, \hyperpage{49}
+  \item {RTCAlarm\_IRQn}
+    \subitem {Micro.h}, \hyperpage{100}
+
+  \indexspace
+
+  \item {samplingTime}
+    \subitem {SERIAL\_COMMUNICATION.h}, \hyperpage{106}
+  \item {SCB}
+    \subitem {Micro.h}, \hyperpage{95}
+  \item {SCB\_BASE}
+    \subitem {Micro.h}, \hyperpage{95}
+  \item {SCnSCB}
+    \subitem {Micro.h}, \hyperpage{95}
+  \item {SCS\_BASE}
+    \subitem {Micro.h}, \hyperpage{95}
+  \item {Send}
+    \subitem {USART}, \hyperpage{65}
+  \item {Send\_Vec\_16}
+    \subitem {USART}, \hyperpage{65}
+  \item {sendEverything}
+    \subitem {SERIAL\_COMMUNICATION.h}, \hyperpage{106}
+  \item {sendFloat}
+    \subitem {USART}, \hyperpage{65}
+  \item {sendingTime}
+    \subitem {SERIAL\_COMMUNICATION.h}, \hyperpage{106}
+  \item {sendLineReading}
+    \subitem {SERIAL\_COMMUNICATION.h}, \hyperpage{106}
+  \item {sendMotorDdata}
+    \subitem {SERIAL\_COMMUNICATION.h}, \hyperpage{106}
+  \item {sendMotorsSpeed}
+    \subitem {SERIAL\_COMMUNICATION.h}, \hyperpage{106}
+  \item {sendMotorsSpeedAndControl}
+    \subitem {SERIAL\_COMMUNICATION.h}, \hyperpage{106}
+  \item {sendMotorsSpeedControlAndErrors}
+    \subitem {SERIAL\_COMMUNICATION.h}, \hyperpage{106}
+  \item {sendPositionAndOrientation}
+    \subitem {SERIAL\_COMMUNICATION.h}, \hyperpage{107}
+  \item {sendPWMandEncoderDataRight}
+    \subitem {SERIAL\_COMMUNICATION.h}, \hyperpage{107}
+  \item {sendUint16}
+    \subitem {USART}, \hyperpage{65}
+  \item {sendUint32}
+    \subitem {USART}, \hyperpage{65}
+    \subitem {USART.cpp}, \hyperpage{111}
+  \item {sendV\_W}
+    \subitem {SERIAL\_COMMUNICATION.h}, \hyperpage{107}
+  \item {sendV\_W\_and\_V\_Wcontrol}
+    \subitem {SERIAL\_COMMUNICATION.h}, \hyperpage{107}
+  \item {sendV\_Wcontrol}
+    \subitem {SERIAL\_COMMUNICATION.h}, \hyperpage{107}
+  \item {sensorFilterOrder}
+    \subitem {LINE\_SENSOR.h}, \hyperpage{82}
+  \item {Sensors}
+    \subitem {Line\_Sensor}, \hyperpage{34}
+  \item {SERIAL\_COMMUNICATION.h}
+    \subitem {bitsToSend}, \hyperpage{105}
+    \subitem {robotRun}, \hyperpage{105}
+    \subitem {robotStop}, \hyperpage{105}
+    \subitem {samplingTime}, \hyperpage{106}
+    \subitem {sendEverything}, \hyperpage{106}
+    \subitem {sendingTime}, \hyperpage{106}
+    \subitem {sendLineReading}, \hyperpage{106}
+    \subitem {sendMotorDdata}, \hyperpage{106}
+    \subitem {sendMotorsSpeed}, \hyperpage{106}
+    \subitem {sendMotorsSpeedAndControl}, \hyperpage{106}
+    \subitem {sendMotorsSpeedControlAndErrors}, \hyperpage{106}
+    \subitem {sendPositionAndOrientation}, \hyperpage{107}
+    \subitem {sendPWMandEncoderDataRight}, \hyperpage{107}
+    \subitem {sendV\_W}, \hyperpage{107}
+    \subitem {sendV\_W\_and\_V\_Wcontrol}, \hyperpage{107}
+    \subitem {sendV\_Wcontrol}, \hyperpage{107}
+  \item {Set\_Speed}
+    \subitem {Motor}, \hyperpage{37}
+  \item {SetADCChannel}
+    \subitem {ADC}, \hyperpage{8}
+  \item {SetGPIOMode}
+    \subitem {GPIO}, \hyperpage{25}
+  \item {SetGPIOPortPin}
+    \subitem {GPIO}, \hyperpage{25}
+  \item {SetIOPin}
+    \subitem {GPIO}, \hyperpage{25}
+  \item {setSpeed}
+    \subitem {Kinematic}, \hyperpage{30}
+  \item {setSpeedRef}
+    \subitem {Controller}, \hyperpage{16}
+  \item {SetTim}
+    \subitem {Timer}, \hyperpage{61}
+  \item {SetTIMChannel}
+    \subitem {Timer}, \hyperpage{62}
+  \item {SetTIMMode}
+    \subitem {Timer}, \hyperpage{62}
+  \item {SetTIMRemap}
+    \subitem {Timer}, \hyperpage{62}
+  \item {SINGLE\_CONVERSION}
+    \subitem {ADC.h}, \hyperpage{70}
+  \item {SMCR}
+    \subitem {TIM\_TypeDef}, \hyperpage{58}
+  \item {SMPR1}
+    \subitem {ADC\_TypeDef}, \hyperpage{11}
+  \item {SMPR2}
+    \subitem {ADC\_TypeDef}, \hyperpage{11}
+  \item {Speed\_Reference}
+    \subitem {Motor}, \hyperpage{38}
+  \item {SPI1\_IRQn}
+    \subitem {Micro.h}, \hyperpage{100}
+  \item {SPI2\_IRQn}
+    \subitem {Micro.h}, \hyperpage{100}
+  \item {SQR1}
+    \subitem {ADC\_TypeDef}, \hyperpage{11}
+  \item {SQR2}
+    \subitem {ADC\_TypeDef}, \hyperpage{11}
+  \item {SQR3}
+    \subitem {ADC\_TypeDef}, \hyperpage{11}
+  \item {SR}
+    \subitem {ADC\_TypeDef}, \hyperpage{11}
+    \subitem {FLASH\_TypeDef}, \hyperpage{21}
+    \subitem {TIM\_TypeDef}, \hyperpage{58}
+    \subitem {USART\_TypeDef}, \hyperpage{68}
+  \item {SRAM\_BASE}
+    \subitem {Micro.h}, \hyperpage{95}
+  \item {SRAM\_BB\_BASE}
+    \subitem {Micro.h}, \hyperpage{95}
+  \item {start}
+    \subitem {Controller}, \hyperpage{16}
+  \item {steps}
+    \subitem {malha\_fechada.cpp}, \hyperpage{84}
+  \item {stepTime}
+    \subitem {malha\_fechada.cpp}, \hyperpage{84}
+  \item {STIR}
+    \subitem {NVIC\_Type}, \hyperpage{41}
+  \item {stop}
+    \subitem {Controller}, \hyperpage{17}
+  \item {SVCall\_IRQn}
+    \subitem {Micro.h}, \hyperpage{98}
+  \item {SysClock}, \hyperpage{50}
+    \subitem {MCO}, \hyperpage{50}
+    \subitem {SysClock}, \hyperpage{50}
+    \subitem {SysClockInit}, \hyperpage{50}
+    \subitem {SysTickGetEvent}, \hyperpage{51}
+    \subitem {SysTickInit}, \hyperpage{51}
+  \item {SysClock.h}
+    \subitem {BASE\_100ms}, \hyperpage{108}
+    \subitem {BASE\_100us}, \hyperpage{108}
+    \subitem {BASE\_10ms}, \hyperpage{108}
+    \subitem {BASE\_10us}, \hyperpage{108}
+    \subitem {BASE\_1ms}, \hyperpage{108}
+    \subitem {BASE\_1us}, \hyperpage{108}
+    \subitem {SysTickBaseTimeEnum}, \hyperpage{108}
+  \item {SysClockInit}
+    \subitem {SysClock}, \hyperpage{50}
+  \item {SysTick}
+    \subitem {Micro.h}, \hyperpage{95}
+  \item {SysTick\_BASE}
+    \subitem {Micro.h}, \hyperpage{96}
+  \item {SysTick\_IRQn}
+    \subitem {Micro.h}, \hyperpage{98}
+  \item {SysTick\_Type}, \hyperpage{52}
+    \subitem {CALIB}, \hyperpage{52}
+    \subitem {CTRL}, \hyperpage{52}
+    \subitem {LOAD}, \hyperpage{52}
+    \subitem {VAL}, \hyperpage{52}
+  \item {SysTickBaseTimeEnum}
+    \subitem {SysClock.h}, \hyperpage{108}
+  \item {SysTickGetEvent}
+    \subitem {SysClock}, \hyperpage{51}
+  \item {SysTickInit}
+    \subitem {SysClock}, \hyperpage{51}
+
+  \indexspace
+
+  \item {t\_ini}
+    \subitem {malha\_fechada.cpp}, \hyperpage{86}
+  \item {TAMPER\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {testTime}
+    \subitem {malha\_fechada.cpp}, \hyperpage{84}
+  \item {Ticks\_till\_int}
+    \subitem {ENCODER.h}, \hyperpage{72}
+  \item {ticksToRad}
+    \subitem {ENCODER.h}, \hyperpage{72}
+  \item {TIM}
+    \subitem {Timer}, \hyperpage{64}
+  \item {TIM1}
+    \subitem {Micro.h}, \hyperpage{96}
+  \item {TIM1\_BASE}
+    \subitem {Micro.h}, \hyperpage{96}
+  \item {TIM1\_BRK\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {TIM1\_CC\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {TIM1\_TRG\_COM\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {TIM1\_UP\_IRQHandler}
+    \subitem {malha\_fechada.cpp}, \hyperpage{85}
+  \item {TIM1\_UP\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {TIM2}
+    \subitem {Micro.h}, \hyperpage{96}
+  \item {TIM2\_BASE}
+    \subitem {Micro.h}, \hyperpage{96}
+  \item {TIM2\_IRQHandler}
+    \subitem {malha\_fechada.cpp}, \hyperpage{85}
+  \item {TIM2\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {TIM3}
+    \subitem {Micro.h}, \hyperpage{96}
+  \item {TIM3\_BASE}
+    \subitem {Micro.h}, \hyperpage{96}
+  \item {TIM3\_IRQHandler}
+    \subitem {malha\_fechada.cpp}, \hyperpage{85}
+  \item {TIM3\_IRQn}
+    \subitem {Micro.h}, \hyperpage{100}
+  \item {TIM4}
+    \subitem {Micro.h}, \hyperpage{96}
+  \item {TIM4\_BASE}
+    \subitem {Micro.h}, \hyperpage{97}
+  \item {TIM4\_IRQHandler}
+    \subitem {malha\_fechada.cpp}, \hyperpage{85}
+  \item {TIM4\_IRQn}
+    \subitem {Micro.h}, \hyperpage{100}
+  \item {TIM\_CH1}
+    \subitem {TIMER.h}, \hyperpage{110}
+  \item {TIM\_CH2}
+    \subitem {TIMER.h}, \hyperpage{110}
+  \item {TIM\_CH3}
+    \subitem {TIMER.h}, \hyperpage{110}
+  \item {TIM\_CH4}
+    \subitem {TIMER.h}, \hyperpage{110}
+  \item {TIM\_CHANNELS}
+    \subitem {TIMER.h}, \hyperpage{110}
+  \item {TIM\_MODE}
+    \subitem {TIMER.h}, \hyperpage{110}
+  \item {TIM\_REMAP}
+    \subitem {TIMER.h}, \hyperpage{110}
+  \item {TIM\_TypeDef}, \hyperpage{53}
+    \subitem {ARR}, \hyperpage{53}
+    \subitem {BDTR}, \hyperpage{54}
+    \subitem {CCER}, \hyperpage{54}
+    \subitem {CCMR1}, \hyperpage{54}
+    \subitem {CCMR2}, \hyperpage{54}
+    \subitem {CCR1}, \hyperpage{54}
+    \subitem {CCR2}, \hyperpage{54}
+    \subitem {CCR3}, \hyperpage{54}
+    \subitem {CCR4}, \hyperpage{54}
+    \subitem {CNT}, \hyperpage{55}
+    \subitem {CR1}, \hyperpage{55}
+    \subitem {CR2}, \hyperpage{55}
+    \subitem {DCR}, \hyperpage{55}
+    \subitem {DIER}, \hyperpage{55}
+    \subitem {DMAR}, \hyperpage{55}
+    \subitem {EGR}, \hyperpage{55}
+    \subitem {PSC}, \hyperpage{55}
+    \subitem {RCR}, \hyperpage{56}
+    \subitem {RESERVED0}, \hyperpage{56}
+    \subitem {RESERVED1}, \hyperpage{56}
+    \subitem {RESERVED10}, \hyperpage{56}
+    \subitem {RESERVED11}, \hyperpage{56}
+    \subitem {RESERVED12}, \hyperpage{56}
+    \subitem {RESERVED13}, \hyperpage{56}
+    \subitem {RESERVED14}, \hyperpage{56}
+    \subitem {RESERVED15}, \hyperpage{57}
+    \subitem {RESERVED16}, \hyperpage{57}
+    \subitem {RESERVED17}, \hyperpage{57}
+    \subitem {RESERVED18}, \hyperpage{57}
+    \subitem {RESERVED19}, \hyperpage{57}
+    \subitem {RESERVED2}, \hyperpage{57}
+    \subitem {RESERVED3}, \hyperpage{57}
+    \subitem {RESERVED4}, \hyperpage{57}
+    \subitem {RESERVED5}, \hyperpage{58}
+    \subitem {RESERVED6}, \hyperpage{58}
+    \subitem {RESERVED7}, \hyperpage{58}
+    \subitem {RESERVED8}, \hyperpage{58}
+    \subitem {RESERVED9}, \hyperpage{58}
+    \subitem {SMCR}, \hyperpage{58}
+    \subitem {SR}, \hyperpage{58}
+  \item {time}
+    \subitem {malha\_fechada.cpp}, \hyperpage{86}
+  \item {Time\_between\_int}
+    \subitem {TIMER.h}, \hyperpage{110}
+  \item {Time\_between\_int\_milis}
+    \subitem {TIMER.h}, \hyperpage{110}
+  \item {time\_test}
+    \subitem {malha\_fechada.cpp}, \hyperpage{86}
+  \item {Timer}, \hyperpage{59}
+    \subitem {ClearInterruptFlag}, \hyperpage{60}
+    \subitem {delay}, \hyperpage{60}
+    \subitem {GetTim}, \hyperpage{60}
+    \subitem {GetTIMChannel}, \hyperpage{61}
+    \subitem {GetTime\_milisec}, \hyperpage{61}
+    \subitem {GetTime\_usec}, \hyperpage{61}
+    \subitem {GetTIMMode}, \hyperpage{61}
+    \subitem {GetTIMRemap}, \hyperpage{61}
+    \subitem {InterrupTime}, \hyperpage{61}
+    \subitem {SetTim}, \hyperpage{61}
+    \subitem {SetTIMChannel}, \hyperpage{62}
+    \subitem {SetTIMMode}, \hyperpage{62}
+    \subitem {SetTIMRemap}, \hyperpage{62}
+    \subitem {TIM}, \hyperpage{64}
+    \subitem {Timer}, \hyperpage{60}
+    \subitem {Timer\_Handler}, \hyperpage{62}
+    \subitem {Timer\_Initiallize}, \hyperpage{62}
+    \subitem {TimerInit}, \hyperpage{62}
+    \subitem {verifyTimeInterrupt}, \hyperpage{63}
+  \item {TIMER.h}
+    \subitem {AutoReload\_Counter}, \hyperpage{109}
+    \subitem {COUNTER}, \hyperpage{110}
+    \subitem {FULL\_REMAP}, \hyperpage{111}
+    \subitem {NO\_REMAP}, \hyperpage{111}
+    \subitem {PARTIAL\_REMAP1}, \hyperpage{111}
+    \subitem {PARTIAL\_REMAP2}, \hyperpage{111}
+    \subitem {Prescale}, \hyperpage{109}
+    \subitem {PWM\_MODE}, \hyperpage{110}
+    \subitem {QUADRATURE\_ENCODER\_MODE}, \hyperpage{110}
+    \subitem {TIM\_CH1}, \hyperpage{110}
+    \subitem {TIM\_CH2}, \hyperpage{110}
+    \subitem {TIM\_CH3}, \hyperpage{110}
+    \subitem {TIM\_CH4}, \hyperpage{110}
+    \subitem {TIM\_CHANNELS}, \hyperpage{110}
+    \subitem {TIM\_MODE}, \hyperpage{110}
+    \subitem {TIM\_REMAP}, \hyperpage{110}
+    \subitem {Time\_between\_int}, \hyperpage{110}
+    \subitem {Time\_between\_int\_milis}, \hyperpage{110}
+  \item {Timer\_Frequency}
+    \subitem {PWM.h}, \hyperpage{104}
+  \item {Timer\_Handler}
+    \subitem {Timer}, \hyperpage{62}
+  \item {Timer\_Initiallize}
+    \subitem {Timer}, \hyperpage{62}
+  \item {TimerInit}
+    \subitem {Timer}, \hyperpage{62}
+  \item {tooglePin}
+    \subitem {GPIO}, \hyperpage{25}
+  \item {TPI}
+    \subitem {Micro.h}, \hyperpage{97}
+  \item {TPI\_BASE}
+    \subitem {Micro.h}, \hyperpage{97}
+  \item {Ts}
+    \subitem {MOTOR.h}, \hyperpage{102}
+  \item {ts}
+    \subitem {MOTOR.h}, \hyperpage{102}
+  \item {ts\_w}
+    \subitem {KINEMATIC\_CONTROL.h}, \hyperpage{81}
+
+  \indexspace
+
+  \item {U}
+    \subitem {Motor}, \hyperpage{38}
+  \item {updateLineAngle}
+    \subitem {ANGLE\_LINE\_SENSOR\_H}, \hyperpage{13}
+  \item {updateLineReading}
+    \subitem {Kinematic}, \hyperpage{31}
+  \item {UsageFault\_IRQn}
+    \subitem {Micro.h}, \hyperpage{98}
+  \item {USART}, \hyperpage{64}
+    \subitem {Available}, \hyperpage{64}
+    \subitem {Receive}, \hyperpage{65}
+    \subitem {Send}, \hyperpage{65}
+    \subitem {Send\_Vec\_16}, \hyperpage{65}
+    \subitem {sendFloat}, \hyperpage{65}
+    \subitem {sendUint16}, \hyperpage{65}
+    \subitem {sendUint32}, \hyperpage{65}
+    \subitem {USART}, \hyperpage{64}
+  \item {USART.cpp}
+    \subitem {sendUint32}, \hyperpage{111}
+  \item {USART.h}
+    \subitem {BD\_1000000}, \hyperpage{112}
+    \subitem {BD\_115200}, \hyperpage{112}
+    \subitem {BD\_1382400}, \hyperpage{112}
+    \subitem {BD\_2250000}, \hyperpage{112}
+    \subitem {BD\_230769}, \hyperpage{112}
+    \subitem {BD\_250000}, \hyperpage{112}
+    \subitem {BD\_38400}, \hyperpage{112}
+    \subitem {BD\_57600}, \hyperpage{112}
+    \subitem {BD\_9600}, \hyperpage{112}
+    \subitem {BD\_ENUM}, \hyperpage{112}
+  \item {USART1}
+    \subitem {Micro.h}, \hyperpage{97}
+  \item {USART1\_BASE}
+    \subitem {Micro.h}, \hyperpage{97}
+  \item {USART1\_IRQn}
+    \subitem {Micro.h}, \hyperpage{100}
+  \item {USART2}
+    \subitem {Micro.h}, \hyperpage{97}
+  \item {USART2\_BASE}
+    \subitem {Micro.h}, \hyperpage{97}
+  \item {USART2\_IRQn}
+    \subitem {Micro.h}, \hyperpage{100}
+  \item {USART3}
+    \subitem {Micro.h}, \hyperpage{97}
+  \item {USART3\_BASE}
+    \subitem {Micro.h}, \hyperpage{98}
+  \item {USART3\_IRQn}
+    \subitem {Micro.h}, \hyperpage{100}
+  \item {USART\_TypeDef}, \hyperpage{66}
+    \subitem {BRR}, \hyperpage{66}
+    \subitem {CR1}, \hyperpage{66}
+    \subitem {CR2}, \hyperpage{66}
+    \subitem {CR3}, \hyperpage{66}
+    \subitem {DR}, \hyperpage{67}
+    \subitem {GTPR}, \hyperpage{67}
+    \subitem {RESERVED0}, \hyperpage{67}
+    \subitem {RESERVED1}, \hyperpage{67}
+    \subitem {RESERVED2}, \hyperpage{67}
+    \subitem {RESERVED3}, \hyperpage{67}
+    \subitem {RESERVED4}, \hyperpage{67}
+    \subitem {RESERVED5}, \hyperpage{67}
+    \subitem {RESERVED6}, \hyperpage{68}
+    \subitem {SR}, \hyperpage{68}
+  \item {USB\_HP\_CAN1\_TX\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {USB\_LP\_CAN1\_RX0\_IRQn}
+    \subitem {Micro.h}, \hyperpage{99}
+  \item {USBWakeUp\_IRQn}
+    \subitem {Micro.h}, \hyperpage{100}
+
+  \indexspace
+
+  \item {v\_ref\_ini}
+    \subitem {FOLLOWING\_CONTROLER.h}, \hyperpage{75}
+  \item {VAL}
+    \subitem {SysTick\_Type}, \hyperpage{52}
+  \item {verifyCommand}
+    \subitem {Communication}, \hyperpage{14}
+  \item {verifyTimeInterrupt}
+    \subitem {Timer}, \hyperpage{63}
+  \item {vtest}
+    \subitem {malha\_fechada.cpp}, \hyperpage{86}
+
+  \indexspace
+
+  \item {w\_ref\_ini}
+    \subitem {FOLLOWING\_CONTROLER.h}, \hyperpage{75}
+  \item {waitForCommand}
+    \subitem {Communication}, \hyperpage{14}
+  \item {WRPR}
+    \subitem {FLASH\_TypeDef}, \hyperpage{21}
+  \item {wtest}
+    \subitem {malha\_fechada.cpp}, \hyperpage{87}
+  \item {WWDG\_IRQn}
+    \subitem {Micro.h}, \hyperpage{98}
+
+  \indexspace
+
+  \item {xPos}
+    \subitem {Kinematic}, \hyperpage{32}
+  \item {xtest}
+    \subitem {malha\_fechada.cpp}, \hyperpage{87}
+
+  \indexspace
+
+  \item {yPos}
+    \subitem {Kinematic}, \hyperpage{32}
+  \item {ytest}
+    \subitem {malha\_fechada.cpp}, \hyperpage{87}
+
+\end{theindex}

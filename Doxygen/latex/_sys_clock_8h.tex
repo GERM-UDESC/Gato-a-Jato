@@ -1,0 +1,57 @@
+\hypertarget{_sys_clock_8h}{}\doxysection{C\+:/\+Users/bruno/\+Documents/\+Line\+Follower/\+Project\+\_\+u\+Vision/\+Line\+Follower/\+Sys\+Clock.h File Reference}
+\label{_sys_clock_8h}\index{C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/SysClock.h@{C:/Users/bruno/Documents/LineFollower/Project\_uVision/LineFollower/SysClock.h}}
+{\ttfamily \#include \char`\"{}Micro.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}G\+P\+I\+O.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_sys_clock}{Sys\+Clock}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1f}{Sys\+Tick\+Base\+Time\+Enum}} \{ \newline
+\mbox{\hyperlink{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1fa2bcdfedc316cba441582940983fae81d}{B\+A\+S\+E\+\_\+100ms}} = (7200000-\/1), 
+\mbox{\hyperlink{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1fa6718e158df40f744606da9f709bd5033}{B\+A\+S\+E\+\_\+10ms}} = (720000 -\/1), 
+\mbox{\hyperlink{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1fa43360859fc9735ffde1598b6b5966d41}{B\+A\+S\+E\+\_\+1ms}} = (72000 -\/1), 
+\mbox{\hyperlink{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1fa75ddb29f4be16d97e375b69c91437c30}{B\+A\+S\+E\+\_\+100us}} = (7200 -\/1), 
+\newline
+\mbox{\hyperlink{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1fa5411180f8a5470c970b32b76019ac4fb}{B\+A\+S\+E\+\_\+10us}} = (720 -\/1), 
+\mbox{\hyperlink{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1faf9bce33f56e5b57830ce9df7b0057947}{B\+A\+S\+E\+\_\+1us}} = (72 -\/1)
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1f}\label{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1f}} 
+\index{SysClock.h@{SysClock.h}!SysTickBaseTimeEnum@{SysTickBaseTimeEnum}}
+\index{SysTickBaseTimeEnum@{SysTickBaseTimeEnum}!SysClock.h@{SysClock.h}}
+\doxysubsubsection{\texorpdfstring{SysTickBaseTimeEnum}{SysTickBaseTimeEnum}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1f}{Sys\+Tick\+Base\+Time\+Enum}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BASE\_100ms@{BASE\_100ms}!SysClock.h@{SysClock.h}}\index{SysClock.h@{SysClock.h}!BASE\_100ms@{BASE\_100ms}}}\mbox{\Hypertarget{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1fa2bcdfedc316cba441582940983fae81d}\label{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1fa2bcdfedc316cba441582940983fae81d}} 
+B\+A\+S\+E\+\_\+100ms&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BASE\_10ms@{BASE\_10ms}!SysClock.h@{SysClock.h}}\index{SysClock.h@{SysClock.h}!BASE\_10ms@{BASE\_10ms}}}\mbox{\Hypertarget{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1fa6718e158df40f744606da9f709bd5033}\label{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1fa6718e158df40f744606da9f709bd5033}} 
+B\+A\+S\+E\+\_\+10ms&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BASE\_1ms@{BASE\_1ms}!SysClock.h@{SysClock.h}}\index{SysClock.h@{SysClock.h}!BASE\_1ms@{BASE\_1ms}}}\mbox{\Hypertarget{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1fa43360859fc9735ffde1598b6b5966d41}\label{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1fa43360859fc9735ffde1598b6b5966d41}} 
+B\+A\+S\+E\+\_\+1ms&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BASE\_100us@{BASE\_100us}!SysClock.h@{SysClock.h}}\index{SysClock.h@{SysClock.h}!BASE\_100us@{BASE\_100us}}}\mbox{\Hypertarget{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1fa75ddb29f4be16d97e375b69c91437c30}\label{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1fa75ddb29f4be16d97e375b69c91437c30}} 
+B\+A\+S\+E\+\_\+100us&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BASE\_10us@{BASE\_10us}!SysClock.h@{SysClock.h}}\index{SysClock.h@{SysClock.h}!BASE\_10us@{BASE\_10us}}}\mbox{\Hypertarget{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1fa5411180f8a5470c970b32b76019ac4fb}\label{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1fa5411180f8a5470c970b32b76019ac4fb}} 
+B\+A\+S\+E\+\_\+10us&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BASE\_1us@{BASE\_1us}!SysClock.h@{SysClock.h}}\index{SysClock.h@{SysClock.h}!BASE\_1us@{BASE\_1us}}}\mbox{\Hypertarget{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1faf9bce33f56e5b57830ce9df7b0057947}\label{_sys_clock_8h_a72107f0f5d350a8b594d1abdf1f9dc1faf9bce33f56e5b57830ce9df7b0057947}} 
+B\+A\+S\+E\+\_\+1us&\\
+\hline
+
+\end{DoxyEnumFields}

@@ -3,9 +3,9 @@
 <title>Static Call Graph - [.\Objects\LineFollower.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\LineFollower.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6090000: Last Updated: Thu Nov  7 10:14:48 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 6090000: Last Updated: Sat Nov  9 22:01:44 2019
 <BR><P>
-<H3>Maximum Stack Usage =       4104 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =       4128 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 main &rArr; Line_Sensor::Line_Sensor(Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor) &rArr; Reflectance_Sensor::Reflectance_Sensor(Reflectance_Sensor*) &rArr; ADC::ADC(ADC_CHANNELS) &rArr; ADC::ConfigADCPin() &rArr; GPIO::ConfigGPIOPin()
 <P>
@@ -197,7 +197,7 @@ Global Symbols
 <P><STRONG><a name="[fb]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[43]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 4104 + Unknown Stack Size
+<BR><BR>[Stack]<UL><LI>Max Depth = 4128 + Unknown Stack Size
 <LI>Call Chain = __rt_entry_main &rArr; main &rArr; Line_Sensor::Line_Sensor(Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor) &rArr; Reflectance_Sensor::Reflectance_Sensor(Reflectance_Sensor*) &rArr; ADC::ADC(ADC_CHANNELS) &rArr; ADC::ConfigADCPin() &rArr; GPIO::ConfigGPIOPin()
 </UL>
 <BR>[Calls]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -1242,8 +1242,8 @@ Global Symbols
 
 <P><STRONG><a name="[117]"></a>Kinematic::Kinematic__sub_object(Kinematic*)</STRONG> (Thumb, 96 bytes, Stack size 24 bytes, kinematic_control.o(.text._ZN9KinematicC2EPS_), UNUSED)
 
-<P><STRONG><a name="[38]"></a>main</STRONG> (Thumb, 1610 bytes, Stack size 3832 bytes, malha_fechada.o(.text.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 4104<LI>Call Chain = main &rArr; Line_Sensor::Line_Sensor(Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor) &rArr; Reflectance_Sensor::Reflectance_Sensor(Reflectance_Sensor*) &rArr; ADC::ADC(ADC_CHANNELS) &rArr; ADC::ConfigADCPin() &rArr; GPIO::ConfigGPIOPin()
+<P><STRONG><a name="[38]"></a>main</STRONG> (Thumb, 1580 bytes, Stack size 3856 bytes, malha_fechada.o(.text.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4128<LI>Call Chain = main &rArr; Line_Sensor::Line_Sensor(Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor, Reflectance_Sensor) &rArr; Reflectance_Sensor::Reflectance_Sensor(Reflectance_Sensor*) &rArr; ADC::ADC(ADC_CHANNELS) &rArr; ADC::ConfigADCPin() &rArr; GPIO::ConfigGPIOPin()
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer::Timer(TIM_TypeDef*, TIM_MODE)
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer::verifyTimeInterrupt()

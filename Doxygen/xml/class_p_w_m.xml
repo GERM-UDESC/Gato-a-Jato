@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="class_p_w_m" kind="class" language="C++" prot="public">
+    <compoundname>PWM</compoundname>
+    <basecompoundref refid="class_timer" prot="protected" virt="non-virtual">Timer</basecompoundref>
+    <includes refid="_p_w_m_8h" local="no">PWM.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_p_w_m_1a6b302df5d5569932f425810ba8603518" prot="private" static="no" mutable="no">
+        <type><ref refid="class_g_p_i_o" kindref="compound">GPIO</ref></type>
+        <definition>GPIO PWM::PWMPin</definition>
+        <argsstring></argsstring>
+        <name>PWMPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" line="15" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_w_m_1a01ee24507bf238f5bc3a5e4f0cfdae5d" prot="private" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>volatile uint16_t* PWM::PWM_WriteAddress</definition>
+        <argsstring></argsstring>
+        <name>PWM_WriteAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" line="16" column="19" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_w_m_1acb791100214e76979a3dfe643d4bd961" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PWM::writedPWM</definition>
+        <argsstring></argsstring>
+        <name>writedPWM</name>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" line="17" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_p_w_m_1a5546e2fb45a9b875eb57b0152c2c15d0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWM::ConfigPWMPin</definition>
+        <argsstring>()</argsstring>
+        <name>ConfigPWMPin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+<para>&lt; Peripheral base address in the alias region</para>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" line="19" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.cpp" bodystart="25" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_w_m_1a5a612c8e7bb2ae7922f59e8a0714c556" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWM::PWMInit</definition>
+        <argsstring>()</argsstring>
+        <name>PWMInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>&lt; Peripheral base address in the alias region</para>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" line="20" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.cpp" bodystart="150" bodyend="195"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_p_w_m_1ab3333b13b539a7dc1c712a73a53bbd3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PWM::PWM</definition>
+        <argsstring>()</argsstring>
+        <name>PWM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" line="23" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_w_m_1abac24aa79f91c437e76950eca28834b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PWM::PWM</definition>
+        <argsstring>(TIM_TypeDef *TIM, TIM_CHANNELS channel, TIM_REMAP PWMremap)</argsstring>
+        <name>PWM</name>
+        <param>
+          <type><ref refid="struct_t_i_m___type_def" kindref="compound">TIM_TypeDef</ref> *</type>
+          <declname>TIM</declname>
+        </param>
+        <param>
+          <type><ref refid="_t_i_m_e_r_8h_1a543da81eae4c4adb017deb9f6fc1ed39" kindref="member">TIM_CHANNELS</ref></type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type><ref refid="_t_i_m_e_r_8h_1ad900dcaeb3579ccead74e11acbafadce" kindref="member">TIM_REMAP</ref></type>
+          <declname>PWMremap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" line="24" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.cpp" bodystart="5" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_w_m_1aec6abc2e10e050088179e3d6530b4dfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PWM::PWM</definition>
+        <argsstring>(PWM *pwm)</argsstring>
+        <name>PWM</name>
+        <param>
+          <type><ref refid="class_p_w_m" kindref="compound">PWM</ref> *</type>
+          <declname>pwm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" line="25" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.cpp" bodystart="14" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_w_m_1a8fe1afc207745c5a0f11cbbfeaa6e427" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PWM::PWMWrite</definition>
+        <argsstring>(float value)</argsstring>
+        <name>PWMWrite</name>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" line="26" column="6" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.cpp" bodystart="199" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_w_m_1a9c00aaed9498d4ae62c60fdcefb19cce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float PWM::getWritedPWM</definition>
+        <argsstring>()</argsstring>
+        <name>getWritedPWM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" line="27" column="7" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.cpp" bodystart="208" bodyend="211"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Timer</label>
+        <link refid="class_timer"/>
+      </node>
+      <node id="1">
+        <label>PWM</label>
+        <link refid="class_p_w_m"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>TIM_TypeDef</label>
+        <link refid="struct_t_i_m___type_def"/>
+      </node>
+      <node id="2">
+        <label>Timer</label>
+        <link refid="class_timer"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>TIM</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>PWM</label>
+        <link refid="class_p_w_m"/>
+        <childnode refid="2" relation="protected-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" line="13" column="1" bodyfile="C:/Users/bruno/Documents/LineFollower/Project_uVision/LineFollower/PWM.h" bodystart="12" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_timer_1a52eb6a361fa6699b61d83394af2357e4" prot="protected" virt="non-virtual"><scope>PWM</scope><name>ClearInterruptFlag</name></member>
+      <member refid="class_p_w_m_1a5546e2fb45a9b875eb57b0152c2c15d0" prot="private" virt="non-virtual"><scope>PWM</scope><name>ConfigPWMPin</name></member>
+      <member refid="class_timer_1a8273bc9959e1c908b018003950153d21" prot="protected" virt="non-virtual"><scope>PWM</scope><name>delay</name></member>
+      <member refid="class_timer_1a41b1afb42a6142f61f0a85175a8bba6e" prot="protected" virt="non-virtual"><scope>PWM</scope><name>GetTim</name></member>
+      <member refid="class_timer_1a735e9ccaba0e385d6cfb94905f8fb898" prot="protected" virt="non-virtual"><scope>PWM</scope><name>GetTIMChannel</name></member>
+      <member refid="class_timer_1acc9bf0810dedd57df41a12cfa849a5ff" prot="protected" virt="non-virtual"><scope>PWM</scope><name>GetTime_milisec</name></member>
+      <member refid="class_timer_1a1b59222052d44b81b3c26f3c88368239" prot="protected" virt="non-virtual"><scope>PWM</scope><name>GetTime_usec</name></member>
+      <member refid="class_timer_1a8c6d407b209f92b4d2417b67a5b465a6" prot="protected" virt="non-virtual"><scope>PWM</scope><name>GetTIMMode</name></member>
+      <member refid="class_timer_1a8ae90dbc39bbf306d554af018add9413" prot="protected" virt="non-virtual"><scope>PWM</scope><name>GetTIMRemap</name></member>
+      <member refid="class_p_w_m_1a9c00aaed9498d4ae62c60fdcefb19cce" prot="public" virt="non-virtual"><scope>PWM</scope><name>getWritedPWM</name></member>
+      <member refid="class_timer_1ae82350f89d1ffcdcd730f0dd2316dc69" prot="protected" virt="non-virtual"><scope>PWM</scope><name>InterrupTime</name></member>
+      <member refid="class_p_w_m_1ab3333b13b539a7dc1c712a73a53bbd3b" prot="public" virt="non-virtual"><scope>PWM</scope><name>PWM</name></member>
+      <member refid="class_p_w_m_1abac24aa79f91c437e76950eca28834b4" prot="public" virt="non-virtual"><scope>PWM</scope><name>PWM</name></member>
+      <member refid="class_p_w_m_1aec6abc2e10e050088179e3d6530b4dfe" prot="public" virt="non-virtual"><scope>PWM</scope><name>PWM</name></member>
+      <member refid="class_p_w_m_1a01ee24507bf238f5bc3a5e4f0cfdae5d" prot="private" virt="non-virtual"><scope>PWM</scope><name>PWM_WriteAddress</name></member>
+      <member refid="class_p_w_m_1a5a612c8e7bb2ae7922f59e8a0714c556" prot="private" virt="non-virtual"><scope>PWM</scope><name>PWMInit</name></member>
+      <member refid="class_p_w_m_1a6b302df5d5569932f425810ba8603518" prot="private" virt="non-virtual"><scope>PWM</scope><name>PWMPin</name></member>
+      <member refid="class_p_w_m_1a8fe1afc207745c5a0f11cbbfeaa6e427" prot="public" virt="non-virtual"><scope>PWM</scope><name>PWMWrite</name></member>
+      <member refid="class_timer_1adbe72d40a935988e2b66e4189b85f07c" prot="protected" virt="non-virtual"><scope>PWM</scope><name>SetTim</name></member>
+      <member refid="class_timer_1a8d22a9ef3402fea9ec05c0477492e7cc" prot="protected" virt="non-virtual"><scope>PWM</scope><name>SetTIMChannel</name></member>
+      <member refid="class_timer_1af807c38bb86f53c4aeaed5a0787811c1" prot="protected" virt="non-virtual"><scope>PWM</scope><name>SetTIMMode</name></member>
+      <member refid="class_timer_1a68f6b0beb2aa79f7f22fa0d309f5521e" prot="protected" virt="non-virtual"><scope>PWM</scope><name>SetTIMRemap</name></member>
+      <member refid="class_timer_1a28770028f61d78e7b6b74338fb58edeb" prot="protected" virt="non-virtual"><scope>PWM</scope><name>TIM</name></member>
+      <member refid="class_timer_1a5f16e8da27d2a5a5242dead46de05d97" prot="protected" virt="non-virtual"><scope>PWM</scope><name>Timer</name></member>
+      <member refid="class_timer_1aad48b169f08eba0caed873d02f3cc582" prot="protected" virt="non-virtual"><scope>PWM</scope><name>Timer</name></member>
+      <member refid="class_timer_1aed9007700e41aeb68d39ed7a78bfdbeb" prot="protected" virt="non-virtual"><scope>PWM</scope><name>Timer</name></member>
+      <member refid="class_timer_1a9d6f7719e2dcb9598bc3bca0043098d2" prot="protected" virt="non-virtual"><scope>PWM</scope><name>Timer_Handler</name></member>
+      <member refid="class_timer_1a023934c2c5220d6f52bdd5df79666d98" prot="protected" virt="non-virtual"><scope>PWM</scope><name>Timer_Initiallize</name></member>
+      <member refid="class_timer_1a14992a91f5a53a1da137424df2fcee51" prot="protected" virt="non-virtual"><scope>PWM</scope><name>TimerInit</name></member>
+      <member refid="class_timer_1ac67a5defa2eb1e43bffa1796a8899a1a" prot="protected" virt="non-virtual"><scope>PWM</scope><name>verifyTimeInterrupt</name></member>
+      <member refid="class_p_w_m_1acb791100214e76979a3dfe643d4bd961" prot="private" virt="non-virtual"><scope>PWM</scope><name>writedPWM</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
