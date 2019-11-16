@@ -53,6 +53,7 @@ void Kinematic::handler()
 //	yPos += getV()*sin(getTeta())*integrationTime;
 	
 	this->deltaDistance = (motorD.getDeltaDistance() + motorE.getDeltaDistance())/2;
+	
 	xPos += this->deltaDistance*cos(getTeta())*distanceCorrection;
 	yPos += this->deltaDistance*sin(getTeta())*distanceCorrection;
 	xPosSensor = xPos + comprimento*cos(getTeta());
@@ -108,7 +109,7 @@ void Kinematic::updateLineReading()
 //	{
 //		angle[angleFilterOrder-1] = asin((lineSensorReading - lastLineSensorReading)/(this->deltaDistance));
 //	}	
-//	
+	
 	filteredAngle = 0;
 	for (int i = 0; i < (angleFilterOrder); i++)
 	{
@@ -134,6 +135,11 @@ float Kinematic::getLinePosition()
 float Kinematic::getLineAngleNotFiltered()
 {
 	return angle[angleFilterOrder-1];
+}
+
+float Kinematic::getLinePositionNotFiltered()
+{
+	return lineSensor.readNotFiltered();
 }
 
 

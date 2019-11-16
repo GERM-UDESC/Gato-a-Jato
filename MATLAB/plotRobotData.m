@@ -8,7 +8,7 @@ if (command == 2) || (command == 3) || (command == 6)
     data1 = temp(1:2:length(temp));
     data2 = temp(2:2:length(temp));
     fid=fopen('data.txt','w');
-    fprintf(fid, '%f %f \n', [data1' data2']');
+    fprintf(fid, '%f %f \n', [data1 data2]');
     fclose(fid);
     figure
     subplot(2,1,1)
@@ -23,7 +23,7 @@ if (command == 4) || (command == 7)
     data3 = temp(3:4:length(temp));
     data4 = temp(4:4:length(temp));
     fid=fopen('data.txt','w');
-    fprintf(fid, '%f %f %f %f \n', [data1' data2' data3' data4']');
+    fprintf(fid, '%f %f %f %f \n', [data1 data2 data3 data4]');
     fclose(fid);
     figure
     subplot(2,1,1)
@@ -39,8 +39,8 @@ if (command == 5)
     temp = fread(seguidor, 2*bits_to_receive,'float');
     data1 = temp(1:2:length(temp));
     data2 = 180*temp(2:2:length(temp))/pi;
-    fid=fopen('data.txt','w');
-    fprintf(fid, '%f %f \n', [data1' data2']');
+    fid=fopen('erros.txt','w');
+    fprintf(fid, '%f %f \n', [data1 data2]');
     fclose(fid);
     figure
     subplot(2,1,1)
@@ -57,7 +57,7 @@ if (command == 8)
     data5 = temp(5:6:length(temp));
     data6 = temp(6:6:length(temp));
     fid=fopen('data.txt','w');
-    fprintf(fid, '%f %f %f %f %f %f \n', [data1' data2' data3' data4' data5' data6']');
+    fprintf(fid, '%f %f %f %f %f %f \n', [data1 data2 data3 data4 data5 data6]');
     fclose(fid);
     figure
     subplot(2,1,1)
@@ -87,7 +87,7 @@ if (command == 9)
     data12 = temp(12:12:length(temp));
     
     fid=fopen('data.txt','w');
-    fprintf(fid, '%f %f %f %f %f %f %f %f %f %f %f %f \n', [data1' data2' data3' data4' data5' data6' data7' data8' data9' data10' data11' data12']');
+    fprintf(fid, '%f %f %f %f %f %f %f %f %f %f %f %f \n', [data1 data2 data3 data4 data5 data6 data7 data8 data9 data10 data11 data12]');
     fclose(fid);
     
     figure
@@ -143,18 +143,22 @@ if (command == 9)
     xlabel('Tempo');
 end
 if (command == 10)
-    temp = fread(seguidor, 3*bits_to_receive,'float');
-    data1 = temp(1:3:length(temp));
-    data2 = temp(2:3:length(temp));
-    data3 = 180*temp(3:3:length(temp))/pi;
+    temp = fread(seguidor, 5*bits_to_receive,'float');
+    data1 = temp(1:5:length(temp));
+    data2 = temp(2:5:length(temp));
+    data3 = 180*temp(3:5:length(temp))/pi;
+    data4 = temp(4:5:length(temp));
+    data5 = temp(5:5:length(temp));
     
-    fid=fopen('data.txt','w');
-    fprintf(fid, '%f %f %f \n', [data1' data2' data3']');
+    fid=fopen('mapa.txt','w');
+    fprintf(fid, '%f %f %f %f %f \n', [data1 data2 data3 data4 data5]');
     fclose(fid);
     
     figure
     subplot(2,1,1)
     plot(data1,data2,'b');
+    hold on
+    plot(data4,data5,'g--');
     subplot(2,1,2)
     plot(t,data3,'r-');
 end
@@ -261,7 +265,7 @@ switch command
         
     case 10
         subplot(2,1,1)
-        legend('posição');
+        legend('posição robô', 'Mapa da pista');
         ylabel('Y');
         xlabel('X');
         subplot(2,1,2)

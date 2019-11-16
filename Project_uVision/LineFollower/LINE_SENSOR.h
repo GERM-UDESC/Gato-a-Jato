@@ -23,7 +23,8 @@ public:
 	Line_Sensor(Line_Sensor *lineSensor);
 	Reflectance_Sensor Sensors[8];
 	void calibrate(uint32_t iterations);
-	float read();	
+	float read();
+	float readNotFiltered();
 
 };
 

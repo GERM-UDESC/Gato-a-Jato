@@ -31,7 +31,7 @@ clc
 
 baud_rate = 1382400;
 Ts = 1e-3;
-TempoTotal = 7;
+TempoTotal = 20;
 bits_to_receive = (TempoTotal)/(Ts);
 bufferSize = 2*bits_to_receive*32*6;
 
@@ -41,7 +41,7 @@ fopen(seguidor);
 %%
 close all
 clc
-command = 12;
+command = 5;    
 flushinput(seguidor);
 fwrite(seguidor, command, 'uint8');
 

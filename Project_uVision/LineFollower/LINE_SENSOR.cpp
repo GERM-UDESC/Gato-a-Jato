@@ -75,3 +75,8 @@ float Line_Sensor::read()
 	return filteredError; 
 }
 
+float Line_Sensor::readNotFiltered()
+{
+	return erro[sensorFilterOrder-1];
+}
+

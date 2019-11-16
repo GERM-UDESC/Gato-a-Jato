@@ -7,23 +7,26 @@
 //Parameters
 //Kanayama
 #define Kx 60
-#define Ky 900
-//#define Kteta 22
-#define Kteta 20
+#define Ky 1200
+#define Kteta 24
+	
+//artigo
+#define K1a 25
+#define K2a 1000
+
 #define K4 400
 #define K1 Kx
 #define K2 Ky
 #define K3 Kz
+#define alpha 10
 
 #define Kxk 1
 #define Kyk 200
 #define Ktetak 0.01
 #define K4k 0.001
 
-#define K1a 22
-#define K2a 1000
 
-#define v_ref_ini 0.5
+#define v_ref_ini 1.3
 #define w_ref_ini 0
 
 class Controller
@@ -31,6 +34,9 @@ class Controller
 	private:
 		static Controller *ptController;
 		void Handler();
+	
+		float xPosLine{0};
+		float yPosLine{0};
 	
 		float xe{0};
 		float ye{0};
@@ -55,6 +61,7 @@ class Controller
 		void kanayama_control();
 		void fierro_control();
 		void article_control();
+		void article_control_v2();
 		void calculateError();
 	
 	public:
@@ -69,6 +76,9 @@ class Controller
 	
 		float getVcontrol();
 		float getWcontrol();
+		
+		float getXline();
+		float getYline();
 	
 		void start(float vr, float wr);
 		void stop();

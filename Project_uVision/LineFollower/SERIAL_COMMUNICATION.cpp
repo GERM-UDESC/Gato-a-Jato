@@ -146,9 +146,13 @@ void Communication::doCommand()
 			temporary[0] = LineFollower->Robot.getX();
 			temporary[1] = LineFollower->Robot.getY();
 			temporary[2] = LineFollower->Robot.getTeta();
+			temporary[3] = LineFollower->getXline();
+			temporary[4] = LineFollower->getYline();
 			Serial->sendFloat(&temporary[0]);
 			Serial->sendFloat(&temporary[1]);
-			Serial->sendFloat(&temporary[2]);		
+			Serial->sendFloat(&temporary[2]);
+			Serial->sendFloat(&temporary[3]);
+			Serial->sendFloat(&temporary[4]);
 		break;
 		
 		case sendPWMandEncoderDataRight:

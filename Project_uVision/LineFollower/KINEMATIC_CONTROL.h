@@ -38,6 +38,7 @@ class Kinematic
 		float yPos{0};
 		float xPosSensor{0};
 		float yPosSensor{0};
+
 		float angle[angleFilterOrder]{0};
 		float filteredAngle{0};
 		
@@ -59,6 +60,7 @@ class Kinematic
 		float getLineAngle();
 		float getLinePosition();
 		float getLineAngleNotFiltered();
+		float getLinePositionNotFiltered();
 	
 		float getV();
 		float getW();

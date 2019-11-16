@@ -1,16 +1,10 @@
 close all
-clear all
+% clear all
 clc
 
 % systemIdentification
 % sisotool
 
-load('malhaA.txt');
-ref = malhaA(:,1);
-RPM = malhaA(:,2);
-t = 0:1e-3:((length(ref)/1000) - 1e-3);
-input_simulink = [t' ref];
-data_to_simulink = [t' RPM];
 
 %% Dados do robô
 Ts = 1e-3;
@@ -56,19 +50,89 @@ Ky = (wn/v_r)^2;
 Kteta = 2*qsi*sqrt(Ky);
 % Kteta = 2*sqrt(Ky);
 
-%% Plot
-close all
-clc
+%% Mapa da pista
+mapa = load('mapa1.txt');
+n = 200;
+m = 100;
+x_r = mapa(:,1);
+y_r = mapa(:,2);
+for i = length(y_r)/2:length(y_r)
+    if y_r(i) < 0
+        y_r(i) = 0;
+    end
+end
+for i = 1:length(y_r)
+    if y_r(i) > 0.707
+        y_r(i) = 0.707;
+    end
+end
+for i = 1:length(x_r)
+    if x_r(i) < -0.6
+        x_r(i) = -0.6;
+    end
+end
+x_r = filter(ones(1,n), n, x_r);
+y_r = filter(ones(1,n), n, y_r);
+teta_r = filter(ones(1,n), n, mapa(:,3)*2*pi/180);
+x_pista = filter(ones(1,m), m, mapa(:,4));
+y_pista = filter(ones(1,m), m, mapa(:,5));
+teta_pista = zeros(length(x_pista),1);
+for i=1:length(x_pista)-1
+    teta_pista(i) = atan2((y_r(i+1)-y_r(i)),(x_r(i+1)-x_r(i)));
+end
+
+t = 0:Ts/2:((length(x_r)-1)*Ts/2);
+
+%mapa_pista = [x_r y_r teta_pista];
+mapa_pista = [t' x_r y_r teta_pista];
+mapa_pista_artigo = [x_r y_r unwrap(teta_pista)];
+% figure
+% subplot(2,1,1)
+% plot(x_r,y_r,'w')
+% set(gca,'Color','k')
+% xlabel('x(m)');
+% ylabel('y(m)');
+% axis([-0.7 0.7 -0.1 0.8]);
+% subplot(2,1,2)
+% plot(x_pista,y_pista,'w')
+% set(gca,'Color','k')
+% xlabel('x(m)');
+% ylabel('y(m)');
+% axis([-0.7 0.7 -0.1 0.8]);
 
 figure
-subplot(2,1,1)
-plot(t,ref)
-legend('Razão Cíclica - PWM(%)');
-ylabel('Entrada');
-xlabel('Tempo');
-axis([0 11 -1 110]);
-subplot(2,1,2)
-plot(t,RPM,t,resp_modelo(1:11000,1))
-legend('Resposta experimental', 'Resposta simulada');
-ylabel('Velocidade Angular (RPM)');
-xlabel('Tempo');
+plot(x_r,y_r,'w')
+set(gca,'Color','k')
+xlabel('x(m)');
+ylabel('y(m)');
+axis([-0.7 0.7 -0.1 0.8]);
+
+figure
+plot(x_pista,y_pista,'w')
+set(gca,'Color','k')
+xlabel('x(m)');
+ylabel('y(m)');
+axis([-0.7 0.7 -0.1 0.8]);
+
+%% plots
+% figure
+% plot(ref_artigo(:,1),ref_artigo(:,2),'w')
+% hold on
+% plot(artigo(:,1),artigo(:,2),'r')
+% legend('referência','trajetória simulada')
+% set(gca,'Color','k')
+% xlabel('x(m)');
+% ylabel('y(m)');
+% axis([-0.7 0.7 -0.1 0.9]);
+
+figure
+plot(x_r,y_r,'w')
+hold on
+plot(kanayama(:,1),kanayama(:,2),'r')
+legend('referência','trajetória simulada')
+set(gca,'Color','k')
+xlabel('x(m)');
+ylabel('y(m)');
+axis([-0.7 0.7 -0.1 0.9]);
+legend('Pista','Trajetória Kanayama');
+

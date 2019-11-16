@@ -1,0 +1,325 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>LineFollower</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2019-11-15"><meta name="DC.source" content="LineFollower.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">Dados do rob&ocirc;</a></li><li><a href="#3">Controlador de velocidade dos motores</a></li><li><a href="#4">Controlador Kanayama</a></li><li><a href="#5">Mapa da pista</a></li><li><a href="#6">plots</a></li></ul></div><pre class="codeinput">close <span class="string">all</span>
+<span class="comment">% clear all</span>
+clc
+
+<span class="comment">% systemIdentification</span>
+<span class="comment">% sisotool</span>
+</pre><h2 id="2">Dados do rob&ocirc;</h2><pre class="codeinput">Ts = 1e-3;
+r = 16e-3;      <span class="comment">% Raio da roda</span>
+l = 69e-3;      <span class="comment">% Dist&acirc;ncia do centro do rob&ocirc; at&eacute; o centro das rodas</span>
+
+s = tf(<span class="string">'s'</span>);
+</pre><h2 id="3">Controlador de velocidade dos motores</h2><p>Modelo do motor com roda Km = 455.5;</p><pre class="codeinput">Km = 460;
+Pm = 12.97;
+
+Modelo = Km/(s + Pm);
+
+<span class="comment">% Par&acirc;metros do controlador</span>
+ts_m = 0.15; <span class="comment">%tempo de assentamento</span>
+KPm = 4/(Km*ts_m);
+KIm = Pm*KPm;
+
+Controlador = KPm*(s+KIm/KPm)/s;
+
+Tm = feedback(Modelo*Controlador, 1);
+</pre><h2 id="4">Controlador Kanayama</h2><p>Refer&ecirc;ncia de velocidades</p><pre class="codeinput">v_r = 1.5;
+w_r = 0;
+Qr = [v_r; w_r];
+
+<span class="comment">% determina&ccedil;&atilde;o das constantes</span>
+<span class="comment">% Kx</span>
+Ts_x = 0.05;
+Kx = 4/Ts_x;
+
+<span class="comment">% Ky e Kteta</span>
+Ts_y_teta = 0.1;
+qsi = 1;
+wn = 4/(qsi*Ts_y_teta);
+Tp = pi/(wn*sqrt(1-qsi^2));
+
+Ky = (wn/v_r)^2;
+Kteta = 2*qsi*sqrt(Ky);
+<span class="comment">% Kteta = 2*sqrt(Ky);</span>
+</pre><h2 id="5">Mapa da pista</h2><pre class="codeinput">mapa = load(<span class="string">'mapa1.txt'</span>);
+n = 200;
+m = 100;
+x_r = mapa(:,1);
+y_r = mapa(:,2);
+<span class="keyword">for</span> i = length(y_r)/2:length(y_r)
+    <span class="keyword">if</span> y_r(i) &lt; 0
+        y_r(i) = 0;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="keyword">for</span> i = 1:length(y_r)
+    <span class="keyword">if</span> y_r(i) &gt; 0.707
+        y_r(i) = 0.707;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="keyword">for</span> i = 1:length(x_r)
+    <span class="keyword">if</span> x_r(i) &lt; -0.6
+        x_r(i) = -0.6;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+x_r = filter(ones(1,n), n, x_r);
+y_r = filter(ones(1,n), n, y_r);
+teta_r = filter(ones(1,n), n, mapa(:,3)*2*pi/180);
+x_pista = filter(ones(1,m), m, mapa(:,4));
+y_pista = filter(ones(1,m), m, mapa(:,5));
+teta_pista = zeros(length(x_pista),1);
+<span class="keyword">for</span> i=1:length(x_pista)-1
+    teta_pista(i) = atan2((y_r(i+1)-y_r(i)),(x_r(i+1)-x_r(i)));
+<span class="keyword">end</span>
+
+t = 0:Ts/2:((length(x_r)-1)*Ts/2);
+
+<span class="comment">%mapa_pista = [x_r y_r teta_pista];</span>
+mapa_pista = [t' x_r y_r teta_pista];
+mapa_pista_artigo = [x_r y_r unwrap(teta_pista)];
+<span class="comment">% figure</span>
+<span class="comment">% subplot(2,1,1)</span>
+<span class="comment">% plot(x_r,y_r,'w')</span>
+<span class="comment">% set(gca,'Color','k')</span>
+<span class="comment">% xlabel('x(m)');</span>
+<span class="comment">% ylabel('y(m)');</span>
+<span class="comment">% axis([-0.7 0.7 -0.1 0.8]);</span>
+<span class="comment">% subplot(2,1,2)</span>
+<span class="comment">% plot(x_pista,y_pista,'w')</span>
+<span class="comment">% set(gca,'Color','k')</span>
+<span class="comment">% xlabel('x(m)');</span>
+<span class="comment">% ylabel('y(m)');</span>
+<span class="comment">% axis([-0.7 0.7 -0.1 0.8]);</span>
+
+figure
+plot(x_r,y_r,<span class="string">'w'</span>)
+set(gca,<span class="string">'Color'</span>,<span class="string">'k'</span>)
+xlabel(<span class="string">'x(m)'</span>);
+ylabel(<span class="string">'y(m)'</span>);
+axis([-0.7 0.7 -0.1 0.8]);
+
+figure
+plot(x_pista,y_pista,<span class="string">'w'</span>)
+set(gca,<span class="string">'Color'</span>,<span class="string">'k'</span>)
+xlabel(<span class="string">'x(m)'</span>);
+ylabel(<span class="string">'y(m)'</span>);
+axis([-0.7 0.7 -0.1 0.8]);
+</pre><img vspace="5" hspace="5" src="LineFollower_01.png" alt=""> <img vspace="5" hspace="5" src="LineFollower_02.png" alt=""> <h2 id="6">plots</h2><p>figure plot(ref_artigo(:,1),ref_artigo(:,2),'w') hold on plot(artigo(:,1),artigo(:,2),'r') legend('refer&ecirc;ncia','trajet&oacute;ria simulada') set(gca,'Color','k') xlabel('x(m)'); ylabel('y(m)'); axis([-0.7 0.7 -0.1 0.9]);</p><pre class="codeinput">figure
+plot(x_r,y_r,<span class="string">'w'</span>)
+hold <span class="string">on</span>
+plot(kanayama(:,1),kanayama(:,2),<span class="string">'r'</span>)
+legend(<span class="string">'refer&ecirc;ncia'</span>,<span class="string">'trajet&oacute;ria simulada'</span>)
+set(gca,<span class="string">'Color'</span>,<span class="string">'k'</span>)
+xlabel(<span class="string">'x(m)'</span>);
+ylabel(<span class="string">'y(m)'</span>);
+axis([-0.7 0.7 -0.1 0.9]);
+legend(<span class="string">'Pista'</span>,<span class="string">'Trajet&oacute;ria Kanayama'</span>);
+</pre><img vspace="5" hspace="5" src="LineFollower_03.png" alt=""> <p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+close all
+% clear all
+clc
+
+% systemIdentification
+% sisotool
+
+
+%% Dados do robô
+Ts = 1e-3;
+r = 16e-3;      % Raio da roda
+l = 69e-3;      % Distância do centro do robô até o centro das rodas
+
+s = tf('s');
+%% Controlador de velocidade dos motores
+% Modelo do motor com roda
+% Km = 455.5;
+Km = 460;
+Pm = 12.97;
+
+Modelo = Km/(s + Pm);
+
+% Parâmetros do controlador
+ts_m = 0.15; %tempo de assentamento
+KPm = 4/(Km*ts_m);
+KIm = Pm*KPm;
+
+Controlador = KPm*(s+KIm/KPm)/s;
+
+Tm = feedback(Modelo*Controlador, 1);
+
+%% Controlador Kanayama
+% Referência de velocidades
+v_r = 1.5;
+w_r = 0;
+Qr = [v_r; w_r];
+
+% determinação das constantes
+% Kx
+Ts_x = 0.05;
+Kx = 4/Ts_x;
+
+% Ky e Kteta
+Ts_y_teta = 0.1;
+qsi = 1;
+wn = 4/(qsi*Ts_y_teta);
+Tp = pi/(wn*sqrt(1-qsi^2));
+
+Ky = (wn/v_r)^2;
+Kteta = 2*qsi*sqrt(Ky);
+% Kteta = 2*sqrt(Ky);
+
+%% Mapa da pista
+mapa = load('mapa1.txt');
+n = 200;
+m = 100;
+x_r = mapa(:,1);
+y_r = mapa(:,2);
+for i = length(y_r)/2:length(y_r)
+    if y_r(i) < 0
+        y_r(i) = 0;
+    end
+end
+for i = 1:length(y_r)
+    if y_r(i) > 0.707
+        y_r(i) = 0.707;
+    end
+end
+for i = 1:length(x_r)
+    if x_r(i) < -0.6
+        x_r(i) = -0.6;
+    end
+end
+x_r = filter(ones(1,n), n, x_r);
+y_r = filter(ones(1,n), n, y_r);
+teta_r = filter(ones(1,n), n, mapa(:,3)*2*pi/180);
+x_pista = filter(ones(1,m), m, mapa(:,4));
+y_pista = filter(ones(1,m), m, mapa(:,5));
+teta_pista = zeros(length(x_pista),1);
+for i=1:length(x_pista)-1
+    teta_pista(i) = atan2((y_r(i+1)-y_r(i)),(x_r(i+1)-x_r(i)));
+end
+
+t = 0:Ts/2:((length(x_r)-1)*Ts/2);
+
+%mapa_pista = [x_r y_r teta_pista];
+mapa_pista = [t' x_r y_r teta_pista];
+mapa_pista_artigo = [x_r y_r unwrap(teta_pista)];
+% figure
+% subplot(2,1,1)
+% plot(x_r,y_r,'w')
+% set(gca,'Color','k')
+% xlabel('x(m)');
+% ylabel('y(m)');
+% axis([-0.7 0.7 -0.1 0.8]);
+% subplot(2,1,2)
+% plot(x_pista,y_pista,'w')
+% set(gca,'Color','k')
+% xlabel('x(m)');
+% ylabel('y(m)');
+% axis([-0.7 0.7 -0.1 0.8]);
+
+figure
+plot(x_r,y_r,'w')
+set(gca,'Color','k')
+xlabel('x(m)');
+ylabel('y(m)');
+axis([-0.7 0.7 -0.1 0.8]);
+
+figure
+plot(x_pista,y_pista,'w')
+set(gca,'Color','k')
+xlabel('x(m)');
+ylabel('y(m)');
+axis([-0.7 0.7 -0.1 0.8]);
+
+%% plots
+% figure
+% plot(ref_artigo(:,1),ref_artigo(:,2),'w')
+% hold on
+% plot(artigo(:,1),artigo(:,2),'r')
+% legend('referência','trajetória simulada')
+% set(gca,'Color','k')
+% xlabel('x(m)');
+% ylabel('y(m)');
+% axis([-0.7 0.7 -0.1 0.9]);
+
+figure
+plot(x_r,y_r,'w')
+hold on
+plot(kanayama(:,1),kanayama(:,2),'r')
+legend('referência','trajetória simulada')
+set(gca,'Color','k')
+xlabel('x(m)');
+ylabel('y(m)');
+axis([-0.7 0.7 -0.1 0.9]);
+legend('Pista','Trajetória Kanayama');
+
+
+##### SOURCE END #####
+--></body></html>

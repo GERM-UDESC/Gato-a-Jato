@@ -14,9 +14,21 @@ void Controller::HandlerByTime()
 
 void Controller::Handler()
 {
+	int H, tetaH, E, teta1, teta2;
 	if (Robot.calibrationFinished == 1)
 	{
 		Robot.updateLineReading();
+		H = cos(tetae)*comprimento;
+		tetaH = pi-tetae-Robot.getTeta();
+//		if (tetaH != 0)	E = H*sin(tetae)/sin(tetaH);
+//		else E = H;
+		teta1 = pi-tetaH;
+		teta2 = (pi/2) - teta1;		
+		xPosLine = Robot.getX() - cos(teta2)*(ye);
+		yPosLine = Robot.getY() + sin(teta2)*ye;
+		
+//		xPosLine = Robot.getX() + sin(tetae)*fabs(ye);
+//		yPosLine = Robot.getY() - cos(tetae)*ye;
 		ptController->calculateError();
 		ptController->controlRule();
 	}
@@ -56,15 +68,15 @@ void Controller::controlRule()
 
 void Controller::kanayama_control()
 {
-	if ((ye > maxDistance/8) && (desired_v != 0))
-		v_ref = desired_v*(1 - 0.7*(ye/maxDistance));
-	else if ((ye < -maxDistance/8) && (desired_v != 0))
-		v_ref = desired_v*(1 + 0.7*(ye/maxDistance));
+	if ((ye > maxDistance/6) && (desired_v != 0))
+		v_ref = desired_v*(1 - 0.5*(ye/maxDistance));
+	else if ((ye < -maxDistance/6) && (desired_v != 0))
+		v_ref = desired_v*(1 + 0.5*(ye/maxDistance));
 	else
 		v_ref = desired_v;
 	
 	v = v_ref*cos(tetae) + Kx*xe;
-	w = w_ref + v_ref*(Ky*ye + Kteta*sin(tetae));
+	w = w_ref + desired_v*(Ky*ye + Kteta*sin(tetae));
 	
 	Robot.setSpeed(v, w);
 }
@@ -91,13 +103,33 @@ void Controller::fierro_control()
 
 void Controller::article_control()
 {
+	if ((ye > maxDistance/8) && (desired_v != 0))
+		v_ref = desired_v*(1 - 0.7*(ye/maxDistance));
+	else if ((ye < -maxDistance/8) && (desired_v != 0))
+		v_ref = desired_v*(1 + 0.7*(ye/maxDistance));
+	else
+		v_ref = desired_v;
+	
 	if (tetae != 0)
 	{
-		w = K1a*tetae + K2a*ye*v_ref*sin(tetae)/tetae;
+		w = K1a*tetae + K2a*ye*desired_v*sin(tetae)/tetae;
 	}
 	else
 	{
-		w = K1a*tetae + K2a*ye*v_ref;
+		w = K2a*ye*desired_v;
+	}
+    
+	Robot.setSpeed(v_ref, w);
+}
+
+void Controller::article_control_v2()
+{
+	float l_p = v_ref*sin(tetae);
+	if (ye > 0){
+		w = -alpha*(l_p + sqrt(ye))/(fabs(l_p) + sqrt(ye));
+	}
+	else {
+		w = -alpha*(l_p - sqrt(-ye))/(fabs(l_p) + sqrt(-ye));
 	}
     
 	Robot.setSpeed(v_ref, w);
@@ -112,6 +144,8 @@ void Controller::setSpeedRef(float vr, float wr)
 void Controller::reset()
 {
 	Robot.reset();
+	xPosLine = 0;
+	yPosLine = 0;
 	xe = 0;
 	ye = 0;
 	tetae = 0;
@@ -128,3 +162,13 @@ float Controller::getWcontrol()
 {
 	return w;
 };
+
+float Controller::getXline()
+{
+	return xPosLine;
+}
+
+float Controller::getYline()
+{
+	return yPosLine;
+}

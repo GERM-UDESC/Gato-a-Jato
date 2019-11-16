@@ -4,7 +4,7 @@
 	#include "FOLLOWING_CONTROLER.h"
 	#include "USART.h"
 	
-	#define samplingTime 7
+	#define samplingTime 20
 	#define bitsToSend (samplingTime*1000000)/(Time_between_int)
 	#define sendingTime bitsToSend*Time_between_int/1000000
 		
